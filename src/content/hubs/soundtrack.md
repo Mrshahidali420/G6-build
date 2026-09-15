@@ -6,7 +6,7 @@ updated: "2026-09-15"
 
 ## Trailer music, not radio stations
 
-Every song on this hub was identified playing in a piece of official Grand Theft Auto VI marketing, either the first trailer from December 2023, the second trailer from May 2026, or the Netflix Extended Look gameplay preview from August 2026. None of them have been confirmed as part of an in-game radio station. Rockstar has not published a radio station list, a DJ lineup, or a tracklist for any station, and nobody outside Rockstar has heard the game's radio, because nobody outside Rockstar has played it yet. Treat this page as a record of what has played over official footage so far, not a preview of what you will hear driving around Leonida.
+Every song on this hub was identified playing in a piece of official Grand Theft Auto VI marketing, either the first trailer from December 2023, the second trailer from May 2025, or the Netflix Extended Look gameplay preview from August 2026. None of them have been confirmed as part of an in-game radio station. Rockstar has not published a radio station list, a DJ lineup, or a tracklist for any station, and nobody outside Rockstar has heard the game's radio, because nobody outside Rockstar has played it yet. Treat this page as a record of what has played over official footage so far, not a preview of what you will hear driving around Leonida.
 
 ## How confident each song is
 

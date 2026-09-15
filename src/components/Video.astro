@@ -1,0 +1,149 @@
+---
+// A click to load YouTube embed.
+//
+// Nothing from YouTube loads until the reader asks for it: the still is served
+// from the thumbnail host and the iframe is only written into the page on
+// click. That keeps a page with three trailers on it from shipping three
+// third party players to every visitor, and it means the site does not hand a
+// reader to Google's tracking before they have chosen to watch anything.
+//
+// The frame uses youtube-nocookie.com, which needs frame-src in
+// public/_headers. Adding a video to a page without that entry renders a blank
+// box, so the two files move together.
+import Icon from './Icon.astro'
+
+const { id, title, date, runtime, channel = 'Rockstar Games' } = Astro.props
+
+const still = `https://i.ytimg.com/vi/${id}/hqdefault.jpg`
+const watch = `https://www.youtube.com/watch?v=${id}`
+---
+<figure class="video" data-video={id}>
+  <button class="video__load" type="button" aria-label={`Play ${title}`}>
+    <img class="video__still" src={still} alt="" width="480" height="360" loading="lazy" decoding="async" />
+    <span class="video__badge"><Icon name="play" size={22} /> Play</span>
+  </button>
+
+  <figcaption class="video__cap">
+    <span class="video__title">{title}</span>
+    <span class="video__meta">
+      {channel}
+      {date && <> &middot; {date}</>}
+      {runtime && <> &middot; {runtime}</>}
+      &middot; <a href={watch} rel="nofollow noopener" target="_blank">Watch on YouTube</a>
+    </span>
+  </figcaption>
+</figure>
+
+<style>
+  .video {
+    margin: 0 0 26px;
+    border: 1px solid color-mix(in srgb, var(--brass) 38%, transparent);
+    background: var(--plaster);
+  }
+
+  .video__load {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    border-bottom: 1px solid color-mix(in srgb, var(--brass) 38%, transparent);
+    background: var(--glaze-deep);
+    cursor: pointer;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+  }
+
+  /* The still is 4:3 with letterbox bars baked in, so it is cropped to fill. */
+  .video__still {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    transform: scale(1.35);
+    display: block;
+  }
+
+  .video__badge {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 11px 20px;
+    background: var(--plaster);
+    color: var(--ink);
+    font-family: var(--display);
+    font-stretch: 112%;
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+    border: 1px solid var(--brass);
+    box-shadow: 0 2px 0 var(--glaze-deep);
+    transition: box-shadow 140ms ease, background 140ms ease;
+  }
+
+  .video__load:hover .video__badge,
+  .video__load:focus-visible .video__badge {
+    background: #fff;
+    box-shadow: 0 4px 0 var(--glaze-deep);
+  }
+
+  .video__load:focus-visible {
+    outline: 3px solid var(--brass);
+    outline-offset: -3px;
+  }
+
+  .video__cap {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 12px 15px 14px;
+  }
+
+  .video__title {
+    font-family: var(--display);
+    font-stretch: 112%;
+    font-weight: 700;
+    color: var(--ink);
+    font-size: 1rem;
+  }
+
+  .video__meta {
+    font-family: var(--display);
+    font-size: 0.8rem;
+    color: var(--ink-2);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .video :global(iframe) {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    border-bottom: 1px solid color-mix(in srgb, var(--brass) 38%, transparent);
+  }
+</style>
+
+<script>
+  // One listener for every video on the page. The iframe is built only on
+  // click, so a reader who never presses play never contacts YouTube.
+  document.addEventListener('click', (event) => {
+    const button = (event.target as HTMLElement).closest('.video__load')
+    if (!button) return
+
+    const figure = button.closest('.video') as HTMLElement | null
+    const id = figure?.dataset.video
+    if (!figure || !id) return
+
+    const frame = document.createElement('iframe')
+    frame.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`
+    frame.title = figure.querySelector('.video__title')?.textContent ?? 'Video'
+    frame.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
+    frame.allowFullscreen = true
+
+    button.replaceWith(frame)
+  })
+</script>

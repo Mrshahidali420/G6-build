@@ -35,6 +35,21 @@ const answers = defineCollection({
         }),
       )
       .default([]),
+    // Video pages only. Each entry becomes a click to load YouTube facade.
+    // The id must be a video on Rockstar's own channel, checked through the
+    // YouTube oEmbed endpoint before it is added: mirrors and fan reuploads
+    // carry the same footage under a different owner and must not be used.
+    videos: z
+      .array(
+        z.object({
+          id: z.string(),
+          title: z.string(),
+          date: z.string(),
+          runtime: z.string().optional(),
+          channel: z.string().default('Rockstar Games'),
+        }),
+      )
+      .default([]),
   }),
 })
 

@@ -3,6 +3,7 @@ import { getCollection, render } from 'astro:content'
 import BaseLayout from '../layouts/BaseLayout.astro'
 import EntityTile from '../components/EntityTile.astro'
 import Icon from '../components/Icon.astro'
+import Video from '../components/Video.astro'
 import { SITE_NAME, SITE_URL, canonical, amazonUrl } from '../lib/site.mjs'
 import { bySlug } from '../lib/entities.mjs'
 
@@ -64,6 +65,32 @@ const jsonLd = {
       <Content />
     </div>
   </section>
+
+  {data.videos.length > 0 && (
+    <section class="band band--plaster">
+      <div class="shell">
+        <h2 style="margin-top:0">Watch them here</h2>
+        <p class="lede">
+          Every video below sits on Rockstar's own YouTube channel. Channel
+          ownership was checked through YouTube's oEmbed endpoint, not copied
+          from another site, because mirrors and fan reuploads carry the same
+          footage under a different owner. Nothing loads from YouTube until you
+          press play.
+        </p>
+        <div class="videos">
+          {data.videos.map((video) => (
+            <Video
+              id={video.id}
+              title={video.title}
+              date={video.date}
+              runtime={video.runtime}
+              channel={video.channel}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
 
   {data.products.length > 0 && (
     <section class="band band--plaster">
@@ -133,3 +160,13 @@ const jsonLd = {
     </section>
   )}
 </BaseLayout>
+
+<style>
+  /* One column on a phone, two from tablet width up. The minimum is 280px so
+     a video never forces the page sideways at 400px. */
+  .videos {
+    display: grid;
+    gap: 22px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+</style>

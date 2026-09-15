@@ -67,9 +67,9 @@ San Andreas with "Runnin' Down a Dream." The song's lyrics about doing right
 on a long road fit the trailer's tone, and Spotify reported streams of the
 track rose by roughly 36,979 percent in the week after the trailer went live.
 
-## Trailer 2, May 2026
+## Trailer 2, May 2025
 
-Trailer 2, released 6 May 2026, uses one lead song for most of its runtime,
+Trailer 2, released 6 May 2025, uses one lead song for most of its runtime,
 plus three short radio snippets during a single driving scene. All four were
 identified by NME, not confirmed directly by Rockstar or the artists.
 

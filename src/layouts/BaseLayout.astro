@@ -34,7 +34,19 @@ const current = (slug) => (path === `/${slug}` || path.startsWith(`/${slug}/`) ?
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={url} />
-    <meta name="twitter:card" content="summary" />
+    <!--
+      One card for the whole site, drawn by scripts/build-og.mjs from the same
+      tokens as the pages. A per page picture would be better, but the site has
+      almost no photographs it may publish, so a generated per page card would
+      only restate the title in a second typeface. Without any card at all the
+      platforms show a bare link, which reads as an abandoned site.
+    -->
+    <meta property="og:image" content={new URL('/og.png', SITE_URL).href} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={`${SITE_NAME}: sourced, not guessed`} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content={new URL('/og.png', SITE_URL).href} />
     <meta name="theme-color" content="#0f5d53" />
 
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
@@ -84,10 +96,35 @@ const current = (slug) => (path === `/${slug}` || path.startsWith(`/${slug}/`) ?
           </span>
         </a>
         <div class="masthead__links">
-          <a href="/news">News</a>
-          <a href="/about">About</a>
+          <a class="masthead__links-full" href="/news">News</a>
+          <a class="masthead__links-full" href="/about">About</a>
           <a href="/search" aria-label="Search the site"><Icon name="search" size={17} /></a>
         </div>
+        <!--
+          Under 760px the row of nine sections is a sideways scroll strip
+          nobody scrolls, so eight of nine sections were invisible on a
+          phone. <details>/<summary> gives a menu that opens with no JS:
+          the browser owns the open state and the accessible name.
+        -->
+        <details class="menu">
+          <summary class="menu__button">
+            <span class="menu__icon menu__icon--open"><Icon name="menu" size={20} /></span>
+            <span class="menu__icon menu__icon--close"><Icon name="close" size={20} /></span>
+            <span class="menu__button-label">Menu</span>
+          </summary>
+          <nav class="menu__panel" aria-label="All sections">
+            {HUB_TYPES.map((hub) => (
+              <a href={`/${hub.slug}`} aria-current={current(hub.slug)}>
+                {hub.title.replace('GTA 6 ', '')}
+              </a>
+            ))}
+            <a href="/answers" aria-current={current('answers')}>Answers</a>
+            <a href="/news" aria-current={current('news')}>News</a>
+            <a href="/about" aria-current={current('about')}>About</a>
+            <a href="/search" aria-current={current('search')}>Search</a>
+            <a href="/contact" aria-current={current('contact')}>Contact</a>
+          </nav>
+        </details>
       </div>
       <nav class="sections" aria-label="Sections">
         <div class="sections__inner">
@@ -111,6 +148,7 @@ const current = (slug) => (path === `/${slug}` || path.startsWith(`/${slug}/`) ?
           {updated && <> This page was checked {updated}.</>}
         </p>
         <p class="colophon__row">
+          <a href="/answers">Answers</a>
           <a href="/news">News</a>
           <a href="/about">About and sources</a>
           <a href="/search">Search</a>

@@ -1,0 +1,66 @@
+---
+import { getCollection } from 'astro:content'
+import BaseLayout from '../layouts/BaseLayout.astro'
+import Icon from '../components/Icon.astro'
+import { SITE_NAME, SITE_URL, canonical } from '../lib/site.mjs'
+import { GAME } from '../lib/schema.mjs'
+
+// Every answer page, not a top ten. The home page shows the ten most asked
+// questions, which left the rest of the set reachable only from search. A page
+// nobody links to is a page nobody reads, so this is the full index and it is
+// linked from the home page, the footer and the phone menu.
+const answers = (await getCollection('answers')).sort((a, b) => a.data.order - b.data.order)
+
+const path = '/answers'
+const title = 'Every GTA 6 question answered'
+const description = `All ${answers.length} Grand Theft Auto VI questions answered on this site, each page naming the source behind every claim it makes.`
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  '@id': canonical(path),
+  url: canonical(path),
+  name: title,
+  description,
+  about: GAME,
+  publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+  hasPart: answers.map((page) => ({
+    '@type': 'Article',
+    '@id': canonical(`/${page.id}`),
+    headline: page.data.title,
+    description: page.data.description,
+    dateModified: page.data.updated,
+  })),
+}
+---
+<BaseLayout title={title} description={description} path={path} jsonLd={jsonLd}>
+  <section class="band band--glaze">
+    <div class="shell">
+      <p class="crumb" style="color:var(--on-glaze-2)">
+        <a href="/" style="color:var(--on-glaze-2)">GTA 6 Record</a> / Answers
+      </p>
+      <h1 style="max-width:20ch">{title}</h1>
+      <p class="lede">{description}</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="shell">
+      <ul class="directory" style="columns:1">
+        {answers.map((page) => (
+          <li>
+            <a href={`/${page.id}`}>
+              <span class="directory__name">{page.data.title}</span>
+              <span class="directory__rule"></span>
+              <span class="directory__count">Checked {page.data.updated}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+      <div class="btns" style="margin-top:26px">
+        <a class="btn" href="/news">Every dated announcement <Icon name="arrow" size={16} /></a>
+        <a class="btn btn--quiet" href="/about">How the data is checked</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

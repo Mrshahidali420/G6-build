@@ -1,0 +1,151 @@
+---
+// A live counter to launch. Rockstar has confirmed the day, 19 November
+// 2026, but has never published an hour, so the target is midnight UTC at
+// the start of that day, not a guess at a regional unlock time. The page
+// says this plainly next to the numbers rather than burying it in a footnote.
+//
+// The count is computed twice on purpose. Astro renders the real day count
+// into the static HTML at build time, so a crawler or a reader with JS off
+// sees a correct number, not a zeroed or blank box. The inline script then
+// takes over and ticks it live. Rebuilding this page updates the fallback;
+// nothing here depends on the page being fresh at request time, because the
+// site is static.
+const TARGET = '2026-11-19T00:00:00Z'
+
+const diff = new Date(TARGET).getTime() - Date.now()
+const launched = diff <= 0
+
+function parts(ms: number) {
+  const totalSeconds = Math.max(0, Math.floor(ms / 1000))
+  return {
+    days: Math.floor(totalSeconds / 86400),
+    hours: Math.floor((totalSeconds % 86400) / 3600),
+    minutes: Math.floor((totalSeconds % 3600) / 60),
+    seconds: totalSeconds % 60,
+  }
+}
+
+const initial = parts(diff)
+---
+<div class="countdown" data-target={TARGET} data-launched={launched ? 'true' : 'false'}>
+  {launched ? (
+    <p class="countdown__launched">Grand Theft Auto VI has launched.</p>
+  ) : (
+    <div class="countdown__grid" role="timer" aria-label="Time until Grand Theft Auto VI launches">
+      <div class="countdown__cell">
+        <span class="countdown__num" data-unit="days">{initial.days}</span>
+        <span class="countdown__label">Days</span>
+      </div>
+      <div class="countdown__cell">
+        <span class="countdown__num" data-unit="hours">{String(initial.hours).padStart(2, '0')}</span>
+        <span class="countdown__label">Hours</span>
+      </div>
+      <div class="countdown__cell">
+        <span class="countdown__num" data-unit="minutes">{String(initial.minutes).padStart(2, '0')}</span>
+        <span class="countdown__label">Minutes</span>
+      </div>
+      <div class="countdown__cell">
+        <span class="countdown__num" data-unit="seconds">{String(initial.seconds).padStart(2, '0')}</span>
+        <span class="countdown__label">Seconds</span>
+      </div>
+    </div>
+  )}
+  <p class="countdown__note">
+    Counting to 19 November 2026, 00:00 UTC. Rockstar has not announced an
+    unlock time for any region, so this counts to the start of launch day
+    itself, not a guessed hour.
+  </p>
+</div>
+
+<style>
+  /* Numbers only, no rule or accent that reads as a second animation. The
+     tick below swaps text content, which is data updating, not motion. */
+  .countdown__grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+    max-width: 520px;
+  }
+
+  .countdown__cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 14px 6px;
+    background: var(--glaze-deep);
+    border: 1px solid color-mix(in srgb, var(--brass) 45%, transparent);
+  }
+
+  .countdown__num {
+    font-family: var(--display);
+    font-stretch: 125%;
+    font-weight: 800;
+    font-size: clamp(1.6rem, 5vw, 2.4rem);
+    line-height: 1;
+    color: var(--on-glaze);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .countdown__label {
+    font-family: var(--display);
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--on-glaze-2);
+  }
+
+  .countdown__launched {
+    font-family: var(--display);
+    font-stretch: 118%;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--on-glaze);
+    margin: 0;
+  }
+
+  .countdown__note {
+    margin: 14px 0 0;
+    max-width: 60ch;
+    color: var(--on-glaze-2);
+    font-size: 0.88rem;
+  }
+</style>
+
+<script>
+  // Ticks the same four numbers the server already rendered. If the target
+  // has already passed by the time this runs, it swaps in the launched
+  // message instead of ever showing a negative count.
+  const root = document.querySelector<HTMLElement>('.countdown')
+  if (root && root.dataset.launched !== 'true') {
+    const target = new Date(root.dataset.target ?? '').getTime()
+
+    const tick = () => {
+      const diff = target - Date.now()
+      if (diff <= 0) {
+        root.innerHTML = '<p class="countdown__launched">Grand Theft Auto VI has launched.</p>'
+        window.clearInterval(timer)
+        return
+      }
+
+      const totalSeconds = Math.floor(diff / 1000)
+      const days = Math.floor(totalSeconds / 86400)
+      const hours = Math.floor((totalSeconds % 86400) / 3600)
+      const minutes = Math.floor((totalSeconds % 3600) / 60)
+      const seconds = totalSeconds % 60
+
+      const set = (unit: string, value: number, pad: boolean) => {
+        const el = root.querySelector(`[data-unit="${unit}"]`)
+        if (el) el.textContent = pad ? String(value).padStart(2, '0') : String(value)
+      }
+
+      set('days', days, false)
+      set('hours', hours, true)
+      set('minutes', minutes, true)
+      set('seconds', seconds, true)
+    }
+
+    tick()
+    const timer = window.setInterval(tick, 1000)
+  }
+</script>

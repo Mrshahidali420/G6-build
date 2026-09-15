@@ -181,6 +181,46 @@ p { margin: 0 0 1.05em; }
 .sections a:hover { color: var(--on-glaze); background: var(--glaze-lift); }
 .sections a[aria-current="page"] { color: var(--on-glaze); border-bottom-color: var(--brass); background: var(--glaze-lift); }
 
+/* Mobile menu: hidden above the breakpoint, where the desktop header already
+   fits everything. <details> carries the open state itself, so the button
+   works with no JS on the page at all. */
+.menu { display: none; }
+.menu__button {
+  display: flex; align-items: center; justify-content: center;
+  width: 38px; height: 38px; padding: 0; margin: 0; cursor: pointer;
+  color: var(--on-glaze); list-style: none;
+}
+.menu__button::-webkit-details-marker { display: none; }
+.menu__icon--close { display: none; }
+.menu[open] .menu__icon--open { display: none; }
+.menu[open] .menu__icon--close { display: flex; }
+/* Accessible name for the button, kept off screen rather than in the icon. */
+.menu__button-label {
+  position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
+  overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+}
+
+.menu__panel {
+  display: flex; flex-direction: column;
+  position: absolute; top: 100%; left: 0; right: 0; z-index: 5;
+  background: var(--glaze-deep); border-top: 1px solid color-mix(in srgb, var(--on-glaze) 18%, transparent);
+}
+.menu__panel a {
+  padding: 13px clamp(16px, 4vw, 34px);
+  font-family: var(--ui); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.04em;
+  text-transform: uppercase; color: var(--on-glaze-2); text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--on-glaze) 10%, transparent);
+}
+.menu__panel a:hover,
+.menu__panel a[aria-current="page"] { color: var(--on-glaze); background: var(--glaze-lift); }
+
+@media (max-width: 760px) {
+  .masthead { position: relative; }
+  .masthead__links-full { display: none; }
+  .sections { display: none; }
+  .menu { display: block; }
+}
+
 /* ---------- Provenance marks ---------- */
 
 .mark {

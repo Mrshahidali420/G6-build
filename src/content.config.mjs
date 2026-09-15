@@ -12,6 +12,11 @@ const answers = defineCollection({
     keyword: z.string(),
     order: z.number().default(50),
     updated: z.string(),
+    // The one page that gets the live launch counter, rendered before the
+    // article band. Kept as a flag rather than inferring it from the slug so
+    // a second countdown page (a demo unlock, a beta) can opt in later
+    // without touching the render logic.
+    countdown: z.boolean().default(false),
     // Shown in the "Where this comes from" box at the foot of every answer page.
     sources: z.array(z.object({ label: z.string(), url: z.string().url() })).min(1),
     // Becomes FAQPage structured data. Two to four questions per page.

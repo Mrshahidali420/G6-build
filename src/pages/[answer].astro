@@ -4,6 +4,7 @@ import BaseLayout from '../layouts/BaseLayout.astro'
 import EntityTile from '../components/EntityTile.astro'
 import Icon from '../components/Icon.astro'
 import Video from '../components/Video.astro'
+import Countdown from '../components/Countdown.astro'
 import { SITE_NAME, SITE_URL, canonical, amazonUrl } from '../lib/site.mjs'
 import { bySlug } from '../lib/entities.mjs'
 
@@ -59,6 +60,14 @@ const jsonLd = {
       )}
     </div>
   </section>
+
+  {data.countdown && (
+    <section class="band band--glaze">
+      <div class="shell">
+        <Countdown />
+      </div>
+    </section>
+  )}
 
   <section class="band">
     <div class="shell prose article">

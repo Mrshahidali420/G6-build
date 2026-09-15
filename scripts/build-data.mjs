@@ -14,7 +14,7 @@ import { fileURLToPath } from 'node:url'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 const DATA_DIR = join(ROOT, 'data')
-const OUT_FILE = join(ROOT, 'src', 'content', 'entities.json')
+const OUT_FILE = join(ROOT, 'src', 'data', 'entities.json')
 const REPORT_FILE = join(ROOT, 'data', '_build-report.json')
 
 const MIN_LONG_DESCRIPTION_WORDS = 60
@@ -219,7 +219,7 @@ writeFileSync(
   'utf8',
 )
 
-phase(`wrote ${entities.length} entities to src/content/entities.json`)
+phase(`wrote ${entities.length} entities to src/data/entities.json`)
 console.log('[build-data] by type:', byType)
 
 if (rejected.length) {

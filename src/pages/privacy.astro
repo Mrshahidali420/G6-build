@@ -1,0 +1,117 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import { SITE_NAME, SITE_URL } from '../lib/site.mjs'
+
+const description = `The privacy policy for ${SITE_NAME}: what data is collected, the cookies advertising partners set, how Google uses them, and how to turn personalised ads off.`
+const EMAIL = 'hello@gta6record.com'
+const UPDATED = '15 September 2026'
+---
+<BaseLayout title="Privacy policy" description={description} path="/privacy" updated={UPDATED}>
+  <h1>Privacy policy</h1>
+
+  <p class="lede">Last updated {UPDATED}. This policy covers {SITE_URL}.</p>
+
+  <h2>The short version</h2>
+  <p>
+    This site does not ask you for your name, your email address, or any account.
+    There is no login and no newsletter. The only personal data that reaches the
+    site is what your browser sends automatically, plus whatever our advertising
+    partners collect through cookies.
+  </p>
+
+  <h2>What is collected</h2>
+  <ul>
+    <li>
+      <strong>Server records.</strong> Our host records ordinary request data such
+      as your IP address, the page asked for, the time, and your browser type.
+      This is used to keep the site running and to spot abuse.
+    </li>
+    <li>
+      <strong>Advertising data.</strong> Third party advertising partners may set
+      cookies and read device identifiers. This is explained below.
+    </li>
+    <li>
+      <strong>Email you send us.</strong> If you email us, we keep the message so
+      we can reply. Nothing more is done with it.
+    </li>
+  </ul>
+  <p>We do not sell personal data. We do not build profiles of readers ourselves.</p>
+
+  <h2>Cookies</h2>
+  <p>
+    A cookie is a small file a website stores in your browser. This site sets no
+    cookies of its own. Cookies you may still receive here come from our
+    advertising partners.
+  </p>
+
+  <h2>Google and advertising</h2>
+  <ul>
+    <li>Third party vendors, including Google, use cookies to serve adverts based on your earlier visits to this and other websites.</li>
+    <li>
+      Google's use of advertising cookies lets it and its partners serve adverts to
+      you based on your visits to this and other sites. You can turn personalised
+      advertising off in
+      <a href="https://www.google.com/settings/ads" rel="nofollow noopener" target="_blank">Google Ads Settings</a>.
+    </li>
+    <li>
+      You can opt out of personalised advertising from many other vendors at
+      <a href="https://www.aboutads.info/choices/" rel="nofollow noopener" target="_blank">aboutads.info</a>.
+    </li>
+    <li>
+      Google's own policy is at
+      <a href="https://policies.google.com/technologies/partner-sites" rel="nofollow noopener" target="_blank">policies.google.com</a>.
+    </li>
+  </ul>
+
+  <h2>Shopping links</h2>
+  <p>
+    Some pages contain links to shops, including the Amazon Associates programme.
+    If you buy something after following one of those links, this site may earn a
+    commission. It costs you nothing extra. Those shops set their own cookies to
+    track the referral, and their own privacy policies apply once you leave here.
+  </p>
+  <p>
+    A paid link never changes what is written on a page. Facts are not upgraded
+    because a link next to them pays.
+  </p>
+
+  <h2>Your choices</h2>
+  <ul>
+    <li>Block or delete cookies in your browser settings at any time. The site still works.</li>
+    <li>Use the opt-out links above to stop personalised advertising.</li>
+    <li>Email us to ask what we hold about you, or to ask us to delete an email you sent.</li>
+  </ul>
+
+  <h2>If you are in the EU, the UK, or California</h2>
+  <p>
+    You have rights over your personal data, including the right to see it, to
+    correct it, to have it deleted, and to object to it being used for
+    advertising. To use any of those rights, email
+    <a href={`mailto:${EMAIL}`}>{EMAIL}</a>. We answer within 30 days.
+  </p>
+
+  <h2>Children</h2>
+  <p>
+    This site is not aimed at children under 13 and we do not knowingly collect
+    data from them. If you believe a child has sent us personal data, email us and
+    it will be deleted.
+  </p>
+
+  <h2>Other sites</h2>
+  <p>
+    Every page here links out to its sources. Once you follow a link, you are on
+    someone else's site and their privacy policy applies, not this one.
+  </p>
+
+  <h2>Changes</h2>
+  <p>
+    If this policy changes, the date at the top changes with it. Material changes
+    will be noted on this page rather than made quietly.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Privacy questions go to <a href={`mailto:${EMAIL}`}>{EMAIL}</a>. General
+    questions go through the <a href="/contact">contact page</a>.
+  </p>
+</BaseLayout>

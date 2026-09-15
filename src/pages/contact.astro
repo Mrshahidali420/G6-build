@@ -1,0 +1,50 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import { SITE_NAME } from '../lib/site.mjs'
+
+const description = `How to reach ${SITE_NAME}, report a wrong Grand Theft Auto VI fact, send a correction with its source, or ask about advertising and business enquiries.`
+const EMAIL = 'hello@gta6record.com'
+---
+<BaseLayout title="Contact" description={description} path="/contact">
+  <h1>Contact</h1>
+
+  <p class="lede">
+    One inbox, read by a person. Email <a href={`mailto:${EMAIL}`}>{EMAIL}</a>.
+  </p>
+
+  <h2>Reporting a wrong fact</h2>
+  <p>
+    This is the most useful message you can send. To make it quick to act on,
+    include three things:
+  </p>
+  <ul>
+    <li>The address of the page.</li>
+    <li>The sentence you believe is wrong.</li>
+    <li>A link to a source that shows the right answer.</li>
+  </ul>
+  <p>
+    Corrections with a source go up the same day. Corrections without a source
+    still get looked at, they just take longer.
+  </p>
+
+  <h2>Other enquiries</h2>
+  <ul>
+    <li>Advertising and sponsorship.</li>
+    <li>Press and interview requests.</li>
+    <li>Rights questions about anything shown on the site.</li>
+  </ul>
+  <p>Use the same address. Put the subject in the first line.</p>
+
+  <h2>What we cannot help with</h2>
+  <ul>
+    <li>Game support, refunds, or pre-order problems. Those go to Rockstar Support, PlayStation, or Xbox.</li>
+    <li>Account or billing questions for any game or store.</li>
+    <li>Requests to publish a leak or an unsourced claim.</li>
+  </ul>
+
+  <h2>Reply time</h2>
+  <p>
+    Usually within two working days. Around a Rockstar announcement it can take
+    longer, because the pages come first.
+  </p>
+</BaseLayout>

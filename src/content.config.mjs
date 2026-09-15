@@ -1,0 +1,27 @@
+import { defineCollection, z } from 'astro:content'
+import { glob } from 'astro/loaders'
+
+// Answer pages: one page, one question, one primary keyword.
+// These are hand-written. They carry the search traffic.
+const answers = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/answers' }),
+  schema: z.object({
+    title: z.string(),
+    // Unique per page. The build fails if two pages share one.
+    description: z.string().min(70).max(160),
+    keyword: z.string(),
+    order: z.number().default(50),
+    updated: z.string(),
+    // Shown in the "Where this comes from" box at the foot of every answer page.
+    sources: z.array(z.object({ label: z.string(), url: z.string().url() })).min(1),
+    // Becomes FAQPage structured data. Two to four questions per page.
+    faq: z
+      .array(z.object({ q: z.string(), a: z.string() }))
+      .min(2)
+      .max(6),
+    // Entity pages this answer links to, by slug. Enforces the linking rule.
+    related: z.array(z.string()).default([]),
+  }),
+})
+
+export const collections = { answers }

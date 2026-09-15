@@ -1,0 +1,78 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import { SITE_NAME } from '../lib/site.mjs'
+import { pageEntities } from '../lib/entities.mjs'
+
+const total = pageEntities.length
+const tier1 = pageEntities.filter((entity) => entity.sourceTier === 'TIER_1_OFFICIAL').length
+const description = `How ${SITE_NAME} checks every Grand Theft Auto VI fact before publishing it, what the four source levels mean, and how to tell us when something is wrong.`
+---
+<BaseLayout title="About and sources" description={description} path="/about">
+  <h1>About this site</h1>
+
+  <p class="lede">
+    Grand Theft Auto VI has not been released. Almost everything written about it
+    online is a guess repeated until it sounds like a fact. This site exists to
+    keep the two apart.
+  </p>
+
+  <h2>The one rule</h2>
+  <p>
+    Nothing is published here without a source you can click. Every entry names
+    where the fact came from and the date it was checked. If no reliable source
+    says a thing, the thing is not on the site, even when every other site has it.
+  </p>
+
+  <h2>The four source levels</h2>
+  <p>Every page carries one of these labels, in plain words, at the top.</p>
+  <ul>
+    <li>
+      <strong>Official source.</strong> Rockstar Games, Take-Two, the PlayStation
+      Store, or the Xbox Store said it themselves. This is the strongest level.
+      {tier1} of the {total} entries on this site sit here.
+    </li>
+    <li>
+      <strong>Major press.</strong> A large publication with a named reporter
+      published it. Strong, but not the publisher's own word.
+    </li>
+    <li>
+      <strong>Community source.</strong> Players or fan researchers spotted it in
+      a trailer or a screenshot. Useful, and clearly marked as weaker.
+    </li>
+    <li>
+      <strong>No source.</strong> Nothing reaches the site at this level. It is
+      listed only so you know the scale is complete.
+    </li>
+  </ul>
+
+  <h2>What this site will not do</h2>
+  <ul>
+    <li>Publish a leak, a rumour, or a datamine as though it were a fact.</li>
+    <li>Guess a release date, a price, a file size, or a map size.</li>
+    <li>Pretend to have played a game that nobody has played.</li>
+    <li>Fill an empty field with a number copied from an older GTA game.</li>
+  </ul>
+
+  <h2>When something is wrong</h2>
+  <p>
+    Rockstar announces things often, and a page that was right in the morning can
+    be wrong by evening. Every page shows the date its source was last checked.
+    If you find something out of date or plainly wrong, the
+    <a href="/contact">contact page</a> is the fastest way to tell us, and
+    corrections go up the same day.
+  </p>
+
+  <h2>Who runs it</h2>
+  <p>
+    This is an independent site run by one person. It is not affiliated with
+    Rockstar Games or Take-Two Interactive, and it speaks for neither. All
+    trademarks belong to their owners.
+  </p>
+
+  <h2>How it pays for itself</h2>
+  <p>
+    The site shows adverts and may earn a commission on some shopping links. That
+    never changes what is written. A fact does not get upgraded because a link
+    next to it pays.
+  </p>
+</BaseLayout>

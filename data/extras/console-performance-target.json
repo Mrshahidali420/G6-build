@@ -1,0 +1,16 @@
+{
+  "slug": "console-performance-target",
+  "faq": [
+    { "q": "Does Grand Theft Auto VI run at 30fps or 60fps on PS5?", "a": "Rockstar North co-director Rob Nelson said in press interviews after the August 2026 previews that GTA VI is currently targeting 30 frames per second on PS5 and Xbox Series X|S. He would not commit to whether a 60fps option would ship at launch." },
+    { "q": "Does GTA 6 have a performance mode?", "a": "No performance mode has been confirmed. Nelson said the technical team would need to be consulted on whether a dedicated higher-framerate mode would be available at launch or added later, so this remains undecided as of the report." },
+    { "q": "What resolution does GTA 6 run at on console?", "a": "Rockstar has not confirmed a resolution target. Some outlets reported an upscaled 4K output during a presentation, but that has not been officially verified by Rockstar itself." },
+    { "q": "Is a 60fps mode planned for GTA VI later?", "a": "Rockstar has left the door open. Nelson said the option of a future 60fps mode had not been ruled out, without giving a timeline or confirming it will happen." },
+    { "q": "Will GTA 6 run the same on PS5 and Xbox Series X|S?", "a": "The reported 30fps target applies to both PS5 and Xbox Series X|S, based on the same press interviews. No PC version has been announced, so the target does not extend beyond those two consoles." }
+  ],
+  "notKnown": [
+    "Whether a 60fps performance mode will be available at launch",
+    "The final confirmed resolution on PS5 and Xbox Series X|S",
+    "Whether the frame rate target could still change before release"
+  ],
+  "howWeKnow": "This detail comes from press interviews following Rockstar's August 2026 preview showings, where Rockstar North co-director Rob Nelson discussed the 30fps target with journalists. It was reported by Push Square on 28 August 2026 and is treated here as major press coverage rather than a direct Rockstar statement, since no official performance specification has been published."
+}

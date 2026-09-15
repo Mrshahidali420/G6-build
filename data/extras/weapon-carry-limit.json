@@ -1,0 +1,16 @@
+{
+  "slug": "weapon-carry-limit",
+  "faq": [
+    { "q": "How many guns can you carry in Grand Theft Auto VI?", "a": "Up to two concealed handguns and two long guns. Rockstar North co-studio director Rob Nelson told press after the August 2026 previews that GTA VI drops the series' effectively unlimited weapon wheel in favor of this limit." },
+    { "q": "Does GTA 6 still have an unlimited weapon wheel?", "a": "No. Nelson said the old unlimited system does not work at this level of detail, and the game instead limits each protagonist to two concealed handguns and two long guns at a time." },
+    { "q": "Can you carry two rifles at once in GTA VI?", "a": "Typically only one long gun fits on the back at a time, with a second carried openly in hand. Rifles and shotguns generally must be carried in the open or stowed in a vehicle instead." },
+    { "q": "Do NPCs react to seeing guns in GTA 6?", "a": "Yes. NPCs reportedly react with suspicion or fear to characters openly holding long guns, which the record ties directly to the new carry limit and how weapons are displayed on the character." },
+    { "q": "Can you store extra weapons in your car in GTA VI?", "a": "Vehicles act as extra weapon storage beyond the two handguns and two long guns carried on the character, according to Nelson's comments to press after the Extended Look." }
+  ],
+  "notKnown": [
+    "The exact list of weapon types classified as concealable handguns versus long guns",
+    "Whether the carry limit can be increased through story progress or upgrades",
+    "How quickly NPC suspicion or fear escalates when a long gun is visibly carried"
+  ],
+  "howWeKnow": "This limit was confirmed by Rockstar North's Rob Nelson in press interviews after the 27 August 2026 Extended Look, and reported by GamingBolt on 29 August 2026. It is treated here as major press coverage of a direct developer statement rather than an official Rockstar publication."
+}

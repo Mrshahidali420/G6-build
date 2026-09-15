@@ -1,0 +1,16 @@
+{
+  "slug": "police-criminal-profile-system",
+  "faq": [
+    { "q": "How do police find you in Grand Theft Auto VI?", "a": "Press previews describe a reworked wanted system where a star level triggers only if a crime is witnessed by an NPC, reported by a victim, or caught by a security system, rather than an instant map-wide alert." },
+    { "q": "Does GTA 6 have a new evidence-based police system?", "a": "Yes, according to preview coverage. Police track what they know about a suspect through HUD icons covering face, outfit, vehicle and weapon, building an evolving profile instead of granting omniscient tracking." },
+    { "q": "Can you escape the police in GTA VI by changing clothes?", "a": "Reportedly yes. Changing outfit, hair or vehicle is described as degrading police identification, and officers stop pursuing once their information about the suspect goes stale or is invalidated." },
+    { "q": "Do police show up as dots on the minimap in GTA 6?", "a": "According to the same coverage, cops no longer show automatically as dots on the minimap during pursuits, which fits with the described shift toward evidence-based tracking rather than automatic detection." },
+    { "q": "Who described the GTA 6 police criminal profile system?", "a": "Rob Nelson described the system in interviews with outlets including IGN following the Extended Look reveal, though the record does not include his exact wording on every mechanic." }
+  ],
+  "notKnown": [
+    "How quickly a police profile goes stale after a suspect changes appearance",
+    "Whether the system works differently in rural areas of Leonida compared to Vice City",
+    "The exact range or conditions under which a security camera can trigger a star level"
+  ],
+  "howWeKnow": "This system was reported by GamesRadar on 28 August 2026, based on press previews Rockstar gave following the 27 August 2026 Extended Look, including comments from Rockstar North's Rob Nelson to outlets such as IGN. It is treated here as major press coverage rather than a direct Rockstar publication."
+}

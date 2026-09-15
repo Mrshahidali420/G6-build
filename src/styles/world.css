@@ -1,3 +1,25 @@
+/* ---------- Fonts, served from our own domain ---------- */
+/* Downloaded by scripts/fetch-fonts.mjs. Self hosting removes a third
+   party stylesheet from the critical path and two DNS lookups. */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400 800;
+  font-stretch: 100% 125%;
+  font-display: swap;
+  src: url('/fonts/archivo.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url('/fonts/source-serif-4.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 /* GTA 6 Record - visual world: glazed tile, terrazzo, brass.
    Miami civic material, in daylight. Not the neon-night category default.
    Seed key 766292e9. See DESIGN.md. */
@@ -370,3 +392,21 @@ hr.rule { border: 0; border-top: 1px solid var(--line); margin: 2.6em 0; }
 
 /* Pagefind puts its own shell in; give it the page's own edges. */
 #search .pagefind-ui__search-input { font-family: var(--body); }
+
+/* ---------- Question and answer list, used on entity pages ---------- */
+
+.qa { margin: 0; }
+.qa dt {
+  font-family: var(--display); font-stretch: 112%; font-weight: 700;
+  font-size: 1.02rem; color: var(--ink); margin-top: 22px;
+  padding-top: 18px; border-top: 1px solid var(--line);
+}
+.qa dt:first-of-type { margin-top: 0; padding-top: 0; border-top: 0; }
+.qa dd { margin: 7px 0 0; color: var(--ink-2); }
+
+/* The open questions list reads as doubt, so its marker turns clay. */
+.facts--open li::before { background: var(--clay); }
+
+/* The picture wrapper must not become an inline box, or the plate inside it
+   picks up a text baseline gap under the frame. */
+picture { display: block; }

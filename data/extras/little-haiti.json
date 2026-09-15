@@ -1,0 +1,27 @@
+{
+  "slug": "little-haiti",
+  "faq": [
+    {
+      "q": "Is Little Haiti confirmed to be in GTA 6?",
+      "a": "No. It has been suggested by community map analysis and picked up by some press coverage, but Rockstar has not named it directly, so it counts as an identification rather than a confirmed fact."
+    },
+    {
+      "q": "What is Little Haiti based on?",
+      "a": "Its suggested real-world parallel is Miami's Little Haiti neighborhood, based on visual details spotted in trailer and map material by community researchers."
+    },
+    {
+      "q": "Has Little Haiti appeared in a trailer?",
+      "a": "The record lists it as not yet shown, meaning it has not been visually confirmed in trailer footage so far."
+    },
+    {
+      "q": "How reliable is the Little Haiti identification?",
+      "a": "Coverage frames it explicitly as a finding rather than a confirmed Rockstar naming, so it should be treated as likely rather than official until Rockstar names it directly."
+    }
+  ],
+  "notKnown": [
+    "Whether Rockstar will officially confirm Little Haiti as a named district.",
+    "Little Haiti's exact location and boundaries.",
+    "Whether it will appear in future trailer footage."
+  ],
+  "howWeKnow": "Sportskeeda reported a community map-analysis finding that GTA 6's map seemingly features a Little Haiti location, based on a real-world parallel to Miami's Little Haiti. This is a community identification, not an official Rockstar naming, so confidence in this entry is lower than for press-confirmed districts."
+}

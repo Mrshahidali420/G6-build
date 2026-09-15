@@ -1,0 +1,16 @@
+{
+  "slug": "reworked-car-theft-system",
+  "faq": [
+    { "q": "Can you still hotwire cars instantly in Grand Theft Auto VI?", "a": "No, according to preview coverage. Parked cars are split into security tiers, and older cars without electronic locks require a Slim Jim tool used through a short minigame instead of an instant hotwire." },
+    { "q": "What is the key cloner in GTA 6?", "a": "The key cloner is a device reportedly needed to bypass electronic locks on newer cars with key fobs before the engine will start, replacing the simple button-press theft used in earlier games." },
+    { "q": "Can GPS-tracked cars be stolen in GTA VI?", "a": "Reportedly yes, but vehicles fitted with GPS trackers may require driving at a set speed to avoid detection, adding a risk element that older GTA games did not have for stolen vehicles." },
+    { "q": "Can you still carjack people in GTA 6?", "a": "Yes. Carjacking an occupied vehicle remains possible as in earlier games, now reported to include a quick-time struggle as the driver resists, rather than an instant pull from the car." },
+    { "q": "Is the new car theft system officially confirmed by Rockstar?", "a": "Rockstar described the changes directly to outlets during the August 2026 preview event, so this comes from press coverage of that session rather than a formal Rockstar press release." }
+  ],
+  "notKnown": [
+    "The exact speed threshold needed to avoid detection in a GPS-tracked vehicle",
+    "How difficult the Slim Jim and key cloner minigames are, or whether they can fail",
+    "Whether every vehicle in the game falls into one of the described security tiers"
+  ],
+  "howWeKnow": "This system was reported by Kotaku on 28 August 2026, based on coverage of Rockstar North's August 2026 press preview sessions where Rockstar described the changes directly to attending outlets. It is treated here as major press coverage rather than an official Rockstar publication."
+}

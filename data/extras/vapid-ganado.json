@@ -1,0 +1,16 @@
+{
+  "slug": "vapid-ganado",
+  "faq": [
+    { "q": "What is the Vapid Ganado in GTA 6?", "a": "It is Jason's low-riding pickup, described by Rockstar's official store as a well-worn Vapid Ganado. The Ultimate Edition includes a customized version called the Ganado Retro Build." },
+    { "q": "Is the Vapid Ganado the same as the Ganado Retro Build?", "a": "No. The base Vapid Ganado and the Ganado Retro Build are treated as separate entries here. Rockstar's official material names the Retro Build variant separately and pairs it with its own screenshot, while no separate specification sheet exists for the unmodified Ganado." },
+    { "q": "How do you get the Vapid Ganado in GTA 6?", "a": "Rockstar's official sources describe the Ganado Retro Build as an Ultimate Edition benefit, but do not give a purchase location or ordinary acquisition method for the base, unmodified Vapid Ganado." },
+    { "q": "What company makes the Vapid Ganado?", "a": "Vapid, the fictional in-game manufacturer, makes the Ganado. Rockstar's official store page confirms this by describing the Ganado Retro Build as Jason's Vapid Ganado pickup." },
+    { "q": "What are the Vapid Ganado's performance statistics and price?", "a": "Rockstar has not published performance, price, purchase location or customization limits for the base Ganado. Only its manufacturer, pickup classification and link to Jason and the Retro Build are confirmed." }
+  ],
+  "notKnown": [
+    "Performance statistics and price for the base Ganado",
+    "Purchase location or ordinary acquisition method",
+    "Customization limits separate from the Retro Build"
+  ],
+  "howWeKnow": "Rockstar's official store listing for Grand Theft Auto VI describes the Ganado Retro Build as Jason's well-worn Vapid Ganado low-riding pickup, which is where the base Ganado's name and manufacturer come from. That store page was checked on 11 September 2026, making it a current, first-party official source rather than a press report."
+}

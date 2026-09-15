@@ -1,0 +1,16 @@
+{
+  "slug": "dual-protagonist-switching",
+  "faq": [
+    { "q": "Can you switch between Jason and Lucia in Grand Theft Auto VI?", "a": "Yes. The Extended Look gameplay video, aired 27 August 2026, showed players swapping control between Jason Duval and Lucia Caminos during a shared mission, and this works during both free roam and missions." },
+    { "q": "How does character switching work in GTA 6?", "a": "It works similarly to the three-way switching system used in GTA V. Jason and Lucia are described as a fugitive couple who share money, vehicles and story beats, and the player can freely swap between them." },
+    { "q": "Is dual protagonist switching only for missions in GTA VI?", "a": "No. Rockstar and press coverage describe the switching as available during exploration and combat as well as story missions, not restricted to scripted moments." },
+    { "q": "Who talked about the character switching system in GTA 6?", "a": "Rob Nelson of Rockstar North has discussed the mechanic in interviews accompanying the Extended Look reveal, though the record does not give his exact quotes on how switching is triggered in the open world." },
+    { "q": "Are there more than two playable characters in GTA VI?", "a": "The confirmed switching so far is between Jason and Lucia only. Whether other characters become playable through switching has not been said by Rockstar." }
+  ],
+  "notKnown": [
+    "The exact control method used to trigger a switch in the open world",
+    "Whether any character besides Jason and Lucia becomes playable through this system",
+    "Any limits on switching, such as location or mission-state restrictions"
+  ],
+  "howWeKnow": "This feature was confirmed directly by Rockstar in the Extended Look gameplay video published on the official Rockstar Games newswire on 27 August 2026. Rob Nelson of Rockstar North also discussed it in interviews tied to the same reveal, making this an official, first-party confirmation rather than a press report."
+}

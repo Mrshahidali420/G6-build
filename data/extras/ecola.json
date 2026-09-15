@@ -1,0 +1,16 @@
+{
+  "slug": "ecola",
+  "faq": [
+    { "q": "Is eCola in Grand Theft Auto VI?", "a": "Yes. eCola returns in GTA 6, placed on signage and vending machines around Vice City, next to its rival Sprunk, according to press coverage of the trailers." },
+    { "q": "What is eCola's rivalry with Sprunk?", "a": "eCola has been the in-universe rival to Sprunk since Grand Theft Auto: Vice City in 2002, with a pairing that mirrors the real Coca-Cola and Pepsi rivalry, red branding included." },
+    { "q": "Is eCola based on a real soda brand?", "a": "eCola's rivalry with Sprunk mirrors the real Coca-Cola versus Pepsi rivalry, and the record lists Pepsi as its real-world basis." },
+    { "q": "Can players buy eCola in GTA 6?", "a": "Do not expect a mission, a shop, or anything interactive. None has been shown, so eCola is currently only confirmed on machines, billboards, and shop fronts." },
+    { "q": "How was eCola confirmed for GTA 6?", "a": "Press coverage placed eCola on signage and vending machines in trailer footage, which is identification of background art rather than a direct Rockstar statement." }
+  ],
+  "notKnown": [
+    "Whether eCola has any interactive shop, mission, or usable mechanic.",
+    "Full list of locations carrying eCola signage or machines.",
+    "Any packaging or flavor details beyond background appearances."
+  ],
+  "howWeKnow": "eCola's presence traces back to Trailer 1, released 5 December 2023, with continued appearances noted in later trailer coverage. The gta.fandom.com wiki entry for Sprunk documents eCola's rivalry and history. This is press-reported identification of background trailer art, not a dedicated Rockstar statement."
+}

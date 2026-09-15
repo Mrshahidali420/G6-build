@@ -2,28 +2,40 @@
 // One picture slot for one entry. A real photo if we have one, a poured
 // terrazzo plate if we do not. Never an empty grey box.
 import { glazeFor, chipsFor, initialsFor } from '../lib/plate.mjs'
-import { imageFor, creditFor } from '../lib/images.mjs'
+import { imageFor, creditFor, srcSetsFor } from '../lib/images.mjs'
 
-const { entity, className = '', eager = false, chipCount = 13 } = Astro.props
+const {
+  entity,
+  className = '',
+  eager = false,
+  chipCount = 13,
+  sizes = '(max-width: 760px) 100vw, 360px',
+} = Astro.props
 
 const photo = imageFor(entity.slug)
 const credit = creditFor(entity.slug)
+const sets = srcSetsFor(entity.slug)
 const glaze = glazeFor(entity.entityType)
 const chips = chipsFor(entity.slug, chipCount)
 const initials = initialsFor(entity.name)
 const clip = `plate-${entity.slug}`
 ---
 {photo ? (
-  <img
-    class={`tile__plate ${className}`}
-    src={photo}
-    alt={`${entity.name} in Grand Theft Auto VI`}
-    loading={eager ? 'eager' : 'lazy'}
-    decoding="async"
-    width="1280"
-    height="720"
-    data-credit={credit}
-  />
+  <picture>
+    {sets?.avif && <source type="image/avif" srcset={sets.avif} sizes={sizes} />}
+    {sets?.webp && <source type="image/webp" srcset={sets.webp} sizes={sizes} />}
+    <img
+      class={`tile__plate ${className}`}
+      src={photo}
+      alt={`${entity.name} in Grand Theft Auto VI`}
+      loading={eager ? 'eager' : 'lazy'}
+      decoding="async"
+      fetchpriority={eager ? 'high' : undefined}
+      width="1280"
+      height="720"
+      data-credit={credit}
+    />
+  </picture>
 ) : (
   <svg
     class={`tile__plate ${className}`}

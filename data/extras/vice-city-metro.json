@@ -1,0 +1,26 @@
+{
+  "slug": "vice-city-metro",
+  "faq": [
+    {
+      "q": "Is there a metro system in GTA 6?",
+      "a": "Yes. A metro system appears in official trailer material, with at least one station identifiable in shots of Vice City."
+    },
+    {
+      "q": "Can players ride the Vice City Metro?",
+      "a": "Not known. Press coverage confirms the metro's visual presence but notes that Rockstar has not clarified whether it will function as rideable transit, a fast-travel option, or background set dressing."
+    },
+    {
+      "q": "What is the Vice City Metro based on?",
+      "a": "Its real-world basis is the Miami-Dade Metrorail and Metromover system."
+    },
+    {
+      "q": "How many stations does the Vice City Metro have?",
+      "a": "The record confirms at least one station visible in trailer footage, but a full station count is not given."
+    }
+  ],
+  "notKnown": [
+    "Whether the metro is rideable, a fast-travel tool, or purely background set dressing.",
+    "The total number of metro stations in the finished game."
+  ],
+  "howWeKnow": "ScreenRant's location breakdown of official GTA 6 trailer material confirmed the visual presence of a metro system in Vice City. Rockstar has shown the system on screen but has not clarified its gameplay role, so this record is press-reported rather than fully confirmed."
+}

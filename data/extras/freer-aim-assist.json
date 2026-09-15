@@ -1,0 +1,16 @@
+{
+  "slug": "freer-aim-assist",
+  "faq": [
+    { "q": "Does Grand Theft Auto VI have aim lock on by default?", "a": "Preview coverage reports that GTA VI moves away from the heavy auto-lock-on aiming used by default in earlier titles. Instead it reportedly uses a lighter, adjustable aim-assist with some stickiness." },
+    { "q": "Can you turn off aim assist in GTA 6?", "a": "The record does not say whether aim assist can be fully disabled. It only reports that the default behavior is lighter than before and that players can adjust it, without listing specific settings." },
+    { "q": "What combat changes has GTA VI made to shooting?", "a": "Alongside the lighter aim-assist, cinematic kill and crash camera options are reported as toggleable. Both details come from outlet coverage of hands-off preview sessions rather than a direct Rockstar statement." },
+    { "q": "Is the new aim assist system officially confirmed by Rockstar?", "a": "No. This detail was relayed through press coverage of the August 2026 preview sessions, not a direct Rockstar statement, so the exact settings and defaults could still change before release." },
+    { "q": "How does GTA 6 aiming compare to GTA V?", "a": "GTA V used a heavier auto-lock by default. GTA VI is reported to replace that with a lighter, adjustable assist, though the record does not detail how the two compare mechanically beyond that." }
+  ],
+  "notKnown": [
+    "The exact default aim-assist settings at launch",
+    "Whether hard auto-lock remains available as an optional setting",
+    "How cinematic camera toggles interact with aiming during combat"
+  ],
+  "howWeKnow": "This information comes from press coverage of Rockstar North's hands-off preview sessions in August 2026, reported by GTAboom on 29 August 2026. It is press-reported rather than a direct Rockstar statement, so it is treated here as major press coverage that could still change before launch."
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "the-marina",
+  "faq": [
+    {
+      "q": "Is The Marina confirmed to be in GTA 6?",
+      "a": "The Marina is treated by outlets as a confirmed but still loosely bounded district, visible in Trailer 2, though it lacks a dedicated Rockstar Newswire naming."
+    },
+    {
+      "q": "What makes The Marina different from Vice City's beach districts?",
+      "a": "It is described as a quieter, wealthier waterfront section with boats, jet skis and luxury properties, contrasting with the neon nightlife of the beach districts."
+    },
+    {
+      "q": "Where exactly is The Marina located in Vice City?",
+      "a": "Not known. No official map, exact borders or full name have been published by Rockstar for this area."
+    },
+    {
+      "q": "What confidence level does this entry have?",
+      "a": "Confidence is medium, reflecting press-only sourcing rather than a first-party Rockstar confirmation."
+    }
+  ],
+  "notKnown": [
+    "The Marina's exact map boundaries.",
+    "The district's official in-game name.",
+    "Whether Rockstar will publish a dedicated naming for it."
+  ],
+  "howWeKnow": "PCGamesN's map coverage of GTA 6 described The Marina from footage in Trailer 2, released 6 May 2026, as a quieter waterfront district. Rockstar has not published a dedicated naming for it, so this entry is press-reported with medium confidence."
+}

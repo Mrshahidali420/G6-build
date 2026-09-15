@@ -38,10 +38,25 @@ export function entitySchema(entity, path) {
     isPartOf: GAME,
   }
 
+  // Only entries that carry a hand written question set get a FAQPage node.
+  // An empty or invented FAQ is worse than none, so this stays conditional.
+  const faqNode = entity.faq?.length
+    ? {
+        '@type': 'FAQPage',
+        '@id': `${canonical(path)}#faq`,
+        mainEntity: entity.faq.map((item) => ({
+          '@type': 'Question',
+          name: item.q,
+          acceptedAnswer: { '@type': 'Answer', text: item.a },
+        })),
+      }
+    : null
+
   return {
     '@context': 'https://schema.org',
     '@graph': [
       node,
+      ...(faqNode ? [faqNode] : []),
       {
         '@type': 'WebPage',
         '@id': canonical(path),

@@ -1,0 +1,16 @@
+{
+  "slug": "optional-romance-system",
+  "faq": [
+    { "q": "Can Jason and Lucia date in Grand Theft Auto VI?", "a": "Yes, but it is optional. Press coverage following the August 2026 previews reports that both characters begin the story with romantic interest, and whether that grows into a relationship depends on player choices." },
+    { "q": "How do you build the relationship between Jason and Lucia in GTA 6?", "a": "The relationship deepens through time spent together in the open world, such as shopping, salon visits, gym sessions or joint robberies, rather than through main missions alone. Ignoring calls or texts can weaken it." },
+    { "q": "Do Jason and Lucia have to be a couple in GTA VI?", "a": "No. Rob Nelson of Rockstar said the two will always remain partners in crime regardless of the player's choices, so the relationship can stay strictly criminal instead of romantic." },
+    { "q": "Does the romance system in GTA 6 affect gameplay stats?", "a": "Nelson framed romance as affecting narrative and roleplay options rather than gameplay stat bonuses, though the record does not list every specific outcome tied to the relationship level." },
+    { "q": "What happens if you ignore Lucia or Jason's messages in GTA 6?", "a": "Ignoring calls or texts from the other character can weaken the relationship. Spending time together afterward can rebuild it, according to the same press coverage." }
+  ],
+  "notKnown": [
+    "The exact scale or meter used to track the relationship level",
+    "Every specific narrative or roleplay outcome tied to a romantic versus platonic relationship",
+    "Whether relationship choices affect the story's ending"
+  ],
+  "howWeKnow": "This detail was reported by Vice on 28 August 2026, drawing on press coverage of the August 2026 preview sessions and comments from Rockstar North's Rob Nelson given around the 27 August 2026 Extended Look. It is treated as major press coverage rather than an official Rockstar statement."
+}

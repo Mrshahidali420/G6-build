@@ -53,9 +53,11 @@ body text. `--brass` itself fails as text, which is why `--brass-ink` exists.
 - Headings run wide (`font-stretch` 112% to 125%), tight letter spacing.
 - Numbers are `tabular-nums` everywhere so dates and counts line up.
 
-Fonts come from Google Fonts. `public/_headers` must keep
-`fonts.googleapis.com` in `style-src` and `fonts.gstatic.com` in `font-src`,
-or the whole type system silently falls back.
+Both faces are self hosted as variable woff2 in `public/fonts/`, preloaded in
+`BaseLayout.astro` and declared at the top of `src/styles/world.css`. Nothing
+type related is fetched from a third party, so `font-src` in `public/_headers`
+is `'self'` only. `scripts/fetch-fonts.mjs` re-downloads them if a face ever
+needs refreshing. It is run by hand, never in the build.
 
 ## Structure
 
@@ -113,6 +115,13 @@ To add a real image: drop `<slug>.jpg` into `public/img/entities/` and add a
 credit line to `credits.json` in that folder. No code change. The plate is
 replaced automatically and the figcaption switches from the plate explanation
 to the credit.
+
+`scripts/build-images.mjs` runs before every build and writes AVIF and WebP
+copies at 640px and 1280px into `public/img/entities/r/`. The subfolder matters:
+`src/lib/images.mjs` maps top level file names to slugs, so a derived file at
+the top level would be read as an entity of its own. `Plate.astro` emits a
+`<picture>` and the .jpg stays the fallback, so a browser that reads neither
+format still gets an image.
 
 Official Rockstar press images are approved for entity pages. Every shipping
 raster must carry its provenance in `credits.json`.

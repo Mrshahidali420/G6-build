@@ -203,6 +203,24 @@ for (const row of bySlug.values()) {
   })
 }
 
+// Hand written extras, one file per slug in data/extras/. These hold the
+// question and answer pairs, the open questions, and the provenance note that
+// the CSV rows have no column for. A missing file is normal, not an error.
+const EXTRAS_DIR = join(ROOT, 'data', 'extras')
+let extrasCount = 0
+for (const entity of entities) {
+  let extra
+  try {
+    extra = JSON.parse(readFileSync(join(EXTRAS_DIR, `${entity.slug}.json`), 'utf8'))
+  } catch {
+    continue
+  }
+  if (Array.isArray(extra.faq) && extra.faq.length) entity.faq = extra.faq
+  if (Array.isArray(extra.notKnown) && extra.notKnown.length) entity.notKnown = extra.notKnown
+  if (typeof extra.howWeKnow === 'string' && extra.howWeKnow.trim()) entity.howWeKnow = extra.howWeKnow.trim()
+  extrasCount += 1
+}
+
 entities.sort((a, b) => a.entityType.localeCompare(b.entityType) || a.name.localeCompare(b.name))
 
 mkdirSync(dirname(OUT_FILE), { recursive: true })
@@ -220,6 +238,7 @@ writeFileSync(
 )
 
 phase(`wrote ${entities.length} entities to src/data/entities.json`)
+phase(`${extrasCount} of ${entities.length} entities have a data/extras file`)
 console.log('[build-data] by type:', byType)
 
 if (rejected.length) {

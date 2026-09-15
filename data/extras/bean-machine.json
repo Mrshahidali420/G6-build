@@ -1,0 +1,16 @@
+{
+  "slug": "bean-machine",
+  "faq": [
+    { "q": "Is Bean Machine a real brand or a GTA 6 brand?", "a": "Bean Machine is a fictional coffee brand referenced among Grand Theft Auto VI's documented consumable items, not a real company." },
+    { "q": "Where did the Bean Machine name come from?", "a": "It is listed by fan-maintained item databases as part of a wider set of food and drink brands documented from trailer and screenshot material for GTA 6." },
+    { "q": "Has Rockstar confirmed Bean Machine in GTA 6?", "a": "Not directly. Coverage of this brand comes mainly from fan-maintained item databases rather than a dedicated Rockstar Newswire post or clearly legible trailer signage." },
+    { "q": "Can you drink Bean Machine coffee in GTA 6?", "a": "That is not known. The record identifies it as a consumable item brand, but whether it functions as a drinkable in-game item has not been confirmed." },
+    { "q": "Is Bean Machine as prominent as Sprunk in GTA 6?", "a": "No. Coverage of Bean Machine is thinner than for headline names like Sprunk or Burger Shot, with limited visual confirmation in trailer material." }
+  ],
+  "notKnown": [
+    "Whether Bean Machine appears as an interactive consumable in the finished game.",
+    "Any location, store front, or vending presence for the brand.",
+    "Direct Rockstar confirmation beyond fan-maintained item databases."
+  ],
+  "howWeKnow": "Bean Machine is documented by gtacodex.com, a fan-maintained item database, as part of a broader list of Grand Theft Auto VI consumable brands drawn from trailer and screenshot material. This is community-level sourcing rather than a Rockstar statement or major press report, so confidence in the details here is lower than for widely covered brands."
+}

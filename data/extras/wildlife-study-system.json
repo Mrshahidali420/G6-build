@@ -1,0 +1,16 @@
+{
+  "slug": "wildlife-study-system",
+  "faq": [
+    { "q": "Can you pet dogs in Grand Theft Auto VI?", "a": "According to a community preview roundup, yes. Dogs are reportedly pettable, with convenience-store treats available to feed them, though this has not been independently verified against a primary press source." },
+    { "q": "Does GTA 6 have an animal checklist like Red Dead Redemption 2?", "a": "A community roundup reports a wildlife system where species encountered at the zoo or in the wild can be studied and added to a checklist, comparable to the animal compendium in Red Dead Redemption 2." },
+    { "q": "Where do you find wildlife to study in GTA VI?", "a": "The reported system ties wildlife study to the game's zoo location as well as animals encountered in the wider open world, according to the same community summary of press previews." },
+    { "q": "Is the wildlife checklist confirmed directly by Rockstar?", "a": "No. This information comes from GTABase, a community site summarizing multiple outlets' hands-off previews, and has not been independently verified against a primary press source by this researcher." },
+    { "q": "Can you buy treats for animals in GTA 6?", "a": "The same roundup describes convenience-store treats as available to feed pettable dogs, though the record does not say whether treats apply to any animals beyond dogs." }
+  ],
+  "notKnown": [
+    "Whether the wildlife checklist is confirmed by any primary press outlet or Rockstar itself",
+    "The full list of species included in the checklist system",
+    "Whether petting or feeding animals affects gameplay beyond the checklist"
+  ],
+  "howWeKnow": "This system was reported by the community site GTABase on 31 August 2026, summarizing hands-off previews from multiple outlets rather than a single verified press source. It has not been independently checked against a primary outlet, so it is treated as community-level sourcing rather than confirmed press reporting."
+}

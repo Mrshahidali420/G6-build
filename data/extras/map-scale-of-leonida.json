@@ -1,0 +1,16 @@
+{
+  "slug": "map-scale-of-leonida",
+  "faq": [
+    { "q": "How big is the map in Grand Theft Auto VI?", "a": "Outlets reported after the August 2026 preview sessions that the full Leonida map is roughly three times the size of Red Dead Redemption 2's playable world, and about twice the size of GTA V's Los Santos and Blaine County combined." },
+    { "q": "Is Vice City bigger than Los Santos in GTA 6?", "a": "Yes, according to the same reports. Vice City itself was described as roughly twice the size of Los Santos, before counting the wider urbanized area around it." },
+    { "q": "How much bigger is Leonida's urban area than GTA V's map?", "a": "The wider urbanized area, including satellite towns, was described as around eleven times larger than GTA V's populated area, though this figure applies to developed land rather than the entire map." },
+    { "q": "Who confirmed the size of the GTA 6 map?", "a": "The figures were relayed by Rockstar developers to journalists, including outlets such as the New York Times and YouTuber TGG, during hands-off preview events in August 2026, rather than published as an official spec sheet." },
+    { "q": "Is the exact square mileage of the GTA 6 map known?", "a": "No. The record only gives comparative size figures against Red Dead Redemption 2 and GTA V. Rockstar has not published an exact area measurement for Leonida." }
+  ],
+  "notKnown": [
+    "The exact square mileage or area figure for the full Leonida map",
+    "How much of the map is accessible at the start of the game versus unlocked later",
+    "Whether the size comparisons refer to explorable land only or include water and unreachable areas"
+  ],
+  "howWeKnow": "These comparisons were reported by Video Games Chronicle on 28 August 2026, based on figures Rockstar developers relayed to press at hands-off preview events following the 27 August 2026 Extended Look. This is major press coverage of information Rockstar shared informally, not a published official spec."
+}

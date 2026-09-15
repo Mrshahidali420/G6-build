@@ -1,0 +1,31 @@
+{
+  "slug": "downtown-vice-city",
+  "faq": [
+    {
+      "q": "Is Downtown Vice City confirmed by Rockstar?",
+      "a": "Not directly. It has appeared in Trailer 2 footage and press describes it as the financial core of the city, but Rockstar has not named or described the district in any official material."
+    },
+    {
+      "q": "What is Downtown Vice City based on in real life?",
+      "a": "Press outlets say it is modeled on Miami's Brickell financial district, with an ultramodern glass tower skyline recreated from trailer footage compared against real Miami photography."
+    },
+    {
+      "q": "Are Ten Museum Park and the Grayson Hotel in GTA 6?",
+      "a": "Press reports point to buildings resembling Ten Museum Park and the Grayson Hotel, cited as real Miami structures closely recreated based on frame comparisons of trailer footage."
+    },
+    {
+      "q": "What are the exact boundaries of Downtown Vice City?",
+      "a": "Not known. Rockstar has not named or mapped the district, so its exact boundaries, buildings and in-game name have not been confirmed."
+    },
+    {
+      "q": "When was Downtown Vice City first shown?",
+      "a": "It appeared in Trailer 2, released 6 May 2026, in skyline shots of the city."
+    }
+  ],
+  "notKnown": [
+    "The district's official in-game name.",
+    "Exact boundaries of Downtown Vice City.",
+    "Full list of real Miami buildings recreated there."
+  ],
+  "howWeKnow": "This entry is built from press reporting, not an official Rockstar source. Miami New Times compared Trailer 2 footage, released 6 May 2026, against real Miami photography to identify the district and its buildings. Confidence is medium because it rests on frame-by-frame press analysis rather than a Rockstar Newswire naming."
+}

@@ -1,0 +1,16 @@
+{
+  "slug": "shared-joint-bank-account",
+  "faq": [
+    { "q": "Do Jason and Lucia share money in Grand Theft Auto VI?", "a": "A community roundup reports that they do, describing a single shared bank account between the two characters. This has not been independently checked against a primary press source, so it is treated as a community compilation." },
+    { "q": "How do you deposit cash in GTA 6?", "a": "The same roundup states that cash must be deposited manually at an ATM into the shared joint account, rather than through the phone as in GTA V's Cayo Perico update." },
+    { "q": "What happens to your cash if you die or get arrested in GTA VI?", "a": "According to the roundup, physical cash carried by either protagonist is lost if the character is killed or arrested, which gives a reason to bank cash at an ATM rather than carry it." },
+    { "q": "Is the shared bank account feature officially confirmed by Rockstar?", "a": "No. This comes from GTABase, a community site that compiled the claim from multiple press previews including IGN, Famitsu and the New York Times, and it has not been independently verified against a primary source here." },
+    { "q": "Can Jason and Lucia have separate bank accounts in GTA 6?", "a": "The record describes only a single shared joint account between the two, with no mention of separate individual accounts." }
+  ],
+  "notKnown": [
+    "Whether this claim has been independently confirmed by any single primary press outlet",
+    "Whether there is any way to access money other than a physical ATM visit",
+    "Whether the shared account persists if the story ever separates Jason and Lucia"
+  ],
+  "howWeKnow": "This detail comes from a community-compiled feature roundup published by GTABase on 31 August 2026, which the site says draws on multiple press previews including IGN, Famitsu and the New York Times. It has not been independently checked against a primary outlet, so it is treated as community-level sourcing rather than verified press reporting."
+}

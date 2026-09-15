@@ -1,0 +1,16 @@
+{
+  "slug": "six-star-wanted-system",
+  "faq": [
+    { "q": "How many wanted stars does Grand Theft Auto VI have?", "a": "Six. Rockstar North co-studio head Rob Nelson confirmed to press after the August 2026 previews that the wanted system returns to a six-star maximum, up from GTA V's five-star cap." },
+    { "q": "Is the six-star system the same as older GTA games?", "a": "It returns to a maximum last seen in earlier era GTA titles, replacing GTA V's five stars. The record does not detail exactly how star-by-star behavior compares to those older games." },
+    { "q": "What happens at six stars in GTA 6?", "a": "Six stars is described as producing a high-chaos, heavily armed police response, while one star is described as easy to shake, showing a wide gap in intensity across the scale." },
+    { "q": "Where was the GTA 6 wanted system shown?", "a": "The system was demonstrated during the 27 August 2026 Extended Look and detailed further in hands-off preview sessions Rockstar gave to outlets including IGN and GamesRadar in late August 2026." },
+    { "q": "How does the six-star system relate to the new police profile system in GTA VI?", "a": "The record lists the Police Criminal Profile System as a related entity, suggesting the two work together, though it does not spell out the exact mechanical link between star escalation and evidence tracking." }
+  ],
+  "notKnown": [
+    "The exact police response behavior at each of the six star levels",
+    "How the star system interacts mechanically with the Police Criminal Profile System",
+    "Whether the six-star cap can be exceeded through special story or mission scenarios"
+  ],
+  "howWeKnow": "This was confirmed by Rockstar North's Rob Nelson in press interviews following the 27 August 2026 Extended Look, and reported by GamesRadar on 28 August 2026 based on hands-off preview sessions given to outlets including IGN. It is treated here as major press coverage of a developer statement, not a formal Rockstar publication."
+}

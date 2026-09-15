@@ -1,0 +1,16 @@
+{
+  "slug": "store-robbery-system",
+  "faq": [
+    { "q": "Can you rob stores in Grand Theft Auto VI?", "a": "Reportedly yes. Outlets covering Rockstar North's August 2026 preview sessions say most stores across Leonida, including convenience stores and jewelry shops, can be robbed in free roam, not just in scripted heist missions." },
+    { "q": "How was store robbery demonstrated in GTA 6 previews?", "a": "Press demonstrations showed a jewelry store robbery in which Jason and Lucia wore masks, controlled staff and customers, and collected valuables, with a security camera and later police response affecting the escape." },
+    { "q": "What happens to stolen goods in GTA VI?", "a": "Stolen goods are reportedly sold through fence characters rather than deposited directly as cash, which the record notes as a distinct step separate from carrying money." },
+    { "q": "Is the store robbery system confirmed by Rockstar directly?", "a": "No. These details come from hands-off press previews rather than a Rockstar press release, so the exact scope of which stores can be robbed at launch is not yet independently verified by Rockstar itself." },
+    { "q": "Can you rob any store in Leonida or just specific ones?", "a": "Press coverage describes it as covering most stores in Leonida, not only scripted heist missions, though the record does not list a complete or exact set of robbable locations." }
+  ],
+  "notKnown": [
+    "The complete list of store types that can be robbed at launch",
+    "How much money or value a typical robbery yields",
+    "Whether repeated robberies increase difficulty or police response over time"
+  ],
+  "howWeKnow": "This system was reported by Game Rant on 29 August 2026, based on hands-off press previews of Rockstar North's August 2026 demonstration sessions, which included a shown jewelry store robbery. It is treated as major press coverage rather than an official Rockstar statement, since Rockstar itself has not published the full scope."
+}

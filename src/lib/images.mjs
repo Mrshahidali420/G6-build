@@ -46,3 +46,31 @@ export const creditSourceFor = (slug) => {
   const entry = credits[String(slug).toLowerCase()]
   return entry && typeof entry === 'object' ? (entry.source ?? null) : null
 }
+
+// Derived copies written by scripts/build-images.mjs into the r/ subfolder.
+// They are smaller than the .jpg but not every browser reads them, so the .jpg
+// stays the fallback and this only adds the extra <source> lines when the
+// files are actually on disk.
+const DERIVED_WIDTHS = [640, 1280]
+
+let derived = []
+try {
+  derived = fs.readdirSync(path.join(dir, 'r'))
+} catch {
+  derived = []
+}
+const derivedSet = new Set(derived)
+
+const setFor = (slug, ext) => {
+  const parts = DERIVED_WIDTHS
+    .filter((w) => derivedSet.has(`${slug}-${w}.${ext}`))
+    .map((w) => `/img/entities/r/${slug}-${w}.${ext} ${w}w`)
+  return parts.length ? parts.join(', ') : null
+}
+
+export const srcSetsFor = (slug) => {
+  const key = String(slug).toLowerCase()
+  const avif = setFor(key, 'avif')
+  const webp = setFor(key, 'webp')
+  return avif || webp ? { avif, webp } : null
+}

@@ -1,0 +1,112 @@
+---
+import { getCollection } from 'astro:content'
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import { SITE_NAME, SITE_URL, canonical } from '../../lib/site.mjs'
+import { GAME } from '../../lib/schema.mjs'
+
+const posts = (await getCollection('news')).sort((a, b) => b.data.date.localeCompare(a.data.date))
+
+const path = '/news'
+const title = 'GTA 6 News'
+const description = `Every dated Grand Theft Auto VI announcement, newest first, each one with the source it came from. ${posts.length} entries plus the dates still ahead.`
+
+// Dates that have not happened yet. These are announced, not guessed.
+const upcoming = [
+  {
+    date: '12 November 2026',
+    what: 'Preload opens for digital pre-orders, one week before launch.',
+    tier: 'Press reported',
+  },
+  {
+    date: '19 November 2026',
+    what: 'Grand Theft Auto VI launches on PS5 and Xbox Series X|S, worldwide.',
+    tier: 'Confirmed by Rockstar',
+  },
+  {
+    date: '20 November 2026',
+    what: 'Last day the Vintage Vice City Pack comes free with a pre-order.',
+    tier: 'Confirmed by Rockstar',
+  },
+]
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  '@id': canonical(path),
+  url: canonical(path),
+  name: title,
+  description,
+  about: GAME,
+  isPartOf: { '@type': 'WebSite', '@id': `${SITE_URL}/#website`, name: SITE_NAME, url: SITE_URL },
+  mainEntity: {
+    '@type': 'ItemList',
+    numberOfItems: posts.length,
+    itemListElement: posts.map((post, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: post.data.title,
+      url: canonical(`/news/${post.id}`),
+    })),
+  },
+}
+
+const human = (value) =>
+  new Date(`${value}T00:00:00Z`).toLocaleDateString('en-GB', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+    timeZone: 'UTC',
+  })
+---
+<BaseLayout title={title} description={description} path={path} jsonLd={jsonLd}>
+  <h1>GTA 6 news</h1>
+  <p class="lede">
+    Every announcement that actually happened, with the date it happened and a
+    link to where it came from. No rumours, no leaks, no reposted guesses.
+  </p>
+
+  <h2>What has happened</h2>
+  <ul class="grid">
+    {posts.map((post) => (
+      <li class="card">
+        <p style="margin:0;color:var(--muted);font-size:0.9em">
+          {human(post.data.date)}
+          {' '}
+          <span style="color:var(--accent)">
+            {post.data.tier === 'TIER_1_OFFICIAL' ? 'Confirmed by Rockstar' : 'Press reported'}
+          </span>
+        </p>
+        <a href={`/news/${post.id}`}>{post.data.title}</a>
+        <p>{post.data.description}</p>
+      </li>
+    ))}
+  </ul>
+
+  <h2>What is still ahead</h2>
+  <p style="color:var(--muted)">
+    These dates are announced, not predicted. Nothing on this list is a guess.
+  </p>
+  <div class="source">
+    <ul style="margin:0;padding-left:18px">
+      {upcoming.map((item) => (
+        <li style="margin-bottom:8px">
+          <strong>{item.date}.</strong> {item.what}
+          {' '}
+          <span style="color:var(--muted)">({item.tier})</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+
+  <h2>What you will not find here</h2>
+  <p>
+    No leak roundups. No "everything we know" posts that get rewritten every
+    week. No third trailer date, because Rockstar has not given one. If a thing
+    is not dated and sourced, it does not go on this page.
+  </p>
+  <p>
+    For the facts that do not change day to day, start at
+    <a href="/gta-6-release-date">the release date page</a> or
+    <a href="/gta-6-price">the price page</a>.
+  </p>
+</BaseLayout>

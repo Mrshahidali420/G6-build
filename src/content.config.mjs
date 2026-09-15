@@ -50,4 +50,21 @@ const hubs = defineCollection({
   }),
 })
 
-export const collections = { answers, hubs }
+// News posts. One post per dated, sourced event, newest first.
+// Deliberately strict: a post needs a real date and a real source, so the
+// section can never drift into rumour reposting like every other GTA site.
+const news = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/news' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string().min(70).max(160),
+    // The day the thing actually happened, not the day we wrote it up.
+    date: z.string(),
+    updated: z.string(),
+    tier: z.enum(['TIER_1_OFFICIAL', 'TIER_2_MAJOR_PRESS']),
+    sources: z.array(z.object({ label: z.string(), url: z.string().url() })).min(1),
+    related: z.array(z.string()).default([]),
+  }),
+})
+
+export const collections = { answers, hubs, news }

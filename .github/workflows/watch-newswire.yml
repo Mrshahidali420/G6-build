@@ -1,0 +1,58 @@
+name: watch-newswire
+
+# Checks the Rockstar Newswire twice a day for new GTA 6 posts.
+# It opens an issue when it finds one. It never writes a page by itself,
+# because a page on this site has to be written and sourced by a human.
+
+on:
+  schedule:
+    - cron: '0 6,18 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Check the Newswire
+        id: check
+        run: |
+          node scripts/watch-newswire.mjs > /tmp/new.json
+          echo "count=$(node -e "console.log(JSON.parse(require('fs').readFileSync('/tmp/new.json','utf8')).length)")" >> "$GITHUB_OUTPUT"
+          cat /tmp/new.json
+
+      - name: Open an issue for each new post
+        if: steps.check.outputs.count != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          node -e "
+            const items = JSON.parse(require('fs').readFileSync('/tmp/new.json','utf8'))
+            for (const item of items) {
+              const body = ['New Rockstar Newswire post about GTA 6.', '', 'Title: ' + item.title, 'Link: ' + item.url, 'Date: ' + (item.date || 'not given'), '', 'To do:', '- [ ] Read the source.', '- [ ] Add a news post in src/content/news/ with the real date and this URL as a source.', '- [ ] Update any entity rows or answer pages the post changes.'].join('\n')
+              require('fs').appendFileSync('/tmp/issues.txt', JSON.stringify({title: 'Newswire: ' + item.title, body}) + '\n')
+            }
+          "
+          while read -r line; do
+            title=$(node -e "console.log(JSON.parse(process.argv[1]).title)" "$line")
+            body=$(node -e "console.log(JSON.parse(process.argv[1]).body)" "$line")
+            gh issue create --title "$title" --body "$body" --label newswire || true
+          done < /tmp/issues.txt
+
+      - name: Remember what was seen
+        run: |
+          if [ -n "$(git status --porcelain data/newswire-seen.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/newswire-seen.json
+            git commit -m "chore: record newswire posts seen"
+            git push
+          fi

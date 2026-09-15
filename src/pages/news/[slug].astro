@@ -1,0 +1,79 @@
+---
+import { getCollection, render } from 'astro:content'
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import { SITE_NAME, SITE_URL, canonical } from '../../lib/site.mjs'
+import { bySlug, urlFor } from '../../lib/entities.mjs'
+
+export async function getStaticPaths() {
+  const posts = await getCollection('news')
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }))
+}
+
+const { post } = Astro.props
+const { Content } = await render(post)
+const data = post.data
+const path = `/news/${post.id}`
+
+const related = data.related.map((slug) => bySlug.get(slug)).filter(Boolean)
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'NewsArticle',
+  '@id': canonical(path),
+  headline: data.title,
+  description: data.description,
+  datePublished: data.date,
+  dateModified: data.updated,
+  mainEntityOfPage: canonical(path),
+  publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+  citation: data.sources.map((source) => ({ '@type': 'WebPage', name: source.label, url: source.url })),
+}
+
+const human = new Date(`${data.date}T00:00:00Z`).toLocaleDateString('en-GB', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+  timeZone: 'UTC',
+})
+---
+<BaseLayout title={data.title} description={data.description} path={path} updated={data.updated} jsonLd={jsonLd}>
+  <p style="margin:0;color:var(--muted);font-size:0.9em">
+    <a href="/news">News</a> · {human} ·
+    <span style="color:var(--accent)">
+      {data.tier === 'TIER_1_OFFICIAL' ? 'Confirmed by Rockstar' : 'Press reported'}
+    </span>
+  </p>
+
+  <h1>{data.title}</h1>
+  <p class="lede">{data.description}</p>
+
+  <article>
+    <Content />
+  </article>
+
+  <h2>Where this comes from</h2>
+  <div class="source">
+    <ul style="margin:0;padding-left:18px">
+      {data.sources.map((source) => (
+        <li><a href={source.url} rel="nofollow noopener" target="_blank">{source.label}</a></li>
+      ))}
+    </ul>
+    <p style="margin-bottom:0;color:var(--muted)">Checked {data.updated}.</p>
+  </div>
+
+  {related.length > 0 && (
+    <>
+      <h2>Related pages</h2>
+      <ul class="grid">
+        {related.map((item) => (
+          <li class="card">
+            <a href={urlFor(item)}>{item.name}</a>
+            <p>{item.shortDescription.slice(0, 90)}</p>
+          </li>
+        ))}
+      </ul>
+    </>
+  )}
+
+  <p style="margin-top:24px"><a href="/news">Back to all news</a></p>
+</BaseLayout>

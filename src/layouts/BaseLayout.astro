@@ -1,0 +1,129 @@
+---
+import { SITE_NAME, SITE_URL, ADSENSE_CLIENT, HUB_TYPES, canonical } from '../lib/site.mjs'
+
+const {
+  title,
+  description,
+  path,
+  jsonLd = null,
+  noindex = false,
+  updated = null,
+} = Astro.props
+
+if (!description) throw new Error(`Page ${path} has no meta description. Every page needs a unique one.`)
+
+const url = canonical(path)
+const year = new Date().getFullYear()
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title} | {SITE_NAME}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={url} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={url} />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+
+    {ADSENSE_CLIENT && (
+      <script
+        async
+        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
+        crossorigin="anonymous"
+      />
+    )}
+
+    <style is:global>
+      :root {
+        --bg: #0e1013;
+        --panel: #171b21;
+        --line: #262c35;
+        --text: #e8ecf1;
+        --muted: #98a2b1;
+        --accent: #37e07a;
+        --warn: #e0b437;
+        --max: 76ch;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      }
+      a { color: var(--accent); }
+      header.site, footer.site {
+        border-bottom: 1px solid var(--line);
+        padding: 14px 20px;
+      }
+      footer.site { border-bottom: 0; border-top: 1px solid var(--line); margin-top: 48px; color: var(--muted); }
+      header.site nav { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; max-width: 1100px; margin: 0 auto; }
+      header.site .brand { font-weight: 700; color: var(--text); text-decoration: none; margin-right: 8px; }
+      header.site nav a { font-size: 14px; text-decoration: none; }
+      main { max-width: var(--max); margin: 0 auto; padding: 28px 20px 0; }
+      h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 10px; }
+      h2 { font-size: 1.25rem; margin: 34px 0 10px; }
+      .lede { color: var(--muted); font-size: 1.05rem; margin: 0 0 22px; }
+      .badge {
+        display: inline-block; font-size: 12px; padding: 3px 9px; border-radius: 99px;
+        border: 1px solid var(--line); background: var(--panel); color: var(--muted);
+      }
+      .badge.ok { color: var(--accent); border-color: #2a5f40; }
+      .badge.warn { color: var(--warn); border-color: #5f4f2a; }
+      .facts { list-style: none; padding: 0; margin: 0; }
+      .facts li { border-bottom: 1px solid var(--line); padding: 9px 0; }
+      .grid { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); padding: 0; list-style: none; }
+      .card {
+        background: var(--panel); border: 1px solid var(--line); border-radius: 10px;
+        padding: 13px 15px;
+      }
+      .card a { text-decoration: none; font-weight: 600; }
+      .card p { margin: 6px 0 0; color: var(--muted); font-size: 14px; }
+      .source { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; font-size: 14px; }
+      .source a { word-break: break-all; }
+      footer.site .inner { max-width: 1100px; margin: 0 auto; font-size: 14px; }
+    </style>
+  </head>
+  <body>
+    <header class="site">
+      <nav>
+        <a class="brand" href="/">{SITE_NAME}</a>
+        {HUB_TYPES.map((hub) => <a href={`/${hub.slug}`}>{hub.title.replace("GTA 6 ", "")}</a>)}
+      </nav>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="site">
+      <div class="inner">
+        <p>
+          {SITE_NAME}. Every fact on this site names its source.
+          {updated && <> Page checked {updated}.</>}
+        </p>
+        <p>
+          <a href="/about">About and sources</a> ·
+          <a href="/contact">Contact</a> ·
+          <a href="/privacy">Privacy</a>
+        </p>
+        <p>
+          Not affiliated with Rockstar Games or Take-Two Interactive.
+          Grand Theft Auto is a trademark of Take-Two Interactive Software, Inc.
+          &copy; {year} {SITE_URL.replace("https://", "")}
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

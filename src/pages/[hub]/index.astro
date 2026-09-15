@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import { HUB_TYPES } from '../../lib/site.mjs'
+import { entitiesOfType, urlFor } from '../../lib/entities.mjs'
+import { collectionSchema } from '../../lib/schema.mjs'
+
+export function getStaticPaths() {
+  return HUB_TYPES.map((hub) => ({
+    params: { hub: hub.slug },
+    props: { hub, items: entitiesOfType(hub.type) },
+  }))
+}
+
+const { hub, items } = Astro.props
+const path = `/${hub.slug}`
+const confirmedCount = items.filter((item) => item.confirmedStatus === 'OFFICIAL_CONFIRMED').length
+const description = `Every ${hub.title.replace('GTA 6 ', '').toLowerCase()} confirmed for Grand Theft Auto VI so far. ${items.length} entries, ${confirmedCount} confirmed by Rockstar, each one with its source.`
+---
+<BaseLayout
+  title={hub.title}
+  description={description}
+  path={path}
+  jsonLd={collectionSchema({ title: hub.title, description, path, items, urlFor })}
+>
+  <h1>{hub.title}</h1>
+  <p class="lede">{description}</p>
+
+  <ul class="grid">
+    {items.map((item) => (
+      <li class="card">
+        <a href={urlFor(item)}>{item.name}</a>
+        <p>{item.shortDescription.slice(0, 100)}</p>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>

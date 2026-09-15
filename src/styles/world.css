@@ -213,7 +213,7 @@ p { margin: 0 0 1.05em; }
   display: flex; flex-direction: column;
 }
 .tile:hover { box-shadow: var(--lift); border-color: var(--line-strong); }
-.tile__plate { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: var(--chip); max-width: 100%; }
+.tile__plate { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; background: var(--chip); max-width: 100%; }
 .tile__body { padding: 12px 14px 14px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
 .tile__title {
   font-family: var(--display); font-weight: 700; font-stretch: 112%; font-size: 1rem;
@@ -336,7 +336,7 @@ hr.rule { border: 0; border-top: 1px solid var(--line); margin: 2.6em 0; }
 .hero__text { min-width: 0; }
 .hero__plate { margin: 0; }
 .hero__img {
-  aspect-ratio: 4 / 3; width: 100%; max-width: 100%; display: block;
+  aspect-ratio: 4 / 3; width: 100%; height: auto; max-width: 100%; display: block;
   border: 3px solid var(--brass); border-radius: var(--r);
   box-shadow: 0 3px 6px rgba(10, 69, 62, 0.3), 0 16px 40px rgba(10, 69, 62, 0.35);
   object-fit: cover;

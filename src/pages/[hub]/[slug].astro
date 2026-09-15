@@ -6,7 +6,7 @@ import EntityTile from '../../components/EntityTile.astro'
 import { HUB_TYPES } from '../../lib/site.mjs'
 import { entitiesOfType, hubFor, relatedFor, urlFor, TIER_LABEL } from '../../lib/entities.mjs'
 import { entitySchema } from '../../lib/schema.mjs'
-import { imageFor, creditFor } from '../../lib/images.mjs'
+import { imageFor, creditFor, creditSourceFor } from '../../lib/images.mjs'
 
 export function getStaticPaths() {
   return HUB_TYPES.flatMap((hub) =>
@@ -22,6 +22,7 @@ const path = urlFor(entity)
 const related = relatedFor(entity)
 const photo = imageFor(entity.slug)
 const credit = creditFor(entity.slug)
+const creditSource = creditSourceFor(entity.slug)
 
 // Unique per page. Never a template with the name swapped in.
 const description = entity.shortDescription.slice(0, 155)
@@ -79,7 +80,7 @@ const description = entity.shortDescription.slice(0, 155)
         <Plate entity={entity} eager={true} className="hero__img" chipCount={17} />
         <figcaption>
           {photo
-            ? (credit ?? 'Image: Rockstar Games. Shown for reference only.')
+            ? (<>{credit ?? 'Image: Rockstar Games. Shown for reference only.'}{creditSource && <> <a href={creditSource} rel="nofollow noopener" target="_blank" style="color:inherit">Source</a>.</>}</>)
             : 'No picture of this entry has been published that we may show. The plate is drawn from its section colour.'}
         </figcaption>
       </figure>

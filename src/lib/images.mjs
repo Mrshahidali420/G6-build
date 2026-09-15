@@ -34,4 +34,15 @@ try {
 
 export const imageFor = (slug) => entityImages.get(String(slug).toLowerCase()) ?? null
 
-export const creditFor = (slug) => credits[String(slug).toLowerCase()] ?? null
+// A credit entry is either a plain line or an object with the line plus its
+// source URL and file name. Either way the page prints one string.
+export const creditFor = (slug) => {
+  const entry = credits[String(slug).toLowerCase()]
+  if (!entry) return null
+  return typeof entry === 'string' ? entry : (entry.credit ?? null)
+}
+
+export const creditSourceFor = (slug) => {
+  const entry = credits[String(slug).toLowerCase()]
+  return entry && typeof entry === 'object' ? (entry.source ?? null) : null
+}

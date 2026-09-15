@@ -1,0 +1,12 @@
+# Cloudflare Pages headers.
+# Lesson 3 from LESSONS-FROM-MANHWAINDEX.md: the AdSense allowlist goes in on
+# day one, and it gets checked in a real browser, not with a static fetch.
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), interest-cohort=()
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://partner.googleadservices.com https://tpc.googlesyndication.com https://www.googletagservices.com https://adservice.google.com https://googleads.g.doubleclick.net https://fundingchoicesmessages.google.com; frame-src https://googleads.g.doubleclick.net https://tpc.googlesyndication.com https://www.google.com; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; connect-src 'self' https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net https://csi.gstatic.com; base-uri 'self'; form-action 'self'; frame-ancestors 'self'
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable

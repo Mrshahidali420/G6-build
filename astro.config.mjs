@@ -12,7 +12,7 @@ export default defineConfig({
   integrations: [
     sitemap({
       // Utility pages carry no search value and should not be crawl budget.
-      filter: (page) => !/\/(privacy|contact)$/.test(page),
+      filter: (page) => !/\/(privacy|contact|404)$/.test(page),
     }),
   ],
 })

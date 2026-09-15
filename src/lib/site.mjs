@@ -27,4 +27,20 @@ export const HUB_TYPES = [
 // release_fact rows are evidence behind the answer pages, not pages themselves.
 export const NON_PAGE_TYPES = ['release_fact']
 
+// Amazon Associates tracking id. Empty until the account is approved.
+// Shopping pages still build and still link to Amazon without it, they just
+// earn nothing, so the pages can age and rank while the account is pending.
+export const AMAZON_TAG = ''
+
+// Amazon search links, not product links. A search link never 404s and never
+// shows a price we did not check. Set AMAZON_DOMAIN per market later if needed.
+export const AMAZON_DOMAIN = 'www.amazon.com'
+
+export function amazonUrl(query) {
+  const url = new URL(`https://${AMAZON_DOMAIN}/s`)
+  url.searchParams.set('k', query)
+  if (AMAZON_TAG) url.searchParams.set('tag', AMAZON_TAG)
+  return url.href
+}
+
 export const canonical = (path) => new URL(path, SITE_URL).href

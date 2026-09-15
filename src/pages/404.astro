@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import { HUB_TYPES } from '../lib/site.mjs'
+import { pageEntities } from '../lib/entities.mjs'
+
+const total = pageEntities.length
+---
+<BaseLayout
+  title="Page not found"
+  description="That page does not exist on GTA 6 Record. Here are the sections that do, so you can find the confirmed Grand Theft Auto VI fact you came for."
+  path="/404"
+  noindex={true}
+>
+  <h1>Page not found</h1>
+  <p class="lede">
+    Nothing lives at that address. It may have been renamed, or the link may be
+    wrong. Everything the site has is below.
+  </p>
+
+  <h2>All sections</h2>
+  <p style="color:var(--muted)">
+    {total} pages, each one showing where its facts came from.
+  </p>
+  <ul class="grid">
+    {HUB_TYPES.map((hub) => (
+      <li class="card"><a href={`/${hub.slug}`}>{hub.title}</a></li>
+    ))}
+  </ul>
+
+  <h2>The questions people ask most</h2>
+  <ul>
+    <li><a href="/gta-6-release-date">GTA 6 release date</a></li>
+    <li><a href="/gta-6-price">GTA 6 price</a></li>
+    <li><a href="/gta-6-pre-order">GTA 6 pre-order</a></li>
+    <li><a href="/will-gta-6-be-on-pc">Will GTA 6 be on PC</a></li>
+  </ul>
+
+  <p>
+    If a link on this site led you here, please
+    <a href="/contact">tell us</a> and it gets fixed.
+  </p>
+</BaseLayout>

@@ -1,29 +1,46 @@
 ---
+import { getCollection, render } from 'astro:content'
 import BaseLayout from '../../layouts/BaseLayout.astro'
 import { HUB_TYPES } from '../../lib/site.mjs'
 import { entitiesOfType, urlFor } from '../../lib/entities.mjs'
 import { collectionSchema } from '../../lib/schema.mjs'
 
-export function getStaticPaths() {
+export async function getStaticPaths() {
+  const intros = await getCollection('hubs')
   return HUB_TYPES.map((hub) => ({
     params: { hub: hub.slug },
-    props: { hub, items: entitiesOfType(hub.type) },
+    props: {
+      hub,
+      items: entitiesOfType(hub.type),
+      intro: intros.find((entry) => entry.id === hub.slug) ?? null,
+    },
   }))
 }
 
-const { hub, items } = Astro.props
+const { hub, items, intro } = Astro.props
 const path = `/${hub.slug}`
 const confirmedCount = items.filter((item) => item.confirmedStatus === 'OFFICIAL_CONFIRMED').length
-const description = `Every ${hub.title.replace('GTA 6 ', '').toLowerCase()} confirmed for Grand Theft Auto VI so far. ${items.length} entries, ${confirmedCount} confirmed by Rockstar, each one with its source.`
+const fallback = `Every ${hub.title.replace('GTA 6 ', '').toLowerCase()} confirmed for Grand Theft Auto VI so far. ${items.length} entries, ${confirmedCount} confirmed by Rockstar, each one with its source.`
+const description = intro?.data.description ?? fallback
+const Content = intro ? (await render(intro)).Content : null
 ---
 <BaseLayout
   title={hub.title}
   description={description}
   path={path}
+  updated={intro?.data.updated}
   jsonLd={collectionSchema({ title: hub.title, description, path, items, urlFor })}
 >
   <h1>{hub.title}</h1>
   <p class="lede">{description}</p>
+
+  {Content && <article><Content /></article>}
+
+  <h2>All {items.length} {items.length === 1 ? 'entry' : 'entries'}</h2>
+  <p style="color:var(--muted)">
+    {confirmedCount} of these are confirmed by Rockstar itself. Every card opens a
+    page showing where its facts came from.
+  </p>
 
   <ul class="grid">
     {items.map((item) => (

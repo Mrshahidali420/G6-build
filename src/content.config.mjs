@@ -21,7 +21,33 @@ const answers = defineCollection({
       .max(6),
     // Entity pages this answer links to, by slug. Enforces the linking rule.
     related: z.array(z.string()).default([]),
+    // Shopping pages only. Rendered as a card per product, each link carrying
+    // the Amazon tag from src/lib/site.mjs. Deliberately no price and no ASIN:
+    // a stale price is worse than no price, and a dead ASIN is a dead link.
+    products: z
+      .array(
+        z.object({
+          name: z.string(),
+          search: z.string(),
+          bestFor: z.string(),
+          why: z.string(),
+          watchOut: z.string().optional(),
+        }),
+      )
+      .default([]),
   }),
 })
 
-export const collections = { answers }
+// Hub intro copy. One file per hub slug in src/lib/site.mjs HUB_TYPES.
+// The entity grid is generated from the CSV data; this is the human part
+// above it, so a hub is a real page and not just a list of links.
+const hubs = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/hubs' }),
+  schema: z.object({
+    description: z.string().min(70).max(160),
+    keyword: z.string(),
+    updated: z.string(),
+  }),
+})
+
+export const collections = { answers, hubs }

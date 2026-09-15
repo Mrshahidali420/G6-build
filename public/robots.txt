@@ -1,0 +1,7 @@
+# gta6record.com
+User-agent: *
+Allow: /
+
+# Nothing is hidden. Every page is meant to be crawled.
+
+Sitemap: https://gta6record.com/sitemap-index.xml

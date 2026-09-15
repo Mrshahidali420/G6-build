@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import { pageEntities } from '../lib/entities.mjs'
+
+// Pagefind builds its own index from dist/ after astro build, so this page is
+// empty at build time and fills itself in the browser. It is noindex because a
+// search box is not a page Google should rank.
+const total = pageEntities.length
+---
+<BaseLayout
+  title="Search"
+  description="Search every confirmed Grand Theft Auto VI fact on this site: characters, cars, places, songs, shops, brands and gameplay, each one with its source."
+  path="/search"
+  noindex={true}
+>
+  <h1>Search</h1>
+  <p class="lede">
+    Type a name. {total} pages are searchable, and every result opens a page that
+    shows where its facts came from.
+  </p>
+
+  <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+  <div id="search"></div>
+  <script src="/pagefind/pagefind-ui.js" is:inline></script>
+  <script is:inline>
+    window.addEventListener('DOMContentLoaded', () => {
+      new PagefindUI({ element: '#search', showSubResults: true, showImages: false })
+    })
+  </script>
+
+  <noscript>
+    <p>Search needs JavaScript. Without it, use the sections in the footer.</p>
+  </noscript>
+</BaseLayout>

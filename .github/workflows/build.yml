@@ -1,0 +1,26 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      # Lesson 6: npm install, not npm ci. The lockfile is allowed to drift
+      # because the Windows machine and this runner do not resolve identically.
+      - run: npm install --no-audit --no-fund
+      - run: npm run build
+      - name: Every page must have a unique meta description
+        run: |
+          total=$(grep -rho '<meta name="description" content="[^"]*"' dist | wc -l)
+          uniq=$(grep -rho '<meta name="description" content="[^"]*"' dist | sort -u | wc -l)
+          echo "descriptions: $total total, $uniq unique"
+          test "$total" -eq "$uniq"

@@ -1,17 +1,59 @@
 ---
+import { getCollection } from 'astro:content'
 import BaseLayout from '../layouts/BaseLayout.astro'
-import { SITE_NAME, SITE_TAGLINE, HUB_TYPES } from '../lib/site.mjs'
+import { SITE_NAME, SITE_TAGLINE, HUB_TYPES, canonical } from '../lib/site.mjs'
 import { pageEntities, entitiesOfType } from '../lib/entities.mjs'
+import { GAME } from '../lib/schema.mjs'
 
 const total = pageEntities.length
 const confirmed = pageEntities.filter((entity) => entity.confirmedStatus === 'OFFICIAL_CONFIRMED').length
 const description = `${total} Grand Theft Auto VI entries, ${confirmed} of them confirmed by Rockstar. Characters, cars, places, songs and brands, each one showing where the fact came from.`
+
+// The answer pages carry the search traffic, so the home page links the top of
+// them directly. order is set per page in its own frontmatter.
+const answers = (await getCollection('answers'))
+  .sort((a, b) => a.data.order - b.data.order)
+  .slice(0, 10)
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    GAME,
+    {
+      '@type': 'WebSite',
+      '@id': `${canonical('/')}#website`,
+      name: SITE_NAME,
+      url: canonical('/'),
+      description,
+    },
+  ],
+}
 ---
-<BaseLayout title={SITE_TAGLINE} description={description} path="/">
+<BaseLayout title={SITE_TAGLINE} description={description} path="/" jsonLd={jsonLd}>
   <h1>{SITE_NAME}</h1>
   <p class="lede">{description}</p>
 
-  <h2>Browse</h2>
+  <div class="facts">
+    <p style="margin:0"><strong>Release date:</strong> 19 November 2026</p>
+    <p style="margin:6px 0 0"><strong>Platforms:</strong> PlayStation 5 and Xbox Series X|S</p>
+    <p style="margin:6px 0 0"><strong>Price:</strong> 79.99 USD standard, 99.99 USD ultimate</p>
+    <p style="margin:6px 0 0;color:var(--muted)">
+      All three come from Rockstar's own Newswire. See
+      <a href="/gta-6-release-date">the release date page</a> for the sources.
+    </p>
+  </div>
+
+  <h2>The questions people ask most</h2>
+  <ul class="grid">
+    {answers.map((page) => (
+      <li class="card">
+        <a href={`/${page.id}`}>{page.data.title}</a>
+        <p>{page.data.description.slice(0, 110)}</p>
+      </li>
+    ))}
+  </ul>
+
+  <h2>Browse by type</h2>
   <ul class="grid">
     {HUB_TYPES.map((hub) => {
       const count = entitiesOfType(hub.type).length
@@ -31,5 +73,22 @@ const description = `${total} Grand Theft Auto VI entries, ${confirmed} of them 
     confirmed it, the press reported it, or the community spotted it. If nothing
     reliable says it, it is not on the site.
   </p>
-  <p><a href="/about">How the data is checked</a></p>
+  <p>
+    That rule costs the site pages. There is no mission list here, no weapon
+    list, no cheat codes and no map coordinates, because Rockstar has published
+    none of that. Sites that carry those lists today made them up. When the game
+    ships on 19 November 2026 those pages get written from the real thing.
+  </p>
+  <p>
+    Each entry carries four things: what it is, where it was first shown, who
+    said so, and how sure that makes us. A fact seen in an official trailer is
+    marked differently from a fact a journalist reported, and differently again
+    from something the community spotted in a screenshot. You can see which is
+    which before you trust it.
+  </p>
+  <p>
+    Nothing on this site is affiliated with Rockstar Games or Take-Two
+    Interactive. It is an independent record of what has been published.
+  </p>
+  <p><a href="/about">How the data is checked</a> or <a href="/search">search every page</a>.</p>
 </BaseLayout>

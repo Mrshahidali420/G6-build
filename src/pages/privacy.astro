@@ -7,9 +7,16 @@ const EMAIL = 'hello@gta6record.com'
 const UPDATED = '15 September 2026'
 ---
 <BaseLayout title="Privacy policy" description={description} path="/privacy" updated={UPDATED}>
-  <h1>Privacy policy</h1>
+  <section class="band band--glaze">
+    <div class="shell">
+      <p class="crumb" style="color:var(--on-glaze-2)"><a href="/" style="color:var(--on-glaze-2)">GTA 6 Record</a> / Privacy</p>
+    <h1>Privacy policy</h1>
+      <p class="lede">Last updated {UPDATED}. This policy covers {SITE_URL}.</p>
+    </div>
+  </section>
 
-  <p class="lede">Last updated {UPDATED}. This policy covers {SITE_URL}.</p>
+  <section class="band">
+    <div class="shell prose">
 
   <h2>The short version</h2>
   <p>
@@ -114,4 +121,6 @@ const UPDATED = '15 September 2026'
     Privacy questions go to <a href={`mailto:${EMAIL}`}>{EMAIL}</a>. General
     questions go through the <a href="/contact">contact page</a>.
   </p>
+    </div>
+  </section>
 </BaseLayout>

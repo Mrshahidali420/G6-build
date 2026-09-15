@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content'
 import BaseLayout from '../../layouts/BaseLayout.astro'
+import EntityTile from '../../components/EntityTile.astro'
 import { HUB_TYPES } from '../../lib/site.mjs'
 import { entitiesOfType, urlFor } from '../../lib/entities.mjs'
 import { collectionSchema } from '../../lib/schema.mjs'
@@ -20,6 +21,7 @@ export async function getStaticPaths() {
 const { hub, items, intro } = Astro.props
 const path = `/${hub.slug}`
 const confirmedCount = items.filter((item) => item.confirmedStatus === 'OFFICIAL_CONFIRMED').length
+const pressCount = items.filter((item) => item.confirmedStatus === 'PRESS_REPORTED').length
 const fallback = `Every ${hub.title.replace('GTA 6 ', '').toLowerCase()} confirmed for Grand Theft Auto VI so far. ${items.length} entries, ${confirmedCount} confirmed by Rockstar, each one with its source.`
 const description = intro?.data.description ?? fallback
 const Content = intro ? (await render(intro)).Content : null
@@ -31,23 +33,41 @@ const Content = intro ? (await render(intro)).Content : null
   updated={intro?.data.updated}
   jsonLd={collectionSchema({ title: hub.title, description, path, items, urlFor })}
 >
-  <h1>{hub.title}</h1>
-  <p class="lede">{description}</p>
+  <section class="band band--glaze">
+    <div class="shell">
+      <p class="crumb" style="color:var(--on-glaze-2)">
+        <a href="/" style="color:var(--on-glaze-2)">GTA 6 Record</a> / {hub.title.replace('GTA 6 ', '')}
+      </p>
+      <h1>{hub.title}</h1>
+      <p class="lede">{description}</p>
 
-  {Content && <article><Content /></article>}
+      <dl class="spec" style="max-width:26rem">
+        <dt>Entries</dt>
+        <dd>{items.length}</dd>
+        <dt>Confirmed by Rockstar</dt>
+        <dd>{confirmedCount}</dd>
+        <dt>Reported by the press</dt>
+        <dd>{pressCount}</dd>
+      </dl>
+    </div>
+  </section>
 
-  <h2>All {items.length} {items.length === 1 ? 'entry' : 'entries'}</h2>
-  <p style="color:var(--muted)">
-    {confirmedCount} of these are confirmed by Rockstar itself. Every card opens a
-    page showing where its facts came from.
-  </p>
+  {Content && (
+    <section class="band band--plaster">
+      <div class="shell prose article"><Content /></div>
+    </section>
+  )}
 
-  <ul class="grid">
-    {items.map((item) => (
-      <li class="card">
-        <a href={urlFor(item)}>{item.name}</a>
-        <p>{item.shortDescription.slice(0, 100)}</p>
-      </li>
-    ))}
-  </ul>
+  <section class="band">
+    <div class="shell">
+      <h2 style="margin-top:0">All {items.length} {items.length === 1 ? 'entry' : 'entries'}</h2>
+      <p class="lede">
+        Every tile opens a page that shows where its facts came from and how sure
+        that makes us.
+      </p>
+      <ul class="tiles">
+        {items.map((item, index) => <EntityTile entity={item} eager={index < 6} />)}
+      </ul>
+    </div>
+  </section>
 </BaseLayout>

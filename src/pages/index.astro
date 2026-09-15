@@ -1,6 +1,8 @@
 ---
 import { getCollection } from 'astro:content'
 import BaseLayout from '../layouts/BaseLayout.astro'
+import EntityTile from '../components/EntityTile.astro'
+import Icon from '../components/Icon.astro'
 import { SITE_NAME, SITE_TAGLINE, HUB_TYPES, canonical } from '../lib/site.mjs'
 import { pageEntities, entitiesOfType } from '../lib/entities.mjs'
 import { GAME } from '../lib/schema.mjs'
@@ -14,6 +16,13 @@ const description = `${total} Grand Theft Auto VI entries, ${confirmed} of them 
 const answers = (await getCollection('answers'))
   .sort((a, b) => a.data.order - b.data.order)
   .slice(0, 10)
+
+// One confirmed entry per section, so the strip shows the whole record rather
+// than nine characters in a row.
+const showcase = HUB_TYPES.map((hub) =>
+  entitiesOfType(hub.type).find((entity) => entity.confirmedStatus === 'OFFICIAL_CONFIRMED')
+    ?? entitiesOfType(hub.type)[0],
+).filter(Boolean)
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -30,69 +39,113 @@ const jsonLd = {
 }
 ---
 <BaseLayout title={SITE_TAGLINE} description={description} path="/" jsonLd={jsonLd}>
-  <h1>{SITE_NAME}</h1>
-  <p class="lede">{description}</p>
+  <section class="band band--glaze">
+    <div class="shell">
+      <h1 style="max-width:18ch">Every confirmed Grand Theft Auto VI fact, with its source</h1>
+      <p class="lede">
+        {total} entries. {confirmed} of them confirmed by Rockstar itself. The rest
+        say plainly who reported them, and when.
+      </p>
 
-  <div class="facts">
-    <p style="margin:0"><strong>Release date:</strong> 19 November 2026</p>
-    <p style="margin:6px 0 0"><strong>Platforms:</strong> PlayStation 5 and Xbox Series X|S</p>
-    <p style="margin:6px 0 0"><strong>Price:</strong> 79.99 USD standard, 99.99 USD ultimate</p>
-    <p style="margin:6px 0 0;color:var(--muted)">
-      All three come from Rockstar's own Newswire. See
-      <a href="/gta-6-release-date">the release date page</a> for the sources.
-    </p>
-  </div>
+      <dl class="spec" style="max-width:34rem">
+        <dt>Release date</dt>
+        <dd>19 November 2026</dd>
+        <dt>Platforms</dt>
+        <dd>PlayStation 5, Xbox Series X and Series S</dd>
+        <dt>Price</dt>
+        <dd>79.99 USD standard, 99.99 USD ultimate</dd>
+        <dt>Source</dt>
+        <dd><a href="/gta-6-release-date">Rockstar Newswire, checked on the release date page</a></dd>
+      </dl>
 
-  <h2>The questions people ask most</h2>
-  <ul class="grid">
-    {answers.map((page) => (
-      <li class="card">
-        <a href={`/${page.id}`}>{page.data.title}</a>
-        <p>{page.data.description.slice(0, 110)}</p>
-      </li>
-    ))}
-  </ul>
+      <div class="btns">
+        <a class="btn" href="/news">Every dated announcement <Icon name="arrow" size={16} /></a>
+        <a class="btn btn--quiet" href="/about">How the data is checked</a>
+      </div>
+    </div>
+  </section>
 
-  <h2>Browse by type</h2>
-  <ul class="grid">
-    {HUB_TYPES.map((hub) => {
-      const count = entitiesOfType(hub.type).length
-      return count > 0 ? (
-        <li class="card">
-          <a href={`/${hub.slug}`}>{hub.title}</a>
-          <p>{count} {count === 1 ? 'entry' : 'entries'}</p>
-        </li>
-      ) : null
-    })}
-  </ul>
+  <section class="band band--plaster">
+    <div class="shell">
+      <h2 style="margin-top:0">The questions people ask most</h2>
+      <ul class="directory" style="columns:1">
+        {answers.map((page) => (
+          <li>
+            <a href={`/${page.id}`}>
+              <span class="directory__name">{page.data.title}</span>
+              <span class="directory__rule"></span>
+              <span class="directory__count">Read</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
 
-  <h2>How this site works</h2>
-  <p>
-    Grand Theft Auto VI is not out yet. Most of what is written about it online is
-    a guess. Every entry here shows its source and says plainly whether Rockstar
-    confirmed it, the press reported it, or the community spotted it. If nothing
-    reliable says it, it is not on the site.
-  </p>
-  <p>
-    That rule costs the site pages. There is no mission list here, no weapon
-    list, no cheat codes and no map coordinates, because Rockstar has published
-    none of that. Sites that carry those lists today made them up. When the game
-    ships on 19 November 2026 those pages get written from the real thing.
-  </p>
-  <p>
-    Each entry carries four things: what it is, where it was first shown, who
-    said so, and how sure that makes us. A fact seen in an official trailer is
-    marked differently from a fact a journalist reported, and differently again
-    from something the community spotted in a screenshot. You can see which is
-    which before you trust it.
-  </p>
-  <p>
-    Nothing on this site is affiliated with Rockstar Games or Take-Two
-    Interactive. It is an independent record of what has been published.
-  </p>
-  <p>
-    <a href="/news">Every dated announcement so far</a> ·
-    <a href="/about">How the data is checked</a> ·
-    <a href="/search">Search every page</a>
-  </p>
+  <section class="band">
+    <div class="shell">
+      <h2 style="margin-top:0">One entry from every section</h2>
+      <p class="lede">
+        Entries without a picture we may publish carry a terrazzo plate in their
+        section's colour, so you can tell a car from a song before you read.
+      </p>
+      <ul class="tiles">
+        {showcase.map((entity, index) => <EntityTile entity={entity} eager={index < 4} />)}
+      </ul>
+    </div>
+  </section>
+
+  <section class="band band--plaster">
+    <div class="shell">
+      <h2 style="margin-top:0">Browse the record</h2>
+      <ul class="directory">
+        {HUB_TYPES.map((hub) => {
+          const count = entitiesOfType(hub.type).length
+          return count > 0 ? (
+            <li>
+              <a href={`/${hub.slug}`}>
+                <span class="directory__name">{hub.title.replace('GTA 6 ', '')}</span>
+                <span class="directory__rule"></span>
+                <span class="directory__count">{count} {count === 1 ? 'entry' : 'entries'}</span>
+              </a>
+            </li>
+          ) : null
+        })}
+      </ul>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="shell prose">
+      <h2 style="margin-top:0">How this site works</h2>
+      <p>
+        Grand Theft Auto VI is not out yet. Most of what is written about it online is
+        a guess. Every entry here shows its source and says plainly whether Rockstar
+        confirmed it, the press reported it, or the community spotted it. If nothing
+        reliable says it, it is not on the site.
+      </p>
+      <p>
+        That rule costs the site pages. There is no mission list here, no weapon
+        list, no cheat codes and no map coordinates, because Rockstar has published
+        none of that. Sites that carry those lists today made them up. When the game
+        ships on 19 November 2026 those pages get written from the real thing.
+      </p>
+      <p>
+        Each entry carries four things: what it is, where it was first shown, who
+        said so, and how sure that makes us. A fact seen in an official trailer is
+        marked differently from a fact a journalist reported, and differently again
+        from something the community spotted in a screenshot. You can see which is
+        which before you trust it.
+      </p>
+      <p>
+        Nothing on this site is affiliated with Rockstar Games or Take-Two
+        Interactive. It is an independent record of what has been published.
+      </p>
+      <p>
+        <a href="/news">Every dated announcement so far</a> ·
+        <a href="/about">How the data is checked</a> ·
+        <a href="/search">Search every page</a>
+      </p>
+    </div>
+  </section>
 </BaseLayout>

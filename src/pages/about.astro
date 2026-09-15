@@ -8,13 +8,20 @@ const tier1 = pageEntities.filter((entity) => entity.sourceTier === 'TIER_1_OFFI
 const description = `How ${SITE_NAME} checks every Grand Theft Auto VI fact before publishing it, what the four source levels mean, and how to tell us when something is wrong.`
 ---
 <BaseLayout title="About and sources" description={description} path="/about">
-  <h1>About this site</h1>
-
-  <p class="lede">
+  <section class="band band--glaze">
+    <div class="shell">
+      <p class="crumb" style="color:var(--on-glaze-2)"><a href="/" style="color:var(--on-glaze-2)">GTA 6 Record</a> / About</p>
+    <h1>About this site</h1>
+      <p class="lede">
     Grand Theft Auto VI has not been released. Almost everything written about it
     online is a guess repeated until it sounds like a fact. This site exists to
     keep the two apart.
   </p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="shell prose">
 
   <h2>The one rule</h2>
   <p>
@@ -75,4 +82,6 @@ const description = `How ${SITE_NAME} checks every Grand Theft Auto VI fact befo
     never changes what is written. A fact does not get upgraded because a link
     next to it pays.
   </p>
+    </div>
+  </section>
 </BaseLayout>

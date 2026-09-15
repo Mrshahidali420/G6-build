@@ -1,0 +1,22 @@
+---
+// The provenance mark. This is the one thing the site exists to show, so it is
+// a drawn component and not a coloured pill: shape and words carry the meaning,
+// colour only reinforces it.
+import Icon from './Icon.astro'
+
+const { status, as = 'mark', label = null } = Astro.props
+
+const LEVELS = {
+  OFFICIAL_CONFIRMED: { key: 'confirmed', text: 'Confirmed by Rockstar' },
+  PRESS_REPORTED: { key: 'press', text: 'Reported by the press' },
+  COMMUNITY_IDENTIFIED: { key: 'community', text: 'Spotted by the community' },
+  UNCONFIRMED: { key: 'none', text: 'Not confirmed' },
+}
+
+const level = LEVELS[status] ?? LEVELS.UNCONFIRMED
+const base = as === 'stamp' ? 'stamp' : 'mark'
+---
+<span class={`${base} ${base}--${level.key}`}>
+  <Icon name={level.key} size={as === 'stamp' ? 17 : 14} />
+  {label ?? level.text}
+</span>

@@ -13,11 +13,19 @@ const total = pageEntities.length
   path="/search"
   noindex={true}
 >
-  <h1>Search</h1>
-  <p class="lede">
+  <section class="band band--glaze">
+    <div class="shell">
+      <p class="crumb" style="color:var(--on-glaze-2)"><a href="/" style="color:var(--on-glaze-2)">GTA 6 Record</a> / Search</p>
+    <h1>Search</h1>
+      <p class="lede">
     Type a name. {total} pages are searchable, and every result opens a page that
     shows where its facts came from.
   </p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="shell prose">
 
   <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
   <div id="search"></div>
@@ -31,4 +39,6 @@ const total = pageEntities.length
   <noscript>
     <p>Search needs JavaScript. Without it, use the sections in the footer.</p>
   </noscript>
+    </div>
+  </section>
 </BaseLayout>

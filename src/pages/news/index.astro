@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content'
 import BaseLayout from '../../layouts/BaseLayout.astro'
+import Mark from '../../components/Mark.astro'
 import { SITE_NAME, SITE_URL, canonical } from '../../lib/site.mjs'
 import { GAME } from '../../lib/schema.mjs'
 
@@ -15,17 +16,17 @@ const upcoming = [
   {
     date: '12 November 2026',
     what: 'Preload opens for digital pre-orders, one week before launch.',
-    tier: 'Press reported',
+    status: 'PRESS_REPORTED',
   },
   {
     date: '19 November 2026',
     what: 'Grand Theft Auto VI launches on PS5 and Xbox Series X|S, worldwide.',
-    tier: 'Confirmed by Rockstar',
+    status: 'OFFICIAL_CONFIRMED',
   },
   {
     date: '20 November 2026',
     what: 'Last day the Vintage Vice City Pack comes free with a pre-order.',
-    tier: 'Confirmed by Rockstar',
+    status: 'OFFICIAL_CONFIRMED',
   },
 ]
 
@@ -59,54 +60,68 @@ const human = (value) =>
   })
 ---
 <BaseLayout title={title} description={description} path={path} jsonLd={jsonLd}>
-  <h1>GTA 6 news</h1>
-  <p class="lede">
-    Every announcement that actually happened, with the date it happened and a
-    link to where it came from. No rumours, no leaks, no reposted guesses.
-  </p>
+  <section class="band band--glaze">
+    <div class="shell">
+      <p class="crumb" style="color:var(--on-glaze-2)">
+        <a href="/" style="color:var(--on-glaze-2)">GTA 6 Record</a> / News
+      </p>
+      <h1>GTA 6 news</h1>
+      <p class="lede">
+        Every announcement that actually happened, with the date it happened and a
+        link to where it came from. No rumours, no leaks, no reposted guesses.
+      </p>
+    </div>
+  </section>
 
-  <h2>What has happened</h2>
-  <ul class="grid">
-    {posts.map((post) => (
-      <li class="card">
-        <p style="margin:0;color:var(--muted);font-size:0.9em">
-          {human(post.data.date)}
-          {' '}
-          <span style="color:var(--accent)">
-            {post.data.tier === 'TIER_1_OFFICIAL' ? 'Confirmed by Rockstar' : 'Press reported'}
-          </span>
-        </p>
-        <a href={`/news/${post.id}`}>{post.data.title}</a>
-        <p>{post.data.description}</p>
-      </li>
-    ))}
-  </ul>
+  <section class="band">
+    <div class="shell">
+      <h2 style="margin-top:0">What has happened</h2>
+      <ul class="dated">
+        {posts.map((post) => (
+          <li>
+            <div class="dated__row">
+              <span class="dated__date">{human(post.data.date)}</span>
+              <Mark status={post.data.tier === 'TIER_1_OFFICIAL' ? 'OFFICIAL_CONFIRMED' : 'PRESS_REPORTED'} />
+            </div>
+            <a class="dated__title" href={`/news/${post.id}`}>{post.data.title}</a>
+            <p style="margin-top:6px">{post.data.description}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
 
-  <h2>What is still ahead</h2>
-  <p style="color:var(--muted)">
-    These dates are announced, not predicted. Nothing on this list is a guess.
-  </p>
-  <div class="source">
-    <ul style="margin:0;padding-left:18px">
-      {upcoming.map((item) => (
-        <li style="margin-bottom:8px">
-          <strong>{item.date}.</strong> {item.what}
-          {' '}
-          <span style="color:var(--muted)">({item.tier})</span>
-        </li>
-      ))}
-    </ul>
-  </div>
+  <section class="band band--plaster">
+    <div class="shell">
+      <h2 style="margin-top:0">What is still ahead</h2>
+      <p class="lede">These dates are announced, not predicted. Nothing on this list is a guess.</p>
+      <ul class="dated">
+        {upcoming.map((item) => (
+          <li>
+            <div class="dated__row">
+              <span class="dated__date">{item.date}</span>
+              <Mark status={item.status} />
+            </div>
+            <p>{item.what}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
 
-  <h2>What you will not find here</h2>
-  <p>
-    No leak roundups. No "everything we know" posts that get rewritten every
-    week. No third trailer date, because Rockstar has not given one. If a thing
-    is not dated and sourced, it does not go on this page.
-  </p>
-  <p>
-    For the facts that do not change day to day, start at
-    <a href="/gta-6-release-date">the release date page</a> or
-    <a href="/gta-6-price">the price page</a>.
-  </p>
+  <section class="band">
+    <div class="shell prose">
+      <h2 style="margin-top:0">What you will not find here</h2>
+      <p>
+        No leak roundups. No "everything we know" posts that get rewritten every
+        week. No third trailer date, because Rockstar has not given one. If a thing
+        is not dated and sourced, it does not go on this page.
+      </p>
+      <p>
+        For the facts that do not change day to day, start at
+        <a href="/gta-6-release-date">the release date page</a> or
+        <a href="/gta-6-price">the price page</a>.
+      </p>
+    </div>
+  </section>
 </BaseLayout>

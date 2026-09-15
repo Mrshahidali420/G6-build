@@ -1,0 +1,17 @@
+---
+import Plate from './Plate.astro'
+import Mark from './Mark.astro'
+import { urlFor } from '../lib/entities.mjs'
+
+const { entity, eager = false } = Astro.props
+---
+<li class="tile">
+  <Plate entity={entity} eager={eager} />
+  <div class="tile__body">
+    <a class="tile__title" href={urlFor(entity)}>{entity.name}</a>
+    <p class="tile__text">{entity.shortDescription.slice(0, 96)}</p>
+    <div class="tile__foot">
+      <Mark status={entity.confirmedStatus} />
+    </div>
+  </div>
+</li>

@@ -6,11 +6,18 @@ const description = `How to reach ${SITE_NAME}, report a wrong Grand Theft Auto 
 const EMAIL = 'hello@gta6record.com'
 ---
 <BaseLayout title="Contact" description={description} path="/contact">
-  <h1>Contact</h1>
-
-  <p class="lede">
+  <section class="band band--glaze">
+    <div class="shell">
+      <p class="crumb" style="color:var(--on-glaze-2)"><a href="/" style="color:var(--on-glaze-2)">GTA 6 Record</a> / Contact</p>
+    <h1>Contact</h1>
+      <p class="lede">
     One inbox, read by a person. Email <a href={`mailto:${EMAIL}`}>{EMAIL}</a>.
   </p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="shell prose">
 
   <h2>Reporting a wrong fact</h2>
   <p>
@@ -47,4 +54,6 @@ const EMAIL = 'hello@gta6record.com'
     Usually within two working days. Around a Rockstar announcement it can take
     longer, because the pages come first.
   </p>
+    </div>
+  </section>
 </BaseLayout>

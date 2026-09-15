@@ -11,19 +11,27 @@ const total = pageEntities.length
   path="/404"
   noindex={true}
 >
-  <h1>Page not found</h1>
-  <p class="lede">
+  <section class="band band--glaze">
+    <div class="shell">
+      <p class="crumb" style="color:var(--on-glaze-2)"><a href="/" style="color:var(--on-glaze-2)">GTA 6 Record</a> / Not found</p>
+    <h1>Page not found</h1>
+      <p class="lede">
     Nothing lives at that address. It may have been renamed, or the link may be
     wrong. Everything the site has is below.
   </p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="shell prose">
 
   <h2>All sections</h2>
-  <p style="color:var(--muted)">
+  <p style="color:var(--ink-2)">
     {total} pages, each one showing where its facts came from.
   </p>
-  <ul class="grid">
+  <ul class="directory">
     {HUB_TYPES.map((hub) => (
-      <li class="card"><a href={`/${hub.slug}`}>{hub.title}</a></li>
+      <li class="directory__name"><a href={`/${hub.slug}`}>{hub.title}</a></li>
     ))}
   </ul>
 
@@ -39,4 +47,6 @@ const total = pageEntities.length
     If a link on this site led you here, please
     <a href="/contact">tell us</a> and it gets fixed.
   </p>
+    </div>
+  </section>
 </BaseLayout>

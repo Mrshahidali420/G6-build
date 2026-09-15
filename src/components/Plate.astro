@@ -1,0 +1,62 @@
+---
+// One picture slot for one entry. A real photo if we have one, a poured
+// terrazzo plate if we do not. Never an empty grey box.
+import { glazeFor, chipsFor, initialsFor } from '../lib/plate.mjs'
+import { imageFor, creditFor } from '../lib/images.mjs'
+
+const { entity, className = '', eager = false, chipCount = 13 } = Astro.props
+
+const photo = imageFor(entity.slug)
+const credit = creditFor(entity.slug)
+const glaze = glazeFor(entity.entityType)
+const chips = chipsFor(entity.slug, chipCount)
+const initials = initialsFor(entity.name)
+const clip = `plate-${entity.slug}`
+---
+{photo ? (
+  <img
+    class={`tile__plate ${className}`}
+    src={photo}
+    alt={`${entity.name} in Grand Theft Auto VI`}
+    loading={eager ? 'eager' : 'lazy'}
+    decoding="async"
+    width="800"
+    height="600"
+    data-credit={credit}
+  />
+) : (
+  <svg
+    class={`tile__plate ${className}`}
+    viewBox="0 0 400 300"
+    preserveAspectRatio="xMidYMid slice"
+    role="img"
+    aria-label={`No published picture of ${entity.name}. Terrazzo plate stands in.`}
+  >
+    <defs>
+      <clipPath id={clip}><rect width="400" height="300" /></clipPath>
+    </defs>
+    <g clip-path={`url(#${clip})`}>
+      <rect width="400" height="300" fill={glaze.ground} />
+      {chips.map((chip) => (
+        <ellipse
+          cx={chip.x}
+          cy={chip.y}
+          rx={chip.r}
+          ry={chip.r * chip.squash}
+          fill={glaze.chips[chip.tone]}
+          opacity={chip.fade}
+          transform={`rotate(${chip.rotate} ${chip.x} ${chip.y})`}
+        />
+      ))}
+      <text
+        x="200"
+        y="196"
+        text-anchor="middle"
+        fill={glaze.ink}
+        opacity="0.92"
+        style="font-family:Archivo,system-ui,sans-serif;font-weight:800;font-stretch:122%;font-size:136px;letter-spacing:-4px"
+      >{initials}</text>
+      <rect x="0" y="291" width="400" height="9" fill="#b08637" opacity="0.85" />
+    </g>
+  </svg>
+)}

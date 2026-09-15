@@ -1,8 +1,10 @@
 ---
 import { getCollection, render } from 'astro:content'
 import BaseLayout from '../layouts/BaseLayout.astro'
+import EntityTile from '../components/EntityTile.astro'
+import Icon from '../components/Icon.astro'
 import { SITE_NAME, SITE_URL, canonical, amazonUrl } from '../lib/site.mjs'
-import { bySlug, urlFor } from '../lib/entities.mjs'
+import { bySlug } from '../lib/entities.mjs'
 
 export async function getStaticPaths() {
   const pages = await getCollection('answers')
@@ -42,69 +44,92 @@ const jsonLd = {
 }
 ---
 <BaseLayout title={data.title} description={data.description} path={path} updated={data.updated} jsonLd={jsonLd}>
-  <h1>{data.title}</h1>
-  <p class="lede">{data.description}</p>
+  <section class="band band--glaze">
+    <div class="shell">
+      <p class="crumb" style="color:var(--on-glaze-2)">
+        <a href="/" style="color:var(--on-glaze-2)">GTA 6 Record</a> / Answer
+      </p>
+      <h1 style="max-width:20ch">{data.title}</h1>
+      <p class="lede">{data.description}</p>
+      {data.updated && (
+        <p class="plaque__meta" style="color:var(--on-glaze-2);display:flex;align-items:center;gap:7px">
+          <Icon name="calendar" size={15} /> Checked {data.updated}
+        </p>
+      )}
+    </div>
+  </section>
 
-  <article>
-    <Content />
-  </article>
+  <section class="band">
+    <div class="shell prose article">
+      <Content />
+    </div>
+  </section>
 
   {data.products.length > 0 && (
-    <>
-      <h2>What to buy</h2>
-      <p style="color:var(--muted)">
-        These links go to Amazon. If you buy something after following one, this
-        site may earn a commission at no extra cost to you. That never changes
-        what is written here. No prices are listed, because a price we checked
-        months ago would be wrong by the time you read it.
-      </p>
-      <ul class="grid">
-        {data.products.map((product) => (
-          <li class="card">
-            <p style="margin:0;font-weight:600">{product.name}</p>
-            <p style="margin:4px 0;color:var(--accent);font-size:0.9em">Best for {product.bestFor}</p>
-            <p style="margin:6px 0">{product.why}</p>
-            {product.watchOut && (
-              <p style="margin:6px 0;color:var(--warn);font-size:0.92em">Watch out: {product.watchOut}</p>
-            )}
-            <a href={amazonUrl(product.search)} rel="nofollow sponsored noopener" target="_blank">
-              Check it on Amazon
-            </a>
-          </li>
-        ))}
-      </ul>
-    </>
+    <section class="band band--plaster">
+      <div class="shell">
+        <h2 style="margin-top:0">What to buy</h2>
+        <p class="lede">
+          These links go to Amazon. If you buy something after following one, this
+          site may earn a commission at no extra cost to you. That never changes
+          what is written here. No prices are listed, because a price we checked
+          months ago would be wrong by the time you read it.
+        </p>
+        <ul class="tiles tiles--wide">
+          {data.products.map((product) => (
+            <li class="tile">
+              <div class="tile__body">
+                <p class="tile__title" style="margin:0">{product.name}</p>
+                <p class="plaque__meta" style="margin:0;color:var(--brass-ink)">Best for {product.bestFor}</p>
+                <p class="tile__text">{product.why}</p>
+                {product.watchOut && (
+                  <p class="tile__text" style="color:var(--clay)">Watch out: {product.watchOut}</p>
+                )}
+                <div class="tile__foot">
+                  <a class="btn" href={amazonUrl(product.search)} rel="nofollow sponsored noopener" target="_blank">
+                    Check it on Amazon <Icon name="arrow" size={15} />
+                  </a>
+                </div>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
   )}
 
-  <h2>Common questions</h2>
-  {data.faq.map((item) => (
-    <div style="border-bottom:1px solid var(--line);padding:10px 0">
-      <p style="margin:0;font-weight:600">{item.q}</p>
-      <p style="margin:6px 0 0;color:var(--muted)">{item.a}</p>
-    </div>
-  ))}
+  <section class="band">
+    <div class="shell prose">
+      <h2 style="margin-top:0">Common questions</h2>
+      <dl class="spec" style="grid-template-columns:1fr">
+        {data.faq.map((item) => (
+          <>
+            <dt style="white-space:normal;font-size:0.95rem;font-family:var(--display);font-stretch:112%;text-transform:none;letter-spacing:0;color:var(--ink);padding-bottom:4px;border-bottom:0">{item.q}</dt>
+            <dd style="padding-top:0;color:var(--ink-2)">{item.a}</dd>
+          </>
+        ))}
+      </dl>
 
-  <h2>Where this comes from</h2>
-  <div class="source">
-    <ul style="margin:0;padding-left:18px">
-      {data.sources.map((source) => (
-        <li><a href={source.url} rel="nofollow noopener" target="_blank">{source.label}</a></li>
-      ))}
-    </ul>
-    <p style="margin-bottom:0;color:var(--muted)">Checked {data.updated}.</p>
-  </div>
+      <h2>Where this comes from</h2>
+      <div class="plaque">
+        <ul>
+          {data.sources.map((source) => (
+            <li><a href={source.url} rel="nofollow noopener" target="_blank">{source.label}</a></li>
+          ))}
+        </ul>
+        <p class="plaque__meta">Checked {data.updated}. Found a mistake? <a href="/contact">Tell us</a>.</p>
+      </div>
+    </div>
+  </section>
 
   {related.length > 0 && (
-    <>
-      <h2>Related pages</h2>
-      <ul class="grid">
-        {related.map((item) => (
-          <li class="card">
-            <a href={urlFor(item)}>{item.name}</a>
-            <p>{item.shortDescription.slice(0, 90)}</p>
-          </li>
-        ))}
-      </ul>
-    </>
+    <section class="band band--plaster">
+      <div class="shell">
+        <h2 style="margin-top:0">Related entries</h2>
+        <ul class="tiles">
+          {related.map((item) => <EntityTile entity={item} />)}
+        </ul>
+      </div>
+    </section>
   )}
 </BaseLayout>

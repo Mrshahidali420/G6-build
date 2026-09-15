@@ -1,8 +1,12 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro'
+import Plate from '../../components/Plate.astro'
+import Mark from '../../components/Mark.astro'
+import EntityTile from '../../components/EntityTile.astro'
 import { HUB_TYPES } from '../../lib/site.mjs'
-import { entitiesOfType, hubFor, relatedFor, urlFor, STATUS_LABEL, TIER_LABEL } from '../../lib/entities.mjs'
+import { entitiesOfType, hubFor, relatedFor, urlFor, TIER_LABEL } from '../../lib/entities.mjs'
 import { entitySchema } from '../../lib/schema.mjs'
+import { imageFor, creditFor } from '../../lib/images.mjs'
 
 export function getStaticPaths() {
   return HUB_TYPES.flatMap((hub) =>
@@ -16,8 +20,8 @@ export function getStaticPaths() {
 const { entity, hub } = Astro.props
 const path = urlFor(entity)
 const related = relatedFor(entity)
-const confirmed = entity.confirmedStatus === 'OFFICIAL_CONFIRMED'
-const weak = entity.confidence === 'LOW' || entity.sourceTier === 'TIER_3_COMMUNITY'
+const photo = imageFor(entity.slug)
+const credit = creditFor(entity.slug)
 
 // Unique per page. Never a template with the name swapped in.
 const description = entity.shortDescription.slice(0, 155)
@@ -29,65 +33,105 @@ const description = entity.shortDescription.slice(0, 155)
   updated={entity.sourceDate}
   jsonLd={entitySchema(entity, path)}
 >
-  <p style="font-size:14px;margin:0 0 12px">
-    <a href={`/${hub.slug}`}>{hub.title}</a>
-  </p>
+  <section class="band band--glaze">
+    <div class="shell hero">
+      <div class="hero__text">
+        <p class="crumb" style="color:var(--on-glaze-2)">
+          <a href="/" style="color:var(--on-glaze-2)">GTA 6 Record</a> /
+          <a href={`/${hub.slug}`} style="color:var(--on-glaze-2)">{hub.title.replace('GTA 6 ', '')}</a>
+        </p>
 
-  <h1>{entity.name}</h1>
+        <h1>{entity.name}</h1>
 
-  <p>
-    <span class={`badge ${confirmed ? 'ok' : weak ? 'warn' : ''}`}>
-      {STATUS_LABEL[entity.confirmedStatus] ?? entity.confirmedStatus}
-    </span>
-    <span class="badge">{TIER_LABEL[entity.sourceTier] ?? entity.sourceTier}</span>
-  </p>
+        {entity.altNames.length > 0 && (
+          <p class="lede">Also called {entity.altNames.join(', ')}.</p>
+        )}
 
-  {entity.altNames.length > 0 && (
-    <p class="lede">Also called {entity.altNames.join(', ')}.</p>
-  )}
+        <div class="marks">
+          <Mark status={entity.confirmedStatus} as="stamp" />
+        </div>
 
-  <p>{entity.longDescription}</p>
+        <dl class="spec" style="max-width:32rem">
+          {entity.firstShownIn && (
+            <>
+              <dt>First shown in</dt>
+              <dd>{entity.firstShownIn}{entity.firstShownDate && <> ({entity.firstShownDate})</>}</dd>
+            </>
+          )}
+          <dt>Source strength</dt>
+          <dd>{TIER_LABEL[entity.sourceTier] ?? entity.sourceTier}</dd>
+          {entity.subcategory && (
+            <>
+              <dt>Type</dt>
+              <dd>{entity.subcategory}</dd>
+            </>
+          )}
+          {entity.sourceDate && (
+            <>
+              <dt>Checked</dt>
+              <dd>{entity.sourceDate}</dd>
+            </>
+          )}
+        </dl>
+      </div>
 
-  {entity.keyFacts.length > 0 && (
-    <>
-      <h2>Key facts</h2>
-      <ul class="facts">
-        {entity.keyFacts.map((fact) => <li>{fact}</li>)}
-      </ul>
-    </>
-  )}
+      <figure class="hero__plate">
+        <Plate entity={entity} eager={true} className="hero__img" chipCount={17} />
+        <figcaption>
+          {photo
+            ? (credit ?? 'Image: Rockstar Games. Shown for reference only.')
+            : 'No picture of this entry has been published that we may show. The plate is drawn from its section colour.'}
+        </figcaption>
+      </figure>
+    </div>
+  </section>
 
-  {entity.realWorldBasis && (
-    <>
-      <h2>Real world basis</h2>
-      <p>{entity.realWorldBasis}</p>
-    </>
-  )}
+  <section class="band">
+    <div class="shell prose">
+      <p style="font-size:1.12rem">{entity.longDescription}</p>
 
-  <h2>Where this comes from</h2>
-  <div class="source">
-    {entity.firstShownIn && <p style="margin-top:0">First shown in: {entity.firstShownIn}{entity.firstShownDate && <> ({entity.firstShownDate})</>}</p>}
-    {entity.sources.length > 0 ? (
-      <ul style="margin:0;padding-left:18px">
-        {entity.sources.map((url) => <li><a href={url} rel="nofollow noopener" target="_blank">{url}</a></li>)}
-      </ul>
-    ) : (
-      <p style="margin:0">No published source. This entry is listed as unconfirmed.</p>
-    )}
-    {entity.sourceDate && <p style="margin-bottom:0;color:var(--muted)">Source checked {entity.sourceDate}.</p>}
-  </div>
+      {entity.keyFacts.length > 0 && (
+        <>
+          <h2>Key facts</h2>
+          <ul class="facts">
+            {entity.keyFacts.map((fact) => <li>{fact}</li>)}
+          </ul>
+        </>
+      )}
+
+      {entity.realWorldBasis && (
+        <>
+          <h2>Real world basis</h2>
+          <p>{entity.realWorldBasis}</p>
+        </>
+      )}
+
+      <h2>Where this comes from</h2>
+      <div class="plaque">
+        {entity.sources.length > 0 ? (
+          <ul>
+            {entity.sources.map((url) => <li><a href={url} rel="nofollow noopener" target="_blank">{url}</a></li>)}
+          </ul>
+        ) : (
+          <p>No published source. This entry is listed as unconfirmed.</p>
+        )}
+        <p class="plaque__meta">
+          {TIER_LABEL[entity.sourceTier] ?? entity.sourceTier}.
+          {entity.sourceDate && <> Checked {entity.sourceDate}.</>}
+          {' '}Found a mistake? <a href="/contact">Tell us</a>.
+        </p>
+      </div>
+    </div>
+  </section>
 
   {related.length > 0 && (
-    <>
-      <h2>Related</h2>
-      <ul class="grid">
-        {related.map((item) => (
-          <li class="card">
-            <a href={urlFor(item)}>{item.name}</a>
-            <p>{item.shortDescription.slice(0, 90)}</p>
-          </li>
-        ))}
-      </ul>
-    </>
+    <section class="band band--plaster">
+      <div class="shell">
+        <h2 style="margin-top:0">Related entries</h2>
+        <ul class="tiles">
+          {related.map((item) => <EntityTile entity={item} />)}
+        </ul>
+      </div>
+    </section>
   )}
 </BaseLayout>

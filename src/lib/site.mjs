@@ -38,10 +38,27 @@ export const HUB_TYPES = [
 // release_fact rows are evidence behind the answer pages, not pages themselves.
 export const NON_PAGE_TYPES = ['release_fact']
 
-// Amazon Associates tracking id. Empty until the account is approved.
-// Shopping pages still build and still link to Amazon without it, they just
-// earn nothing, so the pages can age and rank while the account is pending.
-export const AMAZON_TAG = ''
+// Amazon Associates tracking ids, created 16 September 2026, one per store.
+// A tracking id is free and belongs to an account, so each site gets its own
+// id and the earnings report stays readable.
+//
+// Only the US id is wired into links today. The other seven are recorded here
+// so a per country link builder can be added later without opening Amazon
+// again. The suffix is Amazon's, not ours: -20 US and CA, -21 the whole EU
+// group, -22 Japan. The EU group shares one name space, which is why the
+// German and the other European names carry a locale of their own.
+export const AMAZON_TAGS = {
+  us: 'gta6record-20',
+  uk: 'gta6record-21',
+  de: 'gta6record0e-21',
+  fr: 'gta6recordfr-21',
+  it: 'gta6recordit-21',
+  es: 'gta6recordes-21',
+  ca: 'gta6recordca-20',
+  jp: 'gta6record-22',
+}
+
+export const AMAZON_TAG = AMAZON_TAGS.us
 
 // Amazon search links, not product links. A search link never 404s and never
 // shows a price we did not check. Set AMAZON_DOMAIN per market later if needed.

@@ -87,4 +87,34 @@ const news = defineCollection({
   }),
 })
 
-export const collections = { answers, hubs, news }
+// The daily coverage log, written by scripts/robot/publish.mjs and by nothing
+// else. One file per calendar day. The body is always empty on purpose: every
+// string a reader sees is either quoted verbatim from the outlet that published
+// it or built from a template holding only a date, an outlet name and a count.
+// Putting the items in typed frontmatter is what makes it impossible for the
+// robot to write a sentence of its own.
+const updates = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/updates' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string().min(70).max(160),
+    // The calendar day the outlets published on, not the day the robot ran.
+    date: z.string(),
+    updated: z.string(),
+    // Two is the floor. One stray article is not a day of news, and a page
+    // built from a single link is a reprint of that link.
+    items: z
+      .array(
+        z.object({
+          outlet: z.string(),
+          headline: z.string(),
+          summary: z.string().optional(),
+          url: z.string().url(),
+          published: z.string(),
+        }),
+      )
+      .min(2),
+  }),
+})
+
+export const collections = { answers, hubs, news, updates }

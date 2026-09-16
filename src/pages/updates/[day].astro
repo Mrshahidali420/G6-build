@@ -1,0 +1,118 @@
+---
+// One day of the coverage log. Every word on this page is either quoted from
+// the outlet that published it, or a fixed template holding a date, an outlet
+// name and a count. Nothing here is written by this site, and nothing here is
+// checked by this site. That is stated on the page, in the lede, before the
+// reader gets to the first quotation.
+import { getCollection } from 'astro:content'
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import Mark from '../../components/Mark.astro'
+import Icon from '../../components/Icon.astro'
+import { SITE_NAME, SITE_URL, canonical } from '../../lib/site.mjs'
+import { GAME } from '../../lib/schema.mjs'
+
+export async function getStaticPaths() {
+  const days = await getCollection('updates')
+  return days.map((day) => ({ params: { day: day.id }, props: { entry: day } }))
+}
+
+const { entry } = Astro.props
+const data = entry.data
+const path = `/updates/${entry.id}`
+
+const human = new Date(`${data.date}T00:00:00Z`).toLocaleDateString('en-GB', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+  timeZone: 'UTC',
+})
+
+const OPEN = String.fromCharCode(8220)
+const CLOSE = String.fromCharCode(8221)
+
+const outlets = [...new Set(data.items.map((item) => item.outlet))]
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  '@id': canonical(path),
+  url: canonical(path),
+  name: data.title,
+  description: data.description,
+  datePublished: data.date,
+  dateModified: data.updated,
+  about: GAME,
+  isPartOf: { '@type': 'WebSite', '@id': `${SITE_URL}/#website`, name: SITE_NAME, url: SITE_URL },
+  publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+  mainEntity: {
+    '@type': 'ItemList',
+    numberOfItems: data.items.length,
+    itemListElement: data.items.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.headline,
+      url: item.url,
+    })),
+  },
+}
+---
+<BaseLayout title={data.title} description={data.description} path={path} updated={data.updated} jsonLd={jsonLd}>
+  <section class="band band--glaze">
+    <div class="shell">
+      <p class="crumb" style="color:var(--on-glaze-2)">
+        <a href="/" style="color:var(--on-glaze-2)">GTA 6 Record</a> /
+        <a href="/updates" style="color:var(--on-glaze-2)">Daily coverage log</a>
+      </p>
+      <h1 style="max-width:20ch">{data.title}</h1>
+      <p class="lede">
+        This page is a record of what other sites published on {human}. It lists
+        {data.items.length} items from {outlets.length} {outlets.length === 1 ? 'outlet' : 'outlets'}, each headline
+        and summary quoted in the outlet's own words. This site did not write those words and has not checked
+        whether any of them are true. Read the source before you believe it.
+      </p>
+      <p class="plaque__meta" style="color:var(--on-glaze-2);display:flex;align-items:center;gap:7px">
+        <Icon name="calendar" size={15} /> Published {human}. Recorded {data.updated}.
+      </p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="shell">
+      <h2 style="margin-top:0">What was published</h2>
+      <ul class="dated">
+        {data.items.map((item) => (
+          <li>
+            <div class="dated__row">
+              <span class="dated__date">{item.outlet}</span>
+              <Mark status={item.outlet === 'Rockstar Newswire' ? 'OFFICIAL_CONFIRMED' : 'PRESS_REPORTED'} />
+            </div>
+            <p style="margin-bottom:6px">
+              <strong style="font-weight:600;color:var(--ink)">{OPEN}{item.headline}{CLOSE}</strong>
+            </p>
+            {item.summary && <p style="margin-bottom:6px">{OPEN}{item.summary}{CLOSE}</p>}
+            <p>
+              <a href={item.url} rel="nofollow noopener" target="_blank">Read it on {item.outlet}</a>
+            </p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="band band--plaster">
+    <div class="shell prose">
+      <h2 style="margin-top:0">How to read this page</h2>
+      <div class="plaque">
+        <ul>
+          <li>Every headline and summary above is the outlet's own text, copied without editing.</li>
+          <li>A quotation here proves that the outlet published it. It does not prove that it is true.</li>
+          <li>Nothing on this page is written by this site, and no claim on it has been checked.</li>
+          <li>A claim that survives checking gets its own dated entry in <a href="/news">the news record</a>.</li>
+        </ul>
+        <p class="plaque__meta">Recorded {data.updated}. Found a mistake? <a href="/contact">Tell us</a>.</p>
+      </div>
+
+      <p><a href="/updates">Back to the coverage log</a></p>
+    </div>
+  </section>
+</BaseLayout>

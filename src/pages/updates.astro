@@ -1,0 +1,100 @@
+---
+// The index of the coverage log. One row per day, newest first.
+import { getCollection } from 'astro:content'
+import BaseLayout from '../layouts/BaseLayout.astro'
+import { SITE_NAME, SITE_URL, canonical } from '../lib/site.mjs'
+import { GAME } from '../lib/schema.mjs'
+
+const days = (await getCollection('updates')).sort((a, b) => b.data.date.localeCompare(a.data.date))
+
+const path = '/updates'
+const title = 'GTA 6 daily coverage log'
+const totalItems = days.reduce((sum, day) => sum + day.data.items.length, 0)
+const description = `A dated log of what the games press published about Grand Theft Auto VI, quoted and linked. ${days.length} days, ${totalItems} items so far.`
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  '@id': canonical(path),
+  url: canonical(path),
+  name: title,
+  description,
+  about: GAME,
+  isPartOf: { '@type': 'WebSite', '@id': `${SITE_URL}/#website`, name: SITE_NAME, url: SITE_URL },
+  mainEntity: {
+    '@type': 'ItemList',
+    numberOfItems: days.length,
+    itemListElement: days.map((day, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: day.data.title,
+      url: canonical(`/updates/${day.id}`),
+    })),
+  },
+}
+
+const human = (value) =>
+  new Date(`${value}T00:00:00Z`).toLocaleDateString('en-GB', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+    timeZone: 'UTC',
+  })
+---
+<BaseLayout title={title} description={description} path={path} jsonLd={jsonLd}>
+  <section class="band band--glaze">
+    <div class="shell">
+      <p class="crumb" style="color:var(--on-glaze-2)">
+        <a href="/" style="color:var(--on-glaze-2)">GTA 6 Record</a> / Daily coverage log
+      </p>
+      <h1>Daily coverage log</h1>
+      <p class="lede">
+        A dated record of what other sites published about Grand Theft Auto VI.
+        Headlines and summaries are quoted in the words of the outlet that wrote
+        them. This site did not write them and has not checked them.
+      </p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="shell">
+      <h2 style="margin-top:0">Every day on the log</h2>
+      {days.length === 0 ? (
+        <p class="lede">Nothing has been logged yet.</p>
+      ) : (
+        <ul class="dated">
+          {days.map((day) => (
+            <li>
+              <div class="dated__row">
+                <span class="dated__date">{human(day.data.date)}</span>
+                <span class="dated__date" style="color:var(--ink-2)">
+                  {day.data.items.length} {day.data.items.length === 1 ? 'item' : 'items'}
+                </span>
+              </div>
+              <a class="dated__title" href={`/updates/${day.id}`}>{day.data.title}</a>
+              <p style="margin-top:6px">{day.data.description}</p>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  </section>
+
+  <section class="band band--plaster">
+    <div class="shell prose">
+      <h2 style="margin-top:0">What this log is, and what it is not</h2>
+      <p>
+        This log records an act of publication, nothing more. When an outlet puts
+        out a piece about this game, the headline, the outlet's own summary, the
+        link and the date go on the day's page. That is a fact about publishing,
+        and it can be checked by clicking the link.
+      </p>
+      <p>
+        It is not a news section. Nothing on the log has been verified, and a
+        quoted headline is not a claim this site is making. When something on the
+        log turns out to be real and dated, it gets written up properly in
+        <a href="/news">the news record</a>, with sources.
+      </p>
+    </div>
+  </section>
+</BaseLayout>

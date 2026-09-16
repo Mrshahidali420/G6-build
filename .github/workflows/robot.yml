@@ -1,0 +1,68 @@
+name: robot
+
+# The self running coverage log. Twice a day it reads five press feeds and the
+# Rockstar Newswire, saves what those outlets published, and writes at most one
+# dated page out of it.
+#
+# The robot writes no prose. Everything it publishes is either quoted verbatim
+# from the source or built from a template holding a date, an outlet name and a
+# count. See docs/ROBOT.md for the eight guards.
+#
+# The build is the gate. If npm run build fails, nothing is committed and
+# nothing is pushed, so a bad page can never reach the site.
+
+on:
+  schedule:
+    - cron: '0 5,17 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  robot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # Lesson 6: the lockfile is allowed to drift between the Windows machine
+      # and this runner, so a failed ci falls back to install rather than
+      # losing the run.
+      - name: Install
+        run: npm ci --no-audit --no-fund || npm install --no-audit --no-fund
+
+      # Only the Newswire lane needs a browser. If this step fails the Newswire
+      # lane prints a line and skips itself, and the press lane still runs.
+      - name: Install Chromium
+        continue-on-error: true
+        run: npx playwright install --with-deps chromium
+
+      - name: Gather the press feeds
+        run: node scripts/robot/gather.mjs
+
+      - name: Gather the Rockstar Newswire
+        continue-on-error: true
+        run: node scripts/robot/newswire.mjs
+
+      - name: Write at most one page
+        run: node scripts/robot/publish.mjs
+
+      # The gate. A page that does not build is a page that does not ship.
+      - name: Build
+        run: npm run build
+
+      - name: Commit what was recorded
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/robot src/content/updates
+          if git diff --cached --quiet; then
+            echo "nothing new to record"
+            exit 0
+          fi
+          git commit -m "chore(robot): record what was published"
+          git push origin HEAD:main

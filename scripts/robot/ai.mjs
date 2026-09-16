@@ -43,7 +43,7 @@ let lastCallAt = 0
 // not refill until tomorrow. The next scheduled run starts fresh.
 let quotaSpent = null
 
-export const NO_KEY_MESSAGE = 'lane 2: no AI key configured (GITHUB_TOKEN in Actions, or an API key), skipping'
+export const NO_KEY_MESSAGE = 'lane 2: no AI key configured, running on logic only'
 
 const env = (name) => {
   const value = process.env[name]
@@ -132,12 +132,13 @@ export const hasKey = Boolean(provider)
 
 let announced = false
 
-/** Every lane 2 script starts with this. Returns false when there is no key. */
+/**
+ * Says whether a model is available, and names it once. It never exits and it
+ * never stops a script: deterministic code is the floor of lanes 2 and 3, and
+ * a model only ever adds to what that code already produced.
+ */
 export function ready() {
-  if (!provider) {
-    console.log(NO_KEY_MESSAGE)
-    return false
-  }
+  if (!provider) return false
   if (!announced) {
     console.log(`lane 2: using ${provider.label}`)
     announced = true

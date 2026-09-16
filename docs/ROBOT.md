@@ -63,10 +63,30 @@ once more.
 
 ## Lane 2: turning sourced articles into catalog work
 
-Lane 1 above cannot form a sentence. Lane 2 can, because it calls a language
-model, so everything in it is built on the assumption that the model will
-eventually lie. Nothing the model says reaches a page until code has compared
-it against a saved article.
+Lane 2 has two readers, and the one that needs no key is the floor.
+
+**The logic reader always runs.** `scripts/robot/logic.mjs` matches the names
+and alt names of entries already in the catalog against the sentences of the
+saved article, and keeps the whole sentence as both the fact and the quote. It
+cannot invent anything, because it never writes a word: every claim it makes is
+a run of characters lifted out of the article. A label under four characters is
+ignored, and so is a label that is an ordinary English word before it is
+anything in this game, because a catalog entry called "Beach" would otherwise
+claim every sentence that mentions a beach. A sentence has to be 8 to 60 words
+and carry no em dash. There is no count cap. Logic can only ever name an entry
+the catalog already holds: deciding that a name deserves a page is a judgement,
+and code does not make those.
+
+**The model reader is a bonus.** When a key is configured the saved text also
+goes to a model, and its claims are merged on top of the logic claims, matched
+by name and alt name so the same quote is never stored twice. Only the model can
+propose a thing that has no catalog entry yet. If the model fails, times out or
+runs out of quota, the run says so and keeps what logic found, and the article
+still counts as read.
+
+Everything the model says is still built on the assumption that it will
+eventually lie. Nothing it says reaches a page until code has compared it
+against the saved article.
 
 ### What it may do
 
@@ -86,6 +106,11 @@ person wrote is edited. A robot that can only append cannot damage a page.
 A new entry is only attempted when the claims behind it come from a
 `TIER_1_OFFICIAL` source, or from two different outlets. One press outlet
 repeating itself is a report, not a catalog entry.
+
+With no key at all, appending to an entry that already exists still runs, and
+candidates for a new entry are held with a line in the log. They are not
+refused, so no issue is opened, and the next run with a working key picks them
+up unchanged.
 
 ### The code checks
 
@@ -157,8 +182,15 @@ the next run. `ROBOT_AI=<id>` (`claude`, `anthropic`, `openrouter`, `github`,
 
 To switch provider, set that provider's key and leave the ones above it unset.
 `ROBOT_MODEL_EXTRACT` and `ROBOT_MODEL_WRITE` override the model for whichever
-provider is in use. With no key at all, every lane 2 script prints one line and
-exits 0, and lane 1 carries on. Because the free models are the weaker writers, the checks above
+provider is in use.
+
+**No key is not a stopped robot.** Every free provider has failed at some point,
+and a record that stops recording when a key expires is not a record. So the
+model is never the floor. With no key the run prints one line saying so, logic
+reads every saved article, facts are still appended to the entries that exist,
+and lane 3 still writes quote digest news pages. What a working key adds is
+extra claims, candidates for new catalog entries, and a written article in place
+of a digest. Because the free models are the weaker writers, the checks above
 are what protect the site, and none of them is relaxed for any provider.
 
 ### No count caps
@@ -174,10 +206,26 @@ anything published on or after that date.
 
 ## Lane 3: writing the news article
 
-Lane 3 is the only place on this site where a model writes prose, so it is
-given the least and checked the most. It never sees an article. It sees a list
-of claims whose quotes lane 2 already proved are real runs of characters from a
-saved article, and nothing else.
+Lane 3 groups the checked claims into stories and writes one page per story. It
+has a floor and a bonus, like lane 2.
+
+**The quote digest is the floor.** With no key, or when a model draft fails any
+check, `logicDraft` in `scripts/robot/logic.mjs` builds the page from the data
+alone: the outlet's own headline as the title, a template description holding
+outlet names, entity names and a date, then one `##` section per report carrying
+that outlet's headline as a link, its own summary, and every claim quote as a
+blockquote. Blockquotes are the only place a fact may appear. Everything outside
+them is template text holding names, outlets, dates and links that came from the
+data. A headline is never rewritten: when the first one does not fit the title
+bars, the next outlet's own headline is used, and if none fits the story is held
+for a later run.
+
+**A written article is the bonus.** When a key works, a model is given the list
+of claims, never an article, and writes the prose instead. It is given the least
+and checked the most: every sentence it wrote goes back to the model with the
+quotes and nothing else, and is deleted unless it is marked supported. If the
+model fails, or its draft fails a check, the run falls back to the digest for
+that story and says so, rather than refusing the story or leaving it unwritten.
 
 ### What it reads
 
@@ -188,9 +236,17 @@ or refused, and is never looked at again.
 
 ### Grouping, in code
 
-Two items are the same story when they share at least 2 entity names, alt names
-included, and were published within 3 days of each other. Union find over the
-items, so the same input groups the same way every time. No model is near it.
+Two items are the same story when they were published within 3 days of each
+other and share at least 2 signals. A signal is a catalog entry both reports are
+about (named in the headline or the outlet's summary, not only in the body) or a
+telling headline word both use (four letters or more, not the game's or the
+publisher's name). Two reports on "Stephen Root" share two words and group. Two
+reports that both mention Vice City in passing share nothing and stay apart.
+Union find over the items, so the same input groups the same way every time.
+No model is near it.
+
+Lane 2 keeps the same line. A logic claim is appended to an entry only when the
+article is about that entry. A mention in passing is background, not a fact.
 
 ### The two eligibility rules
 
@@ -201,17 +257,23 @@ alone rather than refused: an outlet may join it tomorrow. The run logs why.
 
 ### The bars
 
-One model call writes `{title, description, body, relatedNames}` from the
-claims. Everything after that is code, and each failure is a refusal:
+Both drafts go through the same code gates. A model draft that fails any of them
+falls back to the digest. A digest that fails one of the thin bars, the title
+length, the description length or the 250 words, is held for a later run,
+because another outlet may join the story tomorrow. A digest that fails one of
+the hard bars is refused:
 
 1. The title is 20 to 90 characters, the description 70 to 160.
 2. No em dash, no emoji, no table in the title, description or body.
-3. The support pass, the same one lane 2 uses: every sentence goes back with
-   the quotes and nothing else, every sentence not marked supported is deleted,
-   and a heading whose section loses everything is deleted with it. Headings,
-   blank lines and list markers are structure and are not sentences.
+3. The support pass, for a model draft only: every sentence goes back with the
+   quotes and nothing else, every sentence not marked supported is deleted, and
+   a heading whose section loses everything is deleted with it. Headings, blank
+   lines and list markers are structure and are not sentences. A digest skips
+   this pass, because there is no written sentence in it to check.
 4. At least 250 words survive.
 5. Every digit run in the title, description and body appears in some quote.
+   For a digest the haystack is every quote plus every item's headline, summary
+   and published date, all of which are the outlet's words or the saved data.
 6. The slug, `gta-6-` prefixed unless the title already starts with GTA 6, is
    free in `src/content/news/` and in the ledger. It never overwrites a file.
 7. Every source url is on the allowed host list in `sources.mjs`.

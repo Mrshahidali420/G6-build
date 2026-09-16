@@ -29,7 +29,7 @@
 import { execFileSync } from 'node:child_process'
 import fs from 'node:fs/promises'
 import path from 'node:path'
-import { ask, modelFor, ready } from './ai.mjs'
+import { ask, hasKey, modelFor, ready } from './ai.mjs'
 import {
   countWords,
   hasEmDash,
@@ -40,7 +40,10 @@ import {
 } from './checks.mjs'
 import { DATA_DIR, RAW_DIR, ROOT, readJson, writeJson } from './lib.mjs'
 
-if (!ready()) process.exit(0)
+// Appending a dated fact to an entry that already exists is pure code and it
+// always runs. Only a new entry needs a model, because deciding that a name is
+// a thing worth its own page is a judgement, and code does not make those.
+ready()
 
 const CLAIMS_DIR = path.join(DATA_DIR, 'claims')
 const FACTS_DIR = path.join(DATA_DIR, 'facts')
@@ -129,6 +132,8 @@ for (const file of claimFiles) {
       entityType: entity.entityType,
       name: entity.name,
       altNames: entity.altNames ?? [],
+      // Logic sets this. A model claim has no flag and is kept.
+      salient: entity.salient !== false,
       claims: entity.claims,
     }
 
@@ -153,6 +158,9 @@ for (const [slug, records] of existingGroups) {
   const added = []
 
   for (const record of records) {
+    // A logic claim from an article that only mentions the entry in passing
+    // is background, not a fact about the entry. Model claims carry no flag.
+    if (record.salient === false) continue
     for (const claim of record.claims) {
       const key = normalise(claim.quote)
       if (seenQuotes.has(key)) continue
@@ -333,7 +341,11 @@ const accepted = []
 const refused = []
 let imagesSaved = 0
 
-for (const [key, records] of newGroups) {
+if (!hasKey && newGroups.size) {
+  console.log(`entities: ${newGroups.size} candidate(s) for a new entry held, a new entry needs a model`)
+}
+
+for (const [key, records] of hasKey ? newGroups : new Map()) {
   const entityType = records[0].entityType
   const name = records[0].name
   const provisional = slugify(name)

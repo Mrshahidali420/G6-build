@@ -28,7 +28,7 @@
 import fs from 'node:fs/promises'
 import path from 'node:path'
 import { pathToFileURL } from 'node:url'
-import { ask, modelFor, ready } from './ai.mjs'
+import { ask, hasKey, modelFor, ready } from './ai.mjs'
 import {
   countWords,
   hasEmDash,
@@ -38,6 +38,7 @@ import {
   slugify,
 } from './checks.mjs'
 import { DATA_DIR, RAW_DIR, ROOT, readJson, today, writeJson } from './lib.mjs'
+import { digestNumberSource, headlineWords, logicDraft } from './logic.mjs'
 import { ALLOWED_HOSTS } from './sources.mjs'
 
 export const CLAIMS_DIR = path.join(DATA_DIR, 'claims')
@@ -46,10 +47,13 @@ export const LEDGER_FILE = path.join(DATA_DIR, 'news.json')
 export const NEWS_DIR = path.join(ROOT, 'src', 'content', 'news')
 export const ENTITIES_JSON = path.join(ROOT, 'src', 'data', 'entities.json')
 
-// Two items are the same story when they share this many entity names and were
-// published within this many days of each other. Both bars are deliberately
-// dull. A cleverer rule would group two unrelated pieces on a busy week.
-export const SHARED_NAMES = 2
+// Two items are the same story when they were published within this many days
+// of each other and share this many signals, where a signal is a catalog entry
+// both reports are about or a telling word both headlines use. Two reports on
+// "Stephen Root" share two words and group; two that only both mention Vice
+// City in passing share nothing and stay apart. The bar is deliberately dull.
+// A cleverer rule would group two unrelated pieces on a busy week.
+export const SHARED_SIGNALS = 2
 export const STORY_DAYS = 3
 
 export const MIN_CLAIMS = 4
@@ -65,10 +69,22 @@ const DAY_MS = 86400000
 
 // --- reading what lane 2 left behind -----------------------------------------
 
-/** Every name and alt name an item mentions, flattened for comparison. */
-export function namesOf(entities) {
+/**
+ * An entity the article is about, not one it mentions in passing. Logic mode
+ * marks the difference with salient; a model claim has no flag and counts.
+ */
+export function isSalient(entity) {
+  return entity?.salient !== false
+}
+
+/**
+ * Every name and alt name an item is about, flattened for comparison. With
+ * includeBackground the names it only mentions come too: those are no use
+ * for telling stories apart, but a page may still link the entries.
+ */
+export function namesOf(entities, includeBackground = false) {
   const names = new Set()
-  for (const entity of entities ?? []) {
+  for (const entity of (entities ?? []).filter((entity) => includeBackground || isSalient(entity))) {
     for (const label of [entity?.name, ...(entity?.altNames ?? [])]) {
       const key = normalise(label)
       if (key) names.add(key)
@@ -119,8 +135,14 @@ export async function loadItems({ claimsDir = CLAIMS_DIR, rawDir = RAW_DIR, ledg
       tier: raw.tier,
       url: raw.url,
       title: raw.title,
+      summary: raw.summary ?? '',
       published: raw.published ?? doc.published ?? null,
       names: namesOf(doc.entities),
+      mentions: namesOf(doc.entities, true),
+      words: headlineWords(raw.title),
+      // The names as the catalog spells them, for the digest template. names
+      // above is flattened for comparison and is no use on a page.
+      displayNames: [...new Set((doc.entities ?? []).filter(isSalient).map((entity) => entity?.name).filter(Boolean))],
       claims,
     })
   }
@@ -137,7 +159,8 @@ export function sameStory(a, b) {
 
   let shared = 0
   for (const name of a.names) if (b.names.has(name)) shared += 1
-  return shared >= SHARED_NAMES
+  for (const word of a.words ?? []) if (b.words?.has(word)) shared += 1
+  return shared >= SHARED_SIGNALS
 }
 
 /** Union find over the items. Same input, same grouping, every time. */
@@ -209,8 +232,10 @@ export const earliestDay = (story) =>
 export function slugFor(title) {
   const base = slugify(title)
   if (!base) return ''
-  if (/^(gta-6|gta-vi|grand-theft-auto-vi)\b/.test(base)) return base
-  return `gta-6-${base}`
+  // A headline that opens with the game's name, possessive or not, gets the
+  // one fixed prefix instead of "gta-6-gta-6s-".
+  const rest = base.replace(/^(gta-6|gta-vi|grand-theft-auto-vi|grand-theft-auto-6)s?(?:-|$)/, '')
+  return rest ? `gta-6-${rest}` : base
 }
 
 // --- the support pass ---------------------------------------------------------
@@ -393,19 +418,147 @@ async function refuse(refusedDir, name, reason, claims, written) {
   return slug
 }
 
+/**
+ * The model attempt: one call to write the page, then the support pass that
+ * deletes every sentence the quotes do not carry. A failure here is never a
+ * refusal on its own, because the quote digest is always underneath it.
+ */
+async function modelDraft({ askFn, outlets, storyNames, claims, quotes }) {
+  const user = [
+    `Outlets: ${[...outlets].join(', ')}`,
+    `Names in this story: ${storyNames.join(', ')}`,
+    '',
+    'Verified claims. Each one is followed by the exact words the outlet published.',
+    '',
+    ...claims.map(
+      (claim, index) =>
+        `${index + 1}. ${claim.fact}\n   Quote (${claim.outlet}, ${claim.published ?? 'date unknown'}): "${claim.quote}"`,
+    ),
+  ].join('\n')
+
+  let draft = null
+  try {
+    draft = await askFn({ system: WRITE_SYSTEM, user, model: modelFor('write'), maxTokens: 4096 })
+  } catch (error) {
+    return { why: `the model did not write this story (${error.message})` }
+  }
+
+  const title = String(draft?.title ?? '').trim()
+  const description = String(draft?.description ?? '').trim()
+  const body = String(draft?.body ?? '').replace(/\r\n/g, '\n').trim()
+  if (body.split('\n').some((line) => line.trim().startsWith('|'))) {
+    return { why: 'the model wrote a table, which the support pass cannot check sentence by sentence' }
+  }
+
+  const lines = splitBody(body)
+  const units = unitsOf(lines)
+  if (!units.length) return { why: 'the model wrote no sentences' }
+
+  let verdicts = null
+  try {
+    verdicts = await askFn({
+      system: SUPPORT_SYSTEM,
+      model: modelFor('extract'),
+      maxTokens: 4096,
+      user: [
+        'Quotes:',
+        ...quotes.map((quote, index) => `Q${index + 1}. "${quote}"`),
+        '',
+        'Sentences:',
+        ...units.map((unit, index) => `${index + 1}. ${unit.text}`),
+      ].join('\n'),
+    })
+  } catch (error) {
+    return { why: `the support pass did not run (${error.message})` }
+  }
+
+  // A sentence the checker did not rule on counts as unsupported. The
+  // permissive reading would let a truncated reply publish everything.
+  const kept = new Set()
+  for (const result of Array.isArray(verdicts?.results) ? verdicts.results : []) {
+    const index = Number(result?.n) - 1
+    if (result?.supported === true && index >= 0 && index < units.length) kept.add(index)
+  }
+  const dropped = units.length - kept.size
+  if (dropped) console.log(`  ${dropped} of ${units.length} model sentence(s) removed as unsupported`)
+
+  return {
+    title,
+    description,
+    body: rebuildBody(lines, units, kept),
+    relatedNames: Array.isArray(draft?.relatedNames) ? draft.relatedNames : [],
+    raw: draft,
+  }
+}
+
+/**
+ * Every gate that does not need a model. Both drafts go through all of it.
+ * `hold` says a later run may do better, which is true whenever the data was
+ * simply too thin: another outlet may join the story tomorrow.
+ */
+async function gate({ draft, quoteHaystack, sources, ledger, newsDir, name }) {
+  const { title, description, body } = draft
+  const thin = (why) => ({ ok: false, why, hold: true })
+  const bad = (why) => ({ ok: false, why, hold: false })
+
+  if (title.length < TITLE_MIN || title.length > TITLE_MAX) {
+    return thin(`the title is ${title.length} characters, the bar is ${TITLE_MIN} to ${TITLE_MAX}`)
+  }
+  if (description.length < DESCRIPTION_MIN || description.length > DESCRIPTION_MAX) {
+    return thin(
+      `the description is ${description.length} characters, the bar is ${DESCRIPTION_MIN} to ${DESCRIPTION_MAX}`,
+    )
+  }
+  if ([title, description, body].some(hasEmDash)) return bad('an em dash appears in the written text')
+  if ([title, description, body].some((value) => EMOJI.test(value))) {
+    return bad('an emoji appears in the written text')
+  }
+  if (body.split('\n').some((line) => line.trim().startsWith('|'))) {
+    return bad('the body holds a table, which the support pass cannot check sentence by sentence')
+  }
+  if (countWords(body) < MIN_WORDS) {
+    return thin(`the body is ${countWords(body)} words, under ${MIN_WORDS}`)
+  }
+
+  const unbacked = [...new Set([...numbersIn(body), ...numbersIn(title), ...numbersIn(description)])]
+    .filter((number) => !quoteHaystack.includes(number))
+  if (unbacked.length) {
+    return bad(`the number(s) ${unbacked.join(', ')} appear in the writing but in no quote`)
+  }
+
+  const file = path.join(newsDir, `${name}.md`)
+  const slugTaken = await fs.access(file).then(() => true).catch(() => false)
+  if (slugTaken || Object.values(ledger).some((entry) => entry?.slug === name)) {
+    return bad(`the slug "${name}" is already used by a news page`)
+  }
+
+  const offHost = sources.filter((source) => {
+    try {
+      return !ALLOWED_HOSTS.has(new URL(source.url).hostname)
+    } catch {
+      return true
+    }
+  })
+  if (offHost.length) return bad(`the source ${offHost[0].url} is not on the allowed host list`)
+
+  return { ok: true, file }
+}
+
 // Every path is an option so the test can run the real writer against a
 // fixture directory. In a real run they are the constants above, and nothing
 // outside this file passes anything else.
 export async function run({
   askFn = ask,
   isReady = ready,
+  hasModel = hasKey,
   claimsDir = CLAIMS_DIR,
   rawDir = RAW_DIR,
   newsDir = NEWS_DIR,
   refusedDir = REFUSED_DIR,
   ledgerFile = LEDGER_FILE,
 } = {}) {
-  if (!isReady()) return { skipped: true }
+  const useModel = Boolean(hasModel) && Boolean(isReady())
+  if (!useModel) console.log('news: no AI key, writing quote digests from the saved reports')
 
   const ledger = await readJson(ledgerFile, {})
   const items = await loadItems({ claimsDir, rawDir, ledger })
@@ -441,154 +594,78 @@ export async function run({
       continue
     }
 
-    const storyNames = [...new Set(story.flatMap((item) => [...item.names]))]
+    const storyNames = [...new Set(story.flatMap((item) => [...(item.mentions ?? item.names)]))]
     const quotes = claims.map((claim) => claim.quote)
     const quoteBlob = normalise(quotes.join('\n'))
-
-    const user = [
-      `Outlets: ${[...outlets].join(', ')}`,
-      `Names in this story: ${storyNames.join(', ')}`,
-      '',
-      'Verified claims. Each one is followed by the exact words the outlet published.',
-      '',
-      ...claims.map(
-        (claim, index) =>
-          `${index + 1}. ${claim.fact}\n   Quote (${claim.outlet}, ${claim.published ?? 'date unknown'}): "${claim.quote}"`,
-      ),
-    ].join('\n')
-
-    let draft = null
-    try {
-      draft = await askFn({ system: WRITE_SYSTEM, user, model: modelFor('write'), maxTokens: 4096 })
-    } catch (error) {
-      console.log(`  ${key}: not written this run (${error.message})`)
-      continue
-    }
-
-    const title = String(draft?.title ?? '').trim()
-    const description = String(draft?.description ?? '').trim()
-    let body = String(draft?.body ?? '').replace(/\r\n/g, '\n').trim()
-    const name = slugFor(title) || story[0].rawId
-
-    // A refusal is final for these raw items. Re-asking a model the same
-    // question every six hours spends a free tier on an answer that already
-    // failed, and the refusal file holds everything a person needs to finish
-    // the page by hand.
-    const fail = async (reason) => {
-      refused.push(await refuse(refusedDir, name, reason, claims, draft))
-      for (const item of story) {
-        ledger[item.rawId] = { slug: null, written: null, refused: today(), reason }
-      }
-    }
-
-    if (title.length < TITLE_MIN || title.length > TITLE_MAX) {
-      await fail(`the title is ${title.length} characters, the bar is ${TITLE_MIN} to ${TITLE_MAX}`)
-      continue
-    }
-    if (description.length < DESCRIPTION_MIN || description.length > DESCRIPTION_MAX) {
-      await fail(
-        `the description is ${description.length} characters, the bar is ${DESCRIPTION_MIN} to ${DESCRIPTION_MAX}`,
-      )
-      continue
-    }
-    if ([title, description, body].some(hasEmDash)) {
-      await fail('an em dash appears in the written text')
-      continue
-    }
-    if ([title, description, body].some((value) => EMOJI.test(value))) {
-      await fail('an emoji appears in the written text')
-      continue
-    }
-    if (body.split('\n').some((line) => line.trim().startsWith('|'))) {
-      await fail('the body holds a table, which the support pass cannot check sentence by sentence')
-      continue
-    }
-
-    // The support pass. Every written sentence goes back to the model with the
-    // quotes and nothing else, and whatever is not marked supported is deleted.
-    const lines = splitBody(body)
-    const units = unitsOf(lines)
-    if (!units.length) {
-      await fail('the body holds no sentences')
-      continue
-    }
-
-    let verdicts = null
-    try {
-      verdicts = await askFn({
-        system: SUPPORT_SYSTEM,
-        model: modelFor('extract'),
-        maxTokens: 4096,
-        user: [
-          'Quotes:',
-          ...quotes.map((quote, index) => `Q${index + 1}. "${quote}"`),
-          '',
-          'Sentences:',
-          ...units.map((unit, index) => `${index + 1}. ${unit.text}`),
-        ].join('\n'),
-      })
-    } catch (error) {
-      console.log(`  ${name}: support pass did not run (${error.message}), leaving it for the next run`)
-      continue
-    }
-
-    // A sentence the checker did not rule on counts as unsupported. The
-    // permissive reading would let a truncated reply publish everything.
-    const kept = new Set()
-    for (const result of Array.isArray(verdicts?.results) ? verdicts.results : []) {
-      const index = Number(result?.n) - 1
-      if (result?.supported === true && index >= 0 && index < units.length) kept.add(index)
-    }
-    const dropped = units.length - kept.size
-    body = rebuildBody(lines, units, kept)
-    if (dropped) console.log(`  ${name}: ${dropped} of ${units.length} sentence(s) removed as unsupported`)
-
-    if (countWords(body) < MIN_WORDS) {
-      await fail(`after removing unsupported sentences the body is ${countWords(body)} words, under ${MIN_WORDS}`)
-      continue
-    }
-
-    const unbacked = [
-      ...new Set([...numbersIn(body), ...numbersIn(title), ...numbersIn(description)]),
-    ].filter((number) => !quoteBlob.includes(number))
-    if (unbacked.length) {
-      await fail(`the number(s) ${unbacked.join(', ')} appear in the writing but in no quote`)
-      continue
-    }
-
-    const file = path.join(newsDir, `${name}.md`)
-    const slugTaken = await fs
-      .access(file)
-      .then(() => true)
-      .catch(() => false)
-    if (slugTaken || Object.values(ledger).some((entry) => entry?.slug === name)) {
-      await fail(`the slug "${name}" is already used by a news page`)
-      continue
-    }
-
+    const digestBlob = normalise(digestNumberSource(story, quotes))
     const sources = story.map((item) => ({ label: `${item.outlet}: ${item.title}`, url: item.url }))
-    const offHost = sources.filter((source) => {
-      try {
-        return !ALLOWED_HOSTS.has(new URL(source.url).hostname)
-      } catch {
-        return true
+
+    let page = null
+    let draft = null
+    let hold = null
+    let refusal = null
+
+    for (const via of useModel ? ['model', 'logic'] : ['logic']) {
+      const built =
+        via === 'model'
+          ? await modelDraft({ askFn, outlets, storyNames, claims, quotes })
+          : logicDraft(story, claims, story, { catalog })
+
+      const blocked = built.why ?? built.held
+      if (blocked) {
+        if (via === 'model') {
+          console.log(`  ${key}: ${blocked}, falling back to the logic digest`)
+          continue
+        }
+        hold = blocked
+        break
       }
-    })
-    if (offHost.length) {
-      await fail(`the source ${offHost[0].url} is not on the allowed host list`)
+
+      const name = slugFor(built.title) || story[0].rawId
+      const verdict = await gate({
+        draft: built,
+        quoteHaystack: via === 'model' ? quoteBlob : digestBlob,
+        sources,
+        ledger,
+        newsDir,
+        name,
+      })
+
+      if (verdict.ok) {
+        page = { ...verdict, name, via }
+        draft = built
+        break
+      }
+      if (via === 'model') {
+        console.log(`  ${key}: ${verdict.why}, falling back to the logic digest`)
+        continue
+      }
+      draft = built
+      if (verdict.hold) hold = verdict.why
+      else refusal = verdict.why
+    }
+
+    if (!page) {
+      if (!refusal) {
+        console.log(`  ${key}: held, ${hold ?? 'the data does not fill the template yet'}`)
+        continue
+      }
+      const name = slugFor(draft?.title ?? '') || story[0].rawId
+      refused.push(await refuse(refusedDir, name, refusal, claims, draft?.raw ?? draft ?? null))
+      for (const item of story) {
+        ledger[item.rawId] = { slug: null, written: null, refused: today(), reason: refusal }
+      }
       continue
     }
 
     const wanted = new Set(
-      [...(Array.isArray(draft?.relatedNames) ? draft.relatedNames : []), ...storyNames]
-        .map((value) => normalise(value))
-        .filter(Boolean),
+      [...(draft.relatedNames ?? []), ...storyNames].map((value) => normalise(value)).filter(Boolean),
     )
     const related = [...new Set([...wanted].map((value) => catalog.get(value)).filter(Boolean))].sort()
 
     const meta = {
-      title,
-      description,
+      title: draft.title,
+      description: draft.description,
       date,
       updated: today(),
       tier: story.some((item) => item.tier === 'TIER_1_OFFICIAL') ? 'TIER_1_OFFICIAL' : 'TIER_2_MAJOR_PRESS',
@@ -597,11 +674,12 @@ export async function run({
     }
 
     await fs.mkdir(newsDir, { recursive: true })
-    await fs.writeFile(file, pageText(meta, body), 'utf8')
-    for (const item of story) ledger[item.rawId] = { slug: name, written: today() }
-    written.push(name)
+    await fs.writeFile(page.file, pageText(meta, draft.body), 'utf8')
+    for (const item of story) ledger[item.rawId] = { slug: page.name, written: today() }
+    written.push(page.name)
     console.log(
-      `  wrote ${name} (${meta.tier}, ${countWords(body)} words, ${sources.length} source(s), ${related.length} related)`,
+      `  wrote ${page.name} by ${page.via} (${meta.tier}, ${countWords(draft.body)} words, ` +
+        `${sources.length} source(s), ${related.length} related)`,
     )
   }
 

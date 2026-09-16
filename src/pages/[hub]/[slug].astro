@@ -193,7 +193,7 @@ const description = entity.shortDescription.slice(0, 155)
         <ol class="since">
           {reported.map((item) => (
             <li class="since__item">
-              <p class="since__fact">{item.fact}</p>
+              {item.fact !== item.quote && <p class="since__fact">{item.fact}</p>}
               <p class="since__quote">"{item.quote}"</p>
               <p class="since__meta">
                 <Mark status={statusForTier(item.tier)} />

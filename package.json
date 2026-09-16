@@ -9,7 +9,9 @@
     "data": "node scripts/build-data.mjs",
     "preview": "astro preview",
     "check": "astro check",
-    "images": "node scripts/build-images.mjs"
+    "images": "node scripts/build-images.mjs",
+    "test": "node --test \"scripts/robot/*-test.mjs\"",
+    "test:logic": "node --test scripts/robot/logic-test.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.6.0",

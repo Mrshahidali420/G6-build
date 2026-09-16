@@ -8,10 +8,14 @@ name: robot
 # those pages is either quoted verbatim or built from a template holding a
 # date, an outlet name and a count.
 #
-# Lane 2 uses a language model, and trusts it with nothing. A claim is dropped
-# unless its quote is a real run of characters from the saved article. A new
-# catalog entry is refused unless it clears every code check in
-# scripts/robot/entities.mjs. See docs/ROBOT.md.
+# Lanes 2 and 3 run on plain logic first and always. With no AI key at all the
+# robot still reads every saved article for sentences that name a catalog entry,
+# appends them as dated facts, and writes quote digest news pages. A model, when
+# a key works, is a bonus on top: extra claims, candidates for new catalog
+# entries, and a written article in place of the digest. Nothing the model says
+# is trusted. A claim is dropped unless its quote is a real run of characters
+# from the saved article, and a new catalog entry is refused unless it clears
+# every code check in scripts/robot/entities.mjs. See docs/ROBOT.md.
 #
 # The build is the gate. If npm run build fails, nothing is committed and
 # nothing is pushed, so a bad page can never reach the site.
@@ -65,8 +69,9 @@ jobs:
         continue-on-error: true
         run: node scripts/robot/newswire.mjs
 
-      # Lane 2, step one. No key means it prints one line and exits 0, so the
-      # coverage log keeps running whether or not lane 2 is configured.
+      # Lane 2, step one. Logic is the floor: with no key it still reads every
+      # saved article for sentences naming a catalog entry. A key adds the
+      # model's claims on top.
       - name: Read the saved articles for facts
         continue-on-error: true
         run: node scripts/robot/extract.mjs
@@ -79,8 +84,9 @@ jobs:
           ROBOT_AI: ${{ vars.ROBOT_AI }}
           ROBOT_MODEL_EXTRACT: ${{ vars.ROBOT_MODEL_EXTRACT }}
 
-      # Lane 2, step two. Appends dated facts to entries that exist and writes
-      # new entries only when they clear every check.
+      # Lane 2, step two. Appending dated facts to entries that exist is pure
+      # code and always runs. Only a new entry needs a model, so with no key
+      # the candidates are held rather than refused.
       - name: Turn checked claims into catalog entries
         continue-on-error: true
         run: node scripts/robot/entities.mjs
@@ -94,10 +100,13 @@ jobs:
           ROBOT_MODEL_EXTRACT: ${{ vars.ROBOT_MODEL_EXTRACT }}
           ROBOT_MODEL_WRITE: ${{ vars.ROBOT_MODEL_WRITE }}
 
-      # Lane 3. Groups the checked claims into stories and writes a full news
-      # page for a story an official source, or two outlets, covered. Every
-      # sentence is put back to the model with the quotes and deleted unless it
-      # is supported. No key means one line and exit 0, like the steps above.
+      # Lane 3. Groups the checked claims into stories and writes a page for a
+      # story an official source, or two outlets, covered. Logic is the floor:
+      # with no key, or when the model draft fails a check, the page is a quote
+      # digest built from outlet headlines, summaries, dates and links, with
+      # every fact inside a verbatim blockquote. With a key the model writes the
+      # prose instead, and every sentence it wrote is put back to the model with
+      # the quotes and deleted unless it is supported.
       - name: Write news articles
         continue-on-error: true
         run: node scripts/robot/news.mjs
@@ -178,7 +187,9 @@ jobs:
             ' "$slug"
           done < data/robot/_todo.txt
           rm -f data/robot/_todo.txt
-          if ! git diff --quiet data/robot/issued.json 2>/dev/null; then
+          # git diff exits 128 on a file git has never seen, which set -e turns
+          # into a failed step even when there was nothing to do. status is quiet.
+          if [ -n "$(git status --porcelain -- data/robot/issued.json)" ]; then
             git add data/robot/issued.json
             git commit -m "chore(robot): note which refusals have an issue"
             git pull --rebase origin main && git push origin HEAD:main

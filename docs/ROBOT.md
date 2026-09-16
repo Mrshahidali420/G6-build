@@ -132,15 +132,23 @@ passes, the entry keeps its terrazzo plate, which is a fine outcome.
 Free tier first. `scripts/robot/ai.mjs` picks a provider by which key is set,
 in this order:
 
-1. `GEMINI_API_KEY`, Google Gemini through its OpenAI compatible endpoint,
-   `gemini-3.6-flash`. This is the default and the free tier the robot expects.
-   The free tier allows about 10 requests a minute, so the robot leaves 6.5
-   seconds between calls (`ROBOT_CALL_GAP_MS` changes that).
+1. `GITHUB_TOKEN`, GitHub Models, `openai/gpt-4.1-mini`. This is the default.
+   Every Actions run already has this token, so there is no secret to add; the
+   workflow grants it with `permissions: models: read`. The free tier allows
+   about 150 requests a day and 15 a minute, so the robot leaves 6.5 seconds
+   between calls (`ROBOT_CALL_GAP_MS` changes that).
 2. `ANTHROPIC_API_KEY`, the Anthropic Messages API.
 3. `OPENROUTER_API_KEY`, OpenRouter, default model `google/gemini-2.5-flash`.
    Its free tier allows roughly 50 requests a day, and about 1000 a day once an
    account has bought 10 USD of credit one time.
-4. `GITHUB_TOKEN` with `ROBOT_AI=github`, GitHub Models.
+4. `GEMINI_API_KEY`, Google Gemini, `gemini-3.6-flash`. Last on purpose: its
+   free tier stops at 20 requests a day, fewer than one run needs. Run 3 on
+   16 September 2026 spent 14 minutes collecting 429 errors on it.
+
+When a provider says the day's quota is spent, every later call in that run
+fails at once with no wait, and the unread items wait for the next run.
+`ROBOT_AI=<id>` (`github`, `anthropic`, `openrouter`, `gemini`) forces one
+provider when several keys are set.
 
 To switch provider, set that provider's key and leave the ones above it unset.
 `ROBOT_MODEL_EXTRACT` and `ROBOT_MODEL_WRITE` override the model for whichever

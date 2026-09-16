@@ -29,7 +29,7 @@ on:
 permissions:
   contents: write
   issues: write
-  # Only used when a run opts into GitHub Models with ROBOT_AI=github.
+  # Lets the run call GitHub Models with its own GITHUB_TOKEN. No secret needed.
   models: read
 
 jobs:

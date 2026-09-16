@@ -6,10 +6,15 @@
 // saved raw text character by character. This file is plumbing, not judgement.
 //
 // Four providers, picked by which key is in the environment, in this order:
-//   1. GEMINI_API_KEY     Google Gemini, OpenAI compatible endpoint. The default.
+//   1. GITHUB_TOKEN       GitHub Models. The default: every Actions run has
+//                         this token, no secret to add, about 150 calls a day.
 //   2. ANTHROPIC_API_KEY  Anthropic Messages API.
 //   3. OPENROUTER_API_KEY OpenRouter, one key in front of many models.
-//   4. GITHUB_TOKEN       GitHub Models, only when ROBOT_AI=github.
+//   4. GEMINI_API_KEY     Google Gemini. Its free tier stops at 20 calls a
+//                         day, which is fewer than one run needs, so it is last.
+//
+// ROBOT_AI=<id> forces one provider by its id (github, anthropic, openrouter,
+// gemini) when more than one key is set.
 //
 // Three of the four speak the OpenAI chat shape, so the table below carries the
 // only things that differ: the endpoint, the headers and the default models.
@@ -19,12 +24,18 @@
 
 const TIMEOUT_MS = 120000
 const RATE_LIMIT_WAIT_MS = 30000
-// The Gemini free tier allows about 10 requests a minute. A fixed gap between
+// Free tiers allow roughly 10 to 15 requests a minute. A fixed gap between
 // calls keeps the robot under that line instead of tripping it and waiting.
 const MIN_GAP_MS = Number(process.env.ROBOT_CALL_GAP_MS ?? 6500)
 let lastCallAt = 0
 
-export const NO_KEY_MESSAGE = 'lane 2: no AI key configured (set GEMINI_API_KEY), skipping'
+// Set the first time a provider says the day's quota is spent. From then on
+// every call fails at once, with no gap and no retry, so a run with thirty
+// articles left does not spend thirty minutes waiting on a bucket that will
+// not refill until tomorrow. The next scheduled run starts fresh.
+let quotaSpent = null
+
+export const NO_KEY_MESSAGE = 'lane 2: no AI key configured (GITHUB_TOKEN in Actions, or an API key), skipping'
 
 const env = (name) => {
   const value = process.env[name]
@@ -37,14 +48,16 @@ const bearer = (key) => ({ authorization: `Bearer ${key}` })
 // satisfied, wins.
 const PROVIDERS = [
   {
-    id: 'gemini',
-    label: 'Google Gemini (free tier)',
-    keyName: 'GEMINI_API_KEY',
-    url: 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions',
+    id: 'github',
+    label: 'GitHub Models',
+    keyName: 'GITHUB_TOKEN',
+    // GITHUB_TOKEN exists in every Actions run, so the robot needs no secret.
+    // The workflow grants it with `permissions: models: read`.
+    url: 'https://models.github.ai/inference/chat/completions',
     style: 'openai',
     headers: bearer,
-    extract: 'gemini-3.6-flash',
-    write: 'gemini-3.6-flash',
+    extract: 'openai/gpt-4.1-mini',
+    write: 'openai/gpt-4.1-mini',
   },
   {
     id: 'anthropic',
@@ -73,24 +86,23 @@ const PROVIDERS = [
     write: 'google/gemini-2.5-flash',
   },
   {
-    id: 'github',
-    label: 'GitHub Models',
-    keyName: 'GITHUB_TOKEN',
-    // GITHUB_TOKEN exists in every Actions run, so this row is opt in only.
-    optIn: () => env('ROBOT_AI') === 'github',
-    url: 'https://models.github.ai/inference/chat/completions',
+    id: 'gemini',
+    label: 'Google Gemini (free tier)',
+    keyName: 'GEMINI_API_KEY',
+    url: 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions',
     style: 'openai',
     headers: bearer,
-    extract: 'openai/gpt-4.1-mini',
-    write: 'openai/gpt-4.1-mini',
+    extract: 'gemini-3.6-flash',
+    write: 'gemini-3.6-flash',
   },
 ]
 
 function pickProvider() {
+  const forced = env('ROBOT_AI')
   for (const row of PROVIDERS) {
+    if (forced && row.id !== forced) continue
     const key = env(row.keyName)
     if (!key) continue
-    if (row.optIn && !row.optIn()) continue
     return { ...row, key }
   }
   return null
@@ -189,6 +201,12 @@ async function callOnce({ system, user, model, maxTokens }) {
     const detail = (await response.text().catch(() => '')).slice(0, 400)
     const error = new Error(`${provider.label} returned ${response.status}: ${detail}`)
     error.status = response.status
+    // A 429 that names a day bucket will not clear inside this run. Gemini
+    // says "free_tier_requests" with a daily limit, GitHub Models says
+    // "RateLimitReached" with a per day window in its message.
+    if (response.status === 429 && /per day|daily|_day|free_tier_requests|RateLimitReached/i.test(detail)) {
+      error.quota = true
+    }
     throw error
   }
 
@@ -204,6 +222,7 @@ async function callOnce({ system, user, model, maxTokens }) {
  */
 export async function ask({ system, user, model, maxTokens = 4096, json = true }) {
   if (!provider) throw new Error(NO_KEY_MESSAGE)
+  if (quotaSpent) throw new Error(`model call skipped: ${quotaSpent}`)
   const chosen = model ?? modelFor('extract')
 
   let lastError = null
@@ -214,6 +233,11 @@ export async function ask({ system, user, model, maxTokens = 4096, json = true }
     } catch (error) {
       lastError = error
       const status = error.status ?? 0
+      if (error.quota) {
+        quotaSpent = `${provider.label} day quota is spent, the rest waits for the next run`
+        console.log(`  ${quotaSpent}`)
+        break
+      }
       const retryable = status === 429 || status >= 500 || error.name === 'TimeoutError'
       if (attempt === 1 || !retryable) break
       const wait = status === 429 ? RATE_LIMIT_WAIT_MS : 2000

@@ -129,26 +129,31 @@ passes, the entry keeps its terrazzo plate, which is a fine outcome.
 
 ### Which model
 
-Free tier first. `scripts/robot/ai.mjs` picks a provider by which key is set,
-in this order:
+Subscription first. `scripts/robot/ai.mjs` picks a provider by which key is
+set, in this order:
 
-1. `GITHUB_TOKEN`, GitHub Models, `openai/gpt-4.1-mini`. This is the default.
-   Every Actions run already has this token, so there is no secret to add; the
-   workflow grants it with `permissions: models: read`. The free tier allows
-   about 150 requests a day and 15 a minute, so the robot leaves 6.5 seconds
-   between calls (`ROBOT_CALL_GAP_MS` changes that).
-2. `ANTHROPIC_API_KEY`, the Anthropic Messages API.
+1. `CLAUDE_CODE_OAUTH_TOKEN`, the Claude Code CLI signed in with a Claude Pro
+   or Max subscription, model `sonnet`. This is the default. The workflow
+   installs the CLI and each call runs `claude -p` with one turn, no tools,
+   the system prompt in a file and the article on stdin. Make the token once
+   with `claude setup-token` on a machine that is logged in, then paste it
+   into the repository secrets page on the GitHub website. It costs nothing
+   per call; the calls count against the subscription's usage window.
+2. `ANTHROPIC_API_KEY`, the Anthropic Messages API, pay per call.
 3. `OPENROUTER_API_KEY`, OpenRouter, default model `google/gemini-2.5-flash`.
    Its free tier allows roughly 50 requests a day, and about 1000 a day once an
    account has bought 10 USD of credit one time.
-4. `GEMINI_API_KEY`, Google Gemini, `gemini-3.6-flash`. Last on purpose: its
+4. `GITHUB_TOKEN`, GitHub Models, `openai/gpt-4.1-mini`. Being retired: from
+   September 2026 it answers 410 "retirement brownout" for hours at a time.
+5. `GEMINI_API_KEY`, Google Gemini, `gemini-3.6-flash`. Last on purpose: its
    free tier stops at 20 requests a day, fewer than one run needs. Run 3 on
    16 September 2026 spent 14 minutes collecting 429 errors on it.
 
-When a provider says the day's quota is spent, every later call in that run
-fails at once with no wait, and the unread items wait for the next run.
-`ROBOT_AI=<id>` (`github`, `anthropic`, `openrouter`, `gemini`) forces one
-provider when several keys are set.
+The robot leaves 6.5 seconds between calls (`ROBOT_CALL_GAP_MS` changes that).
+When a provider says the day's quota is spent, or answers 410, every later
+call in that run fails at once with no wait, and the unread items wait for
+the next run. `ROBOT_AI=<id>` (`claude`, `anthropic`, `openrouter`, `github`,
+`gemini`) forces one provider when several keys are set.
 
 To switch provider, set that provider's key and leave the ones above it unset.
 `ROBOT_MODEL_EXTRACT` and `ROBOT_MODEL_WRITE` override the model for whichever

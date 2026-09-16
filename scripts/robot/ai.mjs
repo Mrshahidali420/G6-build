@@ -5,22 +5,30 @@
 // code checks in extract.mjs and entities.mjs, which compare it against the
 // saved raw text character by character. This file is plumbing, not judgement.
 //
-// Four providers, picked by which key is in the environment, in this order:
-//   1. GITHUB_TOKEN       GitHub Models. The default: every Actions run has
-//                         this token, no secret to add, about 150 calls a day.
-//   2. ANTHROPIC_API_KEY  Anthropic Messages API.
-//   3. OPENROUTER_API_KEY OpenRouter, one key in front of many models.
-//   4. GEMINI_API_KEY     Google Gemini. Its free tier stops at 20 calls a
-//                         day, which is fewer than one run needs, so it is last.
+// Five providers, picked by which key is in the environment, in this order:
+//   1. CLAUDE_CODE_OAUTH_TOKEN  The Claude Code CLI signed in with a Claude
+//                              Pro or Max subscription. The default. Made once
+//                              with `claude setup-token`, no per call cost.
+//   2. ANTHROPIC_API_KEY        Anthropic Messages API, pay per call.
+//   3. OPENROUTER_API_KEY       OpenRouter, one key in front of many models.
+//   4. GITHUB_TOKEN             GitHub Models. Being retired (410 brownouts
+//                              from September 2026), kept only as a fallback.
+//   5. GEMINI_API_KEY           Google Gemini. Its free tier stops at 20 calls
+//                              a day, fewer than one run needs, so it is last.
 //
-// ROBOT_AI=<id> forces one provider by its id (github, anthropic, openrouter,
-// gemini) when more than one key is set.
+// ROBOT_AI=<id> forces one provider by its id (claude, anthropic, openrouter,
+// github, gemini) when more than one key is set.
 //
 // Three of the four speak the OpenAI chat shape, so the table below carries the
 // only things that differ: the endpoint, the headers and the default models.
 //
 // ROBOT_MODEL_EXTRACT and ROBOT_MODEL_WRITE override the model for whichever
 // provider is in use. A key is never printed, logged or put in an error.
+
+import { spawn } from 'node:child_process'
+import { tmpdir } from 'node:os'
+import { mkdtempSync, writeFileSync, rmSync } from 'node:fs'
+import { join } from 'node:path'
 
 const TIMEOUT_MS = 120000
 const RATE_LIMIT_WAIT_MS = 30000
@@ -47,6 +55,17 @@ const bearer = (key) => ({ authorization: `Bearer ${key}` })
 // Order is the pick order. The first row whose key exists, and whose opt in is
 // satisfied, wins.
 const PROVIDERS = [
+  {
+    id: 'claude',
+    label: 'Claude Code CLI (subscription)',
+    keyName: 'CLAUDE_CODE_OAUTH_TOKEN',
+    // No URL: the call shells out to `claude -p`, which reads the token from
+    // the environment itself. The token is never passed on the command line.
+    style: 'cli',
+    headers: () => ({}),
+    extract: 'sonnet',
+    write: 'sonnet',
+  },
   {
     id: 'github',
     label: 'GitHub Models',
@@ -185,10 +204,57 @@ function parseJson(text) {
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 
+// Runs the Claude Code CLI once in print mode and returns the reply text.
+// One turn, no tools, cwd in a temp dir so no CLAUDE.md from this repo is
+// loaded into the prompt. The token reaches the CLI through the environment.
+function callCli({ system, user, model }) {
+  return new Promise((resolve, reject) => {
+    // The system prompt is long and multi line, so it goes through a file,
+    // never through the argument list. The user text goes through stdin.
+    const dir = mkdtempSync(join(tmpdir(), 'robot-ai-'))
+    const systemFile = join(dir, 'system.txt')
+    writeFileSync(systemFile, system)
+    const args = [
+      '-p', '--output-format', 'json', '--model', model, '--max-turns', '1',
+      '--system-prompt-file', systemFile, '--disallowedTools', '*',
+    ]
+    const child = spawn('claude', args, {
+      cwd: dir,
+      env: process.env,
+      shell: process.platform === 'win32',
+      stdio: ['pipe', 'pipe', 'pipe'],
+    })
+    const cleanup = () => rmSync(dir, { recursive: true, force: true })
+    let out = ''
+    let err = ''
+    const timer = setTimeout(() => child.kill(), TIMEOUT_MS)
+    child.stdout.on('data', (chunk) => { out += chunk })
+    child.stderr.on('data', (chunk) => { err += chunk })
+    child.on('error', (error) => { clearTimeout(timer); cleanup(); reject(error) })
+    child.on('close', (code) => {
+      clearTimeout(timer)
+      cleanup()
+      let payload = null
+      try { payload = JSON.parse(out) } catch { payload = null }
+      if (code !== 0 || !payload || payload.is_error) {
+        const detail = (payload?.result ?? err ?? out).toString().slice(0, 400)
+        const error = new Error(`${provider.label} failed (exit ${code}): ${detail}`)
+        error.status = /rate limit|usage limit|limit reached/i.test(detail) ? 429 : 500
+        if (/usage limit|limit reached|resets/i.test(detail)) error.quota = true
+        reject(error)
+        return
+      }
+      resolve(String(payload.result ?? ''))
+    })
+    child.stdin.end(user)
+  })
+}
+
 async function callOnce({ system, user, model, maxTokens }) {
   const gap = MIN_GAP_MS - (Date.now() - lastCallAt)
   if (gap > 0) await sleep(gap)
   lastCallAt = Date.now()
+  if (provider.style === 'cli') return callCli({ system, user, model })
   const request = buildRequest({ system, user, model, maxTokens })
   const response = await fetch(provider.url, {
     method: 'POST',
@@ -207,6 +273,8 @@ async function callOnce({ system, user, model, maxTokens }) {
     if (response.status === 429 && /per day|daily|_day|free_tier_requests|RateLimitReached/i.test(detail)) {
       error.quota = true
     }
+    // 410 is a service that has gone away, not a bucket that refills.
+    if (response.status === 410) error.quota = true
     throw error
   }
 
@@ -234,7 +302,7 @@ export async function ask({ system, user, model, maxTokens = 4096, json = true }
       lastError = error
       const status = error.status ?? 0
       if (error.quota) {
-        quotaSpent = `${provider.label} day quota is spent, the rest waits for the next run`
+        quotaSpent = `${provider.label} is out of quota or gone (${status}), the rest waits for the next run`
         console.log(`  ${quotaSpent}`)
         break
       }

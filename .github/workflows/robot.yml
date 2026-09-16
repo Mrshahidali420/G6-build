@@ -1,12 +1,17 @@
 name: robot
 
-# The self running coverage log. Twice a day it reads five press feeds and the
-# Rockstar Newswire, saves what those outlets published, and writes at most one
-# dated page out of it.
+# The self running record. Twice a day it reads the press and official feeds
+# and the Rockstar Newswire, saves what those outlets published, and turns it
+# into two kinds of output.
 #
-# The robot writes no prose. Everything it publishes is either quoted verbatim
-# from the source or built from a template holding a date, an outlet name and a
-# count. See docs/ROBOT.md for the eight guards.
+# Lane 1 writes a dated coverage log. It cannot form a sentence: everything on
+# those pages is either quoted verbatim or built from a template holding a
+# date, an outlet name and a count.
+#
+# Lane 2 uses a language model, and trusts it with nothing. A claim is dropped
+# unless its quote is a real run of characters from the saved article. A new
+# catalog entry is refused unless it clears every code check in
+# scripts/robot/entities.mjs. See docs/ROBOT.md.
 #
 # The build is the gate. If npm run build fails, nothing is committed and
 # nothing is pushed, so a bad page can never reach the site.
@@ -15,10 +20,17 @@ on:
   schedule:
     - cron: '0 5,17 * * *'
   workflow_dispatch:
+    inputs:
+      since:
+        description: 'Optional YYYY-MM-DD. Re-read the feeds for anything published on or after this day, ignoring the seen list. Use it to recover a missed day.'
+        required: false
+        type: string
 
 permissions:
   contents: write
   issues: write
+  # Only used when a run opts into GitHub Models with ROBOT_AI=github.
+  models: read
 
 jobs:
   robot:
@@ -43,12 +55,41 @@ jobs:
 
       - name: Gather the press feeds
         run: node scripts/robot/gather.mjs
+        env:
+          ROBOT_SINCE: ${{ inputs.since }}
 
       - name: Gather the Rockstar Newswire
         continue-on-error: true
         run: node scripts/robot/newswire.mjs
 
-      - name: Write at most one page
+      # Lane 2, step one. No key means it prints one line and exits 0, so the
+      # coverage log keeps running whether or not lane 2 is configured.
+      - name: Read the saved articles for facts
+        continue-on-error: true
+        run: node scripts/robot/extract.mjs
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ROBOT_AI: ${{ vars.ROBOT_AI }}
+          ROBOT_MODEL_EXTRACT: ${{ vars.ROBOT_MODEL_EXTRACT }}
+
+      # Lane 2, step two. Appends dated facts to entries that exist and writes
+      # new entries only when they clear every check.
+      - name: Turn checked claims into catalog entries
+        continue-on-error: true
+        run: node scripts/robot/entities.mjs
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ROBOT_AI: ${{ vars.ROBOT_AI }}
+          ROBOT_MODEL_EXTRACT: ${{ vars.ROBOT_MODEL_EXTRACT }}
+          ROBOT_MODEL_WRITE: ${{ vars.ROBOT_MODEL_WRITE }}
+
+      - name: Write the coverage log
         run: node scripts/robot/publish.mjs
 
       # The gate. A page that does not build is a page that does not ship.
@@ -59,10 +100,55 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/robot src/content/updates
+          git add data/robot data/robot-entities.csv data/extras public/img/entities src/content/updates
           if git diff --cached --quiet; then
             echo "nothing new to record"
             exit 0
           fi
           git commit -m "chore(robot): record what was published"
           git push origin HEAD:main
+
+      # One issue per refused entity, so a person can finish what the checks
+      # would not let the robot ship. data/robot/issued.json is the memory, so
+      # the same refusal never opens a second issue.
+      - name: Open an issue for each refusal
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          mkdir -p data/robot/refused
+          node -e '
+            const fs = require("fs")
+            let issued = []
+            try { issued = JSON.parse(fs.readFileSync("data/robot/issued.json", "utf8")) } catch {}
+            const files = fs.readdirSync("data/robot/refused").filter((f) => f.endsWith(".json"))
+            const todo = files.map((f) => f.slice(0, -5)).filter((slug) => !issued.includes(slug))
+            fs.writeFileSync("data/robot/_todo.txt", todo.join("\n"))
+          '
+          while read -r slug; do
+            [ -z "$slug" ] && continue
+            reason=$(node -pe 'JSON.parse(require("fs").readFileSync(process.argv[1],"utf8")).reason' "data/robot/refused/$slug.json")
+            gh issue create \
+              --title "robot: $slug was refused" \
+              --label robot \
+              --body "The robot gathered enough sourced claims for a new \`$slug\` entry and then refused to publish it.
+
+          Reason: $reason
+
+          Everything it had is in \`data/robot/refused/$slug.json\`, including every claim and the exact words each one came from. A person can finish the entry from that file.
+
+          This issue was opened by \`.github/workflows/robot.yml\`." || true
+            node -e '
+              const fs = require("fs")
+              let issued = []
+              try { issued = JSON.parse(fs.readFileSync("data/robot/issued.json", "utf8")) } catch {}
+              issued.push(process.argv[1])
+              fs.writeFileSync("data/robot/issued.json", JSON.stringify([...new Set(issued)].sort(), null, 2) + "\n")
+            ' "$slug"
+          done < data/robot/_todo.txt
+          rm -f data/robot/_todo.txt
+          if ! git diff --quiet data/robot/issued.json 2>/dev/null; then
+            git add data/robot/issued.json
+            git commit -m "chore(robot): note which refusals have an issue"
+            git push origin HEAD:main
+          fi

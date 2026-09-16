@@ -621,6 +621,30 @@ hr.rule { border: 0; border-top: 1px solid var(--line); margin: 2.6em 0; }
 
 /* ---------- Question and answer list, used on entity pages ---------- */
 
+/* Reported since. A dated log inside an entity page: the fact in site voice,
+   then the outlet's exact words, then the mark and the link. Ruled rather than
+   carded, so it reads as a record and not as a feed. */
+.since { list-style: none; padding: 0; margin: 0; counter-reset: since; }
+.since__item { padding: 16px 0; border-top: 1px solid var(--line); }
+.since__item:first-child { border-top: 0; padding-top: 0; }
+.since__fact { margin: 0 0 8px; font-weight: 600; }
+.since__quote {
+  margin: 0 0 10px;
+  padding-left: 14px;
+  border-left: 3px solid var(--brass);
+  color: var(--ink-2);
+}
+.since__meta {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  font-family: var(--ui);
+  font-size: 0.8rem;
+}
+.since__date { color: var(--ink-2); font-variant-numeric: tabular-nums; }
+
 .qa { margin: 0; }
 .qa dt {
   font-family: var(--display); font-stretch: 112%; font-weight: 700;

@@ -18,7 +18,11 @@ export const PUBLISHED_FILE = path.join(DATA_DIR, 'published.json')
 export const UA = 'gta6record-robot (+https://gta6record.com)'
 export const PAGE_TIMEOUT_MS = 15000
 export const TEXT_CAP = 20000
-export const MAX_NEW_PER_RUN = 25
+// No count cap. On a reveal day there may be fifty new things and covering
+// three of them makes the site late. The quality guards do the refusing; the
+// only thing that slows a run is a rate limit, and that leaves the rest for
+// the next run rather than dropping it.
+export const MAX_NEW_PER_RUN = Number.POSITIVE_INFINITY
 
 export function idFor(sourceId, url) {
   return `${sourceId}-${createHash('sha1').update(url).digest('hex').slice(0, 12)}`
@@ -77,6 +81,81 @@ export function plainText(html) {
       .replace(/<style[\s\S]*?<\/style>/gi, ' ')
       .replace(/<noscript[\s\S]*?<\/noscript>/gi, ' '),
   ).slice(0, TEXT_CAP)
+}
+
+// One feed parser for both shapes. RSS wraps an item in <item>, Atom wraps it
+// in <entry> and puts the link in an href attribute rather than the element
+// text. The Verge, Polygon and Take-Two all ship Atom, so a parser that only
+// knew <item> read those three feeds as empty and said nothing about it.
+const FEED_LINK_ATTR = /<link\b([^>]*)>/gi
+const ATTR = /([a-zA-Z:_-]+)\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s"'>]+))/g
+
+function atomLink(body) {
+  let fallback = ''
+  for (const tag of body.match(FEED_LINK_ATTR) ?? []) {
+    const attrs = {}
+    for (const attr of tag.matchAll(ATTR)) {
+      attrs[attr[1].toLowerCase()] = attr[2] ?? attr[3] ?? attr[4] ?? ''
+    }
+    if (!attrs.href) continue
+    const rel = (attrs.rel ?? 'alternate').toLowerCase()
+    if (rel === 'alternate') return clean(attrs.href)
+    fallback ||= clean(attrs.href)
+  }
+  return fallback
+}
+
+function pick(body, names) {
+  for (const name of names) {
+    const found = body.match(new RegExp('<' + name + '\\b[^>]*>([\\s\\S]*?)</' + name + '>', 'i'))
+    if (found) {
+      const value = clean(found[1])
+      if (value) return value
+    }
+  }
+  return ''
+}
+
+function blocks(xml, tag) {
+  const out = []
+  for (const block of xml.split(new RegExp('<' + tag + '[\\s>]', 'i')).slice(1)) {
+    out.push(block.split(new RegExp('</' + tag + '>', 'i'))[0])
+  }
+  return out
+}
+
+export function parseFeed(xml) {
+  const items = []
+
+  const add = (url, title, date, description) => {
+    if (!url || !title) return
+    if (!/^https?:\/\//i.test(url)) return
+    items.push({ url, title, date: date || null, description })
+  }
+
+  for (const body of blocks(xml, 'item')) {
+    const rawLink =
+      body.match(/<link>([\s\S]*?)<\/link>/i)?.[1] ??
+      body.match(/<guid[^>]*>([\s\S]*?)<\/guid>/i)?.[1] ??
+      ''
+    add(
+      clean(rawLink) || atomLink(body),
+      pick(body, ['title']),
+      pick(body, ['pubDate', 'dc:date', 'published', 'updated']),
+      pick(body, ['description', 'content:encoded', 'summary']),
+    )
+  }
+
+  for (const body of blocks(xml, 'entry')) {
+    add(
+      atomLink(body),
+      pick(body, ['title']),
+      pick(body, ['published', 'updated']),
+      pick(body, ['summary', 'content']),
+    )
+  }
+
+  return items
 }
 
 export function isoDay(value) {
@@ -160,6 +239,7 @@ export function readArticle(html) {
   const tags = metaTags(html)
   return {
     ogTitle: meta(tags, ['og:title', 'twitter:title']),
+    ogImage: meta(tags, ['og:image', 'og:image:url', 'twitter:image']),
     ogDescription: meta(tags, ['og:description', 'description', 'twitter:description']),
     published: meta(tags, ['article:published_time', 'article:published', 'datepublished']),
     text: plainText(html),
@@ -186,6 +266,7 @@ export async function saveRaw({ source, url, title, summary = '', published = nu
     title: clean(page.ogTitle || title),
     summary: clean(page.ogDescription || summary),
     published: isoDay(page.published) ?? isoDay(published),
+    ogImage: page.ogImage || null,
     fetched: new Date().toISOString(),
     text: page.text,
   }

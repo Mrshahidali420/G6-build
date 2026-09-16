@@ -11,6 +11,7 @@ import { entitiesOfType, hubFor, relatedFor, urlFor, TIER_LABEL } from '../../li
 import { entitySchema } from '../../lib/schema.mjs'
 import { imageFor, creditFor, creditSourceFor, galleryFor } from '../../lib/images.mjs'
 import { trackFor } from '../../lib/music.mjs'
+import { factsFor, statusForTier } from '../../lib/facts.mjs'
 
 export function getStaticPaths() {
   return HUB_TYPES.flatMap((hub) =>
@@ -30,6 +31,11 @@ const creditSource = creditSourceFor(entity.slug)
 
 // The hero already shows the first picture, so the gallery gets the rest.
 const shots = galleryFor(entity.slug).slice(1)
+
+// What outlets have reported about this entry since it was written. The robot
+// appends to data/robot/facts/<slug>.json and never edits a word above, so this
+// section can grow without anything a person wrote changing.
+const reported = factsFor(entity.slug)
 
 // A song entry shows its real cover and a preview instead of a terrazzo plate,
 // when Apple publishes one for that record. When it does not, the plate stays.
@@ -171,6 +177,32 @@ const description = entity.shortDescription.slice(0, 155)
           file it came from and links back to the page that published it.
         </p>
         <Gallery shots={shots} name={entity.name} />
+      </div>
+    </section>
+  )}
+
+  {reported.length > 0 && (
+    <section class="band band--plaster">
+      <div class="shell prose">
+        <h2 style="margin-top:0">Reported since this entry was written</h2>
+        <p class="lede">
+          Each line below records that an outlet published something about {entity.name}
+          after this entry was made. The outlet's own words are quoted and linked. A
+          report is not a confirmation, and the mark next to each one says which it is.
+        </p>
+        <ol class="since">
+          {reported.map((item) => (
+            <li class="since__item">
+              <p class="since__fact">{item.fact}</p>
+              <p class="since__quote">"{item.quote}"</p>
+              <p class="since__meta">
+                <Mark status={statusForTier(item.tier)} />
+                <a href={item.url} rel="nofollow noopener" target="_blank">{item.outlet}</a>
+                {item.published && <span class="since__date">{item.published}</span>}
+              </p>
+            </li>
+          ))}
+        </ol>
       </div>
     </section>
   )}

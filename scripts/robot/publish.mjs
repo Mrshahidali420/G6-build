@@ -18,7 +18,9 @@ import { PUBLISHED_FILE, RAW_DIR, ROOT, readJson, today, writeJson } from './lib
 const UPDATES_DIR = path.join(ROOT, 'src', 'content', 'updates')
 const EM_DASH = String.fromCharCode(8212)
 const MIN_ITEMS_PER_DAY = 2
-const MAX_PAGES_PER_RUN = 1
+// Unlimited. One page per day is still the natural unit, so a run writes as
+// many days as it has evidence for and no more.
+const MAX_PAGES_PER_RUN = Number.POSITIVE_INFINITY
 const DESC_MIN = 70
 const DESC_MAX = 160
 

@@ -1,4 +1,4 @@
-// Lane one: the five RSS feeds.
+// Lane one: the RSS and Atom feeds.
 //
 // The robot reads a feed, keeps only items whose own title or summary mentions
 // this game, and saves what the outlet itself published. It writes no prose and
@@ -9,30 +9,7 @@
 // Writes: data/robot/raw/<id>.json, data/robot/seen.json
 
 import { FEED_SOURCES, MATCH } from './sources.mjs'
-import { MAX_NEW_PER_RUN, clean, getText, loadSeen, saveRaw, saveSeen } from './lib.mjs'
-
-function parseFeed(xml) {
-  const items = []
-  for (const block of xml.split(/<item[\s>]/i).slice(1)) {
-    const body = block.split(/<\/item>/i)[0]
-    const rawLink =
-      body.match(/<link>([\s\S]*?)<\/link>/i)?.[1] ??
-      body.match(/<guid[^>]*>([\s\S]*?)<\/guid>/i)?.[1] ??
-      ''
-    const link = clean(rawLink)
-    const title = clean(body.match(/<title>([\s\S]*?)<\/title>/i)?.[1] ?? '')
-    const date = clean(body.match(/<pubDate>([\s\S]*?)<\/pubDate>/i)?.[1] ?? '')
-    const description = clean(
-      body.match(/<description>([\s\S]*?)<\/description>/i)?.[1] ??
-        body.match(/<content:encoded>([\s\S]*?)<\/content:encoded>/i)?.[1] ??
-        '',
-    )
-    if (!link || !title) continue
-    if (!/^https?:\/\//i.test(link)) continue
-    items.push({ url: link, title, date: date || null, description })
-  }
-  return items
-}
+import { MAX_NEW_PER_RUN, getText, isoDay, loadSeen, parseFeed, saveRaw, saveSeen } from './lib.mjs'
 
 async function readFeed(source) {
   try {
@@ -44,6 +21,17 @@ async function readFeed(source) {
     return []
   }
 }
+
+// A manual run may pass ROBOT_SINCE=YYYY-MM-DD to re-read the feeds as if the
+// memory were empty for anything published on or after that day. It is how a
+// missed day is recovered by hand without clearing seen.json and refetching
+// the whole back catalogue.
+const SINCE = (process.env.ROBOT_SINCE ?? '').trim()
+const sinceDay = /^\d{4}-\d{2}-\d{2}$/.test(SINCE) ? SINCE : null
+if (SINCE && !sinceDay) console.log(`gather: ignoring ROBOT_SINCE "${SINCE}", it is not a YYYY-MM-DD date`)
+if (sinceDay) console.log(`gather: re-reading items published on or after ${sinceDay}, memory ignored for those`)
+
+const newer = (item) => Boolean(sinceDay) && Boolean(isoDay(item.date)) && isoDay(item.date) >= sinceDay
 
 const seen = await loadSeen()
 let saved = 0
@@ -57,7 +45,7 @@ for (const source of FEED_SOURCES) {
   if (hits.length) console.log(`${source.outlet}: ${hits.length} mention this game`)
 
   for (const item of hits) {
-    if (seen.has(item.url)) {
+    if (seen.has(item.url) && !newer(item)) {
       already += 1
       seen.add(item.url)
       continue

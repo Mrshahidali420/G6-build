@@ -32,6 +32,16 @@ const CLOSE = String.fromCharCode(8221)
 
 const outlets = [...new Set(data.items.map((item) => item.outlet))]
 
+// When a news page cites one of these links as a source, say so next to the
+// item. The log stays a log: this is a link to our own write up of that piece,
+// not a claim about it.
+const articleFor = new Map()
+for (const post of await getCollection('news')) {
+  for (const source of post.data.sources) {
+    if (!articleFor.has(source.url)) articleFor.set(source.url, post.id)
+  }
+}
+
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
@@ -92,6 +102,14 @@ const jsonLd = {
             {item.summary && <p style="margin-bottom:6px">{OPEN}{item.summary}{CLOSE}</p>}
             <p>
               <a href={item.url} rel="nofollow noopener" target="_blank">Read it on {item.outlet}</a>
+              {articleFor.has(item.url) && (
+                <>
+                  {' '}
+                  <a href={`/news/${articleFor.get(item.url)}`} style="display:inline-flex;align-items:center;gap:6px">
+                    Read our article <Icon name="arrow" size={14} />
+                  </a>
+                </>
+              )}
             </p>
           </li>
         ))}

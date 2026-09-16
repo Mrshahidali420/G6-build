@@ -53,8 +53,13 @@ Checked in this order. Each one prints why it fired.
 ## The gate
 
 The workflow runs `npm run build` after publishing. Only if the build passes
-does it commit `data/robot/` and `src/content/updates/` and push. A page that
-does not build never reaches the site.
+does it commit `data/robot/`, `src/content/updates/` and `src/content/news/`
+and push. A page that does not build never reaches the site.
+
+A commit from a person can land on `main` while a run is in flight, and the
+push is then rejected with `fetch first`, so the commit step rebases on
+`origin/main` before pushing and, if the push still fails, pulls and pushes
+once more.
 
 ## Lane 2: turning sourced articles into catalog work
 
@@ -153,3 +158,63 @@ fails that item is left unread so the next run continues where this one
 stopped. A missed day can be re-run by hand with the `since` input on
 `workflow_dispatch`, which re-reads the feeds ignoring the seen list for
 anything published on or after that date.
+
+## Lane 3: writing the news article
+
+Lane 3 is the only place on this site where a model writes prose, so it is
+given the least and checked the most. It never sees an article. It sees a list
+of claims whose quotes lane 2 already proved are real runs of characters from a
+saved article, and nothing else.
+
+### What it reads
+
+`data/robot/claims/<rawId>.json` beside its `data/robot/raw/<rawId>.json`. A
+claims file whose raw article is gone is skipped, so every quote stays
+checkable. `data/robot/news.json` is the ledger: a raw id in it is done, written
+or refused, and is never looked at again.
+
+### Grouping, in code
+
+Two items are the same story when they share at least 2 entity names, alt names
+included, and were published within 3 days of each other. Union find over the
+items, so the same input groups the same way every time. No model is near it.
+
+### The two eligibility rules
+
+A story is written only when it carries a `TIER_1_OFFICIAL` item, or items from
+at least 2 different outlets, and only when it holds at least 4 distinct
+verified claims, counted by unique quote. A story that fails either is left
+alone rather than refused: an outlet may join it tomorrow. The run logs why.
+
+### The bars
+
+One model call writes `{title, description, body, relatedNames}` from the
+claims. Everything after that is code, and each failure is a refusal:
+
+1. The title is 20 to 90 characters, the description 70 to 160.
+2. No em dash, no emoji, no table in the title, description or body.
+3. The support pass, the same one lane 2 uses: every sentence goes back with
+   the quotes and nothing else, every sentence not marked supported is deleted,
+   and a heading whose section loses everything is deleted with it. Headings,
+   blank lines and list markers are structure and are not sentences.
+4. At least 250 words survive.
+5. Every digit run in the title, description and body appears in some quote.
+6. The slug, `gta-6-` prefixed unless the title already starts with GTA 6, is
+   free in `src/content/news/` and in the ledger. It never overwrites a file.
+7. Every source url is on the allowed host list in `sources.mjs`.
+
+`tier` is `TIER_1_OFFICIAL` when any item is official. `date` is the earliest
+published day in the story, `updated` is the day of the run. `sources` is one
+entry per item, labelled `Outlet: headline`. `related` holds catalog slugs whose
+name or alt name matches exactly; an unknown name is dropped silently.
+
+### Where the output lands
+
+`src/content/news/<slug>.md`, in the same shape as the hand written pages. The
+day page in `/updates` shows a "Read our article" link next to any item a news
+page cites as a source.
+
+A refusal writes `data/robot/refused/news-<slug>.json` with its reason and every
+claim and quote it had, which the workflow turns into one GitHub issue labelled
+`robot`. The story's raw ids go into the ledger with the reason, so a refused
+story is not re-asked every six hours. A person finishes it from that file.

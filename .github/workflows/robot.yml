@@ -89,6 +89,22 @@ jobs:
           ROBOT_MODEL_EXTRACT: ${{ vars.ROBOT_MODEL_EXTRACT }}
           ROBOT_MODEL_WRITE: ${{ vars.ROBOT_MODEL_WRITE }}
 
+      # Lane 3. Groups the checked claims into stories and writes a full news
+      # page for a story an official source, or two outlets, covered. Every
+      # sentence is put back to the model with the quotes and deleted unless it
+      # is supported. No key means one line and exit 0, like the steps above.
+      - name: Write news articles
+        continue-on-error: true
+        run: node scripts/robot/news.mjs
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ROBOT_AI: ${{ vars.ROBOT_AI }}
+          ROBOT_MODEL_EXTRACT: ${{ vars.ROBOT_MODEL_EXTRACT }}
+          ROBOT_MODEL_WRITE: ${{ vars.ROBOT_MODEL_WRITE }}
+
       - name: Write the coverage log
         run: node scripts/robot/publish.mjs
 
@@ -100,13 +116,22 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for p in data/robot data/robot-entities.csv data/extras public/img/entities src/content/updates; do [ -e "$p" ] && git add "$p"; done
+          for p in data/robot data/robot-entities.csv data/extras public/img/entities src/content/updates src/content/news; do [ -e "$p" ] && git add "$p"; done
           if git diff --cached --quiet; then
             echo "nothing new to record"
             exit 0
           fi
           git commit -m "chore(robot): record what was published"
-          git push origin HEAD:main
+          # A person can land a commit on main while this run is in flight, and
+          # then the push is rejected with "fetch first" and a run's work is
+          # lost. The robot only touches data and content paths, so replaying
+          # its commit on top of whatever landed is safe.
+          git pull --rebase origin main
+          git push origin HEAD:main || {
+            echo "push rejected, pulling once more"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          }
 
       # One issue per refused entity, so a person can finish what the checks
       # would not let the robot ship. data/robot/issued.json is the memory, so
@@ -150,5 +175,5 @@ jobs:
           if ! git diff --quiet data/robot/issued.json 2>/dev/null; then
             git add data/robot/issued.json
             git commit -m "chore(robot): note which refusals have an issue"
-            git push origin HEAD:main
+            git pull --rebase origin main && git push origin HEAD:main
           fi

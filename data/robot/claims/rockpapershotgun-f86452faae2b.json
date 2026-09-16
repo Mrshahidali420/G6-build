@@ -1,0 +1,59 @@
+{
+  "rawId": "rockpapershotgun-f86452faae2b",
+  "outlet": "Rock Paper Shotgun",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.rockpapershotgun.com/miami-dade-police-outraged-by-proposals-to-turn-parts-of-miami-into-gta-6-saying-that-rockstars-game-embodies-what-they-work-every-single-day-to-prevent",
+  "published": "2026-09-04",
+  "ogImage": "https://assetsio.gnwcdn.com/Jason_and_Lucia_09.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-09-16T11:44:59.694Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Port Gellhorn",
+      "altNames": [
+        "Port Gellhorn"
+      ],
+      "slug": "port-gellhorn",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Home News Grand Theft Auto VI Miami-Dade police outraged by proposals to turn parts of Miami into GTA 6, saying that Rockstar's game embodies what they \"work every single day to prevent\" County mayor pitches Rockstar a Motor Fest and Port Gellhorn-themed exhibit Image credit: Take-Two Interactive News by Edwin Evans-Thirlwell News Editor Published on Sept.",
+          "quote": "Home News Grand Theft Auto VI Miami-Dade police outraged by proposals to turn parts of Miami into GTA 6, saying that Rockstar's game embodies what they \"work every single day to prevent\" County mayor pitches Rockstar a Motor Fest and Port Gellhorn-themed exhibit Image credit: Take-Two Interactive News by Edwin Evans-Thirlwell News Editor Published on Sept."
+        },
+        {
+          "fact": "All that stuff with the airport, skytrains and manhole covers aside, it proposes a dockyard visual installation inspired by GTA 6's Port Gellhorn, incorporating cargo containers, cranes, and cruise ships.",
+          "quote": "All that stuff with the airport, skytrains and manhole covers aside, it proposes a dockyard visual installation inspired by GTA 6's Port Gellhorn, incorporating cargo containers, cranes, and cruise ships."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The proposed publicity event would include \"an immersive arrival experience\" at Miami International Airport. with signs for Vice City and planes coated in GTA 6 livery, together with branded Metromover skytrains and specially designed manhole covers.",
+          "quote": "The proposed publicity event would include \"an immersive arrival experience\" at Miami International Airport. with signs for Vice City and planes coated in GTA 6 livery, together with branded Metromover skytrains and specially designed manhole covers."
+        },
+        {
+          "fact": "It's a predictable bid to snaffle a few of those GTA marketing dollars, while driving up the regional circulation of affluent Vice City nuts.",
+          "quote": "It's a predictable bid to snaffle a few of those GTA marketing dollars, while driving up the regional circulation of affluent Vice City nuts."
+        },
+        {
+          "fact": "There's also talk of a \"Vice City Motor Fest\", which might feature \"classic cars, customized vehicles, lowriders, motorcycles, tropical graphics, and local entertainment within a controlled, family-appropriate setting.\" Attendees would presumably be discouraged from nicking the cars.",
+          "quote": "There's also talk of a \"Vice City Motor Fest\", which might feature \"classic cars, customized vehicles, lowriders, motorcycles, tropical graphics, and local entertainment within a controlled, family-appropriate setting.\" Attendees would presumably be discouraged from nicking the cars."
+        },
+        {
+          "fact": "I do actually like the sound of the \"Vice City Radio Lab\", which is presented as a blend of local history and GTA elements.",
+          "quote": "I do actually like the sound of the \"Vice City Radio Lab\", which is presented as a blend of local history and GTA elements."
+        }
+      ]
+    }
+  ]
+}

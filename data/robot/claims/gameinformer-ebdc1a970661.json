@@ -1,0 +1,49 @@
+{
+  "rawId": "gameinformer-ebdc1a970661",
+  "outlet": "Game Informer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://gameinformer.com/opinion/2026/09/04/the-video-games-and-more-you-should-play-this-weekend-september-4-2026",
+  "published": "2026-09-04",
+  "ogImage": "https://gameinformer.com/sites/default/files/styles/og_image/public/2026/07/15/58ce1b15/380_onimusha02.jpg.webp",
+  "extractedAt": "2026-09-16T11:44:59.600Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Brian Heder",
+      "altNames": [
+        "Brian",
+        "Heder"
+      ],
+      "slug": "brian-heder",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The Blood Of Dawnwalker Charles Harte I was optimistic about The Blood of Dawnwalker after reading my coworker Brian Shea's articles from his cover story trip, but I was still very surprised by how much I like the game.",
+          "quote": "The Blood Of Dawnwalker Charles Harte I was optimistic about The Blood of Dawnwalker after reading my coworker Brian Shea's articles from his cover story trip, but I was still very surprised by how much I like the game."
+        },
+        {
+          "fact": "NBA 2K27 Brian Shea The NBA 2K series is perpetually the most frustrating sports game franchise.",
+          "quote": "NBA 2K27 Brian Shea The NBA 2K series is perpetually the most frustrating sports game franchise."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Halloween: The Game Wesley LeBlanc Friday the 13th: The Game developer IllFonic has finally made the asymmetrical horror game I’ve been wanting since playing as Jason and camp counselors, and it’s called Halloween: The Game and is out now.",
+          "quote": "Halloween: The Game Wesley LeBlanc Friday the 13th: The Game developer IllFonic has finally made the asymmetrical horror game I’ve been wanting since playing as Jason and camp counselors, and it’s called Halloween: The Game and is out now."
+        }
+      ]
+    }
+  ]
+}

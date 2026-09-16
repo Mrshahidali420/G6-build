@@ -1,0 +1,400 @@
+{
+  "rawId": "ign-ef8f7c03726c",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/gta-6-for-ps5-save-11-today-only",
+  "published": "2026-09-15",
+  "ogImage": null,
+  "extractedAt": "2026-09-16T11:44:59.653Z",
+  "entities": [
+    {
+      "entityType": "brand",
+      "name": "Ammu-Nation",
+      "altNames": [
+        "Phil's Ammu-Nation"
+      ],
+      "slug": "ammu-nation",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Hawk & Little Morgan Revolver: Sourced exclusively from the Vercetti Estate and found at Ammu-Nation stores as Jason and Lucia’s story progresses, his and hers versions of the powerful Hawk & Little Morgan Revolver are available with classic Vice City stylings for both Jason and Lucia, including palm-tree-etched grips, engraved detailing, high-performance scope, and personalized finishes.",
+          "quote": "Hawk & Little Morgan Revolver: Sourced exclusively from the Vercetti Estate and found at Ammu-Nation stores as Jason and Lucia’s story progresses, his and hers versions of the powerful Hawk & Little Morgan Revolver are available with classic Vice City stylings for both Jason and Lucia, including palm-tree-etched grips, engraved detailing, high-performance scope, and personalized finishes."
+        }
+      ]
+    },
+    {
+      "entityType": "brand",
+      "name": "Crest",
+      "altNames": [
+        "Crest Kayaks"
+      ],
+      "slug": "crest",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Vehicles and Vapid Ganado Retro Build at Jason’s Safehouse: Switch gears and soak up the sun in either an Army fatigue-tinged Dinka Enduro motorcycle and Crest Kayak, or inject some muscle and classic stylings into Jason's well-worn Vapid Ganado pickup with exclusive mods including a cab spoiler, rear aerials, and special livery.",
+          "quote": "Vehicles and Vapid Ganado Retro Build at Jason’s Safehouse: Switch gears and soak up the sun in either an Army fatigue-tinged Dinka Enduro motorcycle and Crest Kayak, or inject some muscle and classic stylings into Jason's well-worn Vapid Ganado pickup with exclusive mods including a cab spoiler, rear aerials, and special livery."
+        }
+      ]
+    },
+    {
+      "entityType": "brand",
+      "name": "Dinka",
+      "altNames": [],
+      "slug": "dinka",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Vehicles and Vapid Ganado Retro Build at Jason’s Safehouse: Switch gears and soak up the sun in either an Army fatigue-tinged Dinka Enduro motorcycle and Crest Kayak, or inject some muscle and classic stylings into Jason's well-worn Vapid Ganado pickup with exclusive mods including a cab spoiler, rear aerials, and special livery.",
+          "quote": "Vehicles and Vapid Ganado Retro Build at Jason’s Safehouse: Switch gears and soak up the sun in either an Army fatigue-tinged Dinka Enduro motorcycle and Crest Kayak, or inject some muscle and classic stylings into Jason's well-worn Vapid Ganado pickup with exclusive mods including a cab spoiler, rear aerials, and special livery."
+        }
+      ]
+    },
+    {
+      "entityType": "brand",
+      "name": "Shitzu",
+      "altNames": [],
+      "slug": "shitzu",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Shitzu Squalo: Perfect for casting in Gambit Bay and reeling in catches of all sorts, this gradient pink and blue Squalo docked at Washington Beach is made open-ocean-ready with an explosives-laden weapons crate.",
+          "quote": "Shitzu Squalo: Perfect for casting in Gambit Bay and reeling in catches of all sorts, this gradient pink and blue Squalo docked at Washington Beach is made open-ocean-ready with an explosives-laden weapons crate."
+        }
+      ]
+    },
+    {
+      "entityType": "brand",
+      "name": "Vapid",
+      "altNames": [],
+      "slug": "vapid",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Vehicles and Vapid Ganado Retro Build at Jason’s Safehouse: Switch gears and soak up the sun in either an Army fatigue-tinged Dinka Enduro motorcycle and Crest Kayak, or inject some muscle and classic stylings into Jason's well-worn Vapid Ganado pickup with exclusive mods including a cab spoiler, rear aerials, and special livery.",
+          "quote": "Vehicles and Vapid Ganado Retro Build at Jason’s Safehouse: Switch gears and soak up the sun in either an Army fatigue-tinged Dinka Enduro motorcycle and Crest Kayak, or inject some muscle and classic stylings into Jason's well-worn Vapid Ganado pickup with exclusive mods including a cab spoiler, rear aerials, and special livery."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "Goodtime Gear",
+      "altNames": [],
+      "slug": "goodtime-gear",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Goodtime Gear: A capsule collection of apparel and accessories inspired by the Goodtime State’s hit TV show character, Macca the Gator.",
+          "quote": "Goodtime Gear: A capsule collection of apparel and accessories inspired by the Goodtime State’s hit TV show character, Macca the Gator."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "PTT Youngin$",
+      "altNames": [
+        "PTT Youngin$ Compound",
+        "PTT Youngin$ Illegal Goods Store",
+        "Pit Youngin$ Illegal Goods Store"
+      ],
+      "slug": "ptt-youngins",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "PTT Youngin$ Compound and Scores: One of Leonida’s loudest and most socially active gangs, the PTT Youngin$ grow premium hydroponics in places you’d least expect.",
+          "quote": "PTT Youngin$ Compound and Scores: One of Leonida’s loudest and most socially active gangs, the PTT Youngin$ grow premium hydroponics in places you’d least expect."
+        },
+        {
+          "fact": "Find a way to raid the PTT Youngin$ Illegal Goods Store in Southside Vice City and escape safely to score some special items and distinct contraband.",
+          "quote": "Find a way to raid the PTT Youngin$ Illegal Goods Store in Southside Vice City and escape safely to score some special items and distinct contraband."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "Rideout Customs",
+      "altNames": [
+        "Ride Out Customs"
+      ],
+      "slug": "rideout-customs",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "At Rideout Customs in Vice City, transform vanilla vehicles into magnificent works of art with detailed interiors, exquisite rims, and donk stylings.",
+          "quote": "At Rideout Customs in Vice City, transform vanilla vehicles into magnificent works of art with detailed interiors, exquisite rims, and donk stylings."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "Stock 305",
+      "altNames": [],
+      "slug": "stock-305",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Stock 305 Clothing Store: Exclusively open for business with the Ultimate Edition, Stock 305 is Stockyard’s premiere destination for elevated streetwear.",
+          "quote": "Stock 305 Clothing Store: Exclusively open for business with the Ultimate Edition, Stock 305 is Stockyard’s premiere destination for elevated streetwear."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Vehicles and Vapid Ganado Retro Build at Jason’s Safehouse: Switch gears and soak up the sun in either an Army fatigue-tinged Dinka Enduro motorcycle and Crest Kayak, or inject some muscle and classic stylings into Jason's well-worn Vapid Ganado pickup with exclusive mods including a cab spoiler, rear aerials, and special livery.",
+          "quote": "Vehicles and Vapid Ganado Retro Build at Jason’s Safehouse: Switch gears and soak up the sun in either an Army fatigue-tinged Dinka Enduro motorcycle and Crest Kayak, or inject some muscle and classic stylings into Jason's well-worn Vapid Ganado pickup with exclusive mods including a cab spoiler, rear aerials, and special livery."
+        },
+        {
+          "fact": "Hawk & Little Morgan Revolver: Sourced exclusively from the Vercetti Estate and found at Ammu-Nation stores as Jason and Lucia’s story progresses, his and hers versions of the powerful Hawk & Little Morgan Revolver are available with classic Vice City stylings for both Jason and Lucia, including palm-tree-etched grips, engraved detailing, high-performance scope, and personalized finishes.",
+          "quote": "Hawk & Little Morgan Revolver: Sourced exclusively from the Vercetti Estate and found at Ammu-Nation stores as Jason and Lucia’s story progresses, his and hers versions of the powerful Hawk & Little Morgan Revolver are available with classic Vice City stylings for both Jason and Lucia, including palm-tree-etched grips, engraved detailing, high-performance scope, and personalized finishes."
+        },
+        {
+          "fact": "Personalized Weapon Variants: Personalized sidearms with detailed engravings for both Jason's Girardi ES9 pistol and Lucia's Klose K17 pistol.",
+          "quote": "Personalized Weapon Variants: Personalized sidearms with detailed engravings for both Jason's Girardi ES9 pistol and Lucia's Klose K17 pistol."
+        },
+        {
+          "fact": "Vice City Styles for Jason and Lucia: Whether poolside or side by side, Jason and Lucia can look the part with exclusive outfits, tattoos, and more.",
+          "quote": "Vice City Styles for Jason and Lucia: Whether poolside or side by side, Jason and Lucia can look the part with exclusive outfits, tattoos, and more."
+        },
+        {
+          "fact": "Style various unique and exclusive looks for Jason and Lucia that complement the murals, tags, and artwork that put the neighborhood on the map.",
+          "quote": "Style various unique and exclusive looks for Jason and Lucia that complement the murals, tags, and artwork that put the neighborhood on the map."
+        },
+        {
+          "fact": "Sara’s Unisex Salon: Get signature salon hair styles for both Jason and Lucia, including facial hair for Jason and makeup and nails for Lucia.",
+          "quote": "Sara’s Unisex Salon: Get signature salon hair styles for both Jason and Lucia, including facial hair for Jason and makeup and nails for Lucia."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Hawk & Little Morgan Revolver: Sourced exclusively from the Vercetti Estate and found at Ammu-Nation stores as Jason and Lucia’s story progresses, his and hers versions of the powerful Hawk & Little Morgan Revolver are available with classic Vice City stylings for both Jason and Lucia, including palm-tree-etched grips, engraved detailing, high-performance scope, and personalized finishes.",
+          "quote": "Hawk & Little Morgan Revolver: Sourced exclusively from the Vercetti Estate and found at Ammu-Nation stores as Jason and Lucia’s story progresses, his and hers versions of the powerful Hawk & Little Morgan Revolver are available with classic Vice City stylings for both Jason and Lucia, including palm-tree-etched grips, engraved detailing, high-performance scope, and personalized finishes."
+        },
+        {
+          "fact": "Personalized Weapon Variants: Personalized sidearms with detailed engravings for both Jason's Girardi ES9 pistol and Lucia's Klose K17 pistol.",
+          "quote": "Personalized Weapon Variants: Personalized sidearms with detailed engravings for both Jason's Girardi ES9 pistol and Lucia's Klose K17 pistol."
+        },
+        {
+          "fact": "Vice City Styles for Jason and Lucia: Whether poolside or side by side, Jason and Lucia can look the part with exclusive outfits, tattoos, and more.",
+          "quote": "Vice City Styles for Jason and Lucia: Whether poolside or side by side, Jason and Lucia can look the part with exclusive outfits, tattoos, and more."
+        },
+        {
+          "fact": "Style various unique and exclusive looks for Jason and Lucia that complement the murals, tags, and artwork that put the neighborhood on the map.",
+          "quote": "Style various unique and exclusive looks for Jason and Lucia that complement the murals, tags, and artwork that put the neighborhood on the map."
+        },
+        {
+          "fact": "Sara’s Unisex Salon: Get signature salon hair styles for both Jason and Lucia, including facial hair for Jason and makeup and nails for Lucia.",
+          "quote": "Sara’s Unisex Salon: Get signature salon hair styles for both Jason and Lucia, including facial hair for Jason and makeup and nails for Lucia."
+        }
+      ]
+    },
+    {
+      "entityType": "edition",
+      "name": "Ultimate Edition",
+      "altNames": [
+        "GTA 6 Ultimate Edition",
+        "GTA VI Ultimate Edition"
+      ],
+      "slug": "gta-6-ultimate-edition",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Which means, if you’ve held off on preordering GTA 6 so far, you can get the ultimate edition for $89 rather than the $100 MSRP.",
+          "quote": "Which means, if you’ve held off on preordering GTA 6 so far, you can get the ultimate edition for $89 rather than the $100 MSRP."
+        },
+        {
+          "fact": "It turns out that most people who preorder the game are buying the ultimate edition , which comes with a host of extra vehicles, weapons, and apparel items that will be available as you play through the GTA 6 campaign.",
+          "quote": "It turns out that most people who preorder the game are buying the ultimate edition , which comes with a host of extra vehicles, weapons, and apparel items that will be available as you play through the GTA 6 campaign."
+        },
+        {
+          "fact": "Vehicle Mod Shops: Two preeminent vehicle customization destinations are exclusively open for business with the Ultimate Edition and feature a wide selection of artistic and performance-based vehicle mods.",
+          "quote": "Vehicle Mod Shops: Two preeminent vehicle customization destinations are exclusively open for business with the Ultimate Edition and feature a wide selection of artistic and performance-based vehicle mods."
+        },
+        {
+          "fact": "Restore these and make them your own, including four vehicles that are only available in the Ultimate Edition.",
+          "quote": "Restore these and make them your own, including four vehicles that are only available in the Ultimate Edition."
+        },
+        {
+          "fact": "Stock 305 Clothing Store: Exclusively open for business with the Ultimate Edition, Stock 305 is Stockyard’s premiere destination for elevated streetwear.",
+          "quote": "Stock 305 Clothing Store: Exclusively open for business with the Ultimate Edition, Stock 305 is Stockyard’s premiere destination for elevated streetwear."
+        }
+      ]
+    },
+    {
+      "entityType": "landmark",
+      "name": "Stockyard",
+      "altNames": [],
+      "slug": "stockyard",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Stock 305 Clothing Store: Exclusively open for business with the Ultimate Edition, Stock 305 is Stockyard’s premiere destination for elevated streetwear.",
+          "quote": "Stock 305 Clothing Store: Exclusively open for business with the Ultimate Edition, Stock 305 is Stockyard’s premiere destination for elevated streetwear."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Meanwhile at One-Eyed Willie’s in Lake Leonida, transform off-road vehicles with exclusive mods and even attain custom hand-painted masterpieces.",
+          "quote": "Meanwhile at One-Eyed Willie’s in Lake Leonida, transform off-road vehicles with exclusive mods and even attain custom hand-painted masterpieces."
+        },
+        {
+          "fact": "PTT Youngin$ Compound and Scores: One of Leonida’s loudest and most socially active gangs, the PTT Youngin$ grow premium hydroponics in places you’d least expect.",
+          "quote": "PTT Youngin$ Compound and Scores: One of Leonida’s loudest and most socially active gangs, the PTT Youngin$ grow premium hydroponics in places you’d least expect."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "At Rideout Customs in Vice City, transform vanilla vehicles into magnificent works of art with detailed interiors, exquisite rims, and donk stylings.",
+          "quote": "At Rideout Customs in Vice City, transform vanilla vehicles into magnificent works of art with detailed interiors, exquisite rims, and donk stylings."
+        },
+        {
+          "fact": "Hawk & Little Morgan Revolver: Sourced exclusively from the Vercetti Estate and found at Ammu-Nation stores as Jason and Lucia’s story progresses, his and hers versions of the powerful Hawk & Little Morgan Revolver are available with classic Vice City stylings for both Jason and Lucia, including palm-tree-etched grips, engraved detailing, high-performance scope, and personalized finishes.",
+          "quote": "Hawk & Little Morgan Revolver: Sourced exclusively from the Vercetti Estate and found at Ammu-Nation stores as Jason and Lucia’s story progresses, his and hers versions of the powerful Hawk & Little Morgan Revolver are available with classic Vice City stylings for both Jason and Lucia, including palm-tree-etched grips, engraved detailing, high-performance scope, and personalized finishes."
+        },
+        {
+          "fact": "Find a way to raid the PTT Youngin$ Illegal Goods Store in Southside Vice City and escape safely to score some special items and distinct contraband.",
+          "quote": "Find a way to raid the PTT Youngin$ Illegal Goods Store in Southside Vice City and escape safely to score some special items and distinct contraband."
+        },
+        {
+          "fact": "Vice City Styles for Jason and Lucia: Whether poolside or side by side, Jason and Lucia can look the part with exclusive outfits, tattoos, and more.",
+          "quote": "Vice City Styles for Jason and Lucia: Whether poolside or side by side, Jason and Lucia can look the part with exclusive outfits, tattoos, and more."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Crest Kayak",
+      "altNames": [
+        "Kayak",
+        "Crest kayak"
+      ],
+      "slug": "crest-kayak",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Vehicles and Vapid Ganado Retro Build at Jason’s Safehouse: Switch gears and soak up the sun in either an Army fatigue-tinged Dinka Enduro motorcycle and Crest Kayak, or inject some muscle and classic stylings into Jason's well-worn Vapid Ganado pickup with exclusive mods including a cab spoiler, rear aerials, and special livery.",
+          "quote": "Vehicles and Vapid Ganado Retro Build at Jason’s Safehouse: Switch gears and soak up the sun in either an Army fatigue-tinged Dinka Enduro motorcycle and Crest Kayak, or inject some muscle and classic stylings into Jason's well-worn Vapid Ganado pickup with exclusive mods including a cab spoiler, rear aerials, and special livery."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Dinka Enduro Motorcycle",
+      "altNames": [
+        "Dinka Enduro",
+        "Enduro Motorcycle",
+        "Dinka Enduro"
+      ],
+      "slug": "dinka-enduro-motorcycle",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Vehicles and Vapid Ganado Retro Build at Jason’s Safehouse: Switch gears and soak up the sun in either an Army fatigue-tinged Dinka Enduro motorcycle and Crest Kayak, or inject some muscle and classic stylings into Jason's well-worn Vapid Ganado pickup with exclusive mods including a cab spoiler, rear aerials, and special livery.",
+          "quote": "Vehicles and Vapid Ganado Retro Build at Jason’s Safehouse: Switch gears and soak up the sun in either an Army fatigue-tinged Dinka Enduro motorcycle and Crest Kayak, or inject some muscle and classic stylings into Jason's well-worn Vapid Ganado pickup with exclusive mods including a cab spoiler, rear aerials, and special livery."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Ganado Retro Build",
+      "altNames": [
+        "Vapid Ganado Retro Build",
+        "Ganado retro build"
+      ],
+      "slug": "ganado-retro-build",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Vehicles and Vapid Ganado Retro Build at Jason’s Safehouse: Switch gears and soak up the sun in either an Army fatigue-tinged Dinka Enduro motorcycle and Crest Kayak, or inject some muscle and classic stylings into Jason's well-worn Vapid Ganado pickup with exclusive mods including a cab spoiler, rear aerials, and special livery.",
+          "quote": "Vehicles and Vapid Ganado Retro Build at Jason’s Safehouse: Switch gears and soak up the sun in either an Army fatigue-tinged Dinka Enduro motorcycle and Crest Kayak, or inject some muscle and classic stylings into Jason's well-worn Vapid Ganado pickup with exclusive mods including a cab spoiler, rear aerials, and special livery."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Shitzu Squalo",
+      "altNames": [
+        "Squalo",
+        "Shitzu Squalo"
+      ],
+      "slug": "shitzu-squalo",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Shitzu Squalo: Perfect for casting in Gambit Bay and reeling in catches of all sorts, this gradient pink and blue Squalo docked at Washington Beach is made open-ocean-ready with an explosives-laden weapons crate.",
+          "quote": "Shitzu Squalo: Perfect for casting in Gambit Bay and reeling in catches of all sorts, this gradient pink and blue Squalo docked at Washington Beach is made open-ocean-ready with an explosives-laden weapons crate."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Vapid Ganado",
+      "altNames": [
+        "Ganado",
+        "Vapid Ganado pickup"
+      ],
+      "slug": "vapid-ganado",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Vehicles and Vapid Ganado Retro Build at Jason’s Safehouse: Switch gears and soak up the sun in either an Army fatigue-tinged Dinka Enduro motorcycle and Crest Kayak, or inject some muscle and classic stylings into Jason's well-worn Vapid Ganado pickup with exclusive mods including a cab spoiler, rear aerials, and special livery.",
+          "quote": "Vehicles and Vapid Ganado Retro Build at Jason’s Safehouse: Switch gears and soak up the sun in either an Army fatigue-tinged Dinka Enduro motorcycle and Crest Kayak, or inject some muscle and classic stylings into Jason's well-worn Vapid Ganado pickup with exclusive mods including a cab spoiler, rear aerials, and special livery."
+        }
+      ]
+    }
+  ]
+}

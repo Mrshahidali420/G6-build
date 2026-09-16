@@ -1,0 +1,28 @@
+{
+  "rawId": "rockpapershotgun-f4218cf16324",
+  "outlet": "Rock Paper Shotgun",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.rockpapershotgun.com/justice-at-last-feels-within-reach-final-hearing-in-rockstar-and-fired-gta-devs-legal-battle-will-kick-off-with-a-union-rally",
+  "published": "2026-09-08",
+  "ogImage": "https://assetsio.gnwcdn.com/rockstar-firings-final-hearing-starts-this-week-01.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-09-16T11:44:59.686Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "\"As the world prepares for the release of GTA VI, we are reliving the heartbreak of being thrown out of a project we poured so much of our lives into.\" IWGB Union member and former Rockstar staffer Jason Lewis said in a union press release .",
+          "quote": "\"As the world prepares for the release of GTA VI, we are reliving the heartbreak of being thrown out of a project we poured so much of our lives into.\" IWGB Union member and former Rockstar staffer Jason Lewis said in a union press release ."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "rawId": "pcgamer-4a00916e1451",
+  "outlet": "PC Gamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pcgamer.com/games/grand-theft-auto/forget-gta-6-i-have-brought-gta-5-closer-to-being-the-true-greatest-game-of-all-time-hulk-ultimate-destruction/",
+  "published": "2026-09-14",
+  "ogImage": null,
+  "extractedAt": "2026-09-16T11:44:59.659Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Grand Theft Auto 6 GTA 6 guide : Everything we know GTA 6 cars : The garage lineup GTA 6 characters : Your anti-hero cast GTA 6 map : Confirmed Vice City locales GTA 6 PC release : When's it going to happen?",
+          "quote": "Grand Theft Auto 6 GTA 6 guide : Everything we know GTA 6 cars : The garage lineup GTA 6 characters : Your anti-hero cast GTA 6 map : Confirmed Vice City locales GTA 6 PC release : When's it going to happen?"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "rawId": "eurogamer-fbd5e61cae19",
+  "outlet": "Eurogamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.eurogamer.net/gta-6-miami-beach-marketing-campagin-negotiations-approved",
+  "published": "2026-09-11",
+  "ogImage": null,
+  "extractedAt": "2026-09-16T11:44:59.512Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "GTA6 would be advertised \"discreetly\" through Boucher Brothers beach chairs and umbrellas, featuring the roman numerals VI or Vice City rather than the words Grand Theft Auto.",
+          "quote": "GTA6 would be advertised \"discreetly\" through Boucher Brothers beach chairs and umbrellas, featuring the roman numerals VI or Vice City rather than the words Grand Theft Auto."
+        }
+      ]
+    }
+  ]
+}

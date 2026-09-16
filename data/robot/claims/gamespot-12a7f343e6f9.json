@@ -1,0 +1,66 @@
+{
+  "rawId": "gamespot-12a7f343e6f9",
+  "outlet": "GameSpot",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamespot.com/articles/gta-6s-stephen-root-is-the-franchises-second-ever-emmy-winning-actor/",
+  "published": "2026-09-15",
+  "ogImage": "https://www.gamespot.com/wp-content/uploads/2026/09/Screenshot-2026-09-15-at-8.42.06-AM.png",
+  "extractedAt": "2026-09-16T11:44:59.615Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Brian Heder",
+      "altNames": [
+        "Brian",
+        "Heder"
+      ],
+      "slug": "brian-heder",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Actor Stephen Root recently confirmed that he will appear in GTA 6 , after people correctly identified him as the voice of the drug-runner Brian Heder .",
+          "quote": "Actor Stephen Root recently confirmed that he will appear in GTA 6 , after people correctly identified him as the voice of the drug-runner Brian Heder ."
+        },
+        {
+          "fact": "Rockstar has not officially announced any casting details for GTA 6, but as mentioned, many people immediately recognized Root as the voice of Heder, and Root later confirmed his involvement in the game.",
+          "quote": "Rockstar has not officially announced any casting details for GTA 6, but as mentioned, many people immediately recognized Root as the voice of Heder, and Root later confirmed his involvement in the game."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "It remains to be seen, however, who voices the game’s two leads, Lucia and Jason, or any of the other main cast .",
+          "quote": "It remains to be seen, however, who voices the game’s two leads, Lucia and Jason, or any of the other main cast ."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "It remains to be seen, however, who voices the game’s two leads, Lucia and Jason, or any of the other main cast .",
+          "quote": "It remains to be seen, however, who voices the game’s two leads, Lucia and Jason, or any of the other main cast ."
+        }
+      ]
+    }
+  ]
+}

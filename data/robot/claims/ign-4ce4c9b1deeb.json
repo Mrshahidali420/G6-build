@@ -1,0 +1,58 @@
+{
+  "rawId": "ign-4ce4c9b1deeb",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/rockstar-games-begins-teasing-gta-6s-soundtrack-with-travis-scott-future-morgan-wallen-and-more",
+  "published": "2026-09-15",
+  "ogImage": null,
+  "extractedAt": "2026-09-16T11:44:59.629Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Brian Heder",
+      "altNames": [
+        "Brian",
+        "Heder"
+      ],
+      "slug": "brian-heder",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Actor Stephen Root also confirmed his long speculated role as Brian Heder in GTA 6 earlier this week, though seemingly through a slip-up rather than a planned reveal.",
+          "quote": "Actor Stephen Root also confirmed his long speculated role as Brian Heder in GTA 6 earlier this week, though seemingly through a slip-up rather than a planned reveal."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Many assumed that these were all teasing GTA 6 in some capacity, and that was confirmed once Future uploaded a picture of a sports car repping a Leonida license plate.",
+          "quote": "Many assumed that these were all teasing GTA 6 in some capacity, and that was confirmed once Future uploaded a picture of a sports car repping a Leonida license plate."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Dre was prominently featured as a character in GTA Online, Phil Colins was a character in Grand Theft Auto: Vice City Stories, and a number of comedians like Ricky Gervais have appeared in the flesh in games like GTA 4, so there's precedent for them to appear as actual characters.",
+          "quote": "Dre was prominently featured as a character in GTA Online, Phil Colins was a character in Grand Theft Auto: Vice City Stories, and a number of comedians like Ricky Gervais have appeared in the flesh in games like GTA 4, so there's precedent for them to appear as actual characters."
+        }
+      ]
+    }
+  ]
+}

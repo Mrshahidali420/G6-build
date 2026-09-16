@@ -1,0 +1,82 @@
+{
+  "rawId": "eurogamer-44e3a4d09700",
+  "outlet": "Eurogamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.eurogamer.net/gta-6-confirmed-actor-king-of-the-hill-stephen-root",
+  "published": "2026-09-14",
+  "ogImage": null,
+  "extractedAt": "2026-09-16T11:44:59.509Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Brian Heder",
+      "altNames": [
+        "Brian",
+        "Heder"
+      ],
+      "slug": "brian-heder",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "So, I think that secret got divulged then.\" Root didn't specify which character he's voicing, but fans have long speculated he might be playing Brian Heder.",
+          "quote": "So, I think that secret got divulged then.\" Root didn't specify which character he's voicing, but fans have long speculated he might be playing Brian Heder."
+        },
+        {
+          "fact": "Straight from the horse's mouth, Rockstar's website explains that Brian's a \"classic drug runner from the golden age of smuggling\" who's \"still moving product through his boat yard with his third wife, Lori.\" You can see Lucia and Jason going out for drinks with Brian and Lori in the GTA 6 extended look.",
+          "quote": "Straight from the horse's mouth, Rockstar's website explains that Brian's a \"classic drug runner from the golden age of smuggling\" who's \"still moving product through his boat yard with his third wife, Lori.\" You can see Lucia and Jason going out for drinks with Brian and Lori in the GTA 6 extended look."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Straight from the horse's mouth, Rockstar's website explains that Brian's a \"classic drug runner from the golden age of smuggling\" who's \"still moving product through his boat yard with his third wife, Lori.\" You can see Lucia and Jason going out for drinks with Brian and Lori in the GTA 6 extended look.",
+          "quote": "Straight from the horse's mouth, Rockstar's website explains that Brian's a \"classic drug runner from the golden age of smuggling\" who's \"still moving product through his boat yard with his third wife, Lori.\" You can see Lucia and Jason going out for drinks with Brian and Lori in the GTA 6 extended look."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lori Heder",
+      "altNames": [
+        "Lori"
+      ],
+      "slug": "lori-heder",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Straight from the horse's mouth, Rockstar's website explains that Brian's a \"classic drug runner from the golden age of smuggling\" who's \"still moving product through his boat yard with his third wife, Lori.\" You can see Lucia and Jason going out for drinks with Brian and Lori in the GTA 6 extended look.",
+          "quote": "Straight from the horse's mouth, Rockstar's website explains that Brian's a \"classic drug runner from the golden age of smuggling\" who's \"still moving product through his boat yard with his third wife, Lori.\" You can see Lucia and Jason going out for drinks with Brian and Lori in the GTA 6 extended look."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Straight from the horse's mouth, Rockstar's website explains that Brian's a \"classic drug runner from the golden age of smuggling\" who's \"still moving product through his boat yard with his third wife, Lori.\" You can see Lucia and Jason going out for drinks with Brian and Lori in the GTA 6 extended look.",
+          "quote": "Straight from the horse's mouth, Rockstar's website explains that Brian's a \"classic drug runner from the golden age of smuggling\" who's \"still moving product through his boat yard with his third wife, Lori.\" You can see Lucia and Jason going out for drinks with Brian and Lori in the GTA 6 extended look."
+        }
+      ]
+    }
+  ]
+}

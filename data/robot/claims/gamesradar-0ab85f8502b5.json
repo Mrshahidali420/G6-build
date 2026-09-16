@@ -1,0 +1,63 @@
+{
+  "rawId": "gamesradar-0ab85f8502b5",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/rockstar-boss-says-gta-6s-police-can-be-harder-to-shake-off-than-before-but-its-fun-because-it-forces-you-to-think-more/",
+  "published": "2026-09-15",
+  "ogImage": null,
+  "extractedAt": "2026-09-16T11:44:59.620Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "You can't so easily stroll around the city carrying guns anymore , either - NPCs will now react accordingly depending on what weapons you're swinging around, with Nelson noting that they're \"more nuanced than before.\" Rockstar wants GTA 6's Jason and Lucia to inspire the same sort of \"emotional connection\" that Red Dead Redemption 2 fans had with Arthur.",
+          "quote": "You can't so easily stroll around the city carrying guns anymore , either - NPCs will now react accordingly depending on what weapons you're swinging around, with Nelson noting that they're \"more nuanced than before.\" Rockstar wants GTA 6's Jason and Lucia to inspire the same sort of \"emotional connection\" that Red Dead Redemption 2 fans had with Arthur."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "You can't so easily stroll around the city carrying guns anymore , either - NPCs will now react accordingly depending on what weapons you're swinging around, with Nelson noting that they're \"more nuanced than before.\" Rockstar wants GTA 6's Jason and Lucia to inspire the same sort of \"emotional connection\" that Red Dead Redemption 2 fans had with Arthur.",
+          "quote": "You can't so easily stroll around the city carrying guns anymore , either - NPCs will now react accordingly depending on what weapons you're swinging around, with Nelson noting that they're \"more nuanced than before.\" Rockstar wants GTA 6's Jason and Lucia to inspire the same sort of \"emotional connection\" that Red Dead Redemption 2 fans had with Arthur."
+        }
+      ]
+    },
+    {
+      "entityType": "gameplay_feature",
+      "name": "Six-Star Wanted System",
+      "altNames": [
+        "wanted level",
+        "six stars",
+        "police wanted system"
+      ],
+      "slug": "six-star-wanted-system",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "\"And we wanted them to have a bit more persistent memory.\" Latest Videos From GamesRadar+ Watch full video here: To enable this, Rockstar has introduced a new mechanic called 'heat.' Several icons may appear below your wanted level, indicating what information about you the police know and can recognize.",
+          "quote": "\"And we wanted them to have a bit more persistent memory.\" Latest Videos From GamesRadar+ Watch full video here: To enable this, Rockstar has introduced a new mechanic called 'heat.' Several icons may appear below your wanted level, indicating what information about you the police know and can recognize."
+        }
+      ]
+    }
+  ]
+}

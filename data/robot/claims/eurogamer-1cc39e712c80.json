@@ -1,0 +1,28 @@
+{
+  "rawId": "eurogamer-1cc39e712c80",
+  "outlet": "Eurogamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.eurogamer.net/rockstar-north-employment-tribunal-gta-6",
+  "published": "2026-09-08",
+  "ogImage": null,
+  "extractedAt": "2026-09-16T11:44:59.501Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Now we finally get the chance to put it on the record,\" said former Rockstar employee Jason Lewis.",
+          "quote": "Now we finally get the chance to put it on the record,\" said former Rockstar employee Jason Lewis."
+        }
+      ]
+    }
+  ]
+}

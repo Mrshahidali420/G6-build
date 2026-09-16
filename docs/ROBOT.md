@@ -129,6 +129,8 @@ in this order:
 
 1. `GEMINI_API_KEY`, Google Gemini through its OpenAI compatible endpoint,
    `gemini-3.6-flash`. This is the default and the free tier the robot expects.
+   The free tier allows about 10 requests a minute, so the robot leaves 6.5
+   seconds between calls (`ROBOT_CALL_GAP_MS` changes that).
 2. `ANTHROPIC_API_KEY`, the Anthropic Messages API.
 3. `OPENROUTER_API_KEY`, OpenRouter, default model `google/gemini-2.5-flash`.
    Its free tier allows roughly 50 requests a day, and about 1000 a day once an

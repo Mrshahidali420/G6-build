@@ -19,6 +19,10 @@
 
 const TIMEOUT_MS = 120000
 const RATE_LIMIT_WAIT_MS = 30000
+// The Gemini free tier allows about 10 requests a minute. A fixed gap between
+// calls keeps the robot under that line instead of tripping it and waiting.
+const MIN_GAP_MS = Number(process.env.ROBOT_CALL_GAP_MS ?? 6500)
+let lastCallAt = 0
 
 export const NO_KEY_MESSAGE = 'lane 2: no AI key configured (set GEMINI_API_KEY), skipping'
 
@@ -170,6 +174,9 @@ function parseJson(text) {
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 
 async function callOnce({ system, user, model, maxTokens }) {
+  const gap = MIN_GAP_MS - (Date.now() - lastCallAt)
+  if (gap > 0) await sleep(gap)
+  lastCallAt = Date.now()
   const request = buildRequest({ system, user, model, maxTokens })
   const response = await fetch(provider.url, {
     method: 'POST',

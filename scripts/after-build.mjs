@@ -2,7 +2,7 @@
 //   Lesson 7: assert asset sizes here, not at deploy time.
 //   Lesson 8: print timings, so a silent hang is visible.
 
-import { readdirSync, statSync } from 'node:fs'
+import { readdirSync, statSync, writeFileSync } from 'node:fs'
 import { join, dirname, relative } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -64,6 +64,24 @@ if (files.length > 15000) {
 if (htmlFiles.length === 0) {
   console.error('[after-build] no HTML pages were built. Something is wrong.')
   process.exit(1)
+}
+
+// ads.txt, written only when there is a real publisher ID to put in it.
+// Google reads an empty or placeholder ads.txt as "this site has no authorised
+// sellers" and stops serving ads, which is worse than having no file at all.
+// So the file appears the moment ADSENSE_CLIENT is filled in, and not before.
+const { ADSENSE_CLIENT } = await import('../src/lib/site.mjs')
+if (ADSENSE_CLIENT) {
+  const publisher = ADSENSE_CLIENT.replace(/^ca-/, '')
+  writeFileSync(
+    join(DIST, 'ads.txt'),
+    `google.com, ${publisher}, DIRECT, f08c47fec0942fa0
+`,
+    'utf8',
+  )
+  console.log(`[after-build] wrote ads.txt for ${publisher}`)
+} else {
+  console.log('[after-build] no ADSENSE_CLIENT set, so no ads.txt was written')
 }
 
 console.log(`[after-build] checks passed (${elapsed()})`)

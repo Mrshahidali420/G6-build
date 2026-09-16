@@ -50,7 +50,14 @@ const current = (slug) => (path === `/${slug}` || path.startsWith(`/${slug}/`) ?
     <meta name="theme-color" content="#0f5d53" />
 
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <!--
+      iOS and Android ask for a PNG, not an SVG. Without these a saved home
+      screen shortcut shows a blank tile or a screenshot of the page.
+    -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="alternate" type="application/rss+xml" title={`${SITE_NAME}: news`} href="/rss.xml" />
 
     <link rel="preload" href="/fonts/archivo.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/source-serif-4.woff2" as="font" type="font/woff2" crossorigin />

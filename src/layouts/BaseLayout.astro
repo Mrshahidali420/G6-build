@@ -1,5 +1,6 @@
 ---
 import { SITE_NAME, SITE_URL, ADSENSE_CLIENT, HUB_TYPES, canonical } from '../lib/site.mjs'
+import { pageEntities } from '../lib/entities.mjs'
 import Logo from '../components/Logo.astro'
 import Icon from '../components/Icon.astro'
 import '../styles/world.css'
@@ -18,6 +19,13 @@ if (!description) throw new Error(`Page ${path} has no meta description. Every p
 const url = canonical(path)
 const year = new Date().getFullYear()
 const current = (slug) => (path === `/${slug}` || path.startsWith(`/${slug}/`) ? 'page' : undefined)
+
+// The footer carries the same two numbers the home page opens with. A reader
+// who lands deep in the site from a search result never sees the front page,
+// so the footer is the only place that tells them how big the record is and
+// how much of it Rockstar itself has confirmed.
+const footTotal = pageEntities.length
+const footConfirmed = pageEntities.filter((entity) => entity.confirmedStatus === 'OFFICIAL_CONFIRMED').length
 ---
 <!doctype html>
 <html lang="en">
@@ -199,24 +207,78 @@ const current = (slug) => (path === `/${slug}` || path.startsWith(`/${slug}/`) ?
 
     <footer class="colophon">
       <div class="shell">
-        <p>
-          <strong>{SITE_NAME}.</strong> Every fact on this site names its source.
-          {updated && <> This page was checked {updated}.</>}
-        </p>
-        <p class="colophon__row">
-          <a href="/answers">Answers</a>
-          <a href="/news">News</a>
-          <a href="/about">About and sources</a>
-          <a href="/search">Search</a>
-          <a href="/contact">Contact</a>
-          <a href="/privacy">Privacy</a>
-        </p>
-        <p class="colophon__fine">
-          Not affiliated with Rockstar Games or Take-Two Interactive. Grand Theft
-          Auto is a trademark of Take-Two Interactive Software, Inc. Any game
-          imagery belongs to Rockstar Games and is shown for reference only.
-          &copy; {year} {SITE_URL.replace('https://', '')}
-        </p>
+        <div class="colophon__top">
+          <div class="colophon__brand">
+            <a class="colophon__mark" href="/">
+              <Logo size={32} />
+              <span class="colophon__name">
+                {SITE_NAME}
+                <small>Sourced, not guessed</small>
+              </span>
+            </a>
+            <p class="colophon__promise">
+              An independent record of what has actually been published about
+              Grand Theft Auto VI. Every entry names the source it came from and
+              the date it was last checked.
+            </p>
+            <dl class="colophon__stats">
+              <div>
+                <dt>Entries</dt>
+                <dd>{footTotal}</dd>
+              </div>
+              <div>
+                <dt>Confirmed by Rockstar</dt>
+                <dd>{footConfirmed}</dd>
+              </div>
+            </dl>
+          </div>
+
+          <nav class="colophon__col colophon__col--split" aria-label="Sections">
+            <h2 class="colophon__head">Browse the record</h2>
+            <ul>
+              {HUB_TYPES.map((hub) => (
+                <li><a href={`/${hub.slug}`}>{hub.title.replace('GTA 6 ', '')}</a></li>
+              ))}
+            </ul>
+          </nav>
+
+          <nav class="colophon__col" aria-label="This site">
+            <h2 class="colophon__head">This site</h2>
+            <ul>
+              <li><a href="/answers">Answers</a></li>
+              <li><a href="/news">News</a></li>
+              <li><a href="/about">About and sources</a></li>
+              <li><a href="/search">Search</a></li>
+              <li><a href="/contact">Contact</a></li>
+              <li><a href="/privacy">Privacy</a></li>
+              <li><a href="/rss.xml">RSS feed</a></li>
+            </ul>
+          </nav>
+
+          <div class="colophon__col">
+            <h2 class="colophon__head">Why you can trust it</h2>
+            <ul class="colophon__trust">
+              <li>Every claim links the source that published it.</li>
+              <li>Each page prints the day it was last checked.</li>
+              <li>A rumour is marked as a rumour, or it is left out.</li>
+              <li>Found a mistake? <a href="/contact">Tell us</a> and it gets fixed.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="colophon__foot">
+          <p class="colophon__fine">
+            Not affiliated with Rockstar Games or Take-Two Interactive. Grand
+            Theft Auto is a trademark of Take-Two Interactive Software, Inc. Any
+            game imagery belongs to Rockstar Games and is shown for reference
+            only. &copy; {year} {SITE_URL.replace('https://', '')}
+          </p>
+          {updated && (
+            <p class="colophon__checked">
+              <Icon name="calendar" size={14} /> This page was checked {updated}.
+            </p>
+          )}
+        </div>
       </div>
     </footer>
   </body>

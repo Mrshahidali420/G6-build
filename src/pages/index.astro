@@ -69,18 +69,19 @@ const jsonLd = {
 const showAd = Boolean(ADSENSE_CLIENT && ADSENSE_SLOTS.index)
 ---
 <BaseLayout title={SITE_TAGLINE} description={description} path="/" updated={updated} jsonLd={jsonLd}>
-  <section class="band band--glaze">
+  <section class="band band--glaze hero-band">
     <div class="shell">
-      <h1 class="hero__title">Every confirmed Grand Theft Auto VI fact, with its source</h1>
-      <p class="lede">
-        {total} entries. {confirmed} of them confirmed by Rockstar itself. The rest
-        say plainly who reported them, and when.
-      </p>
-
-      <div class="hero__cols">
-        <div>
+      <div class="hero__split">
+        <div class="hero__lead">
+          <h1 class="hero__title">Every confirmed Grand Theft Auto VI fact, with its source</h1>
+          <p class="lede">
+            {total} entries. {confirmed} of them confirmed by Rockstar itself. The rest
+            say plainly who reported them, and when.
+          </p>
           <Mark status="OFFICIAL_CONFIRMED" as="stamp" label="Confirmed by Rockstar" />
+        </div>
 
+        <div class="hero__facts">
           <dl class="spec">
             <dt>Release date</dt>
             <dd><a href="/gta-6-countdown">19 November 2026</a></dd>
@@ -91,16 +92,19 @@ const showAd = Boolean(ADSENSE_CLIENT && ADSENSE_SLOTS.index)
             <dt>Source</dt>
             <dd>
               <a href="/gta-6-release-date">Rockstar Newswire, checked on the release date page</a>
-              <Mark status="OFFICIAL_CONFIRMED" />
+              <span class="hero__facts-mark"><Mark status="OFFICIAL_CONFIRMED" /></span>
             </dd>
           </dl>
+
+          <div class="btns">
+            <a class="btn" href="/news">Every dated announcement <Icon name="arrow" size={16} /></a>
+            <a class="btn btn--quiet" href="/about">How the data is checked</a>
+          </div>
         </div>
-        <Countdown />
       </div>
 
-      <div class="btns">
-        <a class="btn" href="/news">Every dated announcement <Icon name="arrow" size={16} /></a>
-        <a class="btn btn--quiet" href="/about">How the data is checked</a>
+      <div class="hero__count">
+        <Countdown wide={true} />
       </div>
     </div>
   </section>
@@ -210,31 +214,43 @@ const showAd = Boolean(ADSENSE_CLIENT && ADSENSE_SLOTS.index)
 </BaseLayout>
 
 <style>
-  /* The headline stops before the band edge on a wide screen so it reads as a
-     statement and not as a line of body text. */
-  .hero__title { max-width: 18ch; }
-
-  /* The release facts and the counter are one unit: the counter is the same
-     fact with the days still on it. Side by side from tablet width up, stacked
-     below that. */
-  .hero__cols {
+  /* The masthead is three parts. Two columns on top: the claim on the left,
+     the facts that back it on the right. Then the counter underneath, running
+     the whole width, so it reads as one thing and not as a third column. */
+  .hero__split {
     display: grid;
-    gap: 26px;
+    gap: 30px;
     align-items: start;
-    margin-bottom: 22px;
   }
 
-  /* Stacked on a phone the counter goes first. It is the one thing on this
-     page that changes every second, and it answers the question most people
-     arrive with before they read a word. */
-  @media (max-width: 899px) {
-    .hero__cols { display: flex; flex-direction: column; gap: 22px; }
-    .hero__cols > :last-child { order: -1; }
+  @media (min-width: 940px) {
+    .hero__split {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 48px;
+    }
   }
 
-  @media (min-width: 900px) {
-    .hero__cols { grid-template-columns: minmax(0, 34rem) minmax(0, 1fr); gap: 34px; }
+  /* The headline stops before the column edge so it reads as a statement and
+     not as a line of body text. */
+  .hero__title { max-width: 16ch; margin-top: 0; }
+  .hero__lead .lede { max-width: 46ch; }
+
+  .hero__facts .spec { margin: 0 0 22px; }
+
+  /* The source line runs to two lines in this column, and a mark parked at the
+     end of the second line reads as part of the sentence. It gets its own
+     line instead. */
+  .hero__facts-mark { display: block; margin-top: 9px; }
+
+  /* A brass rule sets the counter apart from the two columns above it without
+     starting a new band and a new colour. */
+  .hero__count {
+    margin-top: 34px;
+    padding-top: 30px;
+    border-top: 1px solid color-mix(in srgb, var(--brass) 60%, transparent);
   }
 
-  .hero__cols .spec { margin: 18px 0 0; }
+  @media (max-width: 939px) {
+    .hero__count { margin-top: 26px; padding-top: 24px; }
+  }
 </style>

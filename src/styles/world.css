@@ -415,11 +415,136 @@ p { margin: 0 0 1.05em; }
 
 /* ---------- Footer ---------- */
 
-.colophon { background: var(--glaze-deep); color: var(--on-glaze-2); margin-top: 0; padding-block: 34px 40px; font-size: 0.9rem; }
-.colophon a { color: var(--on-glaze); }
+/* The footer is the last thing a reader sees and, for anyone who arrived on a
+   deep page from a search result, the only place that explains what the site
+   is. It states the promise, prints the size of the record, opens every
+   section, and ends on the legal line. */
+
+.colophon {
+  background: var(--glaze-deep);
+  color: var(--on-glaze-2);
+  margin-top: 0;
+  padding-block: 46px 30px;
+  font-size: 0.9rem;
+  border-top: 2px solid var(--brass);
+}
+.colophon a { color: var(--on-glaze); text-decoration-color: rgba(176, 134, 55, 0.85); }
+.colophon a:hover { color: #ffffff; text-decoration-color: currentColor; }
 .colophon strong { color: var(--on-glaze); }
-.colophon__row { display: flex; flex-wrap: wrap; gap: 10px 22px; margin-bottom: 14px; font-family: var(--ui); font-size: 0.84rem; }
-.colophon__fine { max-width: 64ch; font-size: 0.82rem; line-height: 1.6; color: #93b8af; }
+
+.colophon__top {
+  display: grid;
+  gap: 34px 30px;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1.5fr) minmax(0, 1fr) minmax(0, 1.2fr);
+  padding-bottom: 34px;
+}
+
+.colophon__mark { display: inline-flex; align-items: center; gap: 11px; text-decoration: none; }
+.colophon__name {
+  font-family: var(--display);
+  font-stretch: 118%;
+  font-weight: 800;
+  font-size: 1.02rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  line-height: 1.1;
+  color: var(--on-glaze);
+  display: block;
+}
+.colophon__name small {
+  display: block;
+  font-family: var(--ui);
+  font-weight: 500;
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--on-glaze-2);
+  margin-top: 3px;
+}
+
+.colophon__promise { margin: 16px 0 0; max-width: 42ch; line-height: 1.6; }
+
+.colophon__stats { display: flex; flex-wrap: wrap; gap: 2px; margin: 20px 0 0; }
+.colophon__stats > div {
+  flex: 1 1 130px;
+  padding: 10px 13px;
+  border: 1px solid color-mix(in srgb, var(--brass) 45%, transparent);
+  /* The two labels are not the same length, so one of them wraps to a second
+     line. The numbers sit at the foot of the box, so they share a baseline
+     whether the label above them is one line or two. */
+  display: flex;
+  flex-direction: column;
+}
+.colophon__stats dt {
+  font-family: var(--ui);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--on-glaze-2);
+}
+.colophon__stats dd {
+  margin: 6px 0 0;
+  padding-top: 2px;
+  margin-top: auto;
+  font-family: var(--display);
+  font-stretch: 125%;
+  font-weight: 800;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: var(--on-glaze);
+  font-variant-numeric: tabular-nums;
+}
+
+.colophon__head {
+  font-family: var(--ui);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--on-glaze);
+  margin: 0 0 13px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid color-mix(in srgb, var(--brass) 55%, transparent);
+}
+
+.colophon__col ul { list-style: none; margin: 0; padding: 0; }
+.colophon__col li { margin-bottom: 8px; font-size: 0.86rem; line-height: 1.45; }
+.colophon__col a { text-decoration: none; }
+.colophon__col a:hover { text-decoration: underline; }
+.colophon__col--split ul { columns: 2; column-gap: 22px; }
+.colophon__col--split li { break-inside: avoid; }
+.colophon__trust li { color: var(--on-glaze-2); }
+
+.colophon__foot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px 30px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(238, 245, 242, 0.16);
+}
+.colophon__fine { margin: 0; max-width: 78ch; font-size: 0.78rem; line-height: 1.6; color: #93b8af; }
+.colophon__checked {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  font-family: var(--ui);
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  color: #93b8af;
+}
+
+@media (max-width: 980px) {
+  .colophon__top { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .colophon__brand { grid-column: 1 / -1; }
+}
+
+@media (max-width: 560px) {
+  .colophon__top { grid-template-columns: 1fr; gap: 28px; }
+}
 
 /* ---------- Article body ---------- */
 

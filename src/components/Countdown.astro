@@ -12,6 +12,11 @@
 // site is static.
 const TARGET = '2026-11-19T00:00:00Z'
 
+// wide: the counter runs the whole width of its band instead of sitting in a
+// 520px block. Used where the counter is a band of its own rather than one
+// column of a two column row.
+const { wide = false } = Astro.props
+
 const diff = new Date(TARGET).getTime() - Date.now()
 const launched = diff <= 0
 
@@ -27,7 +32,7 @@ function parts(ms: number) {
 
 const initial = parts(diff)
 ---
-<div class="countdown" data-target={TARGET} data-launched={launched ? 'true' : 'false'}>
+<div class:list={['countdown', wide && 'countdown--wide']} data-target={TARGET} data-launched={launched ? 'true' : 'false'}>
   {launched ? (
     <p class="countdown__launched">Grand Theft Auto VI has launched.</p>
   ) : (
@@ -110,6 +115,15 @@ const initial = parts(diff)
     color: var(--on-glaze-2);
     font-size: 0.88rem;
   }
+
+  /* A counter that owns a whole band stretches with it, and the numbers grow
+     with the cells so the row does not read as four small boxes in a wide
+     empty field. */
+  .countdown--wide .countdown__grid { max-width: none; gap: 2px; }
+  .countdown--wide .countdown__cell { padding: 22px 10px; }
+  .countdown--wide .countdown__num { font-size: clamp(2rem, 6vw, 3.6rem); }
+  .countdown--wide .countdown__label { font-size: 0.78rem; }
+  .countdown--wide .countdown__note { max-width: 74ch; }
 
   /* Four cells across a phone leaves each number 60px wide and the word
      "Minutes" wider than the box holding it. Two by two instead. */

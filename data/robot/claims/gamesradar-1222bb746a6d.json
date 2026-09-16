@@ -1,0 +1,57 @@
+{
+  "rawId": "gamesradar-1222bb746a6d",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/parts-of-gta-6-are-a-bit-outdated-and-weird-says-former-rockstar-dev-but-like-gta-5-it-will-perform-really-well-and-keep-fans-busy-for-a-decade/",
+  "published": "2026-09-16",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/DjHygAvVxq5SRXiCL2bj3i-1920-80.jpg",
+  "extractedAt": "2026-09-16T19:53:33.943Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Mike York worked at the studio for a number of years, contributing to GTA 5 and Red Dead Redemption 2 , and his first impression is the duality of the two leads, Jason and Lucia.",
+          "quote": "Mike York worked at the studio for a number of years, contributing to GTA 5 and Red Dead Redemption 2 , and his first impression is the duality of the two leads, Jason and Lucia."
+        },
+        {
+          "fact": "\"I don't know if we're going to see that with Jason, but I hope we do,\" he says, before adding Lucia is a contrast to Jason's stoicism.",
+          "quote": "\"I don't know if we're going to see that with Jason, but I hope we do,\" he says, before adding Lucia is a contrast to Jason's stoicism."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Mike York worked at the studio for a number of years, contributing to GTA 5 and Red Dead Redemption 2 , and his first impression is the duality of the two leads, Jason and Lucia.",
+          "quote": "Mike York worked at the studio for a number of years, contributing to GTA 5 and Red Dead Redemption 2 , and his first impression is the duality of the two leads, Jason and Lucia."
+        },
+        {
+          "fact": "\"I don't know if we're going to see that with Jason, but I hope we do,\" he says, before adding Lucia is a contrast to Jason's stoicism.",
+          "quote": "\"I don't know if we're going to see that with Jason, but I hope we do,\" he says, before adding Lucia is a contrast to Jason's stoicism."
+        },
+        {
+          "fact": "\"There's that moment in the trailer where they get in an elevator, and he says, 'Sometimes I'm just more comfortable when I have to use a gun.' She replies: 'Just be charming!' Lucia's got this attitude where you can tell she's trying to break him out of his shell.",
+          "quote": "\"There's that moment in the trailer where they get in an elevator, and he says, 'Sometimes I'm just more comfortable when I have to use a gun.' She replies: 'Just be charming!' Lucia's got this attitude where you can tell she's trying to break him out of his shell."
+        }
+      ]
+    }
+  ]
+}

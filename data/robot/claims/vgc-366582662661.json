@@ -1,0 +1,59 @@
+{
+  "rawId": "vgc-366582662661",
+  "outlet": "VGC",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.videogameschronicle.com/news/musicians-including-travis-scott-keith-richards-and-future-have-started-teasing-that-theyll-be-in-gta-6/",
+  "published": "2026-09-16",
+  "ogImage": "https://www.videogameschronicle.com/files/2026/09/gta-6-pic1.jpg",
+  "extractedAt": "2026-09-16T19:53:34.042Z",
+  "entities": [
+    {
+      "entityType": "gameplay_feature",
+      "name": "Scuba Diving and Underwater Exploration",
+      "altNames": [
+        "swimming",
+        "diving",
+        "underwater gameplay"
+      ],
+      "slug": "scuba-diving-underwater-exploration",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "American country singer Morgan Wallen posted an image of a swimming pool, also without any comment.",
+          "quote": "American country singer Morgan Wallen posted an image of a swimming pool, also without any comment."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Rapper Future also posted an image of a car with a Leonida licence plate, via the Instagram page of his record label Freebandz.",
+          "quote": "Rapper Future also posted an image of a car with a Leonida licence plate, via the Instagram page of his record label Freebandz."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Phil Collins also performed a concert and appeared in a mission in GTA Vice City Stories.",
+          "quote": "Phil Collins also performed a concert and appeared in a mission in GTA Vice City Stories."
+        }
+      ]
+    }
+  ]
+}

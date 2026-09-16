@@ -23,6 +23,7 @@
 // Run: node scripts/robot/extract.mjs
 // Writes: data/robot/claims/<rawId>.json, data/robot/extracted.json
 
+import { execFileSync } from 'node:child_process'
 import fs from 'node:fs/promises'
 import path from 'node:path'
 import { ask, hasKey, modelFor, ready } from './ai.mjs'
@@ -99,9 +100,22 @@ function matchEntity(entities, candidate) {
 const usable = ready()
 if (!usable) console.log('extract: no AI key, logic only')
 
+// src/data/entities.json is generated and not checked in, so on a fresh
+// checkout (every Actions run) it does not exist yet. build-data.mjs is the
+// only thing that knows how to read the CSVs, so it is run, not reimplemented.
+// Without the catalog the logic floor has nothing to match against, and a run
+// that went on anyway would mark every article as read with nothing in it.
+try {
+  execFileSync(process.execPath, [path.join(ROOT, 'scripts', 'build-data.mjs')], { stdio: 'pipe' })
+} catch (error) {
+  console.log(`extract: build-data.mjs failed, stopping (${error.message})`)
+  process.exit(1)
+}
+
 const catalog = await readJson(ENTITIES_JSON, [])
 if (!Array.isArray(catalog) || !catalog.length) {
-  console.log('extract: src/data/entities.json is missing or empty, run node scripts/build-data.mjs')
+  console.log('extract: src/data/entities.json is missing or empty after build-data.mjs, stopping')
+  process.exit(1)
 }
 
 const extracted = new Set(await readJson(EXTRACTED_FILE, []))

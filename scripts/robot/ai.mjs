@@ -101,8 +101,8 @@ const PROVIDERS = [
       'HTTP-Referer': 'https://gta6record.com',
       'X-Title': 'gta6record robot',
     }),
-    extract: 'google/gemini-2.5-flash',
-    write: 'google/gemini-2.5-flash',
+    extract: 'google/gemma-4-31b-it:free',
+    write: 'google/gemma-4-31b-it:free',
   },
   {
     id: 'gemini',

@@ -140,7 +140,7 @@ set, in this order:
    into the repository secrets page on the GitHub website. It costs nothing
    per call; the calls count against the subscription's usage window.
 2. `ANTHROPIC_API_KEY`, the Anthropic Messages API, pay per call.
-3. `OPENROUTER_API_KEY`, OpenRouter, default model `google/gemini-2.5-flash`.
+3. `OPENROUTER_API_KEY`, OpenRouter, default model `google/gemma-4-31b-it:free`.
    Its free tier allows roughly 50 requests a day, and about 1000 a day once an
    account has bought 10 USD of credit one time.
 4. `GITHUB_TOKEN`, GitHub Models, `openai/gpt-4.1-mini`. Being retired: from

@@ -1,17 +1,33 @@
 {
   "days": [
+    "2026-08-28",
+    "2026-09-04",
+    "2026-09-08",
+    "2026-09-10",
     "2026-09-11",
     "2026-09-14",
     "2026-09-15"
   ],
   "items": [
     "eurogamer-15163e4ab69f",
+    "eurogamer-1cc39e712c80",
+    "eurogamer-29f7ecd7b9ab",
     "eurogamer-44e3a4d09700",
     "eurogamer-fbd5e61cae19",
+    "gameinformer-0c1ae3ce1862",
+    "gameinformer-ebdc1a970661",
+    "gamesindustry-87395be5d8a5",
+    "gamesindustry-929c8c2cdb8c",
+    "gamesindustry-a274487425e4",
+    "gamesindustry-aeb9e0a9cd46",
+    "gamesindustry-b44537a33831",
     "gamesradar-0ab85f8502b5",
     "gamesradar-972e0001ff42",
     "ign-4ce4c9b1deeb",
     "ign-ef8f7c03726c",
-    "pcgamer-4a00916e1451"
+    "pcgamer-4a00916e1451",
+    "polygon-d59bedf0f07a",
+    "rockpapershotgun-f4218cf16324",
+    "rockpapershotgun-f86452faae2b"
   ]
 }

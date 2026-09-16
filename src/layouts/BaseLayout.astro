@@ -102,6 +102,30 @@ const current = (slug) => (path === `/${slug}` || path.startsWith(`/${slug}/`) ?
             <small>Sourced, not guessed</small>
           </span>
         </a>
+        <!--
+          A real search box, not an icon that costs a click to find. It is a
+          plain GET form to /search, so it works with no JavaScript at all: the
+          browser submits ?q=... and the search page runs that query on arrival.
+          When JavaScript is on, touching the field starts fetching the search
+          index in the background, so the results page has nothing left to
+          download.
+        -->
+        <form class="find" action="/search" method="get" role="search">
+          <label class="find__label" for="site-search">Search this site</label>
+          <input
+            class="find__input"
+            id="site-search"
+            type="search"
+            name="q"
+            placeholder="Search a character, car, place or song"
+            autocomplete="off"
+            enterkeyhint="search"
+          />
+          <button class="find__btn" type="submit">
+            <Icon name="search" size={16} />
+            <span>Search</span>
+          </button>
+        </form>
         <div class="masthead__links">
           <a class="masthead__links-full" href="/news">News</a>
           <a class="masthead__links-full" href="/about">About</a>
@@ -130,32 +154,6 @@ const current = (slug) => (path === `/${slug}` || path.startsWith(`/${slug}/`) ?
             <a href="/contact" aria-current={current('contact')}>Contact</a>
           </nav>
         </details>
-      </div>
-
-      <!--
-        A real search box, not an icon that costs a click to find. It is a plain
-        GET form to /search, so it works with no JavaScript at all: the browser
-        submits ?q=... and the search page runs that query on arrival. When
-        JavaScript is on, touching the field starts fetching the search index in
-        the background, so the results page has nothing left to download.
-      -->
-      <div class="shell masthead__find">
-        <form class="find" action="/search" method="get" role="search">
-          <label class="find__label" for="site-search">Search this site</label>
-          <input
-            class="find__input"
-            id="site-search"
-            type="search"
-            name="q"
-            placeholder="Search a character, car, place or song"
-            autocomplete="off"
-            enterkeyhint="search"
-          />
-          <button class="find__btn" type="submit">
-            <Icon name="search" size={16} />
-            <span>Search</span>
-          </button>
-        </form>
       </div>
       <script is:inline>
         // Warm the search up before it is asked for. The first touch of the

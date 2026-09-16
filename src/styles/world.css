@@ -147,7 +147,12 @@ p { margin: 0 0 1.05em; }
 /* ---------- Masthead ---------- */
 
 .masthead { background: var(--glaze); color: var(--on-glaze); }
-.masthead__top { display: flex; align-items: center; gap: 18px; padding-block: 12px; }
+/* One wrapping row. On a wide screen the logo, the search field and the two
+   links all sit on the same line. Under 760px the field is given a full-width
+   basis so it wraps onto a line of its own beneath the logo and the menu
+   button, where a field squeezed next to a wordmark would be unusable. */
+.masthead__top { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; padding-block: 12px; }
+.masthead__brand { flex: 0 0 auto; }
 .masthead__brand { display: inline-flex; align-items: center; gap: 11px; text-decoration: none; color: var(--on-glaze); }
 .masthead__brand:hover { color: #ffffff; }
 .masthead__name {
@@ -165,13 +170,10 @@ p { margin: 0 0 1.05em; }
 }
 .masthead__links a:hover { color: var(--on-glaze); text-decoration: underline; }
 
-/* Row two of the masthead: a real search field, shown at every width. A
-   magnifier icon that only links to /search costs a click and a page load
-   before the visitor can even type, and on this site search is the main way
-   to reach 31 answer pages. The field is a plain GET form, so it works with
-   JavaScript off. */
-.masthead__find { padding-bottom: 12px; }
-.find { display: flex; gap: 8px; align-items: stretch; max-width: 640px; }
+/* The search field itself, shown at every width. A magnifier icon that only
+   links to /search costs a click and a page load before the visitor can even
+   type, and on this site search is the main way to reach 31 answer pages. */
+.find { display: flex; gap: 8px; align-items: stretch; flex: 1 1 300px; max-width: 460px; }
 .find__label {
   position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
   overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
@@ -256,6 +258,11 @@ p { margin: 0 0 1.05em; }
   .menu { display: block; }
   /* The word "Search" would eat a third of a 390px row, so the button falls
      back to its icon alone. The label stays in the DOM for a screen reader. */
+  /* Logo first, menu button hard right, field on its own line below both. */
+  .masthead__brand { order: 1; }
+  .masthead__links { display: none; }
+  .menu { order: 2; margin-left: auto; }
+  .find { order: 3; flex: 1 0 100%; }
   .find__btn { padding: 10px 13px; }
   .find__btn span {
     position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;

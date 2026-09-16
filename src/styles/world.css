@@ -39,6 +39,8 @@
   /* Brass: the provenance metal. Lines and marks. */
   --brass: #b08637;
   --brass-ink: #7a5a1c;
+  /* Text laid on a brass ground. Dark enough to read, warm enough to belong. */
+  --brass-on: #20180a;
 
   /* Fired clay: the warning glaze. */
   --clay: #a8492f;
@@ -195,7 +197,7 @@ p { margin: 0 0 1.05em; }
 .find__btn {
   flex: 0 0 auto; display: inline-flex; align-items: center; gap: 7px;
   padding: 10px 16px; cursor: pointer;
-  background: var(--brass); color: #20180a; border: 1px solid var(--brass);
+  background: var(--brass); color: var(--brass-on); border: 1px solid var(--brass);
   border-radius: var(--r);
   font-family: var(--ui); font-size: 0.82rem; font-weight: 700;
   letter-spacing: 0.04em; text-transform: uppercase;
@@ -283,7 +285,7 @@ p { margin: 0 0 1.05em; }
 .mark svg { width: 14px; height: 14px; flex: none; }
 .mark--confirmed { color: #0b4a42; border-color: #8cb3a9; background: #dbeae4; }
 .mark--press { color: var(--brass-ink); border-color: #c7ab6f; background: #f2e9d6; }
-.mark--community { color: var(--ink-2); }
+.mark--community { color: #3c4a5a; border-color: #a9b6c4; background: #e2e8ef; }
 .mark--none { color: var(--clay); border-color: #d09c8c; background: #f6e3dd; }
 
 /* The one authored moment: the stamp settles like ink pressed into paper. */
@@ -393,18 +395,18 @@ p { margin: 0 0 1.05em; }
   font-family: var(--ui); font-size: 0.86rem; font-weight: 700; letter-spacing: 0.05em;
   text-transform: uppercase; text-decoration: none;
   padding: 11px 18px; border-radius: var(--r);
-  background: var(--brass); color: #20180a; border: 1px solid #8f6b24;
+  background: var(--brass); color: var(--brass-on); border: 1px solid #8f6b24;
   box-shadow: var(--lift-sm);
   transition: transform 160ms var(--ease), box-shadow 160ms var(--ease), background-color 160ms var(--ease);
 }
-.btn:hover { color: #20180a; background: #c09743; box-shadow: var(--lift); transform: translateY(-1px); }
+.btn:hover { color: var(--brass-on); background: #c09743; box-shadow: var(--lift); transform: translateY(-1px); }
 .btn--quiet { background: transparent; color: var(--on-glaze); border-color: rgba(238, 245, 242, 0.45); box-shadow: none; }
 .btn--quiet:hover { background: rgba(238, 245, 242, 0.14); color: #ffffff; transform: translateY(-1px); }
 .btns { display: flex; flex-wrap: wrap; gap: 12px; }
 
 /* ---------- Footer ---------- */
 
-.colophon { background: var(--glaze-deep); color: var(--on-glaze-2); margin-top: 64px; padding-block: 34px 40px; font-size: 0.9rem; }
+.colophon { background: var(--glaze-deep); color: var(--on-glaze-2); margin-top: 0; padding-block: 34px 40px; font-size: 0.9rem; }
 .colophon a { color: var(--on-glaze); }
 .colophon strong { color: var(--on-glaze); }
 .colophon__row { display: flex; flex-wrap: wrap; gap: 10px 22px; margin-bottom: 14px; font-family: var(--ui); font-size: 0.84rem; }
@@ -500,3 +502,75 @@ hr.rule { border: 0; border-top: 1px solid var(--line); margin: 2.6em 0; }
 /* The picture wrapper must not become an inline box, or the plate inside it
    picks up a text baseline gap under the frame. */
 picture { display: block; }
+
+/* ---- home page and shared fixes ------------------------------------------ */
+
+/* The first heading in any band sits flush with the band's own padding. This
+   used to be an inline style repeated on four sections. */
+.band > .shell > h2:first-child,
+.band > .shell > *:first-child > h2:first-child { margin-top: 0; }
+
+/* A list of links, then the way to the whole list: they are one block. */
+.directory + .btns { margin-top: 22px; }
+
+/* One column of names, for a list of long titles rather than short labels. */
+.directory--single { columns: 1; }
+
+/* The stamp on the glazed band: white ink on deep tile, not glaze on glaze. */
+.band--glaze .stamp {
+  color: var(--on-glaze);
+  background: rgba(255, 255, 255, 0.12);
+  border-color: currentColor;
+}
+
+/* The provenance ladder: the mark, then what it means, in one ruled table. */
+.ladder {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0;
+  margin: 0 0 1.4em;
+  max-width: 62rem;
+}
+.ladder dt,
+.ladder dd {
+  padding: 11px 0;
+  border-top: 1px solid var(--line);
+  margin: 0;
+}
+.ladder dt { padding-right: 20px; }
+.ladder dd { color: var(--ink-2); font-size: 0.95rem; }
+@media (max-width: 620px) {
+  .ladder { grid-template-columns: 1fr; }
+  .ladder dt { padding-bottom: 5px; }
+  .ladder dd { padding-top: 0; border-top: 0; }
+}
+
+/* The section a showcase tile stands for. */
+.tile__eyebrow {
+  margin: 0 0 3px;
+  font-family: var(--ui);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brass-ink);
+}
+
+.tile__foot { display: flex; flex-wrap: wrap; gap: 9px; align-items: center; }
+.tile__more {
+  position: relative;
+  z-index: 1;
+  margin-left: auto;
+  font-family: var(--ui);
+  font-size: 0.76rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Moved out of BaseLayout so every colour in the site lives in one file. */
+.skip {
+  position: absolute; left: -9999px; top: 0; z-index: 10;
+  background: var(--brass); color: var(--brass-on); padding: 10px 16px;
+  font-family: var(--ui); font-weight: 700; text-decoration: none;
+}
+.skip:focus { left: 0; }

@@ -3,7 +3,10 @@ import { getCollection } from 'astro:content'
 import BaseLayout from '../layouts/BaseLayout.astro'
 import EntityTile from '../components/EntityTile.astro'
 import Icon from '../components/Icon.astro'
-import { SITE_NAME, SITE_TAGLINE, HUB_TYPES, canonical } from '../lib/site.mjs'
+import Mark from '../components/Mark.astro'
+import Countdown from '../components/Countdown.astro'
+import Ad from '../components/Ad.astro'
+import { SITE_NAME, SITE_TAGLINE, HUB_TYPES, ADSENSE_CLIENT, ADSENSE_SLOTS, canonical } from '../lib/site.mjs'
 import { pageEntities, entitiesOfType } from '../lib/entities.mjs'
 import { GAME } from '../lib/schema.mjs'
 
@@ -17,12 +20,35 @@ const answers = (await getCollection('answers'))
   .sort((a, b) => a.data.order - b.data.order)
   .slice(0, 10)
 
-// One confirmed entry per section, so the strip shows the whole record rather
-// than nine characters in a row.
-const showcase = HUB_TYPES.map((hub) =>
-  entitiesOfType(hub.type).find((entity) => entity.confirmedStatus === 'OFFICIAL_CONFIRMED')
+// The front page is the only page on a check-date site that had no check date.
+// The newest answer check is the honest one to print: those are the pages this
+// page links to.
+const updated = (await getCollection('answers'))
+  .map((page) => page.data.updated)
+  .sort()
+  .at(-1)
+
+// One entry per section, so the strip shows the whole record rather than nine
+// characters in a row. Confirmed entries are preferred, but the set is then
+// adjusted so the reader meets more than one rung of the provenance ladder
+// here: a page where every mark says the same thing teaches nothing.
+const showcase = HUB_TYPES.map((hub) => ({
+  hub,
+  entity:
+    entitiesOfType(hub.type).find((entity) => entity.confirmedStatus === 'OFFICIAL_CONFIRMED')
     ?? entitiesOfType(hub.type)[0],
-).filter(Boolean)
+})).filter((item) => item.entity)
+
+function teach(status) {
+  if (showcase.some((item) => item.entity.confirmedStatus === status)) return
+  const swap = showcase.find((item) =>
+    entitiesOfType(item.hub.type).some((entity) => entity.confirmedStatus === status),
+  )
+  if (swap) swap.entity = entitiesOfType(swap.hub.type).find((entity) => entity.confirmedStatus === status)
+}
+
+teach('PRESS_REPORTED')
+teach('COMMUNITY_IDENTIFIED')
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -37,26 +63,40 @@ const jsonLd = {
     },
   ],
 }
+
+// The ad band only exists once there is an ad to put in it. An empty plaster
+// strip between two bands is a hole in the page, not a placeholder.
+const showAd = Boolean(ADSENSE_CLIENT && ADSENSE_SLOTS.index)
 ---
-<BaseLayout title={SITE_TAGLINE} description={description} path="/" jsonLd={jsonLd}>
+<BaseLayout title={SITE_TAGLINE} description={description} path="/" updated={updated} jsonLd={jsonLd}>
   <section class="band band--glaze">
     <div class="shell">
-      <h1 style="max-width:18ch">Every confirmed Grand Theft Auto VI fact, with its source</h1>
+      <h1 class="hero__title">Every confirmed Grand Theft Auto VI fact, with its source</h1>
       <p class="lede">
         {total} entries. {confirmed} of them confirmed by Rockstar itself. The rest
         say plainly who reported them, and when.
       </p>
 
-      <dl class="spec" style="max-width:34rem">
-        <dt>Release date</dt>
-        <dd>19 November 2026</dd>
-        <dt>Platforms</dt>
-        <dd>PlayStation 5, Xbox Series X and Series S</dd>
-        <dt>Price</dt>
-        <dd>79.99 USD standard, 99.99 USD ultimate</dd>
-        <dt>Source</dt>
-        <dd><a href="/gta-6-release-date">Rockstar Newswire, checked on the release date page</a></dd>
-      </dl>
+      <div class="hero__cols">
+        <div>
+          <Mark status="OFFICIAL_CONFIRMED" as="stamp" label="Confirmed by Rockstar" />
+
+          <dl class="spec">
+            <dt>Release date</dt>
+            <dd><a href="/gta-6-countdown">19 November 2026</a></dd>
+            <dt>Platforms</dt>
+            <dd>PlayStation 5, Xbox Series X and Series S</dd>
+            <dt>Price</dt>
+            <dd>79.99 USD standard, 99.99 USD ultimate</dd>
+            <dt>Source</dt>
+            <dd>
+              <a href="/gta-6-release-date">Rockstar Newswire, checked on the release date page</a>
+              <Mark status="OFFICIAL_CONFIRMED" />
+            </dd>
+          </dl>
+        </div>
+        <Countdown />
+      </div>
 
       <div class="btns">
         <a class="btn" href="/news">Every dated announcement <Icon name="arrow" size={16} /></a>
@@ -67,19 +107,43 @@ const jsonLd = {
 
   <section class="band band--plaster">
     <div class="shell">
-      <h2 style="margin-top:0">The questions people ask most</h2>
-      <ul class="directory" style="columns:1">
+      <h2>What the marks mean</h2>
+      <p class="lede">
+        Grand Theft Auto VI is not out yet, and most of what is written about it
+        online is a guess. Every entry here carries one of these four marks, so
+        you can see who said a thing before you decide to believe it.
+      </p>
+      <dl class="ladder">
+        <dt><Mark status="OFFICIAL_CONFIRMED" /></dt>
+        <dd>Rockstar published it: a trailer, a Newswire post, or the game's own site.</dd>
+        <dt><Mark status="PRESS_REPORTED" /></dt>
+        <dd>A named news outlet reported it, and the report is linked on the entry.</dd>
+        <dt><Mark status="COMMUNITY_IDENTIFIED" /></dt>
+        <dd>Players spotted it in published footage. Plausible, but nobody official said it.</dd>
+        <dt><Mark status="UNCONFIRMED" /></dt>
+        <dd>Nothing reliable backs it yet. It stays on the site only with this mark on it.</dd>
+      </dl>
+      <div class="btns">
+        <a class="btn btn--quiet" href="/about">How the data is checked</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--plaster">
+    <div class="shell">
+      <h2>The questions people ask most</h2>
+      <ul class="directory directory--single">
         {answers.map((page) => (
           <li>
             <a href={`/${page.id}`}>
               <span class="directory__name">{page.data.title}</span>
               <span class="directory__rule"></span>
-              <span class="directory__count">Read</span>
+              <span class="directory__count">Checked {page.data.updated}</span>
             </a>
           </li>
         ))}
       </ul>
-      <div class="btns" style="margin-top:22px">
+      <div class="btns">
         <a class="btn" href="/answers">Every question we answer <Icon name="arrow" size={16} /></a>
       </div>
     </div>
@@ -87,48 +151,40 @@ const jsonLd = {
 
   <section class="band">
     <div class="shell">
-      <h2 style="margin-top:0">One entry from every section</h2>
+      <h2>Browse the record</h2>
       <p class="lede">
-        Entries without a picture we may publish carry a terrazzo plate in their
+        One entry from every section, and the way into the rest of it. Entries
+        without a picture we may publish carry a terrazzo plate in their
         section's colour, so you can tell a car from a song before you read.
       </p>
       <ul class="tiles">
-        {showcase.map((entity, index) => <EntityTile entity={entity} eager={index < 4} />)}
+        {showcase.map((item, index) => (
+          <EntityTile
+            entity={item.entity}
+            eager={index < 4}
+            sectionTitle={item.hub.title.replace('GTA 6 ', '')}
+            sectionHref={`/${item.hub.slug}`}
+            sectionCount={entitiesOfType(item.hub.type).length}
+          />
+        ))}
       </ul>
     </div>
   </section>
 
-  <section class="band band--plaster">
-    <div class="shell">
-      <h2 style="margin-top:0">Browse the record</h2>
-      <ul class="directory">
-        {HUB_TYPES.map((hub) => {
-          const count = entitiesOfType(hub.type).length
-          return count > 0 ? (
-            <li>
-              <a href={`/${hub.slug}`}>
-                <span class="directory__name">{hub.title.replace('GTA 6 ', '')}</span>
-                <span class="directory__rule"></span>
-                <span class="directory__count">{count} {count === 1 ? 'entry' : 'entries'}</span>
-              </a>
-            </li>
-          ) : null
-        })}
-      </ul>
-    </div>
-  </section>
+  {showAd && (
+    <section class="band band--plaster">
+      <div class="shell">
+        <Ad placement="index" />
+      </div>
+    </section>
+  )}
 
   <section class="band">
     <div class="shell prose">
-      <h2 style="margin-top:0">How this site works</h2>
+      <h2>How this site works</h2>
       <p>
-        Grand Theft Auto VI is not out yet. Most of what is written about it online is
-        a guess. Every entry here shows its source and says plainly whether Rockstar
-        confirmed it, the press reported it, or the community spotted it. If nothing
-        reliable says it, it is not on the site.
-      </p>
-      <p>
-        That rule costs the site pages. There is no mission list here, no weapon
+        If nothing reliable says a thing, it is not on the site. That rule costs
+        the site pages. There is no mission list here, no weapon
         list, no cheat codes and no map coordinates, because Rockstar has published
         none of that. Sites that carry those lists today made them up. When the game
         ships on 19 November 2026 those pages get written from the real thing.
@@ -152,3 +208,25 @@ const jsonLd = {
     </div>
   </section>
 </BaseLayout>
+
+<style>
+  /* The headline stops before the band edge on a wide screen so it reads as a
+     statement and not as a line of body text. */
+  .hero__title { max-width: 18ch; }
+
+  /* The release facts and the counter are one unit: the counter is the same
+     fact with the days still on it. Side by side from tablet width up, stacked
+     below that. */
+  .hero__cols {
+    display: grid;
+    gap: 26px;
+    align-items: start;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: 900px) {
+    .hero__cols { grid-template-columns: minmax(0, 34rem) minmax(0, 1fr); gap: 34px; }
+  }
+
+  .hero__cols .spec { margin: 18px 0 0; }
+</style>

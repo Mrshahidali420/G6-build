@@ -3,15 +3,39 @@ import Plate from './Plate.astro'
 import Mark from './Mark.astro'
 import { urlFor } from '../lib/entities.mjs'
 
-const { entity, eager = false } = Astro.props
+const {
+  entity,
+  eager = false,
+  // Set on the home page, where one tile stands for a whole section. The tile
+  // then carries the way into that section, so the same nine destinations do
+  // not need a second list under it.
+  sectionTitle = null,
+  sectionHref = null,
+  sectionCount = 0,
+} = Astro.props
+
+// Cut at a space, never through a word, and say so with an ellipsis. A hard
+// slice ends sentences like "a vintage muscle c".
+function trim(text, limit) {
+  if (text.length <= limit) return text
+  const cut = text.slice(0, limit)
+  const space = cut.lastIndexOf(' ')
+  return `${(space > 40 ? cut.slice(0, space) : cut).replace(/[.,;:]$/, '')}...`
+}
 ---
 <li class="tile">
   <Plate entity={entity} eager={eager} />
   <div class="tile__body">
+    {sectionTitle && <p class="tile__eyebrow">{sectionTitle}</p>}
     <a class="tile__title" href={urlFor(entity)}>{entity.name}</a>
-    <p class="tile__text">{entity.shortDescription.slice(0, 96)}</p>
+    <p class="tile__text">{trim(entity.shortDescription, 96)}</p>
     <div class="tile__foot">
       <Mark status={entity.confirmedStatus} />
+      {sectionHref && sectionCount > 0 && (
+        <a class="tile__more" href={sectionHref}>
+          All {sectionCount} {sectionCount === 1 ? 'entry' : 'entries'}
+        </a>
+      )}
     </div>
   </div>
 </li>

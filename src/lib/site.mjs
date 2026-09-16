@@ -19,6 +19,9 @@ export const ADSENSE_SLOTS = {
   article: '',
   // Under the entity grid on a hub page and under the list on an index page.
   foot: '',
+  // The home page, in its own band between the section tiles and the closing
+  // explainer. A designed slot, so the page does not get one cut into it later.
+  index: '',
 }
 
 // Entity types that get a hub page. The hub route and the sitemap both read this.

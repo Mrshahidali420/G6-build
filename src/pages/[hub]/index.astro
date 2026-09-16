@@ -42,13 +42,19 @@ const Content = intro ? (await render(intro)).Content : null
       <h1>{hub.title}</h1>
       <p class="lede">{description}</p>
 
-      <dl class="spec" style="max-width:26rem">
-        <dt>Entries</dt>
-        <dd>{items.length}</dd>
-        <dt>Confirmed by Rockstar</dt>
-        <dd>{confirmedCount}</dd>
-        <dt>Reported by the press</dt>
-        <dd>{pressCount}</dd>
+      <dl class="stats">
+        <div>
+          <dt>Entries</dt>
+          <dd>{items.length}</dd>
+        </div>
+        <div>
+          <dt>Confirmed by Rockstar</dt>
+          <dd>{confirmedCount}</dd>
+        </div>
+        <div>
+          <dt>Reported by the press</dt>
+          <dd>{pressCount}</dd>
+        </div>
       </dl>
     </div>
   </section>

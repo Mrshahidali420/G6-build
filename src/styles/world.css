@@ -122,7 +122,10 @@ p { margin: 0 0 1.05em; }
    gutter like every other band. A centred 68ch box floating inside a 1120px
    shell reads as a second, smaller page laid on top of this one. */
 .shell.prose { max-width: var(--shell); }
-.shell.prose > * { max-width: var(--prose); }
+/* A rem measure, not a ch one: "ch" is the width of a zero in the element's
+   own font, so a heading set in the display face took a much wider box than a
+   paragraph and the two no longer started on the same line. */
+.shell.prose > * { max-width: 40rem; }
 .shell.prose > .scroller,
 .shell.prose > table { max-width: none; }
 .prose > h2:first-child { margin-top: 0; }
@@ -592,4 +595,64 @@ picture { display: block; }
 
   /* One button per line, full width, so neither is a thumb-sized target. */
   .btns > .btn { flex: 1 1 100%; justify-content: center; }
+}
+
+/* ---------- Wide screen balance ---------- */
+
+/* A reading column pinned to the left gutter leaves nearly half of a 1440px
+   screen empty, which reads as a broken page rather than a deliberate one.
+   From 1080px up the column is centred inside its band, so the space falls
+   evenly on both sides. Tables and scrollers still take the whole shell. */
+@media (min-width: 1080px) {
+  .shell.prose > * { margin-inline: auto; }
+  /* Wider than the text, still tied to it: a table left at the band edge
+     while the prose sits centred reads as two different pages. */
+  .shell.prose > .scroller,
+  .shell.prose > table { max-width: 52rem; margin-inline: auto; }
+}
+
+/* Nine section tiles across a 1120px shell fall as four, four and one, and
+   the lone tile on the last row reads as a mistake. Three across divides
+   every count this site actually prints. */
+@media (min-width: 1000px) {
+  .tiles:not(.tiles--wide) { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+/* ---------- Hub counts ---------- */
+
+/* Three numbers in a ruled definition list left a label column, a two
+   character value and a rule running into empty space. The counts are the
+   headline fact of a hub page, so they are set as figures. */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2px;
+  margin: 24px 0 0;
+  max-width: 660px;
+}
+.stats > div {
+  padding: 14px 16px;
+  background: var(--glaze-deep);
+  border: 1px solid color-mix(in srgb, var(--brass) 45%, transparent);
+}
+.stats dt {
+  font-family: var(--ui);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--on-glaze-2);
+}
+.stats dd {
+  margin: 5px 0 0;
+  font-family: var(--display);
+  font-stretch: 125%;
+  font-weight: 800;
+  font-size: 1.9rem;
+  line-height: 1;
+  color: var(--on-glaze);
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 480px) {
+  .stats { grid-template-columns: 1fr 1fr; }
 }

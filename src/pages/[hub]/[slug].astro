@@ -2,12 +2,15 @@
 import BaseLayout from '../../layouts/BaseLayout.astro'
 import Ad from '../../components/Ad.astro'
 import Plate from '../../components/Plate.astro'
+import Gallery from '../../components/Gallery.astro'
+import SongPlayer from '../../components/SongPlayer.astro'
 import Mark from '../../components/Mark.astro'
 import EntityTile from '../../components/EntityTile.astro'
 import { HUB_TYPES } from '../../lib/site.mjs'
 import { entitiesOfType, hubFor, relatedFor, urlFor, TIER_LABEL } from '../../lib/entities.mjs'
 import { entitySchema } from '../../lib/schema.mjs'
-import { imageFor, creditFor, creditSourceFor } from '../../lib/images.mjs'
+import { imageFor, creditFor, creditSourceFor, galleryFor } from '../../lib/images.mjs'
+import { trackFor } from '../../lib/music.mjs'
 
 export function getStaticPaths() {
   return HUB_TYPES.flatMap((hub) =>
@@ -24,6 +27,13 @@ const related = relatedFor(entity)
 const photo = imageFor(entity.slug)
 const credit = creditFor(entity.slug)
 const creditSource = creditSourceFor(entity.slug)
+
+// The hero already shows the first picture, so the gallery gets the rest.
+const shots = galleryFor(entity.slug).slice(1)
+
+// A song entry shows its real cover and a preview instead of a terrazzo plate,
+// when Apple publishes one for that record. When it does not, the plate stays.
+const track = entity.entityType === 'song' ? trackFor(entity.slug) : null
 
 // Unique per page. Never a template with the name swapped in.
 const description = entity.shortDescription.slice(0, 155)
@@ -77,6 +87,11 @@ const description = entity.shortDescription.slice(0, 155)
         </dl>
       </div>
 
+      {track ? (
+        <div class="hero__plate">
+          <SongPlayer track={track} name={entity.name} />
+        </div>
+      ) : (
       <figure class="hero__plate">
         <Plate entity={entity} eager={true} className="hero__img" chipCount={17} sizes="(max-width: 760px) 100vw, 620px" />
         <figcaption>
@@ -85,6 +100,7 @@ const description = entity.shortDescription.slice(0, 155)
             : 'No picture of this entry has been published that we may show. The plate is drawn from its section colour.'}
         </figcaption>
       </figure>
+      )}
     </div>
   </section>
 
@@ -145,6 +161,19 @@ const description = entity.shortDescription.slice(0, 155)
       </div>
     </div>
   </section>
+
+  {shots.length > 0 && (
+    <section class="band band--plaster">
+      <div class="shell">
+        <h2 style="margin-top:0">More pictures of {entity.name}</h2>
+        <p class="lede">
+          Every picture below was published by Rockstar Games. Each one names the
+          file it came from and links back to the page that published it.
+        </p>
+        <Gallery shots={shots} name={entity.name} />
+      </div>
+    </section>
+  )}
 
   {entity.faq?.length > 0 && (
     <section class="band band--plaster">

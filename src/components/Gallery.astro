@@ -1,0 +1,80 @@
+---
+// The other published pictures of one entry.
+//
+// The first picture is already the page's hero plate, so this component is
+// handed the rest of the set and prints them as a plain grid. Every picture
+// keeps its own credit line and its own source link, because they do not all
+// come from the same press pack file.
+//
+// No lightbox, no slider, no fade. DESIGN.md allows exactly one animation on
+// the whole site and it is spent on the stamp. A grid of real pictures with
+// real captions reads as a record, which is what this site is.
+const { shots = [], name } = Astro.props
+---
+{shots.length > 0 && (
+  <ul class="shots">
+    {shots.map((shot, index) => (
+      <li class="shots__item">
+        <figure class="shots__fig">
+          <picture>
+            {shot.sets?.avif && <source type="image/avif" srcset={shot.sets.avif} sizes="(max-width: 760px) 100vw, 420px" />}
+            {shot.sets?.webp && <source type="image/webp" srcset={shot.sets.webp} sizes="(max-width: 760px) 100vw, 420px" />}
+            <img
+              class="shots__img"
+              src={shot.src}
+              alt={`${name} in Grand Theft Auto VI, picture ${index + 2}`}
+              loading="lazy"
+              decoding="async"
+              width="1280"
+              height="720"
+            />
+          </picture>
+          <figcaption class="shots__cap">
+            {shot.credit ?? 'Image: Rockstar Games. Shown for reference only.'}
+            {shot.source && (
+              <> <a href={shot.source} rel="nofollow noopener" target="_blank">Source</a>.</>
+            )}
+          </figcaption>
+        </figure>
+      </li>
+    ))}
+  </ul>
+)}
+
+<style>
+  .shots {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 22px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+
+  .shots__fig {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid color-mix(in srgb, var(--brass) 38%, transparent);
+    background: var(--plaster);
+  }
+
+  .shots__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-bottom: 1px solid color-mix(in srgb, var(--brass) 38%, transparent);
+  }
+
+  .shots__cap {
+    padding: 11px 14px 13px;
+    font-family: var(--display);
+    font-size: 0.82rem;
+    line-height: 1.45;
+    color: var(--ink-2);
+  }
+</style>

@@ -1,0 +1,27 @@
+{
+  "slug": "fanboat",
+  "faq": [
+    {
+      "q": "Is there a fanboat in Grand Theft Auto VI?",
+      "a": "Yes. WIRED reports a fanboat is shown being used to travel through the Everglades in the Extended Look video, released 27 August 2026."
+    },
+    {
+      "q": "Where can you use the fanboat in GTA VI?",
+      "a": "It is shown in the Everglades, a wetland area of Leonida, according to WIRED's coverage of the Extended Look."
+    },
+    {
+      "q": "What is the fanboat's in-game name in GTA VI?",
+      "a": "The facts file does not give a specific in-game name or brand, only that a fanboat vehicle type is shown."
+    },
+    {
+      "q": "What other watercraft appear alongside the fanboat in the Extended Look?",
+      "a": "WIRED also reports a jet ski and a kayak in use, as part of a wider set of Everglades and Gulf water activities."
+    }
+  ],
+  "notKnown": [
+    "The fanboat's specific in-game name or manufacturer",
+    "Whether the fanboat can be customized or purchased",
+    "Any mission use of the fanboat beyond general Everglades travel"
+  ],
+  "howWeKnow": "WIRED reported this in its 27 August 2026 takeaways piece on the Extended Look video. This is press reporting, recorded as PRESS_REPORTED at MEDIUM confidence."
+}

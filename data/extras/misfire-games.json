@@ -1,0 +1,27 @@
+{
+  "slug": "misfire-games",
+  "faq": [
+    {
+      "q": "What is Misfire Games in GTA VI?",
+      "a": "It is the in-universe game developer referenced through a Righteous Slaughter: Hood Ops T-shirt worn by San4San in the Extended Look video, as identified by GamesRadar+."
+    },
+    {
+      "q": "Is Righteous Slaughter a real game series in GTA?",
+      "a": "It is a fictional in-universe game series. GamesRadar+ notes this T-shirt is a callback to Righteous Slaughter 7, which appeared in GTA 5."
+    },
+    {
+      "q": "Who wears the Misfire Games related shirt in the Extended Look?",
+      "a": "The character San4San, who appears near the start of the video wearing the Righteous Slaughter: Hood Ops shirt."
+    },
+    {
+      "q": "Does Misfire Games appear anywhere else in GTA VI?",
+      "a": "The facts file only records the one T-shirt reference. No other in-game appearance of Misfire Games is confirmed."
+    }
+  ],
+  "notKnown": [
+    "Whether Misfire Games appears as a business or storefront in the game world",
+    "Any other Misfire Games titles referenced besides Righteous Slaughter",
+    "Whether the studio name itself is spoken or only implied by the shirt branding"
+  ],
+  "howWeKnow": "GamesRadar+ reported this in its 28 August 2026 breakdown of the Extended Look video. This is press reporting, recorded as PRESS_REPORTED at MEDIUM confidence."
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "prairie",
+  "faq": [
+    {
+      "q": "What is Prairie in GTA VI?",
+      "a": "Prairie is a fictional fast-food chain shown in a TV advert during the Extended Look video, reported by GamesRadar+."
+    },
+    {
+      "q": "What does the Prairie advert say in the Extended Look?",
+      "a": "It advertises a sandwich box meal at \"only 30,000 calories,\" a joke figure noted by GamesRadar+."
+    },
+    {
+      "q": "What real chain does Prairie parody in GTA VI?",
+      "a": "GamesRadar+ says the advert parodies real fast-food chains such as Arby's."
+    },
+    {
+      "q": "Can you visit a Prairie restaurant in GTA VI?",
+      "a": "The facts file does not confirm this. Only the TV advert has been reported so far, not a physical location."
+    }
+  ],
+  "notKnown": [
+    "Whether Prairie has a physical restaurant location in the game world",
+    "The full menu or branding shown beyond the sandwich box meal",
+    "Whether Prairie appears on in-game radio or billboards as well as TV"
+  ],
+  "howWeKnow": "GamesRadar+ reported this in its 28 August 2026 breakdown of the Extended Look video. This is press reporting, recorded as PRESS_REPORTED at MEDIUM confidence."
+}

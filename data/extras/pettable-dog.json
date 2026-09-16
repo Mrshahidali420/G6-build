@@ -1,0 +1,27 @@
+{
+  "slug": "pettable-dog",
+  "faq": [
+    {
+      "q": "Can you pet a dog in Grand Theft Auto VI?",
+      "a": "Yes. WIRED reports a dog appears on screen in at least one scene of the Extended Look video and can be petted."
+    },
+    {
+      "q": "Whose dog is shown in the Extended Look?",
+      "a": "The facts file does not say. Only that a dog appears and is pettable, without naming an owner."
+    },
+    {
+      "q": "Is the pettable dog part of a mission in GTA VI?",
+      "a": "The facts file does not confirm this, only that the dog and the petting interaction appear on screen at some point in the video."
+    },
+    {
+      "q": "When was the pettable dog first shown in GTA VI?",
+      "a": "It was shown in the Extended Look gameplay video, released 27 August 2026."
+    }
+  ],
+  "notKnown": [
+    "The dog's owner, breed, or name",
+    "Whether other pettable animals exist in the game",
+    "Whether petting the dog has any gameplay effect"
+  ],
+  "howWeKnow": "WIRED reported this in its 27 August 2026 takeaways piece on the Extended Look video. This is press reporting, recorded as PRESS_REPORTED at MEDIUM confidence."
+}

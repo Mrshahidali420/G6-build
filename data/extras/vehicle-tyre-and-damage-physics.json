@@ -1,0 +1,27 @@
+{
+  "slug": "vehicle-tyre-and-damage-physics",
+  "faq": [
+    {
+      "q": "Can you shoot out tyres to stop a car in GTA VI?",
+      "a": "Yes. WIRED reports a police chase in the Extended Look shows cars being shot at, with blown tyres causing a car to flip and crash into a sidewalk."
+    },
+    {
+      "q": "Is there visible car damage during chases in GTA VI?",
+      "a": "Yes, WIRED reports visible environmental destruction alongside the tyre and crash physics shown in the chase sequence."
+    },
+    {
+      "q": "Does GTA VI show close-combat takedowns on police?",
+      "a": "WIRED reports a character body-slams a cop through a wall in the same section of the video covering shooting and destruction."
+    },
+    {
+      "q": "Where was this damage physics footage shown?",
+      "a": "It appeared in the Extended Look gameplay video released 27 August 2026, during a police car chase sequence."
+    }
+  ],
+  "notKnown": [
+    "Whether tyre damage physics apply to non-police vehicles in the same way",
+    "The specific weapon or method used to blow the tyres in the shown clip",
+    "Whether the cop body-slam through the wall is a scripted moment or a general combat mechanic"
+  ],
+  "howWeKnow": "WIRED reported this in its 27 August 2026 takeaways piece on the Extended Look video. This is press reporting, recorded as PRESS_REPORTED at MEDIUM confidence."
+}

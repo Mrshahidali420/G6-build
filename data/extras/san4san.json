@@ -1,0 +1,27 @@
+{
+  "slug": "san4san",
+  "faq": [
+    {
+      "q": "Who is San4San in Grand Theft Auto VI?",
+      "a": "San4San is a character seen near the start of the Extended Look video, wearing a Righteous Slaughter: Hood Ops T-shirt, as reported by GamesRadar+."
+    },
+    {
+      "q": "What is significant about San4San's T-shirt?",
+      "a": "It references the in-universe Misfire Games developer and is described by GamesRadar+ as a callback to Righteous Slaughter 7, which appeared in GTA 5."
+    },
+    {
+      "q": "Is San4San a major character in GTA VI's story?",
+      "a": "The facts file does not say. San4San is only confirmed to appear briefly near the start of the Extended Look video."
+    },
+    {
+      "q": "Does San4San interact with Jason or Lucia in the Extended Look?",
+      "a": "The facts file does not confirm any direct interaction, only that San4San appears near the start of the video, around the same section that introduces Jason and Lucia."
+    }
+  ],
+  "notKnown": [
+    "San4San's role or relevance to the main story",
+    "Whether San4San is a playable, recurring, or one-off character",
+    "Any dialogue or scenes involving San4San beyond the T-shirt appearance"
+  ],
+  "howWeKnow": "GamesRadar+ reported this in its 28 August 2026 breakdown of the Extended Look video. This is press reporting, recorded as PRESS_REPORTED at MEDIUM confidence."
+}

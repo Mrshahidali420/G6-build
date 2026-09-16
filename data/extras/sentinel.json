@@ -1,0 +1,27 @@
+{
+  "slug": "sentinel",
+  "faq": [
+    {
+      "q": "What is Sentinel in Grand Theft Auto VI?",
+      "a": "Sentinel is a fictional GTA car brand. In the Extended Look video, Jason and Lucia are shown driving an old Sentinel convertible, as identified by GamesRadar+."
+    },
+    {
+      "q": "Does the Sentinel brand have a history in the GTA series?",
+      "a": "GamesRadar+ says the Sentinel brand's roots go back to Vice City, meaning it is not a new brand introduced for this game."
+    },
+    {
+      "q": "What model of Sentinel do Jason and Lucia drive?",
+      "a": "The facts file only confirms the brand and that it is an old convertible. No specific model name is given by the sourced reporting."
+    },
+    {
+      "q": "Where is the Sentinel convertible first seen in GTA VI?",
+      "a": "It is shown being driven by Jason and Lucia in the Extended Look gameplay video released on 27 August 2026."
+    }
+  ],
+  "notKnown": [
+    "The specific model name of the convertible beyond the Sentinel brand",
+    "Whether other Sentinel models appear in the game",
+    "Any in-game price or dealership details for the vehicle"
+  ],
+  "howWeKnow": "GamesRadar+ identified the brand in its breakdown of the Extended Look video, published 28 August 2026. This is press reporting rather than a Rockstar official statement, so it is recorded as PRESS_REPORTED at MEDIUM confidence."
+}

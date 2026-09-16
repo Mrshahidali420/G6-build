@@ -1,0 +1,27 @@
+{
+  "slug": "clothing-and-outfit-system",
+  "faq": [
+    {
+      "q": "Does GTA VI have a clothing and outfit system?",
+      "a": "Yes. WIRED reports clothing and outfit changes are shown in the Extended Look video, released 27 August 2026."
+    },
+    {
+      "q": "Did real fashion designers work on GTA VI's clothing?",
+      "a": "WIRED cites a separate Dazed report saying the clothing system was worked on with real fashion designers, though it does not name them in the facts recorded here."
+    },
+    {
+      "q": "What outfits are shown in the Extended Look?",
+      "a": "The facts file does not describe specific outfits, only that clothing and outfit changes are shown as part of the character customization coverage."
+    },
+    {
+      "q": "Is the clothing system tied to the body weight and physique system in GTA VI?",
+      "a": "The facts file does not confirm a direct link, but WIRED reports both systems as part of the same character customization and reactivity coverage."
+    }
+  ],
+  "notKnown": [
+    "The names of the fashion designers involved, per the Dazed report cited by WIRED",
+    "Specific outfits or brands shown in the Extended Look",
+    "Whether outfits affect gameplay, such as disguise or reputation mechanics"
+  ],
+  "howWeKnow": "WIRED reported this in its 27 August 2026 takeaways piece on the Extended Look video, citing a separate Dazed report for the fashion-designer detail. This is press reporting, recorded as PRESS_REPORTED at MEDIUM confidence."
+}

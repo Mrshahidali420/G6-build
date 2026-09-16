@@ -1,0 +1,27 @@
+{
+  "slug": "jet-ski",
+  "faq": [
+    {
+      "q": "Is there a jet ski in Grand Theft Auto VI?",
+      "a": "Yes. Both GamesRadar+ and WIRED report a jet ski is shown in use in the Extended Look video, including near a pier dive scene."
+    },
+    {
+      "q": "Where is the jet ski used in the Extended Look?",
+      "a": "GamesRadar+ ties it to an underwater ecosystem scene near a pier, where Jason is shown diving off the pier and riding the jet ski."
+    },
+    {
+      "q": "What other water activities appear with the jet ski?",
+      "a": "WIRED reports scuba diving and kayaking are also shown, as part of a wider set of Gulf and river water activities in Leonida."
+    },
+    {
+      "q": "What wildlife appears near the jet ski scene?",
+      "a": "GamesRadar+ reports manatees, dolphins and stingrays appear as part of the underwater ecosystem shown in the same section of the video."
+    }
+  ],
+  "notKnown": [
+    "The jet ski's specific in-game name or manufacturer",
+    "Whether the jet ski can be customized or purchased",
+    "Any mission use of the jet ski beyond the pier dive scene"
+  ],
+  "howWeKnow": "Reported independently by GamesRadar+ (28 August 2026) and WIRED (27 August 2026) in their coverage of the Extended Look video. This is press reporting, recorded as PRESS_REPORTED at MEDIUM confidence."
+}

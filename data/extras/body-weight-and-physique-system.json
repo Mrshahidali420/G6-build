@@ -1,0 +1,27 @@
+{
+  "slug": "body-weight-and-physique-system",
+  "faq": [
+    {
+      "q": "Can characters gain or lose weight in GTA VI?",
+      "a": "Yes. WIRED reports that eating and working out affect the characters' weight and physique, shown via eating and exercise minigames in the Extended Look video."
+    },
+    {
+      "q": "How is the body weight and physique system shown in the Extended Look?",
+      "a": "WIRED describes it as character customization and reactivity, demonstrated through eating and exercise minigames rather than a menu screen."
+    },
+    {
+      "q": "What does WIRED call the physique change in GTA VI?",
+      "a": "WIRED's coverage describes characters getting \"swole\" as a result of the working out shown in the video."
+    },
+    {
+      "q": "Does this system affect both Jason and Lucia?",
+      "a": "The facts file does not specify which protagonist is shown using the eating and exercise minigames, only that the system is shown in the video."
+    }
+  ],
+  "notKnown": [
+    "The exact mechanics or controls of the eating and exercise minigames",
+    "Whether weight or physique affects gameplay stats such as stamina or combat",
+    "Whether the system applies to both Jason and Lucia equally"
+  ],
+  "howWeKnow": "WIRED reported this in its 27 August 2026 takeaways piece on the Extended Look video. This is press reporting, recorded as PRESS_REPORTED at MEDIUM confidence."
+}

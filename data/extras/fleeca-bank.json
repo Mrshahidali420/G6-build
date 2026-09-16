@@ -1,0 +1,27 @@
+{
+  "slug": "fleeca-bank",
+  "faq": [
+    {
+      "q": "Is Fleeca Bank in Grand Theft Auto VI?",
+      "a": "Yes. GamesRadar+ reports a Fleeca Bank sticker appears on Jason's fridge in the Extended Look video, released 27 August 2026."
+    },
+    {
+      "q": "What is Fleeca Bank in the GTA series?",
+      "a": "It is a recurring fictional bank chain in the GTA universe. GamesRadar+ notes it previously featured in GTA 4 radio ads."
+    },
+    {
+      "q": "Can you rob Fleeca Bank in GTA VI?",
+      "a": "The facts file does not confirm this. Only a fridge sticker has been shown so far, with no robbery or branch gameplay reported."
+    },
+    {
+      "q": "Where is the Fleeca Bank reference shown in the Extended Look?",
+      "a": "It appears as a sticker on Jason's fridge, spotted by GamesRadar+ in its breakdown of the video."
+    }
+  ],
+  "notKnown": [
+    "Whether Fleeca Bank branches appear as explorable locations",
+    "Whether Fleeca robbery missions exist in GTA VI",
+    "Any other in-game appearances of the brand beyond the fridge sticker"
+  ],
+  "howWeKnow": "GamesRadar+ spotted and reported the sticker in its 28 August 2026 breakdown of the Extended Look video. This is press reporting, recorded as PRESS_REPORTED at MEDIUM confidence."
+}

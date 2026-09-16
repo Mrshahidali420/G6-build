@@ -1,0 +1,27 @@
+{
+  "slug": "gps-style-minimap",
+  "faq": [
+    {
+      "q": "Does GTA VI have a GPS-style minimap?",
+      "a": "Yes. WIRED reports a minimap resembling a real GPS map is shown guiding the player during driving in the Extended Look video."
+    },
+    {
+      "q": "When was the GPS style minimap shown in GTA VI?",
+      "a": "It appeared in the Extended Look gameplay video released 27 August 2026, during driving sequences."
+    },
+    {
+      "q": "Does the minimap work outside of driving in GTA VI?",
+      "a": "The facts file does not say. Only its use during driving is confirmed by the sourced reporting."
+    },
+    {
+      "q": "Who reported on the GPS style minimap in GTA VI?",
+      "a": "WIRED covered it in the outlet's 27 August 2026 takeaways piece on the Extended Look video."
+    }
+  ],
+  "notKnown": [
+    "Whether the minimap can be resized, hidden, or customized",
+    "How the minimap behaves outside of driving sequences",
+    "Whether a full-screen map mode exists alongside the minimap"
+  ],
+  "howWeKnow": "WIRED reported this in its 27 August 2026 takeaways piece on the Extended Look video. This is press reporting, recorded as PRESS_REPORTED at MEDIUM confidence."
+}

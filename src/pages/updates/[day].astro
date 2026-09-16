@@ -8,8 +8,10 @@ import { getCollection } from 'astro:content'
 import BaseLayout from '../../layouts/BaseLayout.astro'
 import Mark from '../../components/Mark.astro'
 import Icon from '../../components/Icon.astro'
+import EntityTile from '../../components/EntityTile.astro'
 import { SITE_NAME, SITE_URL, canonical } from '../../lib/site.mjs'
 import { GAME } from '../../lib/schema.mjs'
+import { mentionedIn } from '../../lib/mentions.mjs'
 
 export async function getStaticPaths() {
   const days = await getCollection('updates')
@@ -31,6 +33,11 @@ const OPEN = String.fromCharCode(8220)
 const CLOSE = String.fromCharCode(8221)
 
 const outlets = [...new Set(data.items.map((item) => item.outlet))]
+
+// The entries in this record that the day's reports name. A name in a headline
+// is not a claim about the entry, so this is a list of links and nothing more.
+// It is built by the same label rules the robot uses, so the two never drift.
+const touches = mentionedIn(data.items.map((item) => `${item.headline} ${item.summary ?? ''}`).join(' '))
 
 // When a news page cites one of these links as a source, say so next to the
 // item. The log stays a log: this is a link to our own write up of that piece,
@@ -66,7 +73,13 @@ const jsonLd = {
   },
 }
 ---
-<BaseLayout title={data.title} description={data.description} path={path} updated={data.updated} jsonLd={jsonLd}>
+<!--
+  noindex, follow. Almost every word below belongs to the outlet that wrote it,
+  and the page exists to prove what was published, not to compete for the words
+  in someone else's headline. Search engines are asked to skip the page and
+  follow the links out of it. /updates, the index, stays indexed.
+-->
+<BaseLayout title={data.title} description={data.description} path={path} updated={data.updated} jsonLd={jsonLd} noindex={true}>
   <section class="band band--glaze">
     <div class="shell">
       <p class="crumb" style="color:var(--on-glaze-2)">
@@ -117,6 +130,22 @@ const jsonLd = {
     </div>
   </section>
 
+  {touches.length > 0 && (
+    <section class="band">
+      <div class="shell">
+        <h2 style="margin-top:0">Entries these reports name</h2>
+        <p>
+          Each report above names one or more entries in this record. Being named is
+          not a claim about the entry. These are links to what this site has already
+          recorded about each one, with its own sources.
+        </p>
+        <ul class="tiles">
+          {touches.map((entity) => <EntityTile entity={entity} />)}
+        </ul>
+      </div>
+    </section>
+  )}
+
   <section class="band band--plaster">
     <div class="shell prose">
       <h2 style="margin-top:0">How to read this page</h2>
@@ -126,6 +155,7 @@ const jsonLd = {
           <li>A quotation here proves that the outlet published it. It does not prove that it is true.</li>
           <li>Nothing on this page is written by this site, and no claim on it has been checked.</li>
           <li>A claim that survives checking gets its own dated entry in <a href="/news">the news record</a>.</li>
+          <li>This page is not offered to search engines, because the words on it are not ours.</li>
         </ul>
         <p class="plaque__meta">Recorded {data.updated}. Found a mistake? <a href="/contact">Tell us</a>.</p>
       </div>

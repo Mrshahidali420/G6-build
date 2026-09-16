@@ -126,11 +126,92 @@ function patternsFor(catalog) {
   return rows
 }
 
+// A saved article is the whole page, so the first sentence of the body often
+// has the page furniture glued to the front of it: a photo credit, or the
+// breadcrumb trail above the headline. None of that is part of the sentence,
+// and a reader seeing "Image: Rockstar Games We've seen glimpses..." on an
+// entry page is looking at a bug. Only a known, leading run is removed, and
+// what is left is still a run of characters from the article, so the verbatim
+// check in checks.mjs still passes.
+// A photo credit is a run of proper nouns, so it cannot be told from the start
+// of a sentence by capital letters alone. These are the capitalised words that
+// begin a sentence rather than name a company, and the credit stops at the
+// first one of them. Without this, "Image: Rockstar Games We've seen..." loses
+// the "We've" along with the credit.
+const SENTENCE_STARTERS = new Set([
+  'A', 'After', 'All', 'An', 'And', 'As', 'At', 'Before', 'But', 'During',
+  'For', 'He', 'Her', 'His', 'How', 'I', 'If', 'In', 'It', 'Its', 'More',
+  'No', 'Not', 'On', 'One', 'Or', 'Our', 'She', 'So', 'That', 'The', 'Their',
+  'Then', 'There', 'These', 'They', 'This', 'Those', 'To', 'Two', 'We', 'What',
+  'When', 'While', 'Who', 'Why', 'With', 'You', 'Your',
+])
+
+const CREDIT_LABEL = /^(?:Image|Photo|Picture|Credit|Screenshot)s?\s*:\s*/
+// the breadcrumb strip above a headline, e.g. "Home News Grand Theft Auto VI"
+const BREADCRUMB = /^Home\s+(?:News|Features|Reviews|Guides)\s+(?:Grand Theft Auto (?:VI|6)\s+)?/
+
+/**
+ * The sentence with any leading page furniture taken off the front.
+ * Only a leading run is removed, so what is left is still a run of characters
+ * from the article and the verbatim check in checks.mjs still passes.
+ */
+export function stripPageChrome(sentence) {
+  let text = String(sentence ?? '').trim()
+
+  const afterCrumb = text.replace(BREADCRUMB, '')
+  if (afterCrumb.trim()) text = afterCrumb.trim()
+
+  if (CREDIT_LABEL.test(text)) {
+    const rest = text.replace(CREDIT_LABEL, '')
+    const words = rest.split(/\s+/)
+    let cut = 0
+    // At most four words of credit, and it ends at the first word that is not
+    // a plain proper noun or that reads as the start of a sentence.
+    while (cut < words.length && cut < 4) {
+      const word = words[cut]
+      if (!/^[A-Z][\p{L}]*$/u.test(word)) break
+      if (SENTENCE_STARTERS.has(word)) break
+      cut += 1
+    }
+    const kept = words.slice(cut).join(' ').trim()
+    // A correct cut leaves a sentence, and a sentence begins with a capital.
+    // A lowercase first letter means the cut landed inside the sentence, so
+    // the guess is thrown away and the caller rejects the sentence instead of
+    // publishing a fragment.
+    if (cut > 0 && /^[\p{Lu}(]/u.test(kept)) text = kept
+  }
+
+  return text.trim()
+}
+
+// Sentences that are on the page but are not reporting. A question is asking
+// the reader something, not telling them anything, and an outlet pointing at
+// its own other pages is selling, not reporting. Neither belongs on an entry
+// page as a recorded fact.
+const NOT_REPORTING = [
+  /\bour full\b/i,
+  /\b(?:read|see|check out) (?:more|our|the full)\b/i,
+  /\b(?:sign up|subscribe|newsletter)\b/i,
+  /\bfollow us\b/i,
+]
+
 /** True when a sentence is quotable as it stands. */
 export function quotableSentence(sentence) {
-  const words = wordCount(sentence)
+  const text = String(sentence ?? '')
+  const words = wordCount(text)
   if (words < MIN_CLAIM_WORDS || words > MAX_CLAIM_WORDS) return false
-  return !hasEmDash(sentence)
+  if (hasEmDash(text)) return false
+  // U+FFFD means the text was decoded with the wrong character set somewhere
+  // upstream. The words may be right but the characters are damaged, and
+  // damaged characters must never reach a published page.
+  if (text.includes('\uFFFD')) return false
+  // stripPageChrome was given the first go. Furniture still on the front here
+  // means it could not tell where the credit ended, so the sentence is left
+  // out rather than published with the furniture attached.
+  if (CREDIT_LABEL.test(text) || BREADCRUMB.test(text)) return false
+  // A question asks; it does not report.
+  if (text.trim().endsWith('?')) return false
+  return !NOT_REPORTING.some((pattern) => pattern.test(text))
 }
 
 /**
@@ -154,7 +235,7 @@ export function logicClaims(record, catalog) {
   const lead = `${title} ${summary}`
   if (!aboutGta6) return { aboutGta6: false, entities: [] }
 
-  const sentences = sentencesIn(text).filter(quotableSentence)
+  const sentences = sentencesIn(text).map(stripPageChrome).filter(quotableSentence)
   const entities = []
 
   for (const { entity, pattern } of patternsFor(catalog)) {

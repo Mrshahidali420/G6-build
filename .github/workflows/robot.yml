@@ -33,6 +33,10 @@ on:
 permissions:
   contents: write
   issues: write
+  # Lets the run start the deploy workflow after it pushes. A push made with
+  # GITHUB_TOKEN never starts another workflow on its own, so without this
+  # the robot's pages would sit on main and never reach the live site.
+  actions: write
   # Lets the run call GitHub Models with its own GITHUB_TOKEN. No secret needed.
   models: read
 
@@ -128,6 +132,7 @@ jobs:
         run: npm run build
 
       - name: Commit what was recorded
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -147,6 +152,16 @@ jobs:
             git pull --rebase origin main
             git push origin HEAD:main
           }
+          echo "pushed=1" >> "$GITHUB_OUTPUT"
+
+      # GitHub does not start a workflow from a push made with GITHUB_TOKEN,
+      # so the deploy that follows every human push would never follow this
+      # one. A workflow_dispatch is the one exception to that rule.
+      - name: Deploy the site
+        if: steps.commit.outputs.pushed == '1'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run deploy.yml --ref main
 
       # One issue per refused entity, so a person can finish what the checks
       # would not let the robot ship. data/robot/issued.json is the memory, so

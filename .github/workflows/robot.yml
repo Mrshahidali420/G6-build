@@ -141,6 +141,9 @@ jobs:
             echo "nothing new to record"
             exit 0
           fi
+          # Only a change under src/content or public/img changes the built
+          # site. A run that only moved ledgers has nothing to deploy.
+          site_changed=$(git diff --cached --name-only -- src/content public/img data/extras | wc -l)
           git commit -m "chore(robot): record what was published"
           # A person can land a commit on main while this run is in flight, and
           # then the push is rejected with "fetch first" and a run's work is
@@ -152,7 +155,11 @@ jobs:
             git pull --rebase origin main
             git push origin HEAD:main
           }
-          echo "pushed=1" >> "$GITHUB_OUTPUT"
+          if [ "$site_changed" -gt 0 ]; then
+            echo "pushed=1" >> "$GITHUB_OUTPUT"
+          else
+            echo "only ledgers changed, no deploy needed"
+          fi
 
       # GitHub does not start a workflow from a push made with GITHUB_TOKEN,
       # so the deploy that follows every human push would never follow this

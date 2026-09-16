@@ -110,7 +110,7 @@ h1, h2, h3 {
   line-height: 1.08;
   color: var(--ink);
 }
-h1 { font-size: clamp(2.1rem, 1.3rem + 3.4vw, 3.5rem); margin: 0 0 0.45em; }
+h1 { font-size: clamp(1.95rem, 1.25rem + 3.4vw, 3.5rem); margin: 0 0 0.45em; }
 h2 { font-size: clamp(1.3rem, 1.1rem + 0.9vw, 1.7rem); margin: 2.4em 0 0.7em; }
 h3 { font-size: 1.1rem; margin: 1.8em 0 0.5em; font-stretch: 108%; }
 p { margin: 0 0 1.05em; }
@@ -118,7 +118,13 @@ p { margin: 0 0 1.05em; }
 /* ---------- Layout ---------- */
 
 .shell { max-width: var(--shell); margin: 0 auto; padding-inline: clamp(16px, 4vw, 34px); }
-.prose { max-width: var(--prose); }
+/* The reading column stays narrow, but it starts at the page's own left
+   gutter like every other band. A centred 68ch box floating inside a 1120px
+   shell reads as a second, smaller page laid on top of this one. */
+.shell.prose { max-width: var(--shell); }
+.shell.prose > * { max-width: var(--prose); }
+.shell.prose > .scroller,
+.shell.prose > table { max-width: none; }
 .prose > h2:first-child { margin-top: 0; }
 
 /* A band owns a whole region of the page. Colour commits at page scale. */
@@ -574,3 +580,16 @@ picture { display: block; }
   font-family: var(--ui); font-weight: 700; text-decoration: none;
 }
 .skip:focus { left: 0; }
+
+/* ---- phone ---------------------------------------------------------------- */
+
+@media (max-width: 560px) {
+  /* Two columns of label and value squeeze both at phone width. The label
+     becomes a line of its own above the value it names. */
+  .spec { grid-template-columns: 1fr; }
+  .spec dt { padding: 12px 0 2px; border-bottom: 0; }
+  .spec dd { padding-top: 0; }
+
+  /* One button per line, full width, so neither is a thumb-sized target. */
+  .btns > .btn { flex: 1 1 100%; justify-content: center; }
+}

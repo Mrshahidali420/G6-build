@@ -110,6 +110,13 @@ const initial = parts(diff)
     color: var(--on-glaze-2);
     font-size: 0.88rem;
   }
+
+  /* Four cells across a phone leaves each number 60px wide and the word
+     "Minutes" wider than the box holding it. Two by two instead. */
+  @media (max-width: 460px) {
+    .countdown__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .countdown__note { font-size: 0.82rem; margin-top: 12px; }
+  }
 </style>
 
 <script>

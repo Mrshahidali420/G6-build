@@ -224,6 +224,14 @@ const showAd = Boolean(ADSENSE_CLIENT && ADSENSE_SLOTS.index)
     margin-bottom: 22px;
   }
 
+  /* Stacked on a phone the counter goes first. It is the one thing on this
+     page that changes every second, and it answers the question most people
+     arrive with before they read a word. */
+  @media (max-width: 899px) {
+    .hero__cols { display: flex; flex-direction: column; gap: 22px; }
+    .hero__cols > :last-child { order: -1; }
+  }
+
   @media (min-width: 900px) {
     .hero__cols { grid-template-columns: minmax(0, 34rem) minmax(0, 1fr); gap: 34px; }
   }

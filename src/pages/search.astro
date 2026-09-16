@@ -27,13 +27,34 @@ const total = pageEntities.length
   <section class="band">
     <div class="shell prose">
 
+  <!--
+    The stylesheet and the script are both fetched as soon as the parser reaches
+    them, and the index files are preloaded next to them, so nothing waits for
+    the rest of the page. Pagefind writes these files after astro build, which
+    is why they are referenced by path and not imported.
+  -->
   <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+  <link rel="preload" href="/pagefind/pagefind.js" as="script" crossorigin />
   <div id="search"></div>
   <script src="/pagefind/pagefind-ui.js" is:inline></script>
   <script is:inline>
-    window.addEventListener('DOMContentLoaded', () => {
-      new PagefindUI({ element: '#search', showSubResults: true, showImages: false })
-    })
+    // Run the moment the script is parsed rather than on DOMContentLoaded. The
+    // mount point is directly above this tag, so it already exists, and waiting
+    // for the whole document added a delay the visitor could feel.
+    //
+    // A query in the URL is run straight away. That is what makes the header
+    // form feel instant: the visitor types once, presses enter, and the results
+    // page arrives with the search already done.
+    (function () {
+      var query = new URLSearchParams(window.location.search).get('q') || ''
+      var ui = new PagefindUI({
+        element: '#search',
+        showSubResults: true,
+        showImages: false,
+        autofocus: !query,
+      })
+      if (query) ui.triggerSearch(query)
+    })()
   </script>
 
   <noscript>

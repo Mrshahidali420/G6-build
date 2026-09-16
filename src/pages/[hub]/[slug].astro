@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro'
+import Ad from '../../components/Ad.astro'
 import Plate from '../../components/Plate.astro'
 import Mark from '../../components/Mark.astro'
 import EntityTile from '../../components/EntityTile.astro'
@@ -171,4 +172,5 @@ const description = entity.shortDescription.slice(0, 155)
       </div>
     </section>
   )}
+  <Ad placement="foot" />
 </BaseLayout>

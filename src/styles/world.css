@@ -165,6 +165,41 @@ p { margin: 0 0 1.05em; }
 }
 .masthead__links a:hover { color: var(--on-glaze); text-decoration: underline; }
 
+/* Row two of the masthead: a real search field, shown at every width. A
+   magnifier icon that only links to /search costs a click and a page load
+   before the visitor can even type, and on this site search is the main way
+   to reach 31 answer pages. The field is a plain GET form, so it works with
+   JavaScript off. */
+.masthead__find { padding-bottom: 12px; }
+.find { display: flex; gap: 8px; align-items: stretch; max-width: 640px; }
+.find__label {
+  position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
+  overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+}
+.find__input {
+  flex: 1 1 auto; min-width: 0;
+  padding: 10px 13px;
+  background: var(--glaze-deep); color: var(--on-glaze);
+  border: 1px solid color-mix(in srgb, var(--on-glaze) 26%, transparent);
+  border-radius: var(--r);
+  font-family: var(--ui); font-size: 0.9rem;
+  -webkit-appearance: none; appearance: none;
+}
+.find__input::placeholder { color: var(--on-glaze-2); }
+.find__input:focus-visible {
+  outline: 2px solid var(--brass); outline-offset: 1px;
+  border-color: var(--brass);
+}
+.find__btn {
+  flex: 0 0 auto; display: inline-flex; align-items: center; gap: 7px;
+  padding: 10px 16px; cursor: pointer;
+  background: var(--brass); color: #20180a; border: 1px solid var(--brass);
+  border-radius: var(--r);
+  font-family: var(--ui); font-size: 0.82rem; font-weight: 700;
+  letter-spacing: 0.04em; text-transform: uppercase;
+}
+.find__btn:hover { background: #c79a45; }
+
 /* The nine sections read as a row of glazed tiles, not a text dump. */
 .sections { background: var(--glaze-deep); padding-top: 2px; overflow-x: auto; scrollbar-width: none; }
 .sections::-webkit-scrollbar { display: none; }
@@ -219,6 +254,14 @@ p { margin: 0 0 1.05em; }
   .masthead__links-full { display: none; }
   .sections { display: none; }
   .menu { display: block; }
+  /* The word "Search" would eat a third of a 390px row, so the button falls
+     back to its icon alone. The label stays in the DOM for a screen reader. */
+  .find__btn { padding: 10px 13px; }
+  .find__btn span {
+    position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
+    overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+  }
+  .find { max-width: none; }
 }
 
 /* ---------- Provenance marks ---------- */

@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content'
 import BaseLayout from '../../layouts/BaseLayout.astro'
+import Ad from '../../components/Ad.astro'
 import EntityTile from '../../components/EntityTile.astro'
 import { HUB_TYPES } from '../../lib/site.mjs'
 import { entitiesOfType, urlFor } from '../../lib/entities.mjs'
@@ -70,4 +71,5 @@ const Content = intro ? (await render(intro)).Content : null
       </ul>
     </div>
   </section>
+  <Ad placement="foot" />
 </BaseLayout>

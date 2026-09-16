@@ -105,7 +105,6 @@ const current = (slug) => (path === `/${slug}` || path.startsWith(`/${slug}/`) ?
         <div class="masthead__links">
           <a class="masthead__links-full" href="/news">News</a>
           <a class="masthead__links-full" href="/about">About</a>
-          <a href="/search" aria-label="Search the site"><Icon name="search" size={17} /></a>
         </div>
         <!--
           Under 760px the row of nine sections is a sideways scroll strip
@@ -128,11 +127,63 @@ const current = (slug) => (path === `/${slug}` || path.startsWith(`/${slug}/`) ?
             <a href="/answers" aria-current={current('answers')}>Answers</a>
             <a href="/news" aria-current={current('news')}>News</a>
             <a href="/about" aria-current={current('about')}>About</a>
-            <a href="/search" aria-current={current('search')}>Search</a>
             <a href="/contact" aria-current={current('contact')}>Contact</a>
           </nav>
         </details>
       </div>
+
+      <!--
+        A real search box, not an icon that costs a click to find. It is a plain
+        GET form to /search, so it works with no JavaScript at all: the browser
+        submits ?q=... and the search page runs that query on arrival. When
+        JavaScript is on, touching the field starts fetching the search index in
+        the background, so the results page has nothing left to download.
+      -->
+      <div class="shell masthead__find">
+        <form class="find" action="/search" method="get" role="search">
+          <label class="find__label" for="site-search">Search this site</label>
+          <input
+            class="find__input"
+            id="site-search"
+            type="search"
+            name="q"
+            placeholder="Search a character, car, place or song"
+            autocomplete="off"
+            enterkeyhint="search"
+          />
+          <button class="find__btn" type="submit">
+            <Icon name="search" size={16} />
+            <span>Search</span>
+          </button>
+        </form>
+      </div>
+      <script is:inline>
+        // Warm the search up before it is asked for. The first touch of the
+        // field starts fetching the results page and the Pagefind bundle in the
+        // background, so by the time the visitor has finished typing a name the
+        // browser usually has everything already. It runs once and costs
+        // nothing on a page nobody searches from.
+        (function () {
+          var field = document.getElementById('site-search')
+          if (!field) return
+          var warmed = false
+          var warm = function () {
+            if (warmed) return
+            warmed = true
+            ;['/search', '/pagefind/pagefind-ui.js', '/pagefind/pagefind-ui.css', '/pagefind/pagefind.js'].forEach(
+              function (href) {
+                var link = document.createElement('link')
+                link.rel = 'prefetch'
+                link.href = href
+                document.head.appendChild(link)
+              },
+            )
+          }
+          field.addEventListener('focus', warm, { once: true })
+          field.addEventListener('pointerenter', warm, { once: true })
+        })()
+      </script>
+
       <nav class="sections" aria-label="Sections">
         <div class="sections__inner">
           {HUB_TYPES.map((hub) => (

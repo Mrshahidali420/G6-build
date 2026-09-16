@@ -10,6 +10,17 @@ export const SITE_TAGLINE = 'Every confirmed Grand Theft Auto VI fact, with its 
 // The script tag still ships from day one so the reviewer sees it wired.
 export const ADSENSE_CLIENT = ''
 
+// Ad unit ids, taken from the AdSense dashboard after the account is approved.
+// One entry per placement, so a unit can be turned off by blanking its id
+// without touching a page template. Nothing renders while an id is empty: an
+// <ins> tag with no slot is an AdSense policy breach, not a placeholder.
+export const ADSENSE_SLOTS = {
+  // Between the article and the questions on an answer page.
+  article: '',
+  // Under the entity grid on a hub page and under the list on an index page.
+  foot: '',
+}
+
 // Entity types that get a hub page. The hub route and the sitemap both read this.
 export const HUB_TYPES = [
   { type: 'character', slug: 'characters', title: 'GTA 6 Characters' },

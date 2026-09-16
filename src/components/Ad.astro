@@ -1,0 +1,51 @@
+---
+// One AdSense unit. It renders nothing at all until both the publisher id and
+// this placement's slot id are filled in, because an <ins> tag with an empty
+// data-ad-slot is an AdSense policy breach rather than a harmless placeholder,
+// and a blank reserved box on every page is worse for a reader than no box.
+//
+// The height is reserved with min-height so the page does not jump when the ad
+// arrives. That jump is a Cumulative Layout Shift, one of the three Core Web
+// Vitals Google measures.
+import { ADSENSE_CLIENT, ADSENSE_SLOTS } from '../lib/site.mjs'
+
+const { placement = 'article', label = 'Advertisement' } = Astro.props
+const slot = ADSENSE_SLOTS[placement] ?? ''
+const show = Boolean(ADSENSE_CLIENT && slot)
+---
+{show && (
+  <aside class="ad" aria-label={label}>
+    <p class="ad__label">{label}</p>
+    <ins
+      class="adsbygoogle"
+      style="display:block"
+      data-ad-client={ADSENSE_CLIENT}
+      data-ad-slot={slot}
+      data-ad-format="auto"
+      data-full-width-responsive="true"
+    />
+    <script is:inline>
+      (adsbygoogle = window.adsbygoogle || []).push({})
+    </script>
+  </aside>
+)}
+
+<style>
+  /* Marked as an ad in words, because AdSense requires ads to be
+     distinguishable from the page content around them. */
+  .ad {
+    margin: 30px auto;
+    max-width: 728px;
+    min-height: 100px;
+  }
+
+  .ad__label {
+    margin: 0 0 6px;
+    font-family: var(--ui);
+    font-size: 0.66rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-3, var(--ink-2));
+  }
+</style>

@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content'
 import BaseLayout from '../../layouts/BaseLayout.astro'
+import Ad from '../../components/Ad.astro'
 import Mark from '../../components/Mark.astro'
 import EntityTile from '../../components/EntityTile.astro'
 import Icon from '../../components/Icon.astro'
@@ -85,4 +86,5 @@ const human = new Date(`${data.date}T00:00:00Z`).toLocaleDateString('en-GB', {
       </div>
     </section>
   )}
+  <Ad placement="foot" />
 </BaseLayout>

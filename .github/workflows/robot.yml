@@ -100,7 +100,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/robot data/robot-entities.csv data/extras public/img/entities src/content/updates
+          for p in data/robot data/robot-entities.csv data/extras public/img/entities src/content/updates; do [ -e "$p" ] && git add "$p"; done
           if git diff --cached --quiet; then
             echo "nothing new to record"
             exit 0

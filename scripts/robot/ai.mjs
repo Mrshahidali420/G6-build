@@ -39,8 +39,8 @@ const PROVIDERS = [
     url: 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions',
     style: 'openai',
     headers: bearer,
-    extract: 'gemini-2.5-flash',
-    write: 'gemini-2.5-flash',
+    extract: 'gemini-3.6-flash',
+    write: 'gemini-3.6-flash',
   },
   {
     id: 'anthropic',

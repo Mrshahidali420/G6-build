@@ -1,0 +1,27 @@
+{
+  "rawId": "gamesradar-23b091827908",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/ten-years-in-and-on-its-third-console-generation-how-does-gta-5-hold-up-for-a-return-visit/",
+  "published": "2026-09-17",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/KFCFk9ApHkK3Mq2VQw4wAR-1920-80.jpg",
+  "extractedAt": "2026-09-17T20:05:18.852Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "From the searing neons of Vice City to the haze of San Andreas, light has always been a tool Rockstar leverages to establish a sense of place, but here the combination of HDR and ray tracing pushes it further than ever before.",
+          "quote": "From the searing neons of Vice City to the haze of San Andreas, light has always been a tool Rockstar leverages to establish a sense of place, but here the combination of HDR and ray tracing pushes it further than ever before."
+        }
+      ]
+    }
+  ]
+}

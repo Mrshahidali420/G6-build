@@ -1,0 +1,41 @@
+{
+  "rawId": "ign-a8e846698083",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/grand-theft-auto-vi-the-album-is-up-for-preorder",
+  "published": "2026-09-17",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/09/17/gta-6-album-blogroll-1789651776943.png?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-09-17T20:05:18.917Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "According to the official description, the album contains “34 original tracks that capture the electric energy of Grand Theft Auto VI’s world of Vice City and Leonida.” It’s set to release November 20, the day after the game itself comes out.",
+          "quote": "According to the official description, the album contains “34 original tracks that capture the electric energy of Grand Theft Auto VI’s world of Vice City and Leonida.” It’s set to release November 20, the day after the game itself comes out."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "According to the official description, the album contains “34 original tracks that capture the electric energy of Grand Theft Auto VI’s world of Vice City and Leonida.” It’s set to release November 20, the day after the game itself comes out.",
+          "quote": "According to the official description, the album contains “34 original tracks that capture the electric energy of Grand Theft Auto VI’s world of Vice City and Leonida.” It’s set to release November 20, the day after the game itself comes out."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "rawId": "pushsquare-325f00420f15",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/09/gta-6-the-album-announced-pre-orders-available-now",
+  "published": "2026-09-17",
+  "ogImage": "https://images.pushsquare.com/e05d0fb54f770/large.jpg",
+  "extractedAt": "2026-09-17T20:05:18.939Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "0 15 MFTWrecks 6 hours ago I still have my GTA Vice City album collection sitting on my shelf.",
+          "quote": "0 15 MFTWrecks 6 hours ago I still have my GTA Vice City album collection sitting on my shelf."
+        },
+        {
+          "fact": "Few months in Vice City will change that 0 23 GuttyYZ 3 hours ago @GirlVersusGame It's been a good while since I was in a gigging band but I can't remember hearing it then and I don't use social media now so must have passed me by.",
+          "quote": "Few months in Vice City will change that 0 23 GuttyYZ 3 hours ago @GirlVersusGame It's been a good while since I was in a gigging band but I can't remember hearing it then and I don't use social media now so must have passed me by."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "rawId": "ign-d85326879a40",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/twitch-boss-says-game-companies-are-right-to-avoid-competing-with-gta-6-for-attention-expects-gta-online-2-next-year",
+  "published": "2026-09-17",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/08/27/gta6-trailer-4k-00-00-38-29-still001-1701962524689-1787858104520.png?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-09-17T20:05:18.922Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "We don’t even know who plays Jason and Lucia, the game’s dual protagonists.",
+          "quote": "We don’t even know who plays Jason and Lucia, the game’s dual protagonists."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "We don’t even know who plays Jason and Lucia, the game’s dual protagonists.",
+          "quote": "We don’t even know who plays Jason and Lucia, the game’s dual protagonists."
+        }
+      ]
+    }
+  ]
+}

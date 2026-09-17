@@ -1,0 +1,27 @@
+{
+  "rawId": "purexbox-2056e131648f",
+  "outlet": "Pure Xbox",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.purexbox.com/news/2026/09/gta-6-the-album-releases-this-november-and-the-first-six-songs-are-now-streaming-from-it",
+  "published": "2026-09-17",
+  "ogImage": "https://images.purexbox.com/a941eca575869/large.jpg",
+  "extractedAt": "2026-09-17T20:05:18.929Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Pah, I wasn't buying it anyway, just like the game. 🤷🏻🤣 0 7 Mr-Cage 32 mins ago I'm sure the tunes will be good but nothing will ever beat the vice city soundtrack especially with the DJs commentating.",
+          "quote": "Pah, I wasn't buying it anyway, just like the game. 🤷🏻🤣 0 7 Mr-Cage 32 mins ago I'm sure the tunes will be good but nothing will ever beat the vice city soundtrack especially with the DJs commentating."
+        }
+      ]
+    }
+  ]
+}

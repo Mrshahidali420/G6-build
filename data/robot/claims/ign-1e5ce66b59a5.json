@@ -1,0 +1,27 @@
+{
+  "rawId": "ign-1e5ce66b59a5",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/grand-theft-auto-vi-limited-edition-ps5-dualsense-controller-deal-september-2026",
+  "published": "2026-09-17",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/09/17/gta6controller-1789668147866.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-09-17T20:05:18.911Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Home › GTA 6 Save $10 Off Your Grand Theft Auto VI Limited Edition PS5 DualSense Controller Preorder Prepare yourself for Vice City.",
+          "quote": "Home › GTA 6 Save $10 Off Your Grand Theft Auto VI Limited Edition PS5 DualSense Controller Preorder Prepare yourself for Vice City."
+        }
+      ]
+    }
+  ]
+}

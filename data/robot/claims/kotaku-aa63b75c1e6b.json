@@ -1,0 +1,28 @@
+{
+  "rawId": "kotaku-aa63b75c1e6b",
+  "outlet": "Kotaku",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://kotaku.com/grand-theft-auto-6-gta6-soundtrack-vinyl-cd-pre-order-2000735270",
+  "published": "2026-09-17",
+  "ogImage": "https://kotaku.com/app/uploads/2026/08/gta-1200x675.jpg",
+  "extractedAt": "2026-09-17T20:05:18.925Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The Morgan Wallen song especially sounds like something that might play in the background after the two have had a big blow-out fight and Jason is driving around and reflecting on how he’s a shit boyfriend or something.",
+          "quote": "The Morgan Wallen song especially sounds like something that might play in the background after the two have had a big blow-out fight and Jason is driving around and reflecting on how he’s a shit boyfriend or something."
+        }
+      ]
+    }
+  ]
+}

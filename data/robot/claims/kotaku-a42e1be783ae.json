@@ -1,0 +1,27 @@
+{
+  "rawId": "kotaku-a42e1be783ae",
+  "outlet": "Kotaku",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://kotaku.com/gta-5s-canceled-liberty-city-expansion-and-super-early-looks-at-gta-6-revealed-via-another-big-leak-2000735593",
+  "published": "2026-09-18",
+  "ogImage": "https://kotaku.com/app/uploads/2026/09/GTa-v-leak-1200x675.jpg",
+  "extractedAt": "2026-09-18T19:28:44.250Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "If you want to go in unspoiled on some of the locations waiting for you in Vice City, I’d advise you not to go looking at the leaks floating around on Twitter and Reddit right now.",
+          "quote": "If you want to go in unspoiled on some of the locations waiting for you in Vice City, I’d advise you not to go looking at the leaks floating around on Twitter and Reddit right now."
+        }
+      ]
+    }
+  ]
+}

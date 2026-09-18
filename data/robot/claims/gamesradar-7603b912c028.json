@@ -1,0 +1,25 @@
+{
+  "rawId": "gamesradar-7603b912c028",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/the-legend-of-zelda/i-would-100-percent-prioritize-gta-and-now-i-dont-have-to-ex-nintendo-marketing-lead-says-thank-god-the-zelda-ocarina-of-time-remake-is-dodging-gta-6-because-even-shed-pick-rockstar/",
+  "published": "2026-09-18",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/RKBdrVy7naGiR7BnKBssQM-2560-80.jpg",
+  "extractedAt": "2026-09-18T19:28:44.230Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "That's two whole weeks of time for Zelda fans to dive into the long-awaited redux before moving over the Leonida, should they desire.",
+          "quote": "That's two whole weeks of time for Zelda fans to dive into the long-awaited redux before moving over the Leonida, should they desire."
+        }
+      ]
+    }
+  ]
+}

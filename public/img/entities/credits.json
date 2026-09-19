@@ -59,6 +59,11 @@
     "source": "https://www.rockstargames.com/VI/media",
     "file": "Raul_Bautista_02.jpg"
   },
+  "clothing-and-outfit-system": {
+    "credit": "Official screenshot: Rockstar Games. The Stock 305 clothing store, from the Ultimate Edition press kit.",
+    "source": "https://www.rockstargames.com/VI/media",
+    "file": "ULTIMATE_EDITION_STOCK_305_04.jpg"
+  },
   "crest": {
     "credit": "Official screenshot: Rockstar Games. A Crest kayak on the water in Mount Kalaga National Park.",
     "source": "https://www.rockstargames.com/VI/media",
@@ -159,6 +164,11 @@
     "source": "https://www.rockstargames.com/VI/media/videos",
     "file": "GTAVI_Trailer_2.mp4"
   },
+  "klose-k17": {
+    "credit": "Official screenshot: Rockstar Games. A pistol marked KLOSE on the grip and KL17G1 on the slide, from the Ultimate Edition weapon variants.",
+    "source": "https://www.rockstargames.com/VI/media",
+    "file": "ULTIMATE_EDITION_WEAPON_VARIANTS_01.jpg"
+  },
   "leonida": {
     "credit": "Official screenshot: Rockstar Games. Shows the state of Leonida.",
     "source": "https://www.rockstargames.com/VI/media",
@@ -223,6 +233,11 @@
     "credit": "Frame from the official GTA 6 Trailer 1: Rockstar Games. Shows Lucia and Jason together in a motel room.",
     "source": "https://www.rockstargames.com/VI/media/videos",
     "file": "GTAVI_Trailer_1.mp4"
+  },
+  "pettable-dog": {
+    "credit": "Official screenshot: Rockstar Games. A dog walked along a street in the Leonida Keys.",
+    "source": "https://www.rockstargames.com/VI/media",
+    "file": "Leonida_Keys_02.jpg"
   },
   "port-gellhorn": {
     "credit": "Official screenshot: Rockstar Games. Shows Port Gellhorn.",
@@ -323,5 +338,15 @@
     "credit": "Official screenshot: Rockstar Games. Shows the Vintage Vice City Pack.",
     "source": "https://www.rockstargames.com/VI/media",
     "file": "VINTAGE_VICE_CITY_PACK_01.05zaof7o1uz.3.jpg"
+  },
+  "wildlife-study-system": {
+    "credit": "Official screenshot: Rockstar Games. A panther at a creek in Mount Kalaga National Park while deer drink on the far bank.",
+    "source": "https://www.rockstargames.com/VI/media",
+    "file": "Mount_Kalaga_National_Park_05.jpg"
+  },
+  "wildlife-study-system-2": {
+    "credit": "Official screenshot: Rockstar Games. A green iguana on a rock in the Leonida Keys.",
+    "source": "https://www.rockstargames.com/VI/media",
+    "file": "Leonida_Keys_06.jpg"
   }
 }

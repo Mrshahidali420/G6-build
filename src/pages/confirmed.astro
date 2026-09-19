@@ -1,0 +1,158 @@
+---
+// What is confirmed and what is only reported, in one place.
+//
+// The evidence was already on the site, but it was split across a hundred entry
+// pages, so nobody could see the shape of it. This reads the same evidence the
+// other way up, sorted by how good the source is rather than by subject.
+//
+// Nothing here says a claim is true. Rockstar Games and Take-Two Interactive are
+// the only sources that make one confirmed. Everything else stays reported,
+// however sure the outlet sounded when it printed it.
+import BaseLayout from '../layouts/BaseLayout.astro'
+import Mark from '../components/Mark.astro'
+import { SITE_NAME, SITE_URL, canonical } from '../lib/site.mjs'
+import { GAME } from '../lib/schema.mjs'
+import { claimsByStatus, confirmedEntities, communityEntities } from '../lib/tracker.mjs'
+
+const { reported, outlets, updated } = claimsByStatus()
+const confirmed = confirmedEntities()
+const community = communityEntities()
+const total = confirmed.length + reported.length + community.length
+
+const path = '/confirmed'
+const title = 'GTA 6 confirmed and rumoured tracker'
+const description = `Every Grand Theft Auto VI claim this site holds, sorted by how good the source is: ${confirmed.length} confirmed by Rockstar, ${reported.length} reported by the press and ${community.length} spotted by players.`
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  '@id': canonical(path),
+  url: canonical(path),
+  name: title,
+  description,
+  about: GAME,
+  dateModified: updated,
+  publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+}
+
+const TYPE_LABEL = {
+  character: 'Character',
+  vehicle: 'Vehicle',
+  location: 'Location',
+  song: 'Song',
+  business: 'Business',
+  brand: 'Brand',
+  landmark: 'Landmark',
+  gameplay_feature: 'Gameplay',
+  edition: 'Edition',
+}
+---
+<BaseLayout title={title} description={description} path={path} jsonLd={jsonLd}>
+  <section class="band band--glaze">
+    <div class="shell">
+      <p class="crumb" style="color:var(--on-glaze-2)">
+        <a href="/" style="color:var(--on-glaze-2)">GTA 6 Record</a> / Confirmed and rumoured
+      </p>
+      <h1 style="max-width:22ch">{title}</h1>
+      <p class="lede">{description}</p>
+      <p class="lede" style="margin-top:8px">
+        {total} entries in total, press claims drawn from {outlets} outlets.
+        The newest one was recorded {updated}.
+      </p>
+      <p class="btns" style="margin-top:20px">
+        <a class="btn" href="#confirmed">Confirmed ({confirmed.length})</a>
+        <a class="btn" href="#reported">Reported ({reported.length})</a>
+        <a class="btn" href="#community">Spotted ({community.length})</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="band band--plaster" id="confirmed">
+    <div class="shell prose">
+      <h2 style="margin-top:0">Confirmed by Rockstar ({confirmed.length})</h2>
+      <p class="lede">
+        Rockstar Games or Take-Two Interactive established these themselves, in a
+        trailer, on the Rockstar Newswire or in a filing. This is the only
+        evidence on the site that counts as settled.
+      </p>
+      <ul class="directory" style="columns:1">
+        {confirmed.map((row) => (
+          <li>
+            <a href={row.href}>
+              <span class="directory__name">{row.name}</span>
+              <span class="directory__rule"></span>
+              <span class="directory__count">{TYPE_LABEL[row.entityType] ?? row.entityType}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="band band--plaster" id="reported">
+    <div class="shell prose">
+      <h2 style="margin-top:0">Reported by the press ({reported.length})</h2>
+      <p class="lede">
+        A magazine or news site printed this. Some of it will be confirmed later,
+        and some of it will not. Nobody at Rockstar has said it yet. The words are
+        the outlet's own, quoted and linked on every line.
+      </p>
+      <ol class="since">
+        {reported.map((row) => (
+          <li class="since__item">
+            <p class="since__quote">"{row.quote}"</p>
+            <p class="since__meta">
+              <Mark status={row.status} />
+              <a href={row.url} rel="nofollow noopener" target="_blank">{row.outlet}</a>
+              {row.published && <span class="since__date">{row.published}</span>}
+              {row.subjectHref
+                ? <a href={row.subjectHref}>{row.subject}</a>
+                : <span>{row.subject}</span>}
+            </p>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  {community.length > 0 && (
+    <section class="band band--plaster" id="community">
+      <div class="shell prose">
+        <h2 style="margin-top:0">Spotted by players ({community.length})</h2>
+        <p class="lede">
+          Players found these in trailer frames and screenshots. No outlet and no
+          official source has stood behind them, so treat them as the weakest
+          evidence on the site.
+        </p>
+        <ul class="directory" style="columns:1">
+          {community.map((row) => (
+            <li>
+              <a href={row.href}>
+                <span class="directory__name">{row.name}</span>
+                <span class="directory__rule"></span>
+                <span class="directory__count">{TYPE_LABEL[row.entityType] ?? row.entityType}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
+
+  <section class="band">
+    <div class="shell prose">
+      <h2>How a claim moves up</h2>
+      <p>
+        A claim is written down the day an outlet prints it, with the outlet named
+        and the sentence quoted. It stays under "reported by the press" until
+        Rockstar Games or Take-Two Interactive say the same thing in a trailer, on
+        the Rockstar Newswire, or in a filing. On that day it moves up, and the
+        entry keeps both sources so you can still see who said it first.
+      </p>
+      <p>
+        This site does not host leaked files, video or images. Where a leak
+        matters, it is described in writing and the reporting about it is linked.
+      </p>
+    </div>
+  </section>
+</BaseLayout>

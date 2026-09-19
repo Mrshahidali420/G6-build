@@ -1,5 +1,5 @@
 ---
-import { SITE_NAME, SITE_URL, ADSENSE_CLIENT, HUB_TYPES, canonical } from '../lib/site.mjs'
+import { SITE_NAME, SITE_URL, ADSENSE_CLIENT, GA_MEASUREMENT_ID, HUB_TYPES, canonical } from '../lib/site.mjs'
 import { pageEntities } from '../lib/entities.mjs'
 import Logo from '../components/Logo.astro'
 import Icon from '../components/Icon.astro'
@@ -78,6 +78,15 @@ const footConfirmed = pageEntities.filter((entity) => entity.confirmedStatus ===
         src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
         crossorigin="anonymous"
       />
+    )}
+
+    {GA_MEASUREMENT_ID && (
+      <>
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} />
+        <script
+          set:html={`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_MEASUREMENT_ID}');`}
+        />
+      </>
     )}
   </head>
   <body>

@@ -6,6 +6,9 @@ export const SITE_URL = 'https://gta6record.com'
 export const SITE_NAME = 'GTA 6 Record'
 export const SITE_TAGLINE = 'Every confirmed Grand Theft Auto VI fact, with its source'
 
+// Google Analytics 4 measurement id, from the property made 2026-09-19.
+export const GA_MEASUREMENT_ID = 'G-7ZVE3B9Y17'
+
 // AdSense publisher id. Empty until the account is approved.
 // The script tag still ships from day one so the reviewer sees it wired.
 export const ADSENSE_CLIENT = ''

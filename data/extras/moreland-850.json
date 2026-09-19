@@ -1,0 +1,16 @@
+{
+  "slug": "moreland-850",
+  "faq": [
+    { "q": "What is the Moreland 850 in GTA 6?", "a": "A pump action shotgun named by IGN from the Grand Theft Auto VI Extended Look gameplay reveal. IGN reported that Jason picks it up during the drug bust near the start of that footage." },
+    { "q": "Who uses the Moreland 850 in GTA 6?", "a": "IGN reported both playable characters handling it. Jason takes it during the opening drug bust, and Lucia is later shown firing the same shotgun one-handed." },
+    { "q": "What real gun is the Moreland 850 based on?", "a": "IGN reported that it is based on the Remington 870. That is a visual comparison drawn by the outlet, not a statement from Rockstar, which has never named a real firearm in this game." },
+    { "q": "Is the Moreland 850 confirmed by Rockstar?", "a": "No. The name was shown in official gameplay footage, but the source read for this entry is IGN rather than a Rockstar page. It stays marked as press reported until Rockstar prints the name itself." },
+    { "q": "How much damage does the Moreland 850 do?", "a": "No damage, range, pellet spread or reload speed has been published, and neither has a price or a shop. The game has not released, so nothing about how it performs is verified." }
+  ],
+  "notKnown": [
+    "Damage, range, pellet spread and reload speed",
+    "Price and where the shotgun is sold",
+    "Which customization options it accepts"
+  ],
+  "howWeKnow": "IGN named this shotgun in its weapons list, read on 2 September 2026, describing it from the Extended Look gameplay reveal. The footage is Rockstar's own, which is why the confidence here is high, but the written source is still an outlet rather than Rockstar, so it is filed as press reporting."
+}

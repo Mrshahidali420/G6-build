@@ -22,29 +22,37 @@ Everything below was measured on the live site, not on the local build.
 | Sitemap submitted | Index plus 12 sub-sitemaps, all accepted |
 | No policy-breaking material | The site describes leaks in writing only. It hosts no leaked files, video or imagery |
 
-## To fix before applying
+## Was to fix before applying
 
-### 1. Seven pages are under 300 words
+### 1. Seven pages were under 300 words. Fixed 19 September 2026
 
 Thin pages are the single most common reason a games site is refused for
-"low value content". Every one of them is a weapon.
+"low value content". Every one of them was a weapon.
 
-| Words | Page |
-|---|---|
-| 209 | /weapons |
-| 254 | /weapons/capo-pistol |
-| 264 | /weapons/nipper-38 |
-| 280 | /weapons/duke-556-assault-rifle |
-| 281 | /weapons/moreland-850 |
-| 282 | /weapons/girardi-es9 |
-| 282 | /weapons/klose-k17 |
+The cause was not the weapon rows themselves. It was that none of the seven had
+a `data/extras/<slug>.json` file, while 101 of the other entries did. That file
+is what supplies the questions and answers, the open questions and the
+provenance note on an entity page. The `/weapons` hub was thin for the matching
+reason: every other hub has an intro in `src/content/hubs/`, and `weapons.md`
+did not exist.
 
-The /weapons hub is the worst of them and it is a section landing page, so a
-reviewer is likely to open it.
+| Page | Before | After |
+|---|---|---|
+| /weapons | 209 | 850 |
+| /weapons/capo-pistol | 254 | 566 |
+| /weapons/nipper-38 | 264 | 566 |
+| /weapons/duke-556-assault-rifle | 280 | 595 |
+| /weapons/moreland-850 | 281 | 589 |
+| /weapons/girardi-es9 | 282 | 602 |
+| /weapons/klose-k17 | 282 | 596 |
 
-Three of these, Girardi ES9, Moreland 850 and Nipper .38, are the IGN-sourced
-rows already flagged as questionable. Deciding those either way fixes three of
-the seven at once.
+No new claim was invented to do it. Every added sentence is either a restatement
+of what the source already said, an honest statement that Rockstar has not said
+something, or a note about where the entry came from.
+
+No page on the site is now under 300 words except `/search`, `/404` and
+`/contact`, which are utility pages, and three daily coverage log entries
+between 267 and 291 words.
 
 A further 33 pages sit between 300 and 500 words. Those are acceptable but not
 comfortable.
@@ -59,20 +67,24 @@ traffic. Build it before the ads switch on, not after.
 
 The privacy page also never uses the word "consent". Add a short section.
 
-## After approval, not before
+## ads.txt, live since 19 September 2026
 
-`ads.txt` returns 404 today. That is correct and expected: the file needs the
-publisher ID, which does not exist until the account is approved.
+`ads.txt` is served at https://gta6record.com/ads.txt and holds exactly one line:
 
-Nothing needs coding for it. `scripts/after-build.mjs` already writes ads.txt on
-its own as soon as `ADSENSE_CLIENT` in `src/lib/site.mjs` holds a real ID. The
-current build log says so plainly:
+    google.com, pub-2789392733984505, DIRECT, f08c47fec0942fa0
 
-    [after-build] no ADSENSE_CLIENT set, so no ads.txt was written
+No code was needed for it. `scripts/after-build.mjs` writes the file by itself
+as soon as `ADSENSE_CLIENT` in `src/lib/site.mjs` holds a real ID, and strips
+the leading `ca-` to get the publisher part. The build log now says:
 
-The ad slot IDs in `ADSENSE_SLOTS` get filled from the dashboard at the same
-time. Nothing renders while a slot ID is empty, which is deliberate: an `<ins>`
-tag with no slot is a policy breach, not a placeholder.
+    [after-build] wrote ads.txt for pub-2789392733984505
+
+Setting that same constant also turns on the AdSense script tag in
+`BaseLayout.astro`, so every page loads `adsbygoogle.js` for this publisher.
+
+The ad slot IDs in `ADSENSE_SLOTS` are still empty and get filled from the
+dashboard after approval. Nothing renders while a slot ID is empty, which is
+deliberate: an `<ins>` tag with no slot is a policy breach, not a placeholder.
 
 ## The honest risk
 

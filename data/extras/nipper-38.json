@@ -1,0 +1,16 @@
+{
+  "slug": "nipper-38",
+  "faq": [
+    { "q": "What is the Nipper .38 in GTA 6?", "a": "A pistol IGN reported seeing in several Grand Theft Auto VI screenshots. IGN said it had not been seen in action at the time of writing, so nothing is known about how it handles." },
+    { "q": "Has the Nipper .38 been shown in GTA 6 gameplay?", "a": "Not according to IGN, which reported it from screenshots only. That makes it one of the weakest weapon entries on this site, because nobody outside Rockstar has watched it being fired." },
+    { "q": "Is the Nipper .38 weak in GTA 6?", "a": "IGN suggested it may lack power because it looks compact next to the other pistols. That is an expectation drawn from a picture, and this site does not record it as a fact." },
+    { "q": "What real gun is the Nipper .38 based on?", "a": "No real-world basis is listed here, because IGN did not state one. Other weapons on this site carry a comparison only where the outlet actually made it." },
+    { "q": "Is Nipper .38 the final name of the weapon?", "a": "Not known. Rockstar has published no weapons list, so the name comes from an outlet reading a screenshot. Damage, capacity, price and availability are all unverified as well." }
+  ],
+  "notKnown": [
+    "Whether Nipper .38 is the final in-game name",
+    "How the pistol behaves in gameplay",
+    "Damage, capacity, price and availability"
+  ],
+  "howWeKnow": "IGN listed this pistol in its Grand Theft Auto VI weapons list, read on 2 September 2026, working only from Rockstar's published screenshots. There is no gameplay footage of it and no Rockstar listing naming it. That combination is why the confidence on this entry is set to medium."
+}

@@ -9,9 +9,11 @@ export const SITE_TAGLINE = 'Every confirmed Grand Theft Auto VI fact, with its 
 // Google Analytics 4 measurement id, from the property made 2026-09-19.
 export const GA_MEASUREMENT_ID = 'G-7ZVE3B9Y17'
 
-// AdSense publisher id. Empty until the account is approved.
-// The script tag still ships from day one so the reviewer sees it wired.
-export const ADSENSE_CLIENT = ''
+// AdSense publisher id, from the account opened 2026-09-19.
+// This alone turns on the AdSense script tag and makes the build write
+// /ads.txt. No ad unit renders until ADSENSE_SLOTS below are filled in, which
+// is deliberate: the reviewer needs the tag on the page, not a live ad.
+export const ADSENSE_CLIENT = 'ca-pub-2789392733984505'
 
 // Ad unit ids, taken from the AdSense dashboard after the account is approved.
 // One entry per placement, so a unit can be turned off by blanking its id

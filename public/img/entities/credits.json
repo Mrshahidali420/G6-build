@@ -24,10 +24,20 @@
     "source": "https://www.rockstargames.com/VI/media",
     "file": "Ambrosia_01.jpg"
   },
+  "ammu-nation": {
+    "credit": "Frame from the official GTA 6 Trailer 2: Rockstar Games. Shows an Ammu-Nation television advert playing on a set, with the shop banner and wall racks of rifles behind the presenter.",
+    "source": "https://www.rockstargames.com/VI/media/videos",
+    "file": "GTAVI_Trailer_2.mp4"
+  },
   "bae-luxe": {
     "credit": "Official screenshot: Rockstar Games. Shows Real Dimez.",
     "source": "https://www.rockstargames.com/VI/media",
     "file": "Real_Dimez_02.1366u9.x.yp0_.jpg"
+  },
+  "body-weight-and-physique-system": {
+    "credit": "Frame from the official GTA 6 Trailer 2: Rockstar Games. Shows a character bench pressing a loaded barbell at an outdoor beach gym.",
+    "source": "https://www.rockstargames.com/VI/media/videos",
+    "file": "GTAVI_Trailer_2.mp4"
   },
   "boobie-ike": {
     "credit": "Official screenshot: Rockstar Games. Shows Boobie Ike.",
@@ -44,10 +54,25 @@
     "source": "https://www.rockstargames.com/VI/media",
     "file": "Cal_Hampton_02.05r2t_mck65fe.jpg"
   },
+  "capo-pistol": {
+    "credit": "Official screenshot: Rockstar Games. A pistol with CAPO stamped on the slide.",
+    "source": "https://www.rockstargames.com/VI/media",
+    "file": "Raul_Bautista_02.jpg"
+  },
+  "crest": {
+    "credit": "Official screenshot: Rockstar Games. A Crest kayak on the water in Mount Kalaga National Park.",
+    "source": "https://www.rockstargames.com/VI/media",
+    "file": "Mount_Kalaga_National_Park_06.jpg"
+  },
   "crest-kayak": {
     "credit": "Official screenshot: Rockstar Games. Shows the Crest kayak being paddled at sunset.",
     "source": "https://www.rockstargames.com/VI/media",
     "file": "ULTIMATE_EDITION_SAFEHOUSE_VEHICLES_03.jpg"
+  },
+  "dinka": {
+    "credit": "Frame from the official GTA 6 Trailer 2: Rockstar Games. Shows a Dinka 300 V6 outboard motor on a boat moored at a dock, with the maker badge on the cowling.",
+    "source": "https://www.rockstargames.com/VI/media/videos",
+    "file": "GTAVI_Trailer_2.mp4"
   },
   "dinka-enduro-motorcycle": {
     "credit": "Official screenshot: Rockstar Games. Shows the Dinka Enduro dirt bike, with the Dinka badge on the tank.",
@@ -64,10 +89,25 @@
     "source": "https://www.rockstargames.com/VI/media",
     "file": "drequan.0i_4zkdw4a9ao.jpg"
   },
+  "duke-556-assault-rifle": {
+    "credit": "Official promotional screenshot: Rockstar Games. Jason Duval holding a carbine rifle. Copy taken from the GTA Wiki.",
+    "source": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Duke_carbine",
+    "file": "OfficialScreenshots-GTAVI-PromotionalWebsite-JasonDuval-SS4.jpg"
+  },
   "electric-fang-tattoo-parlor": {
     "credit": "Official screenshot: Rockstar Games. Shows the Electric Fang tattoo parlor.",
     "source": "https://www.rockstargames.com/VI/media",
     "file": "ULTIMATE_EDITION_ELECTRIC_FANG_03.0wd4urd9xwy5..jpg"
+  },
+  "fanboat": {
+    "credit": "Official screenshot: Rockstar Games. Shows an airboat in the Grassrivers wetlands.",
+    "source": "https://www.rockstargames.com/VI/media",
+    "file": "Grassrivers_01.jpg"
+  },
+  "fanboat-2": {
+    "credit": "Official screenshot: Rockstar Games. Shows an airboat in the Grassrivers wetlands.",
+    "source": "https://www.rockstargames.com/VI/media",
+    "file": "Grassrivers_03.jpg"
   },
   "ganado-retro-build": {
     "credit": "Official screenshot: Rockstar Games. Shows the Vapid Ganado retro build.",
@@ -84,16 +124,6 @@
     "source": "https://www.rockstargames.com/VI/media",
     "file": "Mount_Kalaga_National_Park_05.0_~vto-o2zxok.jpg"
   },
-  "fanboat": {
-    "credit": "Official screenshot: Rockstar Games. Shows an airboat in the Grassrivers wetlands.",
-    "source": "https://www.rockstargames.com/VI/media",
-    "file": "Grassrivers_01.jpg"
-  },
-  "fanboat-2": {
-    "credit": "Official screenshot: Rockstar Games. Shows an airboat in the Grassrivers wetlands.",
-    "source": "https://www.rockstargames.com/VI/media",
-    "file": "Grassrivers_03.jpg"
-  },
   "grotti": {
     "credit": "Official screenshot: Rockstar Games. Shows a Grotti Cheetah outside Pegassi Residences.",
     "source": "https://www.rockstargames.com/VI/media",
@@ -109,6 +139,11 @@
     "source": "https://www.rockstargames.com/VI/media",
     "file": "ULTIMATE_EDITION_01.16qc1xq5nigg1.jpg"
   },
+  "hawk-and-little-morgan-revolver": {
+    "credit": "Official screenshot: Rockstar Games. Shows the Hawk and Little Morgan revolver, one of the weapons in the Ultimate Edition benefits.",
+    "source": "https://www.rockstargames.com/VI/media",
+    "file": "ULTIMATE_EDITION_HAWK_AND_LITTLE_MORGAN_REVOLVERS_01.jpg"
+  },
   "jason-duval": {
     "credit": "Official screenshot: Rockstar Games. Shows Jason Duval.",
     "source": "https://www.rockstargames.com/VI/media",
@@ -118,6 +153,11 @@
     "credit": "Official screenshot: Rockstar Games. Shows Jason Duval.",
     "source": "https://www.rockstargames.com/VI/media",
     "file": "Jason_Duval_01.jpg"
+  },
+  "jet-ski": {
+    "credit": "Frame from the official GTA 6 Trailer 2: Rockstar Games. Shows two riders on a Seashark jet ski crossing the bay, with the model name on the hull.",
+    "source": "https://www.rockstargames.com/VI/media/videos",
+    "file": "GTAVI_Trailer_2.mp4"
   },
   "leonida": {
     "credit": "Official screenshot: Rockstar Games. Shows the state of Leonida.",
@@ -129,6 +169,11 @@
     "source": "https://www.rockstargames.com/VI/media",
     "file": "Vice_City_05.0~r~o0jzpp4a-.jpg"
   },
+  "leonida-penitentiary": {
+    "credit": "Frame from the official GTA 6 Trailer 1: Rockstar Games. Shows Lucia looking out of a cell window onto the prison yard.",
+    "source": "https://www.rockstargames.com/VI/media/videos",
+    "file": "GTAVI_Trailer_1.mp4"
+  },
   "little-cuba": {
     "credit": "Official screenshot: Rockstar Games. Shows Little Cuba.",
     "source": "https://www.rockstargames.com/VI/media",
@@ -138,6 +183,11 @@
     "credit": "Official screenshot: Rockstar Games. Shows Little Haiti.",
     "source": "https://www.rockstargames.com/VI/media",
     "file": "Vice_City_07.0b3mhak4k78oh.jpg"
+  },
+  "lori-heder": {
+    "credit": "Official Rockstar Games artwork. The GTA Wiki names the character as Lori Heder. Copy taken from the GTA Wiki.",
+    "source": "https://gta.fandom.com/wiki/Lori_Heder",
+    "file": "LoriHeder-GTAVI-Portrait.png"
   },
   "lucia-caminos": {
     "credit": "Official screenshot: Rockstar Games. Shows Lucia Caminos.",
@@ -163,6 +213,16 @@
     "credit": "Official screenshot: Rockstar Games. Shows One Eyed Willie's.",
     "source": "https://www.rockstargames.com/VI/media",
     "file": "ULTIMATE_EDITION_ONE_EYED_WILLIE_01.0n7-__or5f.b6.jpg"
+  },
+  "only-raw-records": {
+    "credit": "Official screenshot: Rockstar Games. The Only Raw Records studio.",
+    "source": "https://www.rockstargames.com/VI/media",
+    "file": "DreQuan_Priest_04.jpg"
+  },
+  "optional-romance-system": {
+    "credit": "Frame from the official GTA 6 Trailer 1: Rockstar Games. Shows Lucia and Jason together in a motel room.",
+    "source": "https://www.rockstargames.com/VI/media/videos",
+    "file": "GTAVI_Trailer_1.mp4"
   },
   "port-gellhorn": {
     "credit": "Official screenshot: Rockstar Games. Shows Port Gellhorn.",
@@ -194,6 +254,11 @@
     "source": "https://www.rockstargames.com/VI/media",
     "file": "ULTIMATE_EDITION_SARAS_SALON_01.0gn7dwlvcgz17.jpg"
   },
+  "scuba-diving-underwater-exploration": {
+    "credit": "Official screenshot: Rockstar Games. Shows two divers swimming over a reef in the Leonida Keys, with a sea turtle alongside them.",
+    "source": "https://www.rockstargames.com/VI/media",
+    "file": "Leonida_Keys_04.jpg"
+  },
   "shitzu": {
     "credit": "Official screenshot: Rockstar Games. Shows the Shitzu badge and name on a Shitzu Squalo boat.",
     "source": "https://www.rockstargames.com/VI/media",
@@ -213,6 +278,16 @@
     "credit": "Official screenshot: Rockstar Games. Shows Stock 305.",
     "source": "https://www.rockstargames.com/VI/media",
     "file": "ULTIMATE_EDITION_STOCK_305_01.0vuq0m5_1j-17.jpg"
+  },
+  "stockyard": {
+    "credit": "Frame from the official GTA 6 Trailer 1: Rockstar Games. Shows the mural-covered warehouse blocks of the arts district with tuned cars parked along the street.",
+    "source": "https://www.rockstargames.com/VI/media/videos",
+    "file": "GTAVI_Trailer_1.mp4"
+  },
+  "store-robbery-system": {
+    "credit": "Frame from the official GTA 6 Trailer 1: Rockstar Games. Shows Lucia in a bandana holding a pistol during a convenience store robbery.",
+    "source": "https://www.rockstargames.com/VI/media/videos",
+    "file": "GTAVI_Trailer_1.mp4"
   },
   "the-marina": {
     "credit": "Official screenshot: Rockstar Games. Shows the Vice City marina.",
@@ -234,6 +309,11 @@
     "source": "https://www.rockstargames.com/VI/media",
     "file": "Vice_City_01.135x56yoeu.6t.jpg"
   },
+  "vice-city-international-airport": {
+    "credit": "Frame from the official GTA 6 Trailer 2: Rockstar Games. Shows an airliner on approach above a highway sign reading VCI Airport.",
+    "source": "https://www.rockstargames.com/VI/media/videos",
+    "file": "GTAVI_Trailer_2.mp4"
+  },
   "vice-city-metro": {
     "credit": "Official screenshot: Rockstar Games. Shows Vice City.",
     "source": "https://www.rockstargames.com/VI/media",
@@ -243,60 +323,5 @@
     "credit": "Official screenshot: Rockstar Games. Shows the Vintage Vice City Pack.",
     "source": "https://www.rockstargames.com/VI/media",
     "file": "VINTAGE_VICE_CITY_PACK_01.05zaof7o1uz.3.jpg"
-  },
-  "scuba-diving-underwater-exploration": {
-    "credit": "Official screenshot: Rockstar Games. Shows two divers swimming over a reef in the Leonida Keys, with a sea turtle alongside them.",
-    "source": "https://www.rockstargames.com/VI/media",
-    "file": "Leonida_Keys_04.jpg"
-  },
-  "hawk-and-little-morgan-revolver": {
-    "credit": "Official screenshot: Rockstar Games. Shows the Hawk and Little Morgan revolver, one of the weapons in the Ultimate Edition benefits.",
-    "source": "https://www.rockstargames.com/VI/media",
-    "file": "ULTIMATE_EDITION_HAWK_AND_LITTLE_MORGAN_REVOLVERS_01.jpg"
-  },
-  "leonida-penitentiary": {
-    "credit": "Frame from the official GTA 6 Trailer 1: Rockstar Games. Shows Lucia looking out of a cell window onto the prison yard.",
-    "source": "https://www.rockstargames.com/VI/media/videos",
-    "file": "GTAVI_Trailer_1.mp4"
-  },
-  "stockyard": {
-    "credit": "Frame from the official GTA 6 Trailer 1: Rockstar Games. Shows the mural-covered warehouse blocks of the arts district with tuned cars parked along the street.",
-    "source": "https://www.rockstargames.com/VI/media/videos",
-    "file": "GTAVI_Trailer_1.mp4"
-  },
-  "optional-romance-system": {
-    "credit": "Frame from the official GTA 6 Trailer 1: Rockstar Games. Shows Lucia and Jason together in a motel room.",
-    "source": "https://www.rockstargames.com/VI/media/videos",
-    "file": "GTAVI_Trailer_1.mp4"
-  },
-  "store-robbery-system": {
-    "credit": "Frame from the official GTA 6 Trailer 1: Rockstar Games. Shows Lucia in a bandana holding a pistol during a convenience store robbery.",
-    "source": "https://www.rockstargames.com/VI/media/videos",
-    "file": "GTAVI_Trailer_1.mp4"
-  },
-  "ammu-nation": {
-    "credit": "Frame from the official GTA 6 Trailer 2: Rockstar Games. Shows an Ammu-Nation television advert playing on a set, with the shop banner and wall racks of rifles behind the presenter.",
-    "source": "https://www.rockstargames.com/VI/media/videos",
-    "file": "GTAVI_Trailer_2.mp4"
-  },
-  "jet-ski": {
-    "credit": "Frame from the official GTA 6 Trailer 2: Rockstar Games. Shows two riders on a Seashark jet ski crossing the bay, with the model name on the hull.",
-    "source": "https://www.rockstargames.com/VI/media/videos",
-    "file": "GTAVI_Trailer_2.mp4"
-  },
-  "dinka": {
-    "credit": "Frame from the official GTA 6 Trailer 2: Rockstar Games. Shows a Dinka 300 V6 outboard motor on a boat moored at a dock, with the maker badge on the cowling.",
-    "source": "https://www.rockstargames.com/VI/media/videos",
-    "file": "GTAVI_Trailer_2.mp4"
-  },
-  "vice-city-international-airport": {
-    "credit": "Frame from the official GTA 6 Trailer 2: Rockstar Games. Shows an airliner on approach above a highway sign reading VCI Airport.",
-    "source": "https://www.rockstargames.com/VI/media/videos",
-    "file": "GTAVI_Trailer_2.mp4"
-  },
-  "body-weight-and-physique-system": {
-    "credit": "Frame from the official GTA 6 Trailer 2: Rockstar Games. Shows a character bench pressing a loaded barbell at an outdoor beach gym.",
-    "source": "https://www.rockstargames.com/VI/media/videos",
-    "file": "GTAVI_Trailer_2.mp4"
   }
 }

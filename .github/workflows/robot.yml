@@ -29,6 +29,11 @@ on:
         description: 'Optional YYYY-MM-DD. Re-read the feeds for anything published on or after this day, ignoring the seen list. Use it to recover a missed day.'
         required: false
         type: string
+      refetch_newswire:
+        description: 'Read every Rockstar Newswire article again, even ones already saved. Use it after a change to how the article body is read.'
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -72,6 +77,8 @@ jobs:
       - name: Gather the Rockstar Newswire
         continue-on-error: true
         run: node scripts/robot/newswire.mjs
+        env:
+          ROBOT_NEWSWIRE_REFETCH: ${{ inputs.refetch_newswire && '1' || '' }}
 
       # Lane 2, step one. Logic is the floor: with no key it still reads every
       # saved article for sentences naming a catalog entry. A key adds the

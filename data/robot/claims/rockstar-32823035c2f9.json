@@ -1,0 +1,41 @@
+{
+  "rawId": "rockstar-32823035c2f9",
+  "outlet": "Rockstar Newswire",
+  "tier": "TIER_1_OFFICIAL",
+  "url": "https://www.rockstargames.com/newswire/article/7599a881942544/announcing-grand-theft-auto-vi-the-album-coming-november-19",
+  "published": "2026-09-17",
+  "ogImage": "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/7599a881942544/50105de3da220dff6dd47fad6865b1912e7466ca.jpg",
+  "extractedAt": "2026-09-19T09:51:28.055Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "With 34 original tracks that capture the electric energy of Grand Theft Auto VI’s world of Vice City and Leonida, Grand Theft Auto VI: The Album features a genre-defying roster of the most exciting artists in the world.",
+          "quote": "With 34 original tracks that capture the electric energy of Grand Theft Auto VI’s world of Vice City and Leonida, Grand Theft Auto VI: The Album features a genre-defying roster of the most exciting artists in the world."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "With 34 original tracks that capture the electric energy of Grand Theft Auto VI’s world of Vice City and Leonida, Grand Theft Auto VI: The Album features a genre-defying roster of the most exciting artists in the world.",
+          "quote": "With 34 original tracks that capture the electric energy of Grand Theft Auto VI’s world of Vice City and Leonida, Grand Theft Auto VI: The Album features a genre-defying roster of the most exciting artists in the world."
+        }
+      ]
+    }
+  ]
+}

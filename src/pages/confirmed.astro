@@ -14,7 +14,7 @@ import { SITE_NAME, SITE_URL, canonical } from '../lib/site.mjs'
 import { GAME } from '../lib/schema.mjs'
 import { claimsByStatus, confirmedEntities, communityEntities } from '../lib/tracker.mjs'
 
-const { reported, outlets, updated } = claimsByStatus()
+const { reported, confirmed: officialQuotes, outlets, updated } = claimsByStatus()
 const confirmed = confirmedEntities()
 const community = communityEntities()
 const total = confirmed.length + reported.length + community.length
@@ -76,6 +76,23 @@ const TYPE_LABEL = {
         trailer, on the Rockstar Newswire or in a filing. This is the only
         evidence on the site that counts as settled.
       </p>
+      {officialQuotes.length > 0 && (
+        <ol class="since">
+          {officialQuotes.map((row) => (
+            <li class="since__item">
+              <p class="since__quote">"{row.quote}"</p>
+              <p class="since__meta">
+                <Mark status={row.status} />
+                <a href={row.url} rel="nofollow noopener" target="_blank">{row.outlet}</a>
+                {row.published && <span class="since__date">{row.published}</span>}
+                {row.subjectHref
+                  ? <a href={row.subjectHref}>{row.subject}</a>
+                  : <span>{row.subject}</span>}
+              </p>
+            </li>
+          ))}
+        </ol>
+      )}
       <ul class="directory" style="columns:1">
         {confirmed.map((row) => (
           <li>

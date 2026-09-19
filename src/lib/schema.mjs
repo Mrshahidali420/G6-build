@@ -20,6 +20,7 @@ const TYPE_MAP = {
   song: 'MusicRecording',
   business: 'LocalBusiness',
   brand: 'Brand',
+  weapon: 'Product',
   gameplay_feature: 'Thing',
   edition: 'Product',
 }

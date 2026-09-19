@@ -18,6 +18,7 @@ const GLAZES = {
   business: { ground: '#3d4a44', chips: ['#b08637', '#e9e7e0', '#242d29'], ink: '#f1f0ea' },
   brand: { ground: '#1b2320', chips: ['#b08637', '#c9dcd5', '#0f5d53'], ink: '#efece4' },
   landmark: { ground: '#2a5c4a', chips: ['#e5d3a4', '#f2efe6', '#143528'], ink: '#f0f6f1' },
+  weapon: { ground: '#3a3f47', chips: ['#b08637', '#dfe3e8', '#1d2126'], ink: '#eef1f4' },
   gameplay_feature: { ground: '#4a4a24', chips: ['#c9c98a', '#f1efdf', '#2a2a10'], ink: '#f4f2e3' },
   edition: { ground: '#4a2b45', chips: ['#c79ec0', '#f0e6ee', '#2a1527'], ink: '#f5ecf3' },
   default: { ground: '#0f5d53', chips: ['#b08637', '#eef5f2', '#0a453e'], ink: '#eef5f2' },

@@ -33,6 +33,7 @@ export const HUB_TYPES = [
   { type: 'business', slug: 'businesses', title: 'GTA 6 Shops and Businesses' },
   { type: 'brand', slug: 'brands', title: 'GTA 6 Brands and Manufacturers' },
   { type: 'landmark', slug: 'landmarks', title: 'GTA 6 Landmarks' },
+  { type: 'weapon', slug: 'weapons', title: 'GTA 6 Weapons' },
   { type: 'gameplay_feature', slug: 'gameplay', title: 'GTA 6 Gameplay Features' },
   { type: 'edition', slug: 'editions', title: 'GTA 6 Editions' },
 ]

@@ -248,10 +248,15 @@ export function readArticle(html) {
 
 // The one place a raw record is created. Both lanes call this.
 // Returns the record, or null when the page could not be fetched.
-export async function saveRaw({ source, url, title, summary = '', published = null }) {
+//
+// A lane may pass `html` when it already holds the page. The Newswire lane does,
+// because Rockstar builds that page in the browser: a plain fetch of the same
+// address comes back as an empty shell, so the article body was lost and the
+// record ended up holding nothing but its own headline.
+export async function saveRaw({ source, url, title, summary = '', published = null, html = null }) {
   let page = null
   try {
-    page = readArticle(await getText(url))
+    page = readArticle(html ?? (await getText(url)))
   } catch (error) {
     console.log(`  skipped, page did not load: ${url} (${error.message})`)
     return null

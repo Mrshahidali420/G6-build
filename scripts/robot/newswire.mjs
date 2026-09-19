@@ -39,8 +39,6 @@ try {
   process.exit(0)
 }
 
-await browser.close().catch(() => {})
-
 // One link can appear twice on the page, once as the image and once as the
 // headline. Keep the copy that carries visible words.
 const byUrl = new Map()
@@ -53,12 +51,41 @@ for (const link of links) {
 
 console.log(`newswire: ${byUrl.size} article links on the page`)
 
+// Open one article in the same browser and hand back the page as the reader
+// sees it. A plain fetch of this address returns an empty shell, so the whole
+// article body was missing and the robot had no sentences to quote. That is why
+// no claim ever carried the one tier that can confirm anything.
+async function readArticlePage(url) {
+  try {
+    const page = await browser.newPage({ userAgent: 'gta6record-robot (+https://gta6record.com)' })
+    await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 45000 })
+    await page.waitForSelector('p', { timeout: 20000 }).catch(() => {})
+    const html = await page.content()
+    // The date is printed on the page rather than put in a meta tag, so it is
+    // read off the first <time> element instead.
+    const published = await page
+      .$eval('time[datetime]', (node) => node.getAttribute('datetime'))
+      .catch(() => null)
+    await page.close().catch(() => {})
+    return { html, published }
+  } catch (error) {
+    console.log(`  skipped, article did not load: ${url} (${error.message})`)
+    return null
+  }
+}
+
+// A manual run may pass ROBOT_NEWSWIRE_REFETCH=1 to read the Newswire articles
+// again even when the memory already holds them. It is how the articles saved
+// before this lane could read a rendered page get their body text back.
+const REFETCH = (process.env.ROBOT_NEWSWIRE_REFETCH ?? '').trim() === '1'
+if (REFETCH) console.log('newswire: reading every article again, memory ignored this run')
+
 const seen = await loadSeen()
 let saved = 0
 
 for (const [url, title] of byUrl) {
   if (!MATCH.test(title)) continue
-  if (seen.has(url)) {
+  if (seen.has(url) && !REFETCH) {
     seen.add(url)
     continue
   }
@@ -67,12 +94,22 @@ for (const [url, title] of byUrl) {
     console.log(`newswire: cap reached, ${MAX_NEW_PER_RUN} new items this run`)
     break
   }
-  const record = await saveRaw({ source: NEWSWIRE_SOURCE, url, title })
+  const article = await readArticlePage(url)
+  if (!article) continue
+  const record = await saveRaw({
+    source: NEWSWIRE_SOURCE,
+    url,
+    title,
+    html: article.html,
+    published: article.published,
+  })
   if (record) {
     saved += 1
-    console.log(`  saved ${record.id} (published ${record.published ?? 'date unknown'})`)
+    console.log(`  saved ${record.id} (published ${record.published ?? 'date unknown'}, ${record.text.length} characters of text)`)
   }
 }
+
+await browser.close().catch(() => {})
 
 for (const url of byUrl.keys()) seen.add(url)
 await saveSeen(seen)

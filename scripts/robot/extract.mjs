@@ -118,9 +118,30 @@ if (!Array.isArray(catalog) || !catalog.length) {
   process.exit(1)
 }
 
-const extracted = new Set(await readJson(EXTRACTED_FILE, []))
+// The memory of what has been read holds the size of the article it read, as
+// "<id>:<characters>". An article that was saved again with more text in it no
+// longer matches, so it is read again on its own. That is what a plain list of
+// ids could not do: the Newswire articles were saved as a headline and nothing
+// else for weeks, and once the fetch was fixed the robot still called them read.
+// An entry with no size is an old one and counts as read, as before.
+const extractedRows = await readJson(EXTRACTED_FILE, [])
+const extracted = new Map()
+for (const row of extractedRows) {
+  const text = String(row)
+  const cut = text.lastIndexOf(':')
+  if (cut > 0 && /^\d+$/.test(text.slice(cut + 1))) extracted.set(text.slice(0, cut), Number(text.slice(cut + 1)))
+  else extracted.set(text, null)
+}
+
+const sizeOf = (record) => String(record.text ?? '').length
+const readAlready = (record) => {
+  if (!extracted.has(record.id)) return false
+  const size = extracted.get(record.id)
+  return size === null || size === sizeOf(record)
+}
+
 const raw = await loadRaw()
-const todo = raw.filter((record) => !extracted.has(record.id))
+const todo = raw.filter((record) => !readAlready(record))
 
 console.log(`extract: ${raw.length} raw items on disk, ${todo.length} not yet read`)
 
@@ -164,7 +185,7 @@ for (const record of todo) {
   }
 
   read += 1
-  extracted.add(record.id)
+  extracted.set(record.id, sizeOf(record))
 
   const onTopic = logic.aboutGta6 || answer?.aboutGta6 === true
   if (!onTopic) {
@@ -242,7 +263,10 @@ for (const record of todo) {
   console.log(`  ${record.id}: ${entities.length} entity/entities, ${total} claim(s) survived the checks`)
 }
 
-await writeJson(EXTRACTED_FILE, [...extracted].sort())
+await writeJson(
+  EXTRACTED_FILE,
+  [...extracted].map(([id, size]) => (size === null ? id : `${id}:${size}`)).sort(),
+)
 
 console.log('')
 console.log(`extract: ${read} article(s) read, ${offTopic} judged off topic, ${unreadByModel} not read by the model`)

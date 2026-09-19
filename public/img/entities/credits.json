@@ -243,5 +243,60 @@
     "credit": "Official screenshot: Rockstar Games. Shows the Vintage Vice City Pack.",
     "source": "https://www.rockstargames.com/VI/media",
     "file": "VINTAGE_VICE_CITY_PACK_01.05zaof7o1uz.3.jpg"
+  },
+  "scuba-diving-underwater-exploration": {
+    "credit": "Official screenshot: Rockstar Games. Shows two divers swimming over a reef in the Leonida Keys, with a sea turtle alongside them.",
+    "source": "https://www.rockstargames.com/VI/media",
+    "file": "Leonida_Keys_04.jpg"
+  },
+  "hawk-and-little-morgan-revolver": {
+    "credit": "Official screenshot: Rockstar Games. Shows the Hawk and Little Morgan revolver, one of the weapons in the Ultimate Edition benefits.",
+    "source": "https://www.rockstargames.com/VI/media",
+    "file": "ULTIMATE_EDITION_HAWK_AND_LITTLE_MORGAN_REVOLVERS_01.jpg"
+  },
+  "leonida-penitentiary": {
+    "credit": "Frame from the official GTA 6 Trailer 1: Rockstar Games. Shows Lucia looking out of a cell window onto the prison yard.",
+    "source": "https://www.rockstargames.com/VI/media/videos",
+    "file": "GTAVI_Trailer_1.mp4"
+  },
+  "stockyard": {
+    "credit": "Frame from the official GTA 6 Trailer 1: Rockstar Games. Shows the mural-covered warehouse blocks of the arts district with tuned cars parked along the street.",
+    "source": "https://www.rockstargames.com/VI/media/videos",
+    "file": "GTAVI_Trailer_1.mp4"
+  },
+  "optional-romance-system": {
+    "credit": "Frame from the official GTA 6 Trailer 1: Rockstar Games. Shows Lucia and Jason together in a motel room.",
+    "source": "https://www.rockstargames.com/VI/media/videos",
+    "file": "GTAVI_Trailer_1.mp4"
+  },
+  "store-robbery-system": {
+    "credit": "Frame from the official GTA 6 Trailer 1: Rockstar Games. Shows Lucia in a bandana holding a pistol during a convenience store robbery.",
+    "source": "https://www.rockstargames.com/VI/media/videos",
+    "file": "GTAVI_Trailer_1.mp4"
+  },
+  "ammu-nation": {
+    "credit": "Frame from the official GTA 6 Trailer 2: Rockstar Games. Shows an Ammu-Nation television advert playing on a set, with the shop banner and wall racks of rifles behind the presenter.",
+    "source": "https://www.rockstargames.com/VI/media/videos",
+    "file": "GTAVI_Trailer_2.mp4"
+  },
+  "jet-ski": {
+    "credit": "Frame from the official GTA 6 Trailer 2: Rockstar Games. Shows two riders on a Seashark jet ski crossing the bay, with the model name on the hull.",
+    "source": "https://www.rockstargames.com/VI/media/videos",
+    "file": "GTAVI_Trailer_2.mp4"
+  },
+  "dinka": {
+    "credit": "Frame from the official GTA 6 Trailer 2: Rockstar Games. Shows a Dinka 300 V6 outboard motor on a boat moored at a dock, with the maker badge on the cowling.",
+    "source": "https://www.rockstargames.com/VI/media/videos",
+    "file": "GTAVI_Trailer_2.mp4"
+  },
+  "vice-city-international-airport": {
+    "credit": "Frame from the official GTA 6 Trailer 2: Rockstar Games. Shows an airliner on approach above a highway sign reading VCI Airport.",
+    "source": "https://www.rockstargames.com/VI/media/videos",
+    "file": "GTAVI_Trailer_2.mp4"
+  },
+  "body-weight-and-physique-system": {
+    "credit": "Frame from the official GTA 6 Trailer 2: Rockstar Games. Shows a character bench pressing a loaded barbell at an outdoor beach gym.",
+    "source": "https://www.rockstargames.com/VI/media/videos",
+    "file": "GTAVI_Trailer_2.mp4"
   }
 }

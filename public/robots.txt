@@ -1,7 +1,115 @@
 # gta6record.com
-User-agent: *
+
+# ---------------------------------------------------------------
+# Search engines that send readers here.
+# ---------------------------------------------------------------
+User-agent: Googlebot
 Allow: /
 
-# Nothing is hidden. Every page is meant to be crawled.
+User-agent: Google-InspectionTool
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# ---------------------------------------------------------------
+# AdSense and Google Ads. Block these and the adverts stop paying.
+# ---------------------------------------------------------------
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+# ---------------------------------------------------------------
+# AI search that names its source and sends the reader back.
+# These are worth the requests they cost.
+# ---------------------------------------------------------------
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+# ---------------------------------------------------------------
+# AI training crawlers. They take the writing and send nobody back.
+# ---------------------------------------------------------------
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: meta-externalagent
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+# ---------------------------------------------------------------
+# SEO tool crawlers. They cost requests and give nothing back.
+# ---------------------------------------------------------------
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: rogerbot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: SerpstatBot
+Disallow: /
+
+# ---------------------------------------------------------------
+# Search engines with no readers in our markets.
+# ---------------------------------------------------------------
+User-agent: YandexBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+# ---------------------------------------------------------------
+# Everything else may read the site.
+# ---------------------------------------------------------------
+User-agent: *
+Allow: /
 
 Sitemap: https://gta6record.com/sitemap-index.xml

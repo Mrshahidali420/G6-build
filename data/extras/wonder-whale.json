@@ -1,0 +1,37 @@
+{
+  "slug": "wonder-whale",
+  "faq": [
+    {
+      "q": "What is Wonder Whale in GTA 6?",
+      "a": "Wonder Whale is a statue listed for GTA 6 on the GTA Fandom wiki. The wiki entry is the only record of it. Rockstar has not named it in a trailer, a press release or on the Grand Theft Auto VI site, so this page records the wiki listing and marks it as a community source."
+    },
+    {
+      "q": "Is Wonder Whale confirmed for GTA 6?",
+      "a": "No. A Fandom wiki page is written by fans, not by Rockstar. This site files Wonder Whale as community identified, at low confidence, for that reason. The entry stays at low confidence until Rockstar or a major outlet names it."
+    },
+    {
+      "q": "What does the wiki say about Wonder Whale?",
+      "a": "The wiki gives 3 details. Place type: statue. Scope: single site. Coordinates: not given. Those are wiki fields copied as they stand. No figure here was measured in the game, because the game has not released."
+    },
+    {
+      "q": "Where does this Wonder Whale information come from?",
+      "a": "From the GTA Fandom wiki page for Wonder Whale, collected by the outlawdb project on 2026-09-13 and released under CC BY-SA 3.0. The source link on this page opens the wiki page itself, so you can read the same entry."
+    },
+    {
+      "q": "What is still unknown about Wonder Whale?",
+      "a": "Most of it. Wonder Whale rests on a fan wiki listing and nothing else. Where it sits on the map and whether the player can go inside are both unpublished. Rockstar answers questions like this at launch, not before, so this page will change when it does."
+    },
+    {
+      "q": "Will Wonder Whale be in the finished GTA 6?",
+      "a": "Not known. A wiki listing is a claim by a fan editor, not a Rockstar statement. Plenty of landmark entries written before a launch never appear in the game. This site records the claim and the source, and marks the entry unconfirmed until that changes."
+    }
+  ],
+  "notKnown": [
+    "Where it sits on the map",
+    "Whether the player can go inside",
+    "What happens there",
+    "Whether Rockstar uses this name in the finished game"
+  ],
+  "howWeKnow": "This entry came from the GTA Fandom wiki page for Wonder Whale, taken through the outlawdb dataset on 2026-09-13. Nothing here was checked against a Rockstar source, because Rockstar has published no list that names it. That is why the entry sits at low confidence and is marked as a community source rather than a confirmed one.",
+  "generated": "scripts/import/outlawdb.mjs"
+}

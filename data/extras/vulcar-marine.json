@@ -1,0 +1,37 @@
+{
+  "slug": "vulcar-marine",
+  "faq": [
+    {
+      "q": "What is Vulcar Marine in GTA 6?",
+      "a": "Vulcar Marine is a vehicleparts listed for GTA 6 on the GTA Fandom wiki. The wiki entry is the only record of it. Rockstar has not named it in a trailer, a press release or on the Grand Theft Auto VI site, so this page records the wiki listing and marks it as a community source."
+    },
+    {
+      "q": "Is Vulcar Marine confirmed for GTA 6?",
+      "a": "No. A Fandom wiki page is written by fans, not by Rockstar. This site files Vulcar Marine as community identified, at low confidence, for that reason. The entry stays at low confidence until Rockstar or a major outlet names it."
+    },
+    {
+      "q": "What does the wiki say about Vulcar Marine?",
+      "a": "The wiki gives 2 details. Business type: vehicleparts. Story status: active. Those are wiki fields copied as they stand. No figure here was measured in the game, because the game has not released."
+    },
+    {
+      "q": "Where does this Vulcar Marine information come from?",
+      "a": "From the GTA Fandom wiki page for Vulcar Marine, collected by the outlawdb project on 2026-09-13 and released under CC BY-SA 3.0. The source link on this page opens the wiki page itself, so you can read the same entry."
+    },
+    {
+      "q": "What is still unknown about Vulcar Marine?",
+      "a": "Most of it. Vulcar Marine rests on a fan wiki listing and nothing else. Whether the player can enter it and whether it can be robbed or bought are both unpublished. Rockstar answers questions like this at launch, not before, so this page will change when it does."
+    },
+    {
+      "q": "Will Vulcar Marine be in the finished GTA 6?",
+      "a": "Not known. A wiki listing is a claim by a fan editor, not a Rockstar statement. Plenty of business entries written before a launch never appear in the game. This site records the claim and the source, and marks the entry unconfirmed until that changes."
+    }
+  ],
+  "notKnown": [
+    "Whether the player can enter it",
+    "Whether it can be robbed or bought",
+    "Where it sits on the map",
+    "Whether Rockstar uses this name in the finished game"
+  ],
+  "howWeKnow": "This entry came from the GTA Fandom wiki page for Vulcar Marine, taken through the outlawdb dataset on 2026-09-13. Nothing here was checked against a Rockstar source, because Rockstar has published no list that names it. That is why the entry sits at low confidence and is marked as a community source rather than a confirmed one.",
+  "generated": "scripts/import/outlawdb.mjs"
+}

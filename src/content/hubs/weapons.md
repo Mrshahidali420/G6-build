@@ -15,12 +15,12 @@ public, and of who did the naming.
 That difference matters more here than anywhere else on the site. Weapon names
 are the easiest thing in a Grand Theft Auto game to guess wrong. A wiki can
 carry a full armoury two years before release, built from earlier games and
-from what people think they saw in a trailer. Nothing on this page is built
-that way.
+from what people think they saw in a trailer. Some of this page is built exactly
+that way, and every entry that is says so on its face.
 
 ## Where these names come from
 
-The names on this page come from two places, and each entry says which.
+The names on this page come from three places, and each entry says which.
 
 One weapon is named by Rockstar itself. The Hawk and Little Morgan Revolver
 appears in the Compare Editions contents on Rockstar's own store page, sitting
@@ -32,6 +32,13 @@ September 2026. IGN watched the Extended Look gameplay reveal and Rockstar's
 published screenshots and wrote down the names shown on screen. That is good
 reporting, and it is still reporting. Until Rockstar prints the same names, an
 entry sourced to IGN stays marked as press reported on this site.
+
+The third group is the largest, and it is the weakest. Those names come from
+the GTA Fandom wiki, collected through the outlawdb dataset and released under
+CC BY-SA 3.0. The wiki is written by fans, so every one of those entries is
+marked community identified, sits at tier 3, and carries low confidence. Each
+one links to the exact wiki page it came from. Read those pages as a record of
+what the wiki says, not as a statement about the game.
 
 ## What the Ultimate Edition changes
 

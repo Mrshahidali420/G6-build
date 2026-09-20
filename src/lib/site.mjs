@@ -41,6 +41,7 @@ export const HUB_TYPES = [
   { type: 'weapon', slug: 'weapons', title: 'GTA 6 Weapons' },
   { type: 'gameplay_feature', slug: 'gameplay', title: 'GTA 6 Gameplay Features' },
   { type: 'edition', slug: 'editions', title: 'GTA 6 Editions' },
+  { type: 'wildlife', slug: 'wildlife', title: 'GTA 6 Animals and Wildlife' },
 ]
 
 // Types that exist in the data but never get their own page.

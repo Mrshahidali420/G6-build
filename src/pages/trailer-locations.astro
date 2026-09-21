@@ -1,0 +1,356 @@
+---
+// Where every official GTA 6 trailer and screenshot was filmed from.
+//
+// /map plots things in the world. This page plots the cameras instead: the
+// spot each shot was taken from, the direction it faced and how wide the lens
+// was. Both come out of the same survey, gtamaplib, which solves positions by
+// matching objects across several frames of footage.
+//
+// Only cameras solved from official Rockstar material are here. See
+// scripts/import/cameras.mjs for the filter. Nothing on this page is a picture
+// from the game. It is a plot of measured numbers, drawn as an SVG at build
+// time, so it needs no script to run.
+import BaseLayout from '../layouts/BaseLayout.astro'
+import Ad from '../components/Ad.astro'
+import { SITE_NAME, SITE_URL, canonical } from '../lib/site.mjs'
+import { GAME } from '../lib/schema.mjs'
+import data from '../data/camera-shots.json'
+import world from '../data/map-points.json'
+
+const { shots, counts, footage, facing, heightM, lensFov, bearingFit, sourceUrl } = data
+
+const COLOR = {
+  'Trailer 1': '#0f5d53',
+  'Trailer 2': '#b08637',
+  'Extended Look': '#a8492f',
+  'Screenshot set 1': '#3b6ea5',
+  'Screenshot set 2': '#5b7c3a',
+  'Screenshot set 3': '#7a5a1c',
+  'Other Rockstar footage': '#8d8a80',
+}
+const colorOf = (name) => COLOR[name] || '#8d8a80'
+
+const groups = Object.keys(footage).map((name) => ({
+  name,
+  color: colorOf(name),
+  count: footage[name],
+  slug: name.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
+  items: shots.filter((shot) => shot.footage === name),
+}))
+
+// The plot uses the whole surveyed world, not just the cameras, so the shape
+// of Leonida is there to read the camera positions against.
+const PAD = 400
+const minX = world.bounds.minX - PAD
+const maxX = world.bounds.maxX + PAD
+const minY = -world.bounds.maxY - PAD
+const maxY = -world.bounds.minY + PAD
+const width = Math.round(maxX - minX)
+const height = Math.round(maxY - minY)
+
+// The facing line. The bearing counts clockwise from north, and SVG y points
+// down, so north is -y and east is +x.
+const REACH = 340
+const tip = (shot) => ({
+  x: shot.x + REACH * Math.sin((shot.bearing * Math.PI) / 180),
+  y: -shot.y - REACH * Math.cos((shot.bearing * Math.PI) / 180),
+})
+
+const topFacing = Object.entries(facing)[0]
+const highest = shots.slice().sort((a, b) => b.z - a.z)[0]
+const zones = {}
+for (const shot of shots) zones[shot.zoneLabel] = (zones[shot.zoneLabel] || 0) + 1
+const zoneRows = Object.entries(zones)
+  .filter(([label]) => label !== 'Not placed in a named area')
+  .sort((a, b) => b[1] - a[1])
+
+const path = '/trailer-locations'
+const title = `Where every GTA 6 trailer shot was filmed: ${counts.kept} camera positions`
+const description = `The exact spot in Leonida each official GTA 6 shot was filmed from. ${counts.kept} camera positions solved from Rockstar's trailers and screenshots, with the direction each camera faced and how wide its lens was.`
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Dataset',
+  '@id': canonical(path),
+  url: canonical(path),
+  name: title,
+  description,
+  about: GAME,
+  dateModified: data.generated,
+  license: 'https://creativecommons.org/licenses/by-sa/4.0/',
+  creator: { '@type': 'Organization', name: 'gtamaplib', url: sourceUrl },
+  publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+  variableMeasured: ['camera world x', 'camera world y', 'camera height', 'compass bearing', 'field of view'],
+}
+---
+<BaseLayout title={title} description={description} path={path} jsonLd={jsonLd}>
+  <section class="band band--glaze">
+    <div class="shell">
+      <p class="crumb" style="color:var(--on-glaze-2)">
+        <a href="/" style="color:var(--on-glaze-2)">GTA 6 Record</a> / Trailer locations
+      </p>
+      <h1 style="max-width:26ch">Where every GTA 6 trailer shot was filmed</h1>
+      <p class="lede">{description}</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="shell">
+      <div class="prose">
+        <h2>What this page is</h2>
+        <p>
+          Rockstar has shown three trailers and three sets of screenshots. Every
+          one of those shots was taken by a camera standing somewhere in
+          Leonida. This page says where that camera stood.
+        </p>
+        <p>
+          The positions come from the gtamaplib survey. It works the way a
+          surveyor works. The same object is found in several frames of the same
+          footage, and the position that explains all of those frames at once is
+          the answer. Do that for enough objects and the camera itself falls
+          out of the maths.
+        </p>
+        <p>
+          {counts.kept} cameras are plotted here. Every one of them comes from
+          footage Rockstar published itself. The survey also carries {counts.droppedNotOfficial}
+          {' '}cameras solved from material that was taken from Rockstar without
+          permission. Those are not on this page, they are not in the data file,
+          and no part of that material is stored or linked anywhere on this
+          site.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--stone">
+    <div class="shell">
+      <div class="prose">
+        <h2>The camera map</h2>
+        <p>
+          Each dot is a camera. The line out of it shows the way it pointed.
+          The pale dots behind are the {world.counts.kept} surveyed places that
+          make up the <a href="/map">measured map</a>, so you can read one
+          against the other.
+        </p>
+      </div>
+
+      <ul class="keys">
+        {groups.map((group) => (
+          <li class="key">
+            <span class="key__dot" style={`background:${group.color}`}></span>
+            <a class="key__name" href={`#${group.slug}`}>{group.name}</a>
+            <span class="key__n">{group.count}</span>
+          </li>
+        ))}
+      </ul>
+
+      <div class="stage">
+        <svg
+          viewBox={`${Math.round(minX)} ${Math.round(minY)} ${width} ${height}`}
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          aria-label={`Plot of ${counts.kept} camera positions used in official Grand Theft Auto VI footage, each with a line showing the direction it faced.`}
+        >
+          <g stroke="#d3cfc4" stroke-width="5" opacity="0.45">
+            {Array.from({ length: Math.ceil(width / 1000) + 1 }, (_, i) => {
+              const x = Math.round(minX / 1000) * 1000 + i * 1000
+              return <line x1={x} y1={minY} x2={x} y2={maxY} />
+            })}
+            {Array.from({ length: Math.ceil(height / 1000) + 1 }, (_, i) => {
+              const y = Math.round(minY / 1000) * 1000 + i * 1000
+              return <line x1={minX} y1={y} x2={maxX} y2={y} />
+            })}
+          </g>
+
+          <g fill="#b9b4a6" opacity="0.55">
+            {world.points.map((point) => <circle cx={point.x} cy={-point.y} r="26" />)}
+          </g>
+
+          {groups.map((group) => (
+            <g stroke={group.color} stroke-width="16" stroke-linecap="round" opacity="0.85">
+              {group.items.map((shot) => {
+                const end = tip(shot)
+                return <line x1={shot.x} y1={-shot.y} x2={Math.round(end.x)} y2={Math.round(end.y)} />
+              })}
+            </g>
+          ))}
+
+          {groups.map((group) => (
+            <g fill={group.color} stroke="#f5f3ed" stroke-width="10">
+              {group.items.map((shot) => <circle cx={shot.x} cy={-shot.y} r="58" />)}
+            </g>
+          ))}
+        </svg>
+      </div>
+      <p class="note">
+        Each grid square is one kilometre. The survey's own error is about two
+        metres on a solved point, so a dot is right to within the width of a
+        car, not to the centimetre.
+      </p>
+    </div>
+  </section>
+
+  <Ad placement="article" />
+
+  <section class="band">
+    <div class="shell">
+      <div class="prose">
+        <h2>What the numbers say</h2>
+        <p>
+          The cameras are not spread evenly. {zoneRows[0][1]} of them stand in
+          {' '}{zoneRows[0][0]}, which is the answer to why the game looks like
+          a Vice City game even though the map runs the length of the state.
+          {' '}{topFacing[1]} shots face {topFacing[0]}, more than any other
+          direction.
+        </p>
+        <p>
+          Height tells its own story. The median camera sits {heightM.median}
+          {' '}metres above sea level, about the height of a fourth floor. The
+          lowest is {heightM.lowest} metres, at the water. The highest is
+          {' '}{highest.z} metres, on the {highest.name} shot in
+          {' '}{highest.footage}, which is aircraft height.
+        </p>
+        {lensFov && (
+          <p>
+            Lenses run from {lensFov.narrowest} degrees across, which is a tight
+            portrait lens, to {lensFov.widest} degrees, which is a wide one. The
+            median is {lensFov.median} degrees. Rockstar's marketing shots are
+            not shot the way you see the game when you play it.
+          </p>
+        )}
+      </div>
+
+      <ul class="stats">
+        <li class="stat"><span class="stat__n">{counts.kept}</span><span class="stat__l">Cameras plotted</span></li>
+        <li class="stat"><span class="stat__n">{Object.keys(footage).length}</span><span class="stat__l">Pieces of footage</span></li>
+        <li class="stat"><span class="stat__n">{zoneRows.length}</span><span class="stat__l">Named areas reached</span></li>
+        <li class="stat"><span class="stat__n">{counts.droppedNotOfficial}</span><span class="stat__l">Unofficial cameras left out</span></li>
+      </ul>
+
+      <table class="grid">
+        <caption>Cameras by area</caption>
+        <thead><tr><th scope="col">Area</th><th scope="col">Cameras</th></tr></thead>
+        <tbody>
+          {zoneRows.map(([label, count]) => (
+            <tr><th scope="row">{label}</th><td>{count}</td></tr>
+          ))}
+          <tr><th scope="row">Not placed in a named area</th><td>{zones['Not placed in a named area'] || 0}</td></tr>
+        </tbody>
+      </table>
+      <p class="note">
+        An area is the area of the nearest surveyed place, and only when that
+        place is within 1,200 metres. A camera out over water or deep in the
+        countryside has no named area, and saying so is more honest than
+        guessing one.
+      </p>
+    </div>
+  </section>
+
+  {groups.map((group) => (
+    <section class="band band--stone" id={group.slug}>
+      <div class="shell">
+        <div class="prose">
+          <h2>{group.name}: {group.count} camera{group.count === 1 ? '' : 's'}</h2>
+        </div>
+        <div class="scroll">
+          <table class="grid">
+            <thead>
+              <tr>
+                <th scope="col">Shot</th>
+                <th scope="col">Area</th>
+                <th scope="col">Nearest place</th>
+                <th scope="col">Facing</th>
+                <th scope="col">Height</th>
+                <th scope="col">Lens</th>
+              </tr>
+            </thead>
+            <tbody>
+              {group.items.map((shot) => (
+                <tr>
+                  <th scope="row">
+                    {shot.name}
+                    {shot.approximate && <span class="tag" title="gtamaplib could not tie this camera to solved ground">about right</span>}
+                  </th>
+                  <td>{shot.zoneLabel === 'Not placed in a named area' ? 'Not named' : shot.zoneLabel}</td>
+                  <td>{shot.near.length ? `${shot.near[0].name}, ${shot.near[0].m.toLocaleString('en-US')} m` : 'Nothing surveyed nearby'}</td>
+                  <td>{shot.compass} <span class="dim">{shot.bearing}&deg;</span></td>
+                  <td>{shot.z} m</td>
+                  <td>{shot.fov ? `${shot.fov}°` : 'Not solved'}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <section class="band">
+    <div class="shell">
+      <div class="prose">
+        <h2>How the direction was worked out</h2>
+        <p>
+          The survey stores a camera's direction as a yaw angle, and it does not
+          say anywhere which way the angle counts. So it was measured. For every
+          camera with at least five solved landmarks sitting in a tight cone in
+          front of it, the real compass bearing from the camera to those
+          landmarks was compared with the stored yaw.
+        </p>
+        <p>
+          The answer is that yaw counts anticlockwise from north, so the compass
+          bearing is {bearingFit.model.replace('bearing = ', '')}. Across
+          {' '}{bearingFit.camerasChecked} cameras that rule is out by
+          {' '}{bearingFit.meanErrorDegrees} degrees on average. Every bearing
+          on this page comes from it. It is a measurement, not a fact Rockstar
+          published, and it is written here so you can check it.
+        </p>
+        <h2>Where this sits</h2>
+        <p>
+          For the world these cameras were pointed at, use the
+          <a href="/map"> measured map</a>. For what was shown in each piece of
+          footage, use the <a href="/trailers"> trailer index</a>. For the real
+          Florida places Leonida is built out of, use
+          <a href="/real-places"> real places</a>.
+        </p>
+        <p class="src">
+          Data: <a href={sourceUrl} rel="nofollow noopener" target="_blank">gtamaplib</a> by
+          NeutralState, file <code>gtamapdata/cameras.json</code>, read on
+          {' '}{data.generated}. Licensed CC BY-SA 4.0.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .keys { list-style: none; display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 22px 0 14px; padding: 0; }
+  .key { display: inline-flex; align-items: center; gap: 7px; font: 600 13px/1 var(--ui); }
+  .key__dot { width: 11px; height: 11px; border-radius: 50%; }
+  .key__name { color: var(--ink); text-decoration: none; border-bottom: 2px solid var(--glaze-tint); }
+  .key__name:hover { border-bottom-color: var(--glaze); }
+  .key__n { color: var(--ink-2); font-weight: 400; }
+
+  .stage { border: 1px solid var(--line-strong); border-radius: var(--r); background: var(--plaster); padding: 10px; }
+  .stage svg { display: block; width: 100%; height: auto; max-height: 78vh; }
+
+  .note { margin: 12px 0 0; font: 400 14px/1.6 var(--body); color: var(--ink-2); max-width: var(--prose); }
+
+  .stats { list-style: none; display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 26px 0; padding: 0; }
+  .stat { border: 1px solid var(--line-strong); border-top: 3px solid var(--glaze); border-radius: var(--r); background: var(--plaster); padding: 14px; }
+  .stat__n { display: block; font: 700 28px/1 var(--display); color: var(--ink); }
+  .stat__l { display: block; margin: 6px 0 0; font: 600 11px/1.3 var(--ui); letter-spacing: 0.07em; text-transform: uppercase; color: var(--glaze-deep); }
+
+  .scroll { overflow-x: auto; }
+  .grid { width: 100%; border-collapse: collapse; margin: 16px 0 0; font: 400 15px/1.5 var(--body); }
+  .grid caption { text-align: left; font: 600 11px/1 var(--ui); letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-2); padding-bottom: 8px; }
+  .grid th, .grid td { text-align: left; padding: 9px 12px 9px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .grid thead th { font: 600 11px/1 var(--ui); letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-2); border-bottom: 1px solid var(--line-strong); }
+  .grid tbody th { font: 600 15px/1.5 var(--body); color: var(--ink); }
+  .grid td { color: var(--ink-2); white-space: nowrap; }
+  .dim { color: var(--line-strong); }
+  .tag { display: inline-block; margin-left: 8px; padding: 2px 6px; border: 1px solid var(--line-strong); border-radius: var(--r); font: 600 10px/1.4 var(--ui); text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-2); }
+  .src { margin: 18px 0 0; font: 400 14px/1.6 var(--body); color: var(--ink-2); }
+
+  @media (max-width: 860px) { .stats { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 540px) { .stats { grid-template-columns: 1fr; } }
+</style>

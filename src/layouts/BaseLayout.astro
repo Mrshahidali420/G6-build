@@ -1,5 +1,5 @@
 ---
-import { SITE_NAME, SITE_URL, ADSENSE_CLIENT, GA_MEASUREMENT_ID, HUB_TYPES, RECORD_PAGES, canonical } from '../lib/site.mjs'
+import { SITE_NAME, SITE_URL, ADSENSE_CLIENT, GA_MEASUREMENT_ID, HUB_TYPES, RECORD_PAGES, NAV_SHORTCUTS, canonical } from '../lib/site.mjs'
 import { pageEntities } from '../lib/entities.mjs'
 import Logo from '../components/Logo.astro'
 import Icon from '../components/Icon.astro'
@@ -19,6 +19,12 @@ if (!description) throw new Error(`Page ${path} has no meta description. Every p
 const url = canonical(path)
 const year = new Date().getFullYear()
 const current = (slug) => (path === `/${slug}` || path.startsWith(`/${slug}/`) ? 'page' : undefined)
+
+// The six things the header row holds. Four are direct links; two are menus.
+// A menu is marked as the current place when the page inside it is the current
+// page, so a visitor reading /vehicles can still see which drawer they came
+// out of.
+const shortcuts = NAV_SHORTCUTS.map((slug) => RECORD_PAGES.find((page) => page.slug === slug)).filter(Boolean)
 
 // The footer carries the same two numbers the home page opens with. A reader
 // who lands deep in the site from a search result never sees the front page,
@@ -100,7 +106,7 @@ const footConfirmed = pageEntities.filter((entity) => entity.confirmedStatus ===
       Entries with no publishable photo get a poured terrazzo plate, not a box.
       STORY: the visitor sees a claim, sees who said it and when, believes the
       site is careful, and clicks deeper instead of leaving for a forum.
-      FIRST VIEWPORT: a glazed masthead over a full-width glaze band carrying
+      FIRST VIEWPORT: a plaster masthead under a brass rule, over a full-width glaze band carrying
       the release facts as a ruled specification list; the brass "Every dated
       announcement" button sits under it, left aligned on the reading column.
       FORM: candidate 7 of 7 on the ordered direction list. Seed key 766292e9.
@@ -110,71 +116,114 @@ const footConfirmed = pageEntities.filter((entity) => entity.confirmedStatus ===
     -->
     <a class="skip" href="#main">Skip to the page</a>
 
-    <header class="masthead">
-      <div class="shell masthead__top">
-        <a class="masthead__brand" href="/">
-          <Logo size={34} />
-          <span class="masthead__name">
-            GTA 6 Record
-            <small>Sourced, not guessed</small>
-          </span>
-        </a>
-        <!--
-          A real search box, not an icon that costs a click to find. It is a
-          plain GET form to /search, so it works with no JavaScript at all: the
-          browser submits ?q=... and the search page runs that query on arrival.
-          When JavaScript is on, touching the field starts fetching the search
-          index in the background, so the results page has nothing left to
-          download.
-        -->
-        <form class="find" action="/search" method="get" role="search">
-          <label class="find__label" for="site-search">Search this site</label>
-          <input
-            class="find__input"
-            id="site-search"
-            type="search"
-            name="q"
-            placeholder="Search a character, car, place or song"
-            autocomplete="off"
-            enterkeyhint="search"
-          />
-          <button class="find__btn" type="submit">
-            <Icon name="search" size={16} />
-            <span>Search</span>
-          </button>
-        </form>
-        <div class="masthead__links">
-          <a class="masthead__links-full" href="/map">Map</a>
-          <a class="masthead__links-full" href="/news">News</a>
-          <a class="masthead__links-full" href="/about">About</a>
+    <header class="mast">
+      <!--
+        One bar. It cannot overflow and it cannot wrap above the phone step,
+        because nothing in it is a list that grows. The four direct links are a
+        fixed four, and every other section lives in the panel, which is a grid
+        and takes new rows without touching the bar. The full reasoning is in
+        world.css above the .mast rules.
+      -->
+      <div class="mast__strip">
+        <div class="shell mast__strip-in">
+          <p class="mast__claim">A public record of Grand Theft Auto VI. Every entry shows where it came from.</p>
+          <div class="mast__strip-links">
+            <a href="/about">About and sources</a>
+            <a href="/contact">Contact</a>
+          </div>
         </div>
-        <!--
-          Under 760px the row of nine sections is a sideways scroll strip
-          nobody scrolls, so eight of nine sections were invisible on a
-          phone. <details>/<summary> gives a menu that opens with no JS:
-          the browser owns the open state and the accessible name.
-        -->
-        <details class="menu">
-          <summary class="menu__button">
-            <span class="menu__icon menu__icon--open"><Icon name="menu" size={20} /></span>
-            <span class="menu__icon menu__icon--close"><Icon name="close" size={20} /></span>
-            <span class="menu__button-label">Menu</span>
-          </summary>
-          <nav class="menu__panel" aria-label="All sections">
-            <p class="menu__head">The catalogue</p>
-            {HUB_TYPES.map((hub) => (
-              <a href={`/${hub.slug}`} aria-current={current(hub.slug)}>{hub.nav}</a>
-            ))}
-            <p class="menu__head">The record</p>
-            {RECORD_PAGES.map((page) => (
-              <a href={`/${page.slug}`} aria-current={current(page.slug)}>{page.title}</a>
-            ))}
-            <p class="menu__head">This site</p>
-            <a href="/about" aria-current={current('about')}>About and sources</a>
-            <a href="/contact" aria-current={current('contact')}>Contact</a>
-          </nav>
-        </details>
       </div>
+
+      <div class="mast__bar">
+        <div class="shell mast__row">
+          <a class="mast__brand" href="/">
+            <Logo size={34} />
+            <span class="mast__name">
+              GTA 6 Record
+              <small>Sourced, not guessed</small>
+            </span>
+          </a>
+
+          <!--
+            The one menu on the site. It serves a phone and a desktop from the
+            same markup, so the two can never fall out of step, and it is a
+            plain <details> so no navigation script ships. The panel is the full
+            width of the masthead rather than a box hung off this button,
+            because twenty-six links in a 500px box is a list, not a menu.
+          -->
+          <details class="browse">
+            <summary class="browse__btn">
+              <span class="browse__icon browse__icon--open"><Icon name="menu" size={17} /></span>
+              <span class="browse__icon browse__icon--close"><Icon name="close" size={17} /></span>
+              <span class="browse__label">All sections</span>
+            </summary>
+            <div class="browse__panel">
+              <nav class="shell browse__cols" aria-label="All sections">
+                <div class="browse__col">
+                  <h2 class="browse__h">The catalogue</h2>
+                  <p class="browse__note">Everything Rockstar has shown, sorted by kind.</p>
+                  <ul class="browse__list browse__list--two">
+                    {HUB_TYPES.map((hub) => (
+                      <li><a href={`/${hub.slug}`} aria-current={current(hub.slug)}>{hub.nav}</a></li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div class="browse__col">
+                  <h2 class="browse__h">The record</h2>
+                  <p class="browse__note">The parts of the site that are not a catalogue.</p>
+                  <ul class="browse__list">
+                    {RECORD_PAGES.map((page) => (
+                      <li><a href={`/${page.slug}`} aria-current={current(page.slug)}>{page.title}</a></li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div class="browse__col browse__col--site">
+                  <h2 class="browse__h">This site</h2>
+                  <p class="browse__note">How the record is kept, and how to reach us.</p>
+                  <ul class="browse__list">
+                    <li><a href="/about" aria-current={current('about')}>About and sources</a></li>
+                    <li><a href="/updates" aria-current={current('updates')}>Daily coverage log</a></li>
+                    <li><a href="/search" aria-current={current('search')}>Search every page</a></li>
+                    <li><a href="/contact" aria-current={current('contact')}>Contact</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </details>
+
+          <nav class="mast__quick" aria-label="Main sections">
+            {shortcuts.map((page) => (
+              <a href={`/${page.slug}`} aria-current={current(page.slug)}>{page.nav}</a>
+            ))}
+          </nav>
+
+          <!--
+            A plain GET form to /search, so it works with no JavaScript: the
+            browser submits ?q=... and the search page runs that query on
+            arrival. With JavaScript on, touching the field starts fetching the
+            search index in the background.
+          -->
+          <form class="find" action="/search" method="get" role="search">
+            <label class="find__label" for="site-search">Search this site</label>
+            <input
+              class="find__input"
+              id="site-search"
+              type="search"
+              name="q"
+              placeholder="Search a character, car, place or song"
+              autocomplete="off"
+              enterkeyhint="search"
+            />
+            <button class="find__btn" type="submit">
+              <Icon name="search" size={16} />
+              <span>Search</span>
+            </button>
+          </form>
+        </div>
+      </div>
+
       <script is:inline>
         // Warm the search up before it is asked for. The first touch of the
         // field starts fetching the results page and the Pagefind bundle in the
@@ -201,33 +250,6 @@ const footConfirmed = pageEntities.filter((entity) => entity.confirmedStatus ===
           field.addEventListener('pointerenter', warm, { once: true })
         })()
       </script>
-
-      <!--
-        Two rows, both of which wrap. The old single row held eleven full hub
-        titles, set them to max-content and let the strip scroll sideways, so on
-        a 1280px desktop the last three sections sat off the right edge with no
-        scrollbar to say so. Short labels plus wrapping means every section is
-        on screen at every width above the phone breakpoint.
-
-        The second row is the part of the site that is not a catalogue hub. It
-        used to live only in the footer and in the phone menu, which left nine
-        whole sections with no link from the top of a desktop page.
-      -->
-      <nav class="sections" aria-label="The catalogue">
-        <div class="sections__inner">
-          {HUB_TYPES.map((hub) => (
-            <a href={`/${hub.slug}`} aria-current={current(hub.slug)}>{hub.nav}</a>
-          ))}
-        </div>
-      </nav>
-
-      <nav class="records" aria-label="The record">
-        <div class="records__inner">
-          {RECORD_PAGES.map((page) => (
-            <a href={`/${page.slug}`} aria-current={current(page.slug)} title={page.title}>{page.nav}</a>
-          ))}
-        </div>
-      </nav>
     </header>
 
     <main id="main">

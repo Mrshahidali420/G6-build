@@ -66,6 +66,13 @@ export const RECORD_PAGES = [
 
 // Types that exist in the data but never get their own page.
 // release_fact rows are evidence behind the answer pages, not pages themselves.
+// The four record pages that earn a place in the header row on their own,
+// next to the two menus. They are the pages a visitor is most likely to want
+// by name rather than to browse for. Every other section is one click away
+// inside "The record", so nothing is hidden, and the row stays six items wide
+// at every screen size. Six short words never need a second line.
+export const NAV_SHORTCUTS = ['map', 'answers', 'confirmed', 'news']
+
 export const NON_PAGE_TYPES = ['release_fact']
 
 // Amazon Associates tracking ids, created 16 September 2026, one per store.

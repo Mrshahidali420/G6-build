@@ -157,159 +157,212 @@ p { margin: 0 0 1.05em; }
 
 /* ---------- Masthead ---------- */
 
-.masthead { background: var(--glaze); color: var(--on-glaze); }
-/* One wrapping row. On a wide screen the logo, the search field and the two
-   links all sit on the same line. Under 760px the field is given a full-width
-   basis so it wraps onto a line of its own beneath the logo and the menu
-   button, where a field squeezed next to a wordmark would be unusable. */
-.masthead__top { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; padding-block: 12px; }
-.masthead__brand { flex: 0 0 auto; }
-.masthead__brand { display: inline-flex; align-items: center; gap: 11px; text-decoration: none; color: var(--on-glaze); }
-.masthead__brand:hover { color: #ffffff; }
-.masthead__name {
-  font-family: var(--display); font-weight: 800; font-stretch: 122%;
-  font-size: 1.05rem; letter-spacing: 0.015em; line-height: 1; text-transform: uppercase;
-}
-.masthead__name small {
-  display: block; font-size: 0.58rem; font-weight: 600; font-stretch: 100%;
-  letter-spacing: 0.15em; color: var(--on-glaze-2); margin-top: 5px; text-transform: uppercase;
-}
-.masthead__links { margin-left: auto; display: flex; gap: 16px; align-items: center; }
-.masthead__links a {
-  font-family: var(--ui); font-size: 0.82rem; font-weight: 600; letter-spacing: 0.02em;
-  color: var(--on-glaze-2); text-decoration: none; white-space: nowrap;
-}
-.masthead__links a:hover { color: var(--on-glaze); text-decoration: underline; }
+/* THE MASTHEAD, THIRD VERSION. Read this before changing it.
 
-/* The search field itself, shown at every width. A magnifier icon that only
-   links to /search costs a click and a page load before the visitor can even
-   type, and on this site search is the main way to reach 31 answer pages. */
-.find { display: flex; gap: 8px; align-items: stretch; flex: 1 1 300px; max-width: 460px; }
+   Version one was a deep green slab carrying eleven full section titles in a
+   strip with the scrollbar hidden, so the last sections sat off the right edge
+   of the screen and nothing on the page admitted it. Version two let that row
+   wrap onto a second line, which fixed the overflow and broke the straight
+   edge of the header. Version three stopped patching the row and threw it out.
+
+   What is here now is one bar, not two, and it is stone rather than glaze. The
+   civic-document world this site is built in puts terrazzo and plaster on the
+   ground and saves the deep glazed tile for whole page regions, so a plaster
+   masthead sitting directly above a glaze hero band is the material logic of
+   the site read correctly, not a departure from it. A brass hairline closes the
+   bar off from the page the way a rule closes a letterhead.
+
+   The bar holds four things and never more: the wordmark, one button that opens
+   everything, four direct links, and the search field. Nothing in it is a list
+   that can grow, so no future section can ever push it off screen or onto a
+   second line. Adding a section changes the panel, which is a grid and wants
+   more rows anyway.
+
+   The same button and the same panel serve a phone and a desktop. There is no
+   second menu hidden behind a breakpoint any more, so the two cannot drift
+   apart, and nothing about this needs JavaScript: <details> carries its own
+   open state and its own accessible name. */
+
+.mast { position: relative; z-index: 50; background: var(--plaster); }
+
+/* The strip above the bar. It says what the site is, in a sentence, above the
+   fold on every page. A masthead that only carries navigation tells a visitor
+   arriving cold from Google nothing about where they have landed. */
+.mast__strip { background: var(--glaze-deep); color: var(--on-glaze-2); }
+.mast__strip-in {
+  display: flex; align-items: center; justify-content: space-between; gap: 18px;
+  padding-block: 7px;
+  font-family: var(--ui); font-size: 0.7rem; font-weight: 600; letter-spacing: 0.04em;
+}
+.mast__claim { margin: 0; }
+.mast__strip-links { display: flex; gap: 16px; flex: none; }
+.mast__strip-links a { color: var(--on-glaze-2); text-decoration: none; white-space: nowrap; }
+.mast__strip-links a:hover { color: var(--on-glaze); text-decoration: underline; }
+
+/* The bar itself. One line, four items, no wrapping above the phone step. */
+.mast__bar { border-bottom: 3px solid var(--brass); }
+.mast__row {
+  display: flex; align-items: center; gap: clamp(12px, 1.8vw, 26px);
+  padding-block: 13px;
+}
+
+.mast__brand {
+  flex: 0 0 auto; display: inline-flex; align-items: center; gap: 11px;
+  text-decoration: none; color: var(--glaze-deep);
+}
+.mast__brand:hover .mast__name { text-decoration: underline; text-underline-offset: 3px; }
+.mast__name {
+  font-family: var(--display); font-weight: 800; font-stretch: 122%;
+  font-size: 1.08rem; letter-spacing: 0.015em; line-height: 1; text-transform: uppercase;
+  white-space: nowrap;
+}
+.mast__name small {
+  display: block; margin-top: 5px;
+  font-size: 0.56rem; font-weight: 700; font-stretch: 100%; letter-spacing: 0.16em;
+  text-transform: uppercase; color: var(--brass-ink);
+}
+
+/* The four direct links. A fixed count, short words, and they are the pages a
+   visitor asks for by name rather than browses for. Everything else lives one
+   click away in the panel, so nothing is buried and nothing can overflow. */
+.mast__quick { flex: 0 0 auto; display: flex; align-items: center; gap: clamp(10px, 1.4vw, 20px); }
+.mast__quick a {
+  position: relative; padding-block: 4px; white-space: nowrap;
+  font-family: var(--ui); font-size: 0.82rem; font-weight: 600; letter-spacing: 0.01em;
+  color: var(--ink-2); text-decoration: none;
+}
+.mast__quick a:hover { color: var(--glaze-deep); }
+.mast__quick a[aria-current="page"] { color: var(--glaze-deep); }
+.mast__quick a[aria-current="page"]::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: -17px; height: 3px;
+  background: var(--glaze);
+}
+
+/* ---------- The one menu, at every width ---------- */
+
+.browse { flex: 0 0 auto; }
+.browse__btn {
+  display: inline-flex; align-items: center; gap: 9px; cursor: pointer;
+  padding: 9px 15px; list-style: none;
+  background: var(--glaze); color: var(--on-glaze);
+  border: 1px solid var(--glaze-deep); border-radius: var(--r);
+  font-family: var(--ui); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.07em;
+  text-transform: uppercase; white-space: nowrap;
+}
+.browse__btn::-webkit-details-marker { display: none; }
+.browse__btn:hover { background: var(--glaze-lift); }
+.browse__icon { display: flex; }
+.browse__icon--close { display: none; }
+.browse[open] .browse__icon--open { display: none; }
+.browse[open] .browse__icon--close { display: flex; }
+.browse[open] > .browse__btn { background: var(--glaze-deep); }
+
+/* The panel is measured against the masthead, not against its own button, so
+   it is the full width of the page and its columns line up with the shell.
+   A panel hung off a button has to be capped somewhere near 500px, and 26
+   links in a 500px box is a list, not a menu. */
+.browse__panel {
+  position: absolute; left: 0; right: 0; top: 100%; z-index: 60;
+  background: var(--stone);
+  border-bottom: 3px solid var(--brass);
+  box-shadow: 0 20px 38px rgb(15 22 20 / 0.22);
+}
+.browse__cols {
+  display: grid; gap: 0 clamp(20px, 3vw, 44px);
+  grid-template-columns: 1.7fr 1.3fr 1fr;
+  padding-block: 26px 30px;
+}
+.browse__col + .browse__col { border-left: 1px solid var(--line-strong); padding-left: clamp(20px, 3vw, 44px); }
+.browse__h {
+  margin: 0; font-family: var(--ui); font-size: 0.68rem; font-weight: 700; letter-spacing: 0.16em;
+  text-transform: uppercase; color: var(--brass-ink);
+}
+.browse__note { margin: 7px 0 0; font-size: 0.86rem; line-height: 1.45; color: var(--ink-2); max-width: 34ch; }
+.browse__list { list-style: none; margin: 14px 0 0; padding: 0; }
+.browse__list--two { columns: 2; column-gap: clamp(16px, 2vw, 30px); }
+.browse__list li { break-inside: avoid; }
+.browse__list a {
+  display: block; padding: 6px 0;
+  font-family: var(--ui); font-size: 0.88rem; font-weight: 600; line-height: 1.35;
+  color: var(--ink); text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.browse__list a:hover { color: var(--glaze-deep); border-bottom-color: var(--glaze); }
+.browse__list a[aria-current="page"] { color: var(--glaze-deep); border-bottom-color: var(--brass); }
+
+/* ---------- Search ---------- */
+
+/* A real field, shown at every width. A magnifier that only links to /search
+   costs a click and a page load before a visitor can type, and search is the
+   main way anyone reaches the answer pages. */
+.find { flex: 1 1 240px; min-width: 0; display: flex; gap: 8px; align-items: stretch; max-width: 380px; margin-left: auto; }
 .find__label {
   position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
   overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
 }
 .find__input {
   flex: 1 1 auto; min-width: 0;
-  padding: 10px 13px;
-  background: var(--glaze-deep); color: var(--on-glaze);
-  border: 1px solid color-mix(in srgb, var(--on-glaze) 26%, transparent);
+  padding: 9px 12px;
+  background: #ffffff; color: var(--ink);
+  border: 1px solid var(--line-strong);
   border-radius: var(--r);
-  font-family: var(--ui); font-size: 0.9rem;
+  font-family: var(--ui); font-size: 0.86rem;
   -webkit-appearance: none; appearance: none;
 }
-.find__input::placeholder { color: var(--on-glaze-2); }
-.find__input:focus-visible {
-  outline: 2px solid var(--brass); outline-offset: 1px;
-  border-color: var(--brass);
-}
+.find__input::placeholder { color: var(--ink-2); }
+.find__input:focus-visible { outline: 2px solid var(--glaze); outline-offset: 1px; border-color: var(--glaze); }
 .find__btn {
   flex: 0 0 auto; display: inline-flex; align-items: center; gap: 7px;
-  padding: 10px 16px; cursor: pointer;
+  padding: 9px 14px; cursor: pointer;
   background: var(--brass); color: var(--brass-on); border: 1px solid var(--brass);
   border-radius: var(--r);
-  font-family: var(--ui); font-size: 0.82rem; font-weight: 700;
-  letter-spacing: 0.04em; text-transform: uppercase;
+  font-family: var(--ui); font-size: 0.76rem; font-weight: 700;
+  letter-spacing: 0.05em; text-transform: uppercase;
 }
 .find__btn:hover { background: #c79a45; }
 
-/* The eleven sections read as a row of glazed tiles, not a text dump.
-   The row WRAPS. It used to be min-width: max-content inside an overflow
-   scroller, which on a 1280px screen pushed the last sections off the right
-   edge with no scrollbar drawn to admit it. A tile row that wraps to a second
-   line is always fully on screen, which is the whole point of a nav. */
-.sections { background: var(--glaze-deep); padding-top: 2px; }
-.sections__inner {
-  display: flex; flex-wrap: wrap; gap: 2px; max-width: var(--shell); margin: 0 auto;
-  padding-inline: clamp(12px, 4vw, 30px);
-}
-.sections a {
-  flex: 0 0 auto; padding: 9px 14px 10px; background: var(--glaze);
-  font-family: var(--ui); font-size: 0.76rem; font-weight: 600; letter-spacing: 0.05em;
-  text-transform: uppercase; color: var(--on-glaze-2); text-decoration: none;
-  border-bottom: 3px solid transparent;
-}
-.sections a:hover { color: var(--on-glaze); background: var(--glaze-lift); }
-.sections a[aria-current="page"] { color: var(--on-glaze); border-bottom-color: var(--brass); background: var(--glaze-lift); }
+/* ---------- Masthead at smaller widths ---------- */
 
-/* The second row: the parts of the site that are not a catalogue hub. Quieter
-   than the row above it, because the catalogue is the front door and this is
-   the reference shelf behind it. It wraps for the same reason. */
-.records { background: var(--glaze-deep); border-top: 1px solid color-mix(in srgb, var(--on-glaze) 12%, transparent); }
-.records__inner {
-  display: flex; flex-wrap: wrap; column-gap: 20px; row-gap: 2px;
-  max-width: var(--shell); margin: 0 auto;
-  padding: 7px clamp(12px, 4vw, 30px) 8px;
-}
-.records a {
-  flex: 0 0 auto; padding: 2px 0;
-  font-family: var(--ui); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em;
-  text-transform: uppercase; color: var(--on-glaze-2); text-decoration: none;
-  border-bottom: 2px solid transparent;
-}
-.records a:hover { color: var(--on-glaze); border-bottom-color: color-mix(in srgb, var(--brass) 70%, transparent); }
-.records a[aria-current="page"] { color: var(--on-glaze); border-bottom-color: var(--brass); }
-
-/* A heading inside the phone menu, so three lists of links do not read as one
-   list of thirty. */
-.menu__head {
-  margin: 0; padding: 14px clamp(16px, 4vw, 34px) 7px;
-  font-family: var(--ui); font-size: 0.66rem; font-weight: 700; letter-spacing: 0.16em;
-  text-transform: uppercase; color: var(--brass);
-  background: color-mix(in srgb, var(--on-glaze) 5%, transparent);
+/* The four direct links go first, because the panel already holds every one of
+   them. Nothing is lost by dropping them and the bar keeps its single line. */
+@media (max-width: 1040px) {
+  .mast__quick { display: none; }
 }
 
-/* Mobile menu: hidden above the breakpoint, where the desktop header already
-   fits everything. <details> carries the open state itself, so the button
-   works with no JS on the page at all. */
-.menu { display: none; }
-.menu__button {
-  display: flex; align-items: center; justify-content: center;
-  width: 38px; height: 38px; padding: 0; margin: 0; cursor: pointer;
-  color: var(--on-glaze); list-style: none;
-}
-.menu__button::-webkit-details-marker { display: none; }
-.menu__icon--close { display: none; }
-.menu[open] .menu__icon--open { display: none; }
-.menu[open] .menu__icon--close { display: flex; }
-/* Accessible name for the button, kept off screen rather than in the icon. */
-.menu__button-label {
-  position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
-  overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+@media (max-width: 860px) {
+  .browse__cols { grid-template-columns: 1fr 1fr; }
+  .browse__col--site { grid-column: 1 / -1; margin-top: 22px; padding-top: 20px; border-left: 0; padding-left: 0; border-top: 1px solid var(--line-strong); }
 }
 
-.menu__panel {
-  display: flex; flex-direction: column;
-  position: absolute; top: 100%; left: 0; right: 0; z-index: 5;
-  background: var(--glaze-deep); border-top: 1px solid color-mix(in srgb, var(--on-glaze) 18%, transparent);
-}
-.menu__panel a {
-  padding: 13px clamp(16px, 4vw, 34px);
-  font-family: var(--ui); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.04em;
-  text-transform: uppercase; color: var(--on-glaze-2); text-decoration: none;
-  border-bottom: 1px solid color-mix(in srgb, var(--on-glaze) 10%, transparent);
-}
-.menu__panel a:hover,
-.menu__panel a[aria-current="page"] { color: var(--on-glaze); background: var(--glaze-lift); }
-
-@media (max-width: 760px) {
-  .masthead { position: relative; }
-  .masthead__links-full { display: none; }
-  .sections, .records { display: none; }
-  .menu { display: block; }
-  /* The word "Search" would eat a third of a 390px row, so the button falls
-     back to its icon alone. The label stays in the DOM for a screen reader. */
-  /* Logo first, menu button hard right, field on its own line below both. */
-  .masthead__brand { order: 1; }
-  .masthead__links { display: none; }
-  .menu { order: 2; margin-left: auto; }
-  .find { order: 3; flex: 1 0 100%; }
-  .find__btn { padding: 10px 13px; }
+@media (max-width: 680px) {
+  .mast__claim { display: none; }
+  .mast__strip-in { justify-content: flex-end; }
+  /* Wordmark and button hold the first line. The field takes the second,
+     because a field squeezed beside a wordmark on a 390px screen is unusable. */
+  .mast__row { flex-wrap: wrap; }
+  /* The words would take a third of a 390px line, so the button falls back to
+     its icon. The label stays in the DOM, so the button keeps its name for a
+     screen reader. */
+  .browse__btn { padding: 9px 11px; }
+  .browse__label {
+    position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
+    overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+  }
+  .mast__brand { order: 1; }
+  .browse { order: 2; margin-left: auto; }
+  .find { order: 3; flex: 1 0 100%; max-width: none; margin-left: 0; }
   .find__btn span {
     position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
     overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
   }
-  .find { max-width: none; }
+  .browse__panel { max-height: 74vh; overflow-y: auto; }
+  .browse__cols { grid-template-columns: 1fr; padding-block: 20px 24px; }
+  .browse__list--two { columns: 2; }
+  .browse__col + .browse__col {
+    border-left: 0; padding-left: 0; margin-top: 20px; padding-top: 18px;
+    border-top: 1px solid var(--line-strong);
+  }
+  .browse__col--site { margin-top: 20px; padding-top: 18px; }
 }
 
 /* ---------- Provenance marks ---------- */

@@ -30,18 +30,38 @@ export const ADSENSE_SLOTS = {
 }
 
 // Entity types that get a hub page. The hub route and the sitemap both read this.
+// `nav` is the label the header row uses. The full title is the page title and
+// the words a search engine reads; the header needs the shortest word that is
+// still unambiguous, because eleven full titles in one row run off the screen.
 export const HUB_TYPES = [
-  { type: 'character', slug: 'characters', title: 'GTA 6 Characters' },
-  { type: 'vehicle', slug: 'vehicles', title: 'GTA 6 Vehicles' },
-  { type: 'location', slug: 'locations', title: 'GTA 6 Map and Locations' },
-  { type: 'song', slug: 'soundtrack', title: 'GTA 6 Soundtrack' },
-  { type: 'business', slug: 'businesses', title: 'GTA 6 Shops and Businesses' },
-  { type: 'brand', slug: 'brands', title: 'GTA 6 Brands and Manufacturers' },
-  { type: 'landmark', slug: 'landmarks', title: 'GTA 6 Landmarks' },
-  { type: 'weapon', slug: 'weapons', title: 'GTA 6 Weapons' },
-  { type: 'gameplay_feature', slug: 'gameplay', title: 'GTA 6 Gameplay Features' },
-  { type: 'edition', slug: 'editions', title: 'GTA 6 Editions' },
-  { type: 'wildlife', slug: 'wildlife', title: 'GTA 6 Animals and Wildlife' },
+  { type: 'character', slug: 'characters', title: 'GTA 6 Characters', nav: 'Characters' },
+  { type: 'vehicle', slug: 'vehicles', title: 'GTA 6 Vehicles', nav: 'Vehicles' },
+  { type: 'location', slug: 'locations', title: 'GTA 6 Map and Locations', nav: 'Locations' },
+  { type: 'song', slug: 'soundtrack', title: 'GTA 6 Soundtrack', nav: 'Soundtrack' },
+  { type: 'business', slug: 'businesses', title: 'GTA 6 Shops and Businesses', nav: 'Businesses' },
+  { type: 'brand', slug: 'brands', title: 'GTA 6 Brands and Manufacturers', nav: 'Brands' },
+  { type: 'landmark', slug: 'landmarks', title: 'GTA 6 Landmarks', nav: 'Landmarks' },
+  { type: 'weapon', slug: 'weapons', title: 'GTA 6 Weapons', nav: 'Weapons' },
+  { type: 'gameplay_feature', slug: 'gameplay', title: 'GTA 6 Gameplay Features', nav: 'Gameplay' },
+  { type: 'edition', slug: 'editions', title: 'GTA 6 Editions', nav: 'Editions' },
+  { type: 'wildlife', slug: 'wildlife', title: 'GTA 6 Animals and Wildlife', nav: 'Wildlife' },
+]
+
+// The pages that are not a catalogue hub but are still a whole section of the
+// site. Before this list they existed only in the footer and in the phone
+// menu, so a desktop visitor never saw nine of them.
+export const RECORD_PAGES = [
+  { slug: 'map', nav: 'Map', title: 'Map of Leonida' },
+  { slug: 'answers', nav: 'Answers', title: 'Answers' },
+  { slug: 'confirmed', nav: 'Confirmed', title: 'Confirmed and rumoured' },
+  { slug: 'news', nav: 'News', title: 'News' },
+  { slug: 'newswire', nav: 'Newswire', title: 'Rockstar Newswire' },
+  { slug: 'trailers', nav: 'Trailers', title: 'Trailer breakdown' },
+  { slug: 'trailer-locations', nav: 'Trailer map', title: 'Where the trailers were filmed' },
+  { slug: 'gallery', nav: 'Screenshots', title: 'Official screenshots' },
+  { slug: 'numbers', nav: 'Numbers', title: 'GTA 6 by the numbers' },
+  { slug: 'real-places', nav: 'Real places', title: 'The real Florida behind GTA 6' },
+  { slug: 'tracker', nav: 'Claim record', title: 'The claim record' },
 ]
 
 // Types that exist in the data but never get their own page.

@@ -1,5 +1,5 @@
 ---
-import { SITE_NAME, SITE_URL, ADSENSE_CLIENT, GA_MEASUREMENT_ID, HUB_TYPES, canonical } from '../lib/site.mjs'
+import { SITE_NAME, SITE_URL, ADSENSE_CLIENT, GA_MEASUREMENT_ID, HUB_TYPES, RECORD_PAGES, canonical } from '../lib/site.mjs'
 import { pageEntities } from '../lib/entities.mjs'
 import Logo from '../components/Logo.astro'
 import Icon from '../components/Icon.astro'
@@ -161,23 +161,16 @@ const footConfirmed = pageEntities.filter((entity) => entity.confirmedStatus ===
             <span class="menu__button-label">Menu</span>
           </summary>
           <nav class="menu__panel" aria-label="All sections">
+            <p class="menu__head">The catalogue</p>
             {HUB_TYPES.map((hub) => (
-              <a href={`/${hub.slug}`} aria-current={current(hub.slug)}>
-                {hub.title.replace('GTA 6 ', '')}
-              </a>
+              <a href={`/${hub.slug}`} aria-current={current(hub.slug)}>{hub.nav}</a>
             ))}
-            <a href="/map" aria-current={current('map')}>Map</a>
-            <a href="/answers" aria-current={current('answers')}>Answers</a>
-            <a href="/confirmed" aria-current={current('confirmed')}>Confirmed</a>
-            <a href="/news" aria-current={current('news')}>News</a>
-            <a href="/newswire" aria-current={current('newswire')}>Newswire</a>
-            <a href="/trailers" aria-current={current('trailers')}>Trailers</a>
-            <a href="/trailer-locations" aria-current={current('trailer-locations')}>Trailer locations</a>
-            <a href="/gallery" aria-current={current('gallery')}>Gallery</a>
-            <a href="/numbers" aria-current={current('numbers')}>Numbers</a>
-            <a href="/real-places" aria-current={current('real-places')}>Real places</a>
-            <a href="/tracker" aria-current={current('tracker')}>Claim record</a>
-            <a href="/about" aria-current={current('about')}>About</a>
+            <p class="menu__head">The record</p>
+            {RECORD_PAGES.map((page) => (
+              <a href={`/${page.slug}`} aria-current={current(page.slug)}>{page.title}</a>
+            ))}
+            <p class="menu__head">This site</p>
+            <a href="/about" aria-current={current('about')}>About and sources</a>
             <a href="/contact" aria-current={current('contact')}>Contact</a>
           </nav>
         </details>
@@ -209,12 +202,29 @@ const footConfirmed = pageEntities.filter((entity) => entity.confirmedStatus ===
         })()
       </script>
 
-      <nav class="sections" aria-label="Sections">
+      <!--
+        Two rows, both of which wrap. The old single row held eleven full hub
+        titles, set them to max-content and let the strip scroll sideways, so on
+        a 1280px desktop the last three sections sat off the right edge with no
+        scrollbar to say so. Short labels plus wrapping means every section is
+        on screen at every width above the phone breakpoint.
+
+        The second row is the part of the site that is not a catalogue hub. It
+        used to live only in the footer and in the phone menu, which left nine
+        whole sections with no link from the top of a desktop page.
+      -->
+      <nav class="sections" aria-label="The catalogue">
         <div class="sections__inner">
           {HUB_TYPES.map((hub) => (
-            <a href={`/${hub.slug}`} aria-current={current(hub.slug)}>
-              {hub.title.replace('GTA 6 ', '')}
-            </a>
+            <a href={`/${hub.slug}`} aria-current={current(hub.slug)}>{hub.nav}</a>
+          ))}
+        </div>
+      </nav>
+
+      <nav class="records" aria-label="The record">
+        <div class="records__inner">
+          {RECORD_PAGES.map((page) => (
+            <a href={`/${page.slug}`} aria-current={current(page.slug)} title={page.title}>{page.nav}</a>
           ))}
         </div>
       </nav>
@@ -264,17 +274,9 @@ const footConfirmed = pageEntities.filter((entity) => entity.confirmedStatus ===
           <nav class="colophon__col" aria-label="This site">
             <h2 class="colophon__head">This site</h2>
             <ul>
-              <li><a href="/map">Map of Leonida</a></li>
-              <li><a href="/answers">Answers</a></li>
-              <li><a href="/confirmed">Confirmed and rumoured</a></li>
-              <li><a href="/news">News</a></li>
-              <li><a href="/newswire">Rockstar Newswire</a></li>
-              <li><a href="/trailers">Trailer breakdown</a></li>
-              <li><a href="/trailer-locations">Where the trailers were filmed</a></li>
-              <li><a href="/gallery">Official screenshots</a></li>
-              <li><a href="/numbers">GTA 6 by the numbers</a></li>
-              <li><a href="/real-places">The real Florida behind GTA 6</a></li>
-              <li><a href="/tracker">The claim record</a></li>
+              {RECORD_PAGES.map((page) => (
+                <li><a href={`/${page.slug}`}>{page.title}</a></li>
+              ))}
               <li><a href="/updates">Daily coverage log</a></li>
               <li><a href="/about">About and sources</a></li>
               <li><a href="/search">Search</a></li>

@@ -213,12 +213,15 @@ p { margin: 0 0 1.05em; }
 }
 .find__btn:hover { background: #c79a45; }
 
-/* The nine sections read as a row of glazed tiles, not a text dump. */
-.sections { background: var(--glaze-deep); padding-top: 2px; overflow-x: auto; scrollbar-width: none; }
-.sections::-webkit-scrollbar { display: none; }
+/* The eleven sections read as a row of glazed tiles, not a text dump.
+   The row WRAPS. It used to be min-width: max-content inside an overflow
+   scroller, which on a 1280px screen pushed the last sections off the right
+   edge with no scrollbar drawn to admit it. A tile row that wraps to a second
+   line is always fully on screen, which is the whole point of a nav. */
+.sections { background: var(--glaze-deep); padding-top: 2px; }
 .sections__inner {
-  display: flex; gap: 2px; max-width: var(--shell); margin: 0 auto;
-  padding-inline: clamp(12px, 4vw, 30px); min-width: max-content;
+  display: flex; flex-wrap: wrap; gap: 2px; max-width: var(--shell); margin: 0 auto;
+  padding-inline: clamp(12px, 4vw, 30px);
 }
 .sections a {
   flex: 0 0 auto; padding: 9px 14px 10px; background: var(--glaze);
@@ -228,6 +231,33 @@ p { margin: 0 0 1.05em; }
 }
 .sections a:hover { color: var(--on-glaze); background: var(--glaze-lift); }
 .sections a[aria-current="page"] { color: var(--on-glaze); border-bottom-color: var(--brass); background: var(--glaze-lift); }
+
+/* The second row: the parts of the site that are not a catalogue hub. Quieter
+   than the row above it, because the catalogue is the front door and this is
+   the reference shelf behind it. It wraps for the same reason. */
+.records { background: var(--glaze-deep); border-top: 1px solid color-mix(in srgb, var(--on-glaze) 12%, transparent); }
+.records__inner {
+  display: flex; flex-wrap: wrap; column-gap: 20px; row-gap: 2px;
+  max-width: var(--shell); margin: 0 auto;
+  padding: 7px clamp(12px, 4vw, 30px) 8px;
+}
+.records a {
+  flex: 0 0 auto; padding: 2px 0;
+  font-family: var(--ui); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--on-glaze-2); text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+.records a:hover { color: var(--on-glaze); border-bottom-color: color-mix(in srgb, var(--brass) 70%, transparent); }
+.records a[aria-current="page"] { color: var(--on-glaze); border-bottom-color: var(--brass); }
+
+/* A heading inside the phone menu, so three lists of links do not read as one
+   list of thirty. */
+.menu__head {
+  margin: 0; padding: 14px clamp(16px, 4vw, 34px) 7px;
+  font-family: var(--ui); font-size: 0.66rem; font-weight: 700; letter-spacing: 0.16em;
+  text-transform: uppercase; color: var(--brass);
+  background: color-mix(in srgb, var(--on-glaze) 5%, transparent);
+}
 
 /* Mobile menu: hidden above the breakpoint, where the desktop header already
    fits everything. <details> carries the open state itself, so the button
@@ -265,7 +295,7 @@ p { margin: 0 0 1.05em; }
 @media (max-width: 760px) {
   .masthead { position: relative; }
   .masthead__links-full { display: none; }
-  .sections { display: none; }
+  .sections, .records { display: none; }
   .menu { display: block; }
   /* The word "Search" would eat a third of a 390px row, so the button falls
      back to its icon alone. The label stays in the DOM for a screen reader. */

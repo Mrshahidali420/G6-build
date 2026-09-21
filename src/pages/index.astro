@@ -7,6 +7,12 @@ import Mark from '../components/Mark.astro'
 import Countdown from '../components/Countdown.astro'
 import Ad from '../components/Ad.astro'
 import { SITE_NAME, SITE_TAGLINE, HUB_TYPES, ADSENSE_CLIENT, ADSENSE_SLOTS, canonical } from '../lib/site.mjs'
+import gallery from '../data/gallery.json'
+import mapPoints from '../data/map-points.json'
+import cameras from '../data/camera-shots.json'
+import trailerFeed from '../data/trailers.json'
+import realPlaces from '../data/real-places.json'
+import newswire from '../data/newswire.json'
 import { pageEntities, entitiesOfType } from '../lib/entities.mjs'
 import { imageFor } from '../lib/images.mjs'
 import { GAME } from '../lib/schema.mjs'
@@ -17,9 +23,46 @@ const description = `${total} Grand Theft Auto VI entries, ${confirmed} of them 
 
 // The answer pages carry the search traffic, so the home page links the top of
 // them directly. order is set per page in its own frontmatter.
-const answers = (await getCollection('answers'))
-  .sort((a, b) => a.data.order - b.data.order)
-  .slice(0, 10)
+const allAnswers = (await getCollection('answers')).sort((a, b) => a.data.order - b.data.order)
+const answers = allAnswers.slice(0, 12)
+
+const newsCount = (await getCollection('news')).length
+const trackerCount = (await getCollection('tracker')).length
+
+// The three newest Rockstar posts, shown on the page rather than hidden behind
+// a link. A front page that only links to its own sections looks like an empty
+// shop; a front page that shows what is inside them does not.
+const latest = [...newswire.posts]
+  .sort((a, b) => String(b.date).localeCompare(String(a.date)))
+  .slice(0, 3)
+
+// The parts of the site that are not a catalogue hub. Each one prints what it
+// actually holds, because a count is the honest way to say a section is worth
+// opening. Every number here is read from the data file that builds the page.
+const records = [
+  { slug: 'map', title: 'Map of Leonida', count: `${mapPoints.counts.kept} places placed`,
+    blurb: 'Every named place Rockstar has shown, on one pannable map.' },
+  { slug: 'gallery', title: 'Official screenshots', count: `${gallery.counts.shots} pictures`,
+    blurb: 'Every still image Rockstar has published, credited and sorted.' },
+  { slug: 'trailers', title: 'Trailer breakdown', count: `${trailerFeed.counts.confirmed} details confirmed`,
+    blurb: 'What each of the three trailers actually shows, shot by shot.' },
+  { slug: 'trailer-locations', title: 'Where the trailers were filmed', count: `${cameras.counts.kept} camera positions`,
+    blurb: 'The spot in Leonida each official shot was filmed from, and the way the camera faced.' },
+  { slug: 'real-places', title: 'The real Florida behind GTA 6', count: `${realPlaces.counts.kept} real places`,
+    blurb: 'The actual Florida towns, roads and landmarks Leonida is built on.' },
+  { slug: 'newswire', title: 'Rockstar Newswire', count: `${newswire.counts.total} posts kept`,
+    blurb: 'Rockstar’s own announcements, archived in order and checked daily.' },
+  { slug: 'confirmed', title: 'Confirmed and rumoured', count: `${confirmed} confirmed`,
+    blurb: 'The line between what Rockstar said and what somebody else said.' },
+  { slug: 'answers', title: 'Answers', count: `${allAnswers.length} questions`,
+    blurb: 'The questions people actually type, answered with a source on each one.' },
+  { slug: 'news', title: 'News', count: `${newsCount} dated entries`,
+    blurb: 'Every announcement with the date it was made.' },
+  { slug: 'tracker', title: 'The claim record', count: `${trackerCount} claims logged`,
+    blurb: 'What people claimed about this game, and how it held up.' },
+  { slug: 'numbers', title: 'GTA 6 by the numbers', count: 'Charts',
+    blurb: 'The money, the wait and the search interest, drawn from public data.' },
+]
 
 // The front page is the only page on a check-date site that had no check date.
 // The newest answer check is the honest one to print: those are the pages this
@@ -134,6 +177,27 @@ const showAd = Boolean(ADSENSE_CLIENT && ADSENSE_SLOTS.index)
     </div>
   </section>
 
+  <section class="band">
+    <div class="shell">
+      <h2>The record, section by section</h2>
+      <p class="lede">
+        The catalogue is only half the site. These are the other eleven parts of
+        it, and what each one holds today.
+      </p>
+      <ul class="recs">
+        {records.map((record) => (
+          <li class="rec">
+            <a class="rec__link" href={`/${record.slug}`}>
+              <span class="rec__title">{record.title}</span>
+              <span class="rec__count">{record.count}</span>
+            </a>
+            <p class="rec__blurb">{record.blurb}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
   <section class="band band--plaster">
     <div class="shell">
       <h2>The questions people ask most</h2>
@@ -188,6 +252,30 @@ const showAd = Boolean(ADSENSE_CLIENT && ADSENSE_SLOTS.index)
     </section>
   )}
 
+  <section class="band band--plaster">
+    <div class="shell">
+      <h2>The last thing Rockstar said</h2>
+      <p class="lede">
+        Straight from Rockstar’s own Newswire. This list is rebuilt every day,
+        so the top entry is the newest thing Rockstar has published.
+      </p>
+      <ul class="wire">
+        {latest.map((post) => (
+          <li class="wire__item">
+            <p class="wire__date">{post.date}</p>
+            <h3 class="wire__title"><a href="/newswire">{post.title}</a></h3>
+            {post.subtitle && <p class="wire__sub">{post.subtitle}</p>}
+          </li>
+        ))}
+      </ul>
+      <div class="btns">
+        <a class="btn" href="/newswire">The whole Newswire archive <Icon name="arrow" size={16} /></a>
+        <a class="btn btn--quiet" href="/gallery">Official screenshots</a>
+        <a class="btn btn--quiet" href="/trailers">Trailer breakdown</a>
+      </div>
+    </div>
+  </section>
+
   <section class="band">
     <div class="shell prose">
       <h2>How this site works</h2>
@@ -211,6 +299,12 @@ const showAd = Boolean(ADSENSE_CLIENT && ADSENSE_SLOTS.index)
       </p>
       <p>
         <a href="/news">Every dated announcement so far</a> ·
+        <a href="/confirmed">What Rockstar has confirmed</a> ·
+        <a href="/tracker">The claim record</a> ·
+        <a href="/gta-6-release-date">The release date and its history</a> ·
+        <a href="/gta-6-cheats">Why there are no cheats yet</a> ·
+        <a href="/best-cars-in-gta-6">The confirmed cars</a> ·
+        <a href="/gta-6-preparation-guide">Getting ready for launch</a> ·
         <a href="/about">How the data is checked</a> ·
         <a href="/search">Search every page</a>
       </p>
@@ -219,6 +313,41 @@ const showAd = Boolean(ADSENSE_CLIENT && ADSENSE_SLOTS.index)
 </BaseLayout>
 
 <style>
+  /* The eleven non-catalogue sections, as a card each. A card carries what the
+     section holds, because a count is the honest reason to open it. */
+  .recs {
+    list-style: none; margin: 26px 0 0; padding: 0;
+    display: grid; gap: 1px;
+    grid-template-columns: repeat(auto-fill, minmax(258px, 1fr));
+    background: var(--line-strong);
+    border: 1px solid var(--line-strong);
+    border-radius: var(--r);
+    overflow: hidden;
+  }
+  .rec { background: var(--plaster); padding: 15px 16px 16px; }
+  .rec__link { display: block; text-decoration: none; color: inherit; }
+  .rec__link:hover .rec__title { text-decoration: underline; }
+  .rec__title { display: block; font-family: var(--display); font-weight: 700; font-size: 1.02rem; line-height: 1.25; color: var(--glaze-deep); }
+  .rec__count {
+    display: block; margin-top: 6px;
+    font-family: var(--ui); font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--brass-ink);
+  }
+  .rec__blurb { margin: 9px 0 0; font-size: 0.9rem; line-height: 1.5; color: var(--ink-2); }
+
+  /* The three newest Rockstar posts, shown rather than linked. */
+  .wire { list-style: none; margin: 24px 0 0; padding: 0; }
+  .wire__item { padding: 16px 0; border-top: 1px solid color-mix(in srgb, var(--brass) 55%, transparent); }
+  .wire__item:first-child { padding-top: 14px; }
+  .wire__date {
+    margin: 0; font-family: var(--ui); font-size: 0.7rem; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase; color: var(--brass-ink);
+  }
+  .wire__title { margin: 7px 0 0; font-size: 1.08rem; line-height: 1.3; }
+  .wire__title a { color: inherit; text-decoration: none; }
+  .wire__title a:hover { text-decoration: underline; }
+  .wire__sub { margin: 6px 0 0; font-size: 0.92rem; line-height: 1.5; color: var(--ink-2); }
+
   /* Each section on the front page is its own strip: a name, the way into the
      rest of it, and four entries. A brass rule over the name separates one
      strip from the next without starting a new band for every section. */

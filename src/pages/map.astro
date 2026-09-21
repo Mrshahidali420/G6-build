@@ -14,6 +14,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro'
 import { SITE_NAME, SITE_URL, canonical } from '../lib/site.mjs'
 import { GAME } from '../lib/schema.mjs'
+import { landPath, labelAt } from '../lib/mapblobs.mjs'
 import data from '../data/map-points.json'
 
 const { points, bounds, counts, footage, medianErrorM, maxErrorM, sourceUrl } = data
@@ -43,6 +44,18 @@ const zoneCounts = ZONES.map((zone) => ({
   ...zone,
   count: points.filter((point) => (zone.key === 'unknown' ? !ZONES.slice(0, -1).some((z) => z.key === point.zone) : point.zone === zone.key)).length,
 })).filter((zone) => zone.count > 0)
+
+// Ground is drawn only for the six named areas. The points that were never
+// placed in an area are scattered right across the world, and giving each of
+// them its own little island would invent a coastline out of measurements that
+// say nothing about where the land is. Those stay as bare dots on the water,
+// which is exactly what they are.
+const land = ZONES.slice(0, -1)
+  .map((zone) => {
+    const own = points.filter((point) => point.zone === zone.key)
+    return { ...zone, count: own.length, d: own.length > 0 ? landPath(own) : '', at: own.length > 0 ? labelAt(own) : null }
+  })
+  .filter((zone) => zone.d !== '')
 
 const named = points.filter((point) => point.named).sort((a, b) => a.name.localeCompare(b.name))
 const spanX = Math.round((bounds.maxX - bounds.minX) / 100) / 10
@@ -108,7 +121,27 @@ const jsonLd = {
             role="img"
             aria-label={`Scatter plot of ${counts.kept} solved positions in the Grand Theft Auto VI world, coloured by area.`}
           >
-            <g id="mapgrid" stroke="#d3cfc4" stroke-width="6" opacity="0.5">
+            <!--
+              The ground, worked out from the dots themselves in lib/mapblobs.mjs
+              and baked into a path at build time. It is not a map of Leonida and
+              it is not traced from one: it is the shape of where the measured
+              points are, so a reader can tell a city from a stray reading.
+            -->
+            <g id="mapland">
+              {land.map((zone) => (
+                <path
+                  d={zone.d}
+                  data-zone={zone.key}
+                  fill={zone.color}
+                  fill-opacity="0.22"
+                  stroke={zone.color}
+                  stroke-opacity="0.6"
+                  stroke-width="16"
+                  stroke-linejoin="round"
+                />
+              ))}
+            </g>
+            <g id="mapgrid" stroke="#b9cbc9" stroke-width="6" opacity="0.55">
               {Array.from({ length: Math.ceil(width / 1000) + 1 }, (_, i) => {
                 const x = Math.round(minX / 1000) * 1000 + i * 1000
                 return <line x1={x} y1={minY} x2={x} y2={maxY} />
@@ -138,15 +171,29 @@ const jsonLd = {
                 ><title>{point.name}</title></circle>
               ))}
             </g>
+            <!--
+              The area names, sized in world units so the browser scales them
+              with everything else. The pan and zoom code resets that size on
+              every frame, which keeps a label the same size on screen however
+              far in the reader has zoomed.
+            -->
+            <g id="maplabels" font-size={Math.round(width / 34)}>
+              {land.filter((zone) => zone.count >= 12).map((zone) => (
+                <text x={zone.at.x} y={zone.at.y} data-zone={zone.key} text-anchor="middle" fill={zone.color}>{zone.label}</text>
+              ))}
+            </g>
           </svg>
           <div id="maptip" class="maptip" hidden></div>
           <p class="mapfig__hint">Drag to move. Scroll or pinch to zoom. Tap a dot for its details.</p>
         </div>
 
         <figcaption class="mapfig__cap">
-          Each dot is one measured position, not a drawing of the game. Bigger dots
-          are the {counts.named} points that carry a place name. The grid squares are
-          one kilometre across. Positions solved by gtamaplib from Rockstar's own
+          Each dot is one measured position, not a drawing of the game. The shaded
+          ground is not a drawing either: it is the shape of where those dots fall,
+          worked out from the same coordinates, so nothing here is traced from a
+          picture. Bigger dots are the {counts.named} points that carry a place name.
+          Grey dots were never placed in a named area, so they sit on open water.
+          The grid squares are one kilometre across. Positions solved by gtamaplib from Rockstar's own
           trailers and screenshots. Median error {medianErrorM} metres, worst {maxErrorM} metres.
         </figcaption>
       </div>
@@ -312,12 +359,21 @@ const jsonLd = {
     font: 600 12px/1 var(--ui); padding: 9px 12px; cursor: pointer; color: var(--ink);
     border: 1px solid var(--line-strong); border-radius: var(--r); background: var(--plaster);
   }
-  .mapfig__stage { position: relative; background: #fbfaf6; }
+  /* Water. The plot used to sit on plaster, which made a dot on empty ground
+     look like a dot on a page that had failed to load. A cool ground says the
+     empty part is sea and not a missing image. */
+  .mapfig__stage { position: relative; background: #e6eeee; }
+  #mapland, #maplabels { pointer-events: none; }
+  #maplabels text {
+    font-family: var(--ui); font-weight: 700; letter-spacing: 0.06em;
+    text-transform: uppercase; opacity: 0.72;
+    paint-order: stroke; stroke: #e6eeee; stroke-width: 0.22em; stroke-linejoin: round;
+  }
   #mapsvg { display: block; width: 100%; height: clamp(360px, 62vh, 680px); touch-action: none; cursor: grab; }
   #mapsvg.is-grabbing { cursor: grabbing; }
   #mapsvg circle { transition: none; }
   #mapsvg circle.is-hit { stroke: var(--ink); stroke-width: 26px; }
-  #mapsvg circle.is-off { display: none; }
+  #mapsvg .is-off { display: none; }
   .maptip {
     position: absolute; z-index: 3; pointer-events: none; max-width: 260px;
     background: var(--ink); color: var(--on-glaze); padding: 9px 11px; border-radius: var(--r);
@@ -363,7 +419,11 @@ const jsonLd = {
     const start = svg.getAttribute('viewBox').split(' ').map(Number)
     let box = start.slice()
 
-    const apply = () => svg.setAttribute('viewBox', box.map((n) => Math.round(n)).join(' '))
+    const labels = document.getElementById('maplabels')
+    const apply = () => {
+      svg.setAttribute('viewBox', box.map((n) => Math.round(n)).join(' '))
+      if (labels) labels.setAttribute('font-size', String(Math.round(box[2] / 34)))
+    }
 
     const toWorld = (clientX, clientY) => {
       const rect = svg.getBoundingClientRect()
@@ -487,6 +547,9 @@ const jsonLd = {
         circles.forEach((circle) => {
           if (circle.dataset.zone === zone) circle.classList.toggle('is-off', on)
         })
+        // The ground and the name belong to the area as much as the dots do.
+        svg.querySelectorAll(`#mapland [data-zone="${zone}"], #maplabels [data-zone="${zone}"]`)
+          .forEach((shape) => shape.classList.toggle('is-off', on))
       })
     })
 

@@ -1,0 +1,25 @@
+{
+  "rawId": "rockpapershotgun-956e978db338",
+  "outlet": "Rock Paper Shotgun",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.rockpapershotgun.com/ahead-of-gta-6-rockstar-warn-modders-against-against-making-unofficial-main-story-expansions-unauthorised-ports-and-mods-that-combine-gta-maps",
+  "published": "2026-09-21",
+  "ogImage": "https://assetsio.gnwcdn.com/rockstar-new-modding-rules-gta-6-01.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-09-21T20:53:01.138Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Beyond that, people will still make the mods they want to for GTA 6 and Rockstar will go after whichever targets they deem worth the effort to take down, as has been the case up until now.",
+          "quote": "Beyond that, people will still make the mods they want to for GTA 6 and Rockstar will go after whichever targets they deem worth the effort to take down, as has been the case up until now."
+        }
+      ]
+    }
+  ]
+}

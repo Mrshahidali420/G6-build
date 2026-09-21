@@ -86,6 +86,7 @@ try {
 
 let added = 0
 let changed = 0
+const newPosts = []
 
 for (const post of live) {
   const id = String(post.id)
@@ -105,8 +106,12 @@ for (const post of live) {
     lastSeen: today,
   }
   const before = byId.get(id)
-  if (!before) added += 1
-  else if (before.title !== built.title || before.subtitle !== built.subtitle) changed += 1
+  if (!before) {
+    added += 1
+    newPosts.push(built)
+  } else if (before.title !== built.title || before.subtitle !== built.subtitle) {
+    changed += 1
+  }
   byId.set(id, built)
 }
 
@@ -134,4 +139,13 @@ writeFileSync(
 console.log(`[newswire] feed returned ${live.length} posts`)
 console.log(`[newswire] ${added} new, ${changed} changed, ${gone} on file but no longer in the feed`)
 console.log(`[newswire] ${posts.length} posts on record, ${posts[posts.length - 1]?.date} to ${posts[0]?.date}`)
+/**
+ * The scheduled job needs to know which posts are new so it can open an issue
+ * for each one. It passes a path in NEWSWIRE_NEW_OUT and reads the file after.
+ */
+if (process.env.NEWSWIRE_NEW_OUT) {
+  writeFileSync(process.env.NEWSWIRE_NEW_OUT, `${JSON.stringify(newPosts, null, 2)}\n`)
+  console.log(`[newswire] wrote ${newPosts.length} new posts to ${process.env.NEWSWIRE_NEW_OUT}`)
+}
+
 console.log('[newswire] wrote src/data/newswire.json')

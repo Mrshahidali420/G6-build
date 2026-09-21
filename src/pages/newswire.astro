@@ -88,7 +88,7 @@ const jsonLd = {
         <div><dt>Official posts</dt><dd>{posts.length}</dd></div>
         <div><dt>Over</dt><dd>{span}</dd></div>
         <div><dt>Release dates announced</dt><dd>3</dd></div>
-        <div><dt>Last checked</dt><dd>{longDate(feed.checked)}</dd></div>
+        <div><dt>Record last changed</dt><dd>{longDate(feed.checked)}</dd></div>
       </dl>
     </div>
   </section>
@@ -206,7 +206,14 @@ const jsonLd = {
           The rockstargames.com Newswire page is a JavaScript shell, so the list
           cannot be read from the page itself. The data behind it comes from a
           request the site makes to its own server, filtered to the Grand Theft
-          Auto VI tag. This site reads the same list the same way, once per build.
+          Auto VI tag. This site reads the same list the same way.
+        </p>
+        <p>
+          A job checks it once a day. On nearly every day it finds nothing,
+          because Rockstar posts about this game about three times a year. When
+          it does find a new post, the post appears here and a task is opened so
+          a person reads it and writes the note under it. The date above is the
+          last day this record actually changed, not the last day it was read.
         </p>
         <p>
           The route was worked out by the open source

@@ -1,17 +1,27 @@
 name: watch-newswire
 
-# Checks the Rockstar Newswire twice a day for new GTA 6 posts.
-# It opens an issue when it finds one. It never writes a page by itself,
-# because a page on this site has to be written and sourced by a human.
+# Checks the Rockstar Newswire once a day for new GTA 6 posts.
+#
+# It does three things and nothing more:
+#   1. Refreshes src/data/newswire.json from the Rockstar GraphQL endpoint.
+#      Titles, subtitles, dates and links only. No article text is copied.
+#   2. Commits the file if it moved, then kicks the deploy so /newswire is live.
+#   3. Opens an issue for each new post, so a human writes the note in
+#      data/newswire-notes.json. A post with no note still lists, it just
+#      lists without a note.
+#
+# It never writes a page or a note by itself. Rockstar posts about this game
+# roughly three times a year, so this job does nothing on almost every run.
 
 on:
   schedule:
-    - cron: '0 6,18 * * *'
+    - cron: '0 7 * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
   issues: write
+  actions: write
 
 jobs:
   watch:
@@ -22,37 +32,80 @@ jobs:
         with:
           node-version: 22
 
-      - name: Check the Newswire
-        id: check
+      - name: Read the Newswire
+        id: read
+        env:
+          NEWSWIRE_NEW_OUT: /tmp/newswire-new.json
         run: |
-          node scripts/watch-newswire.mjs > /tmp/new.json
-          echo "count=$(node -e "console.log(JSON.parse(require('fs').readFileSync('/tmp/new.json','utf8')).length)")" >> "$GITHUB_OUTPUT"
-          cat /tmp/new.json
+          node scripts/import/newswire.mjs
+          count=$(node -e "console.log(JSON.parse(require('fs').readFileSync('/tmp/newswire-new.json','utf8')).length)")
+          echo "new=$count" >> "$GITHUB_OUTPUT"
+          # Every run rewrites the checked and lastSeen dates. Those alone are
+          # not news, so they must not trigger a commit and a deploy. Only a
+          # real change to the record counts.
+          real=$(git diff -U0 src/data/newswire.json             | grep -E '^[+-]'             | grep -vE '^(\+\+\+|---)'             | grep -vcE '"(checked|lastSeen)"' || true)
+          if [ "${real:-0}" -gt 0 ]; then
+            echo "changed=yes" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=no" >> "$GITHUB_OUTPUT"
+            git checkout src/data/newswire.json
+          fi
+
+      - name: Commit the refreshed list
+        if: steps.read.outputs.changed == 'yes'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/newswire.json
+          git commit -m "chore: refresh the Rockstar Newswire list"
+          git push
+
+      # A push made with the built in token does not start another workflow,
+      # so the deploy has to be asked for by name.
+      - name: Deploy the site
+        if: steps.read.outputs.changed == 'yes'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main
 
       - name: Open an issue for each new post
-        if: steps.check.outputs.count != '0'
+        if: steps.read.outputs.new != '0'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           node -e "
-            const items = JSON.parse(require('fs').readFileSync('/tmp/new.json','utf8'))
-            for (const item of items) {
-              const body = ['New Rockstar Newswire post about GTA 6.', '', 'Title: ' + item.title, 'Link: ' + item.url, 'Date: ' + (item.date || 'not given'), '', 'To do:', '- [ ] Read the source.', '- [ ] Add a news post in src/content/news/ with the real date and this URL as a source.', '- [ ] Update any entity rows or answer pages the post changes.'].join('\n')
-              require('fs').appendFileSync('/tmp/issues.txt', JSON.stringify({title: 'Newswire: ' + item.title, body}) + '\n')
-            }
+            const fs = require('fs')
+            const posts = JSON.parse(fs.readFileSync('/tmp/newswire-new.json', 'utf8'))
+            const lines = posts.map((post) => JSON.stringify({
+              title: 'Newswire: ' + post.title,
+              body: [
+                'Rockstar published a new Newswire post tagged Grand Theft Auto VI.',
+                '',
+                'Title: ' + post.title,
+                'Subtitle: ' + (post.subtitle || 'none'),
+                'Date: ' + (post.date || 'not given'),
+                'Link: ' + post.url,
+                '',
+                'It is already listed on /newswire. It has no note yet.',
+                '',
+                'To do:',
+                '- [ ] Read the post.',
+                '- [ ] Add a what and moved note under the slug \`' + post.slug + '\` in data/newswire-notes.json.',
+                '- [ ] Update any entity rows or answer pages the post changes.',
+                '- [ ] Write a news article in src/content/news/ if it deserves one.',
+              ].join('\n'),
+            }))
+            fs.writeFileSync('/tmp/issues.txt', lines.join('\n') + '\n')
           "
           while read -r line; do
+            [ -z "$line" ] && continue
             title=$(node -e "console.log(JSON.parse(process.argv[1]).title)" "$line")
             body=$(node -e "console.log(JSON.parse(process.argv[1]).body)" "$line")
-            gh issue create --title "$title" --body "$body" --label newswire || true
+            gh issue create --title "$title" --body "$body" --label newswire || \
+              gh issue create --title "$title" --body "$body"
           done < /tmp/issues.txt
 
-      - name: Remember what was seen
+      - name: Say what happened
         run: |
-          if [ -n "$(git status --porcelain data/newswire-seen.json)" ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data/newswire-seen.json
-            git commit -m "chore: record newswire posts seen"
-            git push
-          fi
+          echo "new posts: ${{ steps.read.outputs.new }}"
+          echo "file changed: ${{ steps.read.outputs.changed }}"

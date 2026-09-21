@@ -1,0 +1,37 @@
+---
+title: "US Army Unit Offers 4-Day Pass for GTA 6 Launch as Re-Enlistment Incentive"
+description: "A US Army unit at Fort Stewart, Georgia, is offering soldiers a four-day pass coinciding with the GTA 6 launch as an incentive to re-enlist for a minimum of..."
+date: "2026-08-19"
+status: "CONFIRMED"
+source:
+  label: "GameSpot"
+  url: "https://www.gamespot.com/articles/army-unit-gives-soldiers-4-day-pass-to-play-gta-6-if-they-re-enlist/"
+  kind: "press"
+summary: "In an unusual move to boost re-enlistment numbers, a US Army unit stationed at Fort Stewart in Georgia's 9th Brigade Engineering Battalion is offering soldiers a four-day pass. This pass is specifically timed to coincide with the highly anticipated launch of Grand Theft Auto 6 in November. The incentive requires eligible soldiers to re-enlist for a minimum of two years between August 1 and November 14. An Army spokesperson, Lt. Col. Angel Tomko, confirmed to CBS News that the initiative aims to connect with soldiers' interests, with 20 individuals already agreeing to the terms. Approximately 130 soldiers are eligible for this unique perk. GTA 6 is set to release on November 19 for PS5 and Xbox Series X|S and is expected to be one of the biggest entertainment launches ever."
+points:
+  - "A US Army unit in Georgia is offering a four-day pass to soldiers who re-enlist."
+  - "The pass is timed to allow soldiers to play GTA 6 upon its November 19 launch."
+  - "The incentive is available to soldiers at Fort Stewart in the 9th Brigade Engineering Battalion."
+  - "Soldiers must re-enlist for a minimum of two years between August 1 and November 14."
+  - "So far, 20 soldiers have taken advantage of the offer, with about 130 eligible."
+  - "The initiative aims to create a unique and appealing re-enlistment incentive."
+  - "GTA 6 is launching on November 19 for PS5 and Xbox Series X|S."
+faq:
+  - q: "What is the incentive offered by the US Army unit?"
+    a: "The US Army unit is offering a four-day pass to soldiers who re-enlist, specifically timed to coincide with the launch of GTA 6 in November."
+  - q: "Which Army unit is offering this incentive?"
+    a: "The incentive is offered by the 9th Brigade Engineering Battalion at Fort Stewart in Georgia."
+  - q: "What is the requirement for soldiers to receive the pass?"
+    a: "Soldiers must sign a re-enlistment contract for a minimum of two years in the Army between August 1 and November 14."
+  - q: "When does GTA 6 launch?"
+    a: "GTA 6 launches on November 19 for PlayStation 5 and Xbox Series X|S."
+  - q: "How many soldiers have taken up the offer so far?"
+    a: "As of the article, 20 soldiers have agreed to the incentive, with approximately 130 being eligible."
+topics:
+  - "US Army"
+  - "Re-enlistment"
+  - "Gaming Incentive"
+  - "Fort Stewart"
+  - "Georgia"
+  - "Military"
+---

@@ -1,0 +1,333 @@
+---
+// One claim from the GTA 6 record.
+//
+// Everything on this page is built from typed frontmatter. The claim file has
+// no body: see the note at the top of scripts/import/tracker.mjs for why.
+//
+// The shape is the same every time, because the value of a record is that
+// every entry answers the same questions in the same order. What was claimed,
+// when, by whom, what status it carried, what it touches on this site, and
+// what else was being said that month.
+import { getCollection } from 'astro:content'
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import Ad from '../../components/Ad.astro'
+import { SITE_NAME, SITE_URL, canonical } from '../../lib/site.mjs'
+import { GAME } from '../../lib/schema.mjs'
+import { bySlug, urlFor } from '../../lib/entities.mjs'
+import {
+  STATUS_BY_KEY, STATUS_CLASS, SOURCE_KIND, longDate, longMonth, trackerUrl,
+} from '../../lib/claim-record.mjs'
+
+export async function getStaticPaths() {
+  const all = (await getCollection('tracker')).sort((a, b) =>
+    b.data.date.localeCompare(a.data.date) || a.id.localeCompare(b.id),
+  )
+
+  // Built once for the whole section rather than per page. With this many
+  // pages, a lookup done inside the map would be done 2,489 times.
+  const byMonth = new Map()
+  const byEntity = new Map()
+  for (const item of all) {
+    const month = item.data.date.slice(0, 7)
+    if (!byMonth.has(month)) byMonth.set(month, [])
+    byMonth.get(month).push(item)
+    for (const slug of item.data.related) {
+      if (!byEntity.has(slug)) byEntity.set(slug, [])
+      byEntity.get(slug).push(item)
+    }
+  }
+
+  return all.map((claim, index) => {
+    // Other claims about the same things, newest first. This is the link that
+    // makes the section worth reading: a rumour about Lucia next to every
+    // other rumour about Lucia.
+    const seen = new Set([claim.id])
+    const sameSubject = []
+    for (const slug of claim.data.related) {
+      for (const other of byEntity.get(slug) || []) {
+        if (seen.has(other.id)) continue
+        seen.add(other.id)
+        sameSubject.push(other)
+        if (sameSubject.length >= 6) break
+      }
+      if (sameSubject.length >= 6) break
+    }
+
+    // Anything else said that month, for a claim that names nothing we cover.
+    const sameMonth = (byMonth.get(claim.data.date.slice(0, 7)) || [])
+      .filter((other) => !seen.has(other.id))
+      .slice(0, 6)
+
+    return {
+      params: { slug: claim.id },
+      props: {
+        claim,
+        sameSubject,
+        sameMonth,
+        newer: all[index - 1] || null,
+        older: all[index + 1] || null,
+        monthCount: (byMonth.get(claim.data.date.slice(0, 7)) || []).length,
+        total: all.length,
+      },
+    }
+  })
+}
+
+const { claim, sameSubject, sameMonth, newer, older, monthCount, total } = Astro.props
+const data = claim.data
+const path = trackerUrl(claim.id)
+const status = STATUS_BY_KEY.get(data.status)
+const tone = STATUS_CLASS[data.status]
+const month = data.date.slice(0, 7)
+
+const entities = data.related.map((slug) => bySlug.get(slug)).filter(Boolean)
+const nearby = sameSubject.length ? sameSubject : sameMonth
+const nearbyHeading = sameSubject.length
+  ? 'Other claims about the same things'
+  : `Other claims logged in ${longMonth(month)}`
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    '@id': canonical(path),
+    headline: data.title,
+    description: data.description,
+    datePublished: data.date,
+    dateModified: data.date,
+    mainEntityOfPage: canonical(path),
+    about: GAME,
+    isPartOf: {
+      '@type': 'CollectionPage',
+      name: 'The GTA 6 claim record',
+      url: canonical('/tracker'),
+    },
+    publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+    citation: { '@type': 'WebPage', name: data.source.label, url: data.source.url },
+  },
+]
+
+if (data.faq.length >= 2) {
+  jsonLd.push({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    '@id': `${canonical(path)}#faq`,
+    mainEntity: data.faq.map((entry) => ({
+      '@type': 'Question',
+      name: entry.q,
+      acceptedAnswer: { '@type': 'Answer', text: entry.a },
+    })),
+  })
+}
+---
+<BaseLayout title={data.title} description={data.description} path={path} jsonLd={jsonLd}>
+  <section class={`band band--stone claim claim--${tone}`}>
+    <div class="shell">
+      <p class="crumb">
+        <a href="/">GTA 6 Record</a> / <a href="/tracker">Claim record</a> /
+        <a href={`/tracker/status/${status.slug}`}>{status.label}</a>
+      </p>
+      <p class="claim__badge">
+        <span class={`pip pip--${tone}`} aria-hidden="true"></span>
+        Logged as {status.label.toLowerCase()}
+        <span class="claim__on"> on <time datetime={data.date}>{longDate(data.date)}</time></span>
+      </p>
+      <h1 class="claim__title">{data.title}</h1>
+      <p class="claim__means">{status.means}</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="shell">
+      <div class="prose">
+        <h2>What was claimed</h2>
+        <p>{data.summary}</p>
+
+        <h2>The detail</h2>
+        <ul class="points">
+          {data.points.map((point) => <li>{point}</li>)}
+        </ul>
+
+        <h2>Where this came from</h2>
+        <p>
+          {SOURCE_KIND[data.source.kind]}, on {longDate(data.date)}. The record
+          keeps the link so you can read the original and judge it yourself.
+          {data.source.kind === 'reddit' && ' A Reddit thread is one person talking. It is worth reading and it is not evidence.'}
+          {data.source.kind === 'press' && ' A games outlet is a second-hand account. It is usually careful, and it is still not Rockstar.'}
+          {data.source.kind === 'official' && ' This one came from Rockstar, which makes it the strongest kind of source there is for this game.'}
+        </p>
+        <p class="src">
+          <a href={data.source.url} rel="nofollow noopener">{data.source.label}</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <Ad placement="article" />
+
+  {data.faq.length > 0 && (
+    <section class="band band--stone">
+      <div class="shell">
+        <div class="prose">
+          <h2>Questions people asked about this</h2>
+          <dl class="faq">
+            {data.faq.map((entry) => (
+              <div class="faq__row">
+                <dt>{entry.q}</dt>
+                <dd>{entry.a}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </div>
+    </section>
+  )}
+
+  {entities.length > 0 && (
+    <section class="band">
+      <div class="shell">
+        <div class="prose">
+          <h2>What this claim touches</h2>
+          <p>
+            This claim names {entities.length === 1 ? 'one thing' : `${entities.length} things`} this
+            site keeps a page on. Those pages say what is actually known about
+            each one, with the source for every line.
+          </p>
+        </div>
+        <ul class="chips">
+          {entities.map((entity) => (
+            <li><a class="chip" href={urlFor(entity)}>{entity.name}</a></li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
+
+  <section class="band band--stone">
+    <div class="shell">
+      <div class="prose">
+        <h2>{nearbyHeading}</h2>
+        <p>
+          {longMonth(month)} carried {monthCount} logged {monthCount === 1 ? 'claim' : 'claims'} out
+          of {total.toLocaleString('en-US')} in the whole record.
+        </p>
+      </div>
+      <ul class="near">
+        {nearby.map((other) => (
+          <li class="near__item">
+            <span class={`pip pip--${STATUS_CLASS[other.data.status]}`} aria-hidden="true"></span>
+            <a class="near__link" href={trackerUrl(other.id)}>{other.data.title}</a>
+            <span class="near__meta">{STATUS_BY_KEY.get(other.data.status).short} · <time datetime={other.data.date}>{longDate(other.data.date)}</time></span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="shell">
+      <nav class="step" aria-label="Move through the record">
+        {older && (
+          <a class="step__link" href={trackerUrl(older.id)}>
+            <span class="step__dir">Logged before this</span>
+            <span class="step__title">{older.data.title}</span>
+          </a>
+        )}
+        {newer && (
+          <a class="step__link step__link--end" href={trackerUrl(newer.id)}>
+            <span class="step__dir">Logged after this</span>
+            <span class="step__title">{newer.data.title}</span>
+          </a>
+        )}
+      </nav>
+      <div class="prose">
+        <h2>How to read this record</h2>
+        <p>
+          Every entry here is a thing somebody said about Grand Theft Auto VI,
+          on a date, with the status it carried that day. It is not a list of
+          facts. Most of it is people talking, and the record exists so you can
+          see which was which.
+        </p>
+        <p>
+          For what is actually settled, use the
+          <a href="/confirmed"> confirmed list</a>, the
+          <a href="/newswire"> Rockstar Newswire archive</a>, or the
+          <a href="/trailers"> index of everything Rockstar has shown</a>. Those
+          three come from Rockstar. This page does not.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .claim__badge {
+    margin: 0 0 12px; font: 600 11px/1 var(--ui); letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--ink-2);
+  }
+  .claim__on { color: var(--ink-2); }
+  .claim__title { font: 700 clamp(26px, 4.2vw, 40px)/1.15 var(--display); margin: 0 0 14px; max-width: 26ch; }
+  .claim__means { margin: 0; max-width: var(--prose); font: 400 17px/1.6 var(--body); color: var(--ink-2); }
+
+  .pip {
+    display: inline-block; width: 9px; height: 9px; margin-right: 8px;
+    border-radius: 50%; vertical-align: 1px; background: var(--line-strong);
+  }
+  .pip--confirmed { background: var(--glaze); }
+  .pip--rumor { background: var(--brass); }
+  .pip--leak { background: var(--clay); }
+  .pip--unclear { background: var(--line-strong); }
+
+  .claim--confirmed { border-top: 3px solid var(--glaze); }
+  .claim--rumor { border-top: 3px solid var(--brass); }
+  .claim--leak { border-top: 3px solid var(--clay); }
+  .claim--unclear { border-top: 3px solid var(--line-strong); }
+
+  .points { margin: 0 0 4px; padding-left: 20px; }
+  .points li { margin: 0 0 9px; font: 400 17px/1.6 var(--body); }
+
+  .src { margin: 6px 0 0; font: 400 15px/1.5 var(--body); }
+  .src a { color: var(--glaze); }
+
+  .faq { margin: 0; }
+  .faq__row { padding: 14px 0; border-bottom: 1px solid var(--line); }
+  .faq__row:last-child { border-bottom: 0; }
+  .faq dt { font: 600 17px/1.45 var(--body); color: var(--ink); margin: 0 0 6px; }
+  .faq dd { margin: 0; font: 400 16px/1.6 var(--body); color: var(--ink-2); }
+
+  .chips { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 0; padding: 0; }
+  .chip {
+    display: inline-block; padding: 7px 12px; border: 1px solid var(--line-strong);
+    border-radius: var(--r); background: var(--plaster); color: var(--ink);
+    font: 600 14px/1 var(--ui); text-decoration: none;
+  }
+  .chip:hover { border-color: var(--glaze); color: var(--glaze-deep); }
+
+  .near { list-style: none; margin: 16px 0 0; padding: 0; }
+  .near__item { padding: 11px 0; border-bottom: 1px solid var(--line); }
+  .near__item:last-child { border-bottom: 0; }
+  .near__link { color: var(--ink); font: 600 16px/1.45 var(--body); text-decoration: none; border-bottom: 2px solid var(--glaze-tint); }
+  .near__link:hover { border-bottom-color: var(--glaze); }
+  .near__meta {
+    display: block; margin: 4px 0 0 17px; font: 600 11px/1 var(--ui);
+    letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2);
+  }
+
+  .step { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 0 0 34px; }
+  .step__link {
+    display: block; padding: 14px 16px; border: 1px solid var(--line-strong);
+    border-radius: var(--r); background: var(--plaster); text-decoration: none;
+  }
+  .step__link:hover { border-color: var(--glaze); }
+  .step__link--end { text-align: right; }
+  .step__dir {
+    display: block; font: 600 10px/1 var(--ui); letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--ink-2); margin: 0 0 6px;
+  }
+  .step__title { display: block; font: 600 15px/1.4 var(--body); color: var(--ink); }
+
+  @media (max-width: 720px) {
+    .step { grid-template-columns: 1fr; }
+    .step__link--end { text-align: left; }
+  }
+</style>

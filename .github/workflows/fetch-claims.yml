@@ -1,0 +1,84 @@
+name: fetch-claims
+
+# Keeps the claim record at /tracker going.
+#
+# Once a day it reads the four feeds the record has always watched, drops
+# anything already logged, and asks GitHub Models to pull the claim and its
+# status out of each new item. New claims land as files in
+# src/content/tracker/, which are committed and deployed.
+#
+# GitHub Models runs on the workflow's own token and is free here. It is used
+# for one narrow job: read one item, return typed fields. It never writes a
+# page. The pages are built from those fields by the site.
+#
+# On most days nothing new crosses the feeds and this job writes nothing.
+
+on:
+  schedule:
+    - cron: '30 6 * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Read the feeds and write nothing'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  models: read
+  actions: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install
+        run: npm install --no-audit --no-fund
+
+      # entities.json is generated and gitignored, and the claim linker needs
+      # it to match claims to the pages this site already has.
+      - name: Build the entity list
+        run: npm run data
+
+      - name: Read the feeds
+        id: fetch
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            node scripts/fetch-claims.mjs --dry-run
+            echo "changed=no" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          node scripts/fetch-claims.mjs
+          if [ -n "$(git status --porcelain src/content/tracker)" ]; then
+            echo "changed=yes" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=no" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit the new claims
+        if: steps.fetch.outputs.changed == 'yes'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/content/tracker
+          count=$(git diff --cached --name-only --diff-filter=A src/content/tracker | wc -l)
+          git commit -m "chore: log $count new GTA 6 claims"
+          git push
+
+      # A push made with the built in token does not start another workflow,
+      # so the deploy has to be asked for by name.
+      - name: Deploy the site
+        if: steps.fetch.outputs.changed == 'yes'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main
+
+      - name: Say what happened
+        run: echo "new claims: ${{ steps.fetch.outputs.changed }}"

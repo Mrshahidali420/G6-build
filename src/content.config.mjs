@@ -117,4 +117,42 @@ const updates = defineCollection({
   }),
 })
 
-export const collections = { answers, hubs, news, updates }
+// The claim tracker. One file per dated GTA 6 claim, imported from the
+// AaronShenny/gta6-news archive by scripts/import/tracker.mjs and written by
+// nothing else.
+//
+// The body is always empty on purpose. Every string a reader sees comes out of
+// typed frontmatter below, so the archive's machine written prose cannot land
+// on this site dressed as ours. The one paragraph kept is `summary`, and the
+// page renders it under a heading naming whose summary it is.
+//
+// `status` is the archive's own word for the claim on the day it was logged.
+// It is a record of what was said, not a ruling by this site. That is the
+// whole value of the section: a claim with the status it carried at the time.
+const tracker = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/tracker' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string().min(40).max(200),
+    // The day the claim was logged by the archive.
+    date: z.string(),
+    status: z.enum(['CONFIRMED', 'RUMOR', 'LEAK', 'UNKNOWN']),
+    source: z.object({
+      label: z.string(),
+      url: z.string().url(),
+      kind: z.enum(['reddit', 'press', 'official', 'other']),
+    }),
+    summary: z.string().min(60),
+    // Three is the floor. Fewer than that and the page says nothing the
+    // headline did not.
+    points: z.array(z.string()).min(3),
+    // Becomes FAQPage structured data when present. Not every claim has one.
+    faq: z.array(z.object({ q: z.string(), a: z.string() })).default([]),
+    topics: z.array(z.string()).default([]),
+    // Entity pages this claim mentions, by slug. Matched by the importer.
+    related: z.array(z.string()).default([]),
+  }),
+})
+
+export const collections = { answers, hubs, news, tracker, updates }
+

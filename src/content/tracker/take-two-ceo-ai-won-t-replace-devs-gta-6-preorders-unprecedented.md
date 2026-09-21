@@ -1,0 +1,36 @@
+---
+title: "Take-Two CEO: AI Won't Replace Devs, GTA 6 Preorders 'Unprecedented'"
+description: "Take-Two Interactive CEO Strauss Zelnick assures AI won't replace game developers, emphasizing creativity, while also confirming GTA 6's November 19 launch..."
+date: "2026-08-07"
+status: "CONFIRMED"
+source:
+  label: "GameSpot"
+  url: "https://www.gamespot.com/articles/ai-tools-arent-going-to-replace-anyone-says-gta-6-publisher-boss/"
+  kind: "press"
+summary: "During a recent investment call, Take-Two Interactive CEO Strauss Zelnick clarified the company's stance on artificial intelligence in game development. Zelnick firmly believes that while AI tools will be utilized, they are not intended to replace human creativity or employees. He emphasized that Take-Two's core pillar is creativity, with AI serving to enhance, rather than supplant, the work of their 13,000 global colleagues. Zelnick also noted that AI might not significantly reduce development costs but could 'meaningfully increase the quality' of games, echoing previous remarks about not using AI as an excuse for layoffs. In addition to the AI discussion, Zelnick provided an update on *Grand Theft Auto 6*, confirming it has not been delayed and is still on track for its November 19 launch on PS5 and Xbox Series X|S. He predicted a highly profitable fiscal year ahead, largely driven by *GTA 6*, and stated that preorders for the title are 'unprecedented,' suggesting it could be the most in-demand game the industry has ever seen."
+points:
+  - "Take-Two CEO Strauss Zelnick believes AI tools will enhance, not replace, game developers."
+  - "The company prioritizes creativity, using technology to augment human creative efforts."
+  - "AI is expected to increase game quality, rather than significantly lowering development costs."
+  - "Zelnick reaffirms Take-Two will not use AI as a reason for employee layoffs."
+  - "GTA 6 remains on schedule for its November 19 launch on PS5 and Xbox Series X|S and has not been delayed."
+  - "Take-Two reports 'unprecedented' GTA 6 preorders, potentially making it the most in-demand game in industry history."
+faq:
+  - q: "Will AI replace game developers at Take-Two?"
+    a: "No, Take-Two CEO Strauss Zelnick explicitly stated that AI tools will enhance creativity but will not replace employees."
+  - q: "What is Take-Two's philosophy regarding AI in game development?"
+    a: "Take-Two's core pillar is creativity, and AI is viewed as a tool to enhance the creativity of their developers, not to replace it."
+  - q: "Will AI reduce the cost of game development for Take-Two?"
+    a: "Zelnick doesn't believe AI will significantly lower development costs, but he anticipates it will 'meaningfully increase the quality' of games."
+  - q: "Has GTA 6 been delayed?"
+    a: "No, Zelnick confirmed that GTA 6 has not been delayed and is still on track for its November 19 launch."
+  - q: "How are GTA 6 preorders performing?"
+    a: "Zelnick described GTA 6 preorders as 'unprecedented,' suggesting it could be the most in-demand game the industry has ever seen."
+topics:
+  - "Take-Two Interactive"
+  - "Strauss Zelnick"
+  - "AI"
+  - "Game Development"
+  - "Industry News"
+  - "Preorders"
+---

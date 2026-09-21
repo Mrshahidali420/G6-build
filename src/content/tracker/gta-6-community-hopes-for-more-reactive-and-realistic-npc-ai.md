@@ -1,0 +1,25 @@
+---
+title: "GTA 6: Community Hopes for More Reactive and Realistic NPC AI"
+description: "A GTA 6 fan expresses a strong desire for more dynamic and realistic NPC behavior, where enemies react logically to player weaponry and combat situations..."
+date: "2026-02-14"
+status: "RUMOR"
+source:
+  label: "r/GTA6, Reddit"
+  url: "https://www.reddit.com/r/GTA6/comments/1r4tjmw/reactive_npcs/"
+  kind: "reddit"
+summary: "A dedicated GTA 6 fan, u/The1Pizza2Man, has voiced a prominent community desire for significantly more reactive NPC artificial intelligence in the upcoming title. Citing frustrations with GTA V's combat, where enemies often maintain their aggressive stance regardless of the player's overwhelming firepower, the user hopes GTA 6 will feature NPCs that realistically assess threats. The ideal scenario described involves enemies with pistols and SMGs fleeing or surrendering when confronted by a player wielding a rocket launcher, especially after witnessing their comrades fall, rather than continuing a futile fight."
+points:
+  - "Strong community desire for more reactive NPC AI in GTA 6."
+  - "Criticism of GTA V's static enemy behavior, where NPCs often continue fighting overwhelming force."
+  - "Hope for realistic enemy reactions, such as fleeing or surrendering when outmatched (e.g., rocket launcher vs. pistols)."
+  - "Emphasis on NPCs reacting logically to a player's weaponry and the loss of their allies."
+topics:
+  - "NPC AI"
+  - "Reactive NPCs"
+  - "Gaming Community"
+  - "Player Feedback"
+  - "Realism"
+  - "Open World"
+related:
+  - "rocket-launcher"
+---

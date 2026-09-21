@@ -1,0 +1,190 @@
+---
+// One status group of the claim record, paged.
+//
+// Four of these exist: confirmed, rumours, leaks and unclear. Each one is a
+// long list, so it is paged rather than dumped, and every page carries the
+// same explainer at the top. Somebody landing on page nine of the rumours from
+// a search still needs to be told what a rumour is in this record.
+import { getCollection } from 'astro:content'
+import BaseLayout from '../../../../layouts/BaseLayout.astro'
+import Ad from '../../../../components/Ad.astro'
+import { SITE_NAME, SITE_URL, canonical } from '../../../../lib/site.mjs'
+import { GAME } from '../../../../lib/schema.mjs'
+import { STATUSES, STATUS_CLASS, SOURCE_KIND, longDate, longMonth, trackerUrl } from '../../../../lib/claim-record.mjs'
+
+export async function getStaticPaths({ paginate }) {
+  // Astro lifts getStaticPaths out into its own scope, so anything it uses has
+  // to be declared inside it. A const in the frontmatter above is not visible.
+  const PER_PAGE = 60
+  const all = await getCollection('tracker')
+  return STATUSES.flatMap((status) => {
+    const items = all
+      .filter((item) => item.data.status === status.key)
+      .sort((a, b) => b.data.date.localeCompare(a.data.date) || a.id.localeCompare(b.id))
+
+    const months = new Map()
+    for (const item of items) {
+      const key = item.data.date.slice(0, 7)
+      months.set(key, (months.get(key) || 0) + 1)
+    }
+    const sources = {}
+    for (const item of items) sources[item.data.source.kind] = (sources[item.data.source.kind] || 0) + 1
+
+    return paginate(items, {
+      params: { status: status.slug },
+      props: {
+        status,
+        total: items.length,
+        span: [...months.keys()].sort(),
+        sources,
+      },
+      pageSize: PER_PAGE,
+    })
+  })
+}
+
+const { page, status, total, span, sources } = Astro.props
+
+const base = `/tracker/status/${status.slug}`
+const path = page.currentPage === 1 ? base : `${base}/${page.currentPage}`
+const title =
+  page.currentPage === 1
+    ? `GTA 6 claims logged as ${status.label.toLowerCase()}`
+    : `GTA 6 claims logged as ${status.label.toLowerCase()}, page ${page.currentPage}`
+const description = `${total.toLocaleString('en-US')} GTA 6 claims that carried the status ${status.label.toLowerCase()} on the day they were made. ${status.blurb}`.slice(0, 195)
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    '@id': canonical(path),
+    name: title,
+    description,
+    url: canonical(path),
+    about: GAME,
+    isPartOf: { '@type': 'WebSite', name: SITE_NAME, url: SITE_URL },
+  },
+]
+
+/** The claims on this page, split by the month they were logged. */
+const groups = []
+for (const item of page.data) {
+  const key = item.data.date.slice(0, 7)
+  if (!groups.length || groups[groups.length - 1].key !== key) groups.push({ key, items: [] })
+  groups[groups.length - 1].items.push(item)
+}
+
+const topSource = Object.entries(sources).sort((a, b) => b[1] - a[1])[0]
+---
+<BaseLayout title={title} description={description} path={path} jsonLd={jsonLd}>
+  <section class={`band band--stone head head--${STATUS_CLASS[status.key]}`}>
+    <div class="shell">
+      <p class="crumb"><a href="/">GTA 6 Record</a> / <a href="/tracker">Claim record</a> / {status.label}</p>
+      <h1>{title}</h1>
+      <p class="lede">{status.means}</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="shell">
+      <div class="prose">
+        <h2>What is in this group</h2>
+        <p>
+          {total.toLocaleString('en-US')} claims carry this status, logged
+          between {longMonth(span[0])} and {longMonth(span[span.length - 1])}.
+          {topSource && ` Most of them, ${topSource[1].toLocaleString('en-US')}, came from one kind of place: ${SOURCE_KIND[topSource[0]].toLowerCase()}.`}
+        </p>
+        <p>
+          The status is the label the claim carried on the day it was made. It
+          is not this site saying the claim is true or false today. Some of
+          these turned out to be right. Most did not. Keeping the label is the
+          only way to tell which was which later.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <Ad placement="article" />
+
+  <section class="band band--stone">
+    <div class="shell">
+      {groups.map((group) => (
+        <div class="group">
+          <h2 class="group__h">{longMonth(group.key)}</h2>
+          <ul class="rows">
+            {group.items.map((item) => (
+              <li class="row">
+                <a class="row__link" href={trackerUrl(item.id)}>{item.data.title}</a>
+                <span class="row__meta">
+                  <time datetime={item.data.date}>{longDate(item.data.date)}</time> · {item.data.source.label}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+
+      <nav class="pager" aria-label="More claims">
+        {page.url.prev ? <a class="pager__btn" href={page.url.prev}>Newer claims</a> : <span class="pager__btn pager__btn--off">Newer claims</span>}
+        <span class="pager__now">Page {page.currentPage} of {page.lastPage}</span>
+        {page.url.next ? <a class="pager__btn" href={page.url.next}>Older claims</a> : <span class="pager__btn pager__btn--off">Older claims</span>}
+      </nav>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="shell">
+      <div class="prose">
+        <h2>The other groups</h2>
+      </div>
+      <ul class="chips">
+        {STATUSES.filter((other) => other.key !== status.key).map((other) => (
+          <li><a class="chip" href={`/tracker/status/${other.slug}`}>{other.label}</a></li>
+        ))}
+        <li><a class="chip" href="/tracker">The whole record</a></li>
+      </ul>
+      <div class="prose">
+        <p class="foot">
+          For what Rockstar has actually said, use the
+          <a href="/confirmed"> confirmed list</a> and the
+          <a href="/newswire"> Newswire archive</a>. Nothing on this page comes
+          from Rockstar unless the entry says it does.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .head--confirmed { border-top: 3px solid var(--glaze); }
+  .head--rumor { border-top: 3px solid var(--brass); }
+  .head--leak { border-top: 3px solid var(--clay); }
+  .head--unclear { border-top: 3px solid var(--line-strong); }
+
+  .group { margin: 0 0 30px; }
+  .group__h {
+    margin: 0 0 6px; font: 600 11px/1 var(--ui); letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--ink-2);
+    padding-bottom: 8px; border-bottom: 1px solid var(--line-strong);
+  }
+  .rows { list-style: none; margin: 0; padding: 0; }
+  .row { padding: 11px 0; border-bottom: 1px solid var(--line); }
+  .row:last-child { border-bottom: 0; }
+  .row__link { color: var(--ink); font: 600 16px/1.45 var(--body); text-decoration: none; border-bottom: 2px solid var(--glaze-tint); }
+  .row__link:hover { border-bottom-color: var(--glaze); }
+  .row__meta { display: block; margin: 4px 0 0; font: 600 11px/1 var(--ui); letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); }
+
+  .pager { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 10px 0 0; }
+  .pager__btn {
+    padding: 10px 14px; border: 1px solid var(--line-strong); border-radius: var(--r);
+    background: var(--plaster); color: var(--ink); font: 600 14px/1 var(--ui); text-decoration: none;
+  }
+  .pager__btn:hover { border-color: var(--glaze); color: var(--glaze-deep); }
+  .pager__btn--off { opacity: 0.4; }
+  .pager__now { font: 600 12px/1 var(--ui); letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); }
+
+  .chips { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 0; padding: 0; }
+  .chip { display: inline-block; padding: 7px 12px; border: 1px solid var(--line-strong); border-radius: var(--r); background: var(--plaster); color: var(--ink); font: 600 14px/1 var(--ui); text-decoration: none; }
+  .chip:hover { border-color: var(--glaze); color: var(--glaze-deep); }
+  .foot { margin: 20px 0 0; font: 400 15px/1.6 var(--body); color: var(--ink-2); }
+</style>

@@ -1,0 +1,42 @@
+---
+title: "GTA 6 Leaker Might Have Playable Build Of The Game"
+description: "New GTA 6 leaks from CyberLeek suggest access to a playable build, showing gameplay footage, radio stations, and hinting at future story reveals, ahead of..."
+date: "2026-08-20"
+status: "LEAK"
+source:
+  label: "GameSpot"
+  url: "https://www.gamespot.com/articles/gta-6-leaker-might-have-playable-build-of-the-game/"
+  kind: "press"
+summary: "A leaker known as CyberLeek has reportedly shared new alleged Grand Theft Auto VI gameplay footage, strongly suggesting they have access to a playable build of the highly anticipated open-world game. One clip shows the character Jason Duval shooting a wall, with the bullet marks clearly spelling out 'LEEK,' which CyberLeek uses as proof of their access. Other leaked footage includes a blue-and-yellow prop plane flying over what appears to be Vice City, and a player cycling through various in-game radio stations like V-Rock and Back Country Radio. CyberLeek has also claimed they will release the ending for the character Lucia Caminos soon and is polling users on this decision. Previously, CyberLeek has leaked footage of Jason playing basketball and using a taser-like weapon. The leaker states their actions are for 'gamers' rights,' particularly in response to Rockstar's decision not to release GTA 6 on a physical disc, though they also promote memecoins in their videos. Meanwhile, an official 'Extended Look' trailer for GTA 6 is confirmed to release on August 27, first on Netflix at 3 PM ET, then on Rockstar's YouTube channel at 9 PM ET. GTA 6 is scheduled to launch on November 19 for PlayStation 5 and Xbox Series X|S."
+points:
+  - "Alleged GTA 6 gameplay footage from leaker 'CyberLeek' suggests access to a playable build of the game."
+  - "Footage includes character Jason Duval spelling 'LEEK' with bullets, a prop plane over Vice City, and in-game radio station cycling."
+  - "CyberLeek is threatening to reveal Lucia Caminos' ending and has previously leaked other gameplay snippets."
+  - "The leaker claims to act for 'gamers' rights' but also promotes memecoins through their videos."
+  - "An official 'Extended Look' trailer for GTA 6 is confirmed for August 27, debuting on Netflix before YouTube."
+  - "GTA 6 is slated for a November 19 release on PS5 and Xbox Series X|S."
+faq:
+  - q: "Who is CyberLeek?"
+    a: "CyberLeek is a social media leaker who claims to have access to a playable build of GTA 6 and has been posting alleged gameplay footage online."
+  - q: "What evidence suggests CyberLeek has a playable build of GTA 6?"
+    a: "Alleged gameplay footage shows the character Jason Duval shooting a wall, with the bullet marks clearly spelling out 'LEEK,' which the leaker uses as proof of access to a playable build."
+  - q: "What content has CyberLeek allegedly leaked so far?"
+    a: "Leaks include footage of Jason spelling 'LEEK' with bullets, a prop plane over Vice City, in-game radio station cycling, Jason playing basketball, and using a taser-like weapon. CyberLeek also claims they will release Lucia Caminos' ending."
+  - q: "Why does CyberLeek claim to be leaking this information?"
+    a: "CyberLeek states they are doing it for 'gamers' rights,' particularly in defiance of Rockstar's decision regarding GTA 6 not arriving on a physical disc. However, they also advertise memecoins in their videos."
+  - q: "When is the official GTA 6 'Extended Look' trailer releasing?"
+    a: "The official 'Extended Look' trailer is set to release on August 27, first on Netflix at 3 PM ET, then on Rockstar's YouTube channel at 9 PM ET."
+  - q: "What is the confirmed release date and platforms for GTA 6?"
+    a: "GTA 6 is scheduled to launch on November 19 for PlayStation 5 and Xbox Series X|S."
+topics:
+  - "Leaks"
+  - "CyberLeek"
+  - "Gameplay"
+  - "Vice City"
+  - "Release Date"
+  - "Trailer"
+related:
+  - "lucia-caminos"
+  - "jason-duval"
+  - "vice-city"
+---

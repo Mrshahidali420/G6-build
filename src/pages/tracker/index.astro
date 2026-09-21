@@ -1,0 +1,254 @@
+---
+// The front door of the claim record.
+//
+// The job of this page is to say what the record is before anybody reads a
+// single claim, because the whole section is only useful if the reader knows
+// that a claim in it is a thing somebody said, not a thing this site is
+// telling them is true.
+import { getCollection } from 'astro:content'
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import Ad from '../../components/Ad.astro'
+import { SITE_NAME, SITE_URL, canonical } from '../../lib/site.mjs'
+import { GAME } from '../../lib/schema.mjs'
+import { bySlug, urlFor } from '../../lib/entities.mjs'
+import { STATUSES, STATUS_BY_KEY, STATUS_CLASS, longDate, longMonth, trackerUrl } from '../../lib/claim-record.mjs'
+
+const path = '/tracker'
+const title = 'The GTA 6 claim record'
+const description =
+  'Every GTA 6 claim logged with the status it carried on the day it was made: confirmed, rumour, leak or unclear. A dated record, not a list of facts.'
+
+const all = (await getCollection('tracker')).sort((a, b) =>
+  b.data.date.localeCompare(a.data.date) || a.id.localeCompare(b.id),
+)
+
+const tally = {}
+for (const item of all) tally[item.data.status] = (tally[item.data.status] || 0) + 1
+
+const months = new Map()
+for (const item of all) {
+  const key = item.data.date.slice(0, 7)
+  months.set(key, (months.get(key) || 0) + 1)
+}
+const timeline = [...months.entries()].sort((a, b) => b[0].localeCompare(a[0]))
+const busiest = [...months.entries()].sort((a, b) => b[1] - a[1])[0]
+const peak = Math.max(...months.values())
+
+const latest = all.slice(0, 40)
+const first = all[all.length - 1]
+
+// The things the record talks about most. This is the honest answer to "what
+// has everybody actually been arguing about", and it comes out of the data
+// rather than out of anybody's opinion.
+const mentions = new Map()
+for (const item of all) {
+  for (const slug of item.data.related) mentions.set(slug, (mentions.get(slug) || 0) + 1)
+}
+const topSubjects = [...mentions.entries()]
+  .sort((a, b) => b[1] - a[1])
+  .slice(0, 24)
+  .map(([slug, count]) => ({ entity: bySlug.get(slug), count }))
+  .filter((row) => row.entity)
+
+const sources = {}
+for (const item of all) sources[item.data.source.kind] = (sources[item.data.source.kind] || 0) + 1
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    '@id': canonical(path),
+    name: title,
+    description,
+    url: canonical(path),
+    about: GAME,
+    isPartOf: { '@type': 'WebSite', name: SITE_NAME, url: SITE_URL },
+  },
+]
+---
+<BaseLayout title={title} description={description} path={path} jsonLd={jsonLd}>
+  <section class="band band--glaze">
+    <div class="shell">
+      <p class="crumb"><a href="/">GTA 6 Record</a> / Claim record</p>
+      <h1>The GTA 6 claim record</h1>
+      <p class="lede">
+        {all.length.toLocaleString('en-US')} things people said about Grand
+        Theft Auto VI, each one dated, each one kept with the status it carried
+        that day. This is a record of what was said. It is not a list of facts,
+        and most of it is not true.
+      </p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="shell">
+      <div class="prose">
+        <h2>Why a record and not a news feed</h2>
+        <p>
+          Almost everything people believe about this game started as a post
+          somebody made on a forum. It got repeated, then repeated again, and
+          somewhere along the way it stopped being called a rumour. By the time
+          it reaches you it sounds like a fact.
+        </p>
+        <p>
+          This record keeps the label. Every entry says what it was when it was
+          made and where it came from, so you can see the difference between a
+          thing Rockstar said and a thing a stranger said. The entries run from
+          {longMonth(first.data.date.slice(0, 7))} to
+          {' '}{longMonth(timeline[0][0])}.
+        </p>
+      </div>
+      <ul class="cards">
+        {STATUSES.map((status) => (
+          <li class={`card card--${STATUS_CLASS[status.key]}`}>
+            <a class="card__link" href={`/tracker/status/${status.slug}`}>
+              <span class="card__n">{(tally[status.key] || 0).toLocaleString('en-US')}</span>
+              <span class="card__label">{status.label}</span>
+            </a>
+            <p class="card__blurb">{status.blurb}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <Ad placement="article" />
+
+  <section class="band band--stone">
+    <div class="shell">
+      <div class="prose">
+        <h2>When people talked</h2>
+        <p>
+          {busiest[1]} claims were logged in {longMonth(busiest[0])}, the
+          busiest month in the record. The shape of this chart is the shape of
+          the wait: talk rises as a date gets close and falls when there is
+          nothing new to say.
+        </p>
+      </div>
+      <ul class="bars">
+        {timeline.slice().reverse().map(([key, count]) => (
+          <li class="bar">
+            <span class="bar__label">{longMonth(key)}</span>
+            <span class="bar__track">
+              <span class="bar__fill" style={`width:${Math.round((count / peak) * 100)}%`}></span>
+            </span>
+            <span class="bar__n">{count}</span>
+          </li>
+        ))}
+      </ul>
+      <div class="prose">
+        <p class="foot">
+          Where it came from: {(sources.reddit || 0).toLocaleString('en-US')} from Reddit
+          threads, {(sources.press || 0).toLocaleString('en-US')} from games outlets,
+          {' '}{(sources.official || 0).toLocaleString('en-US')} from Rockstar itself.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  {topSubjects.length > 0 && (
+    <section class="band">
+      <div class="shell">
+        <div class="prose">
+          <h2>What people talked about</h2>
+          <p>
+            These are the things this site keeps a page on that come up most
+            often across the whole record. Each page says what is actually known
+            about that thing, with a source for every line.
+          </p>
+        </div>
+        <ul class="chips">
+          {topSubjects.map((row) => (
+            <li>
+              <a class="chip" href={urlFor(row.entity)}>
+                {row.entity.name}
+                <span class="chip__n">{row.count}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
+
+  <section class="band band--stone">
+    <div class="shell">
+      <div class="prose">
+        <h2>The newest entries</h2>
+        <p>
+          The last {latest.length} claims logged. Open any status above to read
+          a whole group from the start.
+        </p>
+      </div>
+      <ul class="near">
+        {latest.map((item) => (
+          <li class="near__item">
+            <span class={`pip pip--${STATUS_CLASS[item.data.status]}`} aria-hidden="true"></span>
+            <a class="near__link" href={trackerUrl(item.id)}>{item.data.title}</a>
+            <span class="near__meta">{STATUS_BY_KEY.get(item.data.status).short} · <time datetime={item.data.date}>{longDate(item.data.date)}</time></span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="shell">
+      <div class="prose">
+        <h2>Where the solid facts live</h2>
+        <p>
+          This record is the loud half of GTA 6. For the quiet half, the part
+          that comes from Rockstar and only from Rockstar, use the
+          <a href="/confirmed"> confirmed list</a>, the
+          <a href="/newswire"> Newswire archive</a> and the
+          <a href="/trailers"> index of everything shown so far</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .cards { list-style: none; display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 26px 0 0; padding: 0; }
+  .card { border: 1px solid var(--line-strong); border-radius: var(--r); background: var(--plaster); padding: 16px; }
+  .card--confirmed { border-top: 3px solid var(--glaze); }
+  .card--rumor { border-top: 3px solid var(--brass); }
+  .card--leak { border-top: 3px solid var(--clay); }
+  .card--unclear { border-top: 3px solid var(--line-strong); }
+  .card__link { text-decoration: none; display: block; }
+  .card__n { display: block; font: 700 30px/1 var(--display); color: var(--ink); }
+  .card__label { display: block; margin: 6px 0 0; font: 600 11px/1 var(--ui); letter-spacing: 0.08em; text-transform: uppercase; color: var(--glaze-deep); }
+  .card__blurb { margin: 10px 0 0; font: 400 14px/1.55 var(--body); color: var(--ink-2); }
+
+  .bars { list-style: none; margin: 22px 0 0; padding: 0; }
+  .bar { display: grid; grid-template-columns: 130px 1fr 46px; align-items: center; gap: 10px; padding: 5px 0; }
+  .bar__label { font: 600 13px/1 var(--ui); color: var(--ink-2); }
+  .bar__track { display: block; height: 14px; background: var(--chip); border-radius: 2px; }
+  .bar__fill { display: block; height: 14px; background: var(--glaze); border-radius: 2px; }
+  .bar__n { font: 600 13px/1 var(--ui); color: var(--ink); text-align: right; }
+  .foot { margin: 18px 0 0; font: 400 15px/1.6 var(--body); color: var(--ink-2); }
+
+  .chips { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 0; padding: 0; }
+  .chip { display: inline-block; padding: 7px 12px; border: 1px solid var(--line-strong); border-radius: var(--r); background: var(--plaster); color: var(--ink); font: 600 14px/1 var(--ui); text-decoration: none; }
+  .chip:hover { border-color: var(--glaze); color: var(--glaze-deep); }
+  .chip__n { margin-left: 7px; color: var(--ink-2); font-weight: 400; }
+
+  .pip { display: inline-block; width: 9px; height: 9px; margin-right: 8px; border-radius: 50%; vertical-align: 1px; background: var(--line-strong); }
+  .pip--confirmed { background: var(--glaze); }
+  .pip--rumor { background: var(--brass); }
+  .pip--leak { background: var(--clay); }
+  .pip--unclear { background: var(--line-strong); }
+
+  .near { list-style: none; margin: 18px 0 0; padding: 0; }
+  .near__item { padding: 11px 0; border-bottom: 1px solid var(--line); }
+  .near__item:last-child { border-bottom: 0; }
+  .near__link { color: var(--ink); font: 600 16px/1.45 var(--body); text-decoration: none; border-bottom: 2px solid var(--glaze-tint); }
+  .near__link:hover { border-bottom-color: var(--glaze); }
+  .near__meta { display: block; margin: 4px 0 0 17px; font: 600 11px/1 var(--ui); letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); }
+
+  @media (max-width: 860px) { .cards { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 540px) {
+    .cards { grid-template-columns: 1fr; }
+    .bar { grid-template-columns: 100px 1fr 38px; }
+  }
+</style>

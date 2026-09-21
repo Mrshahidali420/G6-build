@@ -15,7 +15,10 @@ const TARGET = '2026-11-19T00:00:00Z'
 // wide: the counter runs the whole width of its band instead of sitting in a
 // 520px block. Used where the counter is a band of its own rather than one
 // column of a two column row.
-const { wide = false } = Astro.props
+// flat: the counter is one ruled strip of four figures sharing a baseline
+// instead of four boxes. Used on a light band, where four dark boxes read as
+// four separate objects rather than one reading of the same clock.
+const { wide = false, flat = false } = Astro.props
 
 const diff = new Date(TARGET).getTime() - Date.now()
 const launched = diff <= 0
@@ -32,7 +35,7 @@ function parts(ms: number) {
 
 const initial = parts(diff)
 ---
-<div class:list={['countdown', wide && 'countdown--wide']} data-target={TARGET} data-launched={launched ? 'true' : 'false'}>
+<div class:list={['countdown', wide && 'countdown--wide', flat && 'countdown--flat']} data-target={TARGET} data-launched={launched ? 'true' : 'false'}>
   {launched ? (
     <p class="countdown__launched">Grand Theft Auto VI has launched.</p>
   ) : (
@@ -124,6 +127,47 @@ const initial = parts(diff)
   .countdown--wide .countdown__num { font-size: clamp(2rem, 6vw, 3.6rem); }
   .countdown--wide .countdown__label { font-size: 0.78rem; }
   .countdown--wide .countdown__note { max-width: 74ch; }
+
+  /* The flat counter. Same numbers, same tick, no boxes: one row of figures
+     on a shared baseline under a hairline, so the clock reads as one fact
+     about the release and not as four tiles competing with the panel above
+     it. The unit sits beside its number, not under it, which is how a
+     specification line is written. */
+  .countdown--flat .countdown__grid {
+    max-width: none;
+    grid-template-columns: repeat(4, max-content);
+    justify-content: start;
+    gap: clamp(16px, 3.4vw, 44px);
+  }
+  .countdown--flat .countdown__cell {
+    background: none;
+    border: 0;
+    padding: 0;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 8px;
+  }
+  .countdown--flat .countdown__num {
+    color: var(--glaze-deep);
+    font-size: clamp(1.8rem, 1.2rem + 2.2vw, 2.9rem);
+    letter-spacing: -0.02em;
+  }
+  .countdown--flat .countdown__label {
+    font-family: var(--ui);
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    color: var(--ink-2);
+  }
+  .countdown--flat .countdown__note { color: var(--ink-2); max-width: 70ch; }
+  .countdown--flat .countdown__launched { color: var(--glaze-deep); }
+
+  @media (max-width: 560px) {
+    .countdown--flat .countdown__grid {
+      grid-template-columns: repeat(2, max-content);
+      gap: 12px 30px;
+    }
+  }
 
   /* Four cells across a phone leaves each number 60px wide and the word
      "Minutes" wider than the box holding it. Two by two instead. */

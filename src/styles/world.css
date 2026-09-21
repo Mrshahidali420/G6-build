@@ -495,119 +495,178 @@ p { margin: 0 0 1.05em; }
 .btn--quiet { background: transparent; color: var(--on-glaze); border-color: rgba(238, 245, 242, 0.45); box-shadow: none; }
 .btn--quiet:hover { background: rgba(238, 245, 242, 0.14); color: #ffffff; transform: translateY(-1px); }
 .btns { display: flex; flex-wrap: wrap; gap: 12px; }
+/* The quiet button is painted for a glazed band: near white ink, near white
+   border. On any light band that is an invisible control, and the site has
+   several. These give it the ink of the band it actually sits on. */
+.band:not(.band--glaze) .btn--quiet { color: var(--glaze-deep); border-color: var(--line-strong); }
+.band:not(.band--glaze) .btn--quiet:hover { background: var(--chip); color: var(--glaze-deep); }
+
+
 
 /* ---------- Footer ---------- */
 
-/* The footer is the last thing a reader sees and, for anyone who arrived on a
-   deep page from a search result, the only place that explains what the site
-   is. It states the promise, prints the size of the record, opens every
-   section, and ends on the legal line. */
+/* The footer is the masthead turned over. The header runs glazed strip, brass
+   rule, plaster bar; the footer runs brass rule, plaster bar, glazed strip. A
+   reader who scrolls to the bottom meets the same three parts they met at the
+   top, in reverse, which is what makes a page feel finished instead of just
+   stopped.
+
+   The old footer was one dark slab with four link columns in it. It worked,
+   but it put the link lists first and the promise fourth, and most readers
+   here arrive on a deep page from a search result: they need to know what the
+   site is before a list of twenty-two sections is worth anything. The plaster
+   bar now carries name, promise and size, and the lists come after it. */
 
 .colophon {
-  background: var(--glaze-deep);
-  color: var(--on-glaze-2);
   margin-top: 0;
-  padding-block: 46px 30px;
+  border-top: 3px solid var(--brass);
   font-size: 0.9rem;
-  border-top: 2px solid var(--brass);
 }
-.colophon a { color: var(--on-glaze); text-decoration-color: rgba(176, 134, 55, 0.85); }
-.colophon a:hover { color: #ffffff; text-decoration-color: currentColor; }
-.colophon strong { color: var(--on-glaze); }
 
-.colophon__top {
+/* --- the plaster bar: who this is, what it promises, how big it is --- */
+
+.colophon__bar {
+  background: var(--plaster);
+  border-bottom: 1px solid var(--line);
+}
+.colophon__bar-in {
   display: grid;
-  gap: 34px 30px;
-  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1.5fr) minmax(0, 1fr) minmax(0, 1.2fr);
-  padding-bottom: 34px;
+  gap: 20px 34px;
+  align-items: start;
+  grid-template-columns: minmax(0, auto) minmax(0, 1fr) minmax(0, auto);
+  padding-block: 26px 24px;
 }
 
 .colophon__mark { display: inline-flex; align-items: center; gap: 11px; text-decoration: none; }
 .colophon__name {
+  display: block;
   font-family: var(--display);
   font-stretch: 118%;
   font-weight: 800;
-  font-size: 1.02rem;
+  font-size: 1.05rem;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   line-height: 1.1;
-  color: var(--on-glaze);
-  display: block;
+  color: var(--glaze-deep);
 }
 .colophon__name small {
   display: block;
+  margin-top: 4px;
   font-family: var(--ui);
-  font-weight: 500;
-  font-size: 0.62rem;
+  font-weight: 700;
+  font-size: 0.6rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--on-glaze-2);
-  margin-top: 3px;
+  color: var(--brass-ink);
 }
 
-.colophon__promise { margin: 16px 0 0; max-width: 42ch; line-height: 1.6; }
+.colophon__promise {
+  margin: 0;
+  max-width: 52ch;
+  line-height: 1.6;
+  color: var(--ink-2);
+}
 
-.colophon__stats { display: flex; flex-wrap: wrap; gap: 2px; margin: 20px 0 0; }
+/* The two numbers, as a pair of ruled tiles. The labels are different lengths,
+   so one of them wraps to a second line. The numbers sit at the foot of the
+   tile, which keeps them on one baseline whichever label is taller. */
+.colophon__stats { display: flex; gap: 1px; margin: 0; background: var(--line-strong); }
 .colophon__stats > div {
-  flex: 1 1 130px;
-  padding: 10px 13px;
-  border: 1px solid color-mix(in srgb, var(--brass) 45%, transparent);
-  /* The two labels are not the same length, so one of them wraps to a second
-     line. The numbers sit at the foot of the box, so they share a baseline
-     whether the label above them is one line or two. */
+  flex: 1 1 140px;
   display: flex;
   flex-direction: column;
+  padding: 10px 14px 11px;
+  background: var(--plaster);
 }
 .colophon__stats dt {
   font-family: var(--ui);
-  font-size: 0.62rem;
-  letter-spacing: 0.1em;
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--on-glaze-2);
+  color: var(--ink-2);
 }
 .colophon__stats dd {
-  margin: 6px 0 0;
-  padding-top: 2px;
+  margin: 8px 0 0;
   margin-top: auto;
+  padding-top: 6px;
   font-family: var(--display);
   font-stretch: 125%;
   font-weight: 800;
-  font-size: 1.4rem;
+  font-size: 1.45rem;
   line-height: 1;
-  color: var(--on-glaze);
+  color: var(--glaze-deep);
   font-variant-numeric: tabular-nums;
 }
 
-.colophon__head {
-  font-family: var(--ui);
-  font-size: 0.68rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--on-glaze);
-  margin: 0 0 13px;
-  padding-bottom: 9px;
-  border-bottom: 1px solid color-mix(in srgb, var(--brass) 55%, transparent);
+/* --- the link grid --- */
+
+.colophon__grid {
+  display: grid;
+  gap: 30px 30px;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.1fr);
+  padding-block: 32px 34px;
 }
 
-.colophon__col ul { list-style: none; margin: 0; padding: 0; }
-.colophon__col li { margin-bottom: 8px; font-size: 0.86rem; line-height: 1.45; }
-.colophon__col a { text-decoration: none; }
-.colophon__col a:hover { text-decoration: underline; }
-.colophon__col--split ul { columns: 2; column-gap: 22px; }
-.colophon__col--split li { break-inside: avoid; }
-.colophon__trust li { color: var(--on-glaze-2); }
+.colophon__head {
+  margin: 0 0 13px;
+  padding-bottom: 9px;
+  border-bottom: 2px solid var(--brass);
+  font-family: var(--ui);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--brass-ink);
+}
 
-.colophon__foot {
+.colophon__links { list-style: none; margin: 0; padding: 0; }
+.colophon__links li { margin-bottom: 7px; font-size: 0.87rem; line-height: 1.45; }
+.colophon__links a {
+  color: var(--glaze-deep);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.colophon__links a:hover { border-bottom-color: var(--brass); }
+.colophon__links--split { columns: 2; column-gap: 24px; }
+.colophon__links--split li { break-inside: avoid; }
+
+.colophon__trust { list-style: none; margin: 0; padding: 0; }
+.colophon__trust li {
+  margin-bottom: 9px;
+  padding-left: 13px;
+  position: relative;
+  font-size: 0.87rem;
+  line-height: 1.5;
+  color: var(--ink-2);
+}
+.colophon__trust li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 6px;
+  height: 1px;
+  background: var(--brass);
+}
+
+/* --- the glazed strip: the legal line, and nothing else --- */
+
+.colophon__strip {
+  background: var(--glaze-deep);
+  color: #93b8af;
+}
+.colophon__strip-in {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 12px 30px;
-  padding-top: 22px;
-  border-top: 1px solid rgba(238, 245, 242, 0.16);
+  gap: 10px 30px;
+  padding-block: 16px 18px;
 }
-.colophon__fine { margin: 0; max-width: 78ch; font-size: 0.78rem; line-height: 1.6; color: #93b8af; }
+.colophon__strip a { color: var(--on-glaze); text-decoration-color: rgba(176, 134, 55, 0.85); }
+.colophon__strip a:hover { color: #ffffff; }
+.colophon__fine { margin: 0; max-width: 84ch; font-size: 0.76rem; line-height: 1.6; }
 .colophon__checked {
   margin: 0;
   display: flex;
@@ -615,18 +674,19 @@ p { margin: 0 0 1.05em; }
   gap: 6px;
   white-space: nowrap;
   font-family: var(--ui);
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   letter-spacing: 0.04em;
-  color: #93b8af;
 }
 
 @media (max-width: 980px) {
-  .colophon__top { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .colophon__brand { grid-column: 1 / -1; }
+  .colophon__bar-in { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .colophon__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 560px) {
-  .colophon__top { grid-template-columns: 1fr; gap: 28px; }
+  .colophon__grid { grid-template-columns: minmax(0, 1fr); gap: 26px; }
+  .colophon__links--split { columns: 1; }
+  .colophon__stats { flex-wrap: wrap; }
 }
 
 /* ---------- Article body ---------- */

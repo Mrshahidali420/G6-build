@@ -256,70 +256,92 @@ const footConfirmed = pageEntities.filter((entity) => entity.confirmedStatus ===
       <slot />
     </main>
 
+    <!--
+      The footer answers the header. The masthead opens with a thin glazed
+      strip over a plaster bar under a brass rule; the footer closes with a
+      brass rule over a plaster bar under a thin glazed strip. Same parts, same
+      order, upside down, so the page reads as one object with a top and a
+      bottom and not as a site with a decorated lid.
+
+      Most readers here arrived on a deep page from a search result. The first
+      thing the footer gives them is therefore not a link list: it is the name
+      of the site, what it promises, and the size of the record, because that
+      is what decides whether the link list is worth reading.
+    -->
     <footer class="colophon">
-      <div class="shell">
-        <div class="colophon__top">
-          <div class="colophon__brand">
-            <a class="colophon__mark" href="/">
-              <Logo size={32} />
-              <span class="colophon__name">
-                {SITE_NAME}
-                <small>Sourced, not guessed</small>
-              </span>
-            </a>
-            <p class="colophon__promise">
-              An independent record of what has actually been published about
-              Grand Theft Auto VI. Every entry names the source it came from and
-              the date it was last checked.
-            </p>
-            <dl class="colophon__stats">
-              <div>
-                <dt>Entries</dt>
-                <dd>{footTotal}</dd>
-              </div>
-              <div>
-                <dt>Confirmed by Rockstar</dt>
-                <dd>{footConfirmed}</dd>
-              </div>
-            </dl>
-          </div>
+      <div class="colophon__bar">
+        <div class="shell colophon__bar-in">
+          <a class="colophon__mark" href="/">
+            <Logo size={34} />
+            <span class="colophon__name">
+              {SITE_NAME}
+              <small>Sourced, not guessed</small>
+            </span>
+          </a>
 
-          <nav class="colophon__col colophon__col--split" aria-label="Sections">
-            <h2 class="colophon__head">Browse the record</h2>
-            <ul>
-              {HUB_TYPES.map((hub) => (
-                <li><a href={`/${hub.slug}`}>{hub.title.replace('GTA 6 ', '')}</a></li>
-              ))}
-            </ul>
-          </nav>
+          <p class="colophon__promise">
+            An independent record of what has actually been published about
+            Grand Theft Auto VI. Every entry names the source it came from and
+            the date it was last checked.
+          </p>
 
-          <nav class="colophon__col" aria-label="This site">
-            <h2 class="colophon__head">This site</h2>
-            <ul>
-              {RECORD_PAGES.map((page) => (
-                <li><a href={`/${page.slug}`}>{page.title}</a></li>
-              ))}
-              <li><a href="/updates">Daily coverage log</a></li>
-              <li><a href="/about">About and sources</a></li>
-              <li><a href="/search">Search</a></li>
-              <li><a href="/contact">Contact</a></li>
-              <li><a href="/privacy">Privacy</a></li>
-              <li><a href="/rss.xml">RSS feed</a></li>
-            </ul>
-          </nav>
-
-          <div class="colophon__col">
-            <h2 class="colophon__head">Why you can trust it</h2>
-            <ul class="colophon__trust">
-              <li>Every claim links the source that published it.</li>
-              <li>Each page prints the day it was last checked.</li>
-              <li>A rumour is marked as a rumour, or it is left out.</li>
-              <li>Found a mistake? <a href="/contact">Tell us</a> and it gets fixed.</li>
-            </ul>
-          </div>
+          <dl class="colophon__stats">
+            <div>
+              <dt>Entries on file</dt>
+              <dd>{footTotal}</dd>
+            </div>
+            <div>
+              <dt>Confirmed by Rockstar</dt>
+              <dd>{footConfirmed}</dd>
+            </div>
+          </dl>
         </div>
+      </div>
 
-        <div class="colophon__foot">
+      <div class="shell colophon__grid">
+        <nav class="colophon__col colophon__col--wide" aria-label="Sections">
+          <h2 class="colophon__head">The catalogue</h2>
+          <ul class="colophon__links colophon__links--split">
+            {HUB_TYPES.map((hub) => (
+              <li><a href={`/${hub.slug}`}>{hub.title.replace('GTA 6 ', '')}</a></li>
+            ))}
+          </ul>
+        </nav>
+
+        <nav class="colophon__col" aria-label="The record">
+          <h2 class="colophon__head">The record</h2>
+          <ul class="colophon__links">
+            {RECORD_PAGES.map((page) => (
+              <li><a href={`/${page.slug}`}>{page.title}</a></li>
+            ))}
+          </ul>
+        </nav>
+
+        <nav class="colophon__col" aria-label="This site">
+          <h2 class="colophon__head">This site</h2>
+          <ul class="colophon__links">
+            <li><a href="/about">About and sources</a></li>
+            <li><a href="/updates">Daily coverage log</a></li>
+            <li><a href="/search">Search every page</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/privacy">Privacy</a></li>
+            <li><a href="/rss.xml">RSS feed</a></li>
+          </ul>
+        </nav>
+
+        <div class="colophon__col">
+          <h2 class="colophon__head">Why you can trust it</h2>
+          <ul class="colophon__trust">
+            <li>Every claim links the source that published it.</li>
+            <li>Each page prints the day it was last checked.</li>
+            <li>A rumour is marked as a rumour, or it is left out.</li>
+            <li>Found a mistake? <a href="/contact">Tell us</a> and it gets fixed.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="colophon__strip">
+        <div class="shell colophon__strip-in">
           <p class="colophon__fine">
             Not affiliated with Rockstar Games or Take-Two Interactive. Grand
             Theft Auto is a trademark of Take-Two Interactive Software, Inc. Any

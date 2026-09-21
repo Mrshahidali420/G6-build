@@ -39,34 +39,52 @@ const latest = [...newswire.posts]
 // The parts of the site that are not a catalogue hub. Each one prints what it
 // actually holds, because a count is the honest way to say a section is worth
 // opening. Every number here is read from the data file that builds the page.
+// Every shot Rockstar has published, keyed by its slug, so a section card can
+// carry a real picture instead of a coloured box. A section with no picture we
+// may publish gets the terrazzo plate the rest of the site already uses for
+// that case, which is a stated rule here and not an improvisation.
+const shotBySlug = new Map(gallery.shots.map((shot) => [shot.slug, shot]))
+const shotFor = (slug) => shotBySlug.get(slug) ?? null
+
+// The eleven sections of the site that are not the catalogue. Each one carries
+// its count as a number and a unit rather than as a sentence, because the card
+// prints the number at a different size from the word next to it.
 const records = [
-  { slug: 'map', title: 'Map of Leonida', count: `${mapPoints.counts.kept} places placed`,
+  { slug: 'map', title: 'Map of Leonida', num: mapPoints.counts.kept, unit: 'places',
+    shot: shotFor('mount-kalaga-1'),
     blurb: 'Every named place Rockstar has shown, on one pannable map.' },
-  { slug: 'gallery', title: 'Official screenshots', count: `${gallery.counts.shots} pictures`,
+  { slug: 'gallery', title: 'Official screenshots', num: gallery.counts.shots, unit: 'pictures',
+    shot: shotFor('lucia-caminos-1'),
     blurb: 'Every still image Rockstar has published, credited and sorted.' },
-  { slug: 'trailers', title: 'Trailer breakdown', count: `${trailerFeed.counts.confirmed} details confirmed`,
+  { slug: 'trailers', title: 'Trailer breakdown', num: trailerFeed.counts.confirmed, unit: 'details',
+    shot: shotFor('jason-duval-1'),
     blurb: 'What each of the three trailers actually shows, shot by shot.' },
-  { slug: 'trailer-locations', title: 'Where the trailers were filmed', count: `${cameras.counts.kept} camera positions`,
+  { slug: 'trailer-locations', title: 'Where the trailers were filmed', num: cameras.counts.kept, unit: 'camera spots',
+    shot: shotFor('port-gellhorn-1'),
     blurb: 'The spot in Leonida each official shot was filmed from, and the way the camera faced.' },
-  { slug: 'real-places', title: 'The real Florida behind GTA 6', count: `${realPlaces.counts.kept} real places`,
+  { slug: 'real-places', title: 'The real Florida behind GTA 6', num: realPlaces.counts.kept, unit: 'real places',
+    shot: shotFor('leonida-keys-1'),
     blurb: 'The actual Florida towns, roads and landmarks Leonida is built on.' },
-  { slug: 'newswire', title: 'Rockstar Newswire', count: `${newswire.counts.total} posts kept`,
+  { slug: 'newswire', title: 'Rockstar Newswire', num: newswire.counts.total, unit: 'posts',
+    shot: shotFor('ambrosia-1'),
     blurb: 'Rockstar’s own announcements, archived in order and checked daily.' },
-  { slug: 'confirmed', title: 'Confirmed and rumoured', count: `${confirmed} confirmed`,
+  { slug: 'confirmed', title: 'Confirmed and rumoured', num: confirmed, unit: 'confirmed',
+    shot: shotFor('grassrivers-1'),
     blurb: 'The line between what Rockstar said and what somebody else said.' },
-  { slug: 'answers', title: 'Answers', count: `${allAnswers.length} questions`,
+  { slug: 'answers', title: 'Answers', num: allAnswers.length, unit: 'questions',
+    shot: shotFor('real-dimez-1'),
     blurb: 'The questions people actually type, answered with a source on each one.' },
-  { slug: 'news', title: 'News', count: `${newsCount} dated entries`,
+  { slug: 'news', title: 'News', num: newsCount, unit: 'dated entries',
+    shot: shotFor('boobie-ike-1'),
     blurb: 'Every announcement with the date it was made.' },
-  { slug: 'tracker', title: 'The claim record', count: `${trackerCount} claims logged`,
+  { slug: 'tracker', title: 'The claim record', num: trackerCount, unit: 'claims',
+    shot: null,
     blurb: 'What people claimed about this game, and how it held up.' },
-  { slug: 'numbers', title: 'GTA 6 by the numbers', count: 'Charts',
+  { slug: 'numbers', title: 'GTA 6 by the numbers', num: null, unit: null,
+    shot: null,
     blurb: 'The money, the wait and the search interest, drawn from public data.' },
 ]
 
-// The front page is the only page on a check-date site that had no check date.
-// The newest answer check is the honest one to print: those are the pages this
-// page links to.
 const updated = (await getCollection('answers'))
   .map((page) => page.data.updated)
   .sort()
@@ -79,6 +97,39 @@ const updated = (await getCollection('answers'))
 // Inside a strip, entries that have a real picture come first, then the ones
 // Rockstar has confirmed. The strongest thing we hold in a section is the first
 // thing a reader meets in it.
+// The proof strip under the hero. Four numbers, all of them read off the data
+// the site is built from, so none of them can drift from what the pages say.
+// The source count is distinct publisher domains, not a total of citations:
+// citing one site twice is not two sources.
+const sourceSites = new Set(
+  pageEntities
+    .flatMap((entity) => entity.sources ?? [])
+    .map((url) => {
+      try {
+        return new URL(String(url)).hostname.replace(/^www\./, '')
+      } catch {
+        return null
+      }
+    })
+    .filter(Boolean),
+).size
+
+const checkedLabel = updated
+  ? new Date(`${updated}T00:00:00Z`).toLocaleDateString('en-GB', {
+      day: 'numeric',
+      month: 'short',
+      timeZone: 'UTC',
+    }).replace('Sept', 'Sep')
+  : 'Today'
+
+// An answer carries a tag saying where its evidence came from, because that is
+// the thing a reader wants to know before they click. It is read off the source
+// list the page already prints, so the tag can never disagree with the page.
+const answerTag = (page) =>
+  (page.data.sources ?? []).some((source) => String(source.url).includes('rockstargames.com'))
+    ? { label: 'Rockstar source', kind: 'yes' }
+    : { label: 'Reported', kind: 'no' }
+
 const PER_SECTION = 4
 
 const rank = (entity) =>
@@ -113,42 +164,87 @@ const jsonLd = {
 const showAd = Boolean(ADSENSE_CLIENT && ADSENSE_SLOTS.index)
 ---
 <BaseLayout title={SITE_TAGLINE} description={description} path="/" updated={updated} jsonLd={jsonLd}>
-  <section class="band band--glaze hero-band">
+  <!--
+    The masthead. A plaster ground, not a glazed band: the front page opens on
+    a claim and the evidence for it, and a dark slab behind the whole thing
+    made both read as decoration. The glaze is spent instead on the one panel
+    that holds Rockstar's own figures, so the eye goes to the facts.
+  -->
+  <section class="band band--plaster hero-band">
     <div class="shell">
       <div class="hero__split">
         <div class="hero__lead">
+          <p class="hero__eyebrow">The record</p>
           <h1 class="hero__title">Every confirmed Grand Theft Auto VI fact, with its source</h1>
           <p class="lede">
             {total} entries. {confirmed} of them confirmed by Rockstar itself. The rest
             say plainly who reported them, and when.
           </p>
           <Mark status="OFFICIAL_CONFIRMED" as="stamp" label="Confirmed by Rockstar" />
+
+          <div class="btns hero__btns">
+            <a class="btn" href="/news">Every dated announcement <Icon name="arrow" size={16} /></a>
+            <a class="btn btn--quiet" href="/about">How the data is checked</a>
+          </div>
         </div>
 
         <div class="hero__facts">
-          <dl class="spec">
-            <dt>Release date</dt>
-            <dd><a href="/gta-6-countdown">19 November 2026</a></dd>
-            <dt>Platforms</dt>
-            <dd>PlayStation 5, Xbox Series X and Series S</dd>
-            <dt>Price</dt>
-            <dd>79.99 USD standard, 99.99 USD ultimate</dd>
-            <dt>Source</dt>
-            <dd>
-              <a href="/gta-6-release-date">Rockstar Newswire, checked on the release date page</a>
-              <span class="hero__facts-mark"><Mark status="OFFICIAL_CONFIRMED" /></span>
-            </dd>
-          </dl>
-
-          <div class="btns">
-            <a class="btn" href="/news">Every dated announcement <Icon name="arrow" size={16} /></a>
-            <a class="btn btn--quiet" href="/about">How the data is checked</a>
+          <div class="hspec">
+            <p class="hspec__h">Release specification</p>
+            <div class="hspec__row">
+              <span class="hspec__k">Release date</span>
+              <span class="hspec__v hspec__v--big"><a href="/gta-6-countdown">19 November 2026</a></span>
+            </div>
+            <div class="hspec__row">
+              <span class="hspec__k">Platforms</span>
+              <span class="hspec__v">PlayStation 5, Xbox Series X and Series S</span>
+            </div>
+            <div class="hspec__row">
+              <span class="hspec__k">Price</span>
+              <span class="hspec__v">79.99 USD standard, 99.99 USD ultimate</span>
+            </div>
+            <div class="hspec__row">
+              <span class="hspec__k">Source</span>
+              <span class="hspec__v">
+                <a href="/gta-6-release-date">Rockstar Newswire, checked on the release date page</a>
+                <span class="hspec__mark">Official</span>
+              </span>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="hero__count">
-        <Countdown wide={true} />
+        <Countdown flat={true} />
+      </div>
+    </div>
+  </section>
+
+  <!--
+    The proof strip. Four numbers on the seam under the masthead, each one read
+    off the data the site is built from. It sits here because the headline above
+    it makes a claim about size and honesty, and this is the cheapest place to
+    show the claim is measurable.
+  -->
+  <section class="ledger" aria-label="The size of the record">
+    <div class="shell">
+      <div class="ledger__grid">
+        <div class="ledger__cell">
+          <b>{total.toLocaleString('en-GB')}</b>
+          <span>Entries on file</span>
+        </div>
+        <div class="ledger__cell">
+          <b>{confirmed.toLocaleString('en-GB')}</b>
+          <span>Confirmed by Rockstar</span>
+        </div>
+        <div class="ledger__cell">
+          <b>{sourceSites.toLocaleString('en-GB')}</b>
+          <span>Named sources cited</span>
+        </div>
+        <div class="ledger__cell">
+          <b>{checkedLabel}</b>
+          <span>Last checked</span>
+        </div>
       </div>
     </div>
   </section>
@@ -177,6 +273,13 @@ const showAd = Boolean(ADSENSE_CLIENT && ADSENSE_SLOTS.index)
     </div>
   </section>
 
+  <!--
+    The eleven sections, as picture cards. A ruled text index was tried first
+    and threw away the one thing the front page has that a list does not: every
+    section of this site looks like something. The picture is the card, the
+    count rides on a glazed tab over it, and a section with no picture we may
+    publish gets the terrazzo plate instead of an empty grey box.
+  -->
   <section class="band">
     <div class="shell">
       <h2>The record, section by section</h2>
@@ -184,31 +287,64 @@ const showAd = Boolean(ADSENSE_CLIENT && ADSENSE_SLOTS.index)
         The catalogue is only half the site. These are the other eleven parts of
         it, and what each one holds today.
       </p>
-      <ul class="recs">
+      <ul class="cards">
         {records.map((record) => (
-          <li class="rec">
-            <a class="rec__link" href={`/${record.slug}`}>
-              <span class="rec__title">{record.title}</span>
-              <span class="rec__count">{record.count}</span>
+          <li class="card">
+            <a href={`/${record.slug}`}>
+              <span class="card__shot">
+                {record.shot ? (
+                  <img
+                    src={record.shot.src}
+                    srcset={record.shot.srcset}
+                    sizes="(max-width: 640px) 100vw, 300px"
+                    alt={`${record.shot.title}, an official Rockstar screenshot`}
+                    loading="lazy"
+                    decoding="async"
+                    width="640"
+                    height="400"
+                  />
+                ) : (
+                  <span class="card__plate"><span>No published photo</span></span>
+                )}
+                {record.num !== null && (
+                  <span class="card__tab">
+                    <b>{record.num.toLocaleString('en-GB')}</b>
+                    <small>{record.unit}</small>
+                  </span>
+                )}
+              </span>
+              <span class="card__body">
+                <span class="card__name">{record.title}</span>
+                <span class="card__sub">{record.blurb}</span>
+                <span class="card__credit">{record.shot ? 'Rockstar Games' : 'Terrazzo plate'}</span>
+              </span>
             </a>
-            <p class="rec__blurb">{record.blurb}</p>
           </li>
         ))}
       </ul>
     </div>
   </section>
 
+  <!--
+    The questions, each with a tag saying where its evidence comes from. The tag
+    is read off the source list the answer page already prints, so it cannot
+    drift from the page it points at.
+  -->
   <section class="band band--plaster">
     <div class="shell">
       <h2>The questions people ask most</h2>
-      <ul class="directory directory--single">
+      <p class="lede">
+        Every answer names the sources it came from. The tag says whether
+        Rockstar itself is one of them, before you click.
+      </p>
+      <ul class="qs">
         {answers.map((page) => (
-          <li>
-            <a href={`/${page.id}`}>
-              <span class="directory__name">{page.data.title}</span>
-              <span class="directory__rule"></span>
-              <span class="directory__count">Checked {page.data.updated}</span>
-            </a>
+          <li class="qs__row">
+            <a class="qs__q" href={`/${page.id}`}>{page.data.title}</a>
+            <span class="qs__meta">
+              <span class="qs__date">Checked {page.data.updated}</span>
+              <span class:list={['qs__tag', `qs__tag--${answerTag(page).kind}`]}>{answerTag(page).label}</span>
+            </span>
           </li>
         ))}
       </ul>
@@ -252,7 +388,13 @@ const showAd = Boolean(ADSENSE_CLIENT && ADSENSE_SLOTS.index)
     </section>
   )}
 
-  <section class="band band--plaster">
+  <!--
+    Rockstar's own words, on Rockstar's own ground. The band is glazed because
+    everything in it was written by them and not by this site, and the date
+    gets its own column so the three posts read as a dated record rather than
+    as three headlines.
+  -->
+  <section class="band band--glaze">
     <div class="shell">
       <h2>The last thing Rockstar said</h2>
       <p class="lede">
@@ -260,11 +402,16 @@ const showAd = Boolean(ADSENSE_CLIENT && ADSENSE_SLOTS.index)
         so the top entry is the newest thing Rockstar has published.
       </p>
       <ul class="wire">
-        {latest.map((post) => (
+        {latest.map((post, index) => (
           <li class="wire__item">
-            <p class="wire__date">{post.date}</p>
-            <h3 class="wire__title"><a href="/newswire">{post.title}</a></h3>
-            {post.subtitle && <p class="wire__sub">{post.subtitle}</p>}
+            <p class="wire__date">
+              {post.date}
+              {index === 0 && <span class="wire__new">Newest</span>}
+            </p>
+            <div class="wire__body">
+              <h3 class="wire__title"><a href="/newswire">{post.title}</a></h3>
+              {post.subtitle && <p class="wire__sub">{post.subtitle}</p>}
+            </div>
           </li>
         ))}
       </ul>
@@ -276,77 +423,368 @@ const showAd = Boolean(ADSENSE_CLIENT && ADSENSE_SLOTS.index)
     </div>
   </section>
 
+  <!--
+    The only numbered thing on the page. Numbering is information here and
+    nowhere else: an entry really does go through these four states in this
+    order, and a reader who knows the order can read every mark on the site.
+  -->
   <section class="band">
-    <div class="shell prose">
+    <div class="shell">
       <h2>How this site works</h2>
-      <p>
-        If nothing reliable says a thing, it is not on the site. That rule costs
-        the site pages. There is no mission list here, no weapon
-        list, no cheat codes and no map coordinates, because Rockstar has published
-        none of that. Sites that carry those lists today made them up. When the game
-        ships on 19 November 2026 those pages get written from the real thing.
-      </p>
-      <p>
-        Each entry carries four things: what it is, where it was first shown, who
-        said so, and how sure that makes us. A fact seen in an official trailer is
-        marked differently from a fact a journalist reported, and differently again
-        from something the community spotted in a screenshot. You can see which is
-        which before you trust it.
-      </p>
-      <p>
-        Nothing on this site is affiliated with Rockstar Games or Take-Two
-        Interactive. It is an independent record of what has been published.
-      </p>
-      <p>
-        <a href="/news">Every dated announcement so far</a> ·
-        <a href="/confirmed">What Rockstar has confirmed</a> ·
-        <a href="/tracker">The claim record</a> ·
-        <a href="/gta-6-release-date">The release date and its history</a> ·
-        <a href="/gta-6-cheats">Why there are no cheats yet</a> ·
-        <a href="/best-cars-in-gta-6">The confirmed cars</a> ·
-        <a href="/gta-6-preparation-guide">Getting ready for launch</a> ·
-        <a href="/about">How the data is checked</a> ·
-        <a href="/search">Search every page</a>
-      </p>
+      <ol class="steps">
+        <li class="step">
+          <p class="step__n">Step 1</p>
+          <h3 class="step__h">Found</h3>
+          <p class="step__p">
+            A thing shows up in a trailer, a screenshot, a Newswire post or a
+            press report. Nothing enters the record from a rumour alone.
+          </p>
+        </li>
+        <li class="step">
+          <p class="step__n">Step 2</p>
+          <h3 class="step__h">Sourced</h3>
+          <p class="step__p">
+            The entry records where it came from and links it. If no source can
+            be named, the entry is not written.
+          </p>
+        </li>
+        <li class="step">
+          <p class="step__n">Step 3</p>
+          <h3 class="step__h">Marked</h3>
+          <p class="step__p">
+            One of four marks goes on it, so a Rockstar fact never looks the
+            same as something a player spotted in a frame.
+          </p>
+        </li>
+        <li class="step">
+          <p class="step__n">Step 4</p>
+          <h3 class="step__h">Dated</h3>
+          <p class="step__p">
+            The page prints the day it was last checked. When Rockstar says more,
+            the entry changes and the date moves.
+          </p>
+        </li>
+      </ol>
+
+      <div class="prose">
+        <p>
+          If nothing reliable says a thing, it is not on the site. That rule costs
+          the site pages. There is no mission list here, no weapon
+          list, no cheat codes and no map coordinates, because Rockstar has published
+          none of that. Sites that carry those lists today made them up. When the game
+          ships on 19 November 2026 those pages get written from the real thing.
+        </p>
+        <p>
+          Nothing on this site is affiliated with Rockstar Games or Take-Two
+          Interactive. It is an independent record of what has been published.
+        </p>
+        <p>
+          <a href="/news">Every dated announcement so far</a> ·
+          <a href="/confirmed">What Rockstar has confirmed</a> ·
+          <a href="/tracker">The claim record</a> ·
+          <a href="/gta-6-release-date">The release date and its history</a> ·
+          <a href="/gta-6-cheats">Why there are no cheats yet</a> ·
+          <a href="/best-cars-in-gta-6">The confirmed cars</a> ·
+          <a href="/gta-6-preparation-guide">Getting ready for launch</a> ·
+          <a href="/about">How the data is checked</a> ·
+          <a href="/search">Search every page</a>
+        </p>
+      </div>
     </div>
   </section>
 </BaseLayout>
 
 <style>
-  /* The eleven non-catalogue sections, as a card each. A card carries what the
-     section holds, because a count is the honest reason to open it. */
-  .recs {
-    list-style: none; margin: 26px 0 0; padding: 0;
-    display: grid; gap: 1px;
+  /* The proof strip. One glazed band of four figures on the seam under the
+     masthead. The hairlines between cells are the grid gap showing through a
+     lighter background, so there is no border to double up at the ends. */
+  .ledger { background: var(--glaze); border-bottom: 1px solid var(--glaze-deep); }
+  .ledger__grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1px;
+    background: rgb(185 214 205 / 0.25);
+  }
+  .ledger__cell {
+    background: var(--glaze);
+    padding: 16px clamp(10px, 1.6vw, 20px) 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .ledger__cell b {
+    font-family: var(--display);
+    font-stretch: 118%;
+    font-weight: 800;
+    font-size: clamp(1.3rem, 0.9rem + 1.3vw, 1.8rem);
+    line-height: 1;
+    color: var(--on-glaze);
+    font-variant-numeric: tabular-nums;
+  }
+  .ledger__cell span {
+    font-family: var(--ui);
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--on-glaze-2);
+  }
+  @media (max-width: 900px) {
+    .ledger__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+
+  /* The eleven non-catalogue sections, as picture cards. The picture is the
+     card: every section of this site looks like something, and a text index
+     threw that away. The count rides on a glazed tab over the bottom left of
+     the picture, so the number a reader wants sits on the thing they are
+     already looking at. */
+  .cards {
+    list-style: none;
+    margin: 26px 0 0;
+    padding: 0;
+    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(258px, 1fr));
-    background: var(--line-strong);
+    gap: clamp(16px, 2vw, 24px);
+  }
+  .card {
+    display: flex;
+    background: var(--plaster);
     border: 1px solid var(--line-strong);
     border-radius: var(--r);
     overflow: hidden;
   }
-  .rec { background: var(--plaster); padding: 15px 16px 16px; }
-  .rec__link { display: block; text-decoration: none; color: inherit; }
-  .rec__link:hover .rec__title { text-decoration: underline; }
-  .rec__title { display: block; font-family: var(--display); font-weight: 700; font-size: 1.02rem; line-height: 1.25; color: var(--glaze-deep); }
-  .rec__count {
-    display: block; margin-top: 6px;
-    font-family: var(--ui); font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em;
-    text-transform: uppercase; color: var(--brass-ink);
+  .card > a {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
   }
-  .rec__blurb { margin: 9px 0 0; font-size: 0.9rem; line-height: 1.5; color: var(--ink-2); }
+  .card:hover .card__name { text-decoration: underline; }
 
-  /* The three newest Rockstar posts, shown rather than linked. */
+  .card__shot {
+    position: relative;
+    display: block;
+    aspect-ratio: 16 / 10;
+    background: var(--chip);
+    border-bottom: 3px solid var(--brass);
+    overflow: hidden;
+  }
+  .card__shot img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* The poured terrazzo plate, for a section with no picture we may publish.
+     The site already uses this rather than an empty grey box, and says so. */
+  .card__plate {
+    position: absolute;
+    inset: 0;
+    background-color: var(--chip);
+    background-image:
+      radial-gradient(circle at 18% 28%, var(--brass) 0 3px, transparent 3px),
+      radial-gradient(circle at 63% 17%, var(--glaze) 0 5px, transparent 5px),
+      radial-gradient(circle at 82% 61%, var(--brass) 0 4px, transparent 4px),
+      radial-gradient(circle at 34% 74%, var(--glaze-lift) 0 6px, transparent 6px),
+      radial-gradient(circle at 51% 46%, var(--clay) 0 3px, transparent 3px),
+      radial-gradient(circle at 8% 82%, var(--glaze) 0 4px, transparent 4px),
+      radial-gradient(circle at 92% 22%, var(--clay) 0 2px, transparent 2px),
+      radial-gradient(circle at 72% 88%, var(--brass) 0 3px, transparent 3px);
+    display: grid;
+    place-items: center;
+  }
+  .card__plate span {
+    font-family: var(--ui);
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-2);
+    background: var(--stone);
+    padding: 5px 10px;
+    border: 1px solid var(--line-strong);
+  }
+
+  .card__tab {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: baseline;
+    gap: 7px;
+    padding: 7px 13px;
+    background: var(--glaze-deep);
+    color: var(--on-glaze);
+    border-top: 1px solid var(--brass);
+    border-right: 1px solid var(--brass);
+    font-variant-numeric: tabular-nums;
+  }
+  .card__tab b {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: 1.12rem;
+    line-height: 1;
+    letter-spacing: -0.01em;
+  }
+  .card__tab small {
+    font-family: var(--ui);
+    font-size: 0.58rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--on-glaze-2);
+  }
+
+  .card__body {
+    padding: 15px 16px 17px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1 1 auto;
+  }
+  .card__name {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 1.04rem;
+    line-height: 1.25;
+    color: var(--glaze-deep);
+  }
+  .card__sub { font-size: 0.92rem; line-height: 1.5; color: var(--ink-2); }
+  .card__credit {
+    margin-top: auto;
+    padding-top: 4px;
+    font-family: var(--ui);
+    font-size: 0.58rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--brass-ink);
+  }
+
+  /* The questions. A ruled two column list: the question, and a tag saying
+     where the answer's evidence comes from. The tag is the reason to click one
+     row rather than another, so it gets colour and the rule does not. */
+  .qs { list-style: none; margin: 24px 0 26px; padding: 0; }
+  .qs__row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px 18px;
+    padding: 13px 0;
+    border-top: 1px solid var(--line-strong);
+  }
+  .qs__row:last-child { border-bottom: 1px solid var(--line-strong); }
+  .qs__q {
+    flex: 1 1 260px;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: var(--glaze-deep);
+    text-decoration: none;
+  }
+  .qs__q:hover { text-decoration: underline; }
+  .qs__meta {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+  }
+  .qs__date {
+    font-family: var(--ui);
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-2);
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+  }
+  .qs__tag {
+    flex: 0 0 auto;
+    padding: 4px 10px;
+    font-family: var(--ui);
+    font-size: 0.58rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .qs__tag--yes { background: var(--glaze-tint); color: var(--glaze-deep); }
+  .qs__tag--no { background: var(--chip); color: var(--ink-2); }
+
+  /* The three newest Rockstar posts. The date owns a column of its own, so the
+     list reads as a dated record and the titles all start on one line. */
   .wire { list-style: none; margin: 24px 0 0; padding: 0; }
-  .wire__item { padding: 16px 0; border-top: 1px solid color-mix(in srgb, var(--brass) 55%, transparent); }
+  .wire__item {
+    display: grid;
+    grid-template-columns: 148px minmax(0, 1fr);
+    gap: 4px 20px;
+    padding: 16px 0;
+    border-top: 1px solid color-mix(in srgb, var(--brass) 55%, transparent);
+  }
   .wire__item:first-child { padding-top: 14px; }
   .wire__date {
-    margin: 0; font-family: var(--ui); font-size: 0.7rem; font-weight: 700;
-    letter-spacing: 0.1em; text-transform: uppercase; color: var(--brass-ink);
+    margin: 0;
+    font-family: var(--ui);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--brass);
+    font-variant-numeric: tabular-nums;
   }
-  .wire__title { margin: 7px 0 0; font-size: 1.08rem; line-height: 1.3; }
+  /* The only clay on the page. One chip, on one row, so it means something. */
+  .wire__new {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 2px 7px;
+    background: var(--clay);
+    color: #fff;
+    letter-spacing: 0.1em;
+  }
+  .wire__title { margin: 0; font-size: 1.08rem; line-height: 1.3; }
   .wire__title a { color: inherit; text-decoration: none; }
   .wire__title a:hover { text-decoration: underline; }
-  .wire__sub { margin: 6px 0 0; font-size: 0.92rem; line-height: 1.5; color: var(--ink-2); }
+  .wire__sub { margin: 6px 0 0; font-size: 0.92rem; line-height: 1.5; color: var(--on-glaze-2); }
+
+  @media (max-width: 620px) {
+    .wire__item { grid-template-columns: minmax(0, 1fr); gap: 7px; }
+  }
+
+  /* The four states an entry passes through, in order. This is the one place
+     on the page where a number is information: the order is real, and a reader
+     who knows it can read every mark on the site. */
+  .steps {
+    list-style: none;
+    margin: 26px 0 34px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 0;
+  }
+  .step { padding: 0 clamp(14px, 1.8vw, 24px); border-left: 1px solid var(--line-strong); }
+  .step:first-child { padding-left: 0; border-left: 0; }
+  .step__n {
+    margin: 0 0 10px;
+    padding-bottom: 9px;
+    border-bottom: 2px solid var(--brass);
+    font-family: var(--ui);
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--brass-ink);
+  }
+  .step__h { margin: 0; font-size: 1.1rem; color: var(--glaze-deep); }
+  .step__p { margin: 7px 0 0; font-size: 0.92rem; line-height: 1.55; color: var(--ink-2); }
+
+  @media (max-width: 640px) {
+    .step { padding: 14px 0 0; border-left: 0; }
+    .step:first-child { padding-top: 0; }
+  }
 
   /* Each section on the front page is its own strip: a name, the way into the
      rest of it, and four entries. A brass rule over the name separates one
@@ -377,9 +815,9 @@ const showAd = Boolean(ADSENSE_CLIENT && ADSENSE_SLOTS.index)
     white-space: nowrap;
   }
 
-  /* The masthead is three parts. Two columns on top: the claim on the left,
-     the facts that back it on the right. Then the counter underneath, running
-     the whole width, so it reads as one thing and not as a third column. */
+  /* The masthead is a claim on the left and the evidence for it on the right,
+     with the clock under both. The glaze is spent on the evidence panel only,
+     so the one dark thing on the band is the one holding Rockstar's figures. */
   .hero__split {
     display: grid;
     gap: 30px;
@@ -388,29 +826,95 @@ const showAd = Boolean(ADSENSE_CLIENT && ADSENSE_SLOTS.index)
 
   @media (min-width: 940px) {
     .hero__split {
-      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
       gap: 48px;
     }
   }
 
+  .hero__eyebrow {
+    margin: 0 0 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--brass);
+    display: inline-block;
+    font-family: var(--ui);
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--brass-ink);
+  }
+
   /* The headline stops before the column edge so it reads as a statement and
      not as a line of body text. */
-  .hero__title { max-width: 16ch; margin-top: 0; }
+  .hero__title {
+    max-width: 16ch;
+    margin-top: 0;
+    font-size: clamp(2.1rem, 1.3rem + 3.4vw, 3.5rem);
+    color: var(--glaze-deep);
+  }
   .hero__lead .lede { max-width: 46ch; }
+  .hero__btns { margin-top: 22px; }
 
-  .hero__facts .spec { margin: 0 0 22px; }
+  /* The evidence panel. Its own class, not the site wide .spec, because that
+     one is a two column dl used inside article bodies and this is a slab. */
+  .hspec {
+    background: var(--glaze-deep);
+    border-top: 3px solid var(--brass);
+    padding: 18px 20px 6px;
+  }
+  .hspec__h {
+    margin: 0 0 12px;
+    font-family: var(--ui);
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--brass);
+  }
+  .hspec__row {
+    display: grid;
+    gap: 4px;
+    padding: 11px 0;
+    border-top: 1px solid rgb(185 214 205 / 0.22);
+  }
+  .hspec__k {
+    font-family: var(--ui);
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--on-glaze-2);
+  }
+  .hspec__v { font-size: 0.95rem; line-height: 1.45; color: var(--on-glaze); }
+  .hspec__v a { color: var(--on-glaze); text-decoration-color: rgba(176, 134, 55, 0.85); }
+  .hspec__v a:hover { color: #ffffff; }
+  .hspec__v--big {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.1;
+  }
+  .hspec__v--big a { text-decoration: none; }
+  .hspec__v--big a:hover { text-decoration: underline; }
+  .hspec__mark {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 3px 9px;
+    border: 1px solid var(--brass);
+    font-family: var(--ui);
+    font-size: 0.56rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--brass);
+  }
 
-  /* The source line runs to two lines in this column, and a mark parked at the
-     end of the second line reads as part of the sentence. It gets its own
-     line instead. */
-  .hero__facts-mark { display: block; margin-top: 9px; }
-
-  /* A brass rule sets the counter apart from the two columns above it without
+  /* A hairline sets the clock apart from the two columns above it without
      starting a new band and a new colour. */
   .hero__count {
     margin-top: 34px;
     padding-top: 30px;
-    border-top: 1px solid color-mix(in srgb, var(--brass) 60%, transparent);
+    border-top: 1px solid var(--line-strong);
   }
 
   @media (max-width: 939px) {

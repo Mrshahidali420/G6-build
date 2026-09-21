@@ -56,3 +56,73 @@ export const TIER_LABEL = {
   TIER_3_COMMUNITY: 'Community source',
   TIER_4_UNSOURCED: 'No source',
 }
+
+/* ---------- The search snippet ----------
+
+   The title and the description are the only two lines a person reads before
+   deciding whether to click. Search Console for 24 August to 20 September 2026
+   says they were not clicking: 492 impressions at an average position of 8.51,
+   and not one click on any query. A page-one result that nobody opens is a
+   snippet problem, not a ranking problem.
+
+   Every query that reached these pages carried the game name in it. "gta 6
+   ambrosia". "blood records gta 6". "gta 6 devil woman". Two things kept the
+   snippet from answering that. The title named the entry and the site and never
+   the game. And the descriptions call it "Grand Theft Auto VI", which is the
+   correct name to print on the page and the wrong one to put in a snippet,
+   because it is not what anybody types into the box.
+
+   None of this rewrites what a person wrote. The sentence under each result is
+   still that entry's own sentence. This moves the words a searcher typed to the
+   front of it and cuts the tail on a whole word. */
+
+const GAME_NAMES = [
+  [/Grand Theft Auto\s+(?:VI|6)\b/gi, 'GTA 6'],
+  [/\bGTA\s*VI\b/g, 'GTA 6'],
+  [/\bGTA6\b/gi, 'GTA 6'],
+]
+
+const saysGame = (text) => /\bGTA 6\b/.test(text)
+
+export function metaTitle(entity) {
+  return /gta\s*6|grand theft auto/i.test(entity.name) ? entity.name : `${entity.name} in GTA 6`
+}
+
+export function metaDescription(entity, max = 155) {
+  let text = entity.shortDescription.trim()
+  for (const [pattern, name] of GAME_NAMES) text = text.replace(pattern, name)
+
+  const leadsWithName = text.toLowerCase().startsWith(entity.name.toLowerCase())
+
+  // "Dinka is a fictional Japanese vehicle brand" becomes "Dinka in GTA 6 is a
+  // fictional Japanese vehicle brand". The sentence still reads as English,
+  // which a prefix bolted onto the front of it would not.
+  const lead = leadsWithName
+    ? `${entity.name} in GTA 6${text.slice(entity.name.length)}`
+    : `${entity.name} in GTA 6. ${text}`
+
+  if (!saysGame(text)) return clip(lead, max)
+
+  // The sentence already names the game, so it needs no help from us. Unless it
+  // names the game so late that the trim cuts it off, and then the lead form
+  // earns its repetition: a snippet that never says GTA 6 answers nobody.
+  const kept = clip(leadsWithName ? text : `${entity.name}. ${text}`, max)
+  return saysGame(kept) ? kept : clip(lead, max)
+}
+
+// Google cuts the snippet itself, mid-word and without warning. Cutting it here
+// instead means the last thing a reader sees is a finished thought: a whole
+// sentence where one ends in range, and a whole word where none does.
+function clip(text, max) {
+  if (text.length <= max) return text
+
+  const head = text.slice(0, max)
+  const sentence = Math.max(head.lastIndexOf('. '), head.lastIndexOf('? '), head.lastIndexOf('! '))
+  if (sentence >= max * 0.6) return head.slice(0, sentence + 1)
+
+  // The three dots are part of the snippet, so the whole word has to fit
+  // inside the budget with them, not alongside it.
+  const stem = text.slice(0, max - 3)
+  const word = stem.lastIndexOf(' ')
+  return `${stem.slice(0, word > 0 ? word : max - 3).replace(/[\s,;:-]+$/, '')}...`
+}

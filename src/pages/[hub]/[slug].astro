@@ -7,7 +7,7 @@ import SongPlayer from '../../components/SongPlayer.astro'
 import Mark from '../../components/Mark.astro'
 import EntityTile from '../../components/EntityTile.astro'
 import { HUB_TYPES } from '../../lib/site.mjs'
-import { entitiesOfType, hubFor, relatedFor, urlFor, TIER_LABEL } from '../../lib/entities.mjs'
+import { entitiesOfType, hubFor, relatedFor, urlFor, metaTitle, metaDescription, TIER_LABEL } from '../../lib/entities.mjs'
 import { entitySchema } from '../../lib/schema.mjs'
 import { imageFor, creditFor, creditSourceFor, galleryFor } from '../../lib/images.mjs'
 import { trackFor } from '../../lib/music.mjs'
@@ -41,17 +41,10 @@ const reported = factsFor(entity.slug)
 // when Apple publishes one for that record. When it does not, the plate stays.
 const track = entity.entityType === 'song' ? trackFor(entity.slug) : null
 
-// Unique per page. Never a template with the name swapped in.
-const description = entity.shortDescription.slice(0, 155)
-
-// Search Console, 24 Aug to 20 Sep 2026: every query that reached these pages
-// carried the game name. "gta 6 ambrosia", "blood records gta 6", "gta 6 devil
-// woman". The bare entry name does not, so the title matched the query on the
-// brand suffix alone and the snippet read as a site name, not an answer. The
-// name plus the game is what a person typed, in the order they typed it.
-const pageTitle = /gta\s*6|grand theft auto/i.test(entity.name)
-  ? entity.name
-  : `${entity.name} in GTA 6`
+// Unique per page. Never a template with the name swapped in. Both helpers
+// live in lib/entities.mjs, with the Search Console reading that explains them.
+const pageTitle = metaTitle(entity)
+const description = metaDescription(entity)
 ---
 <BaseLayout
   title={pageTitle}

@@ -1,0 +1,467 @@
+---
+// The measured side of this site.
+//
+// Everywhere else is a list of things. This page is three series of numbers
+// that can each be checked against a public source: the Take-Two share price,
+// Google search interest, and the view counters on the official videos.
+//
+// The charts are plain SVG drawn here at build time. The site ships no
+// JavaScript, so there is no chart library and no canvas. Every path below is
+// a string built from the data in src/data/numbers.json.
+import BaseLayout from '../layouts/BaseLayout.astro'
+import { SITE_NAME, SITE_URL, canonical } from '../lib/site.mjs'
+import { GAME } from '../lib/schema.mjs'
+import data from '../data/numbers.json'
+
+const MONTHS = [
+  'January', 'February', 'March', 'April', 'May', 'June',
+  'July', 'August', 'September', 'October', 'November', 'December',
+]
+function longDate(iso) {
+  const [year, month, day] = String(iso || '').split('-')
+  if (!year) return iso
+  return `${Number(day)} ${MONTHS[Number(month) - 1]} ${year}`
+}
+function monthYear(iso) {
+  const [year, month] = String(iso || '').split('-')
+  return `${MONTHS[Number(month) - 1]} ${year}`
+}
+
+/** Days since 1970, so a date can be placed on a straight time axis. */
+const day = (iso) => Date.parse(`${String(iso).slice(0, 10)}T00:00:00Z`) / 86_400_000
+
+/** Round numbers for a y axis, roughly `count` of them, ending above `max`. */
+function ticks(max, count) {
+  const rough = max / count
+  const power = 10 ** Math.floor(Math.log10(rough))
+  const step = [1, 2, 2.5, 5, 10].map((n) => n * power).find((n) => n >= rough) || power * 10
+  const out = []
+  for (let value = 0; value <= max + step / 2; value += step) out.push(value)
+  return out
+}
+
+/** Builds one chart's plotting maths once, so the markup stays readable. */
+function chart({ width, height, pad, xMin, xMax, yMax }) {
+  const left = pad.left
+  const right = width - pad.right
+  const top = pad.top
+  const bottom = height - pad.bottom
+  return {
+    width, height, left, right, top, bottom,
+    x: (value) => left + ((value - xMin) / (xMax - xMin)) * (right - left),
+    y: (value) => bottom - (value / yMax) * (bottom - top),
+  }
+}
+
+/** A list of points as an SVG path. */
+const line = (points, box, xOf, yOf) =>
+  points.map((p, i) => `${i ? 'L' : 'M'}${box.x(xOf(p)).toFixed(1)} ${box.y(yOf(p)).toFixed(1)}`).join(' ')
+
+/* ------------------------------------------------------------- share price */
+
+const stock = data.stock
+const priceXMin = day(stock.points[0].date)
+const priceXMax = day(stock.points[stock.points.length - 1].date)
+const priceYMax = Math.ceil(stock.high / 50) * 50
+const priceBox = chart({
+  width: 960, height: 360, pad: { left: 54, right: 18, top: 18, bottom: 34 },
+  xMin: priceXMin, xMax: priceXMax, yMax: priceYMax,
+})
+const pricePath = line(stock.points, priceBox, (p) => day(p.date), (p) => p.close)
+const priceArea = `${pricePath} L${priceBox.right} ${priceBox.bottom} L${priceBox.left} ${priceBox.bottom} Z`
+const priceTicks = ticks(priceYMax, 5)
+const priceYears = [2012, 2014, 2016, 2018, 2020, 2022, 2024, 2026]
+const marks = stock.marks.map((mark, index) => ({ ...mark, n: index + 1 }))
+
+/** Share price on the first day of the record, and today, for the prose. */
+const priceFirst = stock.points[0].close
+const priceLatest = stock.latest
+const priceGrowth = Math.round((priceLatest / priceFirst - 1) * 100)
+
+/* ----------------------------------------------------------- search trends */
+
+const COLORS = ['#0f5d53', '#a8492f', '#8a6a1f', '#4a5d8a', '#5d3f60']
+const trends = data.trends
+const trendXMin = day(trends.keywords[0].points[0].date)
+const trendPoints = trends.keywords[0].points
+const trendXMax = day(trendPoints[trendPoints.length - 1].date)
+const trendBox = chart({
+  width: 960, height: 320, pad: { left: 40, right: 18, top: 18, bottom: 34 },
+  xMin: trendXMin, xMax: trendXMax, yMax: 100,
+})
+const trendLines = trends.keywords.map((item, index) => ({
+  keyword: item.keyword,
+  peak: item.peak,
+  color: COLORS[index % COLORS.length],
+  d: line(item.points, trendBox, (p) => day(p.date), (p) => p.value),
+}))
+const trendTicks = [0, 25, 50, 75, 100]
+const trendYears = [2020, 2021, 2022, 2023, 2024, 2025, 2026]
+
+/* ------------------------------------------------------------- video views */
+
+const videos = data.videos
+const viewXMin = Math.min(...videos.items.map((v) => day(v.since)))
+const viewXMax = Math.max(...videos.items.map((v) => day(v.readOn)))
+const viewYMax = Math.ceil(Math.max(...videos.items.map((v) => v.views)) / 50_000_000) * 50_000_000
+const viewBox = chart({
+  width: 960, height: 320, pad: { left: 52, right: 18, top: 18, bottom: 34 },
+  xMin: viewXMin, xMax: viewXMax, yMax: viewYMax,
+})
+const viewLines = videos.items.map((video, index) => ({
+  ...video,
+  color: COLORS[index % COLORS.length],
+  d: line(video.points, viewBox, (p) => day(p.date), (p) => p.views),
+}))
+const viewTicks = ticks(viewYMax, 4)
+const viewMonths = ['2026-06-01', '2026-07-01', '2026-08-01', '2026-09-01']
+
+const num = (value) => Number(value).toLocaleString('en-US')
+const mill = (value) => `${Math.round(value / 1_000_000)}m`
+
+/* ------------------------------------------------------------------- page */
+
+const path = '/numbers'
+const title = 'GTA 6 by the numbers: search, share price and views'
+const description = `Three measured series about Grand Theft Auto VI: ${stock.points.length} months of the Take-Two share price marked with every Rockstar announcement, ${trendPoints.length} months of Google search interest, and ${num(videos.total)} views across the official videos.`
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Dataset',
+  '@id': canonical(path),
+  url: canonical(path),
+  name: title,
+  description,
+  about: GAME,
+  creator: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+  temporalCoverage: `${stock.from}/${stock.to}`,
+  variableMeasured: [
+    { '@type': 'PropertyValue', name: 'Take-Two Interactive share price', unitText: 'USD' },
+    { '@type': 'PropertyValue', name: 'Google search interest', unitText: 'index 0 to 100' },
+    { '@type': 'PropertyValue', name: 'YouTube views of official videos', unitText: 'views' },
+  ],
+  isBasedOn: ['Yahoo Finance', 'Google Trends', 'YouTube public view counters'],
+}
+---
+<BaseLayout title={title} description={description} path={path} jsonLd={jsonLd}>
+  <section class="band band--glaze">
+    <div class="shell">
+      <p class="crumb" style="color:var(--on-glaze-2)">
+        <a href="/" style="color:var(--on-glaze-2)">GTA 6 Record</a> / Numbers
+      </p>
+      <h1 style="max-width:22ch">GTA 6 by the numbers</h1>
+      <p class="lede">{description}</p>
+      <dl class="tally">
+        <div><dt>Share price today</dt><dd>${priceLatest}</dd></div>
+        <div><dt>Months of price data</dt><dd>{stock.points.length}</dd></div>
+        <div><dt>Views on the videos</dt><dd>{mill(videos.total)}</dd></div>
+        <div><dt>Search peak</dt><dd>{monthYear(trends.peakMonth)}</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="shell">
+      <div class="prose">
+        <h2>Why a page of numbers</h2>
+        <p>
+          The rest of this site records things: people, cars, places, songs.
+          Each row is either something Rockstar showed or something the
+          community wrote down. None of it is a measurement.
+        </p>
+        <p>
+          These three series are. Anybody can open Yahoo Finance, Google Trends
+          or YouTube and get the same figures. That makes them the easiest part
+          of this site to check, and the part least able to drift.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--stone">
+    <div class="shell">
+      <header class="fig__head">
+        <p class="fig__kicker">Chart one</p>
+        <h2 class="fig__title">What each announcement did to the share price</h2>
+        <p class="fig__sub">
+          Take-Two Interactive (TTWO), monthly closing price in US dollars,
+          {longDate(stock.from)} to {longDate(stock.to)}. The numbered lines are
+          the {marks.length} Rockstar Newswire posts about this game.
+        </p>
+      </header>
+
+      <figure class="fig">
+        <svg viewBox={`0 0 ${priceBox.width} ${priceBox.height}`} role="img"
+             aria-label={`Take-Two share price from ${stock.from} to ${stock.to}, low ${stock.low} dollars, high ${stock.high} dollars`}>
+          {priceTicks.map((value) => (
+            <g>
+              <line x1={priceBox.left} x2={priceBox.right} y1={priceBox.y(value)} y2={priceBox.y(value)} class="grid" />
+              <text x={priceBox.left - 8} y={priceBox.y(value) + 4} class="axis" text-anchor="end">${value}</text>
+            </g>
+          ))}
+          {priceYears.map((year) => (
+            <text x={priceBox.x(day(`${year}-01-01`))} y={priceBox.height - 12} class="axis" text-anchor="middle">{year}</text>
+          ))}
+          <path d={priceArea} class="area" />
+          <path d={pricePath} class="line line--price" />
+          {marks.map((mark) => (
+            <g>
+              <line x1={priceBox.x(day(mark.date))} x2={priceBox.x(day(mark.date))}
+                    y1={priceBox.top} y2={priceBox.bottom} class="mark" />
+              <circle cx={priceBox.x(day(mark.date))} cy={priceBox.y(mark.close)} r="4" class="dot" />
+              <circle cx={priceBox.x(day(mark.date))} cy={priceBox.top + 10} r="9" class="pin" />
+              <text x={priceBox.x(day(mark.date))} y={priceBox.top + 14} class="pin__n" text-anchor="middle">{mark.n}</text>
+            </g>
+          ))}
+        </svg>
+      </figure>
+
+      <ol class="keys">
+        {marks.map((mark) => (
+          <li class="keys__item">
+            <span class="keys__n">{mark.n}</span>
+            <span class="keys__body">
+              <a href={mark.url} rel="nofollow noopener">{mark.label}</a>
+              <span class="keys__meta">{longDate(mark.date)} · closed ${mark.close}</span>
+            </span>
+          </li>
+        ))}
+      </ol>
+
+      <div class="prose">
+        <p>
+          The share price is not a measure of the game. It is a measure of what
+          the market thinks of the company that owns it, and Take-Two owns a
+          great deal else. Read it that way and the shape is still worth having.
+        </p>
+        <p>
+          The stock closed at ${priceFirst} in {monthYear(stock.from)} and
+          ${priceLatest} in {monthYear(stock.to)}, a rise of about
+          {priceGrowth} percent across {Math.round(stock.points.length / 12)}
+          years. The two delays are the interesting part. Both were bad news for
+          players, and neither of them dented the price for long.
+        </p>
+        <p>
+          The markers here are not the ones the source data came with. That
+          dataset put the first delay in February 2025 and the November date in
+          March 2026. Both are wrong against the Newswire, which is the only
+          place Rockstar announces anything. Every marker above is a real post,
+          and every one of them links to it.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="shell">
+      <header class="fig__head">
+        <p class="fig__kicker">Chart two</p>
+        <h2 class="fig__title">How often people search for this game</h2>
+        <p class="fig__sub">
+          Google Trends, worldwide, monthly, {monthYear(trends.from)} to
+          {monthYear(trends.to)}. The scale is 0 to 100 and it is relative: 100
+          is the busiest month for the busiest phrase, not a count of searches.
+        </p>
+      </header>
+
+      <figure class="fig">
+        <svg viewBox={`0 0 ${trendBox.width} ${trendBox.height}`} role="img"
+             aria-label={`Google search interest for five GTA 6 phrases, ${trends.from} to ${trends.to}, peaking in ${trends.peakMonth}`}>
+          {trendTicks.map((value) => (
+            <g>
+              <line x1={trendBox.left} x2={trendBox.right} y1={trendBox.y(value)} y2={trendBox.y(value)} class="grid" />
+              <text x={trendBox.left - 8} y={trendBox.y(value) + 4} class="axis" text-anchor="end">{value}</text>
+            </g>
+          ))}
+          {trendYears.map((year) => (
+            <text x={trendBox.x(day(`${year}-01-01`))} y={trendBox.height - 12} class="axis" text-anchor="middle">{year}</text>
+          ))}
+          {trendLines.map((item) => <path d={item.d} class="line" style={`stroke:${item.color}`} />)}
+        </svg>
+      </figure>
+
+      <ul class="legend">
+        {trendLines.map((item) => (
+          <li class="legend__item">
+            <span class="legend__swatch" style={`background:${item.color}`}></span>
+            <span class="legend__name">{item.keyword}</span>
+            <span class="legend__peak">peak {item.peak}</span>
+          </li>
+        ))}
+      </ul>
+
+      <div class="prose">
+        <p>
+          One phrase does nearly all the work. People type "gta 6". They do not
+          type "gta vi", and they very rarely type "gta 6 gameplay", which never
+          got above {trendLines[trendLines.length - 1].peak} on this scale in
+          six and a half years.
+        </p>
+        <p>
+          The peak month is {monthYear(trends.peakMonth)}, which is when the
+          Extended Look went up. The two trailers show as their own spikes. In
+          between, interest never falls back to where it started. A game that
+          has not shipped yet has a permanent floor of search traffic higher
+          than most shipped games ever reach.
+        </p>
+        <p>
+          The other thing worth saying about this chart is what it is not.
+          Google Trends does not publish how many people searched. It publishes
+          a shape. Comparing two lines here is fair. Turning either one into a
+          number of people is not.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--stone">
+    <div class="shell">
+      <header class="fig__head">
+        <p class="fig__kicker">Chart three</p>
+        <h2 class="fig__title">Views on the official videos</h2>
+        <p class="fig__sub">
+          The public YouTube counter on each of the four Rockstar videos, read
+          once a day from {longDate(videos.items[0].since)}. Last read
+          {longDate(videos.readOn)}.
+        </p>
+      </header>
+
+      <figure class="fig">
+        <svg viewBox={`0 0 ${viewBox.width} ${viewBox.height}`} role="img"
+             aria-label={`YouTube view counts on four official GTA 6 videos, totalling ${num(videos.total)} views`}>
+          {viewTicks.map((value) => (
+            <g>
+              <line x1={viewBox.left} x2={viewBox.right} y1={viewBox.y(value)} y2={viewBox.y(value)} class="grid" />
+              <text x={viewBox.left - 8} y={viewBox.y(value) + 4} class="axis" text-anchor="end">{mill(value)}</text>
+            </g>
+          ))}
+          {viewMonths.map((month) => (
+            <text x={viewBox.x(day(month))} y={viewBox.height - 12} class="axis" text-anchor="middle">{monthYear(month).slice(0, 3)}</text>
+          ))}
+          {viewLines.map((item) => <path d={item.d} class="line" style={`stroke:${item.color}`} />)}
+        </svg>
+      </figure>
+
+      <ul class="legend legend--wide">
+        {viewLines.map((item) => (
+          <li class="legend__item">
+            <span class="legend__swatch" style={`background:${item.color}`}></span>
+            <span class="legend__name">
+              <a href={item.url} rel="nofollow noopener">{item.title}</a>
+            </span>
+            <span class="legend__peak">{num(item.views)} views · about {num(item.perDay)} a day</span>
+          </li>
+        ))}
+      </ul>
+
+      <div class="prose">
+        <p>
+          Trailer 1 is still the biggest of the four and it is nearly three
+          years old. It is also still moving, at roughly
+          {num(viewLines[0].perDay)} views a day, which is a strange thing for a
+          trailer to do years after it goes up.
+        </p>
+        <p>
+          The lines are flat because the sampling window is short next to the
+          totals. Counters this large move by a fraction of a percent a day. The
+          slope is the story, not the height.
+        </p>
+        <p>
+          These are the public counters, not figures from Rockstar. YouTube
+          rounds and revises them, so treat any single reading as close rather
+          than exact. What appears at each second of those videos is recorded
+          on the <a href="/trailers">trailer breakdown</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="shell">
+      <div class="prose">
+        <h2>Where these numbers come from</h2>
+        <p>
+          The share price is Yahoo Finance, monthly closes, collected by the
+          open source <a href="https://github.com/tigges/gta" rel="nofollow noopener">tigges/gta</a>
+          project. The search figures are Google Trends through the same
+          project. The view counts are that project's daily readings of the
+          public YouTube counters.
+        </p>
+        <p>
+          The announcement markers on the first chart are this site's own, built
+          from the <a href="/newswire">Rockstar Newswire record</a>. That record
+          is read straight from Rockstar and is the tier one source here. Where
+          it disagreed with the imported dates, it won.
+        </p>
+        <p>
+          One dataset was left out. That project also tracks the subscriber
+          count of the GTA 6 subreddit, but the numbers are typed in by hand
+          with no source attached and the live counter needs credentials nobody
+          has. A number that cannot be checked does not belong on this page.
+        </p>
+        <p>
+          Everything above was last rebuilt on {longDate(data.built)}. The
+          charts are drawn when the site is built, so they ship as plain images
+          in the page with no script behind them.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .tally { display: flex; flex-wrap: wrap; gap: 10px 36px; margin: 22px 0 0; }
+  .tally div { margin: 0; }
+  .tally dt {
+    font: 600 11px/1 var(--ui); letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--on-glaze-2); margin: 0 0 6px;
+  }
+  .tally dd { font: 700 22px/1 var(--display); color: var(--on-glaze); margin: 0; }
+
+  .fig__head { margin: 0 0 18px; max-width: var(--prose); }
+  .fig__kicker {
+    margin: 0 0 6px; font: 600 11px/1 var(--ui); letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--brass-ink);
+  }
+  .fig__title { font: 700 26px/1.2 var(--display); margin: 0 0 8px; color: var(--ink); }
+  .fig__sub { margin: 0; font: 400 15px/1.6 var(--body); color: var(--ink-2); }
+
+  .fig { margin: 0 0 18px; }
+  .fig svg { display: block; width: 100%; height: auto; overflow: visible; }
+
+  .grid { stroke: var(--line); stroke-width: 1; }
+  .axis { font: 600 11px/1 var(--ui); fill: var(--ink-2); }
+  .area { fill: var(--glaze-tint); opacity: 0.45; stroke: none; }
+  .line { fill: none; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+  .line--price { stroke: var(--glaze); }
+  .mark { stroke: var(--clay); stroke-width: 1; stroke-dasharray: 3 3; opacity: 0.6; }
+  .dot { fill: var(--clay); }
+  .pin { fill: var(--clay); }
+  .pin__n { font: 700 11px/1 var(--ui); fill: #fff; }
+
+  .keys { list-style: none; margin: 0 0 22px; padding: 0; display: grid; gap: 10px 28px;
+          grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+  .keys__item { display: flex; gap: 10px; align-items: flex-start; }
+  .keys__n {
+    flex: none; width: 20px; height: 20px; border-radius: 50%; background: var(--clay);
+    color: #fff; font: 700 11px/20px var(--ui); text-align: center;
+  }
+  .keys__body { display: block; font: 400 15px/1.4 var(--body); }
+  .keys__body a { color: var(--ink); font-weight: 600; }
+  .keys__meta { display: block; font: 400 13px/1.5 var(--body); color: var(--ink-2); }
+
+  .legend { list-style: none; margin: 0 0 22px; padding: 0; display: grid; gap: 8px 28px;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+  .legend--wide { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+  .legend__item { display: flex; gap: 9px; align-items: baseline; flex-wrap: wrap; }
+  .legend__swatch { flex: none; width: 12px; height: 12px; border-radius: 2px; }
+  .legend__name { font: 600 15px/1.4 var(--body); color: var(--ink); }
+  .legend__name a { color: var(--ink); }
+  .legend__peak { font: 400 13px/1.4 var(--body); color: var(--ink-2); }
+
+  @media (max-width: 720px) {
+    .fig__title { font-size: 22px; }
+    .axis { font-size: 14px; }
+    .pin__n { font-size: 13px; }
+  }
+</style>

@@ -15,7 +15,10 @@ import BaseLayout from '../layouts/BaseLayout.astro'
 import { SITE_NAME, SITE_URL, canonical } from '../lib/site.mjs'
 import { GAME } from '../lib/schema.mjs'
 import { landPath, labelAt } from '../lib/mapblobs.mjs'
+import { shotViews } from '../lib/mapshots.mjs'
 import data from '../data/map-points.json'
+import cameras from '../data/camera-shots.json'
+import gallery from '../data/gallery.json'
 
 const { points, bounds, counts, footage, medianErrorM, maxErrorM, sourceUrl } = data
 
@@ -56,6 +59,12 @@ const land = ZONES.slice(0, -1)
     return { ...zone, count: own.length, d: own.length > 0 ? landPath(own) : '', at: own.length > 0 ? labelAt(own) : null }
   })
   .filter((zone) => zone.d !== '')
+
+// A dot on its own can only answer "where". The solved camera positions can
+// answer a little of "what does it look like", because each one says where a
+// camera stood and which way it pointed. Any dot that falls inside one of those
+// frames can be shown that official Rockstar picture. See lib/mapshots.mjs.
+const { shots: viewShots, views } = shotViews(points, cameras.shots, gallery)
 
 const named = points.filter((point) => point.named).sort((a, b) => a.name.localeCompare(b.name))
 const spanX = Math.round((bounds.maxX - bounds.minX) / 100) / 10
@@ -168,6 +177,8 @@ const jsonLd = {
                   data-shots={point.shots.join(', ')}
                   data-frames={point.frames}
                   data-area={point.zoneLabel}
+                  data-view={views[point.name] ? String(views[point.name][0]) : undefined}
+                  data-viewm={views[point.name] ? String(views[point.name][1]) : undefined}
                 ><title>{point.name}</title></circle>
               ))}
             </g>
@@ -186,6 +197,29 @@ const jsonLd = {
           <div id="maptip" class="maptip" hidden></div>
           <p class="mapfig__hint">Drag to move. Scroll or pinch to zoom. Tap a dot for its details.</p>
         </div>
+
+        <!--
+          The picture for the last dot tapped. It sits under the plot and not in
+          the hover tooltip on purpose: a picture that follows the cursor is
+          unusable on a phone, which is the screen this page is read on.
+        -->
+        <div id="mapshot" class="mapshot">
+          <p class="mapshot__idle" id="mapshotidle">Tap a dot to see the official Rockstar picture that was taken looking that way, when there is one.</p>
+          <div class="mapshot__wrap" id="mapshotwrap" hidden>
+            <figure class="mapshot__pic">
+              <picture>
+                <source id="mapshotavif" type="image/avif" srcset="" />
+                <img id="mapshotimg" src="" srcset="" sizes="(max-width: 560px) 92vw, 240px" alt="" width="1600" height="900" loading="lazy" decoding="async" />
+              </picture>
+            </figure>
+            <div class="mapshot__text">
+              <p class="mapshot__name" id="mapshotname"></p>
+              <p class="mapshot__line" id="mapshotline"></p>
+              <p class="mapshot__credit" id="mapshotcredit"></p>
+            </div>
+          </div>
+        </div>
+        <script id="mapshotdata" type="application/json" is:inline set:html={JSON.stringify(viewShots)}></script>
 
         <figcaption class="mapfig__cap">
           Each dot is one measured position, not a drawing of the game. The shaded
@@ -386,6 +420,36 @@ const jsonLd = {
     font: 400 11px/1 var(--ui); color: var(--ink-2); background: rgba(251, 250, 246, 0.85);
     padding: 5px 8px; border-radius: var(--r); pointer-events: none;
   }
+  .mapshot {
+    border-top: 1px solid var(--line);
+    padding: 14px;
+    background: var(--plaster);
+  }
+  .mapshot__idle {
+    margin: 0;
+    font: 400 13px/1.55 var(--body);
+    color: var(--ink-2);
+  }
+  .mapshot__wrap { display: flex; gap: 14px; align-items: flex-start; }
+  .mapshot__wrap[hidden] { display: none; }
+  .mapshot__pic {
+    flex: 0 0 240px;
+    margin: 0;
+    border: 1px solid var(--line-strong);
+    border-radius: var(--r);
+    overflow: hidden;
+    background: var(--stone);
+    line-height: 0;
+  }
+  .mapshot__pic img { width: 100%; height: auto; display: block; }
+  .mapshot__text { flex: 1 1 0; min-width: 0; }
+  .mapshot__name { margin: 0 0 4px; font: 700 15px/1.3 var(--ui); color: var(--ink); }
+  .mapshot__line { margin: 0 0 6px; font: 400 13px/1.55 var(--body); color: var(--ink-2); }
+  .mapshot__credit { margin: 0; font: 400 11px/1.4 var(--ui); color: var(--ink-2); }
+  @media (max-width: 560px) {
+    .mapshot__wrap { display: block; }
+    .mapshot__pic { margin: 0 0 10px; }
+  }
   .mapfig__cap {
     padding: 12px 14px; border-top: 1px solid var(--line); background: var(--stone);
     font: 400 13px/1.55 var(--body); color: var(--ink-2); margin: 0;
@@ -529,12 +593,48 @@ const jsonLd = {
       if (hit) show(hit, event.clientX, event.clientY)
       else hide()
     })
+    // The picture panel. Hover leaves it alone: a picture that changed every
+    // time the cursor crossed a dot would be a strobe light.
+    const shotData = JSON.parse(document.getElementById('mapshotdata').textContent)
+    const shotIdle = document.getElementById('mapshotidle')
+    const shotWrap = document.getElementById('mapshotwrap')
+    const shotAvif = document.getElementById('mapshotavif')
+    const shotImg = document.getElementById('mapshotimg')
+    const shotName = document.getElementById('mapshotname')
+    const shotLine = document.getElementById('mapshotline')
+    const shotCredit = document.getElementById('mapshotcredit')
+
+    const far = (metres) => (metres >= 1000 ? `${(metres / 1000).toFixed(1)} km` : `${metres} m`)
+
+    const paint = (circle) => {
+      const d = circle.dataset
+      if (d.view === undefined) {
+        shotWrap.hidden = true
+        shotIdle.hidden = false
+        shotIdle.textContent = `No official picture was taken looking at ${d.name}. Its position still comes from the same survey.`
+        return
+      }
+      const shot = shotData[Number(d.view)]
+      shotAvif.srcset = shot.avifset
+      shotImg.srcset = shot.srcset
+      shotImg.src = shot.src
+      shotImg.alt = shot.alt
+      shotName.textContent = d.name
+      const about = shot.approximate ? 'about ' : ''
+      shotLine.textContent = `${shot.footage}, "${shot.name}". The camera stood ${about}${far(Number(d.viewm))} away and pointed ${shot.compass}, so this spot is somewhere in that frame.`
+      shotCredit.textContent = shot.credit
+      shotIdle.hidden = true
+      shotWrap.hidden = false
+    }
+
     svg.addEventListener('pointerleave', hide)
     svg.addEventListener('click', (event) => {
       if (dragging && dragging.moved) return
       const hit = event.target.closest('circle')
-      if (hit) show(hit, event.clientX, event.clientY)
-      else hide()
+      if (hit) {
+        show(hit, event.clientX, event.clientY)
+        paint(hit)
+      } else hide()
     })
 
     // Area filters.

@@ -1,0 +1,268 @@
+---
+// Every screenshot Rockstar has published for GTA 6, in one place.
+//
+// Rockstar put a set of screenshots on the official Grand Theft Auto VI site.
+// They are the only pictures of this game that Rockstar itself has released.
+// Everything else in circulation is either a frame grabbed from a trailer or
+// material Rockstar never published, and this site does not host the second
+// kind at all.
+//
+// The useful part of these files is their names. Rockstar named each one after
+// the character, place or pre-order pack it shows, so the set sorts itself into
+// three groups without anybody guessing. Where a shot matches a page on this
+// site, the caption links to it.
+//
+// The pictures here are shrunk copies. The originals are 4K and run to 145 MB
+// together, which is not something to put on a page. Each shot ships at 640 and
+// 1600 pixels wide, in AVIF and WebP, and every one carries its credit.
+import BaseLayout from '../layouts/BaseLayout.astro'
+import Ad from '../components/Ad.astro'
+import { SITE_NAME, SITE_URL, canonical } from '../lib/site.mjs'
+import { GAME } from '../lib/schema.mjs'
+import feed from '../data/gallery.json'
+
+const { counts, sets, groups, shots } = feed
+
+/** The shots of one set, grouped by subject, in the order the data holds. */
+const sections = sets.map((set) => ({
+  ...set,
+  subjects: groups
+    .filter((group) => group.set === set.key)
+    .map((group) => ({
+      ...group,
+      shots: shots.filter((shot) => shot.set === set.key && shot.subject === group.name),
+    })),
+}))
+
+const biggest = [...groups].sort((a, b) => b.count - a.count || a.name.localeCompare(b.name)).slice(0, 6)
+
+const MONTHS = [
+  'January', 'February', 'March', 'April', 'May', 'June',
+  'July', 'August', 'September', 'October', 'November', 'December',
+]
+function longDate(iso) {
+  const [year, month, day] = String(iso || '').split('-')
+  if (!year) return iso
+  return `${Number(day)} ${MONTHS[Number(month) - 1]} ${year}`
+}
+
+const path = '/gallery'
+const title = 'GTA 6 official screenshots: every picture Rockstar has released'
+const description = `All ${counts.shots} official Grand Theft Auto VI screenshots published by Rockstar Games, sorted by character, place and pre-order pack, each one credited and linked to what it shows.`
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'ImageGallery',
+    '@id': canonical(path),
+    url: canonical(path),
+    name: title,
+    description,
+    about: GAME,
+    isPartOf: { '@type': 'WebSite', name: SITE_NAME, url: SITE_URL },
+    numberOfItems: counts.shots,
+    dateModified: feed.generated,
+  },
+]
+---
+<BaseLayout title={title} description={description} path={path} jsonLd={jsonLd}>
+  <section class="band band--glaze">
+    <div class="shell">
+      <p class="crumb"><a href="/">GTA 6 Record</a> / Official screenshots</p>
+      <h1>{title}</h1>
+      <p class="lede">
+        Rockstar Games has published {counts.shots} screenshots of Grand Theft
+        Auto VI on its own site. This is all of them, in one page, sorted the
+        way Rockstar named them. Nothing here came from anywhere else.
+      </p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="shell">
+      <div class="prose">
+        <h2>What this page is</h2>
+        <p>
+          Almost every GTA 6 picture you will find online is a frame pulled out
+          of a trailer. Those are useful, but they are not what Rockstar chose
+          to publish. Rockstar published a specific set of still images on the
+          official Grand Theft Auto VI website, and that set is what is here.
+        </p>
+        <p>
+          The files carry Rockstar's own names, and those names do the sorting.
+          A name says which character, which part of Leonida, or which
+          pre-order pack the picture belongs to. Nobody had to guess. Where a
+          shot matches a page on this site, its caption links straight to it,
+          so a picture of a car leads to that car.
+        </p>
+        <p>
+          The pictures are shrunk copies of Rockstar's originals, so the page
+          loads. Every one is credited to Rockstar Games underneath. This site
+          does not host material Rockstar has not published, and none of it is
+          on this page.
+        </p>
+      </div>
+
+      <ul class="stats">
+        <li class="stat"><span class="stat__n">{counts.shots}</span><span class="stat__l">Official screenshots</span></li>
+        <li class="stat"><span class="stat__n">{counts.subjects}</span><span class="stat__l">Subjects named by Rockstar</span></li>
+        <li class="stat"><span class="stat__n">{counts.linked}</span><span class="stat__l">Tied to a page on this site</span></li>
+        <li class="stat"><span class="stat__n">{sets.length}</span><span class="stat__l">Groups</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="band band--stone">
+    <div class="shell">
+      <div class="prose">
+        <h2>The biggest sets</h2>
+        <p>
+          Rockstar did not publish the same number of pictures for everything.
+          What it published most of is worth noticing on its own.
+        </p>
+      </div>
+      <table class="tbl">
+        <thead><tr><th scope="col">Subject</th><th scope="col">Screenshots</th></tr></thead>
+        <tbody>
+          {biggest.map((group) => (
+            <tr>
+              <td>{group.link ? <a href={group.link.url}>{group.name}</a> : group.name}</td>
+              <td class="num">{group.count}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
+      <ul class="chips">
+        {sections.map((set) => (
+          <li><a class="chip" href={`#set-${set.key}`}>{set.label} ({set.count})</a></li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <Ad placement="article" />
+
+  {sections.map((set, index) => (
+    <section class={index % 2 === 0 ? 'band' : 'band band--stone'} id={`set-${set.key}`}>
+      <div class="shell">
+        <div class="prose">
+          <h2>{set.label}</h2>
+          <p>{set.blurb} {set.count} screenshots.</p>
+        </div>
+
+        {set.subjects.map((subject) => (
+          <div class="subject">
+            <h3 class="subject__h">
+              {subject.link ? <a href={subject.link.url}>{subject.name}</a> : subject.name}
+              <span class="subject__n">{subject.count} {subject.count === 1 ? 'shot' : 'shots'}</span>
+            </h3>
+            <ul class="grid">
+              {subject.shots.map((shot) => (
+                <li class="card">
+                  <picture>
+                    <source type="image/avif" srcset={shot.avifset} sizes="(min-width: 900px) 33vw, (min-width: 600px) 50vw, 100vw" />
+                    <img
+                      src={shot.src}
+                      srcset={shot.srcset}
+                      sizes="(min-width: 900px) 33vw, (min-width: 600px) 50vw, 100vw"
+                      alt={shot.alt}
+                      width={shot.width}
+                      height={shot.height}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </picture>
+                  <p class="card__t">
+                    {shot.link ? <a href={shot.link.url}>{shot.title}</a> : shot.title}
+                  </p>
+                  <p class="card__c">{shot.credit}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </section>
+  ))}
+
+  <Ad placement="article" />
+
+  <section class="band">
+    <div class="shell">
+      <div class="prose">
+        <h2>Where these came from</h2>
+        <p>
+          Every picture on this page was published by Rockstar Games on the
+          official Grand Theft Auto VI website. The file names are Rockstar's
+          own. The set was collected under those names by the open source
+          project <a href={feed.collectedUrl} rel="nofollow noopener">{feed.collectedBy}</a>,
+          which made it possible to sort them without guessing what each one
+          shows.
+        </p>
+        <p>
+          The copies here are resized and re-encoded so the page loads on a
+          phone. Nothing is cropped, edited or recoloured. Every picture keeps
+          its credit line.
+        </p>
+        <p>
+          One file in the source set did not carry a Rockstar file name, so its
+          origin could not be read from the name itself. It was left out. A
+          picture that cannot be credited honestly does not go on this site.
+        </p>
+        <p class="foot">Set last rebuilt {longDate(feed.generated)}.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--stone">
+    <div class="shell">
+      <div class="prose">
+        <h2>Where this sits</h2>
+        <p>
+          These are the still pictures. For the moving footage, see the
+          <a href="/trailers"> trailer breakdown</a>, and for where in Leonida
+          each piece of footage was filmed from, see
+          <a href="/trailer-locations"> where the trailers were filmed</a>.
+        </p>
+        <p>
+          For what Rockstar has actually said in words, rather than shown, use
+          the <a href="/confirmed">confirmed list</a> and the
+          <a href="/newswire"> Newswire archive</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .stats { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1px; margin: 26px 0 0; padding: 0; background: var(--line-strong); border: 1px solid var(--line-strong); border-radius: var(--r); overflow: hidden; }
+  .stat { background: var(--plaster); padding: 16px 14px; }
+  .stat__n { display: block; font: 700 26px/1 var(--display); color: var(--glaze-deep); }
+  .stat__l { display: block; margin: 6px 0 0; font: 600 11px/1.3 var(--ui); letter-spacing: 0.07em; text-transform: uppercase; color: var(--ink-2); }
+
+  .tbl { width: 100%; border-collapse: collapse; margin: 16px 0 0; font: 400 15px/1.5 var(--body); }
+  .tbl th, .tbl td { padding: 9px 10px; border-bottom: 1px solid var(--line); text-align: left; }
+  .tbl th { font: 600 11px/1 var(--ui); letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-2); border-bottom: 1px solid var(--line-strong); }
+  .tbl .num { text-align: right; font-variant-numeric: tabular-nums; }
+
+  .chips { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0 0; padding: 0; }
+  .chip { display: inline-block; padding: 7px 12px; border: 1px solid var(--line-strong); border-radius: var(--r); background: var(--plaster); color: var(--ink); font: 600 14px/1 var(--ui); text-decoration: none; }
+  .chip:hover { border-color: var(--glaze); color: var(--glaze-deep); }
+
+  .subject { margin: 30px 0 0; }
+  .subject__h { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin: 0 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--line-strong); font: 600 18px/1.3 var(--display); color: var(--ink); }
+  .subject__h a { color: var(--ink); text-decoration: none; border-bottom: 2px solid var(--glaze-tint); }
+  .subject__h a:hover { border-bottom-color: var(--glaze); }
+  .subject__n { flex: none; font: 600 11px/1 var(--ui); letter-spacing: 0.07em; text-transform: uppercase; color: var(--ink-2); }
+
+  .grid { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 18px; margin: 0; padding: 0; }
+  .card { margin: 0; }
+  .card img { display: block; width: 100%; height: auto; border: 1px solid var(--line-strong); border-radius: var(--r); background: var(--chip); }
+  .card__t { margin: 8px 0 0; font: 600 15px/1.4 var(--body); color: var(--ink); }
+  .card__t a { color: var(--ink); text-decoration: none; border-bottom: 2px solid var(--glaze-tint); }
+  .card__t a:hover { border-bottom-color: var(--glaze); }
+  .card__c { margin: 3px 0 0; font: 400 12px/1.4 var(--ui); color: var(--ink-2); }
+
+  .foot { margin: 20px 0 0; font: 400 14px/1.6 var(--body); color: var(--ink-2); }
+</style>

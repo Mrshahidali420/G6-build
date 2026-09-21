@@ -1,0 +1,283 @@
+---
+// What appears, and at what second, in each official GTA 6 video.
+//
+// The Newswire page is the record of what Rockstar has said. This is the
+// record of what Rockstar has shown. Between them they are the whole of the
+// official material, and most of this site is built on the second one.
+//
+// The timings come from scripts/import/trailers.mjs, which reads the
+// frame-by-frame notes made by the tigges/gta project. Every name is matched
+// against the entity record here, so a reader can go straight from a second of
+// video to the page built on it.
+import BaseLayout from '../layouts/BaseLayout.astro'
+import { SITE_NAME, SITE_URL, canonical } from '../lib/site.mjs'
+import { GAME } from '../lib/schema.mjs'
+import feed from '../data/trailers.json'
+
+const videos = feed.videos
+const events = videos.flatMap((video) => video.events)
+const confirmed = events.filter((event) => event.confidence === 'confirmed').length
+const linked = events.filter((event) => event.url).length
+const runtime = videos.reduce((total, video) => total + video.durationSec, 0)
+const views = videos.reduce((total, video) => total + (video.counts?.views || 0), 0)
+const readOn = videos.map((video) => video.counts?.readOn).filter(Boolean).sort().pop()
+
+const MONTHS = [
+  'January', 'February', 'March', 'April', 'May', 'June',
+  'July', 'August', 'September', 'October', 'November', 'December',
+]
+function longDate(iso) {
+  const [year, month, day] = String(iso || '').split('-')
+  if (!year) return iso
+  return `${Number(day)} ${MONTHS[Number(month) - 1]} ${year}`
+}
+
+/** 1867 seconds as "31 minutes". */
+const minutes = Math.round(runtime / 60)
+
+/** 507475166 as "507 million". */
+function millions(value) {
+  return `${Math.round(value / 1_000_000)} million`
+}
+
+/** 296185261 as "296.2m". */
+function shortCount(value) {
+  return `${(value / 1_000_000).toFixed(1)}m`
+}
+
+const TYPE_LABEL = {
+  location: 'Place',
+  character: 'Person',
+  vehicle: 'Vehicle',
+  weapon: 'Weapon',
+  wildlife: 'Animal',
+  audio: 'Music',
+  reveal: 'Detail',
+}
+
+const path = '/trailers'
+const title = 'GTA 6 trailers: what appears at every second'
+const description = `Rockstar has shown ${minutes} minutes of Grand Theft Auto VI across three videos. This is the timestamped index of all ${events.length} things visible in them, ${confirmed} of them clear enough to record as confirmed.`
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  '@id': canonical(path),
+  url: canonical(path),
+  name: title,
+  description,
+  about: GAME,
+  numberOfItems: videos.length,
+  itemListOrder: 'https://schema.org/ItemListOrderAscending',
+  publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+  itemListElement: videos.map((video, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    item: {
+      '@type': 'VideoObject',
+      name: video.title,
+      uploadDate: video.publishedAt,
+      url: video.url,
+      duration: `PT${Math.floor(video.durationSec / 60)}M${video.durationSec % 60}S`,
+      publisher: { '@type': 'Organization', name: 'Rockstar Games', url: 'https://www.rockstargames.com' },
+    },
+  })),
+}
+---
+<BaseLayout title={title} description={description} path={path} jsonLd={jsonLd}>
+  <section class="band band--glaze">
+    <div class="shell">
+      <p class="crumb" style="color:var(--on-glaze-2)">
+        <a href="/" style="color:var(--on-glaze-2)">GTA 6 Record</a> / Trailers
+      </p>
+      <h1 style="max-width:24ch">Everything Rockstar has shown of GTA 6</h1>
+      <p class="lede">{description}</p>
+      <dl class="tally">
+        <div><dt>Videos</dt><dd>{videos.length}</dd></div>
+        <div><dt>Minutes of footage</dt><dd>{minutes}</dd></div>
+        <div><dt>Things recorded</dt><dd>{events.length}</dd></div>
+        <div><dt>Linked to a page here</dt><dd>{linked}</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="shell">
+      <div class="prose">
+        <h2>Why this page exists</h2>
+        <p>
+          Rockstar has said very little about this game. It has shown rather
+          more. Three videos, about {minutes} minutes in total, watched over
+          {millions(views)} times between them.
+        </p>
+        <p>
+          Almost everything on this site that Rockstar never wrote down came
+          from a frame of one of those videos. A car with a readable badge. A
+          road sign. A face. A song over the top. That is the evidence, and it
+          sits inside {minutes} minutes of video that most people have watched
+          once.
+        </p>
+        <p>
+          So this page unpacks it. Every entry below is a second of video and
+          the thing visible at that second. Where this site has a page about
+          that thing, the entry links to it. You can start from a claim and walk
+          back to the exact moment it came from.
+        </p>
+
+        <h2>What confirmed means here</h2>
+        <p>
+          {confirmed} of the {events.length} entries are marked confirmed. That
+          means the thing is plainly there: a badge you can read, a name on a
+          sign, a face that Rockstar has since named. The rest are marked
+          reported, which means the sighting is widely agreed on but the frame
+          alone does not settle it.
+        </p>
+        <p>
+          Confirmed here is a statement about the picture, not about the
+          finished game. A vehicle in a trailer is a vehicle Rockstar chose to
+          show in 2023 or 2025. Games change. The honest claim is that it was in
+          the video, and that is the claim this page makes.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  {videos.map((video) => (
+    <section class="band band--stone">
+      <div class="shell">
+        <header class="reel__head">
+          <p class="reel__meta">
+            <time datetime={video.publishedAt}>{longDate(video.publishedAt)}</time>
+            <span> · {video.runtime} long</span>
+            {video.counts && <span> · {shortCount(video.counts.views)} views</span>}
+          </p>
+          <h2 class="reel__title">{video.title}</h2>
+          <p class="reel__sub">
+            {video.eventCount} things recorded, {video.confirmedCount} of them confirmed.
+            <a href={video.url} rel="nofollow noopener"> Watch it on YouTube</a>
+          </p>
+        </header>
+
+        <ol class="reel">
+          {video.events.map((event) => (
+            <li class="reel__item">
+              <p class="reel__at"><span class="reel__clock">{event.at}</span></p>
+              <div class="reel__body">
+                <p class="reel__what">
+                  <span class={`tag tag--${event.type}`}>{TYPE_LABEL[event.type] || 'Detail'}</span>
+                  {event.url
+                    ? <a class="reel__name" href={event.url}>{event.entity}</a>
+                    : <span class="reel__name">{event.entity}</span>}
+                  {event.confidence !== 'confirmed' && <span class="reel__soft">reported</span>}
+                </p>
+                {event.note && <p class="reel__note">{event.note}</p>}
+              </div>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+  ))}
+
+  <section class="band">
+    <div class="shell">
+      <div class="prose">
+        <h2>How this list was made</h2>
+        <p>
+          The videos were watched a frame at a time and every readable thing was
+          written down with the second it appears at. That work was done by the
+          open source
+          <a href="https://github.com/tigges/gta" rel="nofollow noopener">tigges/gta</a>
+          project, and this page reads its notes.
+        </p>
+        <p>
+          Each name is then matched against the record already on this site.
+          {linked} of the {events.length} entries found a page and became a
+          link. The rest did not, and they still list, because the video still
+          showed the thing. A name with no link is usually a gap here rather
+          than a mistake there.
+        </p>
+        <p>
+          No video and no frame is stored on this site. Every entry links to the
+          original on YouTube, where Rockstar published it. The view counts are
+          samples of the public YouTube counters. The most recent reading above
+          is from {longDate(readOn)}.
+        </p>
+
+        <h2>What the videos still do not show</h2>
+        <p>
+          Reading all {events.length} entries end to end makes the shape of the
+          gap clear. There is no map, no mission list, no menu, no vehicle
+          roster and nothing at all about online play. Rockstar has shown two
+          people, a set of places, a handful of systems and a mood.
+        </p>
+        <p>
+          The lists elsewhere on this site are longer than that, and they say on
+          their face where each row came from. Most of them came from the
+          <a href="https://gta.fandom.com/wiki/Grand_Theft_Auto_VI" rel="nofollow noopener">GTA Fandom wiki</a>,
+          which is a community record rather than a Rockstar one. This page and
+          the <a href="/newswire">Newswire list</a> are the two that come only
+          from Rockstar.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .tally { display: flex; flex-wrap: wrap; gap: 10px 36px; margin: 22px 0 0; }
+  .tally div { margin: 0; }
+  .tally dt {
+    font: 600 11px/1 var(--ui); letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--on-glaze-2); margin: 0 0 6px;
+  }
+  .tally dd { font: 700 22px/1 var(--display); color: var(--on-glaze); margin: 0; }
+
+  .reel__head { margin: 0 0 22px; padding-bottom: 14px; border-bottom: 1px solid var(--line-strong); }
+  .reel__meta {
+    margin: 0 0 6px; font: 600 11px/1 var(--ui); letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--ink-2);
+  }
+  .reel__title { font: 700 26px/1.2 var(--display); margin: 0 0 6px; color: var(--ink); }
+  .reel__sub { margin: 0; font: 400 15px/1.5 var(--body); color: var(--ink-2); }
+  .reel__sub a { color: var(--glaze); }
+
+  .reel { list-style: none; margin: 0; padding: 0; }
+  .reel__item {
+    display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 0 24px;
+    padding: 12px 0; border-bottom: 1px solid var(--line);
+  }
+  .reel__item:last-child { border-bottom: 0; }
+  .reel__at { margin: 0; }
+  .reel__clock {
+    display: inline-block; font: 600 13px/1 var(--ui); color: var(--ink-2);
+    background: var(--chip); border-radius: var(--r); padding: 5px 8px;
+    font-variant-numeric: tabular-nums;
+  }
+  .reel__body { max-width: var(--prose); }
+  .reel__what { margin: 0; font: 400 16px/1.5 var(--body); }
+  .reel__name { font-weight: 600; color: var(--ink); }
+  a.reel__name { color: var(--ink); text-decoration: none; border-bottom: 2px solid var(--glaze-tint); }
+  a.reel__name:hover { border-bottom-color: var(--glaze); }
+  .reel__note { margin: 2px 0 0; font: 400 14px/1.5 var(--body); color: var(--ink-2); }
+  .reel__soft {
+    margin-left: 8px; font: 600 10px/1 var(--ui); letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--clay);
+  }
+
+  .tag {
+    display: inline-block; margin-right: 10px; padding: 3px 7px;
+    font: 600 10px/1 var(--ui); letter-spacing: 0.08em; text-transform: uppercase;
+    border-radius: var(--r); background: var(--chip); color: var(--ink-2);
+    vertical-align: 2px;
+  }
+  .tag--character { background: var(--glaze-tint); color: var(--glaze-deep); }
+  .tag--location { background: #dfe6d8; color: #3f5230; }
+  .tag--vehicle { background: #e3dcc9; color: var(--brass-ink); }
+  .tag--audio { background: #e5dbe6; color: #5d3f60; }
+  .tag--reveal { background: #e6dad4; color: var(--clay); }
+
+  @media (max-width: 720px) {
+    .reel__item { grid-template-columns: 1fr; gap: 6px; }
+  }
+</style>

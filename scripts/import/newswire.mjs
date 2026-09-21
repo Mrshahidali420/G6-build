@@ -128,7 +128,10 @@ writeFileSync(
       method:
         'Read from the GraphQL endpoint that rockstargames.com uses for its own Newswire list. Titles, subtitles, dates and links only. No article text is copied.',
       checked: today,
-      counts: { total: posts.length, added, changed, missingFromFeed: gone },
+      // Only the state of the record is stored. How many posts a single run
+      // happened to add is run noise, and putting it in the file made every
+      // run look like a change to the scheduled job.
+      counts: { total: posts.length, missingFromFeed: gone },
       posts,
     },
     null,

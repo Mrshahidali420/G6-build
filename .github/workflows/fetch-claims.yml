@@ -80,5 +80,9 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run deploy.yml --ref main
 
+      # The colon inside the echo has to sit in a quoted YAML scalar. Unquoted,
+      # YAML reads "new claims:" as a second key and rejects the whole file, and
+      # GitHub then fails the workflow at zero seconds on every push.
       - name: Say what happened
-        run: echo "new claims: ${{ steps.fetch.outputs.changed }}"
+        run: 'echo "new claims: ${{ steps.fetch.outputs.changed }}"'
+

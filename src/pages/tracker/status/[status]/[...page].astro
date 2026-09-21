@@ -51,7 +51,16 @@ const title =
   page.currentPage === 1
     ? `GTA 6 claims logged as ${status.label.toLowerCase()}`
     : `GTA 6 claims logged as ${status.label.toLowerCase()}, page ${page.currentPage}`
-const description = `${total.toLocaleString('en-US')} GTA 6 claims that carried the status ${status.label.toLowerCase()} on the day they were made. ${status.blurb}`.slice(0, 195)
+// Page 2 of a list is not page 1. One sentence repeated across all twenty-two
+// pages of the rumour list leaves a search engine to pick one and drop the
+// rest, and it dropped twenty-one. The count and the blurb stay; the page
+// number is what makes each one its own page.
+const pageMark = page.currentPage === 1 ? '' : ` Page ${page.currentPage} of ${page.lastPage}.`
+const description =
+  `${total.toLocaleString('en-US')} GTA 6 claims that carried the status ${status.label.toLowerCase()} on the day they were made. ${status.blurb}`.slice(
+    0,
+    195 - pageMark.length,
+  ) + pageMark
 
 const jsonLd = [
   {

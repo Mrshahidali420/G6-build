@@ -95,14 +95,19 @@ User-agent: SerpstatBot
 Disallow: /
 
 # ---------------------------------------------------------------
-# Search engines with no readers in our markets.
+# More search engines that send readers here. Yandex and Petal were
+# blocked as "no readers in our markets". That was a guess, and the
+# rule is never to block a search engine that can send a reader.
 # ---------------------------------------------------------------
 User-agent: YandexBot
-Disallow: /
+Allow: /
 
 User-agent: PetalBot
-Disallow: /
+Allow: /
 
+# ---------------------------------------------------------------
+# Not a search engine. It reads, it never sends a reader back.
+# ---------------------------------------------------------------
 User-agent: Amazonbot
 Disallow: /
 

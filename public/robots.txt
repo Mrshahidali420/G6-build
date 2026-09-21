@@ -106,10 +106,13 @@ User-agent: PetalBot
 Allow: /
 
 # ---------------------------------------------------------------
-# Not a search engine. It reads, it never sends a reader back.
+# We are in the Amazon Associates programme, so Amazon has to be
+# able to read the pages that carry our affiliate links. Blocking
+# their crawler is a compliance risk for the account, and the
+# account is worth more than the crawl it costs us.
 # ---------------------------------------------------------------
 User-agent: Amazonbot
-Disallow: /
+Allow: /
 
 # ---------------------------------------------------------------
 # Everything else may read the site.

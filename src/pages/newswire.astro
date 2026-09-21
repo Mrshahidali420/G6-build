@@ -1,0 +1,267 @@
+---
+// Every post Rockstar has published about Grand Theft Auto VI, in order.
+//
+// The Newswire is the only channel Rockstar announces through. It is short:
+// nine posts across nearly three years. That shortness is the story, and it is
+// why this page exists. A reader who has heard fifty GTA 6 claims can come
+// here and see, on one screen, the complete list of things Rockstar itself has
+// actually said.
+//
+// The list is read by scripts/import/newswire.mjs. The note under each post is
+// written by hand in data/newswire-notes.json.
+import BaseLayout from '../layouts/BaseLayout.astro'
+import { SITE_NAME, SITE_URL, canonical } from '../lib/site.mjs'
+import { GAME } from '../lib/schema.mjs'
+import feed from '../data/newswire.json'
+import notes from '../../data/newswire-notes.json'
+
+const posts = feed.posts
+const newest = posts[0]
+const oldest = posts[posts.length - 1]
+
+/** "2026-09-17" as "17 September 2026". */
+const MONTHS = [
+  'January', 'February', 'March', 'April', 'May', 'June',
+  'July', 'August', 'September', 'October', 'November', 'December',
+]
+function longDate(iso) {
+  const [year, month, day] = String(iso || '').split('-')
+  if (!year) return iso
+  return `${Number(day)} ${MONTHS[Number(month) - 1]} ${year}`
+}
+
+/** Whole years and months between the first post and the last. */
+const span = (() => {
+  const from = new Date(oldest.date)
+  const to = new Date(newest.date)
+  const months = (to.getFullYear() - from.getFullYear()) * 12 + (to.getMonth() - from.getMonth())
+  const years = Math.floor(months / 12)
+  const rest = months % 12
+  return `${years} years and ${rest} months`
+})()
+
+const byYear = []
+for (const post of posts) {
+  const year = String(post.date).slice(0, 4)
+  const last = byYear[byYear.length - 1]
+  if (last && last.year === year) last.posts.push(post)
+  else byYear.push({ year, posts: [post] })
+}
+
+const path = '/newswire'
+const title = 'GTA 6 Newswire: every official Rockstar post, in order'
+const description = `Rockstar has published ${posts.length} Newswire posts about GTA 6 in ${span}, from Trailer 1 on ${longDate(oldest.date)} to ${longDate(newest.date)}. This is the complete list, with what each one actually announced.`
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  '@id': canonical(path),
+  url: canonical(path),
+  name: title,
+  description,
+  about: GAME,
+  numberOfItems: posts.length,
+  itemListOrder: 'https://schema.org/ItemListOrderDescending',
+  publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+  itemListElement: posts.map((post, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    item: {
+      '@type': 'NewsArticle',
+      headline: post.title,
+      datePublished: post.date,
+      url: post.url,
+      publisher: { '@type': 'Organization', name: 'Rockstar Games', url: 'https://www.rockstargames.com' },
+    },
+  })),
+}
+---
+<BaseLayout title={title} description={description} path={path} jsonLd={jsonLd}>
+  <section class="band band--glaze">
+    <div class="shell">
+      <p class="crumb" style="color:var(--on-glaze-2)">
+        <a href="/" style="color:var(--on-glaze-2)">GTA 6 Record</a> / Newswire
+      </p>
+      <h1 style="max-width:22ch">Everything Rockstar has said about GTA 6</h1>
+      <p class="lede">{description}</p>
+      <dl class="tally">
+        <div><dt>Official posts</dt><dd>{posts.length}</dd></div>
+        <div><dt>Over</dt><dd>{span}</dd></div>
+        <div><dt>Release dates announced</dt><dd>3</dd></div>
+        <div><dt>Last checked</dt><dd>{longDate(feed.checked)}</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="shell">
+      <div class="prose">
+        <h2>Why this page is so short</h2>
+        <p>
+          The Rockstar Newswire is the only place Rockstar Games announces
+          anything. Not a spokesperson, not a partner, not a developer on social
+          media. The Newswire.
+        </p>
+        <p>
+          Grand Theft Auto VI was announced on {longDate(oldest.date)}. In
+          the {span} since, Rockstar has published {posts.length} posts about it.
+          That is the whole record. Everything else you have read about this game
+          came from somewhere else: a press outlet, a retailer listing, a fan
+          wiki, or a guess.
+        </p>
+        <p>
+          So use this page as a test. If a claim about Grand Theft Auto VI is not
+          in one of these {posts.length} posts and not in the videos they link to,
+          then Rockstar did not say it. That does not automatically make the claim
+          wrong. It does mean the claim needs its own source.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  {byYear.map((group) => (
+    <section class="band band--stone">
+      <div class="shell">
+        <h2 class="wire__year">{group.year}</h2>
+        <ol class="wire">
+          {group.posts.map((post) => {
+            const note = notes[post.slug]
+            return (
+              <li class="wire__item">
+                <p class="wire__date"><time datetime={post.date}>{longDate(post.date)}</time></p>
+                <div class="wire__body">
+                  <h3 class="wire__title">
+                    <a href={post.url} rel="nofollow noopener">{post.title}</a>
+                  </h3>
+                  {post.subtitle && <p class="wire__sub">{post.subtitle}</p>}
+                  {note && (
+                    <>
+                      <p class="wire__note"><strong>What it announced.</strong> {note.what}</p>
+                      <p class="wire__note"><strong>What it changed here.</strong> {note.moved}</p>
+                    </>
+                  )}
+                  <p class="wire__src">
+                    Rockstar Games Newswire ·
+                    <a href={post.url} rel="nofollow noopener">Read the original post</a>
+                  </p>
+                </div>
+              </li>
+            )
+          })}
+        </ol>
+      </div>
+    </section>
+  ))}
+
+  <section class="band">
+    <div class="shell">
+      <div class="prose">
+        <h2>The three release dates</h2>
+        <p>
+          Three of the {posts.length} posts carry a release date, and each one
+          replaced the last. That is worth setting out plainly, because the older
+          two dates still circulate as if they were live.
+        </p>
+        <ol>
+          <li>
+            A 2025 window came with the announcement in December 2023. No day, no
+            month, just the year.
+          </li>
+          <li>
+            On 2 May 2025 that became 26 May 2026. A firm day for the first time.
+          </li>
+          <li>
+            On 6 November 2025 it became 19 November 2026. That is the date that
+            stands today.
+          </li>
+        </ol>
+        <p>
+          A game that has slipped twice can slip again. Rockstar has given no
+          promise that it will not, and nobody outside Rockstar can tell you
+          whether it will. What this page can tell you is that the current date is
+          real, it came from Rockstar, and it came on 6 November 2025.
+        </p>
+
+        <h2>What Rockstar has still never published</h2>
+        <p>
+          Reading nine posts end to end shows the gaps clearly. None of these has
+          ever appeared in a Newswire post:
+        </p>
+        <ul>
+          <li>A map of Leonida</li>
+          <li>A mission list, or any mission name</li>
+          <li>A vehicle list or a weapon list</li>
+          <li>A full cast list</li>
+          <li>Anything about online play</li>
+          <li>PC as a launch platform</li>
+        </ul>
+        <p>
+          Every list of those things that you find anywhere, this site included,
+          is built from something other than a Rockstar announcement. On this
+          site each one says on its face what it was built from.
+        </p>
+
+        <h2>How this list is collected</h2>
+        <p>
+          The rockstargames.com Newswire page is a JavaScript shell, so the list
+          cannot be read from the page itself. The data behind it comes from a
+          request the site makes to its own server, filtered to the Grand Theft
+          Auto VI tag. This site reads the same list the same way, once per build.
+        </p>
+        <p>
+          The route was worked out by the open source
+          <a href="https://github.com/YouMarakshy/rockstar-newswire" rel="nofollow noopener">rockstar-newswire</a>
+          project, which found the endpoint and the tag number by watching the
+          site's own requests.
+        </p>
+        <p>
+          Only the title, the subtitle, the date and the link are stored here. The
+          body of each article stays on rockstargames.com, where Rockstar
+          published it, and every entry above links straight to it. The note under
+          each post is written here and is not Rockstar's wording.
+        </p>
+        <p>
+          Nothing is ever removed from this list. If a post stops appearing in the
+          feed it keeps its place here, with the date it was last seen, because a
+          record that quietly loses rows is not a record.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .tally { display: flex; flex-wrap: wrap; gap: 10px 36px; margin: 22px 0 0; }
+  .tally div { margin: 0; }
+  .tally dt {
+    font: 600 11px/1 var(--ui); letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--on-glaze-2); margin: 0 0 6px;
+  }
+  .tally dd { font: 700 22px/1 var(--display); color: var(--on-glaze); margin: 0; }
+
+  .wire__year {
+    font: 700 13px/1 var(--ui); letter-spacing: 0.14em; color: var(--ink-2);
+    margin: 0 0 18px; padding-bottom: 10px; border-bottom: 1px solid var(--line-strong);
+  }
+  .wire { list-style: none; margin: 0; padding: 0; }
+  .wire__item {
+    display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 0 28px;
+    padding: 22px 0; border-bottom: 1px solid var(--line);
+  }
+  .wire__item:last-child { border-bottom: 0; padding-bottom: 0; }
+  .wire__date { margin: 4px 0 0; font: 600 13px/1.4 var(--ui); color: var(--ink-2); }
+  .wire__body { max-width: var(--prose); }
+  .wire__title { font: 700 20px/1.3 var(--display); margin: 0 0 4px; }
+  .wire__title a { color: var(--ink); text-decoration: none; border-bottom: 2px solid var(--glaze-tint); }
+  .wire__title a:hover { border-bottom-color: var(--glaze); }
+  .wire__sub { margin: 0 0 12px; font: 400 15px/1.5 var(--body); color: var(--ink-2); font-style: italic; }
+  .wire__note { margin: 0 0 10px; font: 400 15px/1.6 var(--body); color: var(--ink); }
+  .wire__note strong { font: 700 13px/1 var(--ui); letter-spacing: 0.02em; color: var(--glaze-deep); }
+  .wire__src { margin: 12px 0 0; font: 400 12px/1.4 var(--ui); color: var(--ink-2); }
+  .wire__src a { color: var(--glaze); margin-left: 6px; }
+
+  @media (max-width: 720px) {
+    .wire__item { grid-template-columns: 1fr; gap: 6px; }
+    .wire__date { margin: 0; }
+  }
+</style>

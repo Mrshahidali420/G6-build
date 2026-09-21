@@ -1,0 +1,48 @@
+{
+  "_comment": "Our own note on each Rockstar Newswire post. Keyed by the article slug in src/data/newswire.json. 'what' says what the post announced. 'moved' says what fact on this site changed because of it. Written by hand, not generated. A post with no note here still lists, it just lists without a note.",
+
+  "announcing-grand-theft-auto-vi-the-album-coming-november-19": {
+    "what": "Rockstar announced a soundtrack album for the game and put a date on it: 19 November 2026, the same day as the game. The post gave the track count and said the first singles were out that day.",
+    "moved": "This is the first time Rockstar has named artists for Grand Theft Auto VI itself rather than for a trailer. Every song title on this site that carries a Rockstar source carries this post as that source."
+  },
+
+  "grand-theft-auto-vi-an-extended-look-now-playing": {
+    "what": "The short post that went up when the Extended Look video started. It pointed at the video and nothing else.",
+    "moved": "Nothing on its own. The video it pointed at is the single largest source of confirmed material this site has, and is credited on dozens of pages."
+  },
+
+  "grand-theft-auto-vi-an-extended-look": {
+    "what": "Three weeks of notice for a long gameplay video, with the date and the two places it would play.",
+    "moved": "It told everyone a gameplay showing was coming. Before this post, Rockstar had shown two trailers and no gameplay."
+  },
+
+  "pre-order-grand-theft-auto-vi-on-june-25": {
+    "what": "The day-before reminder. It said pre-orders open at midnight local time.",
+    "moved": "Nothing new. It confirmed the date the earlier post had given."
+  },
+
+  "grand-theft-auto-vi-pre-orders-begin-on-june-25": {
+    "what": "Rockstar set a date for pre-orders and told people they could add the game to a wishlist on the PlayStation and Microsoft stores.",
+    "moved": "This named the two console stores, which is where the edition names and the platform list on this site came from."
+  },
+
+  "grand-theft-auto-vi-is-now-set-to-launch-november-19-2026": {
+    "what": "The second delay. The release date moved from 26 May 2026 to 19 November 2026.",
+    "moved": "This is the current release date, and it is the only date on this site marked official. It replaced the May date that the post below had set."
+  },
+
+  "grand-theft-auto-vi-watch-trailer-2-now": {
+    "what": "Trailer 2. The post carried the video and a line about Vice City.",
+    "moved": "Trailer 2 is a source on a large number of pages here. Several characters, vehicles and places are recorded from it and from nothing else."
+  },
+
+  "grand-theft-auto-vi-is-now-coming-may-26-2026": {
+    "what": "The first delay. The game moved from a 2025 window to 26 May 2026.",
+    "moved": "It ended the 2025 window. It was itself replaced six months later by the November 2026 date."
+  },
+
+  "grand-theft-auto-vi-watch-trailer-1-now": {
+    "what": "The announcement. Trailer 1, the first time Rockstar showed the game at all.",
+    "moved": "Everything on this site starts here. The names Lucia, Vice City and Leonida all became public with this post."
+  }
+}

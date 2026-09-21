@@ -1,0 +1,140 @@
+{
+  "source": "Rockstar Games Newswire, tag \"Grand Theft Auto VI\"",
+  "sourceUrl": "https://www.rockstargames.com/newswire/tags/666",
+  "method": "Read from the GraphQL endpoint that rockstargames.com uses for its own Newswire list. Titles, subtitles, dates and links only. No article text is copied.",
+  "checked": "2026-09-21",
+  "counts": {
+    "total": 9,
+    "added": 9,
+    "changed": 0,
+    "missingFromFeed": 0
+  },
+  "posts": [
+    {
+      "id": "17893996695289",
+      "title": "Announcing Grand Theft Auto VI: The Album, Coming November 19",
+      "subtitle": "Featuring 34 New Tracks — Listen to the First Six Singles, Available Today",
+      "slug": "announcing-grand-theft-auto-vi-the-album-coming-november-19",
+      "url": "https://www.rockstargames.com/newswire/article/7599a881942544/announcing-grand-theft-auto-vi-the-album-coming-november-19",
+      "date": "2026-09-17",
+      "displayDate": "9/17/26, 8:00 AM",
+      "tags": [
+        "Grand Theft Auto VI"
+      ],
+      "firstSeen": "2026-09-21",
+      "lastSeen": "2026-09-21"
+    },
+    {
+      "id": "17869802240109",
+      "title": "Grand Theft Auto VI: An Extended Look — Now Playing",
+      "subtitle": null,
+      "slug": "grand-theft-auto-vi-an-extended-look-now-playing",
+      "url": "https://www.rockstargames.com/newswire/article/4k138k8okkk483/grand-theft-auto-vi-an-extended-look-now-playing",
+      "date": "2026-08-27",
+      "displayDate": "8/27/26, 3:00 PM",
+      "tags": [
+        "Grand Theft Auto VI"
+      ],
+      "firstSeen": "2026-09-21",
+      "lastSeen": "2026-09-21"
+    },
+    {
+      "id": "17839625656558",
+      "title": "Grand Theft Auto VI: An Extended Look",
+      "subtitle": "Coming August 27 to Netflix and YouTube",
+      "slug": "grand-theft-auto-vi-an-extended-look",
+      "url": "https://www.rockstargames.com/newswire/article/9k2kaa1o3297k9/grand-theft-auto-vi-an-extended-look",
+      "date": "2026-08-06",
+      "displayDate": "8/6/26, 8:00 AM",
+      "tags": [
+        "Grand Theft Auto VI"
+      ],
+      "firstSeen": "2026-09-21",
+      "lastSeen": "2026-09-21"
+    },
+    {
+      "id": "17822935824902",
+      "title": "Pre-Order Grand Theft Auto VI on June 25",
+      "subtitle": "Available at Midnight Local Time",
+      "slug": "pre-order-grand-theft-auto-vi-on-june-25",
+      "url": "https://www.rockstargames.com/newswire/article/5171972o3ak5oa/pre-order-grand-theft-auto-vi-on-june-25",
+      "date": "2026-06-24",
+      "displayDate": "6/24/26, 6:00 AM",
+      "tags": [
+        "Grand Theft Auto VI"
+      ],
+      "firstSeen": "2026-09-21",
+      "lastSeen": "2026-09-21"
+    },
+    {
+      "id": "17817856666024",
+      "title": "Grand Theft Auto VI Pre-Orders Begin on June 25",
+      "subtitle": "Wishlist Now on the PlayStation Store or Microsoft Store",
+      "slug": "grand-theft-auto-vi-pre-orders-begin-on-june-25",
+      "url": "https://www.rockstargames.com/newswire/article/517oa135328155/grand-theft-auto-vi-pre-orders-begin-on-june-25",
+      "date": "2026-06-18",
+      "displayDate": "6/18/26, 9:00 AM",
+      "tags": [
+        "Grand Theft Auto VI"
+      ],
+      "firstSeen": "2026-09-21",
+      "lastSeen": "2026-09-21"
+    },
+    {
+      "id": "17624622125650",
+      "title": "Grand Theft Auto VI is Now Set to Launch November 19, 2026",
+      "subtitle": null,
+      "slug": "grand-theft-auto-vi-is-now-set-to-launch-november-19-2026",
+      "url": "https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026",
+      "date": "2025-11-06",
+      "displayDate": "11/6/25, 9:05 PM",
+      "tags": [
+        "Grand Theft Auto VI"
+      ],
+      "firstSeen": "2026-09-21",
+      "lastSeen": "2026-09-21"
+    },
+    {
+      "id": "17448100800962",
+      "title": "Grand Theft Auto VI — Watch Trailer 2 Now",
+      "subtitle": "Explore Vice City and beyond",
+      "slug": "grand-theft-auto-vi-watch-trailer-2-now",
+      "url": "https://www.rockstargames.com/newswire/article/3928aaa9471o3a/grand-theft-auto-vi-watch-trailer-2-now",
+      "date": "2025-05-06",
+      "displayDate": "5/6/25, 10:00 AM",
+      "tags": [
+        "Grand Theft Auto VI"
+      ],
+      "firstSeen": "2026-09-21",
+      "lastSeen": "2026-09-21"
+    },
+    {
+      "id": "17461841148216",
+      "title": "Grand Theft Auto VI is Now Coming May 26, 2026",
+      "subtitle": null,
+      "slug": "grand-theft-auto-vi-is-now-coming-may-26-2026",
+      "url": "https://www.rockstargames.com/newswire/article/258aa538o412ok/grand-theft-auto-vi-is-now-coming-may-26-2026",
+      "date": "2025-05-02",
+      "displayDate": "5/2/25, 11:25 AM",
+      "tags": [
+        "Grand Theft Auto VI"
+      ],
+      "firstSeen": "2026-09-21",
+      "lastSeen": "2026-09-21"
+    },
+    {
+      "id": "17017767114026",
+      "title": "Grand Theft Auto VI - Watch Trailer 1 Now",
+      "subtitle": null,
+      "slug": "grand-theft-auto-vi-watch-trailer-1-now",
+      "url": "https://www.rockstargames.com/newswire/article/8978kok9385a82/grand-theft-auto-vi-watch-trailer-1-now",
+      "date": "2023-12-05",
+      "displayDate": "12/5/23, 1:00 PM",
+      "tags": [
+        "Grand Theft Auto VI"
+      ],
+      "firstSeen": "2026-09-21",
+      "lastSeen": "2026-09-21"
+    }
+  ]
+}

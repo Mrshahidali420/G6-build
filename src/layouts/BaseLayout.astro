@@ -144,6 +144,7 @@ const footConfirmed = pageEntities.filter((entity) => entity.confirmedStatus ===
           </button>
         </form>
         <div class="masthead__links">
+          <a class="masthead__links-full" href="/map">Map</a>
           <a class="masthead__links-full" href="/news">News</a>
           <a class="masthead__links-full" href="/about">About</a>
         </div>
@@ -165,6 +166,7 @@ const footConfirmed = pageEntities.filter((entity) => entity.confirmedStatus ===
                 {hub.title.replace('GTA 6 ', '')}
               </a>
             ))}
+            <a href="/map" aria-current={current('map')}>Map</a>
             <a href="/answers" aria-current={current('answers')}>Answers</a>
             <a href="/confirmed" aria-current={current('confirmed')}>Confirmed</a>
             <a href="/news" aria-current={current('news')}>News</a>
@@ -255,6 +257,7 @@ const footConfirmed = pageEntities.filter((entity) => entity.confirmedStatus ===
           <nav class="colophon__col" aria-label="This site">
             <h2 class="colophon__head">This site</h2>
             <ul>
+              <li><a href="/map">Map of Leonida</a></li>
               <li><a href="/answers">Answers</a></li>
               <li><a href="/confirmed">Confirmed and rumoured</a></li>
               <li><a href="/news">News</a></li>

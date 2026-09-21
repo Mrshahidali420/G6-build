@@ -1,0 +1,525 @@
+---
+// The GTA 6 map, drawn from solved positions rather than from a picture.
+//
+// Rockstar has not published a map of Leonida. What exists instead is footage.
+// The gtamaplib project takes objects that appear in several frames of that
+// footage and works back to a world position for each one, the way a surveyor
+// fixes a point by sighting it from two places. The result is a set of
+// coordinates with an error in metres attached to each.
+//
+// This page plots only the points whose every source frame is official
+// Rockstar footage. See scripts/import/gtamaplib.mjs for the filter. Nothing
+// here is a picture of the game. It is a scatter of measured positions, drawn
+// as an SVG at build time, so it renders with no script running at all.
+import BaseLayout from '../layouts/BaseLayout.astro'
+import { SITE_NAME, SITE_URL, canonical } from '../lib/site.mjs'
+import { GAME } from '../lib/schema.mjs'
+import data from '../data/map-points.json'
+
+const { points, bounds, counts, footage, medianErrorM, maxErrorM, sourceUrl } = data
+
+// Game coordinates are metres, x east and y north. SVG counts y downward, so
+// the plot flips y. A margin keeps the outermost points off the very edge.
+const PAD = 300
+const minX = bounds.minX - PAD
+const maxX = bounds.maxX + PAD
+const minY = -bounds.maxY - PAD
+const maxY = -bounds.minY + PAD
+const width = Math.round(maxX - minX)
+const height = Math.round(maxY - minY)
+
+const ZONES = [
+  { key: 'vice_city', label: 'Vice City', color: '#0f5d53' },
+  { key: 'leonida_keys', label: 'Leonida Keys', color: '#b08637' },
+  { key: 'ambrosia', label: 'Ambrosia', color: '#a8492f' },
+  { key: 'port_gellhorn', label: 'Port Gellhorn', color: '#3b6ea5' },
+  { key: 'grassrivers', label: 'Grassrivers', color: '#5b7c3a' },
+  { key: 'brickell', label: 'Brickell', color: '#7a5a1c' },
+  { key: 'unknown', label: 'Not placed in a named area', color: '#8d8a80' },
+]
+const colorOf = (zone) => (ZONES.find((z) => z.key === zone) || ZONES[ZONES.length - 1]).color
+
+const zoneCounts = ZONES.map((zone) => ({
+  ...zone,
+  count: points.filter((point) => (zone.key === 'unknown' ? !ZONES.slice(0, -1).some((z) => z.key === point.zone) : point.zone === zone.key)).length,
+})).filter((zone) => zone.count > 0)
+
+const named = points.filter((point) => point.named).sort((a, b) => a.name.localeCompare(b.name))
+const spanX = Math.round((bounds.maxX - bounds.minX) / 100) / 10
+const spanY = Math.round((bounds.maxY - bounds.minY) / 100) / 10
+
+const path = '/map'
+const title = 'GTA 6 map: 731 positions solved from Rockstar footage'
+const description = `An interactive GTA 6 map built from measured positions, not from a picture. ${counts.kept} points across Vice City, the Leonida Keys, Port Gellhorn, Ambrosia and Grassrivers, each solved from official Rockstar trailers and screenshots, with a median error of ${medianErrorM} metres.`
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Dataset',
+  '@id': canonical(path),
+  url: canonical(path),
+  name: title,
+  description,
+  about: GAME,
+  dateModified: data.generated,
+  license: 'https://creativecommons.org/licenses/by-sa/4.0/',
+  creator: { '@type': 'Organization', name: 'gtamaplib', url: sourceUrl },
+  publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+  variableMeasured: ['world x', 'world y', 'world z', 'solve error in metres'],
+}
+---
+<BaseLayout title={title} description={description} path={path} jsonLd={jsonLd}>
+  <section class="band band--glaze">
+    <div class="shell">
+      <p class="crumb" style="color:var(--on-glaze-2)">
+        <a href="/" style="color:var(--on-glaze-2)">GTA 6 Record</a> / Map
+      </p>
+      <h1 style="max-width:24ch">The GTA 6 map, measured</h1>
+      <p class="lede">{description}</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="shell">
+      <div class="mapfig">
+        <div class="mapfig__bar">
+          <div class="mapfig__keys">
+            {zoneCounts.map((zone) => (
+              <button type="button" class="zkey" data-zone={zone.key} aria-pressed="true">
+                <span class="zkey__dot" style={`background:${zone.color}`}></span>
+                <span class="zkey__name">{zone.label}</span>
+                <span class="zkey__n">{zone.count}</span>
+              </button>
+            ))}
+          </div>
+          <div class="mapfig__tools">
+            <label class="mapfig__find">
+              <span class="vh">Find a place on the map</span>
+              <input type="search" id="mapfind" placeholder="Find a place" autocomplete="off" />
+            </label>
+            <button type="button" id="mapreset" class="mapfig__btn">Reset view</button>
+          </div>
+        </div>
+
+        <div class="mapfig__stage">
+          <svg
+            id="mapsvg"
+            viewBox={`${Math.round(minX)} ${Math.round(minY)} ${width} ${height}`}
+            preserveAspectRatio="xMidYMid meet"
+            role="img"
+            aria-label={`Scatter plot of ${counts.kept} solved positions in the Grand Theft Auto VI world, coloured by area.`}
+          >
+            <g id="mapgrid" stroke="#d3cfc4" stroke-width="6" opacity="0.5">
+              {Array.from({ length: Math.ceil(width / 1000) + 1 }, (_, i) => {
+                const x = Math.round(minX / 1000) * 1000 + i * 1000
+                return <line x1={x} y1={minY} x2={x} y2={maxY} />
+              })}
+              {Array.from({ length: Math.ceil(height / 1000) + 1 }, (_, i) => {
+                const y = Math.round(minY / 1000) * 1000 + i * 1000
+                return <line x1={minX} y1={y} x2={maxX} y2={y} />
+              })}
+            </g>
+            <g id="mappoints">
+              {points.map((point) => (
+                <circle
+                  cx={point.x}
+                  cy={-point.y}
+                  r={point.named ? 46 : 28}
+                  fill={colorOf(point.zone)}
+                  fill-opacity={point.named ? 0.95 : 0.55}
+                  data-zone={ZONES.some((z) => z.key === point.zone) ? point.zone : 'unknown'}
+                  data-name={point.name}
+                  data-x={point.x}
+                  data-y={point.y}
+                  data-z={point.z}
+                  data-err={point.error}
+                  data-shots={point.shots.join(', ')}
+                  data-frames={point.frames}
+                  data-area={point.zoneLabel}
+                ><title>{point.name}</title></circle>
+              ))}
+            </g>
+          </svg>
+          <div id="maptip" class="maptip" hidden></div>
+          <p class="mapfig__hint">Drag to move. Scroll or pinch to zoom. Tap a dot for its details.</p>
+        </div>
+
+        <figcaption class="mapfig__cap">
+          Each dot is one measured position, not a drawing of the game. Bigger dots
+          are the {counts.named} points that carry a place name. The grid squares are
+          one kilometre across. Positions solved by gtamaplib from Rockstar's own
+          trailers and screenshots. Median error {medianErrorM} metres, worst {maxErrorM} metres.
+        </figcaption>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--stone">
+    <div class="shell">
+      <div class="prose">
+        <h2>What this map is, and what it is not</h2>
+        <p>
+          Rockstar Games has not published a map of Leonida. There is no map in the
+          press kit, none on the Rockstar Newswire and none on the Grand Theft Auto VI
+          site. So this page is not a copy of the game map, because there is no game
+          map to copy. It is a set of measured positions.
+        </p>
+        <p>
+          The measuring works the way a land surveyor works. If the same building
+          appears in three different shots, and the camera position and angle of each
+          shot can be worked out, then the lines of sight from those three shots cross
+          at one place. That crossing point is the building's position. The
+          <a href={sourceUrl} rel="nofollow noopener">gtamaplib</a> project has done this
+          for {counts.landmarksInSource} objects seen in Grand Theft Auto VI footage and
+          published the results, with an error figure attached to every one.
+        </p>
+        <p>
+          Half the value here is the error figure. A position with an error of two
+          metres is a real measurement. A position with an error of eighty metres is a
+          guess with a number on it. Both are in the source data and both are on this
+          page, and each dot tells you which it is when you click it.
+        </p>
+
+        <h2>Why {counts.kept} points and not {counts.landmarksInSource}</h2>
+        <p>
+          Two filters cut the list down, and both are deliberate.
+        </p>
+        <p>
+          The first is arithmetic. Of the {counts.landmarksInSource} objects in the
+          source, {counts.unsolved} have no solved position at all. They were seen and
+          named but never fixed, usually because they appear in only one shot. One shot
+          gives a direction, not a place. Those are not on this map.
+        </p>
+        <p>
+          The second filter is this site's own rule. In 2022 a large amount of Grand
+          Theft Auto VI material was taken from Rockstar without permission and put
+          online. This site reports on that in words and never republishes any of it.
+          The gtamaplib camera set includes frames from that material, so every point
+          solved using even one of those frames is dropped here. That removed
+          another {counts.droppedNotOfficial} points.
+        </p>
+        <p>
+          What is left is {counts.kept} positions where every single source frame is
+          footage Rockstar published itself. Here is what they came from:
+        </p>
+        <ul>
+          {Object.entries(footage).map(([shot, count]) => (
+            <li><strong>{shot}</strong>: {count} points</li>
+          ))}
+        </ul>
+
+        <h2>How big is the GTA 6 map</h2>
+        <p>
+          Careful with this question, because this page cannot answer it. The points
+          span about {spanX} kilometres east to west and about {spanY} kilometres north
+          to south. That is the spread of the things that have been measured so far. It
+          is not the size of the map.
+        </p>
+        <p>
+          The measured area only covers places Rockstar has shown. Anywhere the
+          trailers did not go has no points in it, and there is no way to tell from
+          this data whether that is because the area is empty or because no camera
+          pointed at it. Every published figure for the size of the Grand Theft Auto VI
+          map is a guess, including any figure worked out from this page.
+        </p>
+
+        <h2>Why the place names are real Miami buildings</h2>
+        <p>
+          Many of the named points carry real names from the Miami area: Miami Tower,
+          the Cardozo South Beach, Loews Miami Beach, the Skyviews observation wheel.
+          Those are not in-game names. Grand Theft Auto VI is set in Leonida, which is
+          a version of Florida, and Vice City is a version of Miami. When a surveyor
+          matches a building in a trailer to a building in the real city, the real name
+          is the only name that exists for it.
+        </p>
+        <p>
+          Rockstar will have its own name for each of these, and in most cases nobody
+          outside Rockstar knows what it is. Treat a real-world name here as a note
+          about what the building is based on, not as a claim about what it is called
+          in the game.
+        </p>
+
+        <h2>What is still unknown</h2>
+        <ul>
+          <li>The real size and shape of the Grand Theft Auto VI map</li>
+          <li>Where the map edges are, and whether the water is walled off</li>
+          <li>The in-game name of almost every building plotted here</li>
+          <li>Which of these places the player can enter</li>
+          <li>Whether any of this survives to the finished game unchanged</li>
+        </ul>
+
+        <h2>Where this data comes from</h2>
+        <p>
+          The positions come from the gtamaplib project's published landmark file, read
+          on {data.generated}. The filtering, the wording and any mistake in the
+          presentation are this site's own. The numbers were not adjusted: every
+          coordinate here is the coordinate gtamaplib published, rounded to one decimal
+          place.
+        </p>
+        <p>
+          This page will change as Rockstar publishes more footage, because more
+          footage means more shots of the same buildings, and more shots mean smaller
+          errors. When Rockstar publishes an actual map, this page becomes a record of
+          how close the measuring got.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="shell">
+      <h2 class="h3">The {named.length} named places on this map</h2>
+      <p class="lede" style="max-width:var(--prose)">
+        Every one of these was solved from official Rockstar footage. The number in
+        brackets is how far the position could be out, in metres.
+      </p>
+      <ol class="maplist" id="maplist">
+        {named.map((point) => (
+          <li>
+            <button type="button" class="maplist__go" data-name={point.name} data-x={point.x} data-y={point.y}>
+              <span class="maplist__dot" style={`background:${colorOf(point.zone)}`}></span>
+              <span class="maplist__name">{point.name}</span>
+              <span class="maplist__meta">{point.zoneLabel} ({point.error ?? '?'} m)</span>
+            </button>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .mapfig { border: 1px solid var(--line); background: var(--plaster); border-radius: var(--r); overflow: hidden; }
+  .mapfig__bar {
+    display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between;
+    padding: 12px 14px; border-bottom: 1px solid var(--line); background: var(--stone);
+  }
+  .mapfig__keys { display: flex; flex-wrap: wrap; gap: 6px; }
+  .zkey {
+    display: inline-flex; align-items: center; gap: 7px; cursor: pointer;
+    font: 600 12px/1 var(--ui); letter-spacing: 0.01em; color: var(--ink);
+    background: var(--plaster); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 11px 6px 8px;
+  }
+  .zkey[aria-pressed='false'] { opacity: 0.4; }
+  .zkey__dot { width: 9px; height: 9px; border-radius: 50%; flex: none; }
+  .zkey__n { color: var(--ink-2); font-weight: 500; }
+  .mapfig__tools { display: flex; gap: 8px; align-items: center; }
+  .mapfig__find input {
+    font: 400 13px/1 var(--ui); padding: 8px 10px; width: 160px;
+    border: 1px solid var(--line-strong); border-radius: var(--r); background: var(--plaster); color: var(--ink);
+  }
+  .mapfig__btn {
+    font: 600 12px/1 var(--ui); padding: 9px 12px; cursor: pointer; color: var(--ink);
+    border: 1px solid var(--line-strong); border-radius: var(--r); background: var(--plaster);
+  }
+  .mapfig__stage { position: relative; background: #fbfaf6; }
+  #mapsvg { display: block; width: 100%; height: clamp(360px, 62vh, 680px); touch-action: none; cursor: grab; }
+  #mapsvg.is-grabbing { cursor: grabbing; }
+  #mapsvg circle { transition: none; }
+  #mapsvg circle.is-hit { stroke: var(--ink); stroke-width: 26px; }
+  #mapsvg circle.is-off { display: none; }
+  .maptip {
+    position: absolute; z-index: 3; pointer-events: none; max-width: 260px;
+    background: var(--ink); color: var(--on-glaze); padding: 9px 11px; border-radius: var(--r);
+    font: 400 12px/1.45 var(--ui); box-shadow: var(--lift-sm);
+  }
+  .maptip strong { display: block; font: 700 13px/1.3 var(--ui); margin-bottom: 3px; }
+  .maptip span { color: var(--on-glaze-2); }
+  .mapfig__hint {
+    position: absolute; left: 12px; bottom: 10px; margin: 0;
+    font: 400 11px/1 var(--ui); color: var(--ink-2); background: rgba(251, 250, 246, 0.85);
+    padding: 5px 8px; border-radius: var(--r); pointer-events: none;
+  }
+  .mapfig__cap {
+    padding: 12px 14px; border-top: 1px solid var(--line); background: var(--stone);
+    font: 400 13px/1.55 var(--body); color: var(--ink-2); margin: 0;
+  }
+  .maplist { list-style: none; margin: 18px 0 0; padding: 0; columns: 2; column-gap: 28px; }
+  .maplist li { break-inside: avoid; margin: 0 0 2px; }
+  .maplist__go {
+    display: flex; align-items: baseline; gap: 8px; width: 100%; text-align: left; cursor: pointer;
+    background: none; border: 0; border-bottom: 1px solid var(--line); padding: 7px 4px;
+    font: 400 14px/1.4 var(--body); color: var(--ink);
+  }
+  .maplist__go:hover { background: var(--stone); }
+  .maplist__dot { width: 8px; height: 8px; border-radius: 50%; flex: none; align-self: center; }
+  .maplist__name { flex: 1; }
+  .maplist__meta { font: 400 12px/1 var(--ui); color: var(--ink-2); white-space: nowrap; }
+  .vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  @media (max-width: 720px) {
+    .maplist { columns: 1; }
+    .mapfig__tools { width: 100%; }
+    .mapfig__find input { width: 100%; }
+    .mapfig__find { flex: 1; }
+  }
+</style>
+
+<script>
+  // Pan and zoom by moving the SVG viewBox. No library, no tiles, no images.
+  const svg = document.getElementById('mapsvg')
+  if (svg) {
+    const tip = document.getElementById('maptip')
+    const stage = svg.parentElement
+    const start = svg.getAttribute('viewBox').split(' ').map(Number)
+    let box = start.slice()
+
+    const apply = () => svg.setAttribute('viewBox', box.map((n) => Math.round(n)).join(' '))
+
+    const toWorld = (clientX, clientY) => {
+      const rect = svg.getBoundingClientRect()
+      // preserveAspectRatio keeps the box centred, so work out the drawn scale.
+      const scale = Math.min(rect.width / box[2], rect.height / box[3])
+      const drawnW = box[2] * scale
+      const drawnH = box[3] * scale
+      const offX = (rect.width - drawnW) / 2
+      const offY = (rect.height - drawnH) / 2
+      return {
+        x: box[0] + (clientX - rect.left - offX) / scale,
+        y: box[1] + (clientY - rect.top - offY) / scale,
+        scale,
+      }
+    }
+
+    const zoomAt = (clientX, clientY, factor) => {
+      const at = toWorld(clientX, clientY)
+      const limitIn = start[2] / 60
+      const limitOut = start[2] * 1.6
+      let w = box[2] * factor
+      if (w < limitIn) w = limitIn
+      if (w > limitOut) w = limitOut
+      const k = w / box[2]
+      const h = box[3] * k
+      box = [at.x - (at.x - box[0]) * k, at.y - (at.y - box[1]) * k, w, h]
+      apply()
+    }
+
+    svg.addEventListener('wheel', (event) => {
+      event.preventDefault()
+      zoomAt(event.clientX, event.clientY, event.deltaY > 0 ? 1.18 : 1 / 1.18)
+    }, { passive: false })
+
+    let dragging = null
+    svg.addEventListener('pointerdown', (event) => {
+      dragging = { x: event.clientX, y: event.clientY, box: box.slice(), moved: false }
+      svg.setPointerCapture(event.pointerId)
+      svg.classList.add('is-grabbing')
+    })
+    svg.addEventListener('pointermove', (event) => {
+      if (!dragging) return
+      const rect = svg.getBoundingClientRect()
+      const scale = Math.min(rect.width / dragging.box[2], rect.height / dragging.box[3])
+      const dx = (event.clientX - dragging.x) / scale
+      const dy = (event.clientY - dragging.y) / scale
+      if (Math.abs(dx) + Math.abs(dy) > 4) dragging.moved = true
+      box = [dragging.box[0] - dx, dragging.box[1] - dy, dragging.box[2], dragging.box[3]]
+      apply()
+    })
+    const endDrag = (event) => {
+      if (dragging) svg.releasePointerCapture(event.pointerId)
+      dragging = null
+      svg.classList.remove('is-grabbing')
+    }
+    svg.addEventListener('pointerup', endDrag)
+    svg.addEventListener('pointercancel', endDrag)
+
+    // Two finger pinch.
+    let pinch = null
+    svg.addEventListener('touchmove', (event) => {
+      if (event.touches.length !== 2) return
+      event.preventDefault()
+      const [a, b] = event.touches
+      const dist = Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY)
+      const midX = (a.clientX + b.clientX) / 2
+      const midY = (a.clientY + b.clientY) / 2
+      if (pinch) zoomAt(midX, midY, pinch / dist)
+      pinch = dist
+    }, { passive: false })
+    svg.addEventListener('touchend', () => { pinch = null })
+
+    // Details on hover and on tap.
+    let marked = null
+    const show = (circle, clientX, clientY) => {
+      if (marked) marked.classList.remove('is-hit')
+      circle.classList.add('is-hit')
+      marked = circle
+      const d = circle.dataset
+      tip.innerHTML = ''
+      const name = document.createElement('strong')
+      name.textContent = d.name
+      const body = document.createElement('span')
+      const err = d.err && d.err !== 'null' ? `, give or take ${d.err} m` : ''
+      body.textContent = `${d.area} · x ${d.x}, y ${d.y}, z ${d.z}${err} · solved from ${d.frames} frame${d.frames === '1' ? '' : 's'} of ${d.shots}`
+      tip.append(name, body)
+      tip.hidden = false
+      const rect = stage.getBoundingClientRect()
+      const left = Math.min(Math.max(clientX - rect.left + 12, 8), rect.width - tip.offsetWidth - 8)
+      const top = Math.min(Math.max(clientY - rect.top + 12, 8), rect.height - tip.offsetHeight - 8)
+      tip.style.left = `${left}px`
+      tip.style.top = `${top}px`
+    }
+    const hide = () => {
+      if (marked) marked.classList.remove('is-hit')
+      marked = null
+      tip.hidden = true
+    }
+
+    svg.addEventListener('pointermove', (event) => {
+      if (dragging) return
+      const hit = event.target.closest('circle')
+      if (hit) show(hit, event.clientX, event.clientY)
+      else hide()
+    })
+    svg.addEventListener('pointerleave', hide)
+    svg.addEventListener('click', (event) => {
+      if (dragging && dragging.moved) return
+      const hit = event.target.closest('circle')
+      if (hit) show(hit, event.clientX, event.clientY)
+      else hide()
+    })
+
+    // Area filters.
+    const circles = Array.from(svg.querySelectorAll('#mappoints circle'))
+    document.querySelectorAll('.zkey').forEach((key) => {
+      key.addEventListener('click', () => {
+        const on = key.getAttribute('aria-pressed') === 'true'
+        key.setAttribute('aria-pressed', String(!on))
+        const zone = key.dataset.zone
+        circles.forEach((circle) => {
+          if (circle.dataset.zone === zone) circle.classList.toggle('is-off', on)
+        })
+      })
+    })
+
+    // Fly to a point, from the list or from the search box.
+    const flyTo = (x, y) => {
+      const w = Math.max(start[2] / 26, 700)
+      const h = w * (start[3] / start[2])
+      box = [Number(x) - w / 2, -Number(y) - h / 2, w, h]
+      apply()
+      svg.scrollIntoView({ behavior: 'smooth', block: 'center' })
+    }
+    document.querySelectorAll('.maplist__go').forEach((button) => {
+      button.addEventListener('click', () => flyTo(button.dataset.x, button.dataset.y))
+    })
+
+    const find = document.getElementById('mapfind')
+    find?.addEventListener('input', () => {
+      const term = find.value.trim().toLowerCase()
+      document.querySelectorAll('#maplist li').forEach((item) => {
+        const name = item.querySelector('.maplist__name').textContent.toLowerCase()
+        item.hidden = term.length > 0 && !name.includes(term)
+      })
+      if (term.length < 2) return
+      const match = circles.find((circle) => circle.dataset.name.toLowerCase().includes(term))
+      if (match) flyTo(match.dataset.x, match.dataset.y)
+    })
+
+    document.getElementById('mapreset')?.addEventListener('click', () => {
+      box = start.slice()
+      apply()
+      hide()
+      if (find) find.value = ''
+      document.querySelectorAll('#maplist li').forEach((item) => { item.hidden = false })
+    })
+  }
+</script>

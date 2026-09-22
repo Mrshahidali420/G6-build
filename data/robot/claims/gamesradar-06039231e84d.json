@@ -1,0 +1,42 @@
+{
+  "rawId": "gamesradar-06039231e84d",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-will-not-be-eligible-to-complete-baldurs-gate-3-and-clair-obscur-expedition-33s-big-5-goty-sweep-in-the-2026-7-season/",
+  "published": "2026-09-22",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/oFV96Lzam6D6cjSoxVEn9h-1920-80.jpg",
+  "extractedAt": "2026-09-22T20:03:04.794Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "release_fact",
+      "name": "GTA 6 release date",
+      "altNames": [
+        "GTA VI release date",
+        "Grand Theft Auto 6 release date"
+      ],
+      "slug": "gta-6-release-date",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The 44th Golden Joystick Awards were announced earlier today , confirming that this year's show will take place on November 11 - eight days before the GTA 6 release date of November 19.",
+          "quote": "The 44th Golden Joystick Awards were announced earlier today , confirming that this year's show will take place on November 11 - eight days before the GTA 6 release date of November 19."
+        }
+      ]
+    }
+  ]
+}

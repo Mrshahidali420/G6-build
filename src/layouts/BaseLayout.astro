@@ -3,6 +3,7 @@ import { SITE_NAME, SITE_URL, ADSENSE_CLIENT, GA_MEASUREMENT_ID, HUB_TYPES, RECO
 import { pageEntities } from '../lib/entities.mjs'
 import Logo from '../components/Logo.astro'
 import Icon from '../components/Icon.astro'
+import Shop from '../components/Shop.astro'
 import '../styles/world.css'
 
 const {
@@ -12,6 +13,10 @@ const {
   jsonLd = null,
   noindex = false,
   updated = null,
+  // The gear rail at the foot of the page. On by default, so a new page is
+  // never silently left off it. Turned off on the legal and contact pages,
+  // and on any page that already carries a shopping section of its own.
+  shop = true,
 } = Astro.props
 
 if (!description) throw new Error(`Page ${path} has no meta description. Every page needs a unique one.`)
@@ -259,6 +264,8 @@ const footConfirmed = pageEntities.filter((entity) => entity.confirmedStatus ===
     <main id="main">
       <slot />
     </main>
+
+    {shop && <Shop path={path} />}
 
     <!--
       The footer answers the header. The masthead opens with a thin glazed

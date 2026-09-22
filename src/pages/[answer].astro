@@ -46,7 +46,7 @@ const jsonLd = {
   ],
 }
 ---
-<BaseLayout title={data.title} description={data.description} path={path} updated={data.updated} jsonLd={jsonLd}>
+<BaseLayout title={data.title} description={data.description} path={path} updated={data.updated} jsonLd={jsonLd} shop={data.products.length === 0}>
   <section class="band band--glaze">
     <div class="shell">
       <p class="crumb" style="color:var(--on-glaze-2)">

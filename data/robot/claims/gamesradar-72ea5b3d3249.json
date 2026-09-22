@@ -1,0 +1,25 @@
+{
+  "rawId": "gamesradar-72ea5b3d3249",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/former-valve-writer-says-giant-teams-just-dont-work-in-video-game-development-unless-youre-making-gta-6/",
+  "published": "2026-09-21",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/jngM5MjboF3iNycFz39kQ9-1920-80.jpg",
+  "extractedAt": "2026-09-22T09:42:41.824Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    }
+  ]
+}

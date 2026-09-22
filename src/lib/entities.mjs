@@ -110,6 +110,74 @@ export function metaDescription(entity, max = 155) {
   return saysGame(kept) ? kept : clip(lead, max)
 }
 
+/* ---------- In the game ----------
+
+   Filled by hand after launch, in data/ingame.json (see docs/INGAME-DATA.md).
+   build-data.mjs checks each entry and puts it on entity.inGame. An entry with
+   no inGame gets nothing from these helpers, so its page is unchanged. */
+
+const endStop = (text) => (/[.!?]$/.test(text) ? text : `${text}.`)
+
+export function inGameHeading(entity) {
+  const facts = entity.inGame
+  if (!facts) return null
+  if (entity.entityType === 'song') return `Which radio station plays ${entity.name}`
+  if (facts.howToGetThere) return `How to get to ${entity.name} in GTA 6`
+  if (!facts.location && typeof facts.buyable === 'boolean') return `Can you buy ${entity.name} in GTA 6`
+  return `Where to find ${entity.name} in GTA 6`
+}
+
+// Rows for the fact list, in reading order. Only filled fields appear.
+export function inGameRows(entity) {
+  const facts = entity.inGame
+  if (!facts) return []
+  return [
+    ['Radio station', facts.radioStation],
+    ['Location', facts.location],
+    ['How to get it', facts.howToGet],
+    ['How to get there', facts.howToGetThere],
+    ['Can you buy it', typeof facts.buyable === 'boolean' ? (facts.buyable ? 'Yes' : 'No') : undefined],
+    ['Price', facts.price],
+    ['Class', facts.class],
+  ].filter(([, value]) => value)
+}
+
+// The one fact worth a place in the search snippet, as a finished sentence.
+function inGameSnippet(entity) {
+  const facts = entity.inGame
+  if (!facts) return null
+  if (facts.radioStation) return `Radio station: ${endStop(facts.radioStation)}`
+  if (facts.location) return `Where to find it: ${endStop(facts.location)}`
+  if (facts.howToGetThere) return `How to get there: ${endStop(facts.howToGetThere)}`
+  if (typeof facts.buyable === 'boolean') return `Can you buy it: ${facts.buyable ? 'Yes' : 'No'}.`
+  return null
+}
+
+// The normal description, plus the in-game fact only when the whole line still
+// fits in 160 characters and the description was not already cut short.
+export function metaDescriptionWithInGame(entity, max = 160) {
+  const base = metaDescription(entity)
+  const extra = inGameSnippet(entity)
+  if (!extra || base.endsWith('...')) return base
+  const joined = `${endStop(base)} ${extra}`
+  return joined.length <= max ? joined : base
+}
+
+// Adds the in-game facts to the page's main JSON-LD node as schema.org
+// additionalProperty values. Only for node types that take that property
+// (Product, Place and its kinds). Songs are MusicRecording, which does not, so
+// their JSON-LD is left alone. Returns a new object; the input is not changed.
+const TAKES_ADDITIONAL_PROPERTY = ['Product', 'Place', 'LocalBusiness', 'LandmarksOrHistoricalBuildings']
+
+export function withInGameSchema(schema, entity) {
+  const rows = inGameRows(entity)
+  if (!rows.length) return schema
+  const [node, ...rest] = schema['@graph']
+  if (!TAKES_ADDITIONAL_PROPERTY.includes(node['@type'])) return schema
+  const additionalProperty = rows.map(([name, value]) => ({ '@type': 'PropertyValue', name, value }))
+  return { ...schema, '@graph': [{ ...node, additionalProperty }, ...rest] }
+}
+
 // Google cuts the snippet itself, mid-word and without warning. Cutting it here
 // instead means the last thing a reader sees is a finished thought: a whole
 // sentence where one ends in range, and a whole word where none does.

@@ -221,6 +221,74 @@ for (const entity of entities) {
   extrasCount += 1
 }
 
+// In-game facts, hand filled after launch in data/ingame.json, keyed by slug.
+// Empty ({}) until the game is out. Every entry must carry a source, and a bad
+// entry stops the build, the same as a bad CSV row: a wrong "where to find it"
+// line is worse than none. See docs/INGAME-DATA.md for how to fill it.
+const INGAME_FILE = join(ROOT, 'data', 'ingame.json')
+
+// Which fields each kind of entry may carry. JSON key -> key on the entity.
+const INGAME_FIELDS = {
+  vehicle: { location: 'location', price: 'price', class: 'class', how_to_get: 'howToGet' },
+  business: { location: 'location', buyable: 'buyable', price: 'price' },
+  song: { radio_station: 'radioStation' },
+  weapon: { location: 'location', price: 'price' },
+  landmark: { how_to_get_there: 'howToGetThere' },
+  location: { how_to_get_there: 'howToGetThere' },
+}
+
+function readInGame(entityBySlug) {
+  let raw
+  try {
+    raw = readFileSync(INGAME_FILE, 'utf8')
+  } catch {
+    return new Map()
+  }
+
+  const fail = (slug, message) => {
+    throw new Error(`data/ingame.json: "${slug}": ${message}. See docs/INGAME-DATA.md.`)
+  }
+
+  const parsed = JSON.parse(raw)
+  const result = new Map()
+
+  for (const [slug, entry] of Object.entries(parsed)) {
+    const entity = entityBySlug.get(slug)
+    if (!entity) fail(slug, 'no entry has this slug')
+
+    const allowed = INGAME_FIELDS[entity.entityType]
+    if (!allowed) fail(slug, `a ${entity.entityType} entry takes no in-game fields`)
+
+    const { source, ...fields } = entry ?? {}
+    if (!source || typeof source.label !== 'string' || !source.label.trim()) fail(slug, 'source.label is missing')
+    if (typeof source.url !== 'string' || !/^https?:\/\/\S+$/.test(source.url.trim())) fail(slug, 'source.url is missing or not a web address')
+
+    const facts = {}
+    for (const [key, value] of Object.entries(fields)) {
+      const target = allowed[key]
+      if (!target) fail(slug, `"${key}" is not a field for a ${entity.entityType}. Allowed: ${Object.keys(allowed).join(', ')}`)
+      if (key === 'buyable') {
+        if (typeof value !== 'boolean') fail(slug, '"buyable" must be true or false, without quotes')
+        facts[target] = value
+      } else {
+        if (typeof value !== 'string' || !value.trim()) fail(slug, `"${key}" must be non-empty text`)
+        facts[target] = value.trim()
+      }
+    }
+    if (!Object.keys(facts).length) fail(slug, 'has a source but no fact')
+
+    result.set(slug, { ...facts, source: { label: source.label.trim(), url: source.url.trim() } })
+  }
+
+  return result
+}
+
+const inGame = readInGame(new Map(entities.map((entity) => [entity.slug, entity])))
+for (const entity of entities) {
+  const facts = inGame.get(entity.slug)
+  if (facts) entity.inGame = facts
+}
+
 entities.sort((a, b) => a.entityType.localeCompare(b.entityType) || a.name.localeCompare(b.name))
 
 mkdirSync(dirname(OUT_FILE), { recursive: true })
@@ -239,6 +307,7 @@ writeFileSync(
 
 phase(`wrote ${entities.length} entities to src/data/entities.json`)
 phase(`${extrasCount} of ${entities.length} entities have a data/extras file`)
+phase(`${inGame.size} of ${entities.length} entities have in-game facts in data/ingame.json`)
 console.log('[build-data] by type:', byType)
 
 if (rejected.length) {

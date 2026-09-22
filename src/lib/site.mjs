@@ -75,6 +75,14 @@ export const NAV_SHORTCUTS = ['map', 'answers', 'confirmed', 'news']
 
 export const NON_PAGE_TYPES = ['release_fact']
 
+// Entity slug -> the answer page that owns its main search question. The
+// answer page links down to the entity in its body; this links back up.
+export const ENTITY_ANSWER_LINKS = {
+  'vice-city': { href: '/gta-6-vice-city', label: 'GTA 6 Vice City: what Rockstar has confirmed' },
+  'gta-6-ultimate-edition': { href: '/gta-6-ultimate-edition', label: 'Is the GTA 6 Ultimate Edition worth it?' },
+  'gta-6-standard-edition': { href: '/gta-6-price', label: 'GTA 6 price in every country' },
+}
+
 // Amazon Associates tracking ids, created 16 September 2026, one per store.
 // A tracking id is free and belongs to an account, so each site gets its own
 // id and the earnings report stays readable.

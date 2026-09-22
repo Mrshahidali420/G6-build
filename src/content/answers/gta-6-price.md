@@ -3,7 +3,7 @@ title: "GTA 6 price in every country: full list"
 description: "Rockstar set GTA 6 at 79.99 USD standard and 99.99 USD ultimate. Here is every country price we can confirm, and which ones are press reports only."
 keyword: "gta 6 price"
 order: 2
-updated: "2026-09-15"
+updated: "2026-09-23"
 sources:
   - label: "Rockstar Newswire: Pre-Order Grand Theft Auto VI on June 25"
     url: "https://www.rockstargames.com/newswire/article/5171972o3ak5oa/pre-order-grand-theft-auto-vi-on-june-25"
@@ -13,6 +13,12 @@ sources:
     url: "https://www.91mobiles.com/gaming/gta-6-pre-orders-begin-india-official-pricing/"
   - label: "Beebom: GTA 6 global prices list"
     url: "https://beebom.com/gta-6-global-prices-list/"
+  - label: "PlayStation Canada: Grand Theft Auto VI (PS5)"
+    url: "https://www.playstation.com/en-ca/games/grand-theft-auto-vi/"
+  - label: "PlayStation Australia: Grand Theft Auto VI (PS5)"
+    url: "https://www.playstation.com/en-au/games/grand-theft-auto-vi/"
+  - label: "PlayStation Germany: Grand Theft Auto VI (PS5)"
+    url: "https://www.playstation.com/de-de/games/grand-theft-auto-vi/"
   - label: "Stevivor: GTA 6 pricing, physical, digital only pre-order bonus pricing"
     url: "https://stevivor.com/features/in-depth/grand-theft-auto-6-pricing-physical-digital-only-pre-order-bonus-pricing-australia-pricing-new-zealand/"
 faq:
@@ -25,7 +31,7 @@ faq:
   - q: "Is the UK price official?"
     a: "Yes. GBP 69.99 for Standard and GBP 89.99 for Ultimate came from Rockstar's own storefronts, reported by TechRadar."
   - q: "Which country prices are not confirmed yet?"
-    a: "India, continental Europe in some listings, Canada, and Australia all come from press reporting rather than a Rockstar Newswire post. Treat those as likely, not locked in."
+    a: "Only India. The euro, Canadian and Australian prices now show on the official PlayStation Store in each country. The India price still comes from press reporting."
 related:
   - "leonida"
   - "vice-city"
@@ -58,16 +64,18 @@ row so you know which kind of source it is.
 | Country / region | Currency | Standard Edition | Ultimate Edition | Source tier |
 | --- | --- | --- | --- | --- |
 | United States | USD | 79.99 | 99.99 | Official (Rockstar Newswire) |
-| United Kingdom | GBP | 69.99 | 89.99 | Official (Rockstar storefronts, reported by TechRadar) |
-| Europe (euro countries) | EUR | 79.99 | 99.99 | Press reported (Beebom) |
-| India | INR | 5,999 | 7,499 | Press reported, medium confidence (91mobiles) |
-| Canada | CAD | 109.99 | 139.99 | Press reported (Stevivor) |
-| Australia | AUD | 129.95 | 159.95 | Press reported (Stevivor) |
+| [United Kingdom](/gta-6-price-uk) | GBP | 69.99 | 89.99 | Official (Rockstar storefronts, reported by TechRadar) |
+| [Europe (euro countries)](/gta-6-price-europe) | EUR | 79.99 | 99.99 | Official (PlayStation Store) |
+| [India](/gta-6-price-in-india) | INR | 5,999 | 7,499 | Press reported, medium confidence (91mobiles) |
+| [Canada](/gta-6-price-canada) | CAD | 109.99 | 139.99 | Official (PlayStation Store) |
+| [Australia](/gta-6-price-australia) | AUD | 129.95 | 159.95 | Official (PlayStation Store) |
 
-Two rows are locked down: the US price and the UK price. Both trace back to a
-Rockstar-controlled page. Everything else on this table is a real number from
-a real gaming outlet, but it has not been confirmed by Rockstar in writing, so
-treat it as likely rather than final.
+Five rows are locked down: the US, UK, euro, Canadian and Australian prices.
+Each one traces back to Rockstar or to the official PlayStation Store for that
+country, checked on 23 September 2026. Only the India row still rests on press
+reporting, so treat it as likely rather than final.
+
+Each country with a confirmed price has its own page, linked in the table.
 
 ## Why the price is not the same everywhere
 
@@ -161,7 +169,7 @@ to look directly at the PlayStation Store or Xbox Store listing for your
 region, since those storefronts show the live localised price rather than a
 number copied from somewhere else. Gaming press in your region may also
 report a number before Rockstar confirms it directly, the way outlets did for
-India, Canada and Australia. Treat those early numbers the same way this page
+India. Treat those early numbers the same way this page
 treats them: real, but not locked in until Rockstar's own channels repeat
 them.
 
@@ -175,17 +183,15 @@ price for your edition and region whether you preload or not.
 
 ## A quick way to read the table above
 
-If you only remember one thing from this page, remember this. Two rows are
-backed by Rockstar directly: the United States and the United Kingdom. Four
-rows are backed by named gaming outlets reporting real storefront prices, but
-without a matching Rockstar statement: Europe, India, Canada and Australia.
-Both kinds of number are useful. Only the first kind should be treated as
-guaranteed to stay exactly as printed between now and 19 November 2026.
+If you only remember one thing from this page, remember this. Five rows come
+from Rockstar or the official PlayStation Store: the United States, the United
+Kingdom, the euro countries, Canada and Australia. One row, India, comes from
+gaming press only. Treat that one as likely, not guaranteed.
 
 ## Sources checked for this page
 
 Every number above is linked at the bottom of this page. The US and UK prices
-come from Rockstar's own channels. The India, Europe, Canada and Australia
-figures come from gaming press outlets reporting live storefront prices. If
-Rockstar publishes an official number for any of the press-reported rows, this
-page will update the same day.
+come from Rockstar's own channels. The euro, Canada and Australia prices come
+from the official PlayStation Store in each country. The India figure comes
+from gaming press. If an official India price appears, this page will update
+the same day.

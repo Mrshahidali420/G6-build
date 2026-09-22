@@ -1,9 +1,9 @@
 ---
-title: "GTA 6 platforms: which consoles it is coming to"
+title: "GTA 6 platforms: PS5, Xbox, PC and Switch explained"
 description: "GTA 6 is confirmed for PS5 and Xbox Series X|S only. Here is what is confirmed, and what has simply not been announced yet."
 keyword: "gta 6 platforms"
 order: 7
-updated: "2026-09-15"
+updated: "2026-09-23"
 sources:
   - label: "Rockstar Newswire: Pre-Order Grand Theft Auto VI on June 25"
     url: "https://www.rockstargames.com/newswire/article/5171972o3ak5oa/pre-order-grand-theft-auto-vi-on-june-25"
@@ -38,7 +38,8 @@ Rockstar's own Newswire, the same post that set the release date and pre-order
 prices, names PlayStation 5 and Xbox Series X|S as the platforms for GTA 6.
 Both the PlayStation Store and the Xbox Store list the game for pre-order
 right now, which is about as firm a confirmation as a platform announcement
-gets before launch.
+gets before launch. For the difference between the two Xbox versions, see
+[Xbox Series X or S for GTA 6](/xbox-series-x-or-s-gta-6).
 
 | Platform | Status |
 | --- | --- |
@@ -76,7 +77,9 @@ this one. Nothing has been said about GTA 6 on PC, timing, price, or
 otherwise.
 
 Be careful with any article, video, or forum post that gives a "GTA 6 PC
-release date." As of now, no such date exists anywhere official.
+release date." As of now, no such date exists anywhere official. For the
+full breakdown of that question on its own, see
+[will GTA 6 be on PC](/will-gta-6-be-on-pc).
 
 ## Nintendo Switch: also not announced
 

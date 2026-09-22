@@ -107,6 +107,9 @@ The response contains `author_name`. For a genuine Rockstar upload it reads
 before it was published. Two IDs that other sites list as official failed the
 check and were dropped: one belongs to IGN, one to a fan channel.
 
+Watch all three, with the oEmbed channel check for each one, on the
+[trailers page](/trailers).
+
 ## What is still not known
 
 - Whether Rockstar plans a third numbered trailer before the 19 November 2026

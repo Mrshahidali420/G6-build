@@ -32,7 +32,9 @@ related:
 
 **Yes, GTA 6 goes back to Vice City.** Rockstar confirmed this on the
 official GTA VI site. Vice City is the main city, and it sits inside a
-larger fictional state called Leonida.
+larger fictional state called Leonida. See the full
+[Vice City location entry](/locations/vice-city) for every confirmed
+detail on the city in one place.
 
 ## What Rockstar has actually said
 

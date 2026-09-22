@@ -6,8 +6,8 @@ import Gallery from '../../components/Gallery.astro'
 import SongPlayer from '../../components/SongPlayer.astro'
 import Mark from '../../components/Mark.astro'
 import EntityTile from '../../components/EntityTile.astro'
-import { HUB_TYPES } from '../../lib/site.mjs'
-import { entitiesOfType, hubFor, relatedFor, urlFor, metaTitle, metaDescription, TIER_LABEL } from '../../lib/entities.mjs'
+import { HUB_TYPES, ENTITY_ANSWER_LINKS } from '../../lib/site.mjs'
+import { entitiesOfType, hubFor, relatedFor, urlFor, metaTitle, metaDescriptionWithInGame, inGameHeading, inGameRows, withInGameSchema, TIER_LABEL } from '../../lib/entities.mjs'
 import { entitySchema } from '../../lib/schema.mjs'
 import { imageFor, creditFor, creditSourceFor, galleryFor } from '../../lib/images.mjs'
 import { trackFor } from '../../lib/music.mjs'
@@ -44,14 +44,24 @@ const track = entity.entityType === 'song' ? trackFor(entity.slug) : null
 // Unique per page. Never a template with the name swapped in. Both helpers
 // live in lib/entities.mjs, with the Search Console reading that explains them.
 const pageTitle = metaTitle(entity)
-const description = metaDescription(entity)
+const description = metaDescriptionWithInGame(entity)
+
+// Where to find it, filled by hand after launch in data/ingame.json. Until an
+// entry has a row there, all three are empty and the page renders as before.
+const inGame = entity.inGame
+const inGameTitle = inGameHeading(entity)
+const inGameFacts = inGameRows(entity)
+
+// The answer page that owns this entry's main question, so the two pages
+// link both ways instead of competing for one search.
+const answerLink = ENTITY_ANSWER_LINKS[entity.slug]
 ---
 <BaseLayout
   title={pageTitle}
   description={description}
   path={path}
   updated={entity.sourceDate}
-  jsonLd={entitySchema(entity, path)}
+  jsonLd={withInGameSchema(entitySchema(entity, path), entity)}
 >
   <section class="band band--glaze">
     <div class="shell hero">
@@ -115,6 +125,29 @@ const description = metaDescription(entity)
   <section class="band">
     <div class="shell prose">
       <p style="font-size:1.12rem">{entity.longDescription}</p>
+
+      {answerLink && (
+        <p><a href={answerLink.href}>{answerLink.label}</a></p>
+      )}
+
+      {inGame && inGameFacts.length > 0 && (
+        <>
+          <h2>{inGameTitle}</h2>
+          <div class="plaque">
+            <dl class="spec">
+              {inGameFacts.map(([label, value]) => (
+                <>
+                  <dt>{label}</dt>
+                  <dd>{value}</dd>
+                </>
+              ))}
+            </dl>
+            <p class="plaque__meta">
+              In the game. Source: <a href={inGame.source.url} rel="nofollow noopener" target="_blank">{inGame.source.label}</a>.
+            </p>
+          </div>
+        </>
+      )}
 
       {entity.keyFacts.length > 0 && (
         <>

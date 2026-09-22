@@ -109,9 +109,9 @@ him directly to Vice City or the Keys in the text of his bio.
 
 ## Where to read more
 
-Individual write-ups for these names sit on this site's character hub, along
-with the places they are tied to on the locations hub. Both hubs list only
-what Rockstar has directly confirmed.
+Individual write-ups for these names sit on this site's
+[character hub](/characters), along with the places they are tied to on the
+locations hub. Both hubs list only what Rockstar has directly confirmed.
 
 ## What is still not known
 

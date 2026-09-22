@@ -133,6 +133,9 @@ material, not from anything Rockstar has released. Those items may well be
 real, but they have not been officially shown, so they do not belong on a page
 that only covers what has actually been seen.
 
+See every weapon entry, with its own sourcing, on the
+[weapons page](/weapons).
+
 ## What is still not known
 
 - Whether every weapon above will keep the name or design shown in pre-release

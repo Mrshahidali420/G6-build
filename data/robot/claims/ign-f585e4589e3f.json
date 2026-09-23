@@ -1,0 +1,73 @@
+{
+  "rawId": "ign-f585e4589e3f",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/vice-city-trademark-abandoned-by-wwe-ahead-of-gta-6-launch",
+  "published": "2026-09-23",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/09/23/lola-gta-1790163051974.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-09-23T20:01:23.239Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Incidentally, backyard wrestling looks set to be one of the many, many activities available for Jason and Lucia to engage with in GTA 6, with even a nod to John Cena’s Attitude Adjustment finisher spotted in the recent extended look at the game.",
+          "quote": "Incidentally, backyard wrestling looks set to be one of the many, many activities available for Jason and Lucia to engage with in GTA 6, with even a nod to John Cena’s Attitude Adjustment finisher spotted in the recent extended look at the game."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Incidentally, backyard wrestling looks set to be one of the many, many activities available for Jason and Lucia to engage with in GTA 6, with even a nod to John Cena’s Attitude Adjustment finisher spotted in the recent extended look at the game.",
+          "quote": "Incidentally, backyard wrestling looks set to be one of the many, many activities available for Jason and Lucia to engage with in GTA 6, with even a nod to John Cena’s Attitude Adjustment finisher spotted in the recent extended look at the game."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "By Simon Cardy Updated : Sep 23, 2026 11:33am UTC 5 comments Add IGN on Google It appears that WWE was trying to trademark the term ‘Vice City,’ before abandoning plans to do so.",
+          "quote": "By Simon Cardy Updated : Sep 23, 2026 11:33am UTC 5 comments Add IGN on Google It appears that WWE was trying to trademark the term ‘Vice City,’ before abandoning plans to do so."
+        },
+        {
+          "fact": "It’s not just her in-ring name that suggests this was the case either, but also the fact that she is from Miami, Florida, the real-life location GTA’s Vice City is based on.",
+          "quote": "It’s not just her in-ring name that suggests this was the case either, but also the fact that she is from Miami, Florida, the real-life location GTA’s Vice City is based on."
+        },
+        {
+          "fact": "Vice City is, of course, the setting of the PS2 classic GTA Vice City and the upcoming GTA 6.",
+          "quote": "Vice City is, of course, the setting of the PS2 classic GTA Vice City and the upcoming GTA 6."
+        },
+        {
+          "fact": "The extent to which Rockstar is reminding people of this can be seen in real-life Miami now, with nearly $1 million spent on ‘Welcome to Vice City’ signage .",
+          "quote": "The extent to which Rockstar is reminding people of this can be seen in real-life Miami now, with nearly $1 million spent on ‘Welcome to Vice City’ signage ."
+        }
+      ]
+    }
+  ]
+}

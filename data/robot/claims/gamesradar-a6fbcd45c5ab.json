@@ -1,0 +1,25 @@
+{
+  "rawId": "gamesradar-a6fbcd45c5ab",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/nba-star-warns-gta-6-will-ruin-november-sports-because-players-and-coaches-will-be-too-busy-playing-to-train/",
+  "published": "2026-09-23",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/2pSZdE6TKY4gEz9haAKNMo-1920-80.jpg",
+  "extractedAt": "2026-09-23T20:01:16.793Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    }
+  ]
+}

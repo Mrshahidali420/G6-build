@@ -1,7 +1,7 @@
 # Data sources for data/extras/ reference files
 
-Written 23 September 2026. These four files are data only. No page reads them
-yet. A later job renders them. Every entry carries its own `source` {label, url}
+Written 23 September 2026. `scripts/build-data.mjs` loads the vehicle,
+landmark and wildlife files and the entity pages render them. Every entry carries its own `source` {label, url}
 and a `basis` label.
 
 Note: `scripts/build-data.mjs` loads `data/extras/<slug>.json` for each entity.
@@ -18,8 +18,8 @@ None of the four file names below is an entity slug, so the loader ignores them.
 | Licence | CC BY-SA 3.0, the same licence as the outlawdb/Fandom import behind `data/*-fandom.csv` |
 | Credit required | "GTA Wiki (Fandom), CC BY-SA", with a link to the wiki page. Each entry's `source.url` is that page. If the text is changed and republished, it stays under CC BY-SA. |
 | Fetched | 23 September 2026 (latest revision of each page on that day) |
-| basis | `community-identified` for every entry |
-| Matched | **89 of 268** vehicles |
+| basis | `community-identified` (GTA VI-specific wiki text), or `community-identified (series design)` (see second pass below) |
+| Matched | **169 of 268** vehicles (89 first pass, 80 second pass) |
 
 How each entry was chosen:
 
@@ -50,10 +50,61 @@ generation, 1955 Ford-inspired car, Buick Reatta-inspired convertible, S23).
 Nine agreed. S23 found no independent source. Most outside sites copy the
 wiki, so these checks are not fully independent.
 
+### Second pass, 23 September 2026 (80 more)
+
+The 169 vehicles without an entry were fetched again (169 have a wiki page,
+10 have none). Each new entry carries a `basis_note` that starts with the rule
+it passed:
+
+- **Rule a (5)**: the page has a GTA VI section or sentence naming the real
+  vehicle (Dodo, Dubsta, Squalo, Zorrusso, and the Gauntlet Interceptor's
+  Florida Highway Patrol livery).
+- **Rule b (14)**: the design text names the real vehicle and a GTA VI section
+  says the GTA VI version keeps that design ("largely unchanged", "slight
+  alterations"). Chino, Carbonizzare, Stanier, Primo and others.
+- **Rule c (61)**: the Influence text is game-agnostic (no per-game
+  subsections), names one primary real vehicle, and the infobox lists GTA VI.
+  These get `basis: "community-identified (series design)"` and the page says
+  so. It is the series design, not a statement about GTA VI.
+
+Rejected (89): pages whose Influence is split by game with different vehicles
+(Buccaneer, Coquette, Regina, Sultan, Police Maverick); pages whose only
+influence text sits under a "GTA Online" or "GTA V" heading (Gauntlet Hellfire,
+Toros, Landstalker XL, Growler, Penumbra and others); GTA VI redesigns the wiki
+does not tie to a vehicle (Blista Compact, Cheetah Classic, Seashark, Rancher);
+no single primary vehicle (Emperor, Bison, Nimbus, XLS, Phantom, Tempesta);
+name-only guesses (Riata Classic, SERA minivan); and pages that name no real
+vehicle (trailers, most "Unnamed GTA VI" pages, custom variants).
+
 Refresh: fetch the wikitext of every vehicle `source` URL from `api.php`,
 re-read the Influence/Design section (or its `Grand Theft Auto VI`
-subsection), and update `based_on` by hand. Never fill an entry from a
-series-wide paragraph.
+subsection), and update `based_on` by hand. Only use a series-wide paragraph
+under rule c above, and label it `(series design)`.
+
+---
+
+## 1b. `data/extras/vehicle-real-photos.json` and `public/img/real-cars/`
+
+| | |
+|---|---|
+| What | One photo of the real vehicle named in a vehicle's `based_on`, keyed by slug: `{file, credit, source}` |
+| Source | Wikimedia Commons. Searched through `api.wikimedia.org/core/v1/commons/search/page`, file data from `en.wikipedia.org/w/api.php` (`prop=imageinfo`, `iiprop=extmetadata`). `commons.wikimedia.org` itself does not connect from this PC. |
+| Licence | Only CC0, public domain, CC BY or CC BY-SA files. Author and licence come from the file's `extmetadata`. |
+| Credit | `credit` reads "Real-world <model> (not a game image). Photo: <author>, <licence>, via Wikimedia Commons." and `source` is the Commons file page. The page shows both under the photo. |
+| Files | ~1200 px wide JPEG, quality 82, in `public/img/real-cars/<slug>.jpg` |
+| Count | 119 photos (24.3 MB), for 119 of the 169 vehicles with a basis |
+
+Each photo was opened and checked by eye for the right model and generation.
+Skipped: liveries, one-off conversions, boats and brands with no clear Commons
+photo, entries where the wiki does not name a generation (Ingot), and entries
+where no free photo showed the right generation (PMP 700, Dominator GT,
+Moonbeam, Walton L35, the Sprinter-based van, the LeBaron wagon and others).
+
+These photos are not game images. They never feed the hero, the entity tiles,
+the OG image or `src/lib/images.mjs`; `scripts/build-data.mjs` hangs them off
+`realLife.photo` only, and a bad row stops the build. No JSON-LD property is
+added for them: an `image` on the game entity would claim the real car is the
+game vehicle.
 
 ---
 

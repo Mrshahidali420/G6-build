@@ -81,6 +81,15 @@ const realLife = entity.realLife
 const realPlace = entity.realPlace
 const species = entity.species
 
+// "community-identified" or "community-identified (series design)", the second
+// when the wiki's design text covers every game rather than GTA VI alone.
+const realLifeBasis = realLife
+  ? (realLife.basis ?? 'community-identified').replace(/^./, (c) => c.toUpperCase())
+  : ''
+// A photo of the real vehicle, never a game image. It stays in this row and
+// never feeds the hero, tiles or OG image (see scripts/build-data.mjs).
+const realPhoto = realLife?.photo
+
 // News, Newswire posts and tracker claims that name this entry, newest first.
 const mentions = await mentionsFor(entity.slug)
 ---
@@ -128,9 +137,26 @@ const mentions = await mentionsFor(entity.slug)
           {realLife && (
             <>
               <dt>Real-life basis</dt>
-              <dd>
-                {realLife.basedOn}. Community-identified, source:{' '}
+              <dd class="real-basis">
+                {realLife.basedOn}. {realLifeBasis}, source:{' '}
                 <a href={realLife.source.url} rel="nofollow noopener" target="_blank">{realLife.source.label}</a>.
+                {realPhoto && (
+                  <figure class="real-photo">
+                    <img
+                      src={realPhoto.src}
+                      width={realPhoto.width}
+                      height={realPhoto.height}
+                      alt={`Real ${realLife.basedOn}, the car the ${entity.name} is based on`}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <figcaption>
+                      <strong class="real-photo__label">Real car, not a game image</strong>
+                      {realPhoto.credit}{' '}
+                      <a href={realPhoto.source} rel="nofollow noopener" target="_blank">File page</a>.
+                    </figcaption>
+                  </figure>
+                )}
               </dd>
             </>
           )}

@@ -1,10 +1,37 @@
 {
+  "8f-drafter": {
+    "based_on": "Second-generation Audi RS 5 Coupé",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/8F_Drafter"
+    }
+  },
   "airboat-09": {
     "based_on": "Diamondback Airboats models (Hunting & Fishing 6, 13 and 15)",
     "basis": "community-identified",
     "source": {
       "label": "GTA Wiki (Fandom), CC BY-SA",
       "url": "https://gta.fandom.com/wiki/Airboat_09"
+    }
+  },
+  "aleutian": {
+    "based_on": "Fourth-generation Ford Expedition (U553)",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Aleutian"
+    }
+  },
+  "alpha": {
+    "based_on": "2013 Cadillac Elmiraj concept",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Alpha_(HD_Universe)"
     }
   },
   "alvino-v1": {
@@ -15,12 +42,102 @@
       "url": "https://gta.fandom.com/wiki/Alvino_V1"
     }
   },
+  "asterope-gz": {
+    "based_on": "Fifth-generation Toyota Camry (XV30)",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Asterope_GZ"
+    }
+  },
+  "astron": {
+    "based_on": "First-generation Porsche Macan (95B)",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Astron"
+    }
+  },
+  "avarus": {
+    "based_on": "Orange County Choppers custom choppers, mainly the T-Rex Rigid",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Avarus"
+    }
+  },
+  "baller-second-generation": {
+    "based_on": "Second-generation Range Rover Sport (L494)",
+    "basis": "community-identified",
+    "basis_note": "Rule b: The wiki names the real vehicle and says the GTA VI version keeps that design, with \"slight design alterations\" (Design > Grand Theft Auto VI).",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Baller_(second_generation)"
+    }
+  },
+  "banshee": {
+    "based_on": "Second-generation Dodge Viper (SR II)",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Banshee_(HD_Universe)"
+    }
+  },
+  "benson": {
+    "based_on": "International 4700 delivery truck",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Benson_(HD_Universe)"
+    }
+  },
+  "biff": {
+    "based_on": "Kenworth T300",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Biff"
+    }
+  },
   "bison-second-generation": {
     "based_on": "Fifth-generation Ram pickup",
     "basis": "community-identified",
     "source": {
       "label": "GTA Wiki (Fandom), CC BY-SA",
       "url": "https://gta.fandom.com/wiki/Bison_(second_generation)"
+    }
+  },
+  "blazer": {
+    "based_on": "2012 Yamaha YFZ450 quad",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Blazer"
+    }
+  },
+  "bobcat-xl": {
+    "based_on": "Third-generation Chevrolet C/K pickup (1973–1987)",
+    "basis": "community-identified",
+    "basis_note": "Rule b: The wiki names the real vehicle and says the GTA VI version keeps that design, with only \"minor design updates\" (Description > Grand Theft Auto VI).",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Bobcat_XL"
+    }
+  },
+  "boxville": {
+    "based_on": "Chevrolet Step-Van (GMC Value-Van)",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Boxville_(HD_Universe)"
     }
   },
   "btn-delmar": {
@@ -31,12 +148,102 @@
       "url": "https://gta.fandom.com/wiki/BTN_Delmar"
     }
   },
+  "buffalo": {
+    "based_on": "Sixth-generation Dodge Charger (LX, 2006–2010)",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Buffalo_(HD_Universe)"
+    }
+  },
+  "buffalo-stx": {
+    "based_on": "Dodge Charger (LD, 2015–2023)",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Buffalo_STX"
+    }
+  },
   "buffalo-stx-pursuit": {
     "based_on": "Liveries of Miami-Dade Police Department Dodge Chargers and Miami Beach Police Department Ford Police Interceptor Sedans",
     "basis": "community-identified",
     "source": {
       "label": "GTA Wiki (Fandom), CC BY-SA",
       "url": "https://gta.fandom.com/wiki/Buffalo_STX_Pursuit"
+    }
+  },
+  "burrito": {
+    "based_on": "Chevrolet Express van (1996–2002)",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Burrito_(HD_Universe)"
+    }
+  },
+  "buzzard-attack-chopper": {
+    "based_on": "Boeing AH-6 Little Bird",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Buzzard_Attack_Chopper"
+    }
+  },
+  "caracara-4x4": {
+    "based_on": "Second-generation Ford F-150 Raptor",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Caracara_4x4"
+    }
+  },
+  "carbonizzare": {
+    "based_on": "Aston Martin V12 Zagato",
+    "basis": "community-identified",
+    "basis_note": "Rule b: The wiki names the real vehicle and says the GTA VI version keeps that design, with \"retaining most of its previous design\" (Design > Grand Theft Auto VI).",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Carbonizzare"
+    }
+  },
+  "chino": {
+    "based_on": "1962 Lincoln Continental",
+    "basis": "community-identified",
+    "basis_note": "Rule b: The wiki names the real vehicle and says the GTA VI version keeps that design, with a design that \"remains largely unchanged\" (Design > Grand Theft Auto VI).",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Chino"
+    }
+  },
+  "comet-retro-custom": {
+    "based_on": "Porsche 964 with a RAUH-Welt Begriff widebody kit",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Comet_Retro_Custom"
+    }
+  },
+  "comet-s2-cabrio": {
+    "based_on": "Porsche 911 Cabriolet (992)",
+    "basis": "community-identified",
+    "basis_note": "Rule b: The wiki names the real vehicle and says the GTA VI version keeps that design, with only \"several small adjustments\" (Design > Grand Theft Auto VI).",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Comet_S2_Cabrio"
+    }
+  },
+  "coquette-d10": {
+    "based_on": "Chevrolet Corvette C8",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Coquette_D10"
     }
   },
   "creado": {
@@ -47,6 +254,204 @@
       "url": "https://gta.fandom.com/wiki/Creado"
     }
   },
+  "cypher": {
+    "based_on": "First-generation BMW M2 (F87)",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Cypher"
+    }
+  },
+  "df8-90": {
+    "based_on": "Tenth-generation Pontiac Bonneville GXP",
+    "basis": "community-identified",
+    "basis_note": "Rule b: The wiki names the real vehicle and says the GTA VI version keeps that design, with a design \"largely similar to its GTA IV design\" (Design > Grand Theft Auto VI).",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/DF8-90"
+    }
+  },
+  "dinghy": {
+    "based_on": "Military rigid-hulled inflatable boat, such as the Naval Special Warfare RHIB",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Dinghy_(HD_Universe)"
+    }
+  },
+  "dodo": {
+    "based_on": "de Havilland Canada DHC-2 Beaver floatplane",
+    "basis": "community-identified",
+    "basis_note": "Rule a: The wiki has a GTA VI-specific section or sentence naming the real vehicle. Influence: \"In Grand Theft Auto VI, the plane returns with slight changes\" to its DHC-2 Beaver-based design.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Dodo_(HD_Universe)"
+    }
+  },
+  "dominator-asp": {
+    "based_on": "2000 Ford Mustang SVT Cobra R",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Dominator_ASP"
+    }
+  },
+  "dominator-gt": {
+    "based_on": "Ford Mustang (S550) convertible, 2018–2023",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Dominator_GT"
+    }
+  },
+  "dorado": {
+    "based_on": "First-generation Dodge Durango",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Dorado"
+    }
+  },
+  "double-t": {
+    "based_on": "Honda CBR1000RR (SC59, 2008–2011)",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Double_T"
+    }
+  },
+  "dubsta": {
+    "based_on": "Mercedes-Benz G-Class (W463), facelifted with Mercedes-AMG G 65 front styling",
+    "basis": "community-identified",
+    "basis_note": "Rule a: The wiki has a GTA VI-specific section or sentence naming the real vehicle. Influence > Grand Theft Auto VI: facelift with a G 65-inspired grille and bumper, and later G-Class (W463) headlights.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Dubsta"
+    }
+  },
+  "duster": {
+    "based_on": "Boeing-Stearman Model 75 (PT-17) converted for crop dusting",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Duster"
+    }
+  },
+  "elegy-retro-custom": {
+    "based_on": "Nissan Skyline GT-R, mainly the R32, with R33 and R34 parts",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Elegy_Retro_Custom"
+    }
+  },
+  "faggio": {
+    "based_on": "Classic Vespa scooter, likely the Vespa VBA/VBB",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Faggio_(HD_Universe)"
+    }
+  },
+  "feroci": {
+    "based_on": "First-generation Lexus GS (S140)",
+    "basis": "community-identified",
+    "basis_note": "Rule b: The wiki names the real vehicle and says the GTA VI version keeps that design, with a design \"largely similar\" to its GTA IV one (Design > Grand Theft Auto VI).",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Feroci"
+    }
+  },
+  "freight-train": {
+    "based_on": "EMD GP38-2 locomotive",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Freight_Train"
+    }
+  },
+  "furia": {
+    "based_on": "Pininfarina Battista",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Furia"
+    }
+  },
+  "futo": {
+    "based_on": "Toyota Corolla Levin AE86 (1983–1987)",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Futo"
+    }
+  },
+  "gauntlet-classic-custom": {
+    "based_on": "1969 Dodge Charger Daytona",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Gauntlet_Classic_Custom"
+    }
+  },
+  "gauntlet-interceptor": {
+    "based_on": "Livery of Florida Highway Patrol cars (black and tan two-tone)",
+    "basis": "community-identified",
+    "basis_note": "Rule a: The wiki has a GTA VI-specific section or sentence naming the real vehicle. Description > Grand Theft Auto VI: the black and tan livery is \"seemingly based on that of the Florida Highway Patrol\". This names a livery, not a body.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Gauntlet_Interceptor"
+    }
+  },
+  "granger-3600lx": {
+    "based_on": "Eleventh-generation Chevrolet Suburban",
+    "basis": "community-identified",
+    "basis_note": "Rule b: The wiki names the real vehicle and says the GTA VI version keeps that design, with a design that \"appears mostly unchanged\" (Design > Grand Theft Auto VI).",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Granger_3600LX"
+    }
+  },
+  "impaler-sz": {
+    "based_on": "1994–1996 Chevrolet Impala SS",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Impaler_SZ"
+    }
+  },
+  "infernus-classic": {
+    "based_on": "Lamborghini Diablo",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Infernus_Classic"
+    }
+  },
+  "ingot": {
+    "based_on": "Volvo V70",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Ingot"
+    }
+  },
   "intruder": {
     "based_on": "Facelifted 2005-2006 Infiniti Q45 (F50)",
     "basis": "community-identified",
@@ -55,12 +460,129 @@
       "url": "https://gta.fandom.com/wiki/Intruder_(HD_Universe)"
     }
   },
+  "jet": {
+    "based_on": "Boeing 747-400",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Jet"
+    }
+  },
+  "journey-ii": {
+    "based_on": "1977–1980 Triple E motorhome",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Journey_II"
+    }
+  },
+  "jubilee": {
+    "based_on": "Rolls-Royce Cullinan",
+    "basis": "community-identified",
+    "basis_note": "Rule b: The wiki names the real vehicle and says the GTA VI version keeps that design, with an exterior that \"appears to have had very little changes\" (Design > Grand Theft Auto VI).",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Jubilee"
+    }
+  },
+  "jugular": {
+    "based_on": "Jaguar XE SV Project 8",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Jugular_(HD_Universe)"
+    }
+  },
+  "marquis": {
+    "based_on": "Adjutor yachts",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Marquis"
+    }
+  },
   "maverick": {
     "based_on": "Bell 206",
     "basis": "community-identified",
     "source": {
       "label": "GTA Wiki (Fandom), CC BY-SA",
       "url": "https://gta.fandom.com/wiki/Maverick_(HD_Universe)"
+    }
+  },
+  "mesa": {
+    "based_on": "Jeep Wrangler Unlimited Rubicon (JK, 2007–2013)",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Mesa_(HD_Universe)"
+    }
+  },
+  "minivan": {
+    "based_on": "Fourth-generation Dodge Caravan (2001–2007)",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Minivan"
+    }
+  },
+  "moonbeam": {
+    "based_on": "Chevrolet Astro / GMC Safari (1985–1994)",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Moonbeam_(HD_Universe)"
+    }
+  },
+  "mule": {
+    "based_on": "Fifth-generation Mitsubishi Fuso Canter (FB433)",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Mule"
+    }
+  },
+  "novak": {
+    "based_on": "Maserati Levante",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Novak"
+    }
+  },
+  "outlaw": {
+    "based_on": "Can-Am Maverick X3 Turbo",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Outlaw"
+    }
+  },
+  "paragon-r": {
+    "based_on": "Third-generation Bentley Continental GT",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Paragon_R"
+    }
+  },
+  "phoenix": {
+    "based_on": "1977 Pontiac Firebird Trans Am",
+    "basis": "community-identified",
+    "basis_note": "Rule b: The wiki names the real vehicle and says the GTA VI version keeps that design, with \"several small, but notable design changes\", including a Firebird Trans Am-style hood decal (Design > Grand Theft Auto VI).",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Phoenix_(HD_Universe)"
     }
   },
   "pmp-700": {
@@ -79,12 +601,57 @@
       "url": "https://gta.fandom.com/wiki/Police_Cruiser_(interceptor)"
     }
   },
+  "police-riot": {
+    "based_on": "International 4700 Series truck (1989–2001) with a Lenco BearCat G3-style front end",
+    "basis": "community-identified",
+    "basis_note": "Rule b: The wiki names the real vehicle and says the GTA VI version keeps that design, with a truck that \"remains largely unchanged\" (Design > Grand Theft Auto VI).",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Police_Riot"
+    }
+  },
+  "primo": {
+    "based_on": "Fourth-generation Cadillac Seville (1992–1997)",
+    "basis": "community-identified",
+    "basis_note": "Rule b: The wiki names the real vehicle and says the GTA VI version keeps that design, with a design that \"appears to have changed very little\" (Design > Grand Theft Auto VI).",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Primo_(HD_Universe)"
+    }
+  },
+  "rebel": {
+    "based_on": "Fourth-generation Toyota Hilux Xtracab SR5 4x4",
+    "basis": "community-identified",
+    "basis_note": "Rule b: The wiki names the real vehicle and says the GTA VI version keeps that design, with only \"small but significant exterior design improvements\" (Design > Grand Theft Auto VI).",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Rebel"
+    }
+  },
+  "rebla-gts": {
+    "based_on": "Fourth-generation BMW X5 (G05)",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Rebla_GTS"
+    }
+  },
   "s23": {
     "based_on": "Contender 25 Bay",
     "basis": "community-identified",
     "source": {
       "label": "GTA Wiki (Fandom), CC BY-SA",
       "url": "https://gta.fandom.com/wiki/S23"
+    }
+  },
+  "sea-sparrow": {
+    "based_on": "Hughes/Schweizer 300 helicopter (Sikorsky S-300)",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Sea_Sparrow_(HD_Universe)"
     }
   },
   "seashark-second-generation": {
@@ -95,12 +662,102 @@
       "url": "https://gta.fandom.com/wiki/Seashark_(second_generation)"
     }
   },
+  "speedo": {
+    "based_on": "Chevrolet Express cargo van (2006–2010)",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Speedo"
+    }
+  },
+  "squalo": {
+    "based_on": "Bayliner 2855 Ciera Sunbridge cabin cruiser",
+    "basis": "community-identified",
+    "basis_note": "Rule a: The wiki has a GTA VI-specific section or sentence naming the real vehicle. Influence: \"In GTA VI, the Squalo appears to resemble a Bayliner 2855 Ciera Sunbridge\" (it was a Sea Ray 210 in earlier games).",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Squalo_(HD_Universe)"
+    }
+  },
+  "stanier": {
+    "based_on": "First-generation Ford Crown Victoria (1992–1997)",
+    "basis": "community-identified",
+    "basis_note": "Rule b: The wiki names the real vehicle and says the GTA VI version keeps that design, with a design \"largely similar to its prior renditions\" (Description > Grand Theft Auto VI).",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Stanier"
+    }
+  },
+  "stratum": {
+    "based_on": "Nissan Skyline R32 sedan, reworked as an estate",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Stratum_(HD_Universe)"
+    }
+  },
+  "street-blazer": {
+    "based_on": "Spy Racing quad",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Street_Blazer"
+    }
+  },
+  "sugoi": {
+    "based_on": "Honda Civic Type R (FK8)",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Sugoi"
+    }
+  },
+  "supervolito": {
+    "based_on": "Eurocopter EC145",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/SuperVolito"
+    }
+  },
+  "swift": {
+    "based_on": "AgustaWestland AW109S Grand",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Swift"
+    }
+  },
+  "tailgater": {
+    "based_on": "Audi A6 (C6)",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Tailgater"
+    }
+  },
   "tulip": {
     "based_on": "1972 Chevrolet Chevelle Malibu",
     "basis": "community-identified",
     "source": {
       "label": "GTA Wiki (Fandom), CC BY-SA",
       "url": "https://gta.fandom.com/wiki/Tulip"
+    }
+  },
+  "tulip-m-100": {
+    "based_on": "1980 Chevrolet Malibu Coupe",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Tulip_M-100"
     }
   },
   "unnamed-1955-ford-inspired-car": {
@@ -709,6 +1366,69 @@
     "source": {
       "label": "GTA Wiki (Fandom), CC BY-SA",
       "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Willard_station_wagon"
+    }
+  },
+  "v-str": {
+    "based_on": "Cadillac CTS-V (2016–2019)",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/V-STR"
+    }
+  },
+  "vectre": {
+    "based_on": "Lexus RC F",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Vectre"
+    }
+  },
+  "vigero-zx-convertible": {
+    "based_on": "Chevrolet Camaro SS Convertible (2016–2018)",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Vigero_ZX_Convertible"
+    }
+  },
+  "walton-l35-stock": {
+    "based_on": "Chevrolet S-10 (1991–1993)",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Walton_L35_Stock"
+    }
+  },
+  "yosemite-1500": {
+    "based_on": "Chevrolet Silverado 1500 (GMT800, 1999–2002)",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Yosemite_1500"
+    }
+  },
+  "youga": {
+    "based_on": "Dodge Ram Van (1994–2003)",
+    "basis": "community-identified (series design)",
+    "basis_note": "Rule c: The wiki's Influence text names one real vehicle for every game, and the page lists GTA VI; this is the series design, not a GTA VI-specific statement.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Youga"
+    }
+  },
+  "zorrusso": {
+    "based_on": "Italdesign Zerouno Duerta",
+    "basis": "community-identified",
+    "basis_note": "Rule a: The wiki has a GTA VI-specific section or sentence naming the real vehicle. Influence > Grand Theft Auto VI: the trailer version is brought \"closer to its primary influence\", the Italdesign ZeroUno Duerta.",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Zorrusso"
     }
   }
 }

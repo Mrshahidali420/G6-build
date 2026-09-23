@@ -367,6 +367,68 @@ function readRealWorld(entityBySlug) {
 
 const realWorldCount = readRealWorld(new Map(entities.map((entity) => [entity.slug, entity])))
 
+// A photo of the real vehicle behind a vehicle's real-life basis, from
+// Wikimedia Commons under a free licence. It hangs off realLife only, so it
+// never reaches the hero, the tiles, the OG image or lib/images.mjs. Every row
+// must point at a file in public/img/real-cars/ and carry its credit line and
+// Commons file page; a bad row stops the build, like the files above.
+const REAL_PHOTOS_FILE = 'vehicle-real-photos.json'
+const REAL_PHOTO_PATH = /^\/img\/real-cars\/[a-z0-9-]+\.jpg$/
+
+// Width and height from a JPEG's start-of-frame marker, so the page can set
+// both on the <img> and not shift while it loads.
+function jpegSize(buffer) {
+  let offset = 2
+  while (offset + 9 < buffer.length) {
+    if (buffer[offset] !== 0xff) return null
+    const marker = buffer[offset + 1]
+    const length = buffer.readUInt16BE(offset + 2)
+    if (marker >= 0xc0 && marker <= 0xcf && ![0xc4, 0xc8, 0xcc].includes(marker)) {
+      return { height: buffer.readUInt16BE(offset + 5), width: buffer.readUInt16BE(offset + 7) }
+    }
+    offset += 2 + length
+  }
+  return null
+}
+
+function readRealPhotos(entityBySlug) {
+  let parsed
+  try {
+    parsed = JSON.parse(readFileSync(join(EXTRAS_DIR, REAL_PHOTOS_FILE), 'utf8'))
+  } catch {
+    return 0
+  }
+  const fail = (slug, message) => {
+    throw new Error(`data/extras/${REAL_PHOTOS_FILE}: "${slug}": ${message}`)
+  }
+  let count = 0
+  for (const [slug, row] of Object.entries(parsed)) {
+    const entity = entityBySlug.get(slug)
+    if (!entity) fail(slug, 'no entry has this slug')
+    if (!entity.realLife) fail(slug, 'has a photo but no real-life basis in vehicle-real-life.json')
+    const file = text(row?.file)
+    if (!REAL_PHOTO_PATH.test(file)) fail(slug, 'file must look like /img/real-cars/<slug>.jpg')
+    let size
+    try {
+      size = jpegSize(readFileSync(join(ROOT, 'public', file)))
+    } catch {
+      fail(slug, `${file} is missing from public/`)
+    }
+    if (!size) fail(slug, `${file} is not a readable JPEG`)
+    const credit = text(row?.credit)
+    if (!credit.startsWith('Real-world ') || !credit.includes('(not a game image)')) {
+      fail(slug, 'credit must start "Real-world <model> (not a game image)."')
+    }
+    const source = text(row?.source)
+    if (!/^https:\/\/commons\.wikimedia\.org\/wiki\/File:\S+$/.test(source)) fail(slug, 'source must be the Commons file page')
+    entity.realLife.photo = { src: file, ...size, credit, source }
+    count += 1
+  }
+  return count
+}
+
+const realPhotoCount = readRealPhotos(new Map(entities.map((entity) => [entity.slug, entity])))
+
 entities.sort((a, b) => a.entityType.localeCompare(b.entityType) || a.name.localeCompare(b.name))
 
 mkdirSync(dirname(OUT_FILE), { recursive: true })
@@ -387,6 +449,7 @@ phase(`wrote ${entities.length} entities to src/data/entities.json`)
 phase(`${extrasCount} of ${entities.length} entities have a data/extras file`)
 phase(`${inGame.size} of ${entities.length} entities have in-game facts in data/ingame.json`)
 phase(`${realWorldCount} entities have a real-world counterpart from data/extras`)
+phase(`${realPhotoCount} vehicles have a real-vehicle photo from data/extras/${REAL_PHOTOS_FILE}`)
 console.log('[build-data] by type:', byType)
 
 if (rejected.length) {

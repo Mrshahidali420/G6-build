@@ -740,6 +740,22 @@ hr.rule { border: 0; border-top: 1px solid var(--line); margin: 2.6em 0; }
   color: var(--on-glaze-2); letter-spacing: 0.02em;
 }
 
+/* Photo of the real vehicle in the "Real-life basis" row. Never a game image. */
+.real-basis { min-width: 0; }
+.real-photo { margin: 12px 0 0; max-width: 480px; }
+.real-photo img {
+  display: block; width: 100%; height: auto;
+  border: 1px solid rgba(238, 245, 242, 0.35); border-radius: var(--r);
+}
+.real-photo figcaption {
+  margin-top: 8px; font-family: var(--ui); font-size: 0.72rem; line-height: 1.5;
+  color: var(--on-glaze-2); letter-spacing: 0.02em; overflow-wrap: anywhere;
+}
+.real-photo__label {
+  display: block; margin-bottom: 2px; font-size: 0.66rem; font-weight: 700;
+  letter-spacing: 0.09em; text-transform: uppercase; color: var(--on-glaze);
+}
+
 /* ---------- Dated list, used by the news index ---------- */
 
 .dated { list-style: none; margin: 0; padding: 0; }

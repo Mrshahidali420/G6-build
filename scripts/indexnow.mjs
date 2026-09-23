@@ -68,12 +68,13 @@ function loadManifest() {
 async function submit(urlList) {
   if (dryRun) {
     console.log(`[indexnow] dry-run: would submit ${urlList.length} url(s)`)
-    return
+    return []
   }
   const chunks = []
   for (let i = 0; i < urlList.length; i += CHUNK_SIZE) {
     chunks.push(urlList.slice(i, i + CHUNK_SIZE))
   }
+  const failed = []
   for (const chunk of chunks) {
     const body = JSON.stringify({
       host: HOST,
@@ -88,10 +89,16 @@ async function submit(urlList) {
         body,
       })
       console.log(`[indexnow] submitted ${chunk.length} url(s), HTTP ${res.status}`)
+      // 200 and 202 both mean accepted. Anything else (a 403 while the key is
+      // still being checked, a 429) leaves the chunk unsent, so it is tried
+      // again on the next deploy instead of being marked done.
+      if (res.status !== 200 && res.status !== 202) failed.push(...chunk)
     } catch (err) {
-      console.warn(`[indexnow] network error, skipping this deploy's notification: ${err.message}`)
+      console.warn(`[indexnow] network error, will retry next deploy: ${err.message}`)
+      failed.push(...chunk)
     }
   }
+  return failed
 }
 
 async function main() {
@@ -132,8 +139,13 @@ async function main() {
       : `[indexnow] ${changed.length} url(s) changed since the last deploy`,
   )
 
-  if (changed.length > 0) await submit(changed)
-  else console.log('[indexnow] nothing changed, skipping the request')
+  const failed = changed.length > 0 ? await submit(changed) : []
+  for (const url of failed) {
+    if (previousManifest?.[url]) newManifest[url] = previousManifest[url]
+    else delete newManifest[url]
+  }
+  if (failed.length > 0) console.warn(`[indexnow] ${failed.length} url(s) not accepted, kept for the next deploy`)
+  if (changed.length === 0) console.log('[indexnow] nothing changed, skipping the request')
 
   // The manifest is written even on --dry-run: dry-run only skips the POST,
   // so running it twice in a row is a valid way to check the "0 changed"

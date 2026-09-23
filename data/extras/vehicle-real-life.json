@@ -1,0 +1,714 @@
+{
+  "airboat-09": {
+    "based_on": "Diamondback Airboats models (Hunting & Fishing 6, 13 and 15)",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Airboat_09"
+    }
+  },
+  "alvino-v1": {
+    "based_on": "Ducati Panigale V2",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Alvino_V1"
+    }
+  },
+  "bison-second-generation": {
+    "based_on": "Fifth-generation Ram pickup",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Bison_(second_generation)"
+    }
+  },
+  "btn-delmar": {
+    "based_on": "Hyundai 5000",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/BTN_Delmar"
+    }
+  },
+  "buffalo-stx-pursuit": {
+    "based_on": "Liveries of Miami-Dade Police Department Dodge Chargers and Miami Beach Police Department Ford Police Interceptor Sedans",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Buffalo_STX_Pursuit"
+    }
+  },
+  "creado": {
+    "based_on": "Fifth-generation Ford Ranchero GT",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Creado"
+    }
+  },
+  "intruder": {
+    "based_on": "Facelifted 2005-2006 Infiniti Q45 (F50)",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Intruder_(HD_Universe)"
+    }
+  },
+  "maverick": {
+    "based_on": "Bell 206",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Maverick_(HD_Universe)"
+    }
+  },
+  "pmp-700": {
+    "based_on": "2015-2023 Chrysler 300 (LD)",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/PMP_700"
+    }
+  },
+  "police-cruiser-interceptor": {
+    "based_on": "Ford Police Interceptor Sedan",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Police_Cruiser_(interceptor)"
+    }
+  },
+  "s23": {
+    "based_on": "Contender 25 Bay",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/S23"
+    }
+  },
+  "seashark-second-generation": {
+    "based_on": "Sea-Doo Spark",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Seashark_(second_generation)"
+    }
+  },
+  "tulip": {
+    "based_on": "1972 Chevrolet Chevelle Malibu",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Tulip"
+    }
+  },
+  "unnamed-1955-ford-inspired-car": {
+    "based_on": "1955 Ford Fairlane Crown Victoria 2-door hardtop",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_1955_Ford-inspired_car"
+    }
+  },
+  "unnamed-1959-cadillac-inspired-car": {
+    "based_on": "1959 Cadillac Coupe de Ville and 1959 Cadillac Series 62 coupe",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_1959_Cadillac-inspired_car"
+    }
+  },
+  "unnamed-6x6-conversion-van": {
+    "based_on": "One-off dual-axle conversion of a 1991 Dodge Ram Van",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_6x6_conversion_van"
+    }
+  },
+  "unnamed-audi-q7-inspired-suv": {
+    "based_on": "Second-generation Audi Q7",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Audi_Q7-inspired_SUV"
+    }
+  },
+  "unnamed-benefactor-saloon": {
+    "based_on": "Mercedes-Benz C-Class (W205), particularly the AMG C 63",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Benefactor_saloon"
+    }
+  },
+  "unnamed-bison-police-truck": {
+    "based_on": "Livery of Miami-Dade Police Department Ford F-150s",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Bison_police_truck"
+    }
+  },
+  "unnamed-bravado-dually-pickup-truck": {
+    "based_on": "Fifth-generation Ram Heavy Duty",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Bravado_dually_pickup_truck"
+    }
+  },
+  "unnamed-bravado-minivan": {
+    "based_on": "Chrysler RT platform minivans",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Bravado_minivan"
+    }
+  },
+  "unnamed-bravado-minivan-taxi": {
+    "based_on": "Chrysler RT platform minivans",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Bravado_minivan_taxi"
+    }
+  },
+  "unnamed-bravado-pickup-truck": {
+    "based_on": "Second-generation Dodge Ram",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Bravado_pickup_truck"
+    }
+  },
+  "unnamed-brute-excavator": {
+    "based_on": "Liebherr R954B HD-S",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Brute_excavator"
+    }
+  },
+  "unnamed-buick-reatta-inspired-convertible": {
+    "based_on": "1990-1991 Buick Reatta convertible",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Buick_Reatta-inspired_convertible"
+    }
+  },
+  "unnamed-buick-skylark-inspired-car": {
+    "based_on": "1992-1995 Buick Skylark",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Buick_Skylark-inspired_car"
+    }
+  },
+  "unnamed-burrito-shuttle-bus": {
+    "based_on": "Cutaway minibus conversion of a 1999-2002 Chevrolet Express",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Burrito_shuttle_bus"
+    }
+  },
+  "unnamed-canis-pickup-truck": {
+    "based_on": "Jeep Scrambler (CJ-8)",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Canis_pickup_truck"
+    }
+  },
+  "unnamed-chrysler-lebaron-town-country-inspired-station-wagon": {
+    "based_on": "1986-1988 Chrysler LeBaron Town & Country station wagon",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Chrysler_LeBaron_Town_%26_Country-inspired_station_wagon"
+    }
+  },
+  "unnamed-chrysler-sebring-inspired-sedan": {
+    "based_on": "Second-generation Chrysler Sebring",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Chrysler_Sebring-inspired_sedan"
+    }
+  },
+  "unnamed-cigarette-38-top-gun-inspired-boat": {
+    "based_on": "Cigarette 38' Top Gun and Cigarette 515",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Cigarette_38%27_Top_Gun-inspired_boat"
+    }
+  },
+  "unnamed-contender-39st-inspired-boat": {
+    "based_on": "Contender 39ST",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Contender_39ST-inspired_boat"
+    }
+  },
+  "unnamed-contender-39st-inspired-police-boat": {
+    "based_on": "Contender 39ST as used by the Miami Beach Police Department",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Contender_39ST-inspired_police_boat"
+    }
+  },
+  "unnamed-crest-kayak": {
+    "based_on": "Crescent Kayaks Splashback",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Crest_kayak"
+    }
+  },
+  "unnamed-crownline-275-ss-inspired-boat": {
+    "based_on": "Crownline 275 SS",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Crownline_275_SS-inspired_boat"
+    }
+  },
+  "unnamed-cruise-ship": {
+    "based_on": "Royal Caribbean Voyager-class cruise ships",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_cruise_ship"
+    }
+  },
+  "unnamed-declasse-compact-car": {
+    "based_on": "Second-generation Chevrolet Aveo/Sonic hatchback",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Declasse_compact_car"
+    }
+  },
+  "unnamed-declasse-sedan": {
+    "based_on": "Tenth-generation Chevrolet Impala",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Declasse_sedan"
+    }
+  },
+  "unnamed-dive-boat": {
+    "based_on": "2005 34' Crusader Boats GFY and Newton 36' Dive Special",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_dive_boat"
+    }
+  },
+  "unnamed-dodge-dakota-inspired-pickup-truck": {
+    "based_on": "1989-1991 Dodge Dakota Sport convertible",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Dodge_Dakota-inspired_pickup_truck"
+    }
+  },
+  "unnamed-dodge-durango-inspired-suv": {
+    "based_on": "2021-present Dodge Durango",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Dodge_Durango-inspired_SUV"
+    }
+  },
+  "unnamed-eurocopter-ec135-inspired-police-helicopter": {
+    "based_on": "Eurocopter EC135",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Eurocopter_EC135-inspired_police_helicopter"
+    }
+  },
+  "unnamed-fishing-boat": {
+    "based_on": "Steiger Craft boats, including the Steiger Craft 31 Miami",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_fishing_boat"
+    }
+  },
+  "unnamed-ford-explorer-sport-trac-inspired-lifeguard-truck": {
+    "based_on": "Second-generation Ford Explorer Sport Trac XLT, as used by Miami Beach Ocean Rescue",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Ford_Explorer_Sport_Trac-inspired_lifeguard_truck"
+    }
+  },
+  "unnamed-ford-f-series-inspired-flatbed-truck": {
+    "based_on": "1979 Ford F-250",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Ford_F-Series-inspired_flatbed_truck"
+    }
+  },
+  "unnamed-ford-mustang-inspired-car": {
+    "based_on": "First-generation Ford Mustang",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Ford_Mustang-inspired_car"
+    }
+  },
+  "unnamed-ford-ranger-inspired-pickup-truck": {
+    "based_on": "2019-2023 Ford Ranger (T6), North American model",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Ford_Ranger-inspired_pickup_truck"
+    }
+  },
+  "unnamed-ford-super-duty-inspired-monster-truck": {
+    "based_on": "Fourth-generation Ford Super Duty F-350",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Ford_Super_Duty-inspired_monster_truck"
+    }
+  },
+  "unnamed-frauscher-1017-gt-inspired-boat": {
+    "based_on": "Frauscher 1017 GT",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Frauscher_1017_GT-inspired_boat"
+    }
+  },
+  "unnamed-ge-genesis-inspired-locomotive": {
+    "based_on": "GE Genesis passenger locomotives",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_GE_Genesis-inspired_locomotive"
+    }
+  },
+  "unnamed-highfield-sport-900-inspired-boat": {
+    "based_on": "Highfield Sport 900",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Highfield_Sport_900-inspired_boat"
+    }
+  },
+  "unnamed-honda-accord-inspired-sedan": {
+    "based_on": "Tenth-generation Honda Accord",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Honda_Accord-inspired_sedan"
+    }
+  },
+  "unnamed-horizon-pc60-inspired-yacht": {
+    "based_on": "Horizon Power Catamarans PC60",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Horizon_PC60-inspired_yacht"
+    }
+  },
+  "unnamed-lure-predator-boat": {
+    "based_on": "Contender 25T and Contender 24S",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Lure_Predator_boat"
+    }
+  },
+  "unnamed-lurssen-73m-coral-ocean-inspired-yacht": {
+    "based_on": "Lürssen 73m Coral Ocean superyacht",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_L%C3%BCrssen_73m_Coral_Ocean-inspired_yacht"
+    }
+  },
+  "unnamed-mercedes-benz-sprinter-inspired-van": {
+    "based_on": "Second-generation Mercedes-Benz Sprinter minibus",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Mercedes-Benz_Sprinter-inspired_van"
+    }
+  },
+  "unnamed-mercedes-benz-w211-inspired-saloon": {
+    "based_on": "2006-2009 Mercedes-Benz E-Class (W211)",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Mercedes-Benz_W211-inspired_saloon"
+    }
+  },
+  "unnamed-mercury-cougar-inspired-car": {
+    "based_on": "1969-1970 Mercury Cougar",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Mercury_Cougar-inspired_car"
+    }
+  },
+  "unnamed-mobility-scooter": {
+    "based_on": "Pride Maxima 3",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_mobility_scooter"
+    }
+  },
+  "unnamed-new-flyer-xcelsior-inspired-bus": {
+    "based_on": "New Flyer Xcelsior",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_New_Flyer_Xcelsior-inspired_bus"
+    }
+  },
+  "unnamed-obey-saloon": {
+    "based_on": "Second-generation Audi S7",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Obey_saloon"
+    }
+  },
+  "unnamed-offshore-supply-ship": {
+    "based_on": "Midnight Coast (Bollinger Shipyards)",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_offshore_supply_ship"
+    }
+  },
+  "unnamed-panther-inspired-airboat": {
+    "based_on": "Panther Airboats 16x8 Panther",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Panther-inspired_airboat"
+    }
+  },
+  "unnamed-panther-inspired-poach-airboat": {
+    "based_on": "Florida Fish and Wildlife Conservation Commission law enforcement airboats (equipment and livery)",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Panther-inspired_POACH_airboat"
+    }
+  },
+  "unnamed-pegassi-sports-car": {
+    "based_on": "Lamborghini Aventador SuperVeloce LP 750-4",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Pegassi_sports_car"
+    }
+  },
+  "unnamed-ram-promaster-inspired-van": {
+    "based_on": "Third-generation Ram ProMaster / Fiat Ducato SWB",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Ram_ProMaster-inspired_van"
+    }
+  },
+  "unnamed-rb-s-ii-inspired-coast-guard-boat": {
+    "based_on": "Response Boat-Small II (RB-S II)",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_RB-S_II-inspired_coast_guard_boat"
+    }
+  },
+  "unnamed-rb-s-inspired-boat": {
+    "based_on": "Response Boat-Small (RB-S)",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_RB-S-inspired_boat"
+    }
+  },
+  "unnamed-riva-86-domino-inspired-yacht": {
+    "based_on": "Riva 86 Domino superyacht",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Riva_86_Domino-inspired_yacht"
+    }
+  },
+  "unnamed-rolls-royce-inspired-cabriolet": {
+    "based_on": "Rolls-Royce Dawn and first-generation Rolls-Royce Ghost (front end)",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Rolls-Royce-inspired_cabriolet"
+    }
+  },
+  "unnamed-sailing-yacht": {
+    "based_on": "Archipelago Zanziba superyacht",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_sailing_yacht"
+    }
+  },
+  "unnamed-sea-doo-rxt-x-300-inspired-boat": {
+    "based_on": "Sea-Doo RXT-X 300 and Yamaha WaveRunner",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Sea-Doo_RXT-X_300-inspired_boat"
+    }
+  },
+  "unnamed-sea-ray-350-sundancer-inspired-boat": {
+    "based_on": "Sea Ray 350 Sundancer",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Sea_Ray_350_Sundancer-inspired_boat"
+    }
+  },
+  "unnamed-sentinel-classic-cabriolet": {
+    "based_on": "BMW 3 Series (E30) cabriolet",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Sentinel_Classic_cabriolet"
+    }
+  },
+  "unnamed-shrimp-boat": {
+    "based_on": "Custom Shrimp 82 IQF trawler",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_shrimp_boat"
+    }
+  },
+  "unnamed-skater-388-inspired-boat": {
+    "based_on": "Skater 388 and 2023 P360 Powerboat",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Skater_388-inspired_boat"
+    }
+  },
+  "unnamed-tethered-aerostat-radar-system-inspired-aircraft": {
+    "based_on": "Tethered Aerostat Radar System (Cudjoe Key, Florida)",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Tethered_Aerostat_Radar_System-inspired_aircraft"
+    }
+  },
+  "unnamed-toyota-rav4-inspired-suv": {
+    "based_on": "Fifth-generation Toyota RAV4 (XA50)",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Toyota_RAV4-inspired_SUV"
+    }
+  },
+  "unnamed-vapid-cargo-van": {
+    "based_on": "2008-2014 Ford E-Series",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Vapid_cargo_van"
+    }
+  },
+  "unnamed-vapid-passenger-van": {
+    "based_on": "Fourth-generation Ford Transit",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Vapid_passenger_van"
+    }
+  },
+  "unnamed-vapid-police-car": {
+    "based_on": "Second-generation Ford Crown Victoria Police Interceptor",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Vapid_police_car"
+    }
+  },
+  "unnamed-vapid-police-suv": {
+    "based_on": "Ford Police Interceptor Utility (2015-2019 Ford Explorer)",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Vapid_police_SUV"
+    }
+  },
+  "unnamed-vapid-sedan": {
+    "based_on": "Second-generation Ford Crown Victoria",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Vapid_sedan"
+    }
+  },
+  "unnamed-vapid-suv": {
+    "based_on": "Second-generation Ford Explorer (1998-2001 XLT/XL)",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Vapid_SUV"
+    }
+  },
+  "unnamed-vapid-suv-second-generation": {
+    "based_on": "Fifth-generation Ford Explorer",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Vapid_SUV_(second_generation)"
+    }
+  },
+  "unnamed-vapid-taxi": {
+    "based_on": "Second-generation Ford Crown Victoria taxi",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Vapid_taxi"
+    }
+  },
+  "unnamed-verus-lifeguard-atv": {
+    "based_on": "Livery of Miami Beach Ocean Rescue quad bikes",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Verus_lifeguard_ATV"
+    }
+  },
+  "unnamed-willard-sedan": {
+    "based_on": "Sixth-generation Buick Regal",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Willard_sedan"
+    }
+  },
+  "unnamed-willard-station-wagon": {
+    "based_on": "1971-1976 Buick Estate Wagon",
+    "basis": "community-identified",
+    "source": {
+      "label": "GTA Wiki (Fandom), CC BY-SA",
+      "url": "https://gta.fandom.com/wiki/Unnamed_GTA_VI_Willard_station_wagon"
+    }
+  }
+}

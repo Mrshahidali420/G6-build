@@ -8,6 +8,8 @@
 import { getCollection } from 'astro:content'
 import BaseLayout from '../../layouts/BaseLayout.astro'
 import Ad from '../../components/Ad.astro'
+import Evidence from '../../components/Evidence.astro'
+import { EVIDENCE } from '../../lib/evidence.mjs'
 import { SITE_NAME, SITE_URL, canonical } from '../../lib/site.mjs'
 import { GAME } from '../../lib/schema.mjs'
 import { bySlug, urlFor } from '../../lib/entities.mjs'
@@ -179,13 +181,22 @@ const jsonLd = [
           The last {latest.length} claims logged. Open any status above to read
           a whole group from the start.
         </p>
+        <p>
+          Each row also carries an evidence label. The status is what the claim
+          was called on the day. The label is what kind of source said it.
+        </p>
       </div>
+      <ul class="legend">
+        {['official', 'press', 'leak', 'unverified'].map((key) => (
+          <li><Evidence label={{ ...EVIDENCE[key], detail: null }} /><p>{EVIDENCE[key].means}</p></li>
+        ))}
+      </ul>
       <ul class="near">
         {latest.map((item) => (
           <li class="near__item">
             <span class={`pip pip--${STATUS_CLASS[item.data.status]}`} aria-hidden="true"></span>
             <a class="near__link" href={trackerUrl(item.id)}>{item.data.title}</a>
-            <span class="near__meta">{STATUS_BY_KEY.get(item.data.status).short} · <time datetime={item.data.date}>{longDate(item.data.date)}</time></span>
+            <span class="near__meta"><Evidence item={item} /> {STATUS_BY_KEY.get(item.data.status).short} · <time datetime={item.data.date}>{longDate(item.data.date)}</time></span>
           </li>
         ))}
       </ul>
@@ -244,7 +255,12 @@ const jsonLd = [
   .near__item:last-child { border-bottom: 0; }
   .near__link { color: var(--ink); font: 600 16px/1.45 var(--body); text-decoration: none; border-bottom: 2px solid var(--glaze-tint); }
   .near__link:hover { border-bottom-color: var(--glaze); }
-  .near__meta { display: block; margin: 4px 0 0 17px; font: 600 11px/1 var(--ui); letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); }
+  .near__meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; margin: 6px 0 0 17px; font: 600 11px/1.2 var(--ui); letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); }
+
+  .legend { list-style: none; margin: 18px 0 0; padding: 0; display: grid; gap: 10px; max-width: var(--prose); }
+  .legend li { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 4px 14px; align-items: start; }
+  .legend p { margin: 0; font: 400 15px/1.5 var(--body); color: var(--ink-2); }
+  @media (max-width: 540px) { .legend li { grid-template-columns: 1fr; } }
 
   @media (max-width: 860px) { .cards { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 540px) {

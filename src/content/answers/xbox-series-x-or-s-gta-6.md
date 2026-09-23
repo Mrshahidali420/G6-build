@@ -4,6 +4,10 @@ description: "GTA 6 is confirmed for both Xbox Series X and Series S. A plain, h
 keyword: "xbox series x or s gta 6"
 order: 102
 updated: "2026-09-15"
+quick: "Both Xbox Series X and Xbox Series S are confirmed GTA 6 platforms. Rockstar's announcement lists them together, with no split between them."
+changes:
+  - date: "2026-09-15"
+    note: "Checked against sources."
 sources:
   - label: "Rockstar Newswire: Pre-Order Grand Theft Auto VI on June 25"
     url: "https://www.rockstargames.com/newswire/article/5171972o3ak5oa/pre-order-grand-theft-auto-vi-on-june-25"

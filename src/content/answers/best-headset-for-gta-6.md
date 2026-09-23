@@ -4,6 +4,10 @@ description: "A plain guide to picking a gaming headset for GTA 6 on PS5 or Xbox
 keyword: "best headset for gta 6"
 order: 105
 updated: "2026-09-15"
+quick: "There is no headset made specifically for GTA 6, and none is needed. Any solid gaming headset that already works on PS5 or Xbox Series X|S will do."
+changes:
+  - date: "2026-09-15"
+    note: "Checked against sources."
 sources:
   - label: "Rockstar Newswire: Pre-Order Grand Theft Auto VI on June 25"
     url: "https://www.rockstargames.com/newswire/article/5171972o3ak5oa/pre-order-grand-theft-auto-vi-on-june-25"

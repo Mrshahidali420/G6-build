@@ -4,6 +4,10 @@ description: "Every official Grand Theft Auto VI video Rockstar has released, wi
 keyword: "gta 6 trailers"
 order: 14
 updated: "2026-09-16"
+quick: "Rockstar has put out three official GTA 6 videos: two numbered trailers and one longer Extended Look film. That is the whole list."
+changes:
+  - date: "2026-09-16"
+    note: "Checked against sources."
 sources:
   - label: "Rockstar Games: the official Grand Theft Auto VI site"
     url: "https://www.rockstargames.com/VI/"

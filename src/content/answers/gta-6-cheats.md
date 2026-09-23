@@ -4,6 +4,10 @@ description: "No GTA 6 cheat codes exist. The game is not out. Here is what Rock
 keyword: "gta 6 cheats"
 order: 24
 updated: "2026-09-21"
+quick: "There are no GTA 6 cheat codes. The game is not out yet, so nothing can be tested, and Rockstar has never published cheats before a game ships."
+changes:
+  - date: "2026-09-21"
+    note: "Checked against sources."
 sources:
   - label: "Rockstar Games: Grand Theft Auto VI official site"
     url: "https://www.rockstargames.com/VI"

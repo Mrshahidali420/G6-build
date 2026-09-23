@@ -4,6 +4,10 @@ description: "GTA 6 is reported at Rs 5,999 standard and Rs 7,499 ultimate in In
 keyword: "gta 6 price in india"
 order: 3
 updated: "2026-09-15"
+quick: "Indian outlets report GTA 6 at Rs 5,999 for the Standard Edition and Rs 7,499 for the Ultimate Edition. Rockstar itself has not published these figures."
+changes:
+  - date: "2026-09-15"
+    note: "Checked against sources."
 sources:
   - label: "91mobiles: GTA 6 pre-orders begin in India"
     url: "https://www.91mobiles.com/gaming/gta-6-pre-orders-begin-india-official-pricing/"

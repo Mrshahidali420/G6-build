@@ -26,6 +26,16 @@ const answers = defineCollection({
       .max(6),
     // Entity pages this answer links to, by slug. Enforces the linking rule.
     related: z.array(z.string()).default([]),
+    // One or two plain sentences that answer the page's question on their own,
+    // no context needed. Rendered as a highlighted box under the H1, ahead of
+    // the body. Optional: omit rather than force a weak one.
+    quick: z.string().max(220).optional(),
+    // A short, newest-first log of real content changes, for the freshness
+    // signal on the page. Not a changelog of prose tweaks: only facts that
+    // changed (a date moved, a price confirmed, a new source added).
+    changes: z
+      .array(z.object({ date: z.string(), note: z.string() }))
+      .optional(),
     // Shopping pages only. Rendered as a card per product, each link carrying
     // the Amazon tag from src/lib/site.mjs. Deliberately no price and no ASIN:
     // a stale price is worse than no price, and a dead ASIN is a dead link.

@@ -1,0 +1,80 @@
+{
+  "alligators": {
+    "scientific_name": "Alligator mississippiensis",
+    "common_name": "American alligator",
+    "gbif_key": 2441370,
+    "rank": "species",
+    "basis": "name-mapped",
+    "source": {
+      "label": "GBIF Backbone Taxonomy, CC BY 4.0",
+      "url": "https://www.gbif.org/species/2441370"
+    }
+  },
+  "cats": {
+    "scientific_name": "Felis catus",
+    "common_name": "Domestic cat",
+    "gbif_key": 2435035,
+    "rank": "species",
+    "basis": "name-mapped",
+    "source": {
+      "label": "GBIF Backbone Taxonomy, CC BY 4.0",
+      "url": "https://www.gbif.org/species/2435035"
+    }
+  },
+  "cougars": {
+    "scientific_name": "Puma concolor",
+    "common_name": "Cougar",
+    "gbif_key": 2435099,
+    "rank": "species",
+    "basis": "name-mapped",
+    "source": {
+      "label": "GBIF Backbone Taxonomy, CC BY 4.0",
+      "url": "https://www.gbif.org/species/2435099"
+    }
+  },
+  "dogs": {
+    "scientific_name": "Canis lupus familiaris",
+    "common_name": "Domestic dog",
+    "gbif_key": 6164210,
+    "rank": "subspecies",
+    "basis": "name-mapped",
+    "source": {
+      "label": "GBIF Backbone Taxonomy, CC BY 4.0",
+      "url": "https://www.gbif.org/species/6164210"
+    }
+  },
+  "double-crested-cormorant": {
+    "scientific_name": "Phalacrocorax auritus",
+    "common_name": "Double-crested cormorant",
+    "gbif_key": 2481875,
+    "rank": "species",
+    "also_known_as": "Nannopterum auritum",
+    "basis": "name-mapped",
+    "source": {
+      "label": "GBIF Backbone Taxonomy, CC BY 4.0",
+      "url": "https://www.gbif.org/species/2481875"
+    }
+  },
+  "flamingos": {
+    "scientific_name": "Phoenicopterus ruber",
+    "common_name": "American flamingo",
+    "gbif_key": 9691034,
+    "rank": "species",
+    "basis": "name-mapped",
+    "source": {
+      "label": "GBIF Backbone Taxonomy, CC BY 4.0",
+      "url": "https://www.gbif.org/species/9691034"
+    }
+  },
+  "raccoons": {
+    "scientific_name": "Procyon lotor",
+    "common_name": "Common raccoon",
+    "gbif_key": 5218786,
+    "rank": "species",
+    "basis": "name-mapped",
+    "source": {
+      "label": "GBIF Backbone Taxonomy, CC BY 4.0",
+      "url": "https://www.gbif.org/species/5218786"
+    }
+  }
+}

@@ -4,6 +4,10 @@ description: "GTA 6 costs €79.99 Standard and €99.99 Ultimate on euro PlaySt
 keyword: "gta 6 price europe"
 order: 3
 updated: "2026-09-23"
+quick: "GTA 6 costs €79.99 for the Standard Edition and €99.99 for the Ultimate Edition in euro countries, VAT included, on the PlayStation Store."
+changes:
+  - date: "2026-09-23"
+    note: "Checked against sources."
 sources:
   - label: "PlayStation Germany: Grand Theft Auto VI (PS5)"
     url: "https://www.playstation.com/de-de/games/grand-theft-auto-vi/"

@@ -4,6 +4,10 @@ description: "Rockstar has not confirmed Jason or Lucia's actors. One cast membe
 keyword: "gta 6 voice cast"
 order: 20
 updated: "2026-09-16"
+quick: "Rockstar has not confirmed who voices Jason or Lucia. Only Stephen Root has confirmed his own involvement, in an interview, not through Rockstar."
+changes:
+  - date: "2026-09-16"
+    note: "Checked against sources."
 sources:
   - label: "GTA Wiki: Jason Duval, voice actor status"
     url: "https://gta.wiki/w/Jason_Duval"

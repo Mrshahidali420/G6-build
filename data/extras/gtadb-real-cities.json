@@ -1,0 +1,166 @@
+{
+  "_meta": {
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://github.com/rolux/gtadb.org"
+    },
+    "commit": "cfa8a994b0250f05e5ac40cf9abbe2186991b999",
+    "fetched": "2026-09-23",
+    "landmarks_total": 2819,
+    "landmarks_with_real_address": 1674,
+    "addresses_parsed_to_city": 1626,
+    "method": "City and state parsed from the real-world address string of every gtadb GTA VI landmark that has one (named or unnamed); plus-codes stripped; top 30 by count."
+  },
+  "cities": [
+    {
+      "city": "Miami",
+      "state": "FL",
+      "landmarks": 617
+    },
+    {
+      "city": "Miami Beach",
+      "state": "FL",
+      "landmarks": 440
+    },
+    {
+      "city": "Panama City",
+      "state": "FL",
+      "landmarks": 53
+    },
+    {
+      "city": "Homestead",
+      "state": "FL",
+      "landmarks": 50
+    },
+    {
+      "city": "Cedar Key",
+      "state": "FL",
+      "landmarks": 42
+    },
+    {
+      "city": "Clewiston",
+      "state": "FL",
+      "landmarks": 31
+    },
+    {
+      "city": "Key Biscayne",
+      "state": "FL",
+      "landmarks": 30
+    },
+    {
+      "city": "Key Largo",
+      "state": "FL",
+      "landmarks": 30
+    },
+    {
+      "city": "Sebring",
+      "state": "FL",
+      "landmarks": 22
+    },
+    {
+      "city": "Bay Harbor Islands",
+      "state": "FL",
+      "landmarks": 18
+    },
+    {
+      "city": "Raiford",
+      "state": "FL",
+      "landmarks": 17
+    },
+    {
+      "city": "Islamorada",
+      "state": "FL",
+      "landmarks": 17
+    },
+    {
+      "city": "Coconut Grove",
+      "state": "FL",
+      "landmarks": 14
+    },
+    {
+      "city": "Key West",
+      "state": "FL",
+      "landmarks": 10
+    },
+    {
+      "city": "Florida City",
+      "state": "FL",
+      "landmarks": 10
+    },
+    {
+      "city": "Fisher Island",
+      "state": "FL",
+      "landmarks": 9
+    },
+    {
+      "city": "Lakeland",
+      "state": "FL",
+      "landmarks": 9
+    },
+    {
+      "city": "Tampa",
+      "state": "FL",
+      "landmarks": 8
+    },
+    {
+      "city": "Cutler Bay",
+      "state": "FL",
+      "landmarks": 8
+    },
+    {
+      "city": "Big Pine Key",
+      "state": "FL",
+      "landmarks": 7
+    },
+    {
+      "city": "Pembroke Pines",
+      "state": "FL",
+      "landmarks": 6
+    },
+    {
+      "city": "Naples",
+      "state": "FL",
+      "landmarks": 5
+    },
+    {
+      "city": "Doral",
+      "state": "FL",
+      "landmarks": 4
+    },
+    {
+      "city": "Cudjoe Key",
+      "state": "FL",
+      "landmarks": 4
+    },
+    {
+      "city": "Naval Air Station Key West",
+      "state": "FL",
+      "landmarks": 4
+    },
+    {
+      "city": "Indian Creek",
+      "state": "FL",
+      "landmarks": 4
+    },
+    {
+      "city": "Orlando",
+      "state": "FL",
+      "landmarks": 4
+    },
+    {
+      "city": "Medley",
+      "state": "FL",
+      "landmarks": 4
+    },
+    {
+      "city": "Callaway",
+      "state": "FL",
+      "landmarks": 4
+    },
+    {
+      "city": "Sunny Isles Beach",
+      "state": "FL",
+      "landmarks": 3
+    }
+  ]
+}

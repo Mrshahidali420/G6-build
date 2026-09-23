@@ -12,6 +12,8 @@ const {
   sectionTitle = null,
   sectionHref = null,
   sectionCount = 0,
+  // Any other attribute (the hub filters pass data-* keys) lands on the <li>.
+  ...attrs
 } = Astro.props
 
 // Cut at a space, never through a word, and say so with an ellipsis. A hard
@@ -23,7 +25,7 @@ function trim(text, limit) {
   return `${(space > 40 ? cut.slice(0, space) : cut).replace(/[.,;:]$/, '')}...`
 }
 ---
-<li class="tile">
+<li class="tile" {...attrs}>
   <Plate entity={entity} eager={eager} />
   <div class="tile__body">
     {sectionTitle && <p class="tile__eyebrow">{sectionTitle}</p>}

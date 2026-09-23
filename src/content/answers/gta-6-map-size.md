@@ -4,6 +4,10 @@ description: "Rockstar has not published a square kilometre figure for the GTA 6
 keyword: "gta 6 map size"
 order: 12
 updated: "2026-09-15"
+quick: "Rockstar has not published a square kilometre figure for the GTA 6 map. The confirmed setting is the fictional state of Leonida, with Vice City as its main city."
+changes:
+  - date: "2026-09-15"
+    note: "Checked against sources."
 sources:
   - label: "Rockstar Games: Grand Theft Auto VI official site"
     url: "https://www.rockstargames.com/VI"

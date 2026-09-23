@@ -4,6 +4,10 @@ description: "GTA 6 costs A$129.95 for the Standard Edition and A$159.95 for the
 keyword: "gta 6 price australia"
 order: 3
 updated: "2026-09-23"
+quick: "GTA 6 costs A$129.95 for the Standard Edition and A$159.95 for the Ultimate Edition in Australia, on the PlayStation Store."
+changes:
+  - date: "2026-09-23"
+    note: "Checked against sources."
 sources:
   - label: "PlayStation Australia: Grand Theft Auto VI (PS5)"
     url: "https://www.playstation.com/en-au/games/grand-theft-auto-vi/"

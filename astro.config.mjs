@@ -35,7 +35,12 @@ export default defineConfig({
       // other outlets' quoted words, not pages this site wants ranked.
       filter: (page) =>
         !/\/(privacy|contact|404|search)$/.test(page) &&
-        !/\/updates\/\d{4}-\d{2}-\d{2}$/.test(page),
+        !/\/updates\/\d{4}-\d{2}-\d{2}$/.test(page) &&
+        // The standalone widget is built to live inside someone else's page,
+        // not to rank on its own; its canonical already points at
+        // /gta-6-countdown. Offering it in the sitemap too would ask Google
+        // to index two URLs for the same content.
+        !/\/embed\//.test(page),
       // One flat sitemap with 150+ URLs mixes characters, vehicles, news and
       // one-off answer pages together, so there is no way to tell a crawl
       // problem in one topic from a healthy one in another. @astrojs/sitemap

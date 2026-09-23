@@ -4,6 +4,10 @@ description: "Rockstar has not confirmed a frame rate for GTA 6, but a co-direct
 keyword: "gta 6 60fps"
 order: 22
 updated: "2026-09-16"
+quick: "Rockstar has not published an official frame rate for GTA 6. A press report says it is currently targeting 30fps on PS5 and Xbox Series X|S."
+changes:
+  - date: "2026-09-16"
+    note: "Checked against sources."
 sources:
   - label: "Rockstar Games: the official Grand Theft Auto VI site"
     url: "https://www.rockstargames.com/VI/"

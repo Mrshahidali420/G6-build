@@ -289,6 +289,84 @@ for (const entity of entities) {
   if (facts) entity.inGame = facts
 }
 
+// Real-world counterparts, one shared file per kind in data/extras/. These are
+// keyed by slug inside the file, unlike the per-slug extras above, so they are
+// read here by name. Each row names its own source and licence, and a bad row
+// stops the build: a wrong real-world address is worse than none.
+const REAL_WORLD_FILES = [
+  {
+    file: 'vehicle-real-life.json',
+    types: ['vehicle'],
+    key: 'realLife',
+    pick: (row) => ({ basedOn: text(row.based_on) }),
+  },
+  {
+    file: 'landmark-addresses.json',
+    types: ['landmark', 'business', 'location'],
+    key: 'realPlace',
+    pick: (row) => ({
+      address: text(row.real_address),
+      lat: coord(row.real_lat, 90),
+      lng: coord(row.real_lng, 180),
+      gtadbName: text(row.gtadb_name) || undefined,
+    }),
+  },
+  {
+    file: 'wildlife-species.json',
+    types: ['wildlife'],
+    key: 'species',
+    pick: (row) => ({
+      commonName: text(row.common_name),
+      scientificName: text(row.scientific_name),
+      rank: text(row.rank) || undefined,
+    }),
+  },
+]
+
+function text(value) {
+  return typeof value === 'string' ? value.trim() : ''
+}
+
+function coord(value, limit) {
+  return typeof value === 'number' && Number.isFinite(value) && Math.abs(value) <= limit ? value : null
+}
+
+function readRealWorld(entityBySlug) {
+  let count = 0
+  for (const { file, types, key, pick } of REAL_WORLD_FILES) {
+    let parsed
+    try {
+      parsed = JSON.parse(readFileSync(join(EXTRAS_DIR, file), 'utf8'))
+    } catch {
+      continue
+    }
+    const fail = (slug, message) => {
+      throw new Error(`data/extras/${file}: "${slug}": ${message}`)
+    }
+    for (const [slug, row] of Object.entries(parsed)) {
+      const entity = entityBySlug.get(slug)
+      if (!entity) fail(slug, 'no entry has this slug')
+      if (!types.includes(entity.entityType)) fail(slug, `a ${entity.entityType} entry cannot carry this`)
+      const source = row?.source ?? {}
+      if (!text(source.label)) fail(slug, 'source.label is missing')
+      if (!/^https:\/\/\S+$/.test(text(source.url))) fail(slug, 'source.url is missing or not a web address')
+      const fields = pick(row)
+      for (const [name, value] of Object.entries(fields)) {
+        if (value === '' || value === null) fail(slug, `"${name}" is missing or invalid`)
+      }
+      entity[key] = {
+        ...fields,
+        basis: text(row.basis) || undefined,
+        source: { label: text(source.label), url: text(source.url) },
+      }
+      count += 1
+    }
+  }
+  return count
+}
+
+const realWorldCount = readRealWorld(new Map(entities.map((entity) => [entity.slug, entity])))
+
 entities.sort((a, b) => a.entityType.localeCompare(b.entityType) || a.name.localeCompare(b.name))
 
 mkdirSync(dirname(OUT_FILE), { recursive: true })
@@ -308,6 +386,7 @@ writeFileSync(
 phase(`wrote ${entities.length} entities to src/data/entities.json`)
 phase(`${extrasCount} of ${entities.length} entities have a data/extras file`)
 phase(`${inGame.size} of ${entities.length} entities have in-game facts in data/ingame.json`)
+phase(`${realWorldCount} entities have a real-world counterpart from data/extras`)
 console.log('[build-data] by type:', byType)
 
 if (rejected.length) {

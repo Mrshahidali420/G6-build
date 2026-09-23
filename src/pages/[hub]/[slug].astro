@@ -7,7 +7,11 @@ import SongPlayer from '../../components/SongPlayer.astro'
 import Mark from '../../components/Mark.astro'
 import EntityTile from '../../components/EntityTile.astro'
 import { HUB_TYPES, ENTITY_ANSWER_LINKS } from '../../lib/site.mjs'
-import { entitiesOfType, hubFor, relatedFor, urlFor, metaTitle, metaDescriptionWithInGame, inGameHeading, inGameRows, withInGameSchema, TIER_LABEL } from '../../lib/entities.mjs'
+import Evidence from '../../components/Evidence.astro'
+import { entitiesOfType, hubFor, relatedFor, urlFor, metaTitle, pageDescription, osmUrl, inGameHeading, inGameRows, withInGameSchema, TIER_LABEL } from '../../lib/entities.mjs'
+import { labelFor } from '../../lib/evidence.mjs'
+import { shotsForEntity } from '../../lib/shots.mjs'
+import { mentionsFor } from '../../lib/entity-mentions.mjs'
 import { entitySchema } from '../../lib/schema.mjs'
 import { imageFor, creditFor, creditSourceFor, galleryFor } from '../../lib/images.mjs'
 import { trackFor } from '../../lib/music.mjs'
@@ -44,7 +48,7 @@ const track = entity.entityType === 'song' ? trackFor(entity.slug) : null
 // Unique per page. Never a template with the name swapped in. Both helpers
 // live in lib/entities.mjs, with the Search Console reading that explains them.
 const pageTitle = metaTitle(entity)
-const description = metaDescriptionWithInGame(entity)
+const description = pageDescription(entity)
 
 // Where to find it, filled by hand after launch in data/ingame.json. Until an
 // entry has a row there, all three are empty and the page renders as before.
@@ -55,6 +59,30 @@ const inGameFacts = inGameRows(entity)
 // The answer page that owns this entry's main question, so the two pages
 // link both ways instead of competing for one search.
 const answerLink = ENTITY_ANSWER_LINKS[entity.slug]
+
+// The evidence label says what kind of evidence sits behind the entry. The
+// stamp already says how sure the site is, and for most entries the two say
+// the same thing (confirmed / official, press / press). The label is shown
+// only when it adds something, such as "Seen in trailer, Trailer 1 at 0:32".
+const MARK_EVIDENCE = {
+  OFFICIAL_CONFIRMED: 'official',
+  PRESS_REPORTED: 'press',
+  COMMUNITY_IDENTIFIED: 'community',
+  UNCONFIRMED: 'unverified',
+}
+const evidence = labelFor(entity)
+const showEvidence = evidence.key !== (MARK_EVIDENCE[entity.confirmedStatus] ?? 'unverified')
+
+// Every moment an official video links to this entry. Empty for most.
+const trailerShots = shotsForEntity(entity.slug)
+
+// Real-world counterparts, each from its own credited source (data/extras).
+const realLife = entity.realLife
+const realPlace = entity.realPlace
+const species = entity.species
+
+// News, Newswire posts and tracker claims that name this entry, newest first.
+const mentions = await mentionsFor(entity.slug)
 ---
 <BaseLayout
   title={pageTitle}
@@ -79,6 +107,7 @@ const answerLink = ENTITY_ANSWER_LINKS[entity.slug]
 
         <div class="marks">
           <Mark status={entity.confirmedStatus} as="stamp" />
+          {showEvidence && <Evidence label={evidence} showDetail />}
         </div>
 
         <dl class="spec" style="max-width:32rem">
@@ -94,6 +123,34 @@ const answerLink = ENTITY_ANSWER_LINKS[entity.slug]
             <>
               <dt>Type</dt>
               <dd>{entity.subcategory}</dd>
+            </>
+          )}
+          {realLife && (
+            <>
+              <dt>Real-life basis</dt>
+              <dd>
+                {realLife.basedOn}. Community-identified, source:{' '}
+                <a href={realLife.source.url} rel="nofollow noopener" target="_blank">{realLife.source.label}</a>.
+              </dd>
+            </>
+          )}
+          {realPlace && (
+            <>
+              <dt>Real-world place</dt>
+              <dd>
+                {realPlace.address}. Community-identified, source:{' '}
+                <a href={realPlace.source.url} rel="nofollow noopener" target="_blank">{realPlace.source.label}</a>.{' '}
+                <a href={osmUrl(realPlace)} rel="nofollow noopener" target="_blank">View on map</a>
+              </dd>
+            </>
+          )}
+          {species && (
+            <>
+              <dt>Real species</dt>
+              <dd>
+                {species.commonName} (<i>{species.scientificName}</i>). Matched by name, source:{' '}
+                <a href={species.source.url} rel="nofollow noopener" target="_blank">{species.source.label}</a>.
+              </dd>
             </>
           )}
           {entity.sourceDate && (
@@ -155,6 +212,23 @@ const answerLink = ENTITY_ANSWER_LINKS[entity.slug]
           <ul class="facts">
             {entity.keyFacts.map((fact) => <li>{fact}</li>)}
           </ul>
+        </>
+      )}
+
+      {trailerShots.length > 0 && (
+        <>
+          <h2>Seen in the trailers</h2>
+          <ol class="since">
+            {trailerShots.map((shot) => (
+              <li class="since__item">
+                <p class="since__fact"><a href={shot.url}>{shot.label}</a></p>
+                {shot.note && <p class="since__quote">{shot.note}</p>}
+                <p class="since__meta">
+                  <a href={shot.youtube} rel="nofollow noopener" target="_blank">Watch on YouTube at {shot.timestamp}</a>
+                </p>
+              </li>
+            ))}
+          </ol>
         </>
       )}
 
@@ -238,6 +312,33 @@ const answerLink = ENTITY_ANSWER_LINKS[entity.slug]
             </li>
           ))}
         </ol>
+      </div>
+    </section>
+  )}
+
+  {mentions.length > 0 && (
+    <section class="band band--plaster">
+      <div class="shell prose">
+        <h2 style="margin-top:0">Mentioned in</h2>
+        <p class="lede">
+          The latest news posts, Rockstar Newswire posts and tracked claims that
+          name {entity.name}, newest first.
+        </p>
+        <ul class="since">
+          {mentions.map((item) => (
+            <li class="since__item">
+              <p class="since__fact">
+                {item.external
+                  ? <a href={item.href} rel="nofollow noopener" target="_blank">{item.title}</a>
+                  : <a href={item.href}>{item.title}</a>}
+              </p>
+              <p class="since__meta">
+                <span>{item.kindLabel}</span>
+                {item.date && <span class="since__date">{item.date}</span>}
+              </p>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   )}

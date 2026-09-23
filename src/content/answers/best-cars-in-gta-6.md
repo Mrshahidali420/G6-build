@@ -4,6 +4,10 @@ description: "Rockstar has published no GTA 6 performance stats, so no speed ran
 keyword: "best cars in gta 6"
 order: 25
 updated: "2026-09-21"
+quick: "There is no honest ranking of the best cars in GTA 6, because Rockstar has published no performance numbers at all, not for one vehicle."
+changes:
+  - date: "2026-09-21"
+    note: "Checked against sources."
 sources:
   - label: "Rockstar Games: Grand Theft Auto VI official site"
     url: "https://www.rockstargames.com/VI"

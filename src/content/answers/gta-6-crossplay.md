@@ -4,6 +4,10 @@ description: "Rockstar has not confirmed crossplay for GTA 6. Here is what is kn
 keyword: "gta 6 crossplay"
 order: 23
 updated: "2026-09-16"
+quick: "Rockstar has not announced whether GTA 6 supports crossplay between PS5 and Xbox Series X|S. Both platforms are confirmed for the game itself."
+changes:
+  - date: "2026-09-16"
+    note: "Checked against sources."
 sources:
   - label: "Rockstar Games: the official Grand Theft Auto VI site"
     url: "https://www.rockstargames.com/VI/"

@@ -4,6 +4,10 @@ description: "A plain guide to GTA 6 merchandise. What Rockstar actually sells, 
 keyword: "gta 6 merch"
 order: 107
 updated: "2026-09-15"
+quick: "The only merchandise guaranteed official is sold through the Rockstar Store. Most GTA themed merchandise sold elsewhere is unofficial fan-made product."
+changes:
+  - date: "2026-09-15"
+    note: "Checked against sources."
 sources:
   - label: "Rockstar Newswire: Pre-Order Grand Theft Auto VI on June 25"
     url: "https://www.rockstargames.com/newswire/article/5171972o3ak5oa/pre-order-grand-theft-auto-vi-on-june-25"

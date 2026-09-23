@@ -4,6 +4,10 @@ description: "Yes, GTA 6 returns to Vice City. Here is what Rockstar has confirm
 keyword: "gta 6 vice city"
 order: 15
 updated: "2026-09-15"
+quick: "Yes, GTA 6 goes back to Vice City. Rockstar confirmed this on the official site. Vice City is the main city inside the fictional state of Leonida."
+changes:
+  - date: "2026-09-15"
+    note: "Checked against sources."
 sources:
   - label: "Rockstar Games: Grand Theft Auto VI official site"
     url: "https://www.rockstargames.com/VI"

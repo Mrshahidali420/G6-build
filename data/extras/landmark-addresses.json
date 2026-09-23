@@ -1,0 +1,734 @@
+{
+  "ambrosia-raceway-park": {
+    "real_address": "Hendry County Motorsports Park, 9985 US-27, Clewiston, FL 33440, USA",
+    "real_lat": 26.7680377,
+    "real_lng": -81.0901947,
+    "gtadb_id": "L590",
+    "gtadb_name": "Ambrosia Raceway Park, Ambrosia",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L590"
+    }
+  },
+  "animal-hospital-of-key-lento": {
+    "real_address": "The Animal Hospital of Islamorada, 82771 Overseas Hwy, Islamorada, FL 33036, USA",
+    "real_lat": 24.9279425,
+    "real_lng": -80.6235749,
+    "gtadb_id": "L1008",
+    "gtadb_name": "Animal Hospital of Key Lento, Key Lento",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L1008"
+    }
+  },
+  "atlantis-hotel": {
+    "real_address": "Beacon South Beach, 720 Ocean Dr, Miami Beach, FL 33139, USA",
+    "real_lat": 25.7771732,
+    "real_lng": -80.1315903,
+    "gtadb_id": "L49",
+    "gtadb_name": "Atlantis Hotel, Shore Dr, Ocean Beach, Vice Beach",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L49"
+    }
+  },
+  "bayfront-heights": {
+    "real_address": "Royal Palm South Beach, 1545 Collins Ave, Miami Beach, FL 33139, USA",
+    "real_lat": 25.7883969,
+    "real_lng": -80.1293601,
+    "gtadb_id": "L22",
+    "gtadb_name": "Bayfront Heights, Ocean Beach, Vice Beach",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L22"
+    }
+  },
+  "bite-house": {
+    "real_address": "Seabreeze, 310 Dock St, Cedar Key, FL 32625, USA",
+    "real_lat": 29.1352981,
+    "real_lng": -83.02984310000001,
+    "gtadb_id": "L393",
+    "gtadb_name": "Bite House, Watson Bay",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L393"
+    }
+  },
+  "boardwalk-hotel": {
+    "real_address": "Hotel Breakwater, 940 Ocean Dr, Miami Beach, FL 33139, USA",
+    "real_lat": 25.7799929,
+    "real_lng": -80.13108559999999,
+    "gtadb_id": "L40",
+    "gtadb_name": "Boardwalk, Shore Dr, Ocean Beach, Vice Beach",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L40"
+    }
+  },
+  "bocamar-bridge": {
+    "real_address": "Sunshine Skyway Bridge, St. Petersburg, FL 33711, USA",
+    "real_lat": 27.6207079,
+    "real_lng": -82.65584179999999,
+    "gtadb_id": "L317",
+    "gtadb_name": "Bocamar Bridge, Port Gellhorn",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L317"
+    }
+  },
+  "bohemia": {
+    "real_address": "2562 NW 2nd Ave, Miami, FL 33127, USA",
+    "real_lat": 25.8013086,
+    "real_lng": -80.19931919999999,
+    "gtadb_id": "L1379",
+    "gtadb_name": "Bohemia, Stockyard, Vice City",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L1379"
+    }
+  },
+  "boone-speedway": {
+    "real_address": "Bubba Raceway Park, 9050 NW Gainesville Rd, Ocala, FL 34482, USA",
+    "real_lat": 29.28250899999999,
+    "real_lng": -82.186086,
+    "gtadb_id": "L1570",
+    "gtadb_name": "Boone Speedway, Hamlet",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L1570"
+    }
+  },
+  "burnout-scooters": {
+    "real_address": "Wildfire Scooters, 3401 US-98 BUS, Panama City, FL 32401, USA",
+    "real_lat": 30.1527057,
+    "real_lng": -85.6166089,
+    "gtadb_id": "L347",
+    "gtadb_name": "Burnout Scooters, Port Gellhorn",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L347"
+    }
+  },
+  "cipher-mall": {
+    "real_address": "6660 Sunset Blvd, Los Angeles, CA 90028, USA",
+    "real_lat": 34.0975115,
+    "real_lng": -118.3359246,
+    "gtadb_id": "L677",
+    "gtadb_name": "Cipher Mall, Rockridge, Vice City",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L677"
+    }
+  },
+  "cordelia-hotel": {
+    "real_address": "Park Central Hotel, 640 Ocean Dr, Miami Beach, FL 33139, USA",
+    "real_lat": 25.7763613,
+    "real_lng": -80.1316421,
+    "gtadb_id": "L51",
+    "gtadb_name": "Cordelia, Shore Dr, Ocean Beach, Vice Beach",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L51"
+    }
+  },
+  "cortez-hotel": {
+    "real_address": "Colony Hotel, 736 Ocean Dr, Miami Beach, FL 33139, USA",
+    "real_lat": 25.7774259,
+    "real_lng": -80.1314201,
+    "gtadb_id": "L47",
+    "gtadb_name": "Cortez Hotel, Shore Dr, Ocean Beach, Vice Beach",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L47"
+    }
+  },
+  "crescent": {
+    "real_address": "333 S Miami Ave, Miami, FL 33130, USA",
+    "real_lat": 25.7710405,
+    "real_lng": -80.1930838,
+    "gtadb_id": "L178",
+    "gtadb_name": "Crescent, Bayside, Vice City",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L178"
+    }
+  },
+  "crossroad-park-minimall": {
+    "real_address": "Callaway Village Square, 229 N Tyndall Pkwy, Panama City, FL 32404, USA",
+    "real_lat": 30.1503697,
+    "real_lng": -85.59156139999999,
+    "gtadb_id": "L615",
+    "gtadb_name": "Crossroad Park Minimall, Port Gellhorn",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L615"
+    }
+  },
+  "dominion-hotel": {
+    "real_address": "Cardozo South Beach, 1300 Ocean Dr, Miami Beach, FL 33139, USA",
+    "real_lat": 25.7842292,
+    "real_lng": -80.13026909999999,
+    "gtadb_id": "L25",
+    "gtadb_name": "Dominion Hotel, Shore Dr, Ocean Beach, Vice Beach",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L25"
+    }
+  },
+  "easy-inn": {
+    "real_address": "Econo Lodge, 4411 US-98, Panama City, FL 32401, USA",
+    "real_lat": 30.180168,
+    "real_lng": -85.717799,
+    "gtadb_id": "L309",
+    "gtadb_name": "Easy Inn Motel, Moonstone Hwy, Port Gellhorn",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L309"
+    }
+  },
+  "electric-fang-tattoo-parlor": {
+    "real_address": "450 NW 28th St, Miami, FL 33127, USA",
+    "real_lat": 25.8025339,
+    "real_lng": -80.20251139999999,
+    "gtadb_id": "L1482",
+    "gtadb_name": "Electric Fang Tattoo, Stockyard, Vice City",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L1482"
+    }
+  },
+  "firefly-plaza": {
+    "real_address": "2421 Lake Pancoast Dr, Miami Beach, FL 33140, USA",
+    "real_lat": 25.8007002,
+    "real_lng": -80.1277233,
+    "gtadb_id": "L87",
+    "gtadb_name": "Firefly Plaza, Vice Beach",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L87"
+    }
+  },
+  "fleeca-field": {
+    "real_address": "LoanDepot Park, 501 Marlins Way, Miami, FL 33125, USA",
+    "real_lat": 25.7781487,
+    "real_lng": -80.2195998,
+    "gtadb_id": "L196",
+    "gtadb_name": "Fleeca Field, Rockridge, Vice City",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L196"
+    }
+  },
+  "gellhorn-international-raceway": {
+    "real_address": "Sebring International Raceway, 113 Midway Dr, Sebring, FL 33870, USA",
+    "real_lat": 27.4499117,
+    "real_lng": -81.3534064,
+    "gtadb_id": "L281",
+    "gtadb_name": "Gellhorn International Raceway, Port Gellhorn",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L281"
+    }
+  },
+  "haitian-american-cultural-center": {
+    "real_address": "Little Haiti Cultural Complex, 212 NE 59th Terrace, Miami, FL 33137, USA",
+    "real_lat": 25.830386,
+    "real_lng": -80.1913205,
+    "gtadb_id": "L1317",
+    "gtadb_name": "Haitian-American Cultural Center, La Perle, Vice City",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L1317"
+    }
+  },
+  "hamlet-water-tower": {
+    "real_address": "Homestead Water Tower, FGFM+HQ2, Homestead, FL 33030, USA",
+    "real_lat": 25.4738498,
+    "real_lng": -80.4656485,
+    "gtadb_id": "L262",
+    "gtadb_name": "Hamlet Water Tower, Hamlet",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L262"
+    }
+  },
+  "hanks-waffles": {
+    "real_address": "536 Richard Jackson Blvd, Panama City Beach, FL 32407, USA",
+    "real_lat": 30.1858805,
+    "real_lng": -85.81838909999999,
+    "gtadb_id": "L310",
+    "gtadb_name": "Hank's Waffles, Port Gellhorn",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L310"
+    }
+  },
+  "happy-nails": {
+    "real_address": "233 N Tyndall Pkwy, Panama City, FL 32404, USA",
+    "real_lat": 30.1506425,
+    "real_lng": -85.59156779999999,
+    "gtadb_id": "L1105",
+    "gtadb_name": "Happy Nails, Port Gellhorn",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L1105"
+    }
+  },
+  "hoodwinks-bar": {
+    "real_address": "378 NW 5th St, Miami, FL 33128, USA",
+    "real_lat": 25.7786581,
+    "real_lng": -80.2010877,
+    "gtadb_id": "L511",
+    "gtadb_name": "Hoodwinks Bar, Salton, Vice City",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L511"
+    }
+  },
+  "hotel-dixon": {
+    "real_address": "Hotel Victor, 1144 Ocean Dr, Miami Beach, FL 33139, USA",
+    "real_lat": 25.782402,
+    "real_lng": -80.1305387,
+    "gtadb_id": "L32",
+    "gtadb_name": "Hotel Dixon, Shore Dr, Ocean Beach, Vice Beach",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L32"
+    }
+  },
+  "hotel-valetta": {
+    "real_address": "Motel Ankara, Miami Beach, FL 33139, USA",
+    "real_lat": 25.8002143,
+    "real_lng": -80.1273873,
+    "gtadb_id": "L324",
+    "gtadb_name": "Hotel Valetta, Vice Beach",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L324"
+    }
+  },
+  "jeudys-food-depot": {
+    "real_address": "9900 NW 27th Ave, Miami, FL 33147, USA",
+    "real_lat": 25.865022,
+    "real_lng": -80.242678,
+    "gtadb_id": "L408",
+    "gtadb_name": "Jeudy's Food Depot, La Perle, Vice City",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L408"
+    }
+  },
+  "la-perle-caribbean-market": {
+    "real_address": "Caribbean Marketplace, 5925 NE 2nd Ave, Miami, FL 33137, USA",
+    "real_lat": 25.8303692,
+    "real_lng": -80.1917539,
+    "gtadb_id": "L1318",
+    "gtadb_name": "La Perle Caribbean Market, La Perle, Vice City",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L1318"
+    }
+  },
+  "lake-leonida": {
+    "real_address": "Lake Okeechobee, FL, USA",
+    "real_lat": 26.9689536,
+    "real_lng": -80.79758340000001,
+    "gtadb_id": "L1000",
+    "gtadb_name": "Lake Leonida, Leonard County",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L1000"
+    }
+  },
+  "lous": {
+    "real_address": "Palace Cafe & Dairy, 1300 NW 7th St, Miami, FL 33125, USA",
+    "real_lat": 25.7799692,
+    "real_lng": -80.2166798,
+    "gtadb_id": "L195",
+    "gtadb_name": "Lou's, Rockridge, Vice City",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L195"
+    }
+  },
+  "marco-wholesale-footwear": {
+    "real_address": "2451 NW 5th Ave, Miami, FL 33127, USA",
+    "real_lat": 25.8005245,
+    "real_lng": -80.2027892,
+    "gtadb_id": "L1108",
+    "gtadb_name": "Marco Wholesale Footwear, Stockyard, Vice City",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L1108"
+    }
+  },
+  "masons-shrimp-shack": {
+    "real_address": "The Shrimp Boat, 1201 Beck Ave, Panama City, FL 32401, USA",
+    "real_lat": 30.1701438,
+    "real_lng": -85.7017606,
+    "gtadb_id": "L943",
+    "gtadb_name": "Mason's Shrimp Shack, Port Gellhorn",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L943"
+    }
+  },
+  "megamundo": {
+    "real_address": "One Biscayne Tower, 2 Biscayne Blvd, Miami, FL 33131, USA",
+    "real_lat": 25.7739276,
+    "real_lng": -80.1879577,
+    "gtadb_id": "L208",
+    "gtadb_name": "Megamundo, Catalan Blvd, Downtown, Vice City",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L208"
+    }
+  },
+  "megamundo-building": {
+    "real_address": "One Biscayne Tower, 2 Biscayne Blvd, Miami, FL 33131, USA",
+    "real_lat": 25.7739276,
+    "real_lng": -80.1879577,
+    "gtadb_id": "L208",
+    "gtadb_name": "Megamundo, Catalan Blvd, Downtown, Vice City",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L208"
+    }
+  },
+  "navaro-shipping-terminal": {
+    "real_address": "2974 Shipping Terminal, 2974 NW N River Dr, Miami, FL 33142, USA",
+    "real_lat": 25.7966019,
+    "real_lng": -80.2464656,
+    "gtadb_id": "L200",
+    "gtadb_name": "Navaro Shipping Terminal, Rockridge, Vice City",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L200"
+    }
+  },
+  "nine1nine": {
+    "real_address": "E11EVEN, 29 NE 11th St, Miami, FL 33132, USA",
+    "real_lat": 25.7849684,
+    "real_lng": -80.19355689999999,
+    "gtadb_id": "L190",
+    "gtadb_name": "NINE1NINE, Downtown, Vice City",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L190"
+    }
+  },
+  "ocean-view-hotel": {
+    "real_address": "Clevelander South Beach, 1020 Ocean Dr, Miami Beach, FL 33139, USA",
+    "real_lat": 25.780866,
+    "real_lng": -80.13084599999999,
+    "gtadb_id": "L36",
+    "gtadb_name": "Ocean View Hotel, Shore Dr, Ocean Beach, Vice Beach",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L36"
+    }
+  },
+  "rattlers": {
+    "real_address": "141 N Krome Ave, Homestead, FL 33030, USA",
+    "real_lat": 25.4714685,
+    "real_lng": -80.4771176,
+    "gtadb_id": "L258",
+    "gtadb_name": "Rattlers, Hamlet",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L258"
+    }
+  },
+  "sahara-arena": {
+    "real_address": "Kaseya Center, 601 Biscayne Blvd, Miami, FL 33132, USA",
+    "real_lat": 25.7814014,
+    "real_lng": -80.18696899999999,
+    "gtadb_id": "L187",
+    "gtadb_name": "Sahara Arena, Catalan Blvd, Downtown, Vice City",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L187"
+    }
+  },
+  "saras-unisex-salon": {
+    "real_address": "51 N Krome Ave, Homestead, FL 33030, USA",
+    "real_lat": 25.4708097,
+    "real_lng": -80.4770637,
+    "gtadb_id": "L360",
+    "gtadb_name": "Sara's Unisex Salon, Hamlet",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L360"
+    }
+  },
+  "seahorse-hotel": {
+    "real_address": "Gabriel South Beach, 640 Ocean Dr, Miami Beach, FL 33139, USA",
+    "real_lat": 25.7763613,
+    "real_lng": -80.1316421,
+    "gtadb_id": "L50",
+    "gtadb_name": "Seahorse, Shore Dr, Ocean Beach, Vice Beach",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L50"
+    }
+  },
+  "seashell-hotel": {
+    "real_address": "Starlite Hotel, 750 Ocean Dr, Miami Beach, FL 33139, USA",
+    "real_lat": 25.7776858,
+    "real_lng": -80.13137449999999,
+    "gtadb_id": "L45",
+    "gtadb_name": "Seashell Hotel, Shore Dr, Ocean Beach, Vice Beach",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L45"
+    }
+  },
+  "sera": {
+    "real_address": "John F. Kennedy Space Center, Florida 32899, USA",
+    "real_lat": 28.61,
+    "real_lng": -80.67999999999999,
+    "gtadb_id": "L1080",
+    "gtadb_name": "SERA, Leonida",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L1080"
+    }
+  },
+  "simons-tires": {
+    "real_address": "George's Tires and Repair, 501 NW 54th St, Miami, FL 33127, USA",
+    "real_lat": 25.8252738,
+    "real_lng": -80.204043,
+    "gtadb_id": "L419",
+    "gtadb_name": "Simon's Tires, La Perle, Vice City",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L419"
+    }
+  },
+  "starlet-motel": {
+    "real_address": "Economy Inn, 23750 US-301, Lawtey, FL 32058, USA",
+    "real_lat": 30.056544,
+    "real_lng": -82.068484,
+    "gtadb_id": "L304",
+    "gtadb_name": "Starlet Motel, Kelly County",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L304"
+    }
+  },
+  "stock-305": {
+    "real_address": "295 NW 26th St, Miami, FL 33127, USA",
+    "real_lat": 25.8016456,
+    "real_lng": -80.2008877,
+    "gtadb_id": "L1488",
+    "gtadb_name": "Stock 305, Stockyard, Vice City",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L1488"
+    }
+  },
+  "te-invito": {
+    "real_address": "1 S Krome Ave, Homestead, FL 33030, USA",
+    "real_lat": 25.4695579,
+    "real_lng": -80.4771906,
+    "gtadb_id": "L259",
+    "gtadb_name": "Te Invito, Hamlet",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L259"
+    }
+  },
+  "the-amalfi": {
+    "real_address": "Byblos Mediterranean Restaurant Miami, 1545 Collins Ave, Miami Beach, FL 33139, USA",
+    "real_lat": 25.7882849,
+    "real_lng": -80.1300558,
+    "gtadb_id": "L644",
+    "gtadb_name": "The Amalfi, Ocean Beach, Vice Beach",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L644"
+    }
+  },
+  "the-fence": {
+    "real_address": "The Gates Hotel South Beach, 2360 Collins Ave, Miami Beach, FL 33139, USA",
+    "real_lat": 25.7993599,
+    "real_lng": -80.127821,
+    "gtadb_id": "L86",
+    "gtadb_name": "Fence, Vice Beach",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L86"
+    }
+  },
+  "the-rusty-anchor": {
+    "real_address": "Caribbean Club, 104080 Overseas Hwy, Key Largo, FL 33037, USA",
+    "real_lat": 25.1450746,
+    "real_lng": -80.39686259999999,
+    "gtadb_id": "L325",
+    "gtadb_name": "The Rusty Anchor, Key Lento",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L325"
+    }
+  },
+  "the-sumerian": {
+    "real_address": "Marriott Miami Biscayne Bay, 1633 N Bayshore Dr, Miami, FL 33132, USA",
+    "real_lat": 25.7908441,
+    "real_lng": -80.18653599999999,
+    "gtadb_id": "L185",
+    "gtadb_name": "The Sumerian, Bayside, Vice City",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L185"
+    }
+  },
+  "tisha-wocka-flea-market": {
+    "real_address": "Opa-Locka Flea Market, 12705 NW 42nd Ave, Opa-locka, FL 33054, USA",
+    "real_lat": 25.8950614,
+    "real_lng": -80.266804,
+    "gtadb_id": "L1006",
+    "gtadb_name": "Tisha-Wocka Flea Market, Tisha-Wocka, Vice City",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L1006"
+    }
+  },
+  "treasured-trash": {
+    "real_address": "102 S Krome Ave, Homestead, FL 33030, USA",
+    "real_lat": 25.4690804,
+    "real_lng": -80.477597,
+    "gtadb_id": "L371",
+    "gtadb_name": "Treasured Trash, Hamlet",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L371"
+    }
+  },
+  "uncle-jacks-liquor": {
+    "real_address": "229 N Tyndall Pkwy, Panama City, FL 32404, USA",
+    "real_lat": 30.1503697,
+    "real_lng": -85.59156139999999,
+    "gtadb_id": "L313",
+    "gtadb_name": "Uncle Jack's Liquor, Port Gellhorn",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L313"
+    }
+  },
+  "unnamed-port-gellhorn-train-station": {
+    "real_address": "Waldo Amtrak Station, Waldo, FL 32694, USA",
+    "real_lat": 29.7906451,
+    "real_lng": -82.1666793,
+    "gtadb_id": "L538",
+    "gtadb_name": "Port Gellhorn Train Station, Port Gellhorn",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L538"
+    }
+  },
+  "vice-city-pawn": {
+    "real_address": "Americash Pawn Shop, 2518 NE 2nd Ave, Miami, FL 33137, USA",
+    "real_lat": 25.8011579,
+    "real_lng": -80.191279,
+    "gtadb_id": "L539",
+    "gtadb_name": "Vice City Pawn, Crosstown, Vice City",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L539"
+    }
+  },
+  "waste-transfer-services": {
+    "real_address": "Wheelabrator South Broward, 4400 South State Road 7, Fort Lauderdale, FL 33314, USA",
+    "real_lat": 26.069113,
+    "real_lng": -80.204796,
+    "gtadb_id": "L472",
+    "gtadb_name": "Waste Transfer Services, Ambrosia",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L472"
+    }
+  },
+  "watkins-auto-parts": {
+    "real_address": "2533 E Hwy 98, Panama City, FL 32401, USA",
+    "real_lat": 30.15702929999999,
+    "real_lng": -85.62634539999999,
+    "gtadb_id": "L348",
+    "gtadb_name": "Watkins Auto Parts, Port Gellhorn",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L348"
+    }
+  },
+  "whats-cooking": {
+    "real_address": "1300 N Miami Ave, Miami, FL 33136, USA",
+    "real_lat": 25.7871135,
+    "real_lng": -80.19434989999999,
+    "gtadb_id": "L449",
+    "gtadb_name": "What's Cooking, Crosstown, Vice City",
+    "basis": "community-identified",
+    "source": {
+      "label": "gtadb.org and all contributors, CC BY 4.0",
+      "url": "https://map.gtadb.org/#VI,L449"
+    }
+  }
+}

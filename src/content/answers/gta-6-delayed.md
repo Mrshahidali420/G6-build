@@ -4,6 +4,10 @@ description: "GTA 6 has been delayed twice, from autumn 2025 to 26 May 2026 to 1
 keyword: "gta 6 delayed"
 order: 9
 updated: "2026-09-15"
+quick: "GTA 6 has been delayed twice: from an autumn 2025 target to 26 May 2026, then again to 19 November 2026, announced around 6 November 2025."
+changes:
+  - date: "2026-09-15"
+    note: "Checked against sources."
 sources:
   - label: "Bloomberg: Grand Theft Auto VI is postponed again to November 2026"
     url: "https://www.bloomberg.com/news/articles/2025-11-06/-grand-theft-auto-vi-is-postponed-again-to-november-2026"

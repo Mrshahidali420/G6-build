@@ -1,0 +1,269 @@
+---
+// A standalone widget, meant to live inside another site's iframe, not inside
+// this site's own layout. It renders NO BaseLayout on purpose: no header, no
+// footer, no ad loader, no analytics tag, nothing that would draw a second
+// tracker or a second brand into a stranger's page. The one thing it asks
+// back is the credit line at the foot of the widget.
+//
+// noindex is off limits by this site's own rule (see HANDOFF.md section 9),
+// so this page is not blocked from indexing. Instead it points its canonical
+// at the full answer page, /gta-6-countdown, which is the page actually
+// meant to rank. /embed/* is also dropped from the sitemap in
+// astro.config.mjs, so it is never offered to Google as a page to crawl on
+// its own; the canonical is the fallback for a crawler that finds it anyway
+// through an embedding site's HTML.
+//
+// The clock logic is copied from src/components/Countdown.astro rather than
+// imported, because that component renders styles and markup meant to sit
+// inside BaseLayout's world.css, and this page carries no such stylesheet.
+// The target date must stay in sync by hand if it ever changes.
+const TARGET = '2026-11-19T00:00:00Z'
+
+const diff = new Date(TARGET).getTime() - Date.now()
+const launched = diff <= 0
+
+function parts(ms: number) {
+  const totalSeconds = Math.max(0, Math.floor(ms / 1000))
+  return {
+    days: Math.floor(totalSeconds / 86400),
+    hours: Math.floor((totalSeconds % 86400) / 3600),
+    minutes: Math.floor((totalSeconds % 3600) / 60),
+  }
+}
+
+const initial = parts(diff)
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GTA 6 countdown widget</title>
+    <meta name="description" content="A free, live countdown to the 19 November 2026 GTA 6 launch date, made to embed on another site." />
+    <link rel="canonical" href="https://gta6record.com/gta-6-countdown" />
+
+    <!--
+      Reads ?theme=dark from the embedding site's iframe src and sets it on
+      <html> before the body paints, so there is no light-to-dark flash. This
+      is the only script allowed to run before content: it touches nothing
+      but a single data attribute.
+    -->
+    <script is:inline>
+      (function () {
+        try {
+          var theme = new URLSearchParams(window.location.search).get('theme')
+          if (theme === 'dark') document.documentElement.setAttribute('data-theme', 'dark')
+        } catch (e) {}
+      })()
+    </script>
+
+    <style>
+      /* Self-hosted, same as the main site, so a stranger's page never causes
+         a third-party font request. Only the weight the widget uses. */
+      @font-face {
+        font-family: 'Archivo';
+        font-style: normal;
+        font-weight: 700 800;
+        font-stretch: 100% 125%;
+        font-display: swap;
+        src: url('/fonts/archivo.woff2') format('woff2-variations');
+      }
+
+      :root {
+        /* Light: the site's own daylight tokens (see src/styles/world.css). */
+        --w-bg: #f5f3ed;
+        --w-panel: #0a453e;
+        --w-num: #eef5f2;
+        --w-label: #c9dcd5;
+        --w-text: #1b2320;
+        --w-text-2: #4e5b55;
+        --w-brass: #7a5a1c;
+        --w-border: #d8d5cb;
+      }
+
+      :root[data-theme='dark'] {
+        --w-bg: #101a17;
+        --w-panel: #1a2b26;
+        --w-num: #f5f3ed;
+        --w-label: #9fb4ad;
+        --w-text: #eef5f2;
+        --w-text-2: #a9b6b0;
+        --w-brass: #d9b25f;
+        --w-border: #2a3a34;
+      }
+
+      * { box-sizing: border-box; }
+
+      html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: var(--w-bg);
+      }
+
+      body {
+        display: flex;
+        font-family: 'Archivo', 'Arial Narrow', system-ui, sans-serif;
+        color: var(--w-text);
+      }
+
+      .widget {
+        margin: auto;
+        width: 100%;
+        max-width: 600px;
+        padding: clamp(6px, 3vw, 12px) clamp(8px, 3.5vw, 16px);
+        display: flex;
+        flex-direction: column;
+        gap: clamp(4px, 2vw, 8px);
+      }
+
+      .widget__grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: clamp(4px, 2vw, 10px);
+      }
+
+      .widget__cell {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+        background: var(--w-panel);
+        border: 1px solid var(--w-brass);
+        border-radius: 2px;
+        padding: clamp(4px, 2vw, 8px) 2px;
+        min-width: 0;
+      }
+
+      .widget__num {
+        font-weight: 800;
+        font-stretch: 125%;
+        line-height: 1;
+        font-size: clamp(0.95rem, 7.5vw, 1.7rem);
+        color: var(--w-num);
+        font-variant-numeric: tabular-nums;
+      }
+
+      .widget__label {
+        font-size: clamp(0.5rem, 2.4vw, 0.64rem);
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--w-label);
+        white-space: nowrap;
+      }
+
+      .widget__launched {
+        margin: 0;
+        font-weight: 800;
+        font-size: clamp(0.85rem, 4.5vw, 1.1rem);
+        text-align: center;
+      }
+
+      .widget__note {
+        margin: 0;
+        font-size: clamp(0.55rem, 2.3vw, 0.7rem);
+        line-height: 1.3;
+        color: var(--w-text-2);
+        text-align: center;
+      }
+
+      .widget__note a {
+        color: var(--w-text-2);
+        text-decoration: underline;
+      }
+
+      .widget__credit {
+        display: block;
+        text-align: center;
+        font-size: clamp(0.55rem, 2.3vw, 0.7rem);
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        color: var(--w-brass);
+        text-decoration: none;
+      }
+
+      .widget__credit:hover,
+      .widget__credit:focus-visible {
+        text-decoration: underline;
+      }
+
+      /* A very short strip (near the 150px floor) has no room for the note
+         line without crowding the numbers. Drop it there; the credit line
+         always stays, since that is the one thing this widget is for. */
+      @media (max-height: 160px) {
+        .widget__note { display: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="widget">
+      {launched ? (
+        <p class="widget__launched">Grand Theft Auto VI has launched.</p>
+      ) : (
+        <div class="widget__grid" role="timer" aria-label="Time until Grand Theft Auto VI launches" data-target={TARGET} data-launched="false">
+          <div class="widget__cell">
+            <span class="widget__num" data-unit="days">{initial.days}</span>
+            <span class="widget__label">Days</span>
+          </div>
+          <div class="widget__cell">
+            <span class="widget__num" data-unit="hours">{String(initial.hours).padStart(2, '0')}</span>
+            <span class="widget__label">Hours</span>
+          </div>
+          <div class="widget__cell">
+            <span class="widget__num" data-unit="minutes">{String(initial.minutes).padStart(2, '0')}</span>
+            <span class="widget__label">Min</span>
+          </div>
+        </div>
+      )}
+      <p class="widget__note">
+        Launch time varies by region. <a href="https://gta6record.com/gta-6-release-time" target="_blank" rel="noopener">See unlock times</a>
+      </p>
+      <a class="widget__credit" href="https://gta6record.com/gta-6-countdown" target="_blank" rel="noopener">
+        GTA 6 countdown by GTA 6 Record
+      </a>
+    </div>
+
+    <script is:inline>
+      // Same tick as the main site's Countdown component, trimmed to the
+      // three units this widget shows. If the target has already passed by
+      // the time this runs, it swaps in the launched line instead of ever
+      // showing a negative number.
+      var grid = document.querySelector('.widget__grid')
+      if (grid && grid.dataset.launched !== 'true') {
+        var target = new Date(grid.dataset.target).getTime()
+
+        var tick = function () {
+          var diff = target - Date.now()
+          if (diff <= 0) {
+            var widget = document.querySelector('.widget')
+            var note = widget.querySelector('.widget__note')
+            grid.outerHTML = '<p class="widget__launched">Grand Theft Auto VI has launched.</p>'
+            if (note) note.style.display = 'none'
+            window.clearInterval(timer)
+            return
+          }
+
+          var totalSeconds = Math.floor(diff / 1000)
+          var days = Math.floor(totalSeconds / 86400)
+          var hours = Math.floor((totalSeconds % 86400) / 3600)
+          var minutes = Math.floor((totalSeconds % 3600) / 60)
+
+          var set = function (unit, value, pad) {
+            var el = grid.querySelector('[data-unit="' + unit + '"]')
+            if (el) el.textContent = pad ? String(value).padStart(2, '0') : String(value)
+          }
+
+          set('days', days, false)
+          set('hours', hours, true)
+          set('minutes', minutes, true)
+        }
+
+        tick()
+        var timer = window.setInterval(tick, 60000)
+      }
+    </script>
+  </body>
+</html>

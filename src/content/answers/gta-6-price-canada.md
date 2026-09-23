@@ -4,6 +4,10 @@ description: "GTA 6 pre-orders cost CA$109.99 for Standard and CA$139.99 for Ult
 keyword: "gta 6 price canada"
 order: 3
 updated: "2026-09-23"
+quick: "A GTA 6 pre-order costs CA$109.99 for the Standard Edition and CA$139.99 for the Ultimate Edition in Canada, before tax."
+changes:
+  - date: "2026-09-23"
+    note: "Checked against sources."
 sources:
   - label: "PlayStation Canada: Grand Theft Auto VI (PS5)"
     url: "https://www.playstation.com/en-ca/games/grand-theft-auto-vi/"

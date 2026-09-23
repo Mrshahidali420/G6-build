@@ -4,6 +4,10 @@ description: "No official GTA 6 weapons list exists. Here is every weapon seen i
 keyword: "gta 6 weapons"
 order: 21
 updated: "2026-09-16"
+quick: "Rockstar has not published a weapons list for GTA 6. What exists is a set of weapons actually seen in the trailers, screenshots, and the Extended Look."
+changes:
+  - date: "2026-09-16"
+    note: "Checked against sources."
 sources:
   - label: "GTA Wiki: Weapons in Grand Theft Auto VI"
     url: "https://gta.wiki/w/Weapons_in_GTA_VI"

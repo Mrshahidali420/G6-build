@@ -4,6 +4,10 @@ description: "PlayStation Store listings show GTA 6 unlocking at midnight local 
 keyword: "gta 6 release time"
 order: 1
 updated: "2026-09-23"
+quick: "GTA 6 unlocks at midnight local time on 19 November 2026 on PS5, per PlayStation Store listings, rolling out country by country starting in New Zealand."
+changes:
+  - date: "2026-09-23"
+    note: "Checked against sources."
 sources:
   - label: "Rockstar Newswire: Pre-Order Grand Theft Auto VI on June 25"
     url: "https://www.rockstargames.com/newswire/article/5171972o3ak5oa/pre-order-grand-theft-auto-vi-on-june-25"

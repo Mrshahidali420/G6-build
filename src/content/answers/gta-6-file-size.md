@@ -4,6 +4,10 @@ description: "Rockstar has not published a GTA 6 install size. Here is why the n
 keyword: "gta 6 file size"
 order: 11
 updated: "2026-09-15"
+quick: "Rockstar has not published a file size for GTA 6. No install size figure exists yet from Rockstar, Sony, or Microsoft."
+changes:
+  - date: "2026-09-15"
+    note: "Checked against sources."
 sources:
   - label: "GameSpot: GTA 6 preloading start date and what to know about digital and physical copies"
     url: "https://www.gamespot.com/articles/gta-6-preloading-start-date-and-what-to-know-about-digital-and-physical-copies/"

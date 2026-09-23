@@ -4,6 +4,10 @@ description: "The confirmed songs from GTA 6's two trailers and its Netflix Exte
 keyword: "gta 6 trailer song"
 order: 13
 updated: "2026-09-15"
+quick: "Rockstar confirmed Trailer 1 uses Tom Petty's Love Is a Long Road. Press outlets have identified the other trailer and Extended Look tracks by ear."
+changes:
+  - date: "2026-09-15"
+    note: "Checked against sources."
 sources:
   - label: "Tom Petty official site: Love Is a Long Road featured in Trailer 1"
     url: "https://www.tompetty.com/blogs/news/tom-petty-s-love-is-a-long-road-from-full-moon-fever-featured-in-trailer-1-of-grand-theft-auto-vi"

@@ -22,3 +22,15 @@
 
 /pagefind/*
   Cache-Control: public, max-age=604800
+
+# The countdown widget is meant to be framed by other sites, so the site-wide
+# X-Frame-Options: SAMEORIGIN and frame-ancestors 'self' above would break the
+# one thing this page is for. This block is more specific than /*, so
+# Cloudflare Pages applies it instead for anything under /embed/. The `!`
+# prefix removes the inherited header rather than trying to override it with
+# a value, since X-Frame-Options has no "allow everyone" value once ALLOW-FROM
+# was dropped by browsers. No AdSense, no analytics domain is in this page, so
+# the CSP below is written from scratch and stays tight.
+/embed/*
+  ! X-Frame-Options
+  Content-Security-Policy: default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; frame-ancestors *; base-uri 'self'

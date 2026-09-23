@@ -4,6 +4,10 @@ description: "Rockstar has not detailed a GTA 6 online mode and has not said wha
 keyword: "gta 6 online"
 order: 16
 updated: "2026-09-15"
+quick: "There is no confirmed GTA 6 online mode. Rockstar has not detailed one or said what happens to GTA Online after GTA 6 launches on 19 November 2026."
+changes:
+  - date: "2026-09-15"
+    note: "Checked against sources."
 sources:
   - label: "Rockstar Newswire: Pre-Order Grand Theft Auto VI on June 25"
     url: "https://www.rockstargames.com/newswire/article/5171972o3ak5oa/pre-order-grand-theft-auto-vi-on-june-25"

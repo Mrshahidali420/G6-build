@@ -4,6 +4,10 @@ description: "A plain-language guide to picking a TV for GTA 6 on PS5 or Xbox: H
 keyword: "best tv for gta 6"
 order: 106
 updated: "2026-09-15"
+quick: "Rockstar has not announced GTA 6's resolution, frame rate, or HDR support, so no TV can be called the GTA 6 TV. This page gives general advice instead."
+changes:
+  - date: "2026-09-15"
+    note: "Checked against sources."
 sources:
   - label: "Rockstar Newswire: Pre-Order Grand Theft Auto VI on June 25"
     url: "https://www.rockstargames.com/newswire/article/5171972o3ak5oa/pre-order-grand-theft-auto-vi-on-june-25"

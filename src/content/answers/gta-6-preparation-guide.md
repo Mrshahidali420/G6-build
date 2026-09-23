@@ -4,6 +4,10 @@ description: "A plain checklist for GTA 6 launch day. Storage, console, pre-orde
 keyword: "gta 6 preparation guide"
 order: 26
 updated: "2026-09-21"
+quick: "There are five things worth doing before GTA 6 launches, and only one of them is urgent right now."
+changes:
+  - date: "2026-09-21"
+    note: "Checked against sources."
 sources:
   - label: "Rockstar Newswire: Pre-Order Grand Theft Auto VI on June 25"
     url: "https://www.rockstargames.com/newswire/article/5171972o3ak5oa/pre-order-grand-theft-auto-vi-on-june-25"

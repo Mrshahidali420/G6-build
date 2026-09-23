@@ -4,6 +4,10 @@ description: "GTA 6 preloading starts 12 November 2026, one week before launch. 
 keyword: "gta 6 preload"
 order: 6
 updated: "2026-09-15"
+quick: "GTA 6 preloading starts on 12 November 2026, one week before the 19 November 2026 release. The install size has not been announced."
+changes:
+  - date: "2026-09-15"
+    note: "Checked against sources."
 sources:
   - label: "Rockstar Newswire: Pre-Order Grand Theft Auto VI on June 25"
     url: "https://www.rockstargames.com/newswire/article/5171972o3ak5oa/pre-order-grand-theft-auto-vi-on-june-25"

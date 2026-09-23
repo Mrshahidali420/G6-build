@@ -8,6 +8,7 @@
 import { getCollection } from 'astro:content'
 import BaseLayout from '../../../../layouts/BaseLayout.astro'
 import Ad from '../../../../components/Ad.astro'
+import Evidence from '../../../../components/Evidence.astro'
 import { SITE_NAME, SITE_URL, canonical } from '../../../../lib/site.mjs'
 import { GAME } from '../../../../lib/schema.mjs'
 import { STATUSES, STATUS_CLASS, SOURCE_KIND, longDate, longMonth, trackerUrl } from '../../../../lib/claim-record.mjs'
@@ -125,7 +126,8 @@ const topSource = Object.entries(sources).sort((a, b) => b[1] - a[1])[0]
               <li class="row">
                 <a class="row__link" href={trackerUrl(item.id)}>{item.data.title}</a>
                 <span class="row__meta">
-                  <time datetime={item.data.date}>{longDate(item.data.date)}</time> · {item.data.source.label}
+                  <Evidence item={item} />
+                  <span><time datetime={item.data.date}>{longDate(item.data.date)}</time> · {item.data.source.label}</span>
                 </span>
               </li>
             ))}
@@ -181,7 +183,7 @@ const topSource = Object.entries(sources).sort((a, b) => b[1] - a[1])[0]
   .row:last-child { border-bottom: 0; }
   .row__link { color: var(--ink); font: 600 16px/1.45 var(--body); text-decoration: none; border-bottom: 2px solid var(--glaze-tint); }
   .row__link:hover { border-bottom-color: var(--glaze); }
-  .row__meta { display: block; margin: 4px 0 0; font: 600 11px/1 var(--ui); letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); }
+  .row__meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; margin: 6px 0 0; font: 600 11px/1.2 var(--ui); letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); }
 
   .pager { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 10px 0 0; }
   .pager__btn {

@@ -2,6 +2,7 @@
 // This is the part no competing GTA site does, so it is worth getting right.
 
 import { SITE_NAME, SITE_URL, canonical } from './site.mjs'
+import { TAKES_ADDITIONAL_PROPERTY } from './entities.mjs'
 
 const GAME = {
   '@type': 'VideoGame',
@@ -25,8 +26,24 @@ const TYPE_MAP = {
   edition: 'Product',
 }
 
+// The real-world counterpart as a labelled property of the game thing. It is
+// never put in address or geo: those would claim the fictional place stands at
+// the real one. Only node types that take additionalProperty get it, and the
+// label says the link is community-identified, as the page does.
+function realWorldProperties(entity) {
+  const rows = []
+  if (entity.realLife?.basedOn) {
+    rows.push({ name: 'Real-life basis (community-identified)', value: entity.realLife.basedOn })
+  }
+  if (entity.realPlace?.address) {
+    rows.push({ name: 'Real-world place (community-identified)', value: entity.realPlace.address })
+  }
+  return rows.map((row) => ({ '@type': 'PropertyValue', ...row }))
+}
+
 export function entitySchema(entity, path) {
   const schemaType = TYPE_MAP[entity.entityType] ?? 'Thing'
+  const realWorld = TAKES_ADDITIONAL_PROPERTY.includes(schemaType) ? realWorldProperties(entity) : []
 
   const node = {
     '@type': schemaType,
@@ -37,6 +54,7 @@ export function entitySchema(entity, path) {
     ...(entity.altNames.length ? { alternateName: entity.altNames } : {}),
     ...(entity.sources.length ? { subjectOf: entity.sources.map((url) => ({ '@type': 'WebPage', url })) } : {}),
     isPartOf: GAME,
+    ...(realWorld.length ? { additionalProperty: realWorld } : {}),
   }
 
   // Only entries that carry a hand written question set get a FAQPage node.

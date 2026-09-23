@@ -4,6 +4,10 @@ description: "GTA 6's install size has not been published. Here is how PS5 and X
 keyword: "ps5 ssd for gta 6"
 order: 104
 updated: "2026-09-15"
+quick: "GTA 6's install size has not been published anywhere official, so nobody can say exactly how much storage you need yet."
+changes:
+  - date: "2026-09-15"
+    note: "Checked against sources."
 sources:
   - label: "Rockstar Newswire: Pre-Order Grand Theft Auto VI on June 25"
     url: "https://www.rockstargames.com/newswire/article/5171972o3ak5oa/pre-order-grand-theft-auto-vi-on-june-25"

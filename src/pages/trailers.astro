@@ -13,6 +13,7 @@ import BaseLayout from '../layouts/BaseLayout.astro'
 import { SITE_NAME, SITE_URL, canonical } from '../lib/site.mjs'
 import { GAME } from '../lib/schema.mjs'
 import feed from '../data/trailers.json'
+import { cleanNote } from '../lib/shots.mjs'
 
 const videos = feed.videos
 const events = videos.flatMap((video) => video.events)
@@ -154,7 +155,8 @@ const jsonLd = {
           <h2 class="reel__title">{video.title}</h2>
           <p class="reel__sub">
             {video.eventCount} things recorded, {video.confirmedCount} of them confirmed.
-            <a href={video.url} rel="nofollow noopener"> Watch it on YouTube</a>
+            <a href={`/trailers/${video.id}`}> Shot by shot</a> ·
+            <a href={video.url} rel="nofollow noopener">Watch it on YouTube</a>
           </p>
         </header>
 
@@ -170,7 +172,7 @@ const jsonLd = {
                     : <span class="reel__name">{event.entity}</span>}
                   {event.confidence !== 'confirmed' && <span class="reel__soft">reported</span>}
                 </p>
-                {event.note && <p class="reel__note">{event.note}</p>}
+                {event.note && <p class="reel__note">{cleanNote(event.note)}</p>}
               </div>
             </li>
           ))}

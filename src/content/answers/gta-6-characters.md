@@ -4,6 +4,10 @@ description: "Every GTA 6 character Rockstar has actually named on its own site,
 keyword: "gta 6 characters"
 order: 25
 updated: "2026-09-16"
+quick: "Rockstar has named eleven people for GTA 6 on one page of its own site, Only in Leonida. Jason Duval and Lucia Caminos are the two playable leads."
+changes:
+  - date: "2026-09-16"
+    note: "Checked against sources."
 sources:
   - label: "Rockstar Games: Only in Leonida"
     url: "https://www.rockstargames.com/VI/only-in-leonida"

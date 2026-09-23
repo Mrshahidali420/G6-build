@@ -3,9 +3,12 @@ import { getCollection, render } from 'astro:content'
 import BaseLayout from '../../layouts/BaseLayout.astro'
 import Ad from '../../components/Ad.astro'
 import EntityTile from '../../components/EntityTile.astro'
+import Evidence from '../../components/Evidence.astro'
 import { HUB_TYPES } from '../../lib/site.mjs'
 import { entitiesOfType, urlFor } from '../../lib/entities.mjs'
 import { collectionSchema } from '../../lib/schema.mjs'
+import { labelFor, countByEvidence } from '../../lib/evidence.mjs'
+import { songTimings, NOT_LOGGED } from '../../lib/soundtrack.mjs'
 
 export async function getStaticPaths() {
   const intros = await getCollection('hubs')
@@ -22,10 +25,55 @@ export async function getStaticPaths() {
 const { hub, items, intro } = Astro.props
 const path = `/${hub.slug}`
 const confirmedCount = items.filter((item) => item.confirmedStatus === 'OFFICIAL_CONFIRMED').length
-const pressCount = items.filter((item) => item.confirmedStatus === 'PRESS_REPORTED').length
 const fallback = `Every ${hub.title.replace('GTA 6 ', '').toLowerCase()} confirmed for Grand Theft Auto VI so far. ${items.length} entries, ${confirmedCount} confirmed by Rockstar, each one with its source.`
 const description = intro?.data.description ?? fallback
 const Content = intro ? (await render(intro)).Content : null
+
+// Each entry counts once, under the strongest evidence behind it, so the
+// buckets add up to the total.
+const evidenceCounts = countByEvidence(items)
+
+// The kind of thing (vehicle class, weapon type, role). The source column is
+// free text, so near duplicates are folded ("coupé" and "coupe") and only
+// values shared by three or more entries become a filter. An entry whose kind
+// is blank or rare is still listed; it just has no chip of its own.
+const subKey = (value) =>
+  String(value ?? '')
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim()
+const subTally = new Map()
+for (const item of items) {
+  const key = subKey(item.subcategory)
+  if (!key) continue
+  const row = subTally.get(key) ?? { key, label: item.subcategory.trim(), count: 0 }
+  row.count += 1
+  subTally.set(key, row)
+}
+const MIN_SUB = 3
+const MAX_SUB = 8
+const subOptions = [...subTally.values()]
+  .filter((row) => row.count >= MIN_SUB)
+  .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label))
+  .slice(0, MAX_SUB)
+  .map((row) => ({ ...row, label: row.label.charAt(0).toUpperCase() + row.label.slice(1) }))
+const subKeys = new Set(subOptions.map((row) => row.key))
+const showSubFilter = subOptions.length >= 2
+const showEvidenceFilter = evidenceCounts.length >= 2
+const showFilters = showSubFilter || showEvidenceFilter
+
+const tileAttrs = (item) => {
+  const sub = subKey(item.subcategory)
+  return {
+    'data-evidence': labelFor(item).key,
+    'data-sub': subKeys.has(sub) ? sub : '',
+  }
+}
+
+const isSoundtrack = hub.type === 'song'
+const timings = isSoundtrack ? songTimings() : []
 ---
 <BaseLayout
   title={hub.title}
@@ -47,21 +95,64 @@ const Content = intro ? (await render(intro)).Content : null
           <dt>Entries</dt>
           <dd>{items.length}</dd>
         </div>
-        <div>
-          <dt>Confirmed by Rockstar</dt>
-          <dd>{confirmedCount}</dd>
-        </div>
-        <div>
-          <dt>Reported by the press</dt>
-          <dd>{pressCount}</dd>
-        </div>
+        {evidenceCounts.map((row) => (
+          <div>
+            <dt>{row.text}</dt>
+            <dd>{row.count}</dd>
+          </div>
+        ))}
       </dl>
+      <p class="stats-note">
+        Each entry is counted once, under the strongest evidence behind it.
+      </p>
     </div>
   </section>
 
   {Content && (
     <section class="band band--plaster">
       <div class="shell prose article"><Content /></div>
+    </section>
+  )}
+
+  {isSoundtrack && (
+    <section class="band band--stone" id="song-timings">
+      <div class="shell">
+        <div class="prose">
+          <h2 style="margin-top:0">When each song plays</h2>
+          <p>
+            Every song on this page, the Rockstar video it plays in, and the
+            moment it starts. The Extended Look timings are the ones the cited
+            press source logged. Trailer 1 and Trailer 2 timings are the second
+            the <a href="/trailers">trailer index</a> records the song, not the
+            whole run. Where our sources give no time or scene, the cell says
+            {' '}{NOT_LOGGED}. Nothing is estimated.
+          </p>
+        </div>
+        <div class="scroller">
+          <table class="timings">
+            <thead>
+              <tr>
+                <th scope="col">Song</th>
+                <th scope="col">Artist</th>
+                <th scope="col">Where it plays</th>
+                <th scope="col">Timestamp</th>
+                <th scope="col">Scene</th>
+              </tr>
+            </thead>
+            <tbody>
+              {timings.map((row) => (
+                <tr>
+                  <th scope="row"><a href={row.href}>{row.name}</a></th>
+                  <td>{row.artist}</td>
+                  <td>{row.videoHref ? <a href={row.videoHref}>{row.videoTitle}</a> : row.videoTitle}</td>
+                  <td class={row.timestamp === NOT_LOGGED ? 'dim' : 'clock'}>{row.timestamp}</td>
+                  <td class={row.scene === NOT_LOGGED ? 'dim' : ''}>{row.scene}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
     </section>
   )}
 
@@ -72,10 +163,138 @@ const Content = intro ? (await render(intro)).Content : null
         Every tile opens a page that shows where its facts came from and how sure
         that makes us.
       </p>
-      <ul class="tiles">
-        {items.map((item, index) => <EntityTile entity={item} eager={index < 6} />)}
+
+      {showFilters && (
+        <div class="filters" data-filters hidden>
+          {showEvidenceFilter && (
+            <div class="filters__group" role="group" aria-label="Filter by evidence">
+              <span class="filters__label">Evidence</span>
+              <button type="button" class="fchip" data-group="evidence" data-value="" aria-pressed="true">
+                All <span class="fchip__n">{items.length}</span>
+              </button>
+              {evidenceCounts.map((row) => (
+                <button type="button" class="fchip" data-group="evidence" data-value={row.key} aria-pressed="false" title={row.means}>
+                  {row.text} <span class="fchip__n">{row.count}</span>
+                </button>
+              ))}
+            </div>
+          )}
+          {showSubFilter && (
+            <div class="filters__group" role="group" aria-label="Filter by type">
+              <span class="filters__label">Type</span>
+              <button type="button" class="fchip" data-group="sub" data-value="" aria-pressed="true">
+                All
+              </button>
+              {subOptions.map((row) => (
+                <button type="button" class="fchip" data-group="sub" data-value={row.key} aria-pressed="false">
+                  {row.label} <span class="fchip__n">{row.count}</span>
+                </button>
+              ))}
+            </div>
+          )}
+          <p class="filters__status" data-filter-status aria-live="polite">Showing all {items.length}</p>
+        </div>
+      )}
+
+      <ul class="tiles" data-hub-tiles>
+        {items.map((item, index) => <EntityTile entity={item} eager={index < 6} {...tileAttrs(item)} />)}
       </ul>
+      {showFilters && <p class="filters__empty" data-filter-empty hidden>No entry matches both filters. Pick "All" in one of them.</p>}
+
+      {showEvidenceFilter && (
+        <ul class="legend">
+          {evidenceCounts.map((row) => (
+            <li><Evidence label={{ ...row, detail: null }} /><p>{row.means}</p></li>
+          ))}
+        </ul>
+      )}
     </div>
   </section>
   <Ad placement="foot" />
 </BaseLayout>
+
+<script>
+  // Progressive enhancement only: every tile is in the HTML and stays there.
+  // Without this script the filter bar never shows and the full list reads as
+  // before. With it, tiles are hidden and shown, never removed.
+  const root = document.querySelector('[data-filters]')
+  const list = document.querySelector('[data-hub-tiles]')
+  if (root && list) {
+    const tiles = Array.from(list.children)
+    const status = root.querySelector('[data-filter-status]')
+    const empty = document.querySelector('[data-filter-empty]')
+    const state = { evidence: '', sub: '' }
+
+    const apply = () => {
+      let shown = 0
+      for (const tile of tiles) {
+        const match =
+          (!state.evidence || tile.dataset.evidence === state.evidence) &&
+          (!state.sub || tile.dataset.sub === state.sub)
+        tile.hidden = !match
+        if (match) shown += 1
+      }
+      if (status) {
+        status.textContent = shown === tiles.length
+          ? `Showing all ${tiles.length}`
+          : `Showing ${shown} of ${tiles.length}`
+      }
+      if (empty) empty.hidden = shown !== 0
+    }
+
+    root.addEventListener('click', (event) => {
+      const target = event.target instanceof Element ? event.target : null
+      const button = target?.closest('button[data-group]')
+      if (!(button instanceof HTMLButtonElement)) return
+      const group = button.dataset.group
+      if (group !== 'evidence' && group !== 'sub') return
+      state[group] = button.dataset.value ?? ''
+      for (const other of root.querySelectorAll(`button[data-group="${group}"]`)) {
+        other.setAttribute('aria-pressed', String(other === button))
+      }
+      apply()
+    })
+
+    root.hidden = false
+  }
+</script>
+
+<style>
+  .stats-note { margin: 10px 0 0; font: 400 13px/1.5 var(--ui); color: var(--on-glaze-2); }
+
+  .filters:not([hidden]) { display: grid; gap: 12px; margin: 22px 0 20px; }
+  .filters__group { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+  .filters__label {
+    min-width: 72px; font: 600 11px/1 var(--ui); letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--ink-2);
+  }
+  .fchip {
+    display: inline-flex; align-items: center; gap: 6px; min-height: 36px;
+    padding: 7px 12px; border: 1px solid var(--line-strong); border-radius: var(--r);
+    background: var(--plaster); color: var(--ink); font: 600 14px/1 var(--ui); cursor: pointer;
+  }
+  .fchip:hover { border-color: var(--glaze); color: var(--glaze-deep); }
+  .fchip[aria-pressed='true'] { background: var(--glaze); border-color: var(--glaze); color: var(--on-glaze); }
+  .fchip__n { font-weight: 400; color: inherit; opacity: 0.8; font-variant-numeric: tabular-nums; }
+  .filters__status { margin: 0; font: 600 12px/1 var(--ui); letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); }
+  .filters__empty { margin: 18px 0 0; font: 400 16px/1.5 var(--body); color: var(--ink-2); }
+  [data-hub-tiles] > :global([hidden]) { display: none; }
+
+  .legend { list-style: none; margin: 30px 0 0; padding: 18px 0 0; border-top: 1px solid var(--line); display: grid; gap: 10px; max-width: var(--prose); }
+  .legend li { display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: 4px 14px; align-items: start; }
+  .legend p { margin: 0; font: 400 15px/1.5 var(--body); color: var(--ink-2); }
+
+  .timings { width: 100%; min-width: 640px; border-collapse: collapse; margin: 18px 0 0; font: 400 15px/1.5 var(--body); }
+  .timings th, .timings td { text-align: left; padding: 9px 14px 9px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .timings thead th { font: 600 11px/1 var(--ui); letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-2); border-bottom: 1px solid var(--line-strong); }
+  .timings tbody th { font-weight: 600; }
+  .timings a { color: var(--ink); text-decoration: none; border-bottom: 2px solid var(--glaze-tint); }
+  .timings a:hover { border-bottom-color: var(--glaze); }
+  .timings .clock { white-space: nowrap; font: 600 14px/1.5 var(--ui); font-variant-numeric: tabular-nums; }
+  .timings .dim { color: var(--ink-2); font-style: italic; }
+
+  @media (max-width: 540px) {
+    .legend li { grid-template-columns: 1fr; }
+    .filters__label { min-width: 0; width: 100%; }
+  }
+</style>

@@ -4,6 +4,10 @@ description: "GTA 6 costs £69.99 for the Standard Edition and £89.99 for the U
 keyword: "gta 6 price uk"
 order: 3
 updated: "2026-09-23"
+quick: "GTA 6 costs £69.99 for the Standard Edition and £89.99 for the Ultimate Edition in the UK, live now on the PlayStation Store."
+changes:
+  - date: "2026-09-23"
+    note: "Checked against sources."
 sources:
   - label: "PlayStation UK: Grand Theft Auto VI (PS5)"
     url: "https://www.playstation.com/en-gb/games/grand-theft-auto-vi/"

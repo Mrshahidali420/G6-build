@@ -4,6 +4,10 @@ description: "What Rockstar has confirmed about the GTA 6 story: Jason and Lucia
 keyword: "gta 6 story"
 order: 24
 updated: "2026-09-16"
+quick: "Rockstar has confirmed a premise, not a plot. GTA 6 follows leads Jason Duval and Lucia Caminos, pulled into a conspiracy across Leonida after a robbery goes wrong."
+changes:
+  - date: "2026-09-16"
+    note: "Checked against sources."
 sources:
   - label: "Rockstar Games: the official Grand Theft Auto VI site"
     url: "https://www.rockstargames.com/VI/"

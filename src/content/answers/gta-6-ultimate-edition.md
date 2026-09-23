@@ -4,6 +4,10 @@ description: "The GTA 6 Ultimate Edition costs 99.99 USD, 20 more than Standard.
 keyword: "gta 6 ultimate edition"
 order: 4
 updated: "2026-09-23"
+quick: "GTA 6 Ultimate Edition costs 99.99 USD, 20 USD more than Standard. It adds exclusive vehicles, weapons, apparel, businesses, and two extra side missions."
+changes:
+  - date: "2026-09-23"
+    note: "Added sources confirming the Ultimate Edition contents and UK pricing."
 sources:
   - label: "Rockstar Newswire: Pre-Order Grand Theft Auto VI on June 25"
     url: "https://www.rockstargames.com/newswire/article/5171972o3ak5oa/pre-order-grand-theft-auto-vi-on-june-25"

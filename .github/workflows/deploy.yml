@@ -30,3 +30,17 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy dist --project-name=gta6record --branch=main
+      # IndexNow manifest (url -> content hash), so only pages that actually
+      # changed get resubmitted. The primary key includes the run id so this
+      # run always saves a fresh cache entry at the end of the job (actions/
+      # cache does this automatically); restore-keys falls back to the most
+      # recent manifest from any prior run since no run id will ever match.
+      - name: Restore IndexNow manifest
+        uses: actions/cache@v4
+        with:
+          path: .indexnow-manifest.json
+          key: indexnow-manifest-${{ github.run_id }}
+          restore-keys: |
+            indexnow-manifest-
+      - name: Notify IndexNow of changed URLs
+        run: node scripts/indexnow.mjs

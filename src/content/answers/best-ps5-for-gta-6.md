@@ -4,6 +4,10 @@ description: "A plain guide to picking a PS5 for GTA 6, covering disc versus dig
 keyword: "best ps5 for gta 6"
 order: 101
 updated: "2026-09-15"
+quick: "Any current PS5 will let you play GTA 6 on release day, 19 November 2026. The real choice is disc versus digital and how much storage to add."
+changes:
+  - date: "2026-09-15"
+    note: "Checked against sources."
 sources:
   - label: "Rockstar Newswire: Pre-Order Grand Theft Auto VI on June 25"
     url: "https://www.rockstargames.com/newswire/article/5171972o3ak5oa/pre-order-grand-theft-auto-vi-on-june-25"

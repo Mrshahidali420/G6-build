@@ -4,6 +4,10 @@ description: "A side by side look at GTA 5 history and confirmed GTA 6 facts, wi
 keyword: "gta 6 vs gta 5"
 order: 14
 updated: "2026-09-15"
+quick: "GTA 5 is a finished, eleven-year-old game with a full public history. GTA 6 is unreleased, with only a small set of facts confirmed by Rockstar so far."
+changes:
+  - date: "2026-09-15"
+    note: "Checked against sources."
 sources:
   - label: "Rockstar Newswire: Pre-Order Grand Theft Auto VI on June 25"
     url: "https://www.rockstargames.com/newswire/article/5171972o3ak5oa/pre-order-grand-theft-auto-vi-on-june-25"

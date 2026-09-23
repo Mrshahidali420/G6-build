@@ -5,6 +5,10 @@ keyword: "gta 6 countdown"
 order: 2
 updated: "2026-09-16"
 countdown: true
+quick: "GTA 6 is due 19 November 2026. The counter on this page runs to 00:00 UTC on that date, the start of the day Rockstar named, not a guessed unlock hour."
+changes:
+  - date: "2026-09-16"
+    note: "Checked against sources."
 sources:
   - label: "Rockstar Newswire: Pre-Order Grand Theft Auto VI on June 25"
     url: "https://www.rockstargames.com/newswire/article/5171972o3ak5oa/pre-order-grand-theft-auto-vi-on-june-25"

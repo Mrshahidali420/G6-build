@@ -20,6 +20,7 @@ const path = `/${page.id}`
 const data = page.data
 
 const related = data.related.map((slug) => bySlug.get(slug)).filter(Boolean)
+const changes = [...(data.changes ?? [])].sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0))
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -38,6 +39,7 @@ const jsonLd = {
       '@id': canonical(path),
       headline: data.title,
       description: data.description,
+      ...(data.quick ? { abstract: data.quick } : {}),
       dateModified: data.updated,
       mainEntityOfPage: canonical(path),
       publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
@@ -61,6 +63,16 @@ const jsonLd = {
       )}
     </div>
   </section>
+
+  {data.quick && (
+    <section class="band">
+      <div class="shell">
+        <p class="plaque" style="border-left:4px solid var(--brass-ink)">
+          <strong>Quick answer:</strong> {data.quick}
+        </p>
+      </div>
+    </section>
+  )}
 
   {data.countdown && (
     <section class="band band--glaze">
@@ -148,6 +160,17 @@ const jsonLd = {
           </>
         ))}
       </dl>
+
+      {changes.length > 0 && (
+        <>
+          <h2>Update log</h2>
+          <ul class="plaque__meta" style="list-style:none;margin:0 0 1.4em;padding:0">
+            {changes.map((change) => (
+              <li style="margin-bottom:6px"><strong style="color:var(--ink)">{change.date}:</strong> {change.note}</li>
+            ))}
+          </ul>
+        </>
+      )}
 
       <h2>Where this comes from</h2>
       <div class="plaque">

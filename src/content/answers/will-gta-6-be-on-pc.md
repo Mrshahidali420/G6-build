@@ -4,6 +4,10 @@ description: "Rockstar has not announced a PC version of GTA 6 or given it a dat
 keyword: "will gta 6 be on pc"
 order: 8
 updated: "2026-09-15"
+quick: "Rockstar has not announced a PC version of GTA 6. The only confirmed platforms are PlayStation 5 and Xbox Series X|S."
+changes:
+  - date: "2026-09-15"
+    note: "Checked against sources."
 sources:
   - label: "GameSpot: GTA 6 preloading start date and what to know about digital and physical copies"
     url: "https://www.gamespot.com/articles/gta-6-preloading-start-date-and-what-to-know-about-digital-and-physical-copies/"

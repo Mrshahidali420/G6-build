@@ -1,0 +1,199 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import { SITE_URL } from '../lib/site.mjs'
+
+const description = 'Add a free, live GTA 6 countdown to your website. Copy one iframe snippet, pick light or dark, and keep the credit link back to GTA 6 Record.'
+
+const snippet = `<iframe src="${SITE_URL}/embed/countdown" width="300" height="150" style="border:0;max-width:100%" loading="lazy" title="GTA 6 countdown"></iframe>`
+const snippetDark = `<iframe src="${SITE_URL}/embed/countdown?theme=dark" width="300" height="150" style="border:0;max-width:100%" loading="lazy" title="GTA 6 countdown"></iframe>`
+---
+<BaseLayout title="Free GTA 6 Countdown Widget to Embed" description={description} path="/embeds" shop={false}>
+  <section class="band band--glaze">
+    <div class="shell">
+      <p class="crumb" style="color:var(--on-glaze-2)">
+        <a href="/" style="color:var(--on-glaze-2)">GTA 6 Record</a> / Embeds
+      </p>
+      <h1 style="max-width:20ch">A free GTA 6 countdown for your site</h1>
+      <p class="lede">
+        A small, live counter to the 19 November 2026 launch date, ready to
+        paste into any page. It loads in an iframe, so it never touches your
+        site's own styles or scripts, and it carries no ad and no tracker of
+        its own.
+      </p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="shell prose">
+      <h2>See it live</h2>
+      <p>Light on top, dark underneath. Both are the same widget, one query string apart.</p>
+
+      <div class="embed-preview">
+        <iframe
+          class="embed-preview__frame"
+          src="/embed/countdown"
+          width="300"
+          height="150"
+          style="border:0"
+          loading="lazy"
+          title="GTA 6 countdown, light"
+        ></iframe>
+        <iframe
+          class="embed-preview__frame"
+          src="/embed/countdown?theme=dark"
+          width="300"
+          height="150"
+          style="border:0"
+          loading="lazy"
+          title="GTA 6 countdown, dark"
+        ></iframe>
+      </div>
+
+      <h2>Copy the code</h2>
+      <p>Paste this where you want the widget to sit. It is a plain iframe; no script tag to add.</p>
+
+      <div class="embed-code" data-embed-code>
+        <div class="embed-code__bar">
+          <span>Light</span>
+          <button type="button" class="embed-code__copy" data-copy-target="snippet-light">
+            Copy
+          </button>
+        </div>
+        <pre id="snippet-light">{snippet}</pre>
+      </div>
+
+      <div class="embed-code" data-embed-code>
+        <div class="embed-code__bar">
+          <span>Dark</span>
+          <button type="button" class="embed-code__copy" data-copy-target="snippet-dark">
+            Copy
+          </button>
+        </div>
+        <pre id="snippet-dark">{snippetDark}</pre>
+      </div>
+
+      <p>
+        Add <code>?theme=dark</code> to the <code>src</code> to switch it, and resize the
+        <code>width</code> and <code>height</code> attributes anywhere from
+        300&times;150 up to 600&times;200. It reflows to whatever box you give it.
+      </p>
+
+      <h2>Terms</h2>
+      <ul>
+        <li>Free to use on any site, no permission needed.</li>
+        <li>Keep the credit link inside the widget. It is what pays for keeping this free.</li>
+        <li>Do not edit the widget's own markup or hide the credit line with CSS.</li>
+        <li>We may update the design over time; the iframe URL will not change.</li>
+      </ul>
+      <p>
+        Questions about the widget? <a href="/contact">Contact us</a>. For more on how this
+        site checks its facts, see <a href="/about">About and sources</a>.
+      </p>
+    </div>
+  </section>
+
+  <script is:inline>
+    document.querySelectorAll('[data-copy-target]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var pre = document.getElementById(btn.getAttribute('data-copy-target'))
+        if (!pre) return
+        var text = pre.textContent || ''
+        var done = function () {
+          var label = btn.querySelector('span') || btn
+          var original = btn.textContent
+          btn.classList.add('embed-code__copy--done')
+          btn.textContent = 'Copied'
+          window.setTimeout(function () {
+            btn.textContent = original
+            btn.classList.remove('embed-code__copy--done')
+          }, 1600)
+        }
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(done).catch(function () {})
+        } else {
+          var range = document.createRange()
+          range.selectNode(pre)
+          window.getSelection().removeAllRanges()
+          window.getSelection().addRange(range)
+          try {
+            document.execCommand('copy')
+            done()
+          } catch (e) {}
+          window.getSelection().removeAllRanges()
+        }
+      })
+    })
+  </script>
+
+  <style>
+    .embed-preview {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin: 18px 0 28px;
+    }
+
+    .embed-preview__frame {
+      display: block;
+      max-width: 100%;
+      border: 1px solid var(--line-strong);
+      border-radius: 2px;
+    }
+
+    .embed-code {
+      margin: 0 0 18px;
+      border: 1px solid var(--line-strong);
+      border-radius: 2px;
+      overflow: hidden;
+      background: var(--plaster);
+    }
+
+    .embed-code__bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 12px;
+      background: var(--chip);
+      font-family: var(--ui);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--ink-2);
+    }
+
+    .embed-code__copy {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--ui);
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--glaze-deep);
+      background: transparent;
+      border: 1px solid var(--line-strong);
+      border-radius: 2px;
+      padding: 4px 10px;
+      cursor: pointer;
+    }
+
+    .embed-code__copy:hover { background: var(--stone); }
+    .embed-code__copy--done { color: var(--glaze-deep); border-color: var(--glaze-deep); }
+
+    .embed-code pre {
+      margin: 0;
+      padding: 14px 16px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.82rem;
+      line-height: 1.5;
+      color: var(--ink);
+      overflow-x: auto;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+
+    @media (max-width: 460px) {
+      .embed-preview { gap: 12px; }
+    }
+  </style>
+</BaseLayout>

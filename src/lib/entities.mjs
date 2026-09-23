@@ -163,18 +163,37 @@ export function metaDescriptionWithInGame(entity, max = 160) {
   return joined.length <= max ? joined : base
 }
 
+// The line the entity page prints as its meta description. The same as above,
+// plus "Based on the X." for a vehicle with a community-identified real-life
+// basis, only when the line still fits and was not already cut short.
+export function pageDescription(entity, max = 160) {
+  const base = metaDescriptionWithInGame(entity, max)
+  const basedOn = entity.realLife?.basedOn
+  if (!basedOn || base.endsWith('...')) return base
+  const joined = `${endStop(base)} Based on the ${endStop(basedOn)}`
+  return joined.length <= max ? joined : base
+}
+
+// A plain OpenStreetMap link centred on a point. No tiles are loaded on the
+// page; the reader follows the link if they want the map.
+export const osmUrl = ({ lat, lng }) =>
+  `https://www.openstreetmap.org/?mlat=${lat}&mlon=${lng}#map=16/${lat}/${lng}`
+
 // Adds the in-game facts to the page's main JSON-LD node as schema.org
-// additionalProperty values. Only for node types that take that property
+// additionalProperty values, after any the node already carries. Only for node types that take that property
 // (Product, Place and its kinds). Songs are MusicRecording, which does not, so
 // their JSON-LD is left alone. Returns a new object; the input is not changed.
-const TAKES_ADDITIONAL_PROPERTY = ['Product', 'Place', 'LocalBusiness', 'LandmarksOrHistoricalBuildings']
+export const TAKES_ADDITIONAL_PROPERTY = ['Product', 'Place', 'LocalBusiness', 'LandmarksOrHistoricalBuildings']
 
 export function withInGameSchema(schema, entity) {
   const rows = inGameRows(entity)
   if (!rows.length) return schema
   const [node, ...rest] = schema['@graph']
   if (!TAKES_ADDITIONAL_PROPERTY.includes(node['@type'])) return schema
-  const additionalProperty = rows.map(([name, value]) => ({ '@type': 'PropertyValue', name, value }))
+  const additionalProperty = [
+    ...(node.additionalProperty ?? []),
+    ...rows.map(([name, value]) => ({ '@type': 'PropertyValue', name, value })),
+  ]
   return { ...schema, '@graph': [{ ...node, additionalProperty }, ...rest] }
 }
 

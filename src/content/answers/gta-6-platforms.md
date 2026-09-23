@@ -4,6 +4,10 @@ description: "GTA 6 is confirmed for PS5 and Xbox Series X|S only. Here is what 
 keyword: "gta 6 platforms"
 order: 7
 updated: "2026-09-23"
+quick: "GTA 6 is confirmed for PlayStation 5 and Xbox Series X|S only. No PC, PS4, Xbox One, or Nintendo Switch version has been announced."
+changes:
+  - date: "2026-09-23"
+    note: "Rewrote the page title and linked to the Xbox Series X vs S and GTA 6 on PC pages."
 sources:
   - label: "Rockstar Newswire: Pre-Order Grand Theft Auto VI on June 25"
     url: "https://www.rockstargames.com/newswire/article/5171972o3ak5oa/pre-order-grand-theft-auto-vi-on-june-25"

@@ -4,6 +4,10 @@ description: "Rockstar set GTA 6 at 79.99 USD standard and 99.99 USD ultimate. H
 keyword: "gta 6 price"
 order: 2
 updated: "2026-09-23"
+quick: "GTA 6 costs 79.99 USD for the Standard Edition and 99.99 USD for the Ultimate Edition, confirmed directly by Rockstar."
+changes:
+  - date: "2026-09-23"
+    note: "Added PlayStation storefront sources for Canada, Australia and Germany."
 sources:
   - label: "Rockstar Newswire: Pre-Order Grand Theft Auto VI on June 25"
     url: "https://www.rockstargames.com/newswire/article/5171972o3ak5oa/pre-order-grand-theft-auto-vi-on-june-25"

@@ -4,6 +4,10 @@ description: "No ESRB or PEGI rating has been published for GTA 6 yet. Here is h
 keyword: "gta 6 age rating"
 order: 10
 updated: "2026-09-15"
+quick: "No age rating has been published for GTA 6. No ESRB or PEGI rating exists yet in any region, and any claimed rating you see now is not real."
+changes:
+  - date: "2026-09-15"
+    note: "Checked against sources."
 sources:
   - label: "Rockstar Newswire: Pre-Order Grand Theft Auto VI on June 25"
     url: "https://www.rockstargames.com/newswire/article/5171972o3ak5oa/pre-order-grand-theft-auto-vi-on-june-25"

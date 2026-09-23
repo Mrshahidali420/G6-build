@@ -1,0 +1,14 @@
+---
+// The evidence label. Pass the row itself (`item`), or a label already worked
+// out by labelFor() (`label`). Drawn with the provenance mark's shape, so it
+// reads as part of the same system: icon and words carry the meaning.
+import Icon from './Icon.astro'
+import { labelFor } from '../lib/evidence.mjs'
+
+const { item = null, label = null, showDetail = false } = Astro.props
+const ev = label ?? labelFor(item)
+---
+<span class={`mark mark--${ev.tone} evidence`} title={ev.means} data-evidence={ev.key}>
+  <Icon name={ev.icon} size={14} />
+  {ev.text}{showDetail && ev.detail && <span class="evidence__detail">{ev.detail}</span>}
+</span>

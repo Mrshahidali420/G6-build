@@ -6,7 +6,7 @@
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: SAMEORIGIN
   Permissions-Policy: geolocation=(), microphone=(), camera=(), interest-cohort=()
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval' https://pagead2.googlesyndication.com https://partner.googleadservices.com https://tpc.googlesyndication.com https://www.googletagservices.com https://adservice.google.com https://googleads.g.doubleclick.net https://fundingchoicesmessages.google.com https://www.googletagmanager.com https://www.google-analytics.com; frame-src https://googleads.g.doubleclick.net https://tpc.googlesyndication.com https://www.google.com https://www.youtube-nocookie.com; img-src 'self' data: https:; media-src 'self' https://audio-ssl.itunes.apple.com; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self' https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net https://csi.gstatic.com https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com; base-uri 'self'; form-action 'self'; frame-ancestors 'self'
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval' https://pagead2.googlesyndication.com https://partner.googleadservices.com https://tpc.googlesyndication.com https://www.googletagservices.com https://adservice.google.com https://googleads.g.doubleclick.net https://fundingchoicesmessages.google.com https://www.googletagmanager.com https://www.google-analytics.com; frame-src 'self' https://googleads.g.doubleclick.net https://tpc.googlesyndication.com https://www.google.com https://www.youtube-nocookie.com; img-src 'self' data: https:; media-src 'self' https://audio-ssl.itunes.apple.com; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self' https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net https://csi.gstatic.com https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com; base-uri 'self'; form-action 'self'; frame-ancestors 'self'
 
 # Astro emits hashed assets to /_astro, not /assets. The old rule here pointed
 # at a directory this build has never produced, so every CSS and JS file was
@@ -30,7 +30,10 @@
 # prefix removes the inherited header rather than trying to override it with
 # a value, since X-Frame-Options has no "allow everyone" value once ALLOW-FROM
 # was dropped by browsers. No AdSense, no analytics domain is in this page, so
-# the CSP below is written from scratch and stays tight.
+# the CSP below is written from scratch and stays tight. The inherited CSP
+# must be removed with `!` too: Pages otherwise sends both, and the browser
+# enforces the old frame-ancestors 'self' alongside the new one.
 /embed/*
   ! X-Frame-Options
+  ! Content-Security-Policy
   Content-Security-Policy: default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; frame-ancestors *; base-uri 'self'

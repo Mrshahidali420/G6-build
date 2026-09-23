@@ -1,0 +1,27 @@
+{
+  "rawId": "ign-0705da322832",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/nba-star-steven-adams-says-gta-6s-launch-will-lead-to-a-league-wide-drop-in-performance-for-athletes-and-coaches",
+  "published": "2026-09-22",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/08/27/mega-1-1787855222702.jpeg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-09-23T09:49:38.473Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Today, construction was completed on a \"Welcome to Vice City\" sign on the Miami Heat's arena in Florida.",
+          "quote": "Today, construction was completed on a \"Welcome to Vice City\" sign on the Miami Heat's arena in Florida."
+        }
+      ]
+    }
+  ]
+}

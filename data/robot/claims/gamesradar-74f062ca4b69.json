@@ -1,0 +1,63 @@
+{
+  "rawId": "gamesradar-74f062ca4b69",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6s-usd1-million-billboard-goes-up-despite-protests-from-local-police-as-rockstars-real-life-miami-takeover-gets-underway/",
+  "published": "2026-09-22",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/3389mzUBT3d6BLYsdfWpWh-1920-80.jpg",
+  "extractedAt": "2026-09-23T09:49:32.086Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The studio's proposition for a big money takeover of Miami, the real-life inspiration for the fictional Vice City, recently passed muster with local officials despite protests from some police members in the area .",
+          "quote": "The studio's proposition for a big money takeover of Miami, the real-life inspiration for the fictional Vice City, recently passed muster with local officials despite protests from some police members in the area ."
+        },
+        {
+          "fact": "A massive \"welcome to Vice City\" sign has been going up on the Kaseya Center, home of the Miami Heat basketball team, throughout the day.",
+          "quote": "A massive \"welcome to Vice City\" sign has been going up on the Kaseya Center, home of the Miami Heat basketball team, throughout the day."
+        },
+        {
+          "fact": "Latest Videos From GamesRadar+ Watch full video here: 🔴 Port Miami Cruise Ship Terminals | Biscayne Bay Weather | Downtown Miami Skyline | Vice City - YouTube Watch On The Miami Herald reports that Miami-Dade county will collect $975,000 from this sign alone.",
+          "quote": "Latest Videos From GamesRadar+ Watch full video here: 🔴 Port Miami Cruise Ship Terminals | Biscayne Bay Weather | Downtown Miami Skyline | Vice City - YouTube Watch On The Miami Herald reports that Miami-Dade county will collect $975,000 from this sign alone."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Cruise ship",
+      "altNames": [],
+      "slug": "unnamed-cruise-ship",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Latest Videos From GamesRadar+ Watch full video here: 🔴 Port Miami Cruise Ship Terminals | Biscayne Bay Weather | Downtown Miami Skyline | Vice City - YouTube Watch On The Miami Herald reports that Miami-Dade county will collect $975,000 from this sign alone.",
+          "quote": "Latest Videos From GamesRadar+ Watch full video here: 🔴 Port Miami Cruise Ship Terminals | Biscayne Bay Weather | Downtown Miami Skyline | Vice City - YouTube Watch On The Miami Herald reports that Miami-Dade county will collect $975,000 from this sign alone."
+        }
+      ]
+    }
+  ]
+}

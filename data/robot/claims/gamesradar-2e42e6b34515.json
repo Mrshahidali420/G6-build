@@ -1,0 +1,55 @@
+{
+  "rawId": "gamesradar-2e42e6b34515",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6s-usd400-collectible-spoon-is-actually-a-reference-to-another-far-more-expensive-gta-spoon-from-18-years-ago/",
+  "published": "2026-09-24",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/DJ5yrctKvkVPiUUuSo36xg-1920-80.jpg",
+  "extractedAt": "2026-09-24T20:19:01.437Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Decidedly appropriate for anyone preparing to jaunt around Leonida for hours and hours.",
+          "quote": "Decidedly appropriate for anyone preparing to jaunt around Leonida for hours and hours."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The contents include a double-sided poster, a statue of Macca the Gator, and the greatest prize of all, a Vice City-emblazoned spoon.",
+          "quote": "The contents include a double-sided poster, a statue of Macca the Gator, and the greatest prize of all, a Vice City-emblazoned spoon."
+        }
+      ]
+    }
+  ]
+}

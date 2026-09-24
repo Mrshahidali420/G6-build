@@ -1,0 +1,25 @@
+{
+  "rawId": "rockpapershotgun-d1a0dcdb84db",
+  "outlet": "Rock Paper Shotgun",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.rockpapershotgun.com/after-eighteen-years-of-jaggedy-bowling-a-new-mod-bestows-gta-4-with-dlss-and-fsr-support",
+  "published": "2026-09-24",
+  "ogImage": "https://assetsio.gnwcdn.com/gta-4-grand-theft-auto-iv-niko-bellic-show-off.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-09-24T20:19:46.964Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "DLSS IV, though, looks like the much lighter, quicker, cleaner fix if you just want to give a modern makeover to the base game's infamously jagged and shimmering attempt at AA.",
+          "quote": "DLSS IV, though, looks like the much lighter, quicker, cleaner fix if you just want to give a modern makeover to the base game's infamously jagged and shimmering attempt at AA."
+        }
+      ]
+    }
+  ]
+}

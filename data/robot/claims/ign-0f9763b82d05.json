@@ -1,0 +1,35 @@
+{
+  "rawId": "ign-0f9763b82d05",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/gta-6-is-getting-a-400-collectors-set-that-doesnt-include-the-game",
+  "published": "2026-09-24",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/09/24/hs-zd2uxmam8pud-1790262840926.jpeg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-09-24T20:19:14.443Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "By Cade Onder Updated : Sep 24, 2026 3:58pm UTC 95 comments Add IGN on Google GTA 6 is getting a $400 collector's set filled with Vice City-themed goodies, but it won't include a copy of the game.",
+          "quote": "By Cade Onder Updated : Sep 24, 2026 3:58pm UTC 95 comments Add IGN on Google GTA 6 is getting a $400 collector's set filled with Vice City-themed goodies, but it won't include a copy of the game."
+        },
+        {
+          "fact": "Rockstar Games has announced a collector's set for GTA 6 known as GTA 6: The Goodtime State – Vice City Collection.",
+          "quote": "Rockstar Games has announced a collector's set for GTA 6 known as GTA 6: The Goodtime State – Vice City Collection."
+        },
+        {
+          "fact": "Rockstar also recently installed a massive \"Welcome to Vice City\" sign in on the Miami Heat's arena in Florida, which reportedly cost the company nearly $1 million .",
+          "quote": "Rockstar also recently installed a massive \"Welcome to Vice City\" sign in on the Miami Heat's arena in Florida, which reportedly cost the company nearly $1 million ."
+        }
+      ]
+    }
+  ]
+}

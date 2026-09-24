@@ -1,0 +1,49 @@
+{
+  "rawId": "gamesradar-1914abe49d77",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-collectors-box-is-usd400-and-doesnt-include-the-game-but-you-do-get-a-spoon-stickers-and-more-needlessly-expensive-merch/",
+  "published": "2026-09-24",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/kWw9FEwneArzWxypW9xKMh-1920-80.jpg",
+  "extractedAt": "2026-09-24T20:18:54.946Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        },
+        {
+          "fact": "Spoons aside, if you just want to nab your copy of the game, GTA 6 pre-orders are still going strong across the web: US: $79.99 at Amazon UK: &pound;67.95 at Amazon To be frank, I think we've different definitions of that last part, but how and ever.",
+          "quote": "Spoons aside, if you just want to nab your copy of the game, GTA 6 pre-orders are still going strong across the web: US: $79.99 at Amazon UK: &pound;67.95 at Amazon To be frank, I think we've different definitions of that last part, but how and ever."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The Grand Theft Auto 6: The Goodtime State - Vice City Collection was just revealed by Rockstar , a merch capsule you can now pre-order from the official store.",
+          "quote": "The Grand Theft Auto 6: The Goodtime State - Vice City Collection was just revealed by Rockstar , a merch capsule you can now pre-order from the official store."
+        },
+        {
+          "fact": "Latest Videos From GamesRadar+ Watch full video here: Grand Theft Auto VI: An Extended Look - YouTube Watch On Everything comes emblazoned in some sort of logo, whether for Vice City or GTA 6 itself or Rockstar, and you can get the whole lot for $399.99, or &pound;349.99 in Britain.",
+          "quote": "Latest Videos From GamesRadar+ Watch full video here: Grand Theft Auto VI: An Extended Look - YouTube Watch On Everything comes emblazoned in some sort of logo, whether for Vice City or GTA 6 itself or Rockstar, and you can get the whole lot for $399.99, or &pound;349.99 in Britain."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "rawId": "rockstar-161606cb33a2",
+  "outlet": "Rockstar Newswire",
+  "tier": "TIER_1_OFFICIAL",
+  "url": "https://www.rockstargames.com/newswire/article/9k2a49ook82o57/pre-order-the-goodtime-state-vice-city-collection-now-while-supplies-l",
+  "published": "2026-09-24",
+  "ogImage": "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/9k2a49ook82o57/cbdf4fc342bfca94c789a887244c3b70283047ae.jpg",
+  "extractedAt": "2026-09-24T20:19:53.475Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Limit",
+      "altNames": [],
+      "slug": "limit",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Please note that if you turn off some types of Cookies, it may limit your experience on the Site and the services we are able to offer.",
+          "quote": "Please note that if you turn off some types of Cookies, it may limit your experience on the Site and the services we are able to offer."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Pre-order The Goodtime State – Vice City Collection now at store.rockstargames.com , and look out for the arrival of more apparel and collectibles from the Grand Theft Auto VI Collection at the Rockstar Store soon.",
+          "quote": "Pre-order The Goodtime State – Vice City Collection now at store.rockstargames.com , and look out for the arrival of more apparel and collectibles from the Grand Theft Auto VI Collection at the Rockstar Store soon."
+        },
+        {
+          "fact": "Stay tuned for details on how to pre-order The Goodtime State – Vice City Collection across Asia, Latin America, and Australia.",
+          "quote": "Stay tuned for details on how to pre-order The Goodtime State – Vice City Collection across Asia, Latin America, and Australia."
+        }
+      ]
+    }
+  ]
+}

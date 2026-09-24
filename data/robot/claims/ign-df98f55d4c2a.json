@@ -1,0 +1,58 @@
+{
+  "rawId": "ign-df98f55d4c2a",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/gta-6-fans-are-outraged-by-400-collectors-set-and-are-comparing-it-to-red-dead-redemption-2s-version",
+  "published": "2026-09-24",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/09/17/gta-6-soundtrack-1789662158949.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-09-24T20:19:20.945Z",
+  "entities": [
+    {
+      "entityType": "edition",
+      "name": "Ultimate Edition",
+      "altNames": [
+        "GTA 6 Ultimate Edition",
+        "GTA VI Ultimate Edition"
+      ],
+      "slug": "gta-6-ultimate-edition",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Although GTA 6's $100 Ultimate Edition boasts a ton of extra digital content, it won't entitle you to any kind of steelbook, a disc, or other physical goodies.",
+          "quote": "Although GTA 6's $100 Ultimate Edition boasts a ton of extra digital content, it won't entitle you to any kind of steelbook, a disc, or other physical goodies."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "One other point of contention with fans is that the $400 collector's set for GTA 6 boasts a special physical version of Leonida's map.",
+          "quote": "One other point of contention with fans is that the $400 collector's set for GTA 6 boasts a special physical version of Leonida's map."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "GTA 6 Vice City Collection Collector's Set Items View 13 Images \"I hate to say it, but I think I’m gonna pass on the collector’s edition,\" said one fan .",
+          "quote": "GTA 6 Vice City Collection Collector's Set Items View 13 Images \"I hate to say it, but I think I’m gonna pass on the collector’s edition,\" said one fan ."
+        }
+      ]
+    }
+  ]
+}

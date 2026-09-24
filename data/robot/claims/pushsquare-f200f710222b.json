@@ -1,0 +1,175 @@
+{
+  "rawId": "pushsquare-f200f710222b",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/09/gta-6-collectors-box-is-usd400-doesnt-include-the-game",
+  "published": "2026-09-24",
+  "ogImage": "https://images.pushsquare.com/6751a22e076b0/large.jpg",
+  "extractedAt": "2026-09-24T20:19:40.469Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Beast",
+      "altNames": [],
+      "slug": "beast",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "If you're in the UK (actually they deliver globally) Super Rare games are selling a physical version of Dying Light The Beast, but you got untill Oct 16.",
+          "quote": "If you're in the UK (actually they deliver globally) Super Rare games are selling a physical version of Dying Light The Beast, but you got untill Oct 16."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "14 2 8th_Observer 4 hours ago I would love see what the “cost to produce” is for this… 14 3 kungfumongoose 4 hours ago All that crap and no game and they want 400 for it? gtfo.",
+          "quote": "14 2 8th_Observer 4 hours ago I would love see what the “cost to produce” is for this… 14 3 kungfumongoose 4 hours ago All that crap and no game and they want 400 for it? gtfo."
+        },
+        {
+          "fact": "0 15 GirlVersusGame 4 hours ago I want literally nothing in that set.",
+          "quote": "0 15 GirlVersusGame 4 hours ago I want literally nothing in that set."
+        },
+        {
+          "fact": "I don't mind taking the bait and buying this crap for very specific massive games but you better give me good crap if you want $300+.",
+          "quote": "I don't mind taking the bait and buying this crap for very specific massive games but you better give me good crap if you want $300+."
+        },
+        {
+          "fact": "Next time you want to post about 'disc bad' just refrain from posting/talking...at all.",
+          "quote": "Next time you want to post about 'disc bad' just refrain from posting/talking...at all."
+        },
+        {
+          "fact": "If I offered the seller 350 quid for it, they'd smack me round the face for taking the mickey out of them 0 77 VenomUK 39 mins ago This is the king of tat in a box made for people who are so excited about GTAVI they want to pay money to show it!",
+          "quote": "If I offered the seller 350 quid for it, they'd smack me round the face for taking the mickey out of them 0 77 VenomUK 39 mins ago This is the king of tat in a box made for people who are so excited about GTAVI they want to pay money to show it!"
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Here's how Rockstar pitches the expensive item: \"A premium Collector’s Box featuring all the essentials for a good time, inspired by Leonida’s hit TV show, Macca the Gator.\" It's due to release on the same day as the PS5 title, 19th November 2026.",
+          "quote": "Here's how Rockstar pitches the expensive item: \"A premium Collector’s Box featuring all the essentials for a good time, inspired by Leonida’s hit TV show, Macca the Gator.\" It's due to release on the same day as the PS5 title, 19th November 2026."
+        },
+        {
+          "fact": "Oakley Frogskins Sunglasses Block out the Leonida sun with a pair of matte black Oakley® Frogskins™ sunglasses, featuring Prizm Sapphire lenses and a Vice City pink GTAVI logo.",
+          "quote": "Oakley Frogskins Sunglasses Block out the Leonida sun with a pair of matte black Oakley® Frogskins™ sunglasses, featuring Prizm Sapphire lenses and a Vice City pink GTAVI logo."
+        },
+        {
+          "fact": "Leonida Keys Crossbody Bag Stow all your essentials in a ripstop crossbody bag with patterned black and pink lining, woven patches, and a custom debossed YKK zipper pull.",
+          "quote": "Leonida Keys Crossbody Bag Stow all your essentials in a ripstop crossbody bag with patterned black and pink lining, woven patches, and a custom debossed YKK zipper pull."
+        },
+        {
+          "fact": "New Era 9FORTY Snapback Hat Look like a local in a New Era® 9FORTY A-Frame snapback hat with Vice City Leonida embellishments, embroidery, and appliques.",
+          "quote": "New Era 9FORTY Snapback Hat Look like a local in a New Era® 9FORTY A-Frame snapback hat with Vice City Leonida embellishments, embroidery, and appliques."
+        },
+        {
+          "fact": "Leonida Keys Enamel Pin Set in Metal Tin Add Vice City flair anywhere with nine enamel pins in a custom tin.",
+          "quote": "Leonida Keys Enamel Pin Set in Metal Tin Add Vice City flair anywhere with nine enamel pins in a custom tin."
+        },
+        {
+          "fact": "Leonida Keys Sticker Pack in Stash Bag Slap a little Leonida on laptops, water bottles, and anywhere else your heart desires with nine crack-and-peel vinyl stickers in a stash bag.",
+          "quote": "Leonida Keys Sticker Pack in Stash Bag Slap a little Leonida on laptops, water bottles, and anywhere else your heart desires with nine crack-and-peel vinyl stickers in a stash bag."
+        },
+        {
+          "fact": "Double-Sided Poster with Map of Leonida An illustrated Vice City Leonida poster featuring characters from the hit Leonida TV show Macca the Gator on the front.",
+          "quote": "Double-Sided Poster with Map of Leonida An illustrated Vice City Leonida poster featuring characters from the hit Leonida TV show Macca the Gator on the front."
+        },
+        {
+          "fact": "Plan a road trip to every corner of the Goodtime State with a full view of the Leonida map featured on the back.",
+          "quote": "Plan a road trip to every corner of the Goodtime State with a full view of the Leonida map featured on the back."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida Keys",
+      "altNames": [
+        "Keys"
+      ],
+      "slug": "leonida-keys",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Leonida Keys Crossbody Bag Stow all your essentials in a ripstop crossbody bag with patterned black and pink lining, woven patches, and a custom debossed YKK zipper pull.",
+          "quote": "Leonida Keys Crossbody Bag Stow all your essentials in a ripstop crossbody bag with patterned black and pink lining, woven patches, and a custom debossed YKK zipper pull."
+        },
+        {
+          "fact": "Leonida Keys Enamel Pin Set in Metal Tin Add Vice City flair anywhere with nine enamel pins in a custom tin.",
+          "quote": "Leonida Keys Enamel Pin Set in Metal Tin Add Vice City flair anywhere with nine enamel pins in a custom tin."
+        },
+        {
+          "fact": "Leonida Keys Sticker Pack in Stash Bag Slap a little Leonida on laptops, water bottles, and anywhere else your heart desires with nine crack-and-peel vinyl stickers in a stash bag.",
+          "quote": "Leonida Keys Sticker Pack in Stash Bag Slap a little Leonida on laptops, water bottles, and anywhere else your heart desires with nine crack-and-peel vinyl stickers in a stash bag."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Manage Topics News Rockstar Games PS5 Grand Theft Auto GTA GTA 6 Collector's Box Is $400, Doesn't Include the Game It's sort of like a Collector's Edition by Liam Croft 4 hours ago Share: Rockstar has today unveiled GTA 6 : The Goodtime State - Vice City Collection , which is sort of like a Collector's Edition.",
+          "quote": "Manage Topics News Rockstar Games PS5 Grand Theft Auto GTA GTA 6 Collector's Box Is $400, Doesn't Include the Game It's sort of like a Collector's Edition by Liam Croft 4 hours ago Share: Rockstar has today unveiled GTA 6 : The Goodtime State - Vice City Collection , which is sort of like a Collector's Edition."
+        },
+        {
+          "fact": "Oakley Frogskins Sunglasses Block out the Leonida sun with a pair of matte black Oakley® Frogskins™ sunglasses, featuring Prizm Sapphire lenses and a Vice City pink GTAVI logo.",
+          "quote": "Oakley Frogskins Sunglasses Block out the Leonida sun with a pair of matte black Oakley® Frogskins™ sunglasses, featuring Prizm Sapphire lenses and a Vice City pink GTAVI logo."
+        },
+        {
+          "fact": "New Era 9FORTY Snapback Hat Look like a local in a New Era® 9FORTY A-Frame snapback hat with Vice City Leonida embellishments, embroidery, and appliques.",
+          "quote": "New Era 9FORTY Snapback Hat Look like a local in a New Era® 9FORTY A-Frame snapback hat with Vice City Leonida embellishments, embroidery, and appliques."
+        },
+        {
+          "fact": "Vice City Collectible Swizzle Spoon Stir things up with a decorative spoon featuring a debossed enamel Vice City logo and a Rockstar Games logo tip.",
+          "quote": "Vice City Collectible Swizzle Spoon Stir things up with a decorative spoon featuring a debossed enamel Vice City logo and a Rockstar Games logo tip."
+        },
+        {
+          "fact": "Vice City Razor Blade Keychain Stay sharp with a metallic razor-blade-style keychain featuring embossed GTAVI and Vice City logos.",
+          "quote": "Vice City Razor Blade Keychain Stay sharp with a metallic razor-blade-style keychain featuring embossed GTAVI and Vice City logos."
+        },
+        {
+          "fact": "Leonida Keys Enamel Pin Set in Metal Tin Add Vice City flair anywhere with nine enamel pins in a custom tin.",
+          "quote": "Leonida Keys Enamel Pin Set in Metal Tin Add Vice City flair anywhere with nine enamel pins in a custom tin."
+        },
+        {
+          "fact": "Double-Sided Poster with Map of Leonida An illustrated Vice City Leonida poster featuring characters from the hit Leonida TV show Macca the Gator on the front.",
+          "quote": "Double-Sided Poster with Map of Leonida An illustrated Vice City Leonida poster featuring characters from the hit Leonida TV show Macca the Gator on the front."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Rubble",
+      "altNames": [],
+      "slug": "rubble",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "7 18 TDHorizon 4 hours ago @JLSlone I'm glad that amongst the rubble, at least one sane view always manage to stand out 1 19 TDHorizon 4 hours ago RDR2 fully sealed collector's boxes currently selling between £700 and £1000 on ebay in the last few months.",
+          "quote": "7 18 TDHorizon 4 hours ago @JLSlone I'm glad that amongst the rubble, at least one sane view always manage to stand out 1 19 TDHorizon 4 hours ago RDR2 fully sealed collector's boxes currently selling between £700 and £1000 on ebay in the last few months."
+        }
+      ]
+    }
+  ]
+}

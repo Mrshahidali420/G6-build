@@ -1,0 +1,65 @@
+{
+  "rawId": "kotaku-d14f28fdc9ae",
+  "outlet": "Kotaku",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://kotaku.com/fans-reacts-to-gta-6s-400-collectors-box-that-doesnt-include-the-game-we-wanted-jason-and-lucia-and-we-got-an-alligator-instead-2000737007",
+  "published": "2026-09-24",
+  "ogImage": "https://kotaku.com/app/uploads/2026/09/GTA-6-reacts-1200x675.jpg",
+  "extractedAt": "2026-09-24T20:19:27.452Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "A lot of fans wanted a Jason and Lucia statue or goodies more directly related to GTA 6 and the franchise, not cartoon characters from a fake show.",
+          "quote": "A lot of fans wanted a Jason and Lucia statue or goodies more directly related to GTA 6 and the franchise, not cartoon characters from a fake show."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "A lot of fans wanted a Jason and Lucia statue or goodies more directly related to GTA 6 and the franchise, not cartoon characters from a fake show.",
+          "quote": "A lot of fans wanted a Jason and Lucia statue or goodies more directly related to GTA 6 and the franchise, not cartoon characters from a fake show."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "On Thursday, Rockstar opened up pre-orders for “ Grand Theft Auto VI: The Goodtime State – Vice City Collection” box .",
+          "quote": "On Thursday, Rockstar opened up pre-orders for “ Grand Theft Auto VI: The Goodtime State – Vice City Collection” box ."
+        },
+        {
+          "fact": "This includes a pink alligator statue, enamel pins themed around characters from the in-universe cartoon, and a double-sided poster featuring a map of Vice City and characters from the show.",
+          "quote": "This includes a pink alligator statue, enamel pins themed around characters from the in-universe cartoon, and a double-sided poster featuring a map of Vice City and characters from the show."
+        }
+      ]
+    }
+  ]
+}

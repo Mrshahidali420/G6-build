@@ -1,0 +1,44 @@
+{
+  "rawId": "eurogamer-b2087d3c90b8",
+  "outlet": "Eurogamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.eurogamer.net/gta-6-collectible-suspicious-mirror-keychain-spoon",
+  "published": "2026-09-24",
+  "ogImage": "https://assetsio.gnwcdn.com/gta-6-collectors-box.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-09-24T20:18:48.468Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Rockstar reveals a £350 box of naughty GTA 6 collectables you definitely wouldn't get through airport security Lucia you in prison.",
+          "quote": "Rockstar reveals a £350 box of naughty GTA 6 collectables you definitely wouldn't get through airport security Lucia you in prison."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "14 comments Follow Grand Theft Auto VI Prioritise us on Google Rockstar Games has announced a limited Goodtime State Vice City collection of goodies for Grand Theft Auto 6 that's ludicrously expensive - &pound;349 - doesn't include a copy of the game, and is pre-orderable now.",
+          "quote": "14 comments Follow Grand Theft Auto VI Prioritise us on Google Rockstar Games has announced a limited Goodtime State Vice City collection of goodies for Grand Theft Auto 6 that's ludicrously expensive - &pound;349 - doesn't include a copy of the game, and is pre-orderable now."
+        }
+      ]
+    }
+  ]
+}

@@ -11,7 +11,7 @@
 import { getCollection } from 'astro:content'
 import BaseLayout from '../../layouts/BaseLayout.astro'
 import Ad from '../../components/Ad.astro'
-import { SITE_NAME, SITE_URL, canonical } from '../../lib/site.mjs'
+import { SITE_NAME, SITE_URL, canonical, BOOST_LINKS } from '../../lib/site.mjs'
 import { GAME } from '../../lib/schema.mjs'
 import { bySlug, urlFor } from '../../lib/entities.mjs'
 import {
@@ -76,6 +76,7 @@ export async function getStaticPaths() {
 const { claim, sameSubject, sameMonth, newer, older, monthCount, total } = Astro.props
 const data = claim.data
 const path = trackerUrl(claim.id)
+const boostLink = BOOST_LINKS[path]
 const status = STATUS_BY_KEY.get(data.status)
 const tone = STATUS_CLASS[data.status]
 const month = data.date.slice(0, 7)
@@ -142,6 +143,9 @@ if (data.faq.length >= 2) {
       <div class="prose">
         <h2>What was claimed</h2>
         <p>{data.summary}</p>
+        {boostLink && (
+          <p>{boostLink.lead} <a href={boostLink.href}>{boostLink.anchor}</a>.</p>
+        )}
 
         <h2>The detail</h2>
         <ul class="points">

@@ -83,6 +83,27 @@ export const ENTITY_ANSWER_LINKS = {
   'gta-6-standard-edition': { href: '/gta-6-price', label: 'GTA 6 price in every country' },
 }
 
+// One hand-picked link from a page that already ranks well (Search Console
+// position about 3 to 6) to a related page stuck at 8 to 20, with the anchor
+// written in the words people search. One link per donor, checked by hand.
+// Picked 24 Sep 2026 from 30 days of Search Console data. Keyed by path.
+export const BOOST_LINKS = {
+  '/soundtrack/mine-o-mine': { lead: 'Also on the GTA 6 soundtrack:', href: '/soundtrack/devil-woman', anchor: 'Devil Woman, the Cliff Richard song in GTA 6' },
+  '/soundtrack/but-i-think-its-a-dream': { lead: 'Also on the GTA 6 soundtrack:', href: '/soundtrack/love-is-a-long-road', anchor: 'Love Is a Long Road in GTA 6' },
+  '/soundtrack/se-me-nota-agarrame': { lead: 'Also on the GTA 6 soundtrack:', href: '/soundtrack/inner-light', anchor: 'Inner Light in GTA 6' },
+  '/landmarks/stockyard': { lead: 'Elsewhere in Vice City:', href: '/landmarks/vice-city-international-airport', anchor: 'Vice City International Airport in GTA 6' },
+  '/locations/belville': { lead: 'See every place on the', href: '/locations', anchor: 'GTA 6 map and locations page' },
+  '/brands/ecola': { lead: 'Its rival brand:', href: '/brands/sprunk', anchor: 'what Sprunk is in GTA 6' },
+  '/brands/vapid': { lead: 'A Vapid car on this site:', href: '/vehicles/dominator-asp', anchor: 'the Vapid Dominator ASP in GTA 6' },
+  '/vehicles/ganado-retro-build': { lead: 'This truck comes with the Ultimate Edition. See', href: '/gta-6-ultimate-edition', anchor: 'what the GTA 6 Ultimate Edition includes' },
+  '/businesses/electric-fang-tattoo-parlor': { lead: 'Buying early? See', href: '/gta-6-pre-order', anchor: 'how GTA 6 pre-orders work' },
+  // Rumour posts Google already shows for a question, pointing at the page
+  // that answers it with sources.
+  '/tracker/gta-6-is-key-west-still-on-the-map-albeit-smaller': { lead: 'For what Rockstar has actually shown, read', href: '/is-key-west-in-gta-6', anchor: 'is Key West in GTA 6' },
+  '/tracker/gta-vi-will-director-mode-make-a-grand-return': { lead: 'For what is confirmed so far, read', href: '/gta-6-director-mode', anchor: 'does GTA 6 have Director Mode' },
+  '/businesses/ptt-youngins': { lead: 'PTT Youngin$ sits in Southside Vice City. Read about', href: '/locations/vice-city', anchor: 'Vice City in GTA 6' },
+}
+
 // Amazon Associates tracking ids, created 16 September 2026, one per store.
 // A tracking id is free and belongs to an account, so each site gets its own
 // id and the earnings report stays readable.

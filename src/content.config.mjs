@@ -17,6 +17,9 @@ const answers = defineCollection({
     // a second countdown page (a demo unlock, a beta) can opt in later
     // without touching the render logic.
     countdown: z.boolean().default(false),
+    // The launch-week hub only. Draws the "Is GTA 6 out yet?" status box at
+    // the top and the sourced launch log from src/data/launch-log.json.
+    launchHub: z.boolean().default(false),
     // Shown in the "Where this comes from" box at the foot of every answer page.
     sources: z.array(z.object({ label: z.string(), url: z.string().url() })).min(1),
     // Becomes FAQPage structured data. Two to four questions per page.

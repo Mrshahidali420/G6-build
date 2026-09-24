@@ -40,7 +40,8 @@ related:
 **GTA 6 unlocks at midnight local time on 19 November 2026 on PS5**, going by
 the PlayStation Store listings. That means it rolls out country by country,
 starting in New Zealand. Rockstar has confirmed the date, not the time, and
-no Xbox unlock time has been published yet.
+no Xbox unlock time has been published yet. On launch night, check
+[is GTA 6 out yet](/gta-6-launch) for a live answer.
 
 ## Who set these times
 

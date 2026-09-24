@@ -5,8 +5,11 @@ import EntityTile from '../components/EntityTile.astro'
 import Icon from '../components/Icon.astro'
 import Video from '../components/Video.astro'
 import Countdown from '../components/Countdown.astro'
+import LaunchStatus from '../components/LaunchStatus.astro'
+import LaunchLog from '../components/LaunchLog.astro'
 import Ad from '../components/Ad.astro'
 import { SITE_NAME, SITE_URL, canonical, amazonUrl } from '../lib/site.mjs'
+import { GAME } from '../lib/schema.mjs'
 import { bySlug } from '../lib/entities.mjs'
 
 export async function getStaticPaths() {
@@ -40,6 +43,9 @@ const jsonLd = {
       headline: data.title,
       description: data.description,
       ...(data.quick ? { abstract: data.quick } : {}),
+      // The launch hub is about the game's release itself, so it names the
+      // same VideoGame node (with its datePublished) the home page uses.
+      ...(data.launchHub ? { about: GAME } : {}),
       dateModified: data.updated,
       mainEntityOfPage: canonical(path),
       publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
@@ -64,6 +70,14 @@ const jsonLd = {
     </div>
   </section>
 
+  {data.launchHub && (
+    <section class="band band--glaze">
+      <div class="shell">
+        <LaunchStatus />
+      </div>
+    </section>
+  )}
+
   {data.quick && (
     <section class="band">
       <div class="shell">
@@ -87,6 +101,8 @@ const jsonLd = {
       <Content />
     </div>
   </section>
+
+  {data.launchHub && <LaunchLog />}
 
   {data.videos.length > 0 && (
     <section class="band band--plaster">

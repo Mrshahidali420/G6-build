@@ -33,7 +33,8 @@ related:
 ## The short answer
 
 **Grand Theft Auto VI releases on 19 November 2026.** It launches on
-PlayStation 5 and Xbox Series X|S on that day, worldwide.
+PlayStation 5 and Xbox Series X|S on that day, worldwide. For the whole
+launch week in one place, see the [GTA 6 launch day hub](/gta-6-launch).
 
 This is not a rumour or a retailer placeholder. Rockstar Games published the
 date on its own Newswire on 24 June 2026, one day before pre-orders opened. It

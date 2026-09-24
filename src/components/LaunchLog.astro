@@ -1,0 +1,59 @@
+---
+// The dated, sourced launch log on /gta-6-launch. Entries live in
+// src/data/launch-log.json and are checked in src/lib/launch-log.mjs, which
+// stops the build on an entry with no source. How to add one:
+// docs/LAUNCH-LOG.md.
+import { LAUNCH_LOG } from '../lib/launch-log.mjs'
+
+const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+const longDate = (iso: string) => {
+  const [y, m, d] = iso.split('-').map(Number)
+  return `${d} ${MONTHS[m - 1]} ${y}`
+}
+---
+<section class="band band--plaster" id="launch-log">
+  <div class="shell prose">
+    <h2 style="margin-top:0">Launch updates</h2>
+    <p class="plaque__meta" style="margin-top:0">
+      Newest first. Every line links to where it came from. Times are UTC.
+    </p>
+    <ol class="launch-log">
+      {LAUNCH_LOG.map((entry) => (
+        <li class="launch-log__item">
+          <p class="launch-log__when">
+            <time datetime={entry.time_utc ? `${entry.date}T${entry.time_utc}Z` : entry.date}>
+              {longDate(entry.date)}{entry.time_utc && `, ${entry.time_utc} UTC`}
+            </time>
+          </p>
+          <p class="launch-log__text">{entry.text}</p>
+          <p class="launch-log__src">
+            Source: <a href={entry.source.url} rel="nofollow noopener" target="_blank">{entry.source.label}</a>
+          </p>
+        </li>
+      ))}
+    </ol>
+  </div>
+</section>
+
+<style>
+  .launch-log { list-style: none; margin: 0; padding: 0; }
+  .launch-log__item {
+    padding: 14px 0 14px 18px;
+    border-bottom: 1px solid var(--line);
+    border-left: 2px solid var(--brass);
+    margin-bottom: 0;
+  }
+  .launch-log__item + .launch-log__item { margin-top: 10px; }
+  .launch-log__when {
+    margin: 0 0 4px;
+    font-family: var(--ui);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--brass-ink);
+  }
+  .launch-log__text { margin: 0 0 6px; color: var(--ink); }
+  .launch-log__src { margin: 0; font-family: var(--ui); font-size: 0.85rem; color: var(--ink-2); }
+  .launch-log__src a { word-break: break-word; }
+</style>

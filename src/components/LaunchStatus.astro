@@ -1,0 +1,140 @@
+---
+// "Is GTA 6 out yet?" as a three state answer, for /gta-6-launch.
+//
+// The two moments come from the PlayStation Store unlock table on
+// /gta-6-release-time: New Zealand midnight is the first unlock, 11:00 UTC on
+// 18 November, and Mexico City midnight is the last region listed, 06:00 UTC
+// on 19 November. Between the two the game is live in some regions and not in
+// others. Change them here only if that page changes.
+//
+// The state is worked out twice, like the Countdown. The build writes the
+// right text into the HTML, so a crawler or a reader with JS off sees a true
+// answer for the day the site was built. The script below then re-checks
+// against the reader's clock and flips the text when a moment passes.
+const FIRST_UNLOCK = '2026-11-18T11:00:00Z'
+const LAST_UNLOCK = '2026-11-19T06:00:00Z'
+// Days are counted to the start of launch day in UTC, the same target the
+// /gta-6-countdown counter uses, so the two pages never disagree.
+const LAUNCH_DAY = '2026-11-19T00:00:00Z'
+
+const DAY_MS = 86400000
+const now = Date.now()
+const first = new Date(FIRST_UNLOCK).getTime()
+const last = new Date(LAST_UNLOCK).getTime()
+const state = now >= last ? 'out' : now >= first ? 'rolling' : 'before'
+const days = Math.max(0, Math.floor((new Date(LAUNCH_DAY).getTime() - now) / DAY_MS))
+const daysLeft = (n: number) => (n === 0 ? 'Less than a day to go.' : n === 1 ? '1 day to go.' : `${n} days to go.`)
+
+// One copy of the words. The script reads them back from data-text, so the
+// built HTML and the flipped text can never drift apart. {left} is replaced
+// with the days-left sentence.
+const TEXT = {
+  before: {
+    answer: 'Not yet. GTA 6 launches on 19 November 2026.',
+    sub: '{left} On PS5 it unlocks at midnight local time, starting in New Zealand.',
+  },
+  rolling: {
+    answer: 'Unlocking now, region by region.',
+    sub: 'The PS5 unlock began in New Zealand at 11:00 UTC on 18 November. Mexico City is the last region listed, at 06:00 UTC on 19 November.',
+  },
+  out: {
+    answer: 'Yes. GTA 6 is out on PS5 and Xbox Series X|S.',
+    sub: 'It launched on 19 November 2026. If your copy is still locked, check your own store page.',
+  },
+}
+---
+<div
+  class="launch-status"
+  data-first={FIRST_UNLOCK}
+  data-last={LAST_UNLOCK}
+  data-day={LAUNCH_DAY}
+  data-state={state}
+  data-text={JSON.stringify(TEXT)}
+>
+  <p class="launch-status__q">Is GTA 6 out yet?</p>
+  <p class="launch-status__a" data-role="answer" aria-live="polite">{TEXT[state].answer}</p>
+  <p class="launch-status__sub" data-role="sub">{TEXT[state].sub.replace('{left}', daysLeft(days))}</p>
+  <p class="launch-status__links">
+    <a href="/gta-6-release-time">Unlock time in every region</a>
+    <a href="#launch-log">Latest launch updates</a>
+  </p>
+</div>
+
+<style>
+  .launch-status {
+    border-left: 4px solid var(--brass);
+    padding: 4px 0 4px 20px;
+    max-width: 62ch;
+  }
+  .launch-status__q {
+    margin: 0 0 6px;
+    font-family: var(--ui);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--on-glaze-2);
+  }
+  .launch-status__a {
+    margin: 0 0 10px;
+    font-family: var(--display);
+    font-stretch: 118%;
+    font-weight: 800;
+    font-size: clamp(1.45rem, 1rem + 2.4vw, 2.3rem);
+    line-height: 1.12;
+    color: var(--on-glaze);
+  }
+  .launch-status__sub {
+    margin: 0 0 14px;
+    color: var(--on-glaze-2);
+  }
+  .launch-status__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 22px;
+    margin: 0;
+    font-family: var(--ui);
+    font-weight: 600;
+    font-size: 0.92rem;
+  }
+  .launch-status__links a { color: var(--on-glaze); }
+
+  @media (max-width: 460px) {
+    .launch-status { padding-left: 14px; }
+  }
+</style>
+
+<script>
+  // Re-checks the state against the reader's clock and flips the words when
+  // the first or last unlock passes. Runs once a minute so a page left open
+  // overnight still changes on time.
+  const root = document.querySelector<HTMLElement>('.launch-status')
+  if (root) {
+    const first = new Date(root.dataset.first ?? '').getTime()
+    const last = new Date(root.dataset.last ?? '').getTime()
+    const day = new Date(root.dataset.day ?? '').getTime()
+    const text = JSON.parse(root.dataset.text ?? '{}') as Record<string, { answer: string; sub: string }>
+    const answer = root.querySelector('[data-role="answer"]')
+    const sub = root.querySelector('[data-role="sub"]')
+
+    const render = () => {
+      const now = Date.now()
+      const state = now >= last ? 'out' : now >= first ? 'rolling' : 'before'
+      const days = Math.max(0, Math.floor((day - now) / 86400000))
+      const left = days === 0 ? 'Less than a day to go.' : days === 1 ? '1 day to go.' : `${days} days to go.`
+      const a = text[state]?.answer ?? ''
+      const s = (text[state]?.sub ?? '').replace('{left}', left)
+      root.dataset.state = state
+      if (!a) return true
+      if (answer && answer.textContent !== a) answer.textContent = a
+      if (sub && sub.textContent !== s) sub.textContent = s
+      return now >= last
+    }
+
+    if (!render()) {
+      const timer = window.setInterval(() => {
+        if (render()) window.clearInterval(timer)
+      }, 60000)
+    }
+  }
+</script>

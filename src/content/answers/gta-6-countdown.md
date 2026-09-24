@@ -40,6 +40,9 @@ the start of the calendar day Rockstar named, not a guess at an unlock hour in
 any particular country. Rockstar has never published a time of day, so this
 page does not print one.
 
+On launch night, the [GTA 6 launch day hub](/gta-6-launch) answers "is GTA 6
+out yet?" as each region unlocks.
+
 ## Why the counter targets UTC midnight, not a launch hour
 
 Every other GTA 6 countdown you will find online has to make a choice: either

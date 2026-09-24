@@ -216,6 +216,10 @@ const showAd = Boolean(ADSENSE_CLIENT && ADSENSE_SLOTS.index)
 
       <div class="hero__count">
         <Countdown flat={true} />
+        <p class="hero__launch">
+          Launch week, unlock times and "is GTA 6 out yet?" in one place:
+          <a href="/gta-6-launch">GTA 6 launch day hub</a>.
+        </p>
       </div>
     </div>
   </section>
@@ -916,6 +920,14 @@ const showAd = Boolean(ADSENSE_CLIENT && ADSENSE_SLOTS.index)
     padding-top: 30px;
     border-top: 1px solid var(--line-strong);
   }
+
+  .hero__launch {
+    margin: 16px 0 0;
+    font-family: var(--ui);
+    font-weight: 600;
+    color: var(--ink-2);
+  }
+  .hero__launch a { color: var(--glaze); }
 
   @media (max-width: 939px) {
     .hero__count { margin-top: 26px; padding-top: 24px; }

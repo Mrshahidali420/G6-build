@@ -14,43 +14,31 @@
 import BaseLayout from '../layouts/BaseLayout.astro'
 import { SITE_NAME, SITE_URL, canonical } from '../lib/site.mjs'
 import { GAME } from '../lib/schema.mjs'
-import feed from '../data/real-places.json'
+import { getCollection } from 'astro:content'
+import { longDate } from '../lib/claim-record.mjs'
+import {
+  feed, areas, towns, cities, asked, MIN_SURE, linkedCount,
+  cityPath, gtadbUrl, gameWhere, plural, entityUrl,
+} from '../lib/real-places.mjs'
 
-const { counts, areas } = feed
-const rows = areas.flatMap((area) => area.items)
+const { counts } = feed
 
-/** Every real town in the set, busiest first. */
-const towns = (() => {
-  const tally = new Map()
-  for (const row of rows) {
-    if (!row.realCity) continue
-    tally.set(row.realCity, (tally.get(row.realCity) || 0) + 1)
-  }
-  return [...tally.entries()]
-    .map(([name, count]) => ({ name, count }))
-    .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name))
-})()
+/** The tracker posts the "places people ask about" section points at. */
+const trackerIds = new Set(asked.flatMap((item) => item.tracker))
+const trackerPosts = new Map(
+  (await getCollection('tracker', (post) => trackerIds.has(post.id))).map((post) => [post.id, post]),
+)
 
+const cityOfTown = new Map(cities.map((city) => [city.name, city]))
 const miami = towns.filter((town) => /^Miami/.test(town.name)).reduce((sum, town) => sum + town.count, 0)
-const demolished = rows.filter((row) => row.gone).length
 
 /** An anchor for one in-game area, so the contents list can jump to it. */
 const anchor = (name) =>
   `area-${name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`
 
-const MONTHS = [
-  'January', 'February', 'March', 'April', 'May', 'June',
-  'July', 'August', 'September', 'October', 'November', 'December',
-]
-function longDate(iso) {
-  const [year, month, day] = String(iso || '').split('-')
-  if (!year) return iso
-  return `${Number(day)} ${MONTHS[Number(month) - 1]} ${year}`
-}
-
 const path = '/real-places'
 const title = 'GTA 6 locations and the real Florida places behind them'
-const description = `Community mappers have matched ${counts.kept} named places in Grand Theft Auto VI to real addresses in Florida, across ${counts.areas} areas of Leonida. This is the full list, and what it is honestly worth.`
+const description = `Community mappers have matched ${counts.kept} named places in Grand Theft Auto VI to real addresses in Florida, across ${areas.length} areas of Leonida. This is the full list, and what it is honestly worth.`
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -81,9 +69,9 @@ const jsonLd = {
       <p class="lede">{description}</p>
       <dl class="tally">
         <div><dt>Places matched</dt><dd>{counts.kept}</dd></div>
-        <div><dt>Areas of Leonida</dt><dd>{counts.areas}</dd></div>
+        <div><dt>Areas of Leonida</dt><dd>{areas.length}</dd></div>
         <div><dt>Real towns</dt><dd>{towns.length}</dd></div>
-        <div><dt>Linked to a page here</dt><dd>{counts.linked}</dd></div>
+        <div><dt>Linked to a page here</dt><dd>{linkedCount}</dd></div>
       </dl>
     </div>
   </section>
@@ -127,12 +115,103 @@ const jsonLd = {
           is not one of those sources.
         </p>
         <p>
-          The list also has its own doubts written into it. {counts.supported}
-          of the {counts.kept} rows are marked supported by the mappers, which
-          means somebody checked the work. The rest are best guesses and are
-          marked <strong>unsure</strong> below. {demolished} of the real places
-          have since been knocked down, and those are marked <strong>gone</strong>.
+          The list also has its own doubts written into it. The mappers tag
+          {' '}{counts.unconfirmed} of the {counts.kept} rows as unconfirmed, and
+          those are marked <strong>unsure</strong> below, as is any name the
+          mapper wrote with a question mark. The map has no tag for a match that
+          has been checked, so a row without the flag is not proof either.
+          {' '}{counts.gone} of the real places have since been knocked down,
+          and those are marked <strong>gone</strong>.
         </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--plaster" id="real-cities">
+    <div class="shell">
+      <h2 class="head">Real cities, one page each</h2>
+      <p class="head__sub">
+        Every real Florida city with {MIN_SURE} or more named GTA 6
+        places matched to it on the current community map, with each match
+        listed row by row. This answers what parts of Florida the game draws on.
+      </p>
+      <ul class="cities">
+        {cities.map((city) => (
+          <li class="cities__item">
+            <a class="cities__name" href={cityPath(city)}>{city.name}, Florida</a>
+            <span class="cities__meta">
+              {plural(city.sure, 'named place')}, mostly {city.regions[0].name}
+            </span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="band" id="asked">
+    <div class="shell">
+      <h2 class="head">Places people ask about</h2>
+      <p class="head__sub">
+        What the GTADB community map held for each of these on
+        {longDate(feed.built)}, revision {String(feed.sourceCommit || '').slice(0, 7)}.
+        A match is community-identified. It does not say a place is or is not
+        in the game.
+      </p>
+      <div class="asked">
+        {asked.map((item) => {
+          const page = item.page
+          const target = item.by === 'name' ? `called ${item.label}` : `matched to a real spot in ${item.label}`
+          return (
+            <article class="asked__item" id={`asked-${item.key}`}>
+              <h3 class="asked__q">Is {item.label} in GTA 6?</h3>
+              {item.rows.length === 0 && item.unnamed === 0 && (
+                <p class="asked__a">No match found in the community map as of {longDate(feed.built)}.</p>
+              )}
+              {item.rows.length > 0 && (
+                <>
+                  <p class="asked__a">
+                    The community map has {plural(item.rows.length, 'named place')} in the game {target}:
+                  </p>
+                  <ul class="asked__rows">
+                    {item.rows.map((row) => (
+                      <li>
+                        <strong>{row.name}</strong>{gameWhere(row) && `, ${gameWhere(row)}`}: {row.real}{row.realWhere && `, ${row.realWhere}`}.
+                        {row.unconfirmed && <span class="flag flag--doubt">gtadb: unconfirmed</span>}
+                        {' '}<a href={gtadbUrl(row.id)} rel="nofollow noopener">gtadb map</a>
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              )}
+              {item.rows.length === 0 && item.unnamed > 0 && (
+                <p class="asked__a">The community map has no named place in the game {target}.</p>
+              )}
+              {item.unnamed > 0 && (
+                <p class="asked__a">
+                  {plural(item.unnamed, 'more record')} {item.unnamed === 1 ? 'points' : 'point'} at {item.label} with no readable in-game name.
+                  {!page && item.by === 'city' && ` That is under the ${MIN_SURE} named matches a city needs for its own page here.`}
+                </p>
+              )}
+              {item.unnamed === 0 && item.rows.length > 0 && !page && item.by === 'city' && (
+                <p class="asked__a">That is under the {MIN_SURE} named matches a city needs for its own page here.</p>
+              )}
+              {page && (
+                <p class="asked__a">
+                  It is listed with every other {page.name} match on the
+                  {' '}<a href={cityPath(page)}>{page.name}, Florida page</a>.
+                </p>
+              )}
+              {item.tracker.length > 0 && (
+                <p class="asked__a">
+                  On the tracker:{' '}
+                  {item.tracker.map((id, index) => trackerPosts.get(id) && (
+                    <span>{index > 0 && '; '}<a href={`/tracker/${id}`}>{trackerPosts.get(id).data.title}</a></span>
+                  ))}
+                </p>
+              )}
+            </article>
+          )
+        })}
       </div>
     </div>
   </section>
@@ -147,7 +226,7 @@ const jsonLd = {
       <ul class="towns">
         {towns.map((town) => (
           <li class="towns__item">
-            <span class="towns__name">{town.name}</span>
+            <span class="towns__name">{cityOfTown.get(town.name) ? <a href={cityPath(cityOfTown.get(town.name))}>{town.name}</a> : town.name}</span>
             <span class="towns__bar" style={`width:${Math.max(3, (town.count / towns[0].count) * 100)}%`}></span>
             <span class="towns__n">{town.count}</span>
           </li>
@@ -159,7 +238,7 @@ const jsonLd = {
   <section class="band">
     <div class="shell">
       <h2 class="head">Jump to an area</h2>
-      <p class="head__sub">{counts.areas} areas of Leonida, largest first.</p>
+      <p class="head__sub">{areas.length} areas of Leonida, largest first.</p>
       <ul class="jump">
         {areas.map((area) => (
           <li><a href={`#${anchor(area.name)}`}>{area.name} <span>{area.count}</span></a></li>
@@ -184,10 +263,10 @@ const jsonLd = {
             <li class="pairs__item">
               <div class="pairs__game">
                 <span class="kind">{row.kind}</span>
-                {row.url
-                  ? <a class="pairs__name" href={row.url}>{row.name}</a>
+                {entityUrl(row.entity)
+                  ? <a class="pairs__name" href={entityUrl(row.entity)}>{row.name}</a>
                   : <span class="pairs__name">{row.name}</span>}
-                {row.doubt && <span class="flag flag--doubt">unsure</span>}
+                {(row.unconfirmed || row.nameUnsure) && <span class="flag flag--doubt">unsure</span>}
               </div>
               <div class="pairs__real">
                 <p class="pairs__realname">
@@ -212,17 +291,18 @@ const jsonLd = {
           <a href={feed.sourceUrl} rel="nofollow noopener">GTADB community map</a>
           of Grand Theft Auto VI, built in the open at
           <a href={feed.sourceRepo} rel="nofollow noopener">rolux/gtadb.org</a>
-          and shared under a CC BY 4.0 licence. This site reads the revision
-          pinned by the
-          <a href={feed.via} rel="nofollow noopener">gta6-leonida-atlas</a>
-          project, revision {String(feed.sourceRevision || '').slice(0, 7)}.
-          The full map holds {counts.records} records. Most of them are a shape
-          on a map with no name and no real address, and those are left out
-          here. What is left is the {counts.kept} rows that a reader can check.
+          and shared under a <a href={feed.sourceLicenseUrl} rel="nofollow noopener license">CC BY 4.0</a>
+          licence, credit {feed.credit}. This site reads revision
+          {' '}{String(feed.sourceCommit || '').slice(0, 7)} of that repository.
+          The full map holds {counts.records} records, and {counts.named} of them carry
+          a readable in-game name. Those without a name or without a real
+          address are left out here. What is left is the {counts.kept} rows that
+          a reader can check. We changed the data only by that filter and by
+          grouping it.
         </p>
         <p>
           Each in-game name is then matched against the record already on this
-          site. {counts.linked} of them found a page and became a link. The rest
+          site by a reviewed name match. {linkedCount} of them found a page and became a link. The rest
           list without a link, which usually means this site has no page for the
           place yet.
         </p>
@@ -233,8 +313,7 @@ const jsonLd = {
 
         <h2>How sure is any of this</h2>
         <p>
-          The atlas project sets out an order of evidence and this site keeps
-          the same one. Official Rockstar media comes first, and only that can
+          This site keeps one order of evidence. Official Rockstar media comes first, and only that can
           confirm a thing exists in the game. The community map comes second,
           and it can support where a thing sits. A real Florida address comes
           third, and it is background only.
@@ -313,6 +392,23 @@ const jsonLd = {
   }
   .flag--doubt { color: var(--clay); }
   .flag--gone { color: var(--brass-ink); }
+
+  .cities { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 0 32px; }
+  .cities__item { padding: 10px 0; border-bottom: 1px solid var(--line); min-width: 0; }
+  .cities__name {
+    font: 700 17px/1.35 var(--display); color: var(--ink); text-decoration: none;
+    border-bottom: 2px solid var(--glaze-tint);
+  }
+  .cities__name:hover { border-bottom-color: var(--glaze); }
+  .cities__meta { display: block; margin-top: 3px; font: 400 14px/1.5 var(--body); color: var(--ink-2); }
+
+  .asked { display: grid; gap: 22px; max-width: var(--prose); }
+  .asked__item { padding-bottom: 18px; border-bottom: 1px solid var(--line); min-width: 0; overflow-wrap: anywhere; }
+  .asked__item:last-child { border-bottom: 0; }
+  .asked__q { font: 700 19px/1.3 var(--display); margin: 0 0 6px; color: var(--ink); }
+  .asked__a { margin: 6px 0 0; font: 400 16px/1.6 var(--body); color: var(--ink); }
+  .asked__rows { margin: 6px 0 0; padding-left: 20px; font: 400 16px/1.6 var(--body); color: var(--ink); }
+  .asked__rows a { font: 600 13px/1 var(--ui); }
 
   @media (max-width: 720px) {
     .pairs__item { grid-template-columns: 1fr; gap: 2px; }

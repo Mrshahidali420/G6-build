@@ -1,0 +1,284 @@
+---
+// One page per real Florida city with enough community matches to be worth
+// reading: every named place in GTA 6 that the GTADB map ties to a real spot
+// in that city, row by row.
+//
+// People search "is Doral in GTA 6", "what parts of Miami are in GTA 6". The
+// honest answer is a count and a list, with the source next to every row. No
+// row here is a Rockstar claim. Each one is a community match, and the page
+// says so on every row, not once in small print.
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import { SITE_NAME, SITE_URL, canonical } from '../../lib/site.mjs'
+import { longDate } from '../../lib/claim-record.mjs'
+import {
+  feed, cities, cityPath, gtadbUrl, osmUrl, entityUrl, locationUrl, plural, gameWhere,
+} from '../../lib/real-places.mjs'
+
+export function getStaticPaths() {
+  return cities.map((city) => ({ params: { city: city.slug }, props: { city } }))
+}
+
+const { city } = Astro.props
+const path = cityPath(city)
+const name = city.name
+const top = city.regions[0]
+const topShare = top && top.count * 2 > city.sure ? 'most of them in' : 'the largest share in'
+const others = cities.filter((other) => other.slug !== city.slug)
+const districts = city.districts.filter((district) => district.count >= 2)
+
+const title = `Is ${name} in GTA 6? Real places mapped`
+const description = `${city.sure} named GTA 6 places are matched to real spots in ${name}, Florida, ${topShare} ${top.name}. Every row, with its address and gtadb map link.`
+if (description.length < 120 || description.length > 160) {
+  throw new Error(`${path}: description is ${description.length} characters, keep it 120 to 160`)
+}
+
+const regionText = city.regions
+  .map((region) => `${region.name} (${region.count})`)
+  .join(', ')
+
+const faq = [
+  {
+    q: `Is ${name} in GTA 6?`,
+    a: `Rockstar has not said which real towns GTA 6 is built from. On the GTADB community map, ${plural(city.sure, 'named place')} in the game ${city.sure === 1 ? 'is' : 'are'} matched to real spots in ${name}, Florida, ${topShare} the in-game area of ${top.name}. Every one of those matches is community-identified, not confirmed by Rockstar.`,
+  },
+  {
+    q: `Which part of the GTA 6 map is based on ${name}?`,
+    a: `By the community matches, ${top.name}: ${top.count} of the ${city.sure} named places matched to ${name} sit there.${city.regions.length > 1 ? ` The rest are spread across ${city.regions.slice(1).map((region) => `${region.name} (${region.count})`).join(', ')}.` : ''}`,
+  },
+  ...(districts.length >= 3
+    ? [{
+        q: `What parts of ${name} are in GTA 6?`,
+        a: `The matches cluster in these in-game districts: ${districts.map((district) => `${district.name} (${district.count})`).join(', ')}. The in-game names come from the community map, and the real addresses behind them are listed on this page.`,
+      }]
+    : []),
+  {
+    q: `How sure are the ${name} matches?`,
+    a: `They are community work. ${city.unconfirmed === 0 ? 'None of them is' : `${plural(city.unconfirmed, 'match')} ${city.unconfirmed === 1 ? 'is' : 'are'}`} tagged unconfirmed by the gtadb mappers themselves. ${city.unnamed > 0 ? `${city.unnamed === 1 ? 'One more record' : `${city.unnamed} more records`} point${city.unnamed === 1 ? 's' : ''} at ${name} with no readable in-game name, and ${city.unnamed === 1 ? 'it is' : 'those are'} left off this list.` : ''}`.trim(),
+  },
+]
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'FAQPage',
+      '@id': `${canonical(path)}#faq`,
+      mainEntity: faq.map((item) => ({
+        '@type': 'Question',
+        name: item.q,
+        acceptedAnswer: { '@type': 'Answer', text: item.a },
+      })),
+    },
+    {
+      '@type': 'WebPage',
+      '@id': canonical(path),
+      url: canonical(path),
+      name: title,
+      description,
+      isPartOf: { '@type': 'WebSite', name: SITE_NAME, url: SITE_URL },
+      about: { '@type': 'Place', name: `${name}, Florida` },
+      isBasedOn: feed.sourceRepo,
+      breadcrumb: {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: SITE_NAME, item: canonical('/') },
+          { '@type': 'ListItem', position: 2, name: 'Real places', item: canonical('/real-places') },
+          { '@type': 'ListItem', position: 3, name, item: canonical(path) },
+        ],
+      },
+    },
+  ],
+}
+---
+<BaseLayout title={title} description={description} path={path} jsonLd={jsonLd}>
+  <section class="band band--glaze">
+    <div class="shell">
+      <p class="crumb" style="color:var(--on-glaze-2)">
+        <a href="/" style="color:var(--on-glaze-2)">GTA 6 Record</a> /
+        <a href="/real-places" style="color:var(--on-glaze-2)">Real places</a> / {name}
+      </p>
+      <h1 style="max-width:22ch">{name}, Florida in GTA 6</h1>
+      <p class="lede">{description}</p>
+      <dl class="tally">
+        <div><dt>Named places matched</dt><dd>{city.sure}</dd></div>
+        <div><dt>Main in-game area</dt><dd>{top.name}</dd></div>
+        <div><dt>Tagged unconfirmed</dt><dd>{city.unconfirmed}</dd></div>
+        <div><dt>Linked to a page here</dt><dd>{city.linked}</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="shell">
+      <div class="prose">
+        <h2>What the community map shows for {name}</h2>
+        <p>
+          Mappers on the GTADB community map have matched {plural(city.sure, 'named place')} in
+          Grand Theft Auto VI to real spots in {name}, Florida. {top.count} of them
+          sit in the in-game area of {locationUrl(top.name)
+            ? <a href={locationUrl(top.name)}>{top.name}</a>
+            : top.name}.
+          {city.regions.length > 1 && <span> By area, the full count is {regionText}.</span>}
+        </p>
+        {districts.length >= 3 && (
+          <p>
+            Inside the game the matches fall into these districts:{' '}
+            {districts.map((district, index) => (
+              <span>
+                {index > 0 && ', '}
+                {locationUrl(district.name)
+                  ? <a href={locationUrl(district.name)}>{district.name}</a>
+                  : district.name}{` (${district.count})`}
+              </span>
+            ))}.
+          </p>
+        )}
+        <p>
+          Rockstar has not published any of these pairings. Every row below is
+          community-identified: people compared the official footage with the
+          real streets and wrote down the match. {city.unconfirmed > 0
+            ? `The mappers tag ${plural(city.unconfirmed, 'row')} as unconfirmed themselves, and ${city.unconfirmed === 1 ? 'it carries' : 'those carry'} the same flag here.`
+            : 'None of these rows carries an unconfirmed tag from the mappers.'}
+          {city.unnamed > 0 && ` ${city.unnamed === 1 ? 'One more record' : `${city.unnamed} more records`} on the map point${city.unnamed === 1 ? 's' : ''} at ${name} with no readable in-game name, and ${city.unnamed === 1 ? 'it is' : 'those are'} left out.`}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--stone" id="list">
+    <div class="shell">
+      <h2 class="head">Every match in {name}</h2>
+      <p class="head__sub">
+        In-game name on the left, the real place on the right, A to Z. A linked
+        name has its own page on this site.
+      </p>
+      <ul class="pairs">
+        {city.rows.map((row) => (
+          <li class="pairs__item">
+            <div class="pairs__game">
+              {entityUrl(row.entity)
+                ? <a class="pairs__name" href={entityUrl(row.entity)}>{row.name}</a>
+                : <span class="pairs__name">{row.name}</span>}
+              {gameWhere(row) && <p class="pairs__where">{gameWhere(row)}</p>}
+              <p class="pairs__basis">
+                Community-identified
+                {row.unconfirmed && <span class="flag flag--doubt">gtadb: unconfirmed</span>}
+                {row.nameUnsure && <span class="flag flag--doubt">name unsure</span>}
+              </p>
+            </div>
+            <div class="pairs__real">
+              <p class="pairs__realname">
+                {row.real}
+                {row.gone && <span class="flag flag--gone">demolished</span>}
+                {row.closed && <span class="flag flag--gone">closed</span>}
+              </p>
+              {row.realWhere && <p class="pairs__where">{row.realWhere}</p>}
+              <p class="pairs__links">
+                <a href={gtadbUrl(row.id)} rel="nofollow noopener">gtadb map</a>
+                {osmUrl(row) && <a href={osmUrl(row)} rel="nofollow noopener">View on OpenStreetMap</a>}
+              </p>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="band band--plaster" id="faq">
+    <div class="shell">
+      <div class="prose">
+        <h2>Questions about {name} in GTA 6</h2>
+        {faq.map((item) => (
+          <>
+            <h3>{item.q}</h3>
+            <p>{item.a}</p>
+          </>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="shell">
+      <div class="prose">
+        <h2>Where this list comes from</h2>
+        <p>
+          Data: <a href={feed.sourceUrl} rel="nofollow noopener">GTA VI Landmarks Data</a>,
+          {' '}{feed.credit}, shared under
+          {' '}<a href={feed.sourceLicenseUrl} rel="nofollow noopener license">{feed.sourceLicense}</a>.
+          This page reads revision {String(feed.sourceCommit || '').slice(0, 7)} of
+          {' '}<a href={feed.sourceRepo} rel="nofollow noopener">rolux/gtadb.org</a>,
+          rebuilt on {longDate(feed.built)}. We changed it: only records with a
+          readable in-game name and a real address are kept, and they are grouped
+          by the town in that address. No map image or photograph is copied.
+        </p>
+        <p>
+          For the whole state in one list, see <a href="/real-places">the real
+          Florida places behind GTA 6</a>. For where things sit in the game
+          itself, see the <a href="/map">GTA 6 map</a>.
+        </p>
+      </div>
+      {others.length > 0 && (
+        <>
+          <h2 class="head" style="margin-top:28px">Other real cities</h2>
+          <ul class="jump">
+            {others.map((other) => (
+              <li><a href={cityPath(other)}>{other.name} <span>{other.sure}</span></a></li>
+            ))}
+          </ul>
+        </>
+      )}
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .tally { display: flex; flex-wrap: wrap; gap: 10px 36px; margin: 22px 0 0; }
+  .tally div { margin: 0; }
+  .tally dt {
+    font: 600 11px/1 var(--ui); letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--on-glaze-2); margin: 0 0 6px;
+  }
+  .tally dd { font: 700 22px/1 var(--display); color: var(--on-glaze); margin: 0; }
+
+  .head { font: 700 24px/1.2 var(--display); margin: 0 0 6px; color: var(--ink); }
+  .head__sub { margin: 0 0 20px; max-width: var(--prose); font: 400 15px/1.6 var(--body); color: var(--ink-2); }
+
+  .jump { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  .jump a {
+    display: inline-block; padding: 6px 10px; background: var(--chip);
+    border-radius: var(--r); font: 600 13px/1 var(--ui); color: var(--ink);
+    text-decoration: none;
+  }
+  .jump a:hover { background: var(--glaze-tint); color: var(--glaze-deep); }
+  .jump a span { color: var(--ink-2); font-weight: 400; margin-left: 4px; }
+
+  .pairs { list-style: none; margin: 0; padding: 0; }
+  .pairs__item {
+    display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 4px 32px; padding: 12px 0; border-bottom: 1px solid var(--line);
+  }
+  .pairs__item:last-child { border-bottom: 0; }
+  .pairs__game, .pairs__real { min-width: 0; overflow-wrap: anywhere; }
+  .pairs__name { font: 600 16px/1.5 var(--body); color: var(--ink); }
+  a.pairs__name { text-decoration: none; border-bottom: 2px solid var(--glaze-tint); }
+  a.pairs__name:hover { border-bottom-color: var(--glaze); }
+  .pairs__realname { margin: 0; font: 400 16px/1.5 var(--body); color: var(--ink); }
+  .pairs__where { margin: 1px 0 0; font: 400 14px/1.5 var(--body); color: var(--ink-2); }
+  .pairs__basis {
+    margin: 4px 0 0; font: 600 10px/1.4 var(--ui); letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--ink-2);
+  }
+  .pairs__links { margin: 4px 0 0; display: flex; flex-wrap: wrap; gap: 4px 14px; font: 600 12px/1.5 var(--ui); }
+
+  .flag {
+    margin-left: 9px; font: 600 10px/1 var(--ui); letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .flag--doubt { color: var(--clay); }
+  .flag--gone { color: var(--brass-ink); }
+
+  @media (max-width: 720px) {
+    .pairs__item { grid-template-columns: 1fr; gap: 2px; }
+  }
+</style>

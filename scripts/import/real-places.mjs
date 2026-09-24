@@ -3,82 +3,89 @@
  *
  * Vice City is Miami. That is the whole premise of the setting, and the
  * community has spent years standing in front of the real buildings and
- * working out which one is which. A hotel on Ocean Drive in the game is a
- * specific hotel on Ocean Drive in Miami Beach.
+ * working out which one is which. That work lives in the GTADB community map
+ * (rolux/gtadb.org, CC BY 4.0, credit "gtadb.org and all contributors").
  *
- * That work lives in the GTADB community map, and the navanem/gta6-leonida-atlas
- * project pinned a revision of it. Each record holds the in-game address, the
- * real-world address, and how sure the mapper is about both.
+ * This script is the one place that data enters the site. It writes one file,
+ * src/data/real-places.json, and both /real-places and the city pages under
+ * /real-places/<city> read it through src/lib/real-places.mjs. Grouping by
+ * in-game area and by real city happens there, from the same rows, so the
+ * two views can never disagree.
  *
- * Only the solid half is kept here. A record must have a real in-game name,
- * not a question mark, and a real-world address. That leaves the rows a reader
- * can actually check by opening a map of Miami.
+ * Rules, all taken straight from the data:
+ *
+ * - A row needs a sure in-game name and a real-world address. A name that
+ *   starts with "?" is the mapper saying they could not read the sign, so the
+ *   record is dropped (it is still counted per city as "no readable name").
+ * - The real city is the town in the address ("..., Miami, FL 33127"), with
+ *   any plus code in front of it removed. Coconut Grove is a neighbourhood of
+ *   the City of Miami and is counted as Miami. No other town is merged.
+ * - gtadb's own doubt tags (unconfirmed, may-not-exist, address-ambiguous) are
+ *   carried through, as are demolished and closed. gtadb has no "checked" or
+ *   "supported" flag, so none is claimed.
+ * - A row links to a page here only through the reviewed name match in
+ *   data/extras/landmark-addresses.json.
  *
  * What this is not: proof of anything Rockstar has said. Rockstar has never
- * published a single one of these pairings. The atlas project puts it well in
- * its own methodology, and this page keeps the same order: Rockstar media
- * first, community reconstruction second, Florida analogues third and never as
- * game truth.
+ * published a single one of these pairings.
  *
- * The source repo is not inside this repo, so the output file is committed.
- * Cloudflare cannot rebuild it.
+ * The source is not inside this repo, so the output file is committed.
+ * Refresh it with a sparse clone next to this repo:
  *
+ *   git clone --filter=blob:none --sparse https://github.com/rolux/gtadb.org ../gta6-src/rolux-gtadb.org
+ *   git -C ../gta6-src/rolux-gtadb.org sparse-checkout set map/data/6
  *   node scripts/import/real-places.mjs
+ *
+ * GTADB_DIR overrides where the clone is looked for.
  */
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs'
 import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { execFileSync } from 'node:child_process'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', '..')
-const SRC = join(
-  ROOT, '..', 'gta6-src', 'navanem-gta6-leonida-atlas',
-  'public', 'assets', 'street-leonida', 'maps', 'gtadb-landmarks-7c3f8c2.json',
-)
+const GTADB = process.env.GTADB_DIR || join(ROOT, '..', 'gta6-src', 'rolux-gtadb.org')
+const SRC = join(GTADB, 'map', 'data', '6', 'landmarks.json')
 const OUT = join(ROOT, 'src', 'data', 'real-places.json')
+const ADDRESSES = join(ROOT, 'data', 'extras', 'landmark-addresses.json')
+const TRACKER = join(ROOT, 'src', 'content', 'tracker')
 
-if (!existsSync(SRC)) {
-  console.error(`[real-places] cannot find ${SRC}`)
-  console.error('[real-places] the reference clone is expected at ../gta6-src/navanem-gta6-leonida-atlas')
-  process.exit(1)
-}
+/** A neighbourhood gtadb writes as its own town, to the city it sits in. */
+const NEIGHBOURHOOD_OF = { 'Coconut Grove': 'Miami' }
 
-/** entityType in the data to the hub folder the page sits in. */
-const HUB_OF = {
-  location: 'locations',
-  landmark: 'landmarks',
-  business: 'businesses',
-  brand: 'brands',
-}
-
-const norm = (value) =>
-  String(value || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim()
-
-/** Every place name on this site, to its page. Places only. */
-function buildIndex() {
-  const path = join(ROOT, 'src', 'data', 'entities.json')
-  if (!existsSync(path)) {
-    console.error('[real-places] src/data/entities.json is missing. Run npm run build:data first.')
-    process.exit(1)
-  }
-  const table = new Map()
-  for (const entity of JSON.parse(readFileSync(path, 'utf8'))) {
-    const hub = HUB_OF[entity.entityType]
-    if (!hub) continue
-    const target = { url: `/${hub}/${entity.slug}` }
-    for (const name of [entity.name, ...(entity.altNames || [])]) {
-      const key = norm(name)
-      if (key && key.split(' ').length >= 2 && !table.has(key)) table.set(key, target)
-    }
-  }
-  return table
-}
-
-const index = buildIndex()
+/**
+ * Places people search for by name. Each is looked up the same way, and the
+ * page says what was found, including nothing. The tracker slugs are posts
+ * already on this site about the same place.
+ */
+const ASKED = [
+  { key: 'lakeland', label: 'Lakeland', city: 'Lakeland' },
+  { key: 'doral', label: 'Doral', city: 'Doral' },
+  { key: 'hialeah', label: 'Hialeah', city: 'Hialeah' },
+  { key: 'cedar-key', label: 'Cedar Key', city: 'Cedar Key' },
+  {
+    key: 'cape-canaveral',
+    label: 'Cape Canaveral',
+    text: 'Cape Canaveral',
+    tracker: [
+      'eagle-eyed-fan-spots-potential-cape-canaveral-launch-tower-in-gta-6',
+      'gta-6-fan-spot-hints-at-potential-cape-canaveral-equivalent-in-leonida',
+    ],
+  },
+  {
+    key: 'vercetti-estate',
+    label: 'Vercetti Estate',
+    name: 'Vercetti Estate',
+    tracker: [
+      'is-the-vercetti-estate-returning-in-gta-6-new-screenshot-sparks',
+      'do-you-think-the-vercetti-estate-will-return-in-gta-6',
+    ],
+  },
+]
 
 /**
  * The tag the mapper attached, turned into one word a reader understands.
- * A record can carry several, so the first match in this order wins. The
- * level tags (l1, l4) and the housekeeping tags (todo, reused) are ignored.
+ * A record can carry several, so the first match in this order wins.
  */
 const KIND_ORDER = [
   ['hotel', 'Hotel'],
@@ -101,157 +108,155 @@ const KIND_ORDER = [
   ['construction', 'Building site'],
 ]
 
-/** Tags that say the mapper is unsure, or that the real place is gone. */
-const DOUBT = new Set(['unconfirmed', 'uncomfirmed', 'may-not-exist', 'address-ambiguous', 'todo'])
+const DOUBT = new Set(['unconfirmed', 'uncomfirmed', 'may-not-exist', 'address-ambiguous', 'doesnt-exist?'])
 
-/**
- * "Dominion Hotel, Shore Dr, Vice Beach" into name and area.
- *
- * A name that ends in a question mark is the mapper saying they read the sign
- * but are not sure of it. The mark is taken off the name and carried out as a
- * doubt flag instead, so it reaches the reader as words rather than punctuation.
- */
-function splitAddress(value) {
-  const text = String(value || '').trim()
-  const at = text.indexOf(', ')
-  const rawName = at < 0 ? text : text.slice(0, at).trim()
-  const unsure = rawName.endsWith('?')
-  return {
-    name: unsure ? rawName.slice(0, -1).trim() : rawName,
-    area: at < 0 ? '' : text.slice(at + 2).trim(),
-    unsure,
+if (!existsSync(SRC)) {
+  console.error(`[real-places] cannot find ${SRC}`)
+  console.error('[real-places] see the header of this script for the clone command')
+  process.exit(1)
+}
+
+function commitOf(dir) {
+  try {
+    return execFileSync('git', ['-C', dir, 'rev-parse', 'HEAD'], { encoding: 'utf8' }).trim()
+  } catch {
+    return null
   }
 }
 
-/**
- * "W South Beach, 2201 Collins Ave, Miami Beach, FL 33139, USA" into the name
- * of the real place and the street it stands on. The trailing country is
- * dropped because every one of them is in the United States.
- */
+const PLUS_CODE = /\b[23456789CFGHJMPQRVWX]{2,8}\+[23456789CFGHJMPQRVWX]{2,3}\b,?\s*/g
+
+/** "..., Miami, FL 33127, USA" or "..., Cedar Key, Florida, USA" to the town. */
+function cityOf(address) {
+  const text = String(address || '').replace(PLUS_CODE, '')
+  const hit =
+    text.match(/([^,]+),\s*(?:FL|Florida)\s*\d{5}/) || text.match(/([^,]+),\s*Florida\s*,\s*USA$/)
+  const name = hit ? hit[1].trim() : ''
+  if (!name || /\d/.test(name)) return null
+  return NEIGHBOURHOOD_OF[name] || name
+}
+
+/** "W South Beach, 2201 Collins Ave, Miami Beach, FL 33139, USA" to name and street. */
 function splitReal(value) {
   const parts = String(value || '').split(', ').map((part) => part.trim()).filter(Boolean)
   if (parts[parts.length - 1] === 'USA') parts.pop()
-  if (!parts.length) return null
-  const street = parts.slice(1).join(', ')
-  return { name: parts[0], where: street || null, full: parts.join(', ') }
+  // "3R7C+C62 Raiford, Florida" has no street address at all, only a plus
+  // code. The town becomes the name and the code is kept as the locator.
+  const code = (parts[0] || '').match(/^([23456789CFGHJMPQRVWX]{2,8}\+[23456789CFGHJMPQRVWX]{2,3})\s+(.+)$/)
+  if (code) return { real: code[2], realWhere: `Plus code ${code[1]}` }
+  return { real: parts[0] || '', realWhere: parts.slice(1).join(', ') || null }
 }
 
-/**
- * The Florida town out of a full address. Every address ends the same way,
- * "<town>, FL <zip>", so the town is the part just before the state. A few
- * records give a plus code or a highway with no town, and those return null.
- */
-function cityOf(address) {
-  const hit = String(address || '').match(/([^,]+),\s*FL\s*\d{5}/)
-  const name = hit ? hit[1].trim() : ''
-  return name && !/\d{4}/.test(name) ? name : null
+const cleanTag = (tag) => String(tag).toLowerCase().replace(/^(\/\/|#|@)/, '')
+
+/** gtadb id to our entity slug, from the reviewed address match. */
+const slugOfId = new Map()
+for (const [slug, entry] of Object.entries(JSON.parse(readFileSync(ADDRESSES, 'utf8')))) {
+  if (slug.startsWith('_') || !entry?.gtadb_id) continue
+  slugOfId.set(entry.gtadb_id, slug)
 }
 
 const raw = JSON.parse(readFileSync(SRC, 'utf8'))
-let linked = 0
-
-const rows = []
-for (const item of raw.landmarks || []) {
-  const { name, area, unsure } = splitAddress(item.inGameAddress)
-  // A name that starts with a question mark is the mapper saying they could
-  // not read the sign. It can carry a hint, like "? (N)" for the north half of
-  // a block, and it is still not a name, so the whole record is dropped.
-  if (!name || name.startsWith('?')) continue
-  const real = splitReal(item.realWorldAddress)
-  if (!real) continue
-
-  const tags = (item.tags || []).map((tag) => String(tag).toLowerCase())
-  const kind = KIND_ORDER.find(([tag]) => tags.includes(tag))
-  const link = index.get(norm(name)) || null
-  if (link) linked += 1
-
-  rows.push({
-    id: item.id,
-    name,
-    area: area || 'Elsewhere in Leonida',
-    kind: kind ? kind[1] : 'Place',
-    real: real.name,
-    realWhere: real.where,
-    realFull: real.full,
-    realCity: cityOf(real.full),
-    coords: item.realWorldCoordinates || null,
-    confidence: item.confidence === 'SUPPORTED' ? 'supported' : 'unknown',
-    named: item.evidence?.name === 'KNOWN',
-    doubt: unsure || tags.some((tag) => DOUBT.has(tag)),
-    gone: tags.includes('demolished'),
-    url: link ? link.url : null,
+const all = []
+for (const [id, record] of Object.entries(raw)) {
+  const [ingame, , , realAddress, realCoords, , tags] = record
+  const parts = String(ingame || '').split(', ').map((part) => part.trim())
+  const rawName = parts[0] || ''
+  const clean = (tags || []).map(cleanTag)
+  const kind = KIND_ORDER.find(([tag]) => clean.includes(tag))
+  const { real, realWhere } = splitReal(realAddress)
+  const hasCoords = Array.isArray(realCoords) && Number.isFinite(realCoords[0]) && Number.isFinite(realCoords[1])
+  all.push({
+    id,
+    sure: Boolean(rawName) && !rawName.startsWith('?'),
+    address: realAddress || '',
+    row: {
+      id,
+      name: rawName.replace(/\?$/, '').trim(),
+      nameUnsure: rawName.endsWith('?') || undefined,
+      area: parts.length > 1 ? parts.slice(1).join(', ') : 'Elsewhere in Leonida',
+      district: parts.length > 2 ? parts.slice(1, -1).join(', ') : null,
+      region: parts.length > 1 ? parts[parts.length - 1] : null,
+      kind: kind ? kind[1] : 'Place',
+      real,
+      realWhere,
+      city: realAddress ? cityOf(realAddress) : null,
+      lat: hasCoords ? Number(realCoords[0].toFixed(6)) : null,
+      lng: hasCoords ? Number(realCoords[1].toFixed(6)) : null,
+      unconfirmed: clean.some((tag) => DOUBT.has(tag)) || undefined,
+      gone: clean.includes('demolished') || undefined,
+      closed: clean.includes('closed') || undefined,
+      entity: slugOfId.get(id) || null,
+    },
   })
 }
 
-rows.sort((a, b) => a.name.localeCompare(b.name))
+const byName = (a, b) => a.name.localeCompare(b.name) || a.id.localeCompare(b.id, 'en', { numeric: true })
+const kept = all.filter((item) => item.sure && item.address)
+const rows = kept.map((item) => item.row).sort(byName)
 
-/** Grouped by the in-game area, biggest area first, names sorted inside it. */
-const byArea = new Map()
-for (const row of rows) {
-  if (!byArea.has(row.area)) byArea.set(row.area, [])
-  byArea.get(row.area).push(row)
+/** Records with a real address but no readable in-game name, per city. */
+const unnamedByCity = {}
+for (const item of all) {
+  if (item.sure || !item.address || !item.row.city) continue
+  unnamedByCity[item.row.city] = (unnamedByCity[item.row.city] || 0) + 1
 }
-/**
- * The real towns an in-game area draws on, busiest first. One area almost
- * always sits on one town, and that is the most interesting thing the data
- * says, so it is worked out once here rather than in the page.
- */
-function citiesIn(items) {
-  const tally = new Map()
-  for (const row of items) {
-    if (!row.realCity) continue
-    tally.set(row.realCity, (tally.get(row.realCity) || 0) + 1)
+
+const trackerExists = (slug) => existsSync(join(TRACKER, `${slug}.md`))
+const asked = ASKED.map((query) => {
+  let hits
+  if (query.city) hits = all.filter((item) => item.address && item.row.city === query.city)
+  else if (query.text) hits = all.filter((item) => item.address.includes(query.text))
+  else hits = all.filter((item) => item.sure && item.row.name === query.name)
+  const sure = hits.filter((item) => item.sure && item.address).map((item) => item.row).sort(byName)
+  return {
+    key: query.key,
+    label: query.label,
+    by: query.city ? 'city' : query.text ? 'address' : 'name',
+    city: query.city || null,
+    ids: sure.map((row) => row.id),
+    unnamed: hits.filter((item) => !item.sure).length,
+    tracker: (query.tracker || []).filter(trackerExists),
   }
-  return [...tally.entries()]
-    .map(([name, count]) => ({ name, count }))
-    .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name))
-}
+})
+const missingTracker = ASKED.flatMap((query) => (query.tracker || []).filter((slug) => !trackerExists(slug)))
+if (missingTracker.length) console.warn(`[real-places] tracker posts not found: ${missingTracker.join(', ')}`)
 
-const areas = [...byArea.entries()]
-  .map(([name, items]) => ({ name, count: items.length, cities: citiesIn(items), items }))
-  .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name))
-
-/** How many of each kind, for the page to talk about. */
 const kinds = {}
 for (const row of rows) kinds[row.kind] = (kinds[row.kind] || 0) + 1
 
 const today = new Date().toISOString().slice(0, 10)
+const out = {
+  built: today,
+  source: 'GTADB community map of Grand Theft Auto VI',
+  sourceUrl: 'https://map.gtadb.org',
+  sourceRepo: 'https://github.com/rolux/gtadb.org',
+  sourceCommit: commitOf(GTADB),
+  sourceLicense: 'CC BY 4.0',
+  sourceLicenseUrl: 'https://creativecommons.org/licenses/by/4.0/',
+  credit: 'gtadb.org and all contributors',
+  method:
+    'Community mappers matched places seen in official GTA VI media to real addresses in Florida. Only records with both a readable in-game name and a real-world address are kept. Rockstar has never published any of these pairings. A real place is an analogue, not proof of anything in the game.',
+  counts: {
+    records: all.length,
+    named: all.filter((item) => item.sure).length,
+    kept: rows.length,
+    unconfirmed: rows.filter((row) => row.unconfirmed).length,
+    gone: rows.filter((row) => row.gone).length,
+    linked: rows.filter((row) => row.entity).length,
+  },
+  kinds,
+  unnamedByCity,
+  asked,
+  rows,
+}
 
 mkdirSync(dirname(OUT), { recursive: true })
-writeFileSync(
-  OUT,
-  JSON.stringify(
-    {
-      built: today,
-      source: 'GTADB community map of Grand Theft Auto VI',
-      sourceUrl: 'https://map.gtadb.org',
-      sourceRepo: 'https://github.com/rolux/gtadb.org',
-      sourceRevision: raw.source?.revision || null,
-      sourceLicense: 'CC BY 4.0',
-      via: 'https://github.com/navanem/gta6-leonida-atlas',
-      method:
-        'Community mappers matched places seen in official GTA VI media to real addresses in Florida. Only records with both a named in-game place and a real-world address are kept. Rockstar has never published any of these pairings. A real place is an analogue, not proof of anything in the game.',
-      counts: {
-        records: (raw.landmarks || []).length,
-        kept: rows.length,
-        supported: rows.filter((row) => row.confidence === 'supported').length,
-        linked,
-        areas: areas.length,
-      },
-      kinds,
-      areas,
-    },
-    null,
-    2,
-  ) + '\n',
-)
+writeFileSync(OUT, JSON.stringify(out, null, 2) + '\n')
 
-console.log(`[real-places] ${(raw.landmarks || []).length} records in, ${rows.length} kept`)
-console.log(`[real-places] ${rows.filter((r) => r.confidence === 'supported').length} supported, ${rows.filter((r) => r.doubt).length} flagged unsure, ${rows.filter((r) => r.gone).length} real place demolished`)
-console.log(`[real-places] ${linked} matched a page on this site`)
-console.log(`[real-places] ${areas.length} in-game areas`)
-for (const area of areas.slice(0, 8)) {
-  const town = area.cities[0]
-  console.log(`[real-places]   ${area.name} (${area.count}) mostly ${town ? `${town.name}, ${town.count}` : 'no single town'}`)
+console.log(`[real-places] gtadb ${out.sourceCommit || 'unknown commit'}: ${all.length} records, ${out.counts.named} with a readable name, ${rows.length} kept`)
+console.log(`[real-places] ${out.counts.unconfirmed} tagged unconfirmed, ${out.counts.gone} demolished, ${out.counts.linked} linked to a page here`)
+for (const item of asked) {
+  console.log(`[real-places]   asked ${item.label}: ${item.ids.length} named, ${item.unnamed} unnamed, tracker ${item.tracker.length}`)
 }
 console.log('[real-places] wrote src/data/real-places.json')

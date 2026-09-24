@@ -23,6 +23,7 @@ name: robot
 on:
   schedule:
     - cron: '0 5,17 * * *'
+    - cron: '30 */2 * * *'
   workflow_dispatch:
     inputs:
       since:
@@ -35,6 +36,11 @@ on:
         type: boolean
         default: false
 
+# Never two runs at once: a second one waits, so two pushes cannot collide.
+concurrency:
+  group: robot
+  cancel-in-progress: false
+
 permissions:
   contents: write
   issues: write
@@ -46,7 +52,30 @@ permissions:
   models: read
 
 jobs:
+  # Launch window. From 12 to 21 Nov 2026 this job also runs every 2 hours
+  # ('30 */2 * * *' below). Outside those days the extra runs stop here after a
+  # few seconds and do nothing. The repo is public, so the runs cost nothing.
+  # After launch week this schedule and gate can simply be deleted.
+  gate:
+    runs-on: ubuntu-latest
+    outputs:
+      run: ${{ steps.check.outputs.run }}
+    steps:
+      - id: check
+        env:
+          SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          if [ "$SCHEDULE" != "30 */2 * * *" ]; then echo "run=true" >> "$GITHUB_OUTPUT"; exit 0; fi
+          today=$(date -u +%Y%m%d)
+          if [ "$today" -ge 20261112 ] && [ "$today" -le 20261121 ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          fi
+
   robot:
+    needs: gate
+    if: needs.gate.outputs.run == 'true'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

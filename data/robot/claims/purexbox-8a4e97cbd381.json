@@ -1,0 +1,25 @@
+{
+  "rawId": "purexbox-8a4e97cbd381",
+  "outlet": "Pure Xbox",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.purexbox.com/news/2026/09/xbox-cso-issues-response-to-report-about-gta-6-sales-being-heavily-skewed-towards-ps5",
+  "published": "2026-09-24",
+  "ogImage": "https://images.purexbox.com/5a74df30eb50b/large.jpg",
+  "extractedAt": "2026-09-25T10:04:22.433Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Someone can say whatever they want, with zero evidence, and they can be cited as a source.",
+          "quote": "Someone can say whatever they want, with zero evidence, and they can be cited as a source."
+        }
+      ]
+    }
+  ]
+}

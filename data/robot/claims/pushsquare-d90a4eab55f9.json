@@ -1,0 +1,39 @@
+{
+  "rawId": "pushsquare-d90a4eab55f9",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/09/gta-6-pre-orders-heavily-skewed-towards-ps5-xbox-exec-responds",
+  "published": "2026-09-24",
+  "ogImage": "https://images.pushsquare.com/34632512dcd92/large.jpg",
+  "extractedAt": "2026-09-25T10:04:28.939Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "You don’t want to “strand” your game on a dying ecosystem (Xbox) or format (disc).",
+          "quote": "You don’t want to “strand” your game on a dying ecosystem (Xbox) or format (disc)."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Phil",
+      "altNames": [],
+      "slug": "phil",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Don't you remember Phil going on kinda funny crying about how they lost the worse gen to lose and exclusives don't matter.",
+          "quote": "Don't you remember Phil going on kinda funny crying about how they lost the worse gen to lose and exclusives don't matter."
+        }
+      ]
+    }
+  ]
+}

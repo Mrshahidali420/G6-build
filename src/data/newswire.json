@@ -2,12 +2,26 @@
   "source": "Rockstar Games Newswire, tag \"Grand Theft Auto VI\"",
   "sourceUrl": "https://www.rockstargames.com/newswire/tags/666",
   "method": "Read from the GraphQL endpoint that rockstargames.com uses for its own Newswire list. Titles, subtitles, dates and links only. No article text is copied.",
-  "checked": "2026-09-21",
+  "checked": "2026-09-25",
   "counts": {
-    "total": 9,
+    "total": 10,
     "missingFromFeed": 0
   },
   "posts": [
+    {
+      "id": "17897443983158",
+      "title": "Pre-Order The Goodtime State – Vice City Collection Now While Supplies Last",
+      "subtitle": "Coming November 19",
+      "slug": "pre-order-the-goodtime-state-vice-city-collection-now-while-supplies-l",
+      "url": "https://www.rockstargames.com/newswire/article/9k2a49ook82o57/pre-order-the-goodtime-state-vice-city-collection-now-while-supplies-l",
+      "date": "2026-09-24",
+      "displayDate": "9/24/26, 11:00 AM",
+      "tags": [
+        "Grand Theft Auto VI"
+      ],
+      "firstSeen": "2026-09-25",
+      "lastSeen": "2026-09-25"
+    },
     {
       "id": "17893996695289",
       "title": "Announcing Grand Theft Auto VI: The Album, Coming November 19",
@@ -20,7 +34,7 @@
         "Grand Theft Auto VI"
       ],
       "firstSeen": "2026-09-21",
-      "lastSeen": "2026-09-21"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "17869802240109",
@@ -34,7 +48,7 @@
         "Grand Theft Auto VI"
       ],
       "firstSeen": "2026-09-21",
-      "lastSeen": "2026-09-21"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "17839625656558",
@@ -48,7 +62,7 @@
         "Grand Theft Auto VI"
       ],
       "firstSeen": "2026-09-21",
-      "lastSeen": "2026-09-21"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "17822935824902",
@@ -62,7 +76,7 @@
         "Grand Theft Auto VI"
       ],
       "firstSeen": "2026-09-21",
-      "lastSeen": "2026-09-21"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "17817856666024",
@@ -76,7 +90,7 @@
         "Grand Theft Auto VI"
       ],
       "firstSeen": "2026-09-21",
-      "lastSeen": "2026-09-21"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "17624622125650",
@@ -90,7 +104,7 @@
         "Grand Theft Auto VI"
       ],
       "firstSeen": "2026-09-21",
-      "lastSeen": "2026-09-21"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "17448100800962",
@@ -104,7 +118,7 @@
         "Grand Theft Auto VI"
       ],
       "firstSeen": "2026-09-21",
-      "lastSeen": "2026-09-21"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "17461841148216",
@@ -118,7 +132,7 @@
         "Grand Theft Auto VI"
       ],
       "firstSeen": "2026-09-21",
-      "lastSeen": "2026-09-21"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "17017767114026",
@@ -132,7 +146,7 @@
         "Grand Theft Auto VI"
       ],
       "firstSeen": "2026-09-21",
-      "lastSeen": "2026-09-21"
+      "lastSeen": "2026-09-25"
     }
   ]
 }

@@ -1,0 +1,33 @@
+{
+  "rawId": "gamesradar-6e615ae5ca1f",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/bringing-gta-6-to-nintendo-switch-2-doesnt-make-sense-when-anyone-will-buy-a-ps5-to-get-your-game-says-former-rockstar-dev/",
+  "published": "2026-09-25",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/7GKLvfHyNh9cXxWFVLB7Zg-1920-80.jpg",
+  "extractedAt": "2026-09-25T20:20:14.587Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        },
+        {
+          "fact": "Fans generally seem to understand and accept that if they want to play GTA 6 as soon as possible, there are only two options for doing so.",
+          "quote": "Fans generally seem to understand and accept that if they want to play GTA 6 as soon as possible, there are only two options for doing so."
+        },
+        {
+          "fact": "Nintendo exists in its own lane, because if you want new Mario, Zelda or Kirby games, you need a Switch 2.",
+          "quote": "Nintendo exists in its own lane, because if you want new Mario, Zelda or Kirby games, you need a Switch 2."
+        }
+      ]
+    }
+  ]
+}

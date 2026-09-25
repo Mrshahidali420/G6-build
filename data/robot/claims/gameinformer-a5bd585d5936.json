@@ -1,0 +1,93 @@
+{
+  "rawId": "gameinformer-a5bd585d5936",
+  "outlet": "Game Informer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://gameinformer.com/cover-reveal/2026/09/25/cover-reveal-grand-theft-auto-vi",
+  "published": "2026-09-25",
+  "ogImage": "https://gameinformer.com/sites/default/files/styles/og_image/public/2026/09/25/774e6cb2/gameinformer_gtavi_issue382_hero.jpg.webp",
+  "extractedAt": "2026-09-25T20:19:55.234Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "If you want to know just how “Florida” GTAVI aims to be, you don’t want to miss this story.",
+          "quote": "If you want to know just how “Florida” GTAVI aims to be, you don’t want to miss this story."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The magazine cover features beautiful original artwork, courtesy of Rockstar Games, featuring protagonists Jason Duval and Lucia Caminos, making it a cool collector’s item for Game Informer and GTA fans alike.",
+          "quote": "The magazine cover features beautiful original artwork, courtesy of Rockstar Games, featuring protagonists Jason Duval and Lucia Caminos, making it a cool collector’s item for Game Informer and GTA fans alike."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The magazine cover features beautiful original artwork, courtesy of Rockstar Games, featuring protagonists Jason Duval and Lucia Caminos, making it a cool collector’s item for Game Informer and GTA fans alike.",
+          "quote": "The magazine cover features beautiful original artwork, courtesy of Rockstar Games, featuring protagonists Jason Duval and Lucia Caminos, making it a cool collector’s item for Game Informer and GTA fans alike."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "I spoke with several lead designers at Rockstar Games to learn exclusive new details about its highly anticipated sequel, with a particular focus on how Rockstar brought the game’s setting and Florida parody, Leonida, to life.",
+          "quote": "I spoke with several lead designers at Rockstar Games to learn exclusive new details about its highly anticipated sequel, with a particular focus on how Rockstar brought the game’s setting and Florida parody, Leonida, to life."
+        },
+        {
+          "fact": "Our 14-page cover story features exclusive interview quotes and details of all things Vice City and Leonida.",
+          "quote": "Our 14-page cover story features exclusive interview quotes and details of all things Vice City and Leonida."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Our 14-page cover story features exclusive interview quotes and details of all things Vice City and Leonida.",
+          "quote": "Our 14-page cover story features exclusive interview quotes and details of all things Vice City and Leonida."
+        }
+      ]
+    }
+  ]
+}

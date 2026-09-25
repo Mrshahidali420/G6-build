@@ -1,0 +1,25 @@
+{
+  "rawId": "pushsquare-4195f75817ed",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/09/gta-6-cant-completely-sweep-this-years-goty-awards-anymore",
+  "published": "2026-09-25",
+  "ogImage": "https://images.pushsquare.com/b946a47621da1/large.jpg",
+  "extractedAt": "2026-09-25T20:20:34.098Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "It should be noted that Bayonetta 2, Animal Crossing New Horizons, Metroid Dread and Xenoblade Chronicles 3 were all nominated for GOTY 0 24 KillerIsDead 3 hours ago The awards should be held in January if they want a true yearly cycle.",
+          "quote": "It should be noted that Bayonetta 2, Animal Crossing New Horizons, Metroid Dread and Xenoblade Chronicles 3 were all nominated for GOTY 0 24 KillerIsDead 3 hours ago The awards should be held in January if they want a true yearly cycle."
+        }
+      ]
+    }
+  ]
+}

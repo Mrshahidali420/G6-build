@@ -1,0 +1,45 @@
+{
+  "rawId": "ign-7b955aa427cb",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/gta-6-fans-are-already-3d-printing-items-in-the-games-400-collectors-edition",
+  "published": "2026-09-25",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/09/25/gta-6-alligator-3d-print-1790365181135.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-09-25T20:20:21.098Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "And rather than paying $400, fans can simply support its creator by paying what they want.",
+          "quote": "And rather than paying $400, fans can simply support its creator by paying what they want."
+        },
+        {
+          "fact": "That said, I want one,” another commenter admitted . “This is the coolest thing!",
+          "quote": "That said, I want one,” another commenter admitted . “This is the coolest thing!"
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "GTA 6 Vice City Collection Collector's Set Items View 13 Images One of the most viral examples of this is a recreation of the game’s Macca the Alligator mascot, which has been fully modeled and uploaded as a printable file online.",
+          "quote": "GTA 6 Vice City Collection Collector's Set Items View 13 Images One of the most viral examples of this is a recreation of the game’s Macca the Alligator mascot, which has been fully modeled and uploaded as a printable file online."
+        }
+      ]
+    }
+  ]
+}

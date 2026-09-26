@@ -1,0 +1,45 @@
+{
+  "rawId": "pushsquare-90a08bdda47a",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/09/gta-6-fronts-next-game-informer-cover-with-new-info-and-screenshots",
+  "published": "2026-09-25",
+  "ogImage": "https://images.pushsquare.com/c59f1d6ffce8e/large.jpg",
+  "extractedAt": "2026-09-26T09:45:34.155Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The two protagonists, Jason and Lucia, are on the front cover with yet another stylised image of them in a car equipped with guns.",
+          "quote": "The two protagonists, Jason and Lucia, are on the front cover with yet another stylised image of them in a car equipped with guns."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The two protagonists, Jason and Lucia, are on the front cover with yet another stylised image of them in a car equipped with guns.",
+          "quote": "The two protagonists, Jason and Lucia, are on the front cover with yet another stylised image of them in a car equipped with guns."
+        }
+      ]
+    }
+  ]
+}

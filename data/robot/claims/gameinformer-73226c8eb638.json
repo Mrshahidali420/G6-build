@@ -1,0 +1,46 @@
+{
+  "rawId": "gameinformer-73226c8eb638",
+  "outlet": "Game Informer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://gameinformer.com/opinion/2026/09/25/the-video-games-and-more-you-should-play-this-weekend-september-25-2026",
+  "published": "2026-09-25",
+  "ogImage": "https://gameinformer.com/sites/default/files/styles/og_image/public/2026/06/04/fca9a08c/control-resonant-sgf-2026-1.jpg.webp",
+  "extractedAt": "2026-09-26T09:45:27.692Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "If you want an approachable game on your mobile device for wherever you're headed this weekend, it's a sure bet.",
+          "quote": "If you want an approachable game on your mobile device for wherever you're headed this weekend, it's a sure bet."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Brian Heder",
+      "altNames": [
+        "Brian",
+        "Heder"
+      ],
+      "slug": "brian-heder",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "EA Sports FC 27 Brian Shea If you're still buzzing from World Cup fever, EA Sports FC 27 is out now.",
+          "quote": "EA Sports FC 27 Brian Shea If you're still buzzing from World Cup fever, EA Sports FC 27 is out now."
+        },
+        {
+          "fact": "Shinobi: Art Of Vengeance Brian Shea Shinobi: Art of Vengeance was one of the best action games from last year, but the Switch version wasn't quite as amazing as the other platforms.",
+          "quote": "Shinobi: Art Of Vengeance Brian Shea Shinobi: Art of Vengeance was one of the best action games from last year, but the Switch version wasn't quite as amazing as the other platforms."
+        }
+      ]
+    }
+  ]
+}

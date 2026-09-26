@@ -1,0 +1,90 @@
+{
+  "rawId": "gamesradar-1617429d773a",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/rockstar-reportedly-reminded-gta-6s-voice-cast-theyre-still-under-nda-after-actor-stephen-root-let-slip-hes-in-the-game/",
+  "published": "2026-09-26",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/hDEpCpbkvXZtvrswTnCNom-1920-80.jpg",
+  "extractedAt": "2026-09-26T19:37:32.862Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Brian Heder",
+      "altNames": [
+        "Brian",
+        "Heder"
+      ],
+      "slug": "brian-heder",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Root didn't specify who he's depicting, exactly, but fans spotted his voice in one of GTA 6's very first trailers when drug-pusher Brain Heder began talking.",
+          "quote": "Root didn't specify who he's depicting, exactly, but fans spotted his voice in one of GTA 6's very first trailers when drug-pusher Brain Heder began talking."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "But it's been keeping a tight lid on whoever's voicing Lucia, Jason and every other character in Leonida.",
+          "quote": "But it's been keeping a tight lid on whoever's voicing Lucia, Jason and every other character in Leonida."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "But it's been keeping a tight lid on whoever's voicing Lucia, Jason and every other character in Leonida.",
+          "quote": "But it's been keeping a tight lid on whoever's voicing Lucia, Jason and every other character in Leonida."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "But it's been keeping a tight lid on whoever's voicing Lucia, Jason and every other character in Leonida.",
+          "quote": "But it's been keeping a tight lid on whoever's voicing Lucia, Jason and every other character in Leonida."
+        }
+      ]
+    }
+  ]
+}

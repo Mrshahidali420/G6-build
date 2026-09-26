@@ -1,0 +1,29 @@
+{
+  "rawId": "gamesradar-12ac9b972508",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/manor-lords-publisher-isnt-worried-about-launching-a-game-on-gta-6s-release-date-pc-players-looking-to-steal-cars-might-check-out-its-new-management-sim-instead/",
+  "published": "2026-09-26",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/9rQkVf34yeQg2HHfq88d9n-1920-80.jpg",
+  "extractedAt": "2026-09-26T19:37:26.405Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        },
+        {
+          "fact": "But actually it's a strategy -- people looking to steal cars and gun down their enemies searching for a PC release will instead discover they actually want to control little dudes hammering horseshoes,\" Hooded Horse CEO Tim Bender wrote in a recent LinkedIn post .",
+          "quote": "But actually it's a strategy -- people looking to steal cars and gun down their enemies searching for a PC release will instead discover they actually want to control little dudes hammering horseshoes,\" Hooded Horse CEO Tim Bender wrote in a recent LinkedIn post ."
+        }
+      ]
+    }
+  ]
+}

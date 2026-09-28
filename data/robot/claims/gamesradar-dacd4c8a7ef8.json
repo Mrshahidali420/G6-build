@@ -1,0 +1,59 @@
+{
+  "rawId": "gamesradar-dacd4c8a7ef8",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/open-world/forget-red-dead-redemption-3-rockstars-next-game-is-apparently-la-noire-2-according-to-a-gta-6-leaker-but-dont-expect-to-play-it-until-at-least-2030/",
+  "published": "2026-09-28",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/8MDTcyAncWNALTaiERa8Zi-1920-80.jpg",
+  "extractedAt": "2026-09-28T22:27:51.876Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Many of the mechanics they mentioned for the new Grand Theft Auto turned out to be accurate, such as the dynamics between Jason and Lucia, where you decide how romantically involved they are through your choices.",
+          "quote": "Many of the mechanics they mentioned for the new Grand Theft Auto turned out to be accurate, such as the dynamics between Jason and Lucia, where you decide how romantically involved they are through your choices."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Many of the mechanics they mentioned for the new Grand Theft Auto turned out to be accurate, such as the dynamics between Jason and Lucia, where you decide how romantically involved they are through your choices.",
+          "quote": "Many of the mechanics they mentioned for the new Grand Theft Auto turned out to be accurate, such as the dynamics between Jason and Lucia, where you decide how romantically involved they are through your choices."
+        }
+      ]
+    }
+  ]
+}

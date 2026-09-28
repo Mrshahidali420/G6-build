@@ -1,0 +1,25 @@
+{
+  "rawId": "ign-b69ba1b4daa4",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/gta-6-has-an-advanced-weather-system-but-how-will-it-work",
+  "published": "2026-09-28",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/09/28/vice-city-1790613199499.JPG?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-09-28T22:27:58.384Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "GTA 6 is set in Leonida, a fictional version of Florida, which has many wondering if there will be intense weather systems such as hurricanes.",
+          "quote": "GTA 6 is set in Leonida, a fictional version of Florida, which has many wondering if there will be intense weather systems such as hurricanes."
+        }
+      ]
+    }
+  ]
+}

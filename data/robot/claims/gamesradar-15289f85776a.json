@@ -1,0 +1,33 @@
+{
+  "rawId": "gamesradar-15289f85776a",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-fans-replicate-the-usd400-collectors-box-statue-and-you-can-now-3d-print-your-own-ugly-gator-at-home/",
+  "published": "2026-09-28",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/iWk3hXL2jUfp349cAJMF3n-1920-80.jpg",
+  "extractedAt": "2026-09-28T22:27:45.422Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        },
+        {
+          "fact": "And with that sort of guaranteed success, it probably makes sense to drop an expensive collector's edition of the game for those who really want to go all-out for it, but uhh... a $400 box that doesn't include the game is probably not the most appealing prospect for many.",
+          "quote": "And with that sort of guaranteed success, it probably makes sense to drop an expensive collector's edition of the game for those who really want to go all-out for it, but uhh... a $400 box that doesn't include the game is probably not the most appealing prospect for many."
+        },
+        {
+          "fact": "Latest Videos From GamesRadar+ Watch full video here: But despite it being a certified uggo, clearly some people want it and now that the GTA 6 collector's edition has somehow sold out .",
+          "quote": "Latest Videos From GamesRadar+ Watch full video here: But despite it being a certified uggo, clearly some people want it and now that the GTA 6 collector's edition has somehow sold out ."
+        }
+      ]
+    }
+  ]
+}

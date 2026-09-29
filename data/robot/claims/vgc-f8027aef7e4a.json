@@ -1,0 +1,230 @@
+{
+  "rawId": "vgc-f8027aef7e4a",
+  "outlet": "VGC",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.videogameschronicle.com/news/gta-6-map-is-officially-twice-as-large-as-gta-5-features-hurricanes-and-tropical-storms/",
+  "published": "2026-09-29",
+  "ogImage": "https://www.videogameschronicle.com/files/2025/05/Jason_Duval_03.jpg",
+  "extractedAt": "2026-09-29T21:20:27.337Z",
+  "entities": [
+    {
+      "entityType": "gameplay_feature",
+      "name": "Scuba Diving and Underwater Exploration",
+      "altNames": [
+        "swimming",
+        "diving",
+        "underwater gameplay"
+      ],
+      "slug": "scuba-diving-underwater-exploration",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In terms of activities, the game will include Base jumping, Billiards, Gyms, Kayaking, Mini golf, Scuba diving, Street and off-road racing, Zoos, Air boating, and Jet skiing.",
+          "quote": "In terms of activities, the game will include Base jumping, Billiards, Gyms, Kayaking, Mini golf, Scuba diving, Street and off-road racing, Zoos, Air boating, and Jet skiing."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Ambrosia",
+      "altNames": [
+        "Ambrosia"
+      ],
+      "slug": "ambrosia",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "This world is a cohesive whole with the density of content and a hand-crafted quality to every bit.” Grand Theft Auto 6 ’s fictional state of Leonida will be divided into six main regions: Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga National Park, each offering a distinct setting inspired by different parts of Florida.",
+          "quote": "This world is a cohesive whole with the density of content and a hand-crafted quality to every bit.” Grand Theft Auto 6 ’s fictional state of Leonida will be divided into six main regions: Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga National Park, each offering a distinct setting inspired by different parts of Florida."
+        },
+        {
+          "fact": "Rockstar describes Ambrosia as the heart of Leonida and a representation of the state’s industrial side.",
+          "quote": "Rockstar describes Ambrosia as the heart of Leonida and a representation of the state’s industrial side."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Grassrivers",
+      "altNames": [
+        "Grass Rivers"
+      ],
+      "slug": "grassrivers",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "This world is a cohesive whole with the density of content and a hand-crafted quality to every bit.” Grand Theft Auto 6 ’s fictional state of Leonida will be divided into six main regions: Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga National Park, each offering a distinct setting inspired by different parts of Florida.",
+          "quote": "This world is a cohesive whole with the density of content and a hand-crafted quality to every bit.” Grand Theft Auto 6 ’s fictional state of Leonida will be divided into six main regions: Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga National Park, each offering a distinct setting inspired by different parts of Florida."
+        },
+        {
+          "fact": "Leonida Keys is the game’s take on Florida’s Keys, and Grassrivers draws on the Florida Everglades, featuring a vast wetland environment populated by diverse wildlife.",
+          "quote": "Leonida Keys is the game’s take on Florida’s Keys, and Grassrivers draws on the Florida Everglades, featuring a vast wetland environment populated by diverse wildlife."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "According to Rockstar, Grand Theft Auto VI will feature a more dynamic and localized weather system in Leonida (the game’s fictional version of Florida), allowing different areas of the map to experience dramatically different conditions at the same time.",
+          "quote": "According to Rockstar, Grand Theft Auto VI will feature a more dynamic and localized weather system in Leonida (the game’s fictional version of Florida), allowing different areas of the map to experience dramatically different conditions at the same time."
+        },
+        {
+          "fact": "Players may be able to stand beneath clear skies in one part of Leonida while watching heavy rain fall just a short distance away, it claims.",
+          "quote": "Players may be able to stand beneath clear skies in one part of Leonida while watching heavy rain fall just a short distance away, it claims."
+        },
+        {
+          "fact": "GTA 6’s 6 main regions revealed According to Rockstar Games ‘ head of development/co-studio head Aaron Garbut, Leonida is the biggest map Rockstar has ever created “by some degree”, describing it as twice as large as GTA 5 , with more detail. “This new world is different.",
+          "quote": "GTA 6’s 6 main regions revealed According to Rockstar Games ‘ head of development/co-studio head Aaron Garbut, Leonida is the biggest map Rockstar has ever created “by some degree”, describing it as twice as large as GTA 5 , with more detail. “This new world is different."
+        },
+        {
+          "fact": "This world is a cohesive whole with the density of content and a hand-crafted quality to every bit.” Grand Theft Auto 6 ’s fictional state of Leonida will be divided into six main regions: Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga National Park, each offering a distinct setting inspired by different parts of Florida.",
+          "quote": "This world is a cohesive whole with the density of content and a hand-crafted quality to every bit.” Grand Theft Auto 6 ’s fictional state of Leonida will be divided into six main regions: Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga National Park, each offering a distinct setting inspired by different parts of Florida."
+        },
+        {
+          "fact": "Leonida Keys is the game’s take on Florida’s Keys, and Grassrivers draws on the Florida Everglades, featuring a vast wetland environment populated by diverse wildlife.",
+          "quote": "Leonida Keys is the game’s take on Florida’s Keys, and Grassrivers draws on the Florida Everglades, featuring a vast wetland environment populated by diverse wildlife."
+        },
+        {
+          "fact": "Rockstar describes Ambrosia as the heart of Leonida and a representation of the state’s industrial side.",
+          "quote": "Rockstar describes Ambrosia as the heart of Leonida and a representation of the state’s industrial side."
+        },
+        {
+          "fact": "Finally, at the northern edge of Leonida lies Mount Kalaga National Park, an area focused on wildlife and natural landscapes.",
+          "quote": "Finally, at the northern edge of Leonida lies Mount Kalaga National Park, an area focused on wildlife and natural landscapes."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida Keys",
+      "altNames": [
+        "Keys"
+      ],
+      "slug": "leonida-keys",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "This world is a cohesive whole with the density of content and a hand-crafted quality to every bit.” Grand Theft Auto 6 ’s fictional state of Leonida will be divided into six main regions: Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga National Park, each offering a distinct setting inspired by different parts of Florida.",
+          "quote": "This world is a cohesive whole with the density of content and a hand-crafted quality to every bit.” Grand Theft Auto 6 ’s fictional state of Leonida will be divided into six main regions: Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga National Park, each offering a distinct setting inspired by different parts of Florida."
+        },
+        {
+          "fact": "Leonida Keys is the game’s take on Florida’s Keys, and Grassrivers draws on the Florida Everglades, featuring a vast wetland environment populated by diverse wildlife.",
+          "quote": "Leonida Keys is the game’s take on Florida’s Keys, and Grassrivers draws on the Florida Everglades, featuring a vast wetland environment populated by diverse wildlife."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Mount Kalaga National Park",
+      "altNames": [
+        "Mount Kalaga",
+        "Mount Kalaga Park"
+      ],
+      "slug": "mount-kalaga-national-park",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "This world is a cohesive whole with the density of content and a hand-crafted quality to every bit.” Grand Theft Auto 6 ’s fictional state of Leonida will be divided into six main regions: Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga National Park, each offering a distinct setting inspired by different parts of Florida.",
+          "quote": "This world is a cohesive whole with the density of content and a hand-crafted quality to every bit.” Grand Theft Auto 6 ’s fictional state of Leonida will be divided into six main regions: Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga National Park, each offering a distinct setting inspired by different parts of Florida."
+        },
+        {
+          "fact": "Finally, at the northern edge of Leonida lies Mount Kalaga National Park, an area focused on wildlife and natural landscapes.",
+          "quote": "Finally, at the northern edge of Leonida lies Mount Kalaga National Park, an area focused on wildlife and natural landscapes."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Port Gellhorn",
+      "altNames": [
+        "Port Gellhorn"
+      ],
+      "slug": "port-gellhorn",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "This world is a cohesive whole with the density of content and a hand-crafted quality to every bit.” Grand Theft Auto 6 ’s fictional state of Leonida will be divided into six main regions: Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga National Park, each offering a distinct setting inspired by different parts of Florida.",
+          "quote": "This world is a cohesive whole with the density of content and a hand-crafted quality to every bit.” Grand Theft Auto 6 ’s fictional state of Leonida will be divided into six main regions: Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga National Park, each offering a distinct setting inspired by different parts of Florida."
+        },
+        {
+          "fact": "Port Gellhorn, meanwhile, reflects Florida’s smaller tourist destinations, particularly areas that have fallen into decline, like inexpensive motels and rundown shopping centers.",
+          "quote": "Port Gellhorn, meanwhile, reflects Florida’s smaller tourist destinations, particularly areas that have fallen into decline, like inexpensive motels and rundown shopping centers."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "State of Leonida",
+      "altNames": [],
+      "slug": "state-of-leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "This world is a cohesive whole with the density of content and a hand-crafted quality to every bit.” Grand Theft Auto 6 ’s fictional state of Leonida will be divided into six main regions: Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga National Park, each offering a distinct setting inspired by different parts of Florida.",
+          "quote": "This world is a cohesive whole with the density of content and a hand-crafted quality to every bit.” Grand Theft Auto 6 ’s fictional state of Leonida will be divided into six main regions: Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga National Park, each offering a distinct setting inspired by different parts of Florida."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "This world is a cohesive whole with the density of content and a hand-crafted quality to every bit.” Grand Theft Auto 6 ’s fictional state of Leonida will be divided into six main regions: Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga National Park, each offering a distinct setting inspired by different parts of Florida.",
+          "quote": "This world is a cohesive whole with the density of content and a hand-crafted quality to every bit.” Grand Theft Auto 6 ’s fictional state of Leonida will be divided into six main regions: Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga National Park, each offering a distinct setting inspired by different parts of Florida."
+        },
+        {
+          "fact": "Vice City serves as the state’s urban center, drawing heavily from Miami with its Art Deco architecture, beaches, and major cruise ship port.",
+          "quote": "Vice City serves as the state’s urban center, drawing heavily from Miami with its Art Deco architecture, beaches, and major cruise ship port."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Cruise ship",
+      "altNames": [],
+      "slug": "unnamed-cruise-ship",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Vice City serves as the state’s urban center, drawing heavily from Miami with its Art Deco architecture, beaches, and major cruise ship port.",
+          "quote": "Vice City serves as the state’s urban center, drawing heavily from Miami with its Art Deco architecture, beaches, and major cruise ship port."
+        }
+      ]
+    },
+    {
+      "entityType": "wildlife",
+      "name": "Sharks",
+      "altNames": [],
+      "slug": "sharks",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "According to Rockstar, GTA 6 will feature over 170 animal species, including 60 types of birds, 30 land mammals, and sea creatures such as sharks, whales, and jellyfish.",
+          "quote": "According to Rockstar, GTA 6 will feature over 170 animal species, including 60 types of birds, 30 land mammals, and sea creatures such as sharks, whales, and jellyfish."
+        }
+      ]
+    }
+  ]
+}

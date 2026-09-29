@@ -1,0 +1,33 @@
+{
+  "rawId": "gameinformer-4c215656f7a2",
+  "outlet": "Game Informer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://gameinformer.com/exclusive/2026/09/29/exclusive-grand-theft-auto-vi-features-tropical-storms-and-hurricanes",
+  "published": "2026-09-29",
+  "ogImage": "https://gameinformer.com/sites/default/files/styles/og_image/public/2026/09/24/0f1b594e/382_gtavi_giexclusive04.jpg.webp",
+  "extractedAt": "2026-09-29T21:19:09.264Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Designed to simulate the tropical climate of real-life Florida, the game’s setting, Leonida, will feature not only sunny weather but also plenty of the state’s more violent weather phenomena.",
+          "quote": "Designed to simulate the tropical climate of real-life Florida, the game’s setting, Leonida, will feature not only sunny weather but also plenty of the state’s more violent weather phenomena."
+        },
+        {
+          "fact": "Rockstar confirms that the game features dynamic cloudscapes that roll across Leonida, creating a broad spectrum of weather from clear skies to cloudy days.",
+          "quote": "Rockstar confirms that the game features dynamic cloudscapes that roll across Leonida, creating a broad spectrum of weather from clear skies to cloudy days."
+        },
+        {
+          "fact": "Florida is known for experiencing tropical storms and seasonal hurricanes; the same is true in Grand Theft Auto VI’s Leonida.",
+          "quote": "Florida is known for experiencing tropical storms and seasonal hurricanes; the same is true in Grand Theft Auto VI’s Leonida."
+        }
+      ]
+    }
+  ]
+}

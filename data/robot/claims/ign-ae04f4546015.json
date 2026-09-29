@@ -1,0 +1,267 @@
+{
+  "rawId": "ign-ae04f4546015",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/gta-6-all-the-new-details-revealed-today-including-animal-species-side-activities-and-fast-travel",
+  "published": "2026-09-29",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/08/27/exclusivelookbr-gtfm-1787873244868.png?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-09-29T21:19:54.854Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "You Can Doomscroll in GTA 6 If you don't want to make conversation with other passengers or sightsee, you can doomscroll on Snapmatic, the game's parody of Instagram.",
+          "quote": "You Can Doomscroll in GTA 6 If you don't want to make conversation with other passengers or sightsee, you can doomscroll on Snapmatic, the game's parody of Instagram."
+        },
+        {
+          "fact": "Should you want to off-load it, you'll have to take it to a fence.",
+          "quote": "Should you want to off-load it, you'll have to take it to a fence."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "You Can't Post on Social Media Yourself, Though Players won't be able to post on the app themselves, as Jason and Lucia are on the run and would risk danger by being overly active on social media.",
+          "quote": "You Can't Post on Social Media Yourself, Though Players won't be able to post on the app themselves, as Jason and Lucia are on the run and would risk danger by being overly active on social media."
+        },
+        {
+          "fact": "Hunting Seemingly Returns One of the screenshots in Game Informer's story shows Jason approaching deer in the wild with a rifle strung over his back.",
+          "quote": "Hunting Seemingly Returns One of the screenshots in Game Informer's story shows Jason approaching deer in the wild with a rifle strung over his back."
+        },
+        {
+          "fact": "Busted Jason and Lucia can shake the cops together or split up, leaving one person to take the bulk of the heat.",
+          "quote": "Busted Jason and Lucia can shake the cops together or split up, leaving one person to take the bulk of the heat."
+        },
+        {
+          "fact": "Jason and Lucia's Relationship Is Influenced by Player Choice The two protagonists, Jason and Lucia, may long for a romantic relationship together, but it is up to the player to determine whether or not they go beyond a platonic one.",
+          "quote": "Jason and Lucia's Relationship Is Influenced by Player Choice The two protagonists, Jason and Lucia, may long for a romantic relationship together, but it is up to the player to determine whether or not they go beyond a platonic one."
+        },
+        {
+          "fact": "Rockstar confirmed that choices big and small with not only influence Jason and Lucia's relationship, but the story as a whole, encouraging players to play the game again to see alternative story threads.",
+          "quote": "Rockstar confirmed that choices big and small with not only influence Jason and Lucia's relationship, but the story as a whole, encouraging players to play the game again to see alternative story threads."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "You Can't Post on Social Media Yourself, Though Players won't be able to post on the app themselves, as Jason and Lucia are on the run and would risk danger by being overly active on social media.",
+          "quote": "You Can't Post on Social Media Yourself, Though Players won't be able to post on the app themselves, as Jason and Lucia are on the run and would risk danger by being overly active on social media."
+        },
+        {
+          "fact": "Busted Jason and Lucia can shake the cops together or split up, leaving one person to take the bulk of the heat.",
+          "quote": "Busted Jason and Lucia can shake the cops together or split up, leaving one person to take the bulk of the heat."
+        },
+        {
+          "fact": "Jason and Lucia's Relationship Is Influenced by Player Choice The two protagonists, Jason and Lucia, may long for a romantic relationship together, but it is up to the player to determine whether or not they go beyond a platonic one.",
+          "quote": "Jason and Lucia's Relationship Is Influenced by Player Choice The two protagonists, Jason and Lucia, may long for a romantic relationship together, but it is up to the player to determine whether or not they go beyond a platonic one."
+        },
+        {
+          "fact": "Rockstar confirmed that choices big and small with not only influence Jason and Lucia's relationship, but the story as a whole, encouraging players to play the game again to see alternative story threads.",
+          "quote": "Rockstar confirmed that choices big and small with not only influence Jason and Lucia's relationship, but the story as a whole, encouraging players to play the game again to see alternative story threads."
+        }
+      ]
+    },
+    {
+      "entityType": "edition",
+      "name": "Vintage Vice City Pack",
+      "altNames": [
+        "Vintage Vice City pre-order pack",
+        "GTA 6 pre-order bonus"
+      ],
+      "slug": "vintage-vice-city-pack",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "GTA 6 Vintage Vice City Pack Screenshots View 12 Images Choices Shape GTA 6's Story GTA 6's story will be ripe for multiple playthoughs.",
+          "quote": "GTA 6 Vintage Vice City Pack Screenshots View 12 Images Choices Shape GTA 6's Story GTA 6's story will be ripe for multiple playthoughs."
+        }
+      ]
+    },
+    {
+      "entityType": "gameplay_feature",
+      "name": "Scuba Diving and Underwater Exploration",
+      "altNames": [
+        "swimming",
+        "diving",
+        "underwater gameplay"
+      ],
+      "slug": "scuba-diving-underwater-exploration",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "They will have \"distinct movement behavior\" and can be encountered while scuba diving in the water.",
+          "quote": "They will have \"distinct movement behavior\" and can be encountered while scuba diving in the water."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Ambrosia",
+      "altNames": [
+        "Ambrosia"
+      ],
+      "slug": "ambrosia",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The other regions of Leonida include Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, and Mount Kalaga National Park.",
+          "quote": "The other regions of Leonida include Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, and Mount Kalaga National Park."
+        },
+        {
+          "fact": "GTA 6's Regions May Have Different Factions to Contend With Ambrosia is a more rural part of the map with factories and refineries, dominated by a biker gang who control the area.",
+          "quote": "GTA 6's Regions May Have Different Factions to Contend With Ambrosia is a more rural part of the map with factories and refineries, dominated by a biker gang who control the area."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Grassrivers",
+      "altNames": [
+        "Grass Rivers"
+      ],
+      "slug": "grassrivers",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The other regions of Leonida include Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, and Mount Kalaga National Park.",
+          "quote": "The other regions of Leonida include Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, and Mount Kalaga National Park."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The setting of the game, as many know, is a fictionalized version of Florida known as Leonida.",
+          "quote": "The setting of the game, as many know, is a fictionalized version of Florida known as Leonida."
+        },
+        {
+          "fact": "The other regions of Leonida include Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, and Mount Kalaga National Park.",
+          "quote": "The other regions of Leonida include Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, and Mount Kalaga National Park."
+        },
+        {
+          "fact": "Of course, this won't cover every inch of the world, but it will demonstrate the strong contrast of more affluent parts of Leonida versus more \"poor\" areas.",
+          "quote": "Of course, this won't cover every inch of the world, but it will demonstrate the strong contrast of more affluent parts of Leonida versus more \"poor\" areas."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida Keys",
+      "altNames": [
+        "Keys"
+      ],
+      "slug": "leonida-keys",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The other regions of Leonida include Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, and Mount Kalaga National Park.",
+          "quote": "The other regions of Leonida include Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, and Mount Kalaga National Park."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Mount Kalaga National Park",
+      "altNames": [
+        "Mount Kalaga",
+        "Mount Kalaga Park"
+      ],
+      "slug": "mount-kalaga-national-park",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The other regions of Leonida include Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, and Mount Kalaga National Park.",
+          "quote": "The other regions of Leonida include Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, and Mount Kalaga National Park."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Port Gellhorn",
+      "altNames": [
+        "Port Gellhorn"
+      ],
+      "slug": "port-gellhorn",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The other regions of Leonida include Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, and Mount Kalaga National Park.",
+          "quote": "The other regions of Leonida include Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, and Mount Kalaga National Park."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The most prominent one is Vice City, a location fans are familiar with thanks to 2002's GTA: Vice City.",
+          "quote": "The most prominent one is Vice City, a location fans are familiar with thanks to 2002's GTA: Vice City."
+        },
+        {
+          "fact": "GTA 6 Vintage Vice City Pack Screenshots View 12 Images Choices Shape GTA 6's Story GTA 6's story will be ripe for multiple playthoughs.",
+          "quote": "GTA 6 Vintage Vice City Pack Screenshots View 12 Images Choices Shape GTA 6's Story GTA 6's story will be ripe for multiple playthoughs."
+        }
+      ]
+    },
+    {
+      "entityType": "wildlife",
+      "name": "Fish",
+      "altNames": [],
+      "slug": "fish",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "This includes over 60 birds, over 30 land mammals, and a variety of fish and reptiles.",
+          "quote": "This includes over 60 birds, over 30 land mammals, and a variety of fish and reptiles."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "rawId": "polygon-538e65cb4794",
+  "outlet": "Polygon",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.polygon.com/gta-6-game-informer-weather-animals-npc-variety-gameplay-news/",
+  "published": "2026-09-29",
+  "ogImage": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/jason_and_lucia_02.jpg?w=1600&h=900&fit=crop",
+  "extractedAt": "2026-09-29T21:20:01.306Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "GTA 6's animals are getting a major upgrade Image: Rockstar Games There are over 170 new creatures in Leonida, ranging from monkeys to toads, some of which have never appeared in a Rockstar game.",
+          "quote": "GTA 6's animals are getting a major upgrade Image: Rockstar Games There are over 170 new creatures in Leonida, ranging from monkeys to toads, some of which have never appeared in a Rockstar game."
+        }
+      ]
+    }
+  ]
+}

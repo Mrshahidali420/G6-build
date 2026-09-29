@@ -1,0 +1,39 @@
+{
+  "rawId": "ign-2e59dcfec1d3",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/rockstar-confirms-gta-6-simulates-tropical-storms-and-hurricanes",
+  "published": "2026-09-29",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/09/22/gta-6-vice-city-sign-1790108459424.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-09-29T21:19:41.786Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "There are a ton of possibilities, and I already want to jump in and go storm chasing.",
+          "quote": "There are a ton of possibilities, and I already want to jump in and go storm chasing."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "But in Game Informer's GTA 6 cover story , senior associate editor Marcus Stewart described the need for Leonida to have diverse weather, due to Florida's tendency to have wild shifts in its climate.",
+          "quote": "But in Game Informer's GTA 6 cover story , senior associate editor Marcus Stewart described the need for Leonida to have diverse weather, due to Florida's tendency to have wild shifts in its climate."
+        }
+      ]
+    }
+  ]
+}

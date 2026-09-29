@@ -1,0 +1,81 @@
+{
+  "rawId": "gameinformer-7ed891fcca59",
+  "outlet": "Game Informer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://gameinformer.com/exclusive/2026/09/29/exclusive-grand-theft-auto-vi-includes-over-170-animal-species",
+  "published": "2026-09-29",
+  "ogImage": "https://gameinformer.com/sites/default/files/styles/og_image/public/2026/09/24/d86df60d/382_gtavi_giexclusive02.jpg.webp",
+  "extractedAt": "2026-09-29T21:19:15.787Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Leonida will teem with over 170 animal species across land, air, and sea, several of which have never appeared in a Rockstar Game.",
+          "quote": "Leonida will teem with over 170 animal species across land, air, and sea, several of which have never appeared in a Rockstar Game."
+        }
+      ]
+    },
+    {
+      "entityType": "wildlife",
+      "name": "Alligators",
+      "altNames": [],
+      "slug": "alligators",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Native Florida animals such as flamingos, manatees, pelicans, and, of course, alligators will coexist alongside invasive creatures such as green iguanas, cane toads, feral cats, and even rhesus macaque monkeys (Yes, Florida has monkeys).",
+          "quote": "Native Florida animals such as flamingos, manatees, pelicans, and, of course, alligators will coexist alongside invasive creatures such as green iguanas, cane toads, feral cats, and even rhesus macaque monkeys (Yes, Florida has monkeys)."
+        }
+      ]
+    },
+    {
+      "entityType": "wildlife",
+      "name": "Cats",
+      "altNames": [],
+      "slug": "cats",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Native Florida animals such as flamingos, manatees, pelicans, and, of course, alligators will coexist alongside invasive creatures such as green iguanas, cane toads, feral cats, and even rhesus macaque monkeys (Yes, Florida has monkeys).",
+          "quote": "Native Florida animals such as flamingos, manatees, pelicans, and, of course, alligators will coexist alongside invasive creatures such as green iguanas, cane toads, feral cats, and even rhesus macaque monkeys (Yes, Florida has monkeys)."
+        }
+      ]
+    },
+    {
+      "entityType": "wildlife",
+      "name": "Flamingos",
+      "altNames": [],
+      "slug": "flamingos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Native Florida animals such as flamingos, manatees, pelicans, and, of course, alligators will coexist alongside invasive creatures such as green iguanas, cane toads, feral cats, and even rhesus macaque monkeys (Yes, Florida has monkeys).",
+          "quote": "Native Florida animals such as flamingos, manatees, pelicans, and, of course, alligators will coexist alongside invasive creatures such as green iguanas, cane toads, feral cats, and even rhesus macaque monkeys (Yes, Florida has monkeys)."
+        }
+      ]
+    },
+    {
+      "entityType": "wildlife",
+      "name": "Iguanas",
+      "altNames": [],
+      "slug": "iguanas",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Native Florida animals such as flamingos, manatees, pelicans, and, of course, alligators will coexist alongside invasive creatures such as green iguanas, cane toads, feral cats, and even rhesus macaque monkeys (Yes, Florida has monkeys).",
+          "quote": "Native Florida animals such as flamingos, manatees, pelicans, and, of course, alligators will coexist alongside invasive creatures such as green iguanas, cane toads, feral cats, and even rhesus macaque monkeys (Yes, Florida has monkeys)."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "rawId": "gamesradar-7439c7a1d380",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/rockstar-flashes-its-wallet-says-gta-6-doesnt-compromise-on-detail-or-scale-i-dont-think-we-have-ever-created-anything-close-to-this-before/",
+  "published": "2026-09-29",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/q9VEvTmjqXdkuDN5ZDPPxh-1920-80.jpg",
+  "extractedAt": "2026-09-29T21:19:28.855Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    }
+  ]
+}

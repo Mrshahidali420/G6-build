@@ -1,0 +1,178 @@
+{
+  "rawId": "purexbox-fa221e05a408",
+  "outlet": "Pure Xbox",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.purexbox.com/news/2026/09/five-key-things-we-learned-about-gta-6-from-the-game-informer-cover-story",
+  "published": "2026-09-29",
+  "ogImage": "https://images.purexbox.com/da789dc9ede15/1280x720.jpg",
+  "extractedAt": "2026-09-29T21:20:07.832Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Author Profile Reply Comments 3 1 RiverGenie 1 hour ago features over 170 animal species So who wants BBQ freshly scraped off my front bumper ... um I mean sourced from ethical sustainable farm stock 🦩🍗 0 2 somnambulance 1 hour ago That’s all well and good, but I want to know about the story at this point.",
+          "quote": "Author Profile Reply Comments 3 1 RiverGenie 1 hour ago features over 170 animal species So who wants BBQ freshly scraped off my front bumper ... um I mean sourced from ethical sustainable farm stock 🦩🍗 0 2 somnambulance 1 hour ago That’s all well and good, but I want to know about the story at this point."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Ambrosia",
+      "altNames": [
+        "Ambrosia"
+      ],
+      "slug": "ambrosia",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The six primary regions in the game are Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga National Park.",
+          "quote": "The six primary regions in the game are Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga National Park."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Grassrivers",
+      "altNames": [
+        "Grass Rivers"
+      ],
+      "slug": "grassrivers",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The six primary regions in the game are Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga National Park.",
+          "quote": "The six primary regions in the game are Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga National Park."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The six primary regions in the game are Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga National Park.",
+          "quote": "The six primary regions in the game are Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga National Park."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida Keys",
+      "altNames": [
+        "Keys"
+      ],
+      "slug": "leonida-keys",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The six primary regions in the game are Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga National Park.",
+          "quote": "The six primary regions in the game are Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga National Park."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Mount Kalaga National Park",
+      "altNames": [
+        "Mount Kalaga",
+        "Mount Kalaga Park"
+      ],
+      "slug": "mount-kalaga-national-park",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The six primary regions in the game are Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga National Park.",
+          "quote": "The six primary regions in the game are Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga National Park."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Port Gellhorn",
+      "altNames": [
+        "Port Gellhorn"
+      ],
+      "slug": "port-gellhorn",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The six primary regions in the game are Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga National Park.",
+          "quote": "The six primary regions in the game are Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga National Park."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The six primary regions in the game are Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga National Park.",
+          "quote": "The six primary regions in the game are Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga National Park."
+        }
+      ]
+    },
+    {
+      "entityType": "wildlife",
+      "name": "Alligators",
+      "altNames": [],
+      "slug": "alligators",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Expect manatees, flamingos, pelicans, alligators, feral cats and armadillos along the way.",
+          "quote": "Expect manatees, flamingos, pelicans, alligators, feral cats and armadillos along the way."
+        }
+      ]
+    },
+    {
+      "entityType": "wildlife",
+      "name": "Cats",
+      "altNames": [],
+      "slug": "cats",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Expect manatees, flamingos, pelicans, alligators, feral cats and armadillos along the way.",
+          "quote": "Expect manatees, flamingos, pelicans, alligators, feral cats and armadillos along the way."
+        }
+      ]
+    },
+    {
+      "entityType": "wildlife",
+      "name": "Flamingos",
+      "altNames": [],
+      "slug": "flamingos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Expect manatees, flamingos, pelicans, alligators, feral cats and armadillos along the way.",
+          "quote": "Expect manatees, flamingos, pelicans, alligators, feral cats and armadillos along the way."
+        }
+      ]
+    }
+  ]
+}

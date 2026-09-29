@@ -1,0 +1,46 @@
+{
+  "rawId": "gamesindustry-aaaa9997dd82",
+  "outlet": "GamesIndustry.biz",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesindustry.biz/why-should-we-just-give-up-the-entire-month-of-november-the-indie-games-going-head-to-head-with-gta-6",
+  "published": "2026-09-29",
+  "ogImage": "https://assetsio.gnwcdn.com/Ambrosia_06.0j9c7-8nfb_xf.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-09-29T21:19:22.294Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "\"I don't think more noise is what people want.",
+          "quote": "\"I don't think more noise is what people want."
+        },
+        {
+          "fact": "In fact, we want to offer them an alternative to the noise.",
+          "quote": "In fact, we want to offer them an alternative to the noise."
+        }
+      ]
+    },
+    {
+      "entityType": "edition",
+      "name": "Ultimate Edition",
+      "altNames": [
+        "GTA 6 Ultimate Edition",
+        "GTA VI Ultimate Edition"
+      ],
+      "slug": "gta-6-ultimate-edition",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The \"extended look\" preview of GTA 6 in August was viewed over 31 million times on Netflix in four days , and Sensor Tower reports that the game has already been pre-ordered by more than 5.6 million people , with the vast majority plumping for the pricey $100 ultimate edition .",
+          "quote": "The \"extended look\" preview of GTA 6 in August was viewed over 31 million times on Netflix in four days , and Sensor Tower reports that the game has already been pre-ordered by more than 5.6 million people , with the vast majority plumping for the pricey $100 ultimate edition ."
+        }
+      ]
+    }
+  ]
+}

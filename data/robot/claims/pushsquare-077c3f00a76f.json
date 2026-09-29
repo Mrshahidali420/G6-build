@@ -1,0 +1,170 @@
+{
+  "rawId": "pushsquare-077c3f00a76f",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/09/gta-6-reveals-massive-dense-open-world-in-13-new-screenshots-details",
+  "published": "2026-09-29",
+  "ogImage": "https://images.pushsquare.com/b708d319317e3/1280x720.jpg",
+  "extractedAt": "2026-09-29T21:20:14.332Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "We're getting through it 😄 6 4 Netret0120 2 hours ago This game is going to make $2 Billion in revenue on launch day alone 5 5 Max_the_German 2 hours ago None of these pictures gives me the feeling of “I want to be there and do things”.",
+          "quote": "We're getting through it 😄 6 4 Netret0120 2 hours ago This game is going to make $2 Billion in revenue on launch day alone 5 5 Max_the_German 2 hours ago None of these pictures gives me the feeling of “I want to be there and do things”."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Jason and Lucia can also be seen chilling on the beach as someone with a USA flag runs by.",
+          "quote": "Jason and Lucia can also be seen chilling on the beach as someone with a USA flag runs by."
+        },
+        {
+          "fact": "There are also a handful of action-packed screenshots, as Lucia hides behind cover, Jason seemingly escapes a biker gang, and Jason again appears to have sneaked into a shop.",
+          "quote": "There are also a handful of action-packed screenshots, as Lucia hides behind cover, Jason seemingly escapes a biker gang, and Jason again appears to have sneaked into a shop."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Jason and Lucia can also be seen chilling on the beach as someone with a USA flag runs by.",
+          "quote": "Jason and Lucia can also be seen chilling on the beach as someone with a USA flag runs by."
+        },
+        {
+          "fact": "There are also a handful of action-packed screenshots, as Lucia hides behind cover, Jason seemingly escapes a biker gang, and Jason again appears to have sneaked into a shop.",
+          "quote": "There are also a handful of action-packed screenshots, as Lucia hides behind cover, Jason seemingly escapes a biker gang, and Jason again appears to have sneaked into a shop."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Ambrosia",
+      "altNames": [
+        "Ambrosia"
+      ],
+      "slug": "ambrosia",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The world map will have six regions: Vice City Leonida Keys Grassrivers Port Gelllhorn Ambrosia Mount Kalaga National Park Within those regions, you'll encounter 170 different types of wildlife, of which 60 are types of bird, another 30 are land mammals, and more.",
+          "quote": "The world map will have six regions: Vice City Leonida Keys Grassrivers Port Gelllhorn Ambrosia Mount Kalaga National Park Within those regions, you'll encounter 170 different types of wildlife, of which 60 are types of bird, another 30 are land mammals, and more."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Grassrivers",
+      "altNames": [
+        "Grass Rivers"
+      ],
+      "slug": "grassrivers",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The world map will have six regions: Vice City Leonida Keys Grassrivers Port Gelllhorn Ambrosia Mount Kalaga National Park Within those regions, you'll encounter 170 different types of wildlife, of which 60 are types of bird, another 30 are land mammals, and more.",
+          "quote": "The world map will have six regions: Vice City Leonida Keys Grassrivers Port Gelllhorn Ambrosia Mount Kalaga National Park Within those regions, you'll encounter 170 different types of wildlife, of which 60 are types of bird, another 30 are land mammals, and more."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Activities by Liam Croft 3 hours ago Share: Rockstar Games has shared more about the open world of Leonida you can explore in GTA 6 from 19th November 2026 by way of a new Game Informer magazine issue containing new screenshots and information.",
+          "quote": "Activities by Liam Croft 3 hours ago Share: Rockstar Games has shared more about the open world of Leonida you can explore in GTA 6 from 19th November 2026 by way of a new Game Informer magazine issue containing new screenshots and information."
+        },
+        {
+          "fact": "The world map will have six regions: Vice City Leonida Keys Grassrivers Port Gelllhorn Ambrosia Mount Kalaga National Park Within those regions, you'll encounter 170 different types of wildlife, of which 60 are types of bird, another 30 are land mammals, and more.",
+          "quote": "The world map will have six regions: Vice City Leonida Keys Grassrivers Port Gelllhorn Ambrosia Mount Kalaga National Park Within those regions, you'll encounter 170 different types of wildlife, of which 60 are types of bird, another 30 are land mammals, and more."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida Keys",
+      "altNames": [
+        "Keys"
+      ],
+      "slug": "leonida-keys",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The world map will have six regions: Vice City Leonida Keys Grassrivers Port Gelllhorn Ambrosia Mount Kalaga National Park Within those regions, you'll encounter 170 different types of wildlife, of which 60 are types of bird, another 30 are land mammals, and more.",
+          "quote": "The world map will have six regions: Vice City Leonida Keys Grassrivers Port Gelllhorn Ambrosia Mount Kalaga National Park Within those regions, you'll encounter 170 different types of wildlife, of which 60 are types of bird, another 30 are land mammals, and more."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Mount Kalaga National Park",
+      "altNames": [
+        "Mount Kalaga",
+        "Mount Kalaga Park"
+      ],
+      "slug": "mount-kalaga-national-park",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The world map will have six regions: Vice City Leonida Keys Grassrivers Port Gelllhorn Ambrosia Mount Kalaga National Park Within those regions, you'll encounter 170 different types of wildlife, of which 60 are types of bird, another 30 are land mammals, and more.",
+          "quote": "The world map will have six regions: Vice City Leonida Keys Grassrivers Port Gelllhorn Ambrosia Mount Kalaga National Park Within those regions, you'll encounter 170 different types of wildlife, of which 60 are types of bird, another 30 are land mammals, and more."
+        },
+        {
+          "fact": "5 9 NoCode23 2 hours ago Mount Kalaga National Park is definitely not in Florida, I wonder how it will fit in and be traveled to.",
+          "quote": "5 9 NoCode23 2 hours ago Mount Kalaga National Park is definitely not in Florida, I wonder how it will fit in and be traveled to."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The world map will have six regions: Vice City Leonida Keys Grassrivers Port Gelllhorn Ambrosia Mount Kalaga National Park Within those regions, you'll encounter 170 different types of wildlife, of which 60 are types of bird, another 30 are land mammals, and more.",
+          "quote": "The world map will have six regions: Vice City Leonida Keys Grassrivers Port Gelllhorn Ambrosia Mount Kalaga National Park Within those regions, you'll encounter 170 different types of wildlife, of which 60 are types of bird, another 30 are land mammals, and more."
+        }
+      ]
+    }
+  ]
+}

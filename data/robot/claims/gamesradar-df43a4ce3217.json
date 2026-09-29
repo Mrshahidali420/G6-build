@@ -1,0 +1,63 @@
+{
+  "rawId": "gamesradar-df43a4ce3217",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-devs-spent-years-going-to-strip-clubs-spending-time-on-the-beach-and-riding-with-ex-cops-to-research-florida-life/",
+  "published": "2026-09-29",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/7E43SERC2PDAcs2Nxm9Yxm-1920-80.jpg",
+  "extractedAt": "2026-09-29T21:19:35.344Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        },
+        {
+          "fact": "\"We don't have time to take you everywhere, but we want you to be able to explore and get a feel for most of the places, cultures, and vibes,\" Humphries says.",
+          "quote": "\"We don't have time to take you everywhere, but we want you to be able to explore and get a feel for most of the places, cultures, and vibes,\" Humphries says."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Latest Videos From GamesRadar+ Watch full video here: And either way, there are plenty of locations outside of the beaches and nightlife, and the game's story will drag Jason and Lucia through many of them.",
+          "quote": "Latest Videos From GamesRadar+ Watch full video here: And either way, there are plenty of locations outside of the beaches and nightlife, and the game's story will drag Jason and Lucia through many of them."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Latest Videos From GamesRadar+ Watch full video here: And either way, there are plenty of locations outside of the beaches and nightlife, and the game's story will drag Jason and Lucia through many of them.",
+          "quote": "Latest Videos From GamesRadar+ Watch full video here: And either way, there are plenty of locations outside of the beaches and nightlife, and the game's story will drag Jason and Lucia through many of them."
+        }
+      ]
+    }
+  ]
+}

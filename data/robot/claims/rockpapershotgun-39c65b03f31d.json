@@ -1,0 +1,25 @@
+{
+  "rawId": "rockpapershotgun-39c65b03f31d",
+  "outlet": "Rock Paper Shotgun",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.rockpapershotgun.com/set-up-your-own-ramen-bar-and-explore-a-voxel-cyberpunk-city-in-the-slice-of-lifey-nivalis-nights-out-now",
+  "published": "2026-09-29",
+  "ogImage": "https://assetsio.gnwcdn.com/nivalis-opening-moments.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-09-29T21:20:20.820Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "You even get your own boat you can go fishing on, and if you really want your restaurant to do well, you can grow your own produce.",
+          "quote": "You even get your own boat you can go fishing on, and if you really want your restaurant to do well, you can grow your own produce."
+        }
+      ]
+    }
+  ]
+}

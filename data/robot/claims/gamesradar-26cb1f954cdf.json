@@ -1,0 +1,53 @@
+{
+  "rawId": "gamesradar-26cb1f954cdf",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6s-weather-is-completely-re-engineered-from-red-dead-redemption-2-and-it-has-hurricanes-rainbows-proper-cloud-formations-and-more/",
+  "published": "2026-09-30",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/xaJa896BofqxWZpjF8NUCi-1920-80.jpg",
+  "extractedAt": "2026-09-30T21:19:32.586Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In Game Informer , Owen Shepherd, the vice president of art for lighting and rendering at Rockstar, divulged some of what players can expect when roaming Leonida, and it won't all be sunshine and tans.",
+          "quote": "In Game Informer , Owen Shepherd, the vice president of art for lighting and rendering at Rockstar, divulged some of what players can expect when roaming Leonida, and it won't all be sunshine and tans."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Sports car",
+      "altNames": [],
+      "slug": "unnamed-sports-car",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The notion that I could be stepping away from a hazardous mission, covered in blood both literally and metaphorically, only to hop into my sports car and drive off toward a big ol' rainbow arching over the horizon is glorious.",
+          "quote": "The notion that I could be stepping away from a hazardous mission, covered in blood both literally and metaphorically, only to hop into my sports car and drive off toward a big ol' rainbow arching over the horizon is glorious."
+        }
+      ]
+    }
+  ]
+}

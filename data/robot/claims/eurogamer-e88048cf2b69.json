@@ -1,0 +1,29 @@
+{
+  "rawId": "eurogamer-e88048cf2b69",
+  "outlet": "Eurogamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.eurogamer.net/gta6-rockstar-weather-systems-hurricanes-rainbows-rain",
+  "published": "2026-09-30",
+  "ogImage": "https://assetsio.gnwcdn.com/gta-6_XFAse3R.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-09-30T21:19:26.131Z",
+  "entities": [
+    {
+      "entityType": "gameplay_feature",
+      "name": "Scuba Diving and Underwater Exploration",
+      "altNames": [
+        "swimming",
+        "diving",
+        "underwater gameplay"
+      ],
+      "slug": "scuba-diving-underwater-exploration",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Underwater scuba-diving is also back, so expect manatees and jellyfish and whales.",
+          "quote": "Underwater scuba-diving is also back, so expect manatees and jellyfish and whales."
+        }
+      ]
+    }
+  ]
+}

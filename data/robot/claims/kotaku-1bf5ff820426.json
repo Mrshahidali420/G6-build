@@ -1,0 +1,39 @@
+{
+  "rawId": "kotaku-1bf5ff820426",
+  "outlet": "Kotaku",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://kotaku.com/ps5-pro-shortage-hits-japan-as-sony-limits-console-purchases-to-active-playstation-users-ahead-of-gta-6-2000737444",
+  "published": "2026-09-30",
+  "ogImage": "https://kotaku.com/app/uploads/2024/11/118b4825e679e993bfabee1b560ccd65-1200x675.jpg",
+  "extractedAt": "2026-09-30T11:00:26.872Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Limit",
+      "altNames": [],
+      "slug": "limit",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Players fulfilling these requirements can then apply to purchase hardware at a limit of one per customer until October 7, with results confirmed by October 26th for delivery in the first half of November, ensuring consoles arrive in time to play the new GTA game.",
+          "quote": "Players fulfilling these requirements can then apply to purchase hardware at a limit of one per customer until October 7, with results confirmed by October 26th for delivery in the first half of November, ensuring consoles arrive in time to play the new GTA game."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Players want to play the best version of the game, and Sony has been marketing optimizations exclusive to the PS5 Pro.",
+          "quote": "Players want to play the best version of the game, and Sony has been marketing optimizations exclusive to the PS5 Pro."
+        }
+      ]
+    }
+  ]
+}

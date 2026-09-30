@@ -1,0 +1,51 @@
+{
+  "slug": "news-gta-6-has-an-advanced-weather-system-leading-to-speculation-over-hurricanes",
+  "reason": "an em dash appears in the written text",
+  "refusedAt": "2026-09-30",
+  "written": {
+    "title": "GTA 6 Has an 'Advanced' Weather System, Leading to Speculation Over Hurricanes",
+    "description": "What IGN and Rock Paper Shotgun reported: \"GTA 6 Has an 'Advanced' Weather System, Leading to Speculation Over Hurricanes\", in their own words.",
+    "body": "This page collects what named outlets published about Grand Theft Auto VI, in their own words. This site wrote none of the sentences in quotation marks below. Each one links to the report it was taken from.\n\n## IGN, 28 September 2026\n\n[GTA 6 Has an 'Advanced' Weather System, Leading to Speculation Over Hurricanes](https://www.ign.com/articles/gta-6-has-an-advanced-weather-system-but-how-will-it-work)\n\nThe outlet's own summary:\n\n> GTA 6 is confirmed to have an \"advanced\" weather system, leading many to wonder if we're going to get tropical storms.\n\n> GTA 6 is set in Leonida, a fictional version of Florida, which has many wondering if there will be intense weather systems such as hurricanes.\n\n## IGN, 29 September 2026\n\n['Heavy Clouds, Strong Winds, Dense Atmospherics and a Lot of Rain' — GTA 6 Advanced Weather System Detailed](https://www.ign.com/articles/rockstar-confirms-gta-6-simulates-tropical-storms-and-hurricanes)\n\nThe outlet's own summary:\n\n> It sounds like Grand Theft Auto 6 will take open world weather effects to another level, with simulated tropical storms and hurricanes.\n\n> There are a ton of possibilities, and I already want to jump in and go storm chasing.\n\n> But in Game Informer's GTA 6 cover story , senior associate editor Marcus Stewart described the need for Leonida to have diverse weather, due to Florida's tendency to have wild shifts in its climate.\n\n## Rock Paper Shotgun, 30 September 2026\n\n[GTA 6 will simulate hurricanes, rainbows and persistent, dynamic clouds, among other efforts to make you stop doing crime and become a weather nerd](https://www.rockpapershotgun.com/gta-6-will-simulate-hurricanes-rainbows-and-persistent-dynamic-clouds-among-other-efforts-to-make-you-stop-doing-crime-and-become-a-weather-nerd)\n\nThe outlet's own summary:\n\n> GTA 6 will simulate hurricanes alongside rainbows, offshore breezes, and localised showers, according to Rockstar, and there are 170 animal species to meet.\n\n> GTA 6 will simulate hurricanes, rainbows and persistent, dynamic clouds, among other efforts to make you stop doing crime and become a weather nerd Also, 170 beasts, birds and fish Image credit: Take-Two Interactive News by Edwin Evans-Thirlwell News Editor Published on Sept.\n\nEvery report above is on the site's fixed source list. A report is not a confirmation: the mark on each linked entry says who said it.",
+    "related": [
+      "fish",
+      "leonida",
+      "want"
+    ],
+    "relatedNames": [
+      "leonida",
+      "want",
+      "fish"
+    ],
+    "held": null
+  },
+  "claims": [
+    {
+      "fact": "There are a ton of possibilities, and I already want to jump in and go storm chasing.",
+      "quote": "There are a ton of possibilities, and I already want to jump in and go storm chasing.",
+      "outlet": "IGN",
+      "url": "https://www.ign.com/articles/rockstar-confirms-gta-6-simulates-tropical-storms-and-hurricanes",
+      "published": "2026-09-29"
+    },
+    {
+      "fact": "But in Game Informer's GTA 6 cover story , senior associate editor Marcus Stewart described the need for Leonida to have diverse weather, due to Florida's tendency to have wild shifts in its climate.",
+      "quote": "But in Game Informer's GTA 6 cover story , senior associate editor Marcus Stewart described the need for Leonida to have diverse weather, due to Florida's tendency to have wild shifts in its climate.",
+      "outlet": "IGN",
+      "url": "https://www.ign.com/articles/rockstar-confirms-gta-6-simulates-tropical-storms-and-hurricanes",
+      "published": "2026-09-29"
+    },
+    {
+      "fact": "GTA 6 is set in Leonida, a fictional version of Florida, which has many wondering if there will be intense weather systems such as hurricanes.",
+      "quote": "GTA 6 is set in Leonida, a fictional version of Florida, which has many wondering if there will be intense weather systems such as hurricanes.",
+      "outlet": "IGN",
+      "url": "https://www.ign.com/articles/gta-6-has-an-advanced-weather-system-but-how-will-it-work",
+      "published": "2026-09-28"
+    },
+    {
+      "fact": "GTA 6 will simulate hurricanes, rainbows and persistent, dynamic clouds, among other efforts to make you stop doing crime and become a weather nerd Also, 170 beasts, birds and fish Image credit: Take-Two Interactive News by Edwin Evans-Thirlwell News Editor Published on Sept.",
+      "quote": "GTA 6 will simulate hurricanes, rainbows and persistent, dynamic clouds, among other efforts to make you stop doing crime and become a weather nerd Also, 170 beasts, birds and fish Image credit: Take-Two Interactive News by Edwin Evans-Thirlwell News Editor Published on Sept.",
+      "outlet": "Rock Paper Shotgun",
+      "url": "https://www.rockpapershotgun.com/gta-6-will-simulate-hurricanes-rainbows-and-persistent-dynamic-clouds-among-other-efforts-to-make-you-stop-doing-crime-and-become-a-weather-nerd",
+      "published": "2026-09-30"
+    }
+  ]
+}

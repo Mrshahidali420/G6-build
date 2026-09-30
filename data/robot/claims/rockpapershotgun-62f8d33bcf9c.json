@@ -1,0 +1,25 @@
+{
+  "rawId": "rockpapershotgun-62f8d33bcf9c",
+  "outlet": "Rock Paper Shotgun",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.rockpapershotgun.com/gta-6-will-simulate-hurricanes-rainbows-and-persistent-dynamic-clouds-among-other-efforts-to-make-you-stop-doing-crime-and-become-a-weather-nerd",
+  "published": "2026-09-30",
+  "ogImage": "https://assetsio.gnwcdn.com/lucia-leaning-out-of-a-car.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-09-30T11:00:39.875Z",
+  "entities": [
+    {
+      "entityType": "wildlife",
+      "name": "Fish",
+      "altNames": [],
+      "slug": "fish",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "GTA 6 will simulate hurricanes, rainbows and persistent, dynamic clouds, among other efforts to make you stop doing crime and become a weather nerd Also, 170 beasts, birds and fish Image credit: Take-Two Interactive News by Edwin Evans-Thirlwell News Editor Published on Sept.",
+          "quote": "GTA 6 will simulate hurricanes, rainbows and persistent, dynamic clouds, among other efforts to make you stop doing crime and become a weather nerd Also, 170 beasts, birds and fish Image credit: Take-Two Interactive News by Edwin Evans-Thirlwell News Editor Published on Sept."
+        }
+      ]
+    }
+  ]
+}

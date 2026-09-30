@@ -88,5 +88,23 @@
   "ign-ae04f4546015": {
     "slug": "gta-6-exclusive-grand-theft-auto-vi-includes-over-170-animal-species",
     "written": "2026-09-29"
+  },
+  "ign-2e59dcfec1d3": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-09-30",
+    "reason": "an em dash appears in the written text"
+  },
+  "ign-b69ba1b4daa4": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-09-30",
+    "reason": "an em dash appears in the written text"
+  },
+  "rockpapershotgun-62f8d33bcf9c": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-09-30",
+    "reason": "an em dash appears in the written text"
   }
 }

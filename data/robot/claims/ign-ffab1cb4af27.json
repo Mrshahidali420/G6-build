@@ -1,0 +1,25 @@
+{
+  "rawId": "ign-ffab1cb4af27",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/rockstar-suggests-disney-world-and-seaworld-probably-wont-be-in-gta-6",
+  "published": "2026-09-30",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/08/27/gta-6-jason-police-1787861023226.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-01T11:27:17.861Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "As part of a recent Game Informer cover story on GTA 6 , Rockstar Games seemed to suggest that its fictionalized version of Florida, known as Leonida, won't include every iconic staple of the sunshine state.",
+          "quote": "As part of a recent Game Informer cover story on GTA 6 , Rockstar Games seemed to suggest that its fictionalized version of Florida, known as Leonida, won't include every iconic staple of the sunshine state."
+        }
+      ]
+    }
+  ]
+}

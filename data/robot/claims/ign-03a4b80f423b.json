@@ -1,0 +1,79 @@
+{
+  "rawId": "ign-03a4b80f423b",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/gta-6-gets-official-esrb-rating-and-its-as-mature-as-youd-expect",
+  "published": "2026-10-01",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/08/27/hqwvs5ax0aacam-1787862270241.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-01T21:46:13.606Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Fans have been speculating about whether or not Jason and Lucia will have sex on-screen in GTA 6, for example, so it's possible that the ESRB's detailed breakdown will confirm or squash that speculation.",
+          "quote": "Fans have been speculating about whether or not Jason and Lucia will have sex on-screen in GTA 6, for example, so it's possible that the ESRB's detailed breakdown will confirm or squash that speculation."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Fans have been speculating about whether or not Jason and Lucia will have sex on-screen in GTA 6, for example, so it's possible that the ESRB's detailed breakdown will confirm or squash that speculation.",
+          "quote": "Fans have been speculating about whether or not Jason and Lucia will have sex on-screen in GTA 6, for example, so it's possible that the ESRB's detailed breakdown will confirm or squash that speculation."
+        }
+      ]
+    },
+    {
+      "entityType": "edition",
+      "name": "Standard Edition",
+      "altNames": [
+        "GTA 6 Standard Edition",
+        "GTA VI Standard Edition"
+      ],
+      "slug": "gta-6-standard-edition",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "However, this likely refers to an upgrade from the standard edition of the game to the Ultimate Edition, which will give players access to additional cosmetics, stores, and missions.",
+          "quote": "However, this likely refers to an upgrade from the standard edition of the game to the Ultimate Edition, which will give players access to additional cosmetics, stores, and missions."
+        }
+      ]
+    },
+    {
+      "entityType": "edition",
+      "name": "Ultimate Edition",
+      "altNames": [
+        "GTA 6 Ultimate Edition",
+        "GTA VI Ultimate Edition"
+      ],
+      "slug": "gta-6-ultimate-edition",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "However, this likely refers to an upgrade from the standard edition of the game to the Ultimate Edition, which will give players access to additional cosmetics, stores, and missions.",
+          "quote": "However, this likely refers to an upgrade from the standard edition of the game to the Ultimate Edition, which will give players access to additional cosmetics, stores, and missions."
+        }
+      ]
+    }
+  ]
+}

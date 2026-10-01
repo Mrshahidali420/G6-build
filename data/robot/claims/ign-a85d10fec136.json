@@ -1,0 +1,123 @@
+{
+  "rawId": "ign-a85d10fec136",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/how-gta-6s-jason-and-lucia-have-evolved-since-2023-in-pictures",
+  "published": "2026-10-01",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/09/17/gta-6-soundtrack-1789662158949.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-01T21:46:26.640Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Back To Top Home › News › GTA 6 How GTA 6's Jason and Lucia Have Evolved Since 2023 in Pictures Three years of evolution.",
+          "quote": "Back To Top Home › News › GTA 6 How GTA 6's Jason and Lucia Have Evolved Since 2023 in Pictures Three years of evolution."
+        },
+        {
+          "fact": "By Cade Onder Updated : Oct 1, 2026 7:10pm UTC 2 comments Add IGN on Google GTA 6 officially releases next month, so we're taking a look at how the game's two protagonists, Jason and Lucia, have evolved since their 2023 reveal.",
+          "quote": "By Cade Onder Updated : Oct 1, 2026 7:10pm UTC 2 comments Add IGN on Google GTA 6 officially releases next month, so we're taking a look at how the game's two protagonists, Jason and Lucia, have evolved since their 2023 reveal."
+        },
+        {
+          "fact": "GTA 6 appears to have only visually improved over time, and that is most evident in the level of detail on protagonists Jason and Lucia.",
+          "quote": "GTA 6 appears to have only visually improved over time, and that is most evident in the level of detail on protagonists Jason and Lucia."
+        },
+        {
+          "fact": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images Compared to the 2023 trailer, GTA 6's visuals have drastically changed.",
+          "quote": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images Compared to the 2023 trailer, GTA 6's visuals have drastically changed."
+        },
+        {
+          "fact": "Jason only gets a few seconds to shine, but he largely looks like a generic white guy with his shaved head and stubble.",
+          "quote": "Jason only gets a few seconds to shine, but he largely looks like a generic white guy with his shaved head and stubble."
+        },
+        {
+          "fact": "Jason's brown hair flows out of the back of his hat.",
+          "quote": "Jason's brown hair flows out of the back of his hat."
+        },
+        {
+          "fact": "There's infinitely more customization options and Jason and Lucia are clearly at their final level of polish.",
+          "quote": "There's infinitely more customization options and Jason and Lucia are clearly at their final level of polish."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Back To Top Home › News › GTA 6 How GTA 6's Jason and Lucia Have Evolved Since 2023 in Pictures Three years of evolution.",
+          "quote": "Back To Top Home › News › GTA 6 How GTA 6's Jason and Lucia Have Evolved Since 2023 in Pictures Three years of evolution."
+        },
+        {
+          "fact": "By Cade Onder Updated : Oct 1, 2026 7:10pm UTC 2 comments Add IGN on Google GTA 6 officially releases next month, so we're taking a look at how the game's two protagonists, Jason and Lucia, have evolved since their 2023 reveal.",
+          "quote": "By Cade Onder Updated : Oct 1, 2026 7:10pm UTC 2 comments Add IGN on Google GTA 6 officially releases next month, so we're taking a look at how the game's two protagonists, Jason and Lucia, have evolved since their 2023 reveal."
+        },
+        {
+          "fact": "GTA 6 appears to have only visually improved over time, and that is most evident in the level of detail on protagonists Jason and Lucia.",
+          "quote": "GTA 6 appears to have only visually improved over time, and that is most evident in the level of detail on protagonists Jason and Lucia."
+        },
+        {
+          "fact": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images Compared to the 2023 trailer, GTA 6's visuals have drastically changed.",
+          "quote": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images Compared to the 2023 trailer, GTA 6's visuals have drastically changed."
+        },
+        {
+          "fact": "In the first trailer, Lucia's skin looks less textured, more flat, and less nuanced.",
+          "quote": "In the first trailer, Lucia's skin looks less textured, more flat, and less nuanced."
+        },
+        {
+          "fact": "Both characters sport a variety of hairstyles, with Lucia rocking wavy hair and a golden dress.",
+          "quote": "Both characters sport a variety of hairstyles, with Lucia rocking wavy hair and a golden dress."
+        },
+        {
+          "fact": "There's infinitely more customization options and Jason and Lucia are clearly at their final level of polish.",
+          "quote": "There's infinitely more customization options and Jason and Lucia are clearly at their final level of polish."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "His skin glistens after sweating in the Vice City heat, his veins outline his arms, and his facial hair appears to be somewhat uneven, with certain strands of hair poking out slightly further than others.",
+          "quote": "His skin glistens after sweating in the Vice City heat, his veins outline his arms, and his facial hair appears to be somewhat uneven, with certain strands of hair poking out slightly further than others."
+        }
+      ]
+    },
+    {
+      "entityType": "wildlife",
+      "name": "Dogs",
+      "altNames": [],
+      "slug": "dogs",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Watch Dogs, Cyberpunk 2077, and BioShock Infinite are all solid games, but they looked even better when they were initially revealed.",
+          "quote": "Watch Dogs, Cyberpunk 2077, and BioShock Infinite are all solid games, but they looked even better when they were initially revealed."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "rawId": "purexbox-837f17b6fd22",
+  "outlet": "Pure Xbox",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.purexbox.com/news/2026/10/take-two-signs-new-deal-with-xbox-but-theres-debate-about-how-important-it-actually-is",
+  "published": "2026-10-01",
+  "ogImage": "https://images.purexbox.com/a49bb90634b6d/1280x720.jpg",
+  "extractedAt": "2026-10-01T21:46:33.142Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "You better believe they'll want to release a new version of GTA 6 on Xbox Project Helix whenever that console arrives in the future, and who knows what other massive games Take-Two will be publishing in the next generation!",
+          "quote": "You better believe they'll want to release a new version of GTA 6 on Xbox Project Helix whenever that console arrives in the future, and who knows what other massive games Take-Two will be publishing in the next generation!"
+        }
+      ]
+    }
+  ]
+}

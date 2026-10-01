@@ -1,0 +1,73 @@
+{
+  "rawId": "ign-9b446a6946e1",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/gta-6-kaseya-center",
+  "published": "2026-10-01",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/10/01/4t2j8gj1p6ze1-1790862121075.jpeg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-01T21:46:20.115Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Sahara",
+      "altNames": [],
+      "slug": "sahara",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Vice City sign on the Kaseya center is now fully lit up. by u/Ground_Breaker49 in GTA In the video game, the building is called the Sahara Arena, but it’s located in the same area of Miami and flanked by the same ferris wheel.",
+          "quote": "Vice City sign on the Kaseya center is now fully lit up. by u/Ground_Breaker49 in GTA In the video game, the building is called the Sahara Arena, but it’s located in the same area of Miami and flanked by the same ferris wheel."
+        }
+      ]
+    },
+    {
+      "entityType": "landmark",
+      "name": "Sahara Arena",
+      "altNames": [],
+      "slug": "sahara-arena",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Vice City sign on the Kaseya center is now fully lit up. by u/Ground_Breaker49 in GTA In the video game, the building is called the Sahara Arena, but it’s located in the same area of Miami and flanked by the same ferris wheel.",
+          "quote": "Vice City sign on the Kaseya center is now fully lit up. by u/Ground_Breaker49 in GTA In the video game, the building is called the Sahara Arena, but it’s located in the same area of Miami and flanked by the same ferris wheel."
+        }
+      ]
+    },
+    {
+      "entityType": "landmark",
+      "name": "Vice City Sign",
+      "altNames": [],
+      "slug": "vice-city-sign",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Vice City sign on the Kaseya center is now fully lit up. by u/Ground_Breaker49 in GTA In the video game, the building is called the Sahara Arena, but it’s located in the same area of Miami and flanked by the same ferris wheel.",
+          "quote": "Vice City sign on the Kaseya center is now fully lit up. by u/Ground_Breaker49 in GTA In the video game, the building is called the Sahara Arena, but it’s located in the same area of Miami and flanked by the same ferris wheel."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The lights on the top of the Kaseya Center read \"Welcome to Vice City\" and the roman numerals for six: \"VI.\" The same building can be seen in the latest batch of GTA 6 screenshots, published by Game Informer and analysed by IGN here .",
+          "quote": "The lights on the top of the Kaseya Center read \"Welcome to Vice City\" and the roman numerals for six: \"VI.\" The same building can be seen in the latest batch of GTA 6 screenshots, published by Game Informer and analysed by IGN here ."
+        },
+        {
+          "fact": "Vice City sign on the Kaseya center is now fully lit up. by u/Ground_Breaker49 in GTA In the video game, the building is called the Sahara Arena, but it’s located in the same area of Miami and flanked by the same ferris wheel.",
+          "quote": "Vice City sign on the Kaseya center is now fully lit up. by u/Ground_Breaker49 in GTA In the video game, the building is called the Sahara Arena, but it’s located in the same area of Miami and flanked by the same ferris wheel."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "rawId": "ign-7e5e55de34c1",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/new-gta-6-age-rating-confirms-game-will-feature-sex-scenes",
+  "published": "2026-10-01",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/08/27/gta6-romance-feature-blog-1787862386845.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-02T10:57:27.944Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "GTA 6's sex scenes may be much more focused and graphic, especially since the story revolves around the romantic relationship between Jason and Lucia.",
+          "quote": "GTA 6's sex scenes may be much more focused and graphic, especially since the story revolves around the romantic relationship between Jason and Lucia."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "GTA 6's sex scenes may be much more focused and graphic, especially since the story revolves around the romantic relationship between Jason and Lucia.",
+          "quote": "GTA 6's sex scenes may be much more focused and graphic, especially since the story revolves around the romantic relationship between Jason and Lucia."
+        }
+      ]
+    }
+  ]
+}

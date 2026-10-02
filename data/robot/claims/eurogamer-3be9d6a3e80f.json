@@ -1,0 +1,49 @@
+{
+  "rawId": "eurogamer-3be9d6a3e80f",
+  "outlet": "Eurogamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.eurogamer.net/kingdom-come-deliverance-gta6-higher-game-prices",
+  "published": "2026-10-02",
+  "ogImage": "https://assetsio.gnwcdn.com/KCDII_Standard_KA_Unbranded.png?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-10-02T21:14:53.008Z",
+  "entities": [
+    {
+      "entityType": "edition",
+      "name": "Standard Edition",
+      "altNames": [
+        "GTA 6 Standard Edition",
+        "GTA VI Standard Edition"
+      ],
+      "slug": "gta-6-standard-edition",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "So I wish them all the luck.\" GTA 6 is priced similarly to many other high-end triple-A games here in the UK - the Standard Edition costs &pound;69.99.",
+          "quote": "So I wish them all the luck.\" GTA 6 is priced similarly to many other high-end triple-A games here in the UK - the Standard Edition costs &pound;69.99."
+        },
+        {
+          "fact": "Across the pond in the US, however, GTA 6's Standard Edition sells for $79.99, about $10 more expensive than most blockbuster games not called Mario Kart World .",
+          "quote": "Across the pond in the US, however, GTA 6's Standard Edition sells for $79.99, about $10 more expensive than most blockbuster games not called Mario Kart World ."
+        }
+      ]
+    },
+    {
+      "entityType": "edition",
+      "name": "Ultimate Edition",
+      "altNames": [
+        "GTA 6 Ultimate Edition",
+        "GTA VI Ultimate Edition"
+      ],
+      "slug": "gta-6-ultimate-edition",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The Ultimate Edition can go up to $99.99.",
+          "quote": "The Ultimate Edition can go up to $99.99."
+        }
+      ]
+    }
+  ]
+}

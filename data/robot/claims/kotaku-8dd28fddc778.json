@@ -1,0 +1,73 @@
+{
+  "rawId": "kotaku-8dd28fddc778",
+  "outlet": "Kotaku",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://kotaku.com/gta-6-marketing-ramps-up-as-miami-heat-announce-vice-city-night-that-sounds-very-expensive-2000739310",
+  "published": "2026-10-02",
+  "ogImage": "https://kotaku.com/app/uploads/2026/10/gta-6-heat-1200x675.jpg",
+  "extractedAt": "2026-10-02T21:16:17.496Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "If you want to own a piece of this big event, the Miami Heat store is already selling a bunch of GTA 6 -themed clothing and merch , including hats and T-shirts.",
+          "quote": "If you want to own a piece of this big event, the Miami Heat store is already selling a bunch of GTA 6 -themed clothing and merch , including hats and T-shirts."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "As part of this big marketing push, the Miami Heat have announced a massive one-night event where Vice City will take over the team’s uniform, stadium, and more.",
+          "quote": "As part of this big marketing push, the Miami Heat have announced a massive one-night event where Vice City will take over the team’s uniform, stadium, and more."
+        },
+        {
+          "fact": "On Friday, the Miami Heat announced a Grand Theft Auto 6- themed takeover night during its upcoming game against the Milwaukee Bucks on November 18. “For one night only, the Heat trade Miami for Vice City,” explained the team’s official social media accounts.",
+          "quote": "On Friday, the Miami Heat announced a Grand Theft Auto 6- themed takeover night during its upcoming game against the Milwaukee Bucks on November 18. “For one night only, the Heat trade Miami for Vice City,” explained the team’s official social media accounts."
+        },
+        {
+          "fact": "The match will take place on a “never-before-seen court.” The team will also be wearing new Vice City-themed uniforms.",
+          "quote": "The match will take place on a “never-before-seen court.” The team will also be wearing new Vice City-themed uniforms."
+        },
+        {
+          "fact": "For one night only, the HEAT trade Miami for Vice City.",
+          "quote": "For one night only, the HEAT trade Miami for Vice City."
+        },
+        {
+          "fact": "Join us on November 18, when Vice City hosts the Milwaukee Bucks on a never-before-seen court, wearing an all-new uniform.",
+          "quote": "Join us on November 18, when Vice City hosts the Milwaukee Bucks on a never-before-seen court, wearing an all-new uniform."
+        },
+        {
+          "fact": "For details, visit https://t.co/ZiEQ2XUxdu pic.twitter.com/KaQC7QGRHQ - Miami HEAT (@MiamiHEAT) October 2, 2026 “A historic partnership, when the HEAT as Vice City host a never-been-done-before event on the eve of the highly anticipated release of Grand Theft Auto VI, ” is how the team describes the big night on the event’s official website.",
+          "quote": "For details, visit https://t.co/ZiEQ2XUxdu pic.twitter.com/KaQC7QGRHQ - Miami HEAT (@MiamiHEAT) October 2, 2026 “A historic partnership, when the HEAT as Vice City host a never-been-done-before event on the eve of the highly anticipated release of Grand Theft Auto VI, ” is how the team describes the big night on the event’s official website."
+        },
+        {
+          "fact": "This big Vice City-themed takeover will also be broadcast live on ESPN.",
+          "quote": "This big Vice City-themed takeover will also be broadcast live on ESPN."
+        },
+        {
+          "fact": "There’s even a shirt that seems to be directly referencing the shirt you get for reaching 100-percent completion in the original GTA: Vice City.",
+          "quote": "There’s even a shirt that seems to be directly referencing the shirt you get for reaching 100-percent completion in the original GTA: Vice City."
+        },
+        {
+          "fact": "New look at the fully lit \"WELCOME TO Vice City\" GTA 6 Sign in Downtown Miami at night by u/The_Struggling_Soul in GTA6 GTA 6 fans have been closely watching and monitoring the Miami Heat’s arena for weeks now as workers built and completed a large “Welcome to Vice City” sign on top of the complex.",
+          "quote": "New look at the fully lit \"WELCOME TO Vice City\" GTA 6 Sign in Downtown Miami at night by u/The_Struggling_Soul in GTA6 GTA 6 fans have been closely watching and monitoring the Miami Heat’s arena for weeks now as workers built and completed a large “Welcome to Vice City” sign on top of the complex."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "rawId": "gamesradar-3880dc023955",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/the-power-of-gta-6-marketing-turns-nba-goliath-miami-heat-into-the-vice-city-heat-for-one-game-involving-an-arena-makeover-new-kits-and-naturally-merch/",
+  "published": "2026-10-02",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/3389mzUBT3d6BLYsdfWpWh-1920-80.jpg",
+  "extractedAt": "2026-10-02T21:15:18.996Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "The Miami Heat, to be dubbed the Vice City Heat for this occasion, are up against the Milwaukee Bucks at home, in the Kaseya Center.",
+          "quote": "The Miami Heat, to be dubbed the Vice City Heat for this occasion, are up against the Milwaukee Bucks at home, in the Kaseya Center."
+        },
+        {
+          "fact": "The venue itself already has Vice City branding on it, as part of an extensive marketing campaign within Miami.",
+          "quote": "The venue itself already has Vice City branding on it, as part of an extensive marketing campaign within Miami."
+        },
+        {
+          "fact": "Now, the court will be branded in \"special Vice City hardwood\" for the occasion, to make sure everyone watching knows exactly what's going on.",
+          "quote": "Now, the court will be branded in \"special Vice City hardwood\" for the occasion, to make sure everyone watching knows exactly what's going on."
+        },
+        {
+          "fact": "If you can't get to the Kaseya Center or watch live, you can partake through the line of Vice City merchandise .",
+          "quote": "If you can't get to the Kaseya Center or watch live, you can partake through the line of Vice City merchandise ."
+        }
+      ]
+    }
+  ]
+}

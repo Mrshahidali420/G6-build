@@ -1,0 +1,39 @@
+{
+  "rawId": "vgc-a22e18a2a4c9",
+  "outlet": "VGC",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.videogameschronicle.com/news/miami-heat-nba-team-to-rebrand-as-vice-city-in-gta-6-marketing-stunt/",
+  "published": "2026-10-02",
+  "ogImage": "https://www.videogameschronicle.com/files/2026/10/1200_vice-city-night.jpg",
+  "extractedAt": "2026-10-02T21:16:50.007Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Dubbed “A Night In Vice City,” the event will take place on the eve of the highly anticipated Rockstar Games title’s launch, November 18, when the Heat will take the court as “Vice City” as they host the Milwaukee Bucks.",
+          "quote": "Dubbed “A Night In Vice City,” the event will take place on the eve of the highly anticipated Rockstar Games title’s launch, November 18, when the Heat will take the court as “Vice City” as they host the Milwaukee Bucks."
+        },
+        {
+          "fact": "As part of the event, Miami Heat will play on a specially constructed “Vice City Court” and appear in a reimagined uniform.",
+          "quote": "As part of the event, Miami Heat will play on a specially constructed “Vice City Court” and appear in a reimagined uniform."
+        },
+        {
+          "fact": "The team has also teased additional activities and activations throughout Kaseya Center, including special Vice City merchandise.",
+          "quote": "The team has also teased additional activities and activations throughout Kaseya Center, including special Vice City merchandise."
+        },
+        {
+          "fact": "Rockstar’s next open-world crime game is set in a fictionalized version of Miami, returning players to Vice City for the first time since 2006’s Grand Theft Auto: Vice City Stories.",
+          "quote": "Rockstar’s next open-world crime game is set in a fictionalized version of Miami, returning players to Vice City for the first time since 2006’s Grand Theft Auto: Vice City Stories."
+        }
+      ]
+    }
+  ]
+}

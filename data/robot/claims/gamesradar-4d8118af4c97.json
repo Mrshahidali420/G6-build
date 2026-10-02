@@ -1,0 +1,43 @@
+{
+  "rawId": "gamesradar-4d8118af4c97",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/heres-everything-new-we-learned-about-gta-6-this-week-after-rockstar-revealed-new-details-on-the-animals-activities-and-weather-in-its-sprawling-open-world-sandbox/",
+  "published": "2026-10-02",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/GrtqtSun9vQVcmcsb63nDh-1920-80.jpg",
+  "extractedAt": "2026-10-02T21:15:25.503Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        },
+        {
+          "fact": "There's plenty more covered in this week's episode of GTA 6 O'Clock, so you'll want to click the play button above to jump right into the conversation.",
+          "quote": "There's plenty more covered in this week's episode of GTA 6 O'Clock, so you'll want to click the play button above to jump right into the conversation."
+        }
+      ]
+    },
+    {
+      "entityType": "weapon",
+      "name": "Hammer",
+      "altNames": [],
+      "slug": "hammer",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Josh has contributed to world-leading gaming, entertainment, tech, music, and comics brands, including games&trade;, Edge, Retro Gamer, SFX, 3D Artist, Metal Hammer, and Newsarama.",
+          "quote": "Josh has contributed to world-leading gaming, entertainment, tech, music, and comics brands, including games&trade;, Edge, Retro Gamer, SFX, 3D Artist, Metal Hammer, and Newsarama."
+        }
+      ]
+    }
+  ]
+}

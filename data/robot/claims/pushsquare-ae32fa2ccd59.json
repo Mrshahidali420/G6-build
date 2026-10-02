@@ -1,0 +1,76 @@
+{
+  "rawId": "pushsquare-ae32fa2ccd59",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/10/drug-use-nudity-and-sexual-fetishes-all-in-gta-6",
+  "published": "2026-10-02",
+  "ogImage": "https://images.pushsquare.com/361cc2a23b331/1280x720.jpg",
+  "extractedAt": "2026-10-02T21:16:37.072Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Limit",
+      "altNames": [],
+      "slug": "limit",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "I cant imagine they'd actually do a 'period' game now as might limit their audience.",
+          "quote": "I cant imagine they'd actually do a 'period' game now as might limit their audience."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Everything I mentioned involves consent and no one is forcing anyone to play that game, but someone or some group will moan and cry when it does release because their too stuck in their own misery to accept the fact that some people just want to enjoy what they paid for, sex itself is no different.",
+          "quote": "Everything I mentioned involves consent and no one is forcing anyone to play that game, but someone or some group will moan and cry when it does release because their too stuck in their own misery to accept the fact that some people just want to enjoy what they paid for, sex itself is no different."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Hold the hand of Lucia etc. when the game says, basically QTEs.",
+          "quote": "Hold the hand of Lucia etc. when the game says, basically QTEs."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Related Articles News GTA 6 Rebrands Miami Basketball Team to Vice City for One Night Only Miami Heat becomes Vice City on 18th November News GTA 6 Reveals Massive, Dense Open World in 13 New Screenshots, Details Regions!",
+          "quote": "Related Articles News GTA 6 Rebrands Miami Basketball Team to Vice City for One Night Only Miami Heat becomes Vice City on 18th November News GTA 6 Reveals Massive, Dense Open World in 13 New Screenshots, Details Regions!"
+        },
+        {
+          "fact": "I just don't have time for this series anymore though, the ultra realistic look and lack of jank, it kind of breaks what I liked so much about Vice City and San Andreas back then.",
+          "quote": "I just don't have time for this series anymore though, the ultra realistic look and lack of jank, it kind of breaks what I liked so much about Vice City and San Andreas back then."
+        }
+      ]
+    }
+  ]
+}

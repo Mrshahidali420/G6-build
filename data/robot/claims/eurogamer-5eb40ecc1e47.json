@@ -1,0 +1,45 @@
+{
+  "rawId": "eurogamer-5eb40ecc1e47",
+  "outlet": "Eurogamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.eurogamer.net/gta6-age-rating-pegi-lucia-jason-drug-use",
+  "published": "2026-10-02",
+  "ogImage": "https://assetsio.gnwcdn.com/GTA-6-Lucia_bnyTxLW.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-10-02T21:15:05.966Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "GTA 6's 18+ age rating reveals Lucia and Jason can partake in drug use \"directly from their inventory\" and \"at any time\" Dealing details.",
+          "quote": "GTA 6's 18+ age rating reveals Lucia and Jason can partake in drug use \"directly from their inventory\" and \"at any time\" Dealing details."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "GTA 6's 18+ age rating reveals Lucia and Jason can partake in drug use \"directly from their inventory\" and \"at any time\" Dealing details.",
+          "quote": "GTA 6's 18+ age rating reveals Lucia and Jason can partake in drug use \"directly from their inventory\" and \"at any time\" Dealing details."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "rawId": "ign-7a387ad0b774",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/ex-rockstar-boss-dan-houser-doesnt-play-a-lot-of-open-world-games-and-doesnt-plan-to-play-gta-6",
+  "published": "2026-10-02",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/10/02/dan-houser-1785019173656-1790965340891.png?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-02T21:16:04.499Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "But it's for a good creative reason: he doesn't want to be influenced by them as he works on his two new game projects at his new enterprise, Absurd Ventures.",
+          "quote": "But it's for a good creative reason: he doesn't want to be influenced by them as he works on his two new game projects at his new enterprise, Absurd Ventures."
+        }
+      ]
+    }
+  ]
+}

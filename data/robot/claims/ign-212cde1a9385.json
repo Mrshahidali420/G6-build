@@ -1,0 +1,149 @@
+{
+  "rawId": "ign-212cde1a9385",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/miami-heat-gta-6-uniform",
+  "published": "2026-10-02",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/09/22/gta-6-vice-city-sign-1790108459424.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-02T21:15:44.970Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Sahara",
+      "altNames": [],
+      "slug": "sahara",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In-game, the Kaseya Center is dubbed the Sahara Arena.",
+          "quote": "In-game, the Kaseya Center is dubbed the Sahara Arena."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images Yesterday, the top of the Kaseya Center , home of The Heat, was lit up to usher in the collaboration between Rockstar and Miami’s home team.",
+          "quote": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images Yesterday, the top of the Kaseya Center , home of The Heat, was lit up to usher in the collaboration between Rockstar and Miami’s home team."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images Yesterday, the top of the Kaseya Center , home of The Heat, was lit up to usher in the collaboration between Rockstar and Miami’s home team.",
+          "quote": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images Yesterday, the top of the Kaseya Center , home of The Heat, was lit up to usher in the collaboration between Rockstar and Miami’s home team."
+        }
+      ]
+    },
+    {
+      "entityType": "edition",
+      "name": "Standard Edition",
+      "altNames": [
+        "GTA 6 Standard Edition",
+        "GTA VI Standard Edition"
+      ],
+      "slug": "gta-6-standard-edition",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "GTA 6 costs $79.99 for the Standard Edition.",
+          "quote": "GTA 6 costs $79.99 for the Standard Edition."
+        }
+      ]
+    },
+    {
+      "entityType": "edition",
+      "name": "Ultimate Edition",
+      "altNames": [
+        "GTA 6 Ultimate Edition",
+        "GTA VI Ultimate Edition"
+      ],
+      "slug": "gta-6-ultimate-edition",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The Ultimate Edition, which includes extra in-game content, costs $99.99.",
+          "quote": "The Ultimate Edition, which includes extra in-game content, costs $99.99."
+        }
+      ]
+    },
+    {
+      "entityType": "landmark",
+      "name": "Sahara Arena",
+      "altNames": [],
+      "slug": "sahara-arena",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In-game, the Kaseya Center is dubbed the Sahara Arena.",
+          "quote": "In-game, the Kaseya Center is dubbed the Sahara Arena."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "GTA 6 takes place in Leonida, a fictional recreation of Florida housing its jewel, a virtual recreation of Miami called Vice City.",
+          "quote": "GTA 6 takes place in Leonida, a fictional recreation of Florida housing its jewel, a virtual recreation of Miami called Vice City."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "By Kirk McKeand Updated : Oct 2, 2026 2:11pm UTC 5 comments Add IGN on Google The Miami Heat is heading to Vice City for its next NBA match against the Milwaukee Bucks.",
+          "quote": "By Kirk McKeand Updated : Oct 2, 2026 2:11pm UTC 5 comments Add IGN on Google The Miami Heat is heading to Vice City for its next NBA match against the Milwaukee Bucks."
+        },
+        {
+          "fact": "The one-night-only event, hosted live on ESPN, has been dubbed A Night in Vice City , and will see the home team donning an “all-new uniform on a never-before-seen court.” Presumably, this means the team is sponsored by Take-Two and Rockstar Games for a GTA 6 marketing stunt.",
+          "quote": "The one-night-only event, hosted live on ESPN, has been dubbed A Night in Vice City , and will see the home team donning an “all-new uniform on a never-before-seen court.” Presumably, this means the team is sponsored by Take-Two and Rockstar Games for a GTA 6 marketing stunt."
+        },
+        {
+          "fact": "A bunch of fancy crossover merch has also appeared on the Miami Heat store , celebrating Vice City.",
+          "quote": "A bunch of fancy crossover merch has also appeared on the Miami Heat store , celebrating Vice City."
+        },
+        {
+          "fact": "GTA 6 takes place in Leonida, a fictional recreation of Florida housing its jewel, a virtual recreation of Miami called Vice City.",
+          "quote": "GTA 6 takes place in Leonida, a fictional recreation of Florida housing its jewel, a virtual recreation of Miami called Vice City."
+        }
+      ]
+    }
+  ]
+}

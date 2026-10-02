@@ -1,0 +1,105 @@
+{
+  "rawId": "ign-05672ed14420",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/kingdom-come-deliverance-co-founder-gta-6-price",
+  "published": "2026-10-02",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/09/15/untitled-design-1789479855761.png?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-02T21:15:38.466Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The Ultimate Edition, which includes in-game content most players will want, costs $99.99.",
+          "quote": "The Ultimate Edition, which includes in-game content most players will want, costs $99.99."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Now, hopefully, GTA will blaze the trail, and it will allow us to increase the cost.\" In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images These comments come from an interview with PC Gamer , during which Klima admitted that GTA 6 “doesn't appeal to me at all” despite the series’ popularity.",
+          "quote": "Now, hopefully, GTA will blaze the trail, and it will allow us to increase the cost.\" In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images These comments come from an interview with PC Gamer , during which Klima admitted that GTA 6 “doesn't appeal to me at all” despite the series’ popularity."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Now, hopefully, GTA will blaze the trail, and it will allow us to increase the cost.\" In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images These comments come from an interview with PC Gamer , during which Klima admitted that GTA 6 “doesn't appeal to me at all” despite the series’ popularity.",
+          "quote": "Now, hopefully, GTA will blaze the trail, and it will allow us to increase the cost.\" In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images These comments come from an interview with PC Gamer , during which Klima admitted that GTA 6 “doesn't appeal to me at all” despite the series’ popularity."
+        }
+      ]
+    },
+    {
+      "entityType": "edition",
+      "name": "Standard Edition",
+      "altNames": [
+        "GTA 6 Standard Edition",
+        "GTA VI Standard Edition"
+      ],
+      "slug": "gta-6-standard-edition",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "It's something which I just fail to understand.\" In the U.K., GTA 6 is priced £69.99 for the Standard Edition, which is pretty typical for a tentpole triple-A release.",
+          "quote": "It's something which I just fail to understand.\" In the U.K., GTA 6 is priced £69.99 for the Standard Edition, which is pretty typical for a tentpole triple-A release."
+        },
+        {
+          "fact": "However, in the U.S. it’s $79.99 for the Standard Edition, 10 dollars higher than the usual price point of a new game.",
+          "quote": "However, in the U.S. it’s $79.99 for the Standard Edition, 10 dollars higher than the usual price point of a new game."
+        },
+        {
+          "fact": "Standard Edition Ultimate Edition Answer See Results Kirk McKeand Contributor X Bluesky LinkedIn Kirk McKeand is a Contributor on IGN News.",
+          "quote": "Standard Edition Ultimate Edition Answer See Results Kirk McKeand Contributor X Bluesky LinkedIn Kirk McKeand is a Contributor on IGN News."
+        }
+      ]
+    },
+    {
+      "entityType": "edition",
+      "name": "Ultimate Edition",
+      "altNames": [
+        "GTA 6 Ultimate Edition",
+        "GTA VI Ultimate Edition"
+      ],
+      "slug": "gta-6-ultimate-edition",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The Ultimate Edition, which includes in-game content most players will want, costs $99.99.",
+          "quote": "The Ultimate Edition, which includes in-game content most players will want, costs $99.99."
+        },
+        {
+          "fact": "Standard Edition Ultimate Edition Answer See Results Kirk McKeand Contributor X Bluesky LinkedIn Kirk McKeand is a Contributor on IGN News.",
+          "quote": "Standard Edition Ultimate Edition Answer See Results Kirk McKeand Contributor X Bluesky LinkedIn Kirk McKeand is a Contributor on IGN News."
+        }
+      ]
+    }
+  ]
+}

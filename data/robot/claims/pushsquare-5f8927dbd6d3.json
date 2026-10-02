@@ -1,0 +1,39 @@
+{
+  "rawId": "pushsquare-5f8927dbd6d3",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/10/gta-6-rebrands-miami-basketball-team-to-vice-city-for-one-night-only",
+  "published": "2026-10-02",
+  "ogImage": "https://images.pushsquare.com/960f1e13a2519/1280x720.jpg",
+  "extractedAt": "2026-10-02T21:16:30.521Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "A Night in Vice City tips off November 18. pic.twitter.com/zZGGcrYyiS - Miami HEAT (@MiamiHEAT) October 2, 2026 Here are the visual teasers of what the court will look like, and a dark picture of the shirt.",
+          "quote": "A Night in Vice City tips off November 18. pic.twitter.com/zZGGcrYyiS - Miami HEAT (@MiamiHEAT) October 2, 2026 Here are the visual teasers of what the court will look like, and a dark picture of the shirt."
+        },
+        {
+          "fact": "The new Vice City Collection offers t-shirts and snapback hats to buy, with the former starting at $45 and the latter at $50.",
+          "quote": "The new Vice City Collection offers t-shirts and snapback hats to buy, with the former starting at $45 and the latter at $50."
+        },
+        {
+          "fact": "Completely changing the name of a sports team is a big deal, so for one night only, Vice City will compete in the NBA.",
+          "quote": "Completely changing the name of a sports team is a big deal, so for one night only, Vice City will compete in the NBA."
+        },
+        {
+          "fact": "I really like the 'welcome to Vice City' shirt.",
+          "quote": "I really like the 'welcome to Vice City' shirt."
+        }
+      ]
+    }
+  ]
+}

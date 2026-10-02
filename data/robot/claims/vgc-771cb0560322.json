@@ -1,0 +1,25 @@
+{
+  "rawId": "vgc-771cb0560322",
+  "outlet": "VGC",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.videogameschronicle.com/news/warhorse-coo-wants-gta-6-to-set-a-new-80-price-standard-for-triple-a-games/",
+  "published": "2026-10-02",
+  "ogImage": "https://www.videogameschronicle.com/files/2025/03/IMG_1331-e1778073030403-2560x1613.jpeg",
+  "extractedAt": "2026-10-02T21:16:43.544Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "So they want to be a part of a community where they’re able to say, ‘I’m the most informed.",
+          "quote": "So they want to be a part of a community where they’re able to say, ‘I’m the most informed."
+        }
+      ]
+    }
+  ]
+}

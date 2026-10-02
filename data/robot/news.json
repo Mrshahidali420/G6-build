@@ -106,5 +106,83 @@
     "written": null,
     "refused": "2026-09-30",
     "reason": "an em dash appears in the written text"
+  },
+  "eurogamer-5eb40ecc1e47": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-02",
+    "reason": "an emoji appears in the written text"
+  },
+  "gamesradar-4d8118af4c97": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-02",
+    "reason": "an emoji appears in the written text"
+  },
+  "ign-159e90c3b6cb": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-02",
+    "reason": "an emoji appears in the written text"
+  },
+  "ign-63ec4c51b448": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-02",
+    "reason": "an emoji appears in the written text"
+  },
+  "ign-a85d10fec136": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-02",
+    "reason": "an emoji appears in the written text"
+  },
+  "pushsquare-077c3f00a76f": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-02",
+    "reason": "an emoji appears in the written text"
+  },
+  "gamesradar-3880dc023955": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-02",
+    "reason": "the number(s) 2000739310 appear in the writing but in no quote"
+  },
+  "ign-212cde1a9385": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-02",
+    "reason": "the number(s) 2000739310 appear in the writing but in no quote"
+  },
+  "kotaku-8dd28fddc778": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-02",
+    "reason": "the number(s) 2000739310 appear in the writing but in no quote"
+  },
+  "pushsquare-5f8927dbd6d3": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-02",
+    "reason": "the number(s) 2000739310 appear in the writing but in no quote"
+  },
+  "vgc-a22e18a2a4c9": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-02",
+    "reason": "the number(s) 2000739310 appear in the writing but in no quote"
+  },
+  "ign-03a4b80f423b": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-02",
+    "reason": "an em dash appears in the written text"
+  },
+  "pushsquare-ae32fa2ccd59": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-02",
+    "reason": "an em dash appears in the written text"
   }
 }

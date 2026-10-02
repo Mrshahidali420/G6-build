@@ -1,0 +1,45 @@
+{
+  "rawId": "eurogamer-47ca362d53af",
+  "outlet": "Eurogamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.eurogamer.net/gta-6-sex-scenes-pegi-esrb-ratings-boards",
+  "published": "2026-10-02",
+  "ogImage": "https://assetsio.gnwcdn.com/gta-6-sex-scene.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-10-02T21:14:59.447Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "GTA 6 (Grand Theft Auto 6) - Official Trailer 2 Jason and Lucia being intimate is certainly suggested in this GTA 6 trailer.",
+          "quote": "GTA 6 (Grand Theft Auto 6) - Official Trailer 2 Jason and Lucia being intimate is certainly suggested in this GTA 6 trailer."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "GTA 6 (Grand Theft Auto 6) - Official Trailer 2 Jason and Lucia being intimate is certainly suggested in this GTA 6 trailer.",
+          "quote": "GTA 6 (Grand Theft Auto 6) - Official Trailer 2 Jason and Lucia being intimate is certainly suggested in this GTA 6 trailer."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "rawId": "gameinformer-0944ef7ce5c9",
+  "outlet": "Game Informer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://gameinformer.com/video-podcast/2026/10/02/the-coolest-details-from-our-grand-theft-auto-vi-cover-story-the-game-0",
+  "published": "2026-10-02",
+  "ogImage": "https://gameinformer.com/sites/default/files/styles/og_image/public/2026/10/02/1eb5416e/grand%20theft%20auto%20vi%20cover%20story%20details%20_%20the%20game%20informer%20show%281%29.jpg.webp",
+  "extractedAt": "2026-10-03T10:17:00.836Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Marcus, Alex, Charles, and Kyle discuss how Leonida compares to Florida, the game's updated weather system and how it may compare to Red Dead Redemption 2, and speculate on what may happen to players who prey on endangered species.",
+          "quote": "Marcus, Alex, Charles, and Kyle discuss how Leonida compares to Florida, the game's updated weather system and how it may compare to Red Dead Redemption 2, and speculate on what may happen to players who prey on endangered species."
+        }
+      ]
+    }
+  ]
+}

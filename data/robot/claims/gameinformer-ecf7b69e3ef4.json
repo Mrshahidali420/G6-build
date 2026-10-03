@@ -1,0 +1,69 @@
+{
+  "rawId": "gameinformer-ecf7b69e3ef4",
+  "outlet": "Game Informer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://gameinformer.com/opinion/2026/10/02/the-video-games-and-more-you-should-play-this-weekend-october-2-2026",
+  "published": "2026-10-02",
+  "ogImage": "https://gameinformer.com/sites/default/files/styles/og_image/public/2026/05/05/4c2c7af2/378_endofabyss05.jpg.webp",
+  "extractedAt": "2026-10-03T10:17:07.345Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Fruit",
+      "altNames": [
+        "Fruit Computers"
+      ],
+      "slug": "fruit",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Cutting down fruit from a tree to make jars of jam for a hungry bear or slicing pieces of fabric as a seamstress frantically tosses them mid-air is good, silly fun.",
+          "quote": "Cutting down fruit from a tree to make jars of jam for a hungry bear or slicing pieces of fabric as a seamstress frantically tosses them mid-air is good, silly fun."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Before we get to our list of recommended weekend games, however, I want to share some of our most popular stories of the week.",
+          "quote": "Before we get to our list of recommended weekend games, however, I want to share some of our most popular stories of the week."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Hamlet",
+      "altNames": [],
+      "slug": "hamlet",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "You can't really lose Cozy Stickerville; it's more about seeing the story of your hamlet play out over time, resulting in one of several unique endings.",
+          "quote": "You can't really lose Cozy Stickerville; it's more about seeing the story of your hamlet play out over time, resulting in one of several unique endings."
+        }
+      ]
+    },
+    {
+      "entityType": "weapon",
+      "name": "Flashlight",
+      "altNames": [],
+      "slug": "flashlight",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "One standout mechanic I like is instead of the typical video game flashlight to light up dark areas, protagonist Sam uses the flash from her camera, which leaves a lingering brightness for a few seconds.",
+          "quote": "One standout mechanic I like is instead of the typical video game flashlight to light up dark areas, protagonist Sam uses the flash from her camera, which leaves a lingering brightness for a few seconds."
+        }
+      ]
+    }
+  ]
+}

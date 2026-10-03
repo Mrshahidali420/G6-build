@@ -1,0 +1,81 @@
+{
+  "rawId": "kotaku-ed2883fafff1",
+  "outlet": "Kotaku",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://kotaku.com/gta-6-had-a-really-busy-week-2000739409",
+  "published": "2026-10-02",
+  "ogImage": "https://kotaku.com/app/uploads/2026/10/gta-6-screen-booth.jpg",
+  "extractedAt": "2026-10-03T10:17:13.791Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "That issue will feature GTA 6 protagonists Jason and Lucia on the cover.",
+          "quote": "That issue will feature GTA 6 protagonists Jason and Lucia on the cover."
+        },
+        {
+          "fact": "A Mural Is Being Painted In New York City Meanwhile, in New York City, Grand Theft Auto fans have spotted painters putting up a new mural that will feature Jason and Lucia hanging out on a wall somewhere in Brooklyn.",
+          "quote": "A Mural Is Being Painted In New York City Meanwhile, in New York City, Grand Theft Auto fans have spotted painters putting up a new mural that will feature Jason and Lucia hanging out on a wall somewhere in Brooklyn."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "That issue will feature GTA 6 protagonists Jason and Lucia on the cover.",
+          "quote": "That issue will feature GTA 6 protagonists Jason and Lucia on the cover."
+        },
+        {
+          "fact": "A Mural Is Being Painted In New York City Meanwhile, in New York City, Grand Theft Auto fans have spotted painters putting up a new mural that will feature Jason and Lucia hanging out on a wall somewhere in Brooklyn.",
+          "quote": "A Mural Is Being Painted In New York City Meanwhile, in New York City, Grand Theft Auto fans have spotted painters putting up a new mural that will feature Jason and Lucia hanging out on a wall somewhere in Brooklyn."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "I guess I’ve been writing about GTA at this site for a decade now…huh . ©Rockstar Games / Kotaku Vice City Takes Over The Miami Heat Bright lights.",
+          "quote": "I guess I’ve been writing about GTA at this site for a decade now…huh . ©Rockstar Games / Kotaku Vice City Takes Over The Miami Heat Bright lights."
+        },
+        {
+          "fact": "A Night in Vice City tips off November 18. pic.twitter.com/zZGGcrYyiS - Miami HEAT (@MiamiHEAT) October 2, 2026 As we covered earlier today, Rockstar is teaming up with the Miami Heat to host a big takeover night on November 18, right before GTA 6 ‘s big launch.",
+          "quote": "A Night in Vice City tips off November 18. pic.twitter.com/zZGGcrYyiS - Miami HEAT (@MiamiHEAT) October 2, 2026 As we covered earlier today, Rockstar is teaming up with the Miami Heat to host a big takeover night on November 18, right before GTA 6 ‘s big launch."
+        },
+        {
+          "fact": "The stadium will feature a new GTA 6 -inspired court, and Heat players will wear new Vice City uniforms.",
+          "quote": "The stadium will feature a new GTA 6 -inspired court, and Heat players will wear new Vice City uniforms."
+        },
+        {
+          "fact": "The Heat are selling a ton of new GTA 6 merch and shirts, too, including a shirt that seems inspired by a silly Easter egg found in the OG Vice City.",
+          "quote": "The Heat are selling a ton of new GTA 6 merch and shirts, too, including a shirt that seems inspired by a silly Easter egg found in the OG Vice City."
+        }
+      ]
+    }
+  ]
+}

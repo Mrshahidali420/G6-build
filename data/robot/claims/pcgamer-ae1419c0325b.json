@@ -1,0 +1,73 @@
+{
+  "rawId": "pcgamer-ae1419c0325b",
+  "outlet": "PC Gamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-marketing-stunt-reveals-none-of-our-uk-editors-have-heard-of-the-miami-heat/",
+  "published": "2026-10-02",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/x9WxffqAGXQjoMyQAKu8oL-1920-80.jpg",
+  "extractedAt": "2026-10-03T10:17:20.362Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Miami's NBA basketball team, the Heat, is doing a cross-promotion event with Rockstar, \" A Night in Vice City .\" The team will temporarily rebrand, though from what I can tell it's as \"Vice City\" and not \"The Vice City Heat,\" which feels weird but what do I know.",
+          "quote": "Miami's NBA basketball team, the Heat, is doing a cross-promotion event with Rockstar, \" A Night in Vice City .\" The team will temporarily rebrand, though from what I can tell it's as \"Vice City\" and not \"The Vice City Heat,\" which feels weird but what do I know."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Buffalo",
+      "altNames": [],
+      "slug": "buffalo",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Buffalo-based PCG news writer Lincoln Carpenter helpfully reframed the argument at this time as well: \"It's not so much that the Miami Heat specifically is a big deal.",
+          "quote": "Buffalo-based PCG news writer Lincoln Carpenter helpfully reframed the argument at this time as well: \"It's not so much that the Miami Heat specifically is a big deal."
+        }
+      ]
+    },
+    {
+      "entityType": "wildlife",
+      "name": "Dolphins",
+      "altNames": [],
+      "slug": "dolphins",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "\"I have heard of the Miami Dolphins,\" Fraser remarked, perhaps as some manner of conciliatory gesture to his American colleagues, \"but only because they featured in Ace Ventura.\" Joshua Wolens Social Links Navigation News Writer Knows every major and minor participant in the October Revolution and their party affiliation.",
+          "quote": "\"I have heard of the Miami Dolphins,\" Fraser remarked, perhaps as some manner of conciliatory gesture to his American colleagues, \"but only because they featured in Ace Ventura.\" Joshua Wolens Social Links Navigation News Writer Knows every major and minor participant in the October Revolution and their party affiliation."
+        },
+        {
+          "fact": "\"I'm aware of the Miami Dolphins.\" Unlike Fraser, Sam did not come by this knowledge through the works of Jim Carrey, but rather some kind of hazy osmosis through American podcasts.",
+          "quote": "\"I'm aware of the Miami Dolphins.\" Unlike Fraser, Sam did not come by this knowledge through the works of Jim Carrey, but rather some kind of hazy osmosis through American podcasts."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "rawId": "vgc-66768bd0abf0",
+  "outlet": "VGC",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.videogameschronicle.com/news/dan-houser-still-hasnt-seen-gta-6-i-will-try-and-avoid-it/",
+  "published": "2026-10-03",
+  "ogImage": "https://www.videogameschronicle.com/files/2026/07/dan-houser.jpg",
+  "extractedAt": "2026-10-03T10:17:33.303Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Speaking in a new interview with Variety , Houser explained that he’s been actively avoiding paying attention to what Rockstar – helmed by his brother, Sam – is doing with the next GTA, because he doesn’t want his own work to be influenced by it. “I haven’t seen it yet.",
+          "quote": "Speaking in a new interview with Variety , Houser explained that he’s been actively avoiding paying attention to what Rockstar – helmed by his brother, Sam – is doing with the next GTA, because he doesn’t want his own work to be influenced by it. “I haven’t seen it yet."
+        }
+      ]
+    }
+  ]
+}

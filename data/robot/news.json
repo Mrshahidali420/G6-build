@@ -184,5 +184,17 @@
     "written": null,
     "refused": "2026-10-02",
     "reason": "an em dash appears in the written text"
+  },
+  "gameinformer-0944ef7ce5c9": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-03",
+    "reason": "an emoji appears in the written text"
+  },
+  "purexbox-fa221e05a408": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-03",
+    "reason": "an emoji appears in the written text"
   }
 }

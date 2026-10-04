@@ -1,0 +1,48 @@
+{
+  "rawId": "ign-c1b3920c055c",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/snl-weighs-in-on-gta-6-vs-the-legend-of-zelda-with-skit-featuring-jason-and-link",
+  "published": "2026-10-04",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/10/04/snl-gta-6-zelda-1791128866565.png?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-04T19:56:38.868Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "The Legend of Zelda With Skit Featuring Jason and Link TMPNG.",
+          "quote": "The Legend of Zelda With Skit Featuring Jason and Link TMPNG."
+        },
+        {
+          "fact": "The Legend of Zelda: Ocarina of Time remake with a new Weekend Update skit featuring video game protagonists Jason Duval and Link.",
+          "quote": "The Legend of Zelda: Ocarina of Time remake with a new Weekend Update skit featuring video game protagonists Jason Duval and Link."
+        },
+        {
+          "fact": "The bit starred live-action versions of GTA 6's Jason and The Legend of Zelda's Link, played by Marcello Hernández and Mikey Day, respectively, and mostly saw the two icons arguing about who has the better game.",
+          "quote": "The bit starred live-action versions of GTA 6's Jason and The Legend of Zelda's Link, played by Marcello Hernández and Mikey Day, respectively, and mostly saw the two icons arguing about who has the better game."
+        },
+        {
+          "fact": "The long-running celebrity skit show is no stranger to nights like this, and although it's been known to feature the odd gaming reference here and there , it's safe to say full-on appearances from Link and Jason probably weren't on anyone's bingo card.",
+          "quote": "The long-running celebrity skit show is no stranger to nights like this, and although it's been known to feature the odd gaming reference here and there , it's safe to say full-on appearances from Link and Jason probably weren't on anyone's bingo card."
+        },
+        {
+          "fact": "The outfit that helped him bring Jason to life, meanwhile, is little more than a bloody bandage and a tropical button-up.",
+          "quote": "The outfit that helped him bring Jason to life, meanwhile, is little more than a bloody bandage and a tropical button-up."
+        },
+        {
+          "fact": "While this Jason falls more into the last-minute Halloween-costume category, Day's Link getup has received praise for being shockingly accurate to the character's specific Ocarina of Time remake tunic.",
+          "quote": "While this Jason falls more into the last-minute Halloween-costume category, Day's Link getup has received praise for being shockingly accurate to the character's specific Ocarina of Time remake tunic."
+        }
+      ]
+    }
+  ]
+}

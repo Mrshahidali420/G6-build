@@ -1,0 +1,88 @@
+{
+  "rawId": "kotaku-a800d987561c",
+  "outlet": "Kotaku",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://kotaku.com/gta-vis-jason-duval-and-link-make-their-final-pitch-on-saturday-night-live-2000739644",
+  "published": "2026-10-04",
+  "ogImage": "https://kotaku.com/app/uploads/2026/10/linkjasonsnl-1200x675.jpg",
+  "extractedAt": "2026-10-04T19:56:45.322Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Shark",
+      "altNames": [],
+      "slug": "shark",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Hopefully Jason didn’t stray too far off from his designated path backstage, or Land Shark might’ve gotten him . 🕹️ Level up your inbox Don’t miss the latest reviews, news and tips.",
+          "quote": "Hopefully Jason didn’t stray too far off from his designated path backstage, or Land Shark might’ve gotten him . 🕹️ Level up your inbox Don’t miss the latest reviews, news and tips."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Hopefully Jason didn’t stray too far off from his designated path backstage, or Land Shark might’ve gotten him . 🕹️ Level up your inbox Don’t miss the latest reviews, news and tips.",
+          "quote": "Hopefully Jason didn’t stray too far off from his designated path backstage, or Land Shark might’ve gotten him . 🕹️ Level up your inbox Don’t miss the latest reviews, news and tips."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Vying to be November’s biggest video game, the two stars trade barbs for several minutes, largely revolving around how effeminate Link’s appearance is and how lunkheaded life in Vice City gets.",
+          "quote": "Vying to be November’s biggest video game, the two stars trade barbs for several minutes, largely revolving around how effeminate Link’s appearance is and how lunkheaded life in Vice City gets."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Swift",
+      "altNames": [],
+      "slug": "swift",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "There on behalf of Michael Showalter’s first thriller Verity (hearing it’s decent), Baltimore rock band Turnstile made their Studio 8H debut and Taylor Swift crashed the opening monologue.",
+          "quote": "There on behalf of Michael Showalter’s first thriller Verity (hearing it’s decent), Baltimore rock band Turnstile made their Studio 8H debut and Taylor Swift crashed the opening monologue."
+        }
+      ]
+    },
+    {
+      "entityType": "weapon",
+      "name": "Rocket Launcher",
+      "altNames": [
+        "RPG"
+      ],
+      "slug": "rocket-launcher",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The two eventually wave rocket launcher and fairy bottle props at each other.",
+          "quote": "The two eventually wave rocket launcher and fairy bottle props at each other."
+        }
+      ]
+    }
+  ]
+}

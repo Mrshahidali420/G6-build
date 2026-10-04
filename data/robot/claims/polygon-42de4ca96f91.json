@@ -1,0 +1,46 @@
+{
+  "rawId": "polygon-42de4ca96f91",
+  "outlet": "Polygon",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.polygon.com/saturday-night-live-zelda-vs-gta-6/",
+  "published": "2026-10-04",
+  "ogImage": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/saturday-night-live-snl-gta-zelda-sketch.jpg?w=1600&h=900&fit=crop",
+  "extractedAt": "2026-10-04T19:56:51.827Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Assassin’s Creed Black Flag Resynced's best weapon isn't Edward's Hidden Blade Pokémon Go leader counters for Sierra, Arlo, and September in October 2026 Thread 1 Sign in to your Polygon.com account We want to hear from you.",
+          "quote": "Assassin’s Creed Black Flag Resynced's best weapon isn't Edward's Hidden Blade Pokémon Go leader counters for Sierra, Arlo, and September in October 2026 Thread 1 Sign in to your Polygon.com account We want to hear from you."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "SNL claims GTA 6's focus on sex, chaos, and destruction is why it has a bigger audience The Weekend Update segment, which stars Mikey Day as Link and Marcello Hernandez as Jason, features a lot of trash-talking.",
+          "quote": "SNL claims GTA 6's focus on sex, chaos, and destruction is why it has a bigger audience The Weekend Update segment, which stars Mikey Day as Link and Marcello Hernandez as Jason, features a lot of trash-talking."
+        },
+        {
+          "fact": "Jason criticizes Ocarina of Time due to its lack of sex appeal, violence, fun items, and \"baddies,\" whereas Grand Theft Auto VI revels in \"destruction, chaos, and sex.\" While it's ultimately a lighthearted bit, it gets to the heart of why GTA 6 has become such a widely anticipated game, even among people who don't typically play games.",
+          "quote": "Jason criticizes Ocarina of Time due to its lack of sex appeal, violence, fun items, and \"baddies,\" whereas Grand Theft Auto VI revels in \"destruction, chaos, and sex.\" While it's ultimately a lighthearted bit, it gets to the heart of why GTA 6 has become such a widely anticipated game, even among people who don't typically play games."
+        }
+      ]
+    }
+  ]
+}

@@ -196,5 +196,29 @@
     "written": null,
     "refused": "2026-10-03",
     "reason": "an emoji appears in the written text"
+  },
+  "ign-c1b3920c055c": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-04",
+    "reason": "an emoji appears in the written text"
+  },
+  "kotaku-a800d987561c": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-04",
+    "reason": "an emoji appears in the written text"
+  },
+  "pcgamer-f91620b8542e": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-04",
+    "reason": "an emoji appears in the written text"
+  },
+  "polygon-42de4ca96f91": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-04",
+    "reason": "an emoji appears in the written text"
   }
 }

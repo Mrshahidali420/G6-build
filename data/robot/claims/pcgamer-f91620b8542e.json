@@ -1,0 +1,59 @@
+{
+  "rawId": "pcgamer-f91620b8542e",
+  "outlet": "PC Gamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-wont-be-letting-up-on-the-satire-if-you-are-going-to-put-all-this-effort-into-creating-a-version-of-todays-world-it-has-to-be-more-over-the-top-more-insane-more-in-your-face/",
+  "published": "2026-10-04",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/AV9xeCqDkbCQb7FV7dRQYf-1920-80.jpg",
+  "extractedAt": "2026-10-04T11:00:55.160Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "The other focus of the article is on Lucia, GTA's first fully voiced woman protagonist, and on her relationship with co-star Jason.",
+          "quote": "The other focus of the article is on Lucia, GTA's first fully voiced woman protagonist, and on her relationship with co-star Jason."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "The other focus of the article is on Lucia, GTA's first fully voiced woman protagonist, and on her relationship with co-star Jason.",
+          "quote": "The other focus of the article is on Lucia, GTA's first fully voiced woman protagonist, and on her relationship with co-star Jason."
+        }
+      ]
+    }
+  ]
+}

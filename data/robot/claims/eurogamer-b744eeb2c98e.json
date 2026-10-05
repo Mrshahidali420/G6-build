@@ -1,0 +1,79 @@
+{
+  "rawId": "eurogamer-b744eeb2c98e",
+  "outlet": "Eurogamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.eurogamer.net/rockstar-gta-6-satire-politics-real-world-events",
+  "published": "2026-10-05",
+  "ogImage": "https://assetsio.gnwcdn.com/Ambrosia_06.0j9c7-8nfb_xf.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-10-05T23:06:13.644Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Patriot Beer",
+      "altNames": [
+        "Patriot"
+      ],
+      "slug": "patriot-beer",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "\"The rise of Homeland Security and the Patriot Act were pretty central to GTA 4, but that was mainly because post-9/11 New York was a real frontline for those issues.",
+          "quote": "\"The rise of Homeland Security and the Patriot Act were pretty central to GTA 4, but that was mainly because post-9/11 New York was a real frontline for those issues."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Because we are trying to make games that feel very specific to the moment they are released, but at the same time, not reflective of the exact world we live in, we don't want to be too specific about any particular person, event, movement or anything like that.",
+          "quote": "Because we are trying to make games that feel very specific to the moment they are released, but at the same time, not reflective of the exact world we live in, we don't want to be too specific about any particular person, event, movement or anything like that."
+        },
+        {
+          "fact": "We try to get to the heart of whatever issue we want to talk about and then explode the part of it we find interesting until the ridiculousness of the position becomes really clear and hopefully funny too.\" The other thing to keep in mind, Humphries said, is the game's development time.",
+          "quote": "We try to get to the heart of whatever issue we want to talk about and then explode the part of it we find interesting until the ridiculousness of the position becomes really clear and hopefully funny too.\" The other thing to keep in mind, Humphries said, is the game's development time."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "It's an enormously ambitious project , pushing the levels of realism and interactivity - sometimes very controversially - that players can expect from a simulated city, while telling a kind of Bonnie and Clyde love story between co-protagonists Jason and Lucia .",
+          "quote": "It's an enormously ambitious project , pushing the levels of realism and interactivity - sometimes very controversially - that players can expect from a simulated city, while telling a kind of Bonnie and Clyde love story between co-protagonists Jason and Lucia ."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "It's an enormously ambitious project , pushing the levels of realism and interactivity - sometimes very controversially - that players can expect from a simulated city, while telling a kind of Bonnie and Clyde love story between co-protagonists Jason and Lucia .",
+          "quote": "It's an enormously ambitious project , pushing the levels of realism and interactivity - sometimes very controversially - that players can expect from a simulated city, while telling a kind of Bonnie and Clyde love story between co-protagonists Jason and Lucia ."
+        }
+      ]
+    }
+  ]
+}

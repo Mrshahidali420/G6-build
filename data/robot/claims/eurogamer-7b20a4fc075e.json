@@ -1,0 +1,45 @@
+{
+  "rawId": "eurogamer-7b20a4fc075e",
+  "outlet": "Eurogamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.eurogamer.net/gta-6-devs-bandwagon-trends-created-slanted-versions",
+  "published": "2026-10-05",
+  "ogImage": "https://assetsio.gnwcdn.com/jason-lucia-gta-6-romance-relationship.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-10-05T23:06:07.409Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Miami and Southern Florida are a particular frontline for this battle between astronomical wealth and unbounded ambition, creating a pressure cooker for all kinds of insanity.\" Humphries stops short of explaining what GTA 6's take on the American Dream is exactly, but his interpretation might certainly be a clue to Jason and Lucia's motivations.",
+          "quote": "Miami and Southern Florida are a particular frontline for this battle between astronomical wealth and unbounded ambition, creating a pressure cooker for all kinds of insanity.\" Humphries stops short of explaining what GTA 6's take on the American Dream is exactly, but his interpretation might certainly be a clue to Jason and Lucia's motivations."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Miami and Southern Florida are a particular frontline for this battle between astronomical wealth and unbounded ambition, creating a pressure cooker for all kinds of insanity.\" Humphries stops short of explaining what GTA 6's take on the American Dream is exactly, but his interpretation might certainly be a clue to Jason and Lucia's motivations.",
+          "quote": "Miami and Southern Florida are a particular frontline for this battle between astronomical wealth and unbounded ambition, creating a pressure cooker for all kinds of insanity.\" Humphries stops short of explaining what GTA 6's take on the American Dream is exactly, but his interpretation might certainly be a clue to Jason and Lucia's motivations."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "rawId": "gamesradar-b090e630e31d",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-story-lead-insists-rockstar-didnt-want-to-make-any-kind-of-statement-with-jasons-ex-military-background/",
+  "published": "2026-10-05",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/L9JfY29u9s5z4EXMi2EqZ8-1920-80.jpg",
+  "extractedAt": "2026-10-05T23:06:26.708Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        },
+        {
+          "fact": "Latest Videos From GamesRadar+ Watch full video here: \"We didn't want to make any kind of statement with Jason's backstory,\" Humphries responds.",
+          "quote": "Latest Videos From GamesRadar+ Watch full video here: \"We didn't want to make any kind of statement with Jason's backstory,\" Humphries responds."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Concerns for Jason and Lucia's happy ending aside, during a new interview with Love magazine, Rupert Humphries, GTA 6's senior vice president of narrative, is asked about Jason's backstory.",
+          "quote": "Concerns for Jason and Lucia's happy ending aside, during a new interview with Love magazine, Rupert Humphries, GTA 6's senior vice president of narrative, is asked about Jason's backstory."
+        },
+        {
+          "fact": "Latest Videos From GamesRadar+ Watch full video here: \"We didn't want to make any kind of statement with Jason's backstory,\" Humphries responds.",
+          "quote": "Latest Videos From GamesRadar+ Watch full video here: \"We didn't want to make any kind of statement with Jason's backstory,\" Humphries responds."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Concerns for Jason and Lucia's happy ending aside, during a new interview with Love magazine, Rupert Humphries, GTA 6's senior vice president of narrative, is asked about Jason's backstory.",
+          "quote": "Concerns for Jason and Lucia's happy ending aside, during a new interview with Love magazine, Rupert Humphries, GTA 6's senior vice president of narrative, is asked about Jason's backstory."
+        }
+      ]
+    }
+  ]
+}

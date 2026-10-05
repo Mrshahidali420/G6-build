@@ -1,0 +1,27 @@
+{
+  "rawId": "rockpapershotgun-5198cd921217",
+  "outlet": "Rock Paper Shotgun",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.rockpapershotgun.com/gta-6-writer-says-the-series-has-never-had-much-focus-on-national-politics-beyond-gta-4s-war-on-terror-and-the-latest-entry-wont-get-too-specific",
+  "published": "2026-10-05",
+  "ogImage": "https://assetsio.gnwcdn.com/gta-6-writer-on-politics-american-dream-satire-01.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-10-05T23:06:46.166Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Patriot Beer",
+      "altNames": [
+        "Patriot"
+      ],
+      "slug": "patriot-beer",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "\"The rise of Homeland Security and the Patriot Act were pretty central to GTA 4, but that was mainly because post-9/11 New York was a real frontline for those issues.",
+          "quote": "\"The rise of Homeland Security and the Patriot Act were pretty central to GTA 4, but that was mainly because post-9/11 New York was a real frontline for those issues."
+        }
+      ]
+    }
+  ]
+}

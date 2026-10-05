@@ -1,0 +1,59 @@
+{
+  "rawId": "pcgamer-0d4bd8134227",
+  "outlet": "PC Gamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pcgamer.com/games/grand-theft-auto/despite-calling-grand-theft-auto-a-videogame-franchise-built-around-criminal-activity-miami-dade-sheriff-isnt-mad-about-the-nbas-vice-city-transformation/",
+  "published": "2026-10-05",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/pqxkmyfvwZ8UJuzVqF73xR-2560-80.jpg",
+  "extractedAt": "2026-10-05T23:06:39.728Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Vice City and Leonida, the fictional city and state that serve as the setting for Grand Theft Auto 6 , are largely based on Miami and the state of Florida, and Rockstar and publisher Take-Two Interactive are moving heavy and hard to leverage that real-life inspiration to promote GTA 6 as its console release gets closer.",
+          "quote": "Vice City and Leonida, the fictional city and state that serve as the setting for Grand Theft Auto 6 , are largely based on Miami and the state of Florida, and Rockstar and publisher Take-Two Interactive are moving heavy and hard to leverage that real-life inspiration to promote GTA 6 as its console release gets closer."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Vice City and Leonida, the fictional city and state that serve as the setting for Grand Theft Auto 6 , are largely based on Miami and the state of Florida, and Rockstar and publisher Take-Two Interactive are moving heavy and hard to leverage that real-life inspiration to promote GTA 6 as its console release gets closer.",
+          "quote": "Vice City and Leonida, the fictional city and state that serve as the setting for Grand Theft Auto 6 , are largely based on Miami and the state of Florida, and Rockstar and publisher Take-Two Interactive are moving heavy and hard to leverage that real-life inspiration to promote GTA 6 as its console release gets closer."
+        },
+        {
+          "fact": "The Kaseya Center campaign became even more prominent in October when the Heat, one of the NBA's highest-profile teams, became directly involved via the Night in Vice City campaign, a one-night-only promotion that will see both the arena and the team rebranded in Vice City livery.",
+          "quote": "The Kaseya Center campaign became even more prominent in October when the Heat, one of the NBA's highest-profile teams, became directly involved via the Night in Vice City campaign, a one-night-only promotion that will see both the arena and the team rebranded in Vice City livery."
+        }
+      ]
+    }
+  ]
+}

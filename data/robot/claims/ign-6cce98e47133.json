@@ -1,0 +1,63 @@
+{
+  "rawId": "ign-6cce98e47133",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/gta-6-research-gang-members",
+  "published": "2026-10-05",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/08/27/gta-6-jason-police-1787861023226.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-05T12:07:48.200Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "This is one of the best parts of the entire project: a car full of friends, driving for days on end, talking about what we want to make and being immersed in the locations and our ideas.” Grand Theft Auto 6 vs Real Life Inspiration View 7 Images Garbut takes a camera and a phone and records everything that happens.",
+          "quote": "This is one of the best parts of the entire project: a car full of friends, driving for days on end, talking about what we want to make and being immersed in the locations and our ideas.” Grand Theft Auto 6 vs Real Life Inspiration View 7 Images Garbut takes a camera and a phone and records everything that happens."
+        },
+        {
+          "fact": "Everything is important when creating a world you want players to spend hundreds of hours exploring.",
+          "quote": "Everything is important when creating a world you want players to spend hundreds of hours exploring."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "While the interview focuses primarily on the love story between dual protagonists Jason and Lucia, there’s some interesting insight into the studio’s process for creating the most impressive virtual worlds ever made.",
+          "quote": "While the interview focuses primarily on the love story between dual protagonists Jason and Lucia, there’s some interesting insight into the studio’s process for creating the most impressive virtual worlds ever made."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "While the interview focuses primarily on the love story between dual protagonists Jason and Lucia, there’s some interesting insight into the studio’s process for creating the most impressive virtual worlds ever made.",
+          "quote": "While the interview focuses primarily on the love story between dual protagonists Jason and Lucia, there’s some interesting insight into the studio’s process for creating the most impressive virtual worlds ever made."
+        }
+      ]
+    }
+  ]
+}

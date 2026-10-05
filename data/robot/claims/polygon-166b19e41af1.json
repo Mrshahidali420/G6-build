@@ -1,0 +1,69 @@
+{
+  "rawId": "polygon-166b19e41af1",
+  "outlet": "Polygon",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.polygon.com/grand-theft-auto-gta-6-love-magazine-interview-npc-details/",
+  "published": "2026-10-05",
+  "ogImage": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/jason_and_lucia_03.jpg?w=1600&h=900&fit=crop",
+  "extractedAt": "2026-10-05T12:07:54.707Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "It also shared more about Lucia and Jason's hopes and dreams of fulfilling their American dream.",
+          "quote": "It also shared more about Lucia and Jason's hopes and dreams of fulfilling their American dream."
+        },
+        {
+          "fact": "\"There's just foreground you're not paying attention to right now.\" With so much attention being put into NPCs' lives, hurting them might feel different from previous games, and that is why it is up to players to decide how Jason reacts to his own crimes and the situations happening around him.",
+          "quote": "\"There's just foreground you're not paying attention to right now.\" With so much attention being put into NPCs' lives, hurting them might feel different from previous games, and that is why it is up to players to decide how Jason reacts to his own crimes and the situations happening around him."
+        },
+        {
+          "fact": "Jason is shaping up to be a very relatable character that players can connect with, especially considering that they significantly influence who he becomes.",
+          "quote": "Jason is shaping up to be a very relatable character that players can connect with, especially considering that they significantly influence who he becomes."
+        },
+        {
+          "fact": "However, this will change Jason's reputation , and others will react differently to him, whether positively or negatively.",
+          "quote": "However, this will change Jason's reputation , and others will react differently to him, whether positively or negatively."
+        },
+        {
+          "fact": "As expected, the Love Magazine with the cover art featuring Jason and Lucia quickly sold out.",
+          "quote": "As expected, the Love Magazine with the cover art featuring Jason and Lucia quickly sold out."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "It also shared more about Lucia and Jason's hopes and dreams of fulfilling their American dream.",
+          "quote": "It also shared more about Lucia and Jason's hopes and dreams of fulfilling their American dream."
+        },
+        {
+          "fact": "Rather than being a pair of tough, experienced criminals, he and Lucia are still new to the world of bank heists and drug deals.",
+          "quote": "Rather than being a pair of tough, experienced criminals, he and Lucia are still new to the world of bank heists and drug deals."
+        },
+        {
+          "fact": "As expected, the Love Magazine with the cover art featuring Jason and Lucia quickly sold out.",
+          "quote": "As expected, the Love Magazine with the cover art featuring Jason and Lucia quickly sold out."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "rawId": "gamesradar-4756eaabe386",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-and-san-andreas-show-how-much-game-development-has-changed-in-the-00s-rockstar-turned-a-clair-obscur-expedition-33-sized-budget-into-usd600-million/",
+  "published": "2026-10-06",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/sbR7qtWWX9rqKLvvUPyTEe-1920-80.jpg",
+  "extractedAt": "2026-10-06T21:29:10.536Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        },
+        {
+          "fact": "Oh, and GTA 6 costs $100 if you want everything in it - that'd be the Ultimate Edition - or $80 at base, which has become the new price ceiling for some AAA games.",
+          "quote": "Oh, and GTA 6 costs $100 if you want everything in it - that'd be the Ultimate Edition - or $80 at base, which has become the new price ceiling for some AAA games."
+        }
+      ]
+    },
+    {
+      "entityType": "edition",
+      "name": "Ultimate Edition",
+      "altNames": [
+        "GTA 6 Ultimate Edition",
+        "GTA VI Ultimate Edition"
+      ],
+      "slug": "gta-6-ultimate-edition",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Oh, and GTA 6 costs $100 if you want everything in it - that'd be the Ultimate Edition - or $80 at base, which has become the new price ceiling for some AAA games.",
+          "quote": "Oh, and GTA 6 costs $100 if you want everything in it - that'd be the Ultimate Edition - or $80 at base, which has become the new price ceiling for some AAA games."
+        },
+        {
+          "fact": "For 5 days, this PlayStation Store credit deal brings GTA 6's $100 Ultimate Edition down to the price of a normal game .",
+          "quote": "For 5 days, this PlayStation Store credit deal brings GTA 6's $100 Ultimate Edition down to the price of a normal game ."
+        }
+      ]
+    }
+  ]
+}

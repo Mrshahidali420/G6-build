@@ -1,0 +1,59 @@
+{
+  "rawId": "gamesradar-15c31705f9be",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/for-5-days-this-playstation-store-credit-deal-brings-gta-6s-usd100-ultimate-edition-down-to-the-price-of-a-normal-game/",
+  "published": "2026-10-06",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/So6M7rVj8Ke8Xy5nSadTe8-1920-80.jpg",
+  "extractedAt": "2026-10-06T21:29:04.082Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "edition",
+      "name": "Standard Edition",
+      "altNames": [
+        "GTA 6 Standard Edition",
+        "GTA VI Standard Edition"
+      ],
+      "slug": "gta-6-standard-edition",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Latest Videos From GamesRadar+ Watch full video here: With GTA 6 being the highest-profile game release of the year, fans of Rockstar's open-world games quickly clocked that this deal brings the price of the game's $100 Ultimate Edition down to the new normal $80 ceiling for normal AAA games, which GTA 6's standard edition shares.",
+          "quote": "Latest Videos From GamesRadar+ Watch full video here: With GTA 6 being the highest-profile game release of the year, fans of Rockstar's open-world games quickly clocked that this deal brings the price of the game's $100 Ultimate Edition down to the new normal $80 ceiling for normal AAA games, which GTA 6's standard edition shares."
+        }
+      ]
+    },
+    {
+      "entityType": "edition",
+      "name": "Ultimate Edition",
+      "altNames": [
+        "GTA 6 Ultimate Edition",
+        "GTA VI Ultimate Edition"
+      ],
+      "slug": "gta-6-ultimate-edition",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Latest Videos From GamesRadar+ Watch full video here: With GTA 6 being the highest-profile game release of the year, fans of Rockstar's open-world games quickly clocked that this deal brings the price of the game's $100 Ultimate Edition down to the new normal $80 ceiling for normal AAA games, which GTA 6's standard edition shares.",
+          "quote": "Latest Videos From GamesRadar+ Watch full video here: With GTA 6 being the highest-profile game release of the year, fans of Rockstar's open-world games quickly clocked that this deal brings the price of the game's $100 Ultimate Edition down to the new normal $80 ceiling for normal AAA games, which GTA 6's standard edition shares."
+        }
+      ]
+    }
+  ]
+}

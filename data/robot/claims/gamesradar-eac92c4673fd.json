@@ -1,0 +1,78 @@
+{
+  "rawId": "gamesradar-eac92c4673fd",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/hardware/news/live/prime-day-gta-6-ultimate-setup-oct-26/",
+  "published": "2026-10-06",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/sHC6ayTTNhWznYnQ4m3q9m-2560-80.jpg",
+  "extractedAt": "2026-10-06T21:29:17.054Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Personally, I'll be playing GTA 6 on my 65\" 4K TV, but if you have your PS5 or Xbox plugged into a PC monitor and you want to upgrade your kit before November 19, I would recommend this one if it's within your target budget.",
+          "quote": "Personally, I'll be playing GTA 6 on my 65\" 4K TV, but if you have your PS5 or Xbox plugged into a PC monitor and you want to upgrade your kit before November 19, I would recommend this one if it's within your target budget."
+        },
+        {
+          "fact": "If you want to immerse yourself in GTA 6 without any distractions and don't want to spend hundreds of dollars when everything is already exorbitantly expensive as it is, I can't recommend this first-party Sony headset enough - and since it's wired for 3mm jacks, you should have no compatibility issues using it on Xbox if that's your preferred platform.",
+          "quote": "If you want to immerse yourself in GTA 6 without any distractions and don't want to spend hundreds of dollars when everything is already exorbitantly expensive as it is, I can't recommend this first-party Sony headset enough - and since it's wired for 3mm jacks, you should have no compatibility issues using it on Xbox if that's your preferred platform."
+        },
+        {
+          "fact": "These are ones I use every day, so I can vouch for them, especially if you want good sound quality on a budget.",
+          "quote": "These are ones I use every day, so I can vouch for them, especially if you want good sound quality on a budget."
+        },
+        {
+          "fact": "Alternatively, if you want the C6 but you're not massively fussed about the size, go for the 42-inch model, which is somehow cheaper at $999.",
+          "quote": "Alternatively, if you want the C6 but you're not massively fussed about the size, go for the 42-inch model, which is somehow cheaper at $999."
+        },
+        {
+          "fact": "GameSir G7 Pro: $79.99 $63.99 at Amazon 2026-10-06T14:29:26.418Z While I look for storage, here's an excellent mid-range headset for you (Image credit: Future / Duncan Robertson) Let's say you don't have the money to afford the pricey, top-of-the-line SteelSeries headset I mentioned above, but you want something a bit more premium than the budget option.",
+          "quote": "GameSir G7 Pro: $79.99 $63.99 at Amazon 2026-10-06T14:29:26.418Z While I look for storage, here's an excellent mid-range headset for you (Image credit: Future / Duncan Robertson) Let's say you don't have the money to afford the pricey, top-of-the-line SteelSeries headset I mentioned above, but you want something a bit more premium than the budget option."
+        },
+        {
+          "fact": "It's not going to be an upgrade if you already have an older headset that might have cost you between $100 and $200, but if you're currently relying on TV speakers and want something a little closer it will do the job particularly well for its price.",
+          "quote": "It's not going to be an upgrade if you already have an older headset that might have cost you between $100 and $200, but if you're currently relying on TV speakers and want something a little closer it will do the job particularly well for its price."
+        }
+      ]
+    },
+    {
+      "entityType": "edition",
+      "name": "Ultimate Edition",
+      "altNames": [
+        "GTA 6 Ultimate Edition",
+        "GTA VI Ultimate Edition"
+      ],
+      "slug": "gta-6-ultimate-edition",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "SteelSeries Arctis Nova 3P | $109.99 $59.99 at Woot 2026-10-06T13:36:21.015Z One way to save on a GTA 6 Ultimate Edition pre-order (Image credit: Rockstar) It's pretty difficult to shave cash off that GTA 6 pre-order these days, this is the biggest release",
+          "quote": "SteelSeries Arctis Nova 3P | $109.99 $59.99 at Woot 2026-10-06T13:36:21.015Z One way to save on a GTA 6 Ultimate Edition pre-order (Image credit: Rockstar) It's pretty difficult to shave cash off that GTA 6 pre-order these days, this is the biggest release"
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "This is one of the best value gamepads on the shelves currently, and it'd be the perfect companion for exploring Vice City.",
+          "quote": "This is one of the best value gamepads on the shelves currently, and it'd be the perfect companion for exploring Vice City."
+        }
+      ]
+    }
+  ]
+}

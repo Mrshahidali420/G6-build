@@ -1,0 +1,103 @@
+{
+  "rawId": "ign-338c983fcf9e",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/gta-6-fans-theorize-jason-may-be-the-franchises-first-neurodivergent-protagonist",
+  "published": "2026-10-06",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/06/24/gta-6-jason-duvall-1782336015774.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-06T21:29:23.494Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "One specific comment that fans have latched on to is one where Humphries describes Jason as being \"wired differently.\" \"We didn’t want to make any kind of statement with Jason’s backstory,\" Humphries said in response to a question over whether or not Jason is a commentary on social class.",
+          "quote": "One specific comment that fans have latched on to is one where Humphries describes Jason as being \"wired differently.\" \"We didn’t want to make any kind of statement with Jason’s backstory,\" Humphries said in response to a question over whether or not Jason is a commentary on social class."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "In a recent interview with Love magazine, longtime Rockstar Games writer Rupert Humphries spoke about how the team designed Jason and Lucia's personalities.",
+          "quote": "In a recent interview with Love magazine, longtime Rockstar Games writer Rupert Humphries spoke about how the team designed Jason and Lucia's personalities."
+        },
+        {
+          "fact": "One specific comment that fans have latched on to is one where Humphries describes Jason as being \"wired differently.\" \"We didn’t want to make any kind of statement with Jason’s backstory,\" Humphries said in response to a question over whether or not Jason is a commentary on social class.",
+          "quote": "One specific comment that fans have latched on to is one where Humphries describes Jason as being \"wired differently.\" \"We didn’t want to make any kind of statement with Jason’s backstory,\" Humphries said in response to a question over whether or not Jason is a commentary on social class."
+        },
+        {
+          "fact": "But a lot of this is up to the player to decide whether he needs to do that, or if it’s a choice he makes because he’s wired differently from other people.\" Fans have used this as a jumping-off point to reflect on some of the footage we've seen of Jason up to this point.",
+          "quote": "But a lot of this is up to the player to decide whether he needs to do that, or if it’s a choice he makes because he’s wired differently from other people.\" Fans have used this as a jumping-off point to reflect on some of the footage we've seen of Jason up to this point."
+        },
+        {
+          "fact": "During the extended gameplay reveal in August, fans were quick to point out that Jason is often seen missing social cues.",
+          "quote": "During the extended gameplay reveal in August, fans were quick to point out that Jason is often seen missing social cues."
+        },
+        {
+          "fact": "Some fans have used this to speculate that Jason is actually neurodivergent.",
+          "quote": "Some fans have used this to speculate that Jason is actually neurodivergent."
+        },
+        {
+          "fact": "It's also possible that Jason is simply a very reserved, quiet guy.",
+          "quote": "It's also possible that Jason is simply a very reserved, quiet guy."
+        },
+        {
+          "fact": "We likely won't get too much more insight into Jason, outside of maybe one more trailer, before launch.",
+          "quote": "We likely won't get too much more insight into Jason, outside of maybe one more trailer, before launch."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In a recent interview with Love magazine, longtime Rockstar Games writer Rupert Humphries spoke about how the team designed Jason and Lucia's personalities.",
+          "quote": "In a recent interview with Love magazine, longtime Rockstar Games writer Rupert Humphries spoke about how the team designed Jason and Lucia's personalities."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "On top of murals and ads around major cities such as New York and Miami , Rockstar will also take over the Miami Heat for one night only and rebrand them as the Vice City Heat .",
+          "quote": "On top of murals and ads around major cities such as New York and Miami , Rockstar will also take over the Miami Heat for one night only and rebrand them as the Vice City Heat ."
+        },
+        {
+          "fact": "They will play a regular-season NBA game against the Bucks on a Vice City-themed court in Miami on November 18.",
+          "quote": "They will play a regular-season NBA game against the Bucks on a Vice City-themed court in Miami on November 18."
+        }
+      ]
+    }
+  ]
+}

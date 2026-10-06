@@ -1,0 +1,67 @@
+{
+  "rawId": "pushsquare-d1290621d213",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/10/warhammers-vampire-survivors-like-brings-insane-pixel-action-to-ps5-in-november",
+  "published": "2026-10-06",
+  "ogImage": "https://images.pushsquare.com/eaec29803345c/1280x720.jpg",
+  "extractedAt": "2026-10-06T21:29:30.045Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "0 7 GirlVersusGame 5 hours ago Yes finally, this is my Grand Theft Auto Six and I don't even know who the characters in the game are, I just want that dopamine fix while supporting the studio who gave me my first taster of the genre.",
+          "quote": "0 7 GirlVersusGame 5 hours ago Yes finally, this is my Grand Theft Auto Six and I don't even know who the characters in the game are, I just want that dopamine fix while supporting the studio who gave me my first taster of the genre."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Emperor",
+      "altNames": [],
+      "slug": "emperor",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Whoever said to pray to The Emperor? thank you it worked.",
+          "quote": "Whoever said to pray to The Emperor? thank you it worked."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Zombie",
+      "altNames": [],
+      "slug": "zombie",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Hope it will receive good support but even at start looks good with 40+ heroes 0 6 Krlozgod 5 hours ago @GeoPlaysGames and Yet Another Zombie Survivors also released a couple on months ago.",
+          "quote": "Hope it will receive good support but even at start looks good with 40+ heroes 0 6 Krlozgod 5 hours ago @GeoPlaysGames and Yet Another Zombie Survivors also released a couple on months ago."
+        }
+      ]
+    },
+    {
+      "entityType": "weapon",
+      "name": "Hammer",
+      "altNames": [],
+      "slug": "hammer",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Manage Topics News Auroch Digital PS5 Warhammer Release Dates Trailers Warhammer's Vampire Survivors-Like Brings Insane Pixel Action to PS5 in November Hammer blow by Robert Ramsey 7 hours ago Share: Warhammer Survivors , the Warhammer game that's quite clearly taken inspiration from Vampire Survivors , now has a confirmed release date on PS5.",
+          "quote": "Manage Topics News Auroch Digital PS5 Warhammer Release Dates Trailers Warhammer's Vampire Survivors-Like Brings Insane Pixel Action to PS5 in November Hammer blow by Robert Ramsey 7 hours ago Share: Warhammer Survivors , the Warhammer game that's quite clearly taken inspiration from Vampire Survivors , now has a confirmed release date on PS5."
+        }
+      ]
+    }
+  ]
+}

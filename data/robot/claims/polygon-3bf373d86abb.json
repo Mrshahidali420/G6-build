@@ -1,0 +1,79 @@
+{
+  "rawId": "polygon-3bf373d86abb",
+  "outlet": "Polygon",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.polygon.com/gta-6-cocaine-drugs-effects/",
+  "published": "2026-10-06",
+  "ogImage": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/gta-6-disc-physical-edition-leak.jpg?w=1600&h=900&fit=crop",
+  "extractedAt": "2026-10-06T11:52:24.536Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "I don’t expect or want GTA 6 to provide a scolding lecture on substance abuse, but I am hoping Rockstar’s latest goes a little further with this as an in-game mechanic than what we typically see.",
+          "quote": "I don’t expect or want GTA 6 to provide a scolding lecture on substance abuse, but I am hoping Rockstar’s latest goes a little further with this as an in-game mechanic than what we typically see."
+        },
+        {
+          "fact": "Even if a potential client has made their money selling drugs, odds are they wouldn’t want bodyguards who are high protecting them.",
+          "quote": "Even if a potential client has made their money selling drugs, odds are they wouldn’t want bodyguards who are high protecting them."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "We already know that drugs will feature prominently in GTA 6 ’s story: As shown during the August gameplay reveal, Jason and Lucia find themselves in a drug deal gone wrong during the opening moments.",
+          "quote": "We already know that drugs will feature prominently in GTA 6 ’s story: As shown during the August gameplay reveal, Jason and Lucia find themselves in a drug deal gone wrong during the opening moments."
+        },
+        {
+          "fact": "It would make sense if the optional romance between Jason and Lucia suffered if one of them used drugs excessively while the other abstained.",
+          "quote": "It would make sense if the optional romance between Jason and Lucia suffered if one of them used drugs excessively while the other abstained."
+        },
+        {
+          "fact": "What’s more, it would make a lot of sense for folks who play Jason and Lucia as open or heavy drug users to get some unique missions as a result.",
+          "quote": "What’s more, it would make a lot of sense for folks who play Jason and Lucia as open or heavy drug users to get some unique missions as a result."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "We already know that drugs will feature prominently in GTA 6 ’s story: As shown during the August gameplay reveal, Jason and Lucia find themselves in a drug deal gone wrong during the opening moments.",
+          "quote": "We already know that drugs will feature prominently in GTA 6 ’s story: As shown during the August gameplay reveal, Jason and Lucia find themselves in a drug deal gone wrong during the opening moments."
+        },
+        {
+          "fact": "It would make sense if the optional romance between Jason and Lucia suffered if one of them used drugs excessively while the other abstained.",
+          "quote": "It would make sense if the optional romance between Jason and Lucia suffered if one of them used drugs excessively while the other abstained."
+        },
+        {
+          "fact": "What’s more, it would make a lot of sense for folks who play Jason and Lucia as open or heavy drug users to get some unique missions as a result.",
+          "quote": "What’s more, it would make a lot of sense for folks who play Jason and Lucia as open or heavy drug users to get some unique missions as a result."
+        }
+      ]
+    }
+  ]
+}

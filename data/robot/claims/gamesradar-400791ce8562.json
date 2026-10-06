@@ -1,0 +1,39 @@
+{
+  "rawId": "gamesradar-400791ce8562",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/as-gta-6-faces-off-against-zelda-ocarina-of-time-remake-expert-says-nintendo-is-the-only-company-in-the-industry-with-a-fanbase-loyal-enough-to-make-that-bet-against-rockstar/",
+  "published": "2026-10-06",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/RKBdrVy7naGiR7BnKBssQM-2560-80.jpg",
+  "extractedAt": "2026-10-06T11:52:11.777Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Phantom",
+      "altNames": [],
+      "slug": "phantom",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Similarly, while he says that \"Phantom Blade Zero moved,\" it was actually delayed from early September to late October - still missing GTA 6, but actually arriving closer to Rockstar's launch.",
+          "quote": "Similarly, while he says that \"Phantom Blade Zero moved,\" it was actually delayed from early September to late October - still missing GTA 6, but actually arriving closer to Rockstar's launch."
+        }
+      ]
+    }
+  ]
+}

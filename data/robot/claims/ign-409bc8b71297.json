@@ -1,0 +1,75 @@
+{
+  "rawId": "ign-409bc8b71297",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/gta-6-political-events",
+  "published": "2026-10-06",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/09/03/jason-and-lucia-04-1788457455588.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-06T11:52:18.047Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Patriot Beer",
+      "altNames": [
+        "Patriot"
+      ],
+      "slug": "patriot-beer",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "\"The rise of Homeland Security and the Patriot Act were pretty central to GTA 4, but that was mainly because post-9/11 New York was a real frontline for those issues.",
+          "quote": "\"The rise of Homeland Security and the Patriot Act were pretty central to GTA 4, but that was mainly because post-9/11 New York was a real frontline for those issues."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "GTA 6 features dual protagonists, Jason and Lucia, who embark upon a crime spree across a fictionalized rendition of Florida, called Leonida in-game.",
+          "quote": "GTA 6 features dual protagonists, Jason and Lucia, who embark upon a crime spree across a fictionalized rendition of Florida, called Leonida in-game."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "GTA 6 features dual protagonists, Jason and Lucia, who embark upon a crime spree across a fictionalized rendition of Florida, called Leonida in-game.",
+          "quote": "GTA 6 features dual protagonists, Jason and Lucia, who embark upon a crime spree across a fictionalized rendition of Florida, called Leonida in-game."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "GTA 6 features dual protagonists, Jason and Lucia, who embark upon a crime spree across a fictionalized rendition of Florida, called Leonida in-game.",
+          "quote": "GTA 6 features dual protagonists, Jason and Lucia, who embark upon a crime spree across a fictionalized rendition of Florida, called Leonida in-game."
+        }
+      ]
+    }
+  ]
+}

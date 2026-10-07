@@ -1,0 +1,29 @@
+{
+  "rawId": "ign-02fe4df17440",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/xbox-reportedly-secures-exclusive-cloud-streaming-rights-to-gta-6-could-make-game-playable-on-pc-at-launch",
+  "published": "2026-10-06",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/09/17/gta-6-soundtrack-1789662158949.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-07T11:37:27.737Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Although it won't boast any of the performance options, modding, and other unique features native to a PC version, it is a serviceable workaround for those who don't want to wait until Rockstar releases a port.",
+          "quote": "Although it won't boast any of the performance options, modding, and other unique features native to a PC version, it is a serviceable workaround for those who don't want to wait until Rockstar releases a port."
+        },
+        {
+          "fact": "This will, in theory, allow users who want to play the game without access to a console to pay for timed access to GTA 6 via streaming.",
+          "quote": "This will, in theory, allow users who want to play the game without access to a console to pay for timed access to GTA 6 via streaming."
+        }
+      ]
+    }
+  ]
+}

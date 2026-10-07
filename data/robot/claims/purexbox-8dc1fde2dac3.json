@@ -1,0 +1,39 @@
+{
+  "rawId": "purexbox-8dc1fde2dac3",
+  "outlet": "Pure Xbox",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.purexbox.com/news/2026/10/xbox-denies-landing-exclusive-streaming-deal-for-gta-6-at-launch",
+  "published": "2026-10-06",
+  "ogImage": "https://images.purexbox.com/d8e39d7c972cb/1280x720.jpg",
+  "extractedAt": "2026-10-07T11:37:47.245Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Limit",
+      "altNames": [],
+      "slug": "limit",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Also 15 hour month limit WITH Ultimate AFTER spending $79-$99 USD on the game.",
+          "quote": "Also 15 hour month limit WITH Ultimate AFTER spending $79-$99 USD on the game."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "2 19 Halfurion 6 hours ago @Balaam_ hey there chud commander, it's great news for the majority of gamers who play with actual gaming hardware - you know, pc gamers, who don't want to buy half decade old trash that has nothing but gta 6 to offer.",
+          "quote": "2 19 Halfurion 6 hours ago @Balaam_ hey there chud commander, it's great news for the majority of gamers who play with actual gaming hardware - you know, pc gamers, who don't want to buy half decade old trash that has nothing but gta 6 to offer."
+        }
+      ]
+    }
+  ]
+}

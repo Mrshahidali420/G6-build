@@ -1,0 +1,25 @@
+{
+  "rawId": "gamesradar-57f71ab45a50",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/no-gta-6-wont-be-playable-on-pc-via-xbox-cloud-gaming-and-microsoft-doesnt-have-exclusive-streaming-rights-either-exec-clarifies/",
+  "published": "2026-10-07",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/32mczaj3AHQNe5gNzvts2n-1920-80.jpg",
+  "extractedAt": "2026-10-07T11:37:21.217Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    }
+  ]
+}

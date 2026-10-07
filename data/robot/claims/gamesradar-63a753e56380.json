@@ -1,0 +1,63 @@
+{
+  "rawId": "gamesradar-63a753e56380",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-boss-says-we-have-made-money-matter-more-in-this-story-than-in-previous-grand-theft-auto-games/",
+  "published": "2026-10-07",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/oFV96Lzam6D6cjSoxVEn9h-1920-80.jpg",
+  "extractedAt": "2026-10-07T21:49:40.428Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Selling stolen fancy cars has got to feel more engaging than getting Jason a 9-5 retail job, though, so you'd hope the process doesn't leave players feeling bored.",
+          "quote": "Selling stolen fancy cars has got to feel more engaging than getting Jason a 9-5 retail job, though, so you'd hope the process doesn't leave players feeling bored."
+        },
+        {
+          "fact": "Regardless, it sounds like Jason and Lucia's fortunes are probably going to play some kind of key role in the narrative if you literally can't progress without enough cash in your pockets.",
+          "quote": "Regardless, it sounds like Jason and Lucia's fortunes are probably going to play some kind of key role in the narrative if you literally can't progress without enough cash in your pockets."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Regardless, it sounds like Jason and Lucia's fortunes are probably going to play some kind of key role in the narrative if you literally can't progress without enough cash in your pockets.",
+          "quote": "Regardless, it sounds like Jason and Lucia's fortunes are probably going to play some kind of key role in the narrative if you literally can't progress without enough cash in your pockets."
+        }
+      ]
+    }
+  ]
+}

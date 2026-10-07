@@ -1,0 +1,49 @@
+{
+  "rawId": "kotaku-85e16dde4357",
+  "outlet": "Kotaku",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://kotaku.com/grand-theft-auto-6-gta6-jason-naked-nude-shower-scene-2000742015",
+  "published": "2026-10-07",
+  "ogImage": "https://kotaku.com/app/uploads/2026/10/jason-gta6-1200x675.jpg",
+  "extractedAt": "2026-10-07T21:49:59.952Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "IGN ’s interview with Rockstar Head of Development and Co-Studio Head Rob Nelson makes mention of a point during their demo when they shifted from other playable character Lucia’s perspective to that of Jason, and when you do this, the other character might be in the middle of doing something like walking around, or, in this case, taking a shower.",
+          "quote": "IGN ’s interview with Rockstar Head of Development and Co-Studio Head Rob Nelson makes mention of a point during their demo when they shifted from other playable character Lucia’s perspective to that of Jason, and when you do this, the other character might be in the middle of doing something like walking around, or, in this case, taking a shower."
+        },
+        {
+          "fact": "To answer the question of whether or not Jason shows hog in Grand Theft Auto 6 , the answer is that we still don’t know, but I would like to.",
+          "quote": "To answer the question of whether or not Jason shows hog in Grand Theft Auto 6 , the answer is that we still don’t know, but I would like to."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "IGN ’s interview with Rockstar Head of Development and Co-Studio Head Rob Nelson makes mention of a point during their demo when they shifted from other playable character Lucia’s perspective to that of Jason, and when you do this, the other character might be in the middle of doing something like walking around, or, in this case, taking a shower.",
+          "quote": "IGN ’s interview with Rockstar Head of Development and Co-Studio Head Rob Nelson makes mention of a point during their demo when they shifted from other playable character Lucia’s perspective to that of Jason, and when you do this, the other character might be in the middle of doing something like walking around, or, in this case, taking a shower."
+        }
+      ]
+    }
+  ]
+}

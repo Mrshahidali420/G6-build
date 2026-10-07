@@ -232,5 +232,23 @@
   "purexbox-8dc1fde2dac3": {
     "slug": "gta-6-update-xbox-denies-gta-6-streaming-exclusivity-report",
     "written": "2026-10-07"
+  },
+  "gamesradar-b090e630e31d": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-07",
+    "reason": "the number(s) 2000742015 appear in the writing but in no quote"
+  },
+  "ign-338c983fcf9e": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-07",
+    "reason": "the number(s) 2000742015 appear in the writing but in no quote"
+  },
+  "kotaku-85e16dde4357": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-07",
+    "reason": "the number(s) 2000742015 appear in the writing but in no quote"
   }
 }

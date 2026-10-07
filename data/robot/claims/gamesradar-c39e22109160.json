@@ -1,0 +1,25 @@
+{
+  "rawId": "gamesradar-c39e22109160",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/rpg-creator-says-sonys-all-digital-future-is-good-for-devs-as-discs-cant-win-in-terms-of-convenience-and-games-like-gta-6-are-too-big-for-them-anyway/",
+  "published": "2026-10-07",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/5oRDgNtSE6J8pAuFK7fgXj-1920-80.jpg",
+  "extractedAt": "2026-10-07T21:49:46.959Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "rawId": "ign-a18861eb5837",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/gta-6-the-big-interview",
+  "published": "2026-10-07",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/10/07/gta-6-1791374410439.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-07T21:49:53.448Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In the Safehouse, it’s only reductive – if you want new hairstyles you have to go to a hair salon or barber.",
+          "quote": "In the Safehouse, it’s only reductive – if you want new hairstyles you have to go to a hair salon or barber."
+        },
+        {
+          "fact": "Hopefully for people who want it, it’s fun to just do this sort of open-world stuff, wander around, talk to people, explore, and see what happens. [Nelson interacts with some NPCs when another group spots the interaction and pulls a gun.] IGN: [Laughs] That escalated!",
+          "quote": "Hopefully for people who want it, it’s fun to just do this sort of open-world stuff, wander around, talk to people, explore, and see what happens. [Nelson interacts with some NPCs when another group spots the interaction and pulls a gun.] IGN: [Laughs] That escalated!"
+        },
+        {
+          "fact": "Things can escalate quite quickly if you want them to, or people who don’t want to escalate can try to avoid it.",
+          "quote": "Things can escalate quite quickly if you want them to, or people who don’t want to escalate can try to avoid it."
+        },
+        {
+          "fact": "Meaning, if you hit and run, commit a crime and run, get into trouble and move on before the cops get there, and you don’t start shooting people, don't start escalating – which you absolutely can do if you want to – but if you don’t, you’re generally going to be fine.",
+          "quote": "Meaning, if you hit and run, commit a crime and run, get into trouble and move on before the cops get there, and you don’t start shooting people, don't start escalating – which you absolutely can do if you want to – but if you don’t, you’re generally going to be fine."
+        },
+        {
+          "fact": "However players want to spend that time together, it will have a positive impact on the relationship.",
+          "quote": "However players want to spend that time together, it will have a positive impact on the relationship."
+        },
+        {
+          "fact": "How do you want to deal with it? [Lucia is in another altercation with an NPC] Oh!",
+          "quote": "How do you want to deal with it? [Lucia is in another altercation with an NPC] Oh!"
+        },
+        {
+          "fact": "This system opens up so many possibilities for people to play how they want.",
+          "quote": "This system opens up so many possibilities for people to play how they want."
+        },
+        {
+          "fact": "Again, people should play it however they want.",
+          "quote": "Again, people should play it however they want."
+        },
+        {
+          "fact": "With these new options we are hopefully creating some room for people to have fun with how they want to approach things and decide whether they want to plan and be a bit more cautious to keep a lower profile or whether they don’t care.",
+          "quote": "With these new options we are hopefully creating some room for people to have fun with how they want to approach things and decide whether they want to plan and be a bit more cautious to keep a lower profile or whether they don’t care."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "My preview detailed everything I saw in the exclusive 30-minute demo, which included a new-look wanted system , a new way to steal cars , and how Jason and Lucia's romantic relationship – although front-and-center in the demo and the Netflix video – is entirely optional.",
+          "quote": "My preview detailed everything I saw in the exclusive 30-minute demo, which included a new-look wanted system , a new way to steal cars , and how Jason and Lucia's romantic relationship – although front-and-center in the demo and the Netflix video – is entirely optional."
+        },
+        {
+          "fact": "IGN: Obviously there are the set pieces and the story missions in GTA 6, but it seems there's a lot more for Jason and Lucia to do in the world… Rob Nelson: There is a ton of stuff the player can do in GTA 6, as Jason and Lucia on their own or together, in between missions and story-driven content.",
+          "quote": "IGN: Obviously there are the set pieces and the story missions in GTA 6, but it seems there's a lot more for Jason and Lucia to do in the world… Rob Nelson: There is a ton of stuff the player can do in GTA 6, as Jason and Lucia on their own or together, in between missions and story-driven content."
+        },
+        {
+          "fact": "Jason has longer hair than we saw in the trailer, and is busy grabbing a drink from the fridge, examining a romance novel he finds on a table, and interacting with Lucia.] This is one of their Safehouses.",
+          "quote": "Jason has longer hair than we saw in the trailer, and is busy grabbing a drink from the fridge, examining a romance novel he finds on a table, and interacting with Lucia.] This is one of their Safehouses."
+        },
+        {
+          "fact": "Jason and Lucia can exist in this space together.",
+          "quote": "Jason and Lucia can exist in this space together."
+        },
+        {
+          "fact": "This represents an exciting challenge for us: putting Jason and Lucia on schedules that feel believable and making the Safehouse a lot more interactive.",
+          "quote": "This represents an exciting challenge for us: putting Jason and Lucia on schedules that feel believable and making the Safehouse a lot more interactive."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "My preview detailed everything I saw in the exclusive 30-minute demo, which included a new-look wanted system , a new way to steal cars , and how Jason and Lucia's romantic relationship – although front-and-center in the demo and the Netflix video – is entirely optional.",
+          "quote": "My preview detailed everything I saw in the exclusive 30-minute demo, which included a new-look wanted system , a new way to steal cars , and how Jason and Lucia's romantic relationship – although front-and-center in the demo and the Netflix video – is entirely optional."
+        },
+        {
+          "fact": "IGN: Obviously there are the set pieces and the story missions in GTA 6, but it seems there's a lot more for Jason and Lucia to do in the world… Rob Nelson: There is a ton of stuff the player can do in GTA 6, as Jason and Lucia on their own or together, in between missions and story-driven content.",
+          "quote": "IGN: Obviously there are the set pieces and the story missions in GTA 6, but it seems there's a lot more for Jason and Lucia to do in the world… Rob Nelson: There is a ton of stuff the player can do in GTA 6, as Jason and Lucia on their own or together, in between missions and story-driven content."
+        },
+        {
+          "fact": "Jason has longer hair than we saw in the trailer, and is busy grabbing a drink from the fridge, examining a romance novel he finds on a table, and interacting with Lucia.] This is one of their Safehouses.",
+          "quote": "Jason has longer hair than we saw in the trailer, and is busy grabbing a drink from the fridge, examining a romance novel he finds on a table, and interacting with Lucia.] This is one of their Safehouses."
+        },
+        {
+          "fact": "Jason and Lucia can exist in this space together.",
+          "quote": "Jason and Lucia can exist in this space together."
+        },
+        {
+          "fact": "This represents an exciting challenge for us: putting Jason and Lucia on schedules that feel believable and making the Safehouse a lot more interactive.",
+          "quote": "This represents an exciting challenge for us: putting Jason and Lucia on schedules that feel believable and making the Safehouse a lot more interactive."
+        },
+        {
+          "fact": "Rob Nelson: That’s essentially what GTA 6 has as well – you can just exist. [Nelson takes Lucia into one of the salons dotted around the map.] Every one of these salons – and there’s many of them – has signature hairstyles.",
+          "quote": "Rob Nelson: That’s essentially what GTA 6 has as well – you can just exist. [Nelson takes Lucia into one of the salons dotted around the map.] Every one of these salons – and there’s many of them – has signature hairstyles."
+        },
+        {
+          "fact": "How do you want to deal with it? [Lucia is in another altercation with an NPC] Oh!",
+          "quote": "How do you want to deal with it? [Lucia is in another altercation with an NPC] Oh!"
+        },
+        {
+          "fact": "Again, as long as you try not to draw too much attention to yourself, you should be fine. [In the game, Lucia lays low in a 7-11 style mini mart, buying a baseball cap and gum while an oblivious cop passes by ou",
+          "quote": "Again, as long as you try not to draw too much attention to yourself, you should be fine. [In the game, Lucia lays low in a 7-11 style mini mart, buying a baseball cap and gum while an oblivious cop passes by ou"
+        }
+      ]
+    },
+    {
+      "entityType": "gameplay_feature",
+      "name": "Optional Romance System",
+      "altNames": [
+        "Jason and Lucia romance",
+        "relationship system"
+      ],
+      "slug": "optional-romance-system",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "And then there is also a relationship system.",
+          "quote": "And then there is also a relationship system."
+        }
+      ]
+    },
+    {
+      "entityType": "gameplay_feature",
+      "name": "Reworked Car Theft System",
+      "altNames": [
+        "car stealing system",
+        "slim jim",
+        "key cloner",
+        "vehicle security tiers"
+      ],
+      "slug": "reworked-car-theft-system",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "So, for example, this car needs a key cloner.",
+          "quote": "So, for example, this car needs a key cloner."
+        }
+      ]
+    },
+    {
+      "entityType": "gameplay_feature",
+      "name": "Six-Star Wanted System",
+      "altNames": [
+        "wanted level",
+        "six stars",
+        "police wanted system"
+      ],
+      "slug": "six-star-wanted-system",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "If I get out of here, that’s a one-star Wanted level, which is not really a big deal.",
+          "quote": "If I get out of here, that’s a one-star Wanted level, which is not really a big deal."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Sports bike",
+      "altNames": [],
+      "slug": "unnamed-sports-bike",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "If you get three stars in the city, it can sometimes be challenging to get away in a vehicle, unless it's a very fast vehicle or a sports bike.",
+          "quote": "If you get three stars in the city, it can sometimes be challenging to get away in a vehicle, unless it's a very fast vehicle or a sports bike."
+        }
+      ]
+    }
+  ]
+}

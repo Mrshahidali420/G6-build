@@ -1,0 +1,25 @@
+{
+  "rawId": "pushsquare-08c441f1fe20",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/10/confusion-as-erroneous-reports-claim-xbox-has-exclusive-gta-6-cloud-streaming-rights",
+  "published": "2026-10-07",
+  "ogImage": "https://images.pushsquare.com/d775dab43f359/1280x720.jpg",
+  "extractedAt": "2026-10-07T21:50:12.964Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Amazing that the same site that often gets me excited about PlayStation is also the site that sometimes makes me want to sell all PlayStation related stuff I have.",
+          "quote": "Amazing that the same site that often gets me excited about PlayStation is also the site that sometimes makes me want to sell all PlayStation related stuff I have."
+        }
+      ]
+    }
+  ]
+}

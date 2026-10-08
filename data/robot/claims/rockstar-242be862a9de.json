@@ -1,0 +1,110 @@
+{
+  "rawId": "rockstar-242be862a9de",
+  "outlet": "Rockstar Newswire",
+  "tier": "TIER_1_OFFICIAL",
+  "url": "https://www.rockstargames.com/newswire/article/759875393o5253/grand-theft-auto-vi-collection-now-at-the-rockstar-store",
+  "published": "2026-10-08",
+  "ogImage": "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/759875393o5253/999a13ef806098304feeee0531ad81e817c3030b.jpg",
+  "extractedAt": "2026-10-08T21:54:52.782Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Limit",
+      "altNames": [],
+      "slug": "limit",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Please note that if you turn off some types of Cookies, it may limit your experience on the Site and the services we are able to offer.",
+          "quote": "Please note that if you turn off some types of Cookies, it may limit your experience on the Site and the services we are able to offer."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Grand Theft Auto VI Goodtime State and Macca the Gator Tees Get your own piece of Goodtime State Gear, inspired by the styles seen on Jason and Lucia in the Grand Theft Auto VI: Ultimate Edition , with these tees featuring characters from Leonida’s hit TV show Macca the Gator.",
+          "quote": "Grand Theft Auto VI Goodtime State and Macca the Gator Tees Get your own piece of Goodtime State Gear, inspired by the styles seen on Jason and Lucia in the Grand Theft Auto VI: Ultimate Edition , with these tees featuring characters from Leonida’s hit TV show Macca the Gator."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Grand Theft Auto VI Goodtime State and Macca the Gator Tees Get your own piece of Goodtime State Gear, inspired by the styles seen on Jason and Lucia in the Grand Theft Auto VI: Ultimate Edition , with these tees featuring characters from Leonida’s hit TV show Macca the Gator.",
+          "quote": "Grand Theft Auto VI Goodtime State and Macca the Gator Tees Get your own piece of Goodtime State Gear, inspired by the styles seen on Jason and Lucia in the Grand Theft Auto VI: Ultimate Edition , with these tees featuring characters from Leonida’s hit TV show Macca the Gator."
+        }
+      ]
+    },
+    {
+      "entityType": "edition",
+      "name": "Ultimate Edition",
+      "altNames": [
+        "GTA 6 Ultimate Edition",
+        "GTA VI Ultimate Edition"
+      ],
+      "slug": "gta-6-ultimate-edition",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Grand Theft Auto VI Goodtime State and Macca the Gator Tees Get your own piece of Goodtime State Gear, inspired by the styles seen on Jason and Lucia in the Grand Theft Auto VI: Ultimate Edition , with these tees featuring characters from Leonida’s hit TV show Macca the Gator.",
+          "quote": "Grand Theft Auto VI Goodtime State and Macca the Gator Tees Get your own piece of Goodtime State Gear, inspired by the styles seen on Jason and Lucia in the Grand Theft Auto VI: Ultimate Edition , with these tees featuring characters from Leonida’s hit TV show Macca the Gator."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Grand Theft Auto VI Goodtime State and Macca the Gator Tees Get your own piece of Goodtime State Gear, inspired by the styles seen on Jason and Lucia in the Grand Theft Auto VI: Ultimate Edition , with these tees featuring characters from Leonida’s hit TV show Macca the Gator.",
+          "quote": "Grand Theft Auto VI Goodtime State and Macca the Gator Tees Get your own piece of Goodtime State Gear, inspired by the styles seen on Jason and Lucia in the Grand Theft Auto VI: Ultimate Edition , with these tees featuring characters from Leonida’s hit TV show Macca the Gator."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The chrome two-sided Grand Theft Auto VI – Vice City Money Clip features a blind embossed classic Vice City logo on one side and the VI logo with palm trees on the other.",
+          "quote": "The chrome two-sided Grand Theft Auto VI – Vice City Money Clip features a blind embossed classic Vice City logo on one side and the VI logo with palm trees on the other."
+        },
+        {
+          "fact": "There’s also a refillable, polished chrome Grand Theft Auto VI – Vice City Zippo® Lighter , heavy duty canvas tote bags, and two sets of vinyl stickers.",
+          "quote": "There’s also a refillable, polished chrome Grand Theft Auto VI – Vice City Zippo® Lighter , heavy duty canvas tote bags, and two sets of vinyl stickers."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "rawId": "kotaku-a56baf72823f",
+  "outlet": "Kotaku",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://kotaku.com/damn-this-gta-6-screenshot-looks-so-good-people-dont-believe-its-real-2000742750",
+  "published": "2026-10-08",
+  "ogImage": "https://kotaku.com/app/uploads/2026/10/image-265-1200x675.jpg",
+  "extractedAt": "2026-10-08T21:54:13.744Z",
+  "entities": [
+    {
+      "entityType": "landmark",
+      "name": "Ocean View Hotel",
+      "altNames": [],
+      "slug": "ocean-view-hotel",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In the background, the neon lights of the Ocean View Hotel light up the buildings and wet pavement.",
+          "quote": "In the background, the neon lights of the Ocean View Hotel light up the buildings and wet pavement."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Here’s a direct link to a super high-res version of it. ©Rockstar Games In the screenshot, we can spot a few different cars and people on a rainy street somewhere in the heart of Vice City at night.",
+          "quote": "Here’s a direct link to a super high-res version of it. ©Rockstar Games In the screenshot, we can spot a few different cars and people on a rainy street somewhere in the heart of Vice City at night."
+        }
+      ]
+    }
+  ]
+}

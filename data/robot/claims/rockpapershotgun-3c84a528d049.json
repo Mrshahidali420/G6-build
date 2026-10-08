@@ -1,0 +1,63 @@
+{
+  "rawId": "rockpapershotgun-3c84a528d049",
+  "outlet": "Rock Paper Shotgun",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.rockpapershotgun.com/rockstar-hunted-gta-6-leaker-seemingly-strikes-again-showing-off-series-most-plentiful-helping-of-onscreen-johnson-since-san-andreas-starred-carl",
+  "published": "2026-10-08",
+  "ogImage": "https://assetsio.gnwcdn.com/gta-6-leak-jason-nudity-01.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-10-08T21:54:46.280Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "A fair chunk of those hijinks have been gotten up to while protagonist Jason's in the buff, his bare bum and wiggling weenie out for all of Leonida to gawk at.",
+          "quote": "A fair chunk of those hijinks have been gotten up to while protagonist Jason's in the buff, his bare bum and wiggling weenie out for all of Leonida to gawk at."
+        },
+        {
+          "fact": "Following that is something far less sexy than Jason's meat and two veg.",
+          "quote": "Following that is something far less sexy than Jason's meat and two veg."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "There's a tease of some Lucia top-half nudity at the end, though she is still wearing a thong.",
+          "quote": "There's a tease of some Lucia top-half nudity at the end, though she is still wearing a thong."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "A fair chunk of those hijinks have been gotten up to while protagonist Jason's in the buff, his bare bum and wiggling weenie out for all of Leonida to gawk at.",
+          "quote": "A fair chunk of those hijinks have been gotten up to while protagonist Jason's in the buff, his bare bum and wiggling weenie out for all of Leonida to gawk at."
+        }
+      ]
+    }
+  ]
+}

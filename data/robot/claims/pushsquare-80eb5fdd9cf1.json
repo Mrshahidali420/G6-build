@@ -1,0 +1,71 @@
+{
+  "rawId": "pushsquare-80eb5fdd9cf1",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/10/gta-6-gameplay-leaks-are-back-with-potentially-big-spoilers",
+  "published": "2026-10-08",
+  "ogImage": "https://images.pushsquare.com/16f68e2c4c7fe/1280x720.jpg",
+  "extractedAt": "2026-10-08T21:54:33.266Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Just in case you don't want to see any potential spoilers, the article continues after the image.",
+          "quote": "Just in case you don't want to see any potential spoilers, the article continues after the image."
+        },
+        {
+          "fact": "I want to know if it still has that parody type of feel or if it’s changed.",
+          "quote": "I want to know if it still has that parody type of feel or if it’s changed."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In the footage, Jason is seen driving different cars from a first-person perspective.",
+          "quote": "In the footage, Jason is seen driving different cars from a first-person perspective."
+        },
+        {
+          "fact": "The other thing is...errmm...the entire section featuring Jason has the character completely naked.",
+          "quote": "The other thing is...errmm...the entire section featuring Jason has the character completely naked."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Lucia is also seen later in the leaked footage, and she's wearing just a bikini the entire time.",
+          "quote": "Lucia is also seen later in the leaked footage, and she's wearing just a bikini the entire time."
+        },
+        {
+          "fact": "A 200 pound Lucia is a mountain I'd like to climb!🌝 3 12 8th_Observer 7 hours ago Cyberleek must be out of crypto scam money already 2 13 Deadlyblack 6 hours ago I didn't expect to see flaccid dong physics during cutscenes lol.",
+          "quote": "A 200 pound Lucia is a mountain I'd like to climb!🌝 3 12 8th_Observer 7 hours ago Cyberleek must be out of crypto scam money already 2 13 Deadlyblack 6 hours ago I didn't expect to see flaccid dong physics during cutscenes lol."
+        }
+      ]
+    }
+  ]
+}

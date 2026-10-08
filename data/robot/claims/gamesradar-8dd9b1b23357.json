@@ -1,0 +1,39 @@
+{
+  "rawId": "gamesradar-8dd9b1b23357",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-radio-stations-revealed-rockstar-says-for-the-first-time-in-grand-theft-auto-history-there-are-also-in-game-podcasts/",
+  "published": "2026-10-08",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/rBaUR4AoTLWh6KK3oMo8ud-2560-80.jpg",
+  "extractedAt": "2026-10-08T21:53:28.266Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Outlaw",
+      "altNames": [],
+      "slug": "outlaw",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "There's Cocotea FM, focused on modern Latin music; Back Country Radio, which covers classic outlaw country; Afro Bank FM, offering a wide array of African music; The Chamber 106.6, blasting classic metal; Flash FM, which runs modern pop music; and Dirty South Classics, which will hit your old-school rap and hip-hop needs.",
+          "quote": "There's Cocotea FM, focused on modern Latin music; Back Country Radio, which covers classic outlaw country; Afro Bank FM, offering a wide array of African music; The Chamber 106.6, blasting classic metal; Flash FM, which runs modern pop music; and Dirty South Classics, which will hit your old-school rap and hip-hop needs."
+        }
+      ]
+    }
+  ]
+}

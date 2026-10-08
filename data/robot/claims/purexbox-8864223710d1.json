@@ -1,0 +1,127 @@
+{
+  "rawId": "purexbox-8864223710d1",
+  "outlet": "Pure Xbox",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.purexbox.com/news/2026/10/the-first-six-radio-stations-have-been-revealed-for-gta-6-complete-with-audio-previews",
+  "published": "2026-10-08",
+  "ogImage": "https://images.purexbox.com/4cd2420e83ff5/1280x720.jpg",
+  "extractedAt": "2026-10-08T21:54:26.757Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Plus, for the first time ever, Grand Theft Auto VI introduces a series of on-demand podcasts for Jason and Lucia to experience beyond Leonida’s terrestrial radio, with both radio and podcasts available to listen to in vehicles and on foot through newly introduced headphones and earbuds connected to their smartphones.\" Exciting stuff!",
+          "quote": "Plus, for the first time ever, Grand Theft Auto VI introduces a series of on-demand podcasts for Jason and Lucia to experience beyond Leonida’s terrestrial radio, with both radio and podcasts available to listen to in vehicles and on foot through newly introduced headphones and earbuds connected to their smartphones.\" Exciting stuff!"
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Plus, for the first time ever, Grand Theft Auto VI introduces a series of on-demand podcasts for Jason and Lucia to experience beyond Leonida’s terrestrial radio, with both radio and podcasts available to listen to in vehicles and on foot through newly introduced headphones and earbuds connected to their smartphones.\" Exciting stuff!",
+          "quote": "Plus, for the first time ever, Grand Theft Auto VI introduces a series of on-demand podcasts for Jason and Lucia to experience beyond Leonida’s terrestrial radio, with both radio and podcasts available to listen to in vehicles and on foot through newly introduced headphones and earbuds connected to their smartphones.\" Exciting stuff!"
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Grassrivers",
+      "altNames": [
+        "Grass Rivers"
+      ],
+      "slug": "grassrivers",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Back Country Radio : MW and Delta Dawne blast renegade country music to the Grassrivers, Port Gellhorn, and beyond.",
+          "quote": "Back Country Radio : MW and Delta Dawne blast renegade country music to the Grassrivers, Port Gellhorn, and beyond."
+        },
+        {
+          "fact": "Stay tuned for Back Country’s roving reporter, swamp meteorologist, and Delta’s not-so-secret lover Mud Dog Mike checking in from the driver’s seat of his Grassrivers airboat.",
+          "quote": "Stay tuned for Back Country’s roving reporter, swamp meteorologist, and Delta’s not-so-secret lover Mud Dog Mike checking in from the driver’s seat of his Grassrivers airboat."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Here's the list, along with links to the audio previews for them: Cocoteo FM : Leonida's home for the best of modern Latin music.",
+          "quote": "Here's the list, along with links to the audio previews for them: Cocoteo FM : Leonida's home for the best of modern Latin music."
+        },
+        {
+          "fact": "The Chamber 106.6 : Crushing metal has landed in Leonida.",
+          "quote": "The Chamber 106.6 : Crushing metal has landed in Leonida."
+        },
+        {
+          "fact": "Jump in the pit with DJ Kerry and DJ Tom for classic metal from the ‘80s and beyond as they channel Leonida’s deep metal roots.",
+          "quote": "Jump in the pit with DJ Kerry and DJ Tom for classic metal from the ‘80s and beyond as they channel Leonida’s deep metal roots."
+        },
+        {
+          "fact": "From the beach to the block, nobody reps Leonida and the South like they do.",
+          "quote": "From the beach to the block, nobody reps Leonida and the South like they do."
+        },
+        {
+          "fact": "Plus, for the first time ever, Grand Theft Auto VI introduces a series of on-demand podcasts for Jason and Lucia to experience beyond Leonida’s terrestrial radio, with both radio and podcasts available to listen to in vehicles and on foot through newly introduced headphones and earbuds connected to their smartphones.\" Exciting stuff!",
+          "quote": "Plus, for the first time ever, Grand Theft Auto VI introduces a series of on-demand podcasts for Jason and Lucia to experience beyond Leonida’s terrestrial radio, with both radio and podcasts available to listen to in vehicles and on foot through newly introduced headphones and earbuds connected to their smartphones.\" Exciting stuff!"
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Port Gellhorn",
+      "altNames": [
+        "Port Gellhorn"
+      ],
+      "slug": "port-gellhorn",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Back Country Radio : MW and Delta Dawne blast renegade country music to the Grassrivers, Port Gellhorn, and beyond.",
+          "quote": "Back Country Radio : MW and Delta Dawne blast renegade country music to the Grassrivers, Port Gellhorn, and beyond."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Fanboat",
+      "altNames": [
+        "Airboat"
+      ],
+      "slug": "fanboat",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Stay tuned for Back Country’s roving reporter, swamp meteorologist, and Delta’s not-so-secret lover Mud Dog Mike checking in from the driver’s seat of his Grassrivers airboat.",
+          "quote": "Stay tuned for Back Country’s roving reporter, swamp meteorologist, and Delta’s not-so-secret lover Mud Dog Mike checking in from the driver’s seat of his Grassrivers airboat."
+        }
+      ]
+    }
+  ]
+}

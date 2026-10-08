@@ -1,0 +1,45 @@
+{
+  "rawId": "ign-7c2af1b6a60e",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/gta-6-leaker-returns-with-new-24-minute-gameplay-video-sparking-spoiler-concern",
+  "published": "2026-10-08",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/08/27/gta6-trailer-4k-00-00-38-29-still001-1701962524689-1787858104520.png?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-08T21:53:41.214Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images Indeed, at one point in today's leaked video, what looks like a developer menu is used to spawn a tank, which you wouldn't expect would be possible in the launch version of the game.",
+          "quote": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images Indeed, at one point in today's leaked video, what looks like a developer menu is used to spawn a tank, which you wouldn't expect would be possible in the launch version of the game."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images Indeed, at one point in today's leaked video, what looks like a developer menu is used to spawn a tank, which you wouldn't expect would be possible in the launch version of the game.",
+          "quote": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images Indeed, at one point in today's leaked video, what looks like a developer menu is used to spawn a tank, which you wouldn't expect would be possible in the launch version of the game."
+        }
+      ]
+    }
+  ]
+}

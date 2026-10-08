@@ -1,0 +1,45 @@
+{
+  "rawId": "kotaku-048609ea632c",
+  "outlet": "Kotaku",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://kotaku.com/rockstar-reveals-some-of-the-radio-stations-and-songs-in-gta-6-2000742655",
+  "published": "2026-10-08",
+  "ogImage": "https://kotaku.com/app/uploads/2026/08/large-1200x675.jpg",
+  "extractedAt": "2026-10-08T21:54:00.732Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Rockstar also confirmed that for the first time in franchise history, players will be able to listen to these and other radio stations on foot via Jason and Lucia’s phones.",
+          "quote": "Rockstar also confirmed that for the first time in franchise history, players will be able to listen to these and other radio stations on foot via Jason and Lucia’s phones."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Rockstar also confirmed that for the first time in franchise history, players will be able to listen to these and other radio stations on foot via Jason and Lucia’s phones.",
+          "quote": "Rockstar also confirmed that for the first time in franchise history, players will be able to listen to these and other radio stations on foot via Jason and Lucia’s phones."
+        }
+      ]
+    }
+  ]
+}

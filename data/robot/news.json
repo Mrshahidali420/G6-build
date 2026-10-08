@@ -250,5 +250,59 @@
     "written": null,
     "refused": "2026-10-07",
     "reason": "the number(s) 2000742015 appear in the writing but in no quote"
+  },
+  "eurogamer-e2ee533fc488": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-08",
+    "reason": "an emoji appears in the written text"
+  },
+  "gamesradar-4c6948696b5a": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-08",
+    "reason": "an emoji appears in the written text"
+  },
+  "ign-7c2af1b6a60e": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-08",
+    "reason": "an emoji appears in the written text"
+  },
+  "ign-abb340b32f83": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-08",
+    "reason": "an emoji appears in the written text"
+  },
+  "kotaku-fddcb36789ab": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-08",
+    "reason": "an emoji appears in the written text"
+  },
+  "pcgamer-7ab9c9ca2d48": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-08",
+    "reason": "an emoji appears in the written text"
+  },
+  "rockpapershotgun-3c84a528d049": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-08",
+    "reason": "an emoji appears in the written text"
+  },
+  "vgc-237fae820404": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-08",
+    "reason": "an emoji appears in the written text"
+  },
+  "rockstar-242be862a9de": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-08",
+    "reason": "an emoji appears in the written text"
   }
 }

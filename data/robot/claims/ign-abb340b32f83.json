@@ -1,0 +1,48 @@
+{
+  "rawId": "ign-abb340b32f83",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/no-i-have-not-seen-jasons-penis-in-gta-6",
+  "published": "2026-10-08",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/10/08/gta6-jason-nude-1791466710599.webp?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-08T21:53:47.733Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Back To Top Home › News › GTA 6 No, I Have Not Seen Jason’s Penis in GTA 6 News from the frontlines of genital journalism.",
+          "quote": "Back To Top Home › News › GTA 6 No, I Have Not Seen Jason’s Penis in GTA 6 News from the frontlines of genital journalism."
+        },
+        {
+          "fact": "The fact that I may or may not have seen protagonist Jason Duval’s penis was not particularly high on that list.",
+          "quote": "The fact that I may or may not have seen protagonist Jason Duval’s penis was not particularly high on that list."
+        },
+        {
+          "fact": "In my coverage, I mentioned a scene in which Jason is naked in the shower.",
+          "quote": "In my coverage, I mentioned a scene in which Jason is naked in the shower."
+        },
+        {
+          "fact": "For the sake of journalistic accuracy, I feel compelled to clarify: I did not see Jason’s penis.",
+          "quote": "For the sake of journalistic accuracy, I feel compelled to clarify: I did not see Jason’s penis."
+        },
+        {
+          "fact": "I appreciate that this may be disappointing news to those hoping for an exclusive report on the state of Jason’s anatomy, but I can only write about what I’ve actually seen.",
+          "quote": "I appreciate that this may be disappointing news to those hoping for an exclusive report on the state of Jason’s anatomy, but I can only write about what I’ve actually seen."
+        },
+        {
+          "fact": "Of course, if Jason does indeed have a fully-rendered penis, he won't be the first GTA character to have one.",
+          "quote": "Of course, if Jason does indeed have a fully-rendered penis, he won't be the first GTA character to have one."
+        }
+      ]
+    }
+  ]
+}

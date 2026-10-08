@@ -1,0 +1,39 @@
+{
+  "rawId": "kotaku-7402492dc2cc",
+  "outlet": "Kotaku",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://kotaku.com/gta-6-has-some-very-famous-musicians-hosting-its-radio-stations-including-bad-bunny-2000742646",
+  "published": "2026-10-08",
+  "ogImage": "https://kotaku.com/app/uploads/2026/10/Gta-6-1200x675.jpg",
+  "extractedAt": "2026-10-08T21:54:07.244Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "I just want to park my car by the beach, turn on Flash FM, and vibe out for a few hours while watching the waves crash into the sand. 🕹️ Level up your inbox Don’t miss the latest reviews, news and tips.",
+          "quote": "I just want to park my car by the beach, turn on Flash FM, and vibe out for a few hours while watching the waves crash into the sand. 🕹️ Level up your inbox Don’t miss the latest reviews, news and tips."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Outlaw",
+      "altNames": [],
+      "slug": "outlaw",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "As reported by Rolling Stone and Pitchfork , musicians Lana Del Rey and Morgan Wallen will host Back Country Radio, an outlaw country station.",
+          "quote": "As reported by Rolling Stone and Pitchfork , musicians Lana Del Rey and Morgan Wallen will host Back Country Radio, an outlaw country station."
+        }
+      ]
+    }
+  ]
+}

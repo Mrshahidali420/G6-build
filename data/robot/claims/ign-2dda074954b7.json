@@ -1,0 +1,123 @@
+{
+  "rawId": "ign-2dda074954b7",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/gta-6-reveals-a-handful-of-radio-stations-djs-and-songs-ahead-of-release",
+  "published": "2026-10-08",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/10/08/huhrrqdweaall9w-1791470229549.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-08T21:53:34.706Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images Every Confirmed Radio Station in GTA 6 So Far Cocoteo FM: Leonida's home for the best of modern Latin music.",
+          "quote": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images Every Confirmed Radio Station in GTA 6 So Far Cocoteo FM: Leonida's home for the best of modern Latin music."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images Every Confirmed Radio Station in GTA 6 So Far Cocoteo FM: Leonida's home for the best of modern Latin music.",
+          "quote": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images Every Confirmed Radio Station in GTA 6 So Far Cocoteo FM: Leonida's home for the best of modern Latin music."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Grassrivers",
+      "altNames": [
+        "Grass Rivers"
+      ],
+      "slug": "grassrivers",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Farruko & El Alfa - Si Es Trucho Es Trucho (Remix) Romeo Santos & El Chaval de la Bachata - Canalla Back Country Radio: MW (voiced by Morgan Wallen) and Delta Dawne (voiced by Lana Del Rey) blast renegade country music to the Grassrivers, Port Gellhorn, and beyond.",
+          "quote": "Farruko & El Alfa - Si Es Trucho Es Trucho (Remix) Romeo Santos & El Chaval de la Bachata - Canalla Back Country Radio: MW (voiced by Morgan Wallen) and Delta Dawne (voiced by Lana Del Rey) blast renegade country music to the Grassrivers, Port Gellhorn, and beyond."
+        },
+        {
+          "fact": "Stay tuned for Back Country’s roving reporter, swamp meteorologist, and Delta’s not-so-secret lover Mud Dog Mike (voiced by Jeremy Dufrene) checking in from the driver’s seat of his Grassrivers airboat.",
+          "quote": "Stay tuned for Back Country’s roving reporter, swamp meteorologist, and Delta’s not-so-secret lover Mud Dog Mike (voiced by Jeremy Dufrene) checking in from the driver’s seat of his Grassrivers airboat."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images Every Confirmed Radio Station in GTA 6 So Far Cocoteo FM: Leonida's home for the best of modern Latin music.",
+          "quote": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images Every Confirmed Radio Station in GTA 6 So Far Cocoteo FM: Leonida's home for the best of modern Latin music."
+        },
+        {
+          "fact": "Kamo Mphela - Shay'sana The Chamber 106.6: Crushing metal has landed in Leonida.",
+          "quote": "Kamo Mphela - Shay'sana The Chamber 106.6: Crushing metal has landed in Leonida."
+        },
+        {
+          "fact": "Jump in the pit with DJ Kerry (voiced by Kerry King) and DJ Tom (voiced by Tom Araya) for classic metal from the ‘80s and beyond as they channel Leonida’s deep metal roots.",
+          "quote": "Jump in the pit with DJ Kerry (voiced by Kerry King) and DJ Tom (voiced by Tom Araya) for classic metal from the ‘80s and beyond as they channel Leonida’s deep metal roots."
+        },
+        {
+          "fact": "From the beach to the block, nobody reps Leonida and the South like they do.",
+          "quote": "From the beach to the block, nobody reps Leonida and the South like they do."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Port Gellhorn",
+      "altNames": [
+        "Port Gellhorn"
+      ],
+      "slug": "port-gellhorn",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Farruko & El Alfa - Si Es Trucho Es Trucho (Remix) Romeo Santos & El Chaval de la Bachata - Canalla Back Country Radio: MW (voiced by Morgan Wallen) and Delta Dawne (voiced by Lana Del Rey) blast renegade country music to the Grassrivers, Port Gellhorn, and beyond.",
+          "quote": "Farruko & El Alfa - Si Es Trucho Es Trucho (Remix) Romeo Santos & El Chaval de la Bachata - Canalla Back Country Radio: MW (voiced by Morgan Wallen) and Delta Dawne (voiced by Lana Del Rey) blast renegade country music to the Grassrivers, Port Gellhorn, and beyond."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Fanboat",
+      "altNames": [
+        "Airboat"
+      ],
+      "slug": "fanboat",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Stay tuned for Back Country’s roving reporter, swamp meteorologist, and Delta’s not-so-secret lover Mud Dog Mike (voiced by Jeremy Dufrene) checking in from the driver’s seat of his Grassrivers airboat.",
+          "quote": "Stay tuned for Back Country’s roving reporter, swamp meteorologist, and Delta’s not-so-secret lover Mud Dog Mike (voiced by Jeremy Dufrene) checking in from the driver’s seat of his Grassrivers airboat."
+        }
+      ]
+    }
+  ]
+}

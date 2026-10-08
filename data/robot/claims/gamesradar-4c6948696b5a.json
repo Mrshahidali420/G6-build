@@ -1,0 +1,71 @@
+{
+  "rawId": "gamesradar-4c6948696b5a",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-leaker-cyberleek-returns-with-25-minutes-of-new-gameplay-after-over-a-month-of-silence-showing-first-person-footage-and-more/",
+  "published": "2026-10-08",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/jQWpAjCrVBgDbmFAzj3AQJ-1920-80.jpg",
+  "extractedAt": "2026-10-08T21:53:21.759Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        },
+        {
+          "fact": "So basically, if you don't want any spoilers for GTA 6, I'd probably start muting some terms on social media right about now, because this could be the start of a new string of leaks.",
+          "quote": "So basically, if you don't want any spoilers for GTA 6, I'd probably start muting some terms on social media right about now, because this could be the start of a new string of leaks."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Games Action Games Grand Theft Auto GTA 6 GTA 6 leaker Cyberleek returns with 25 minutes of new gameplay after over a month of silence, showing first-person footage and more News By Scott McCrae Published 8 October 2026 And a lot of naked Jason When you purchase through links on our site, we may earn an affiliate commission.",
+          "quote": "Games Action Games Grand Theft Auto GTA 6 GTA 6 leaker Cyberleek returns with 25 minutes of new gameplay after over a month of silence, showing first-person footage and more News By Scott McCrae Published 8 October 2026 And a lot of naked Jason When you purchase through links on our site, we may earn an affiliate commission."
+        },
+        {
+          "fact": "You can play as Jason with his ding dong exposed.\" Latest Videos From GamesRadar+ Watch full video here: Since this was posted, the footage has since been shared on social media by users, confirming the details outlined by TexFunz2.",
+          "quote": "You can play as Jason with his ding dong exposed.\" Latest Videos From GamesRadar+ Watch full video here: Since this was posted, the footage has since been shared on social media by users, confirming the details outlined by TexFunz2."
+        },
+        {
+          "fact": "This includes cutscenes, in-game racing events, and a ton of naked Jason gameplay.",
+          "quote": "This includes cutscenes, in-game racing events, and a ton of naked Jason gameplay."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "This featured a ton of gameplay footage, a leak of the game's apparent map, and some story moments like a four-minute clip of Lucia's prologue in-game, dropping the first batch of story spoilers.",
+          "quote": "This featured a ton of gameplay footage, a leak of the game's apparent map, and some story moments like a four-minute clip of Lucia's prologue in-game, dropping the first batch of story spoilers."
+        }
+      ]
+    }
+  ]
+}

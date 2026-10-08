@@ -1,0 +1,123 @@
+{
+  "rawId": "gameinformer-6cc6bc9de2af",
+  "outlet": "Game Informer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://gameinformer.com/2026/10/08/you-can-preview-6-of-the-radio-stations-in-grand-theft-auto-vi-right-now-plus-new",
+  "published": "2026-10-08",
+  "ogImage": "https://gameinformer.com/sites/default/files/styles/og_image/public/2026/10/08/1b889244/in-game_radio_stations_lead_image.jpg.webp",
+  "extractedAt": "2026-10-08T21:53:08.685Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "We've been learning more about its protagonists, Jason and Lucia, the city of Leonida, and the in-game weather systems and wildlife players can expect to see .",
+          "quote": "We've been learning more about its protagonists, Jason and Lucia, the city of Leonida, and the in-game weather systems and wildlife players can expect to see ."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "We've been learning more about its protagonists, Jason and Lucia, the city of Leonida, and the in-game weather systems and wildlife players can expect to see .",
+          "quote": "We've been learning more about its protagonists, Jason and Lucia, the city of Leonida, and the in-game weather systems and wildlife players can expect to see ."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Grassrivers",
+      "altNames": [
+        "Grass Rivers"
+      ],
+      "slug": "grassrivers",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Back Country Radio MW and Delta Dawne blast renegade country music to the Grassrivers, Port Gellhorn, and beyond.",
+          "quote": "Back Country Radio MW and Delta Dawne blast renegade country music to the Grassrivers, Port Gellhorn, and beyond."
+        },
+        {
+          "fact": "Stay tuned for Back Country’s roving reporter, swamp meteorologist, and Delta’s not-so-secret lover Mud Dog Mike checking in from the driver’s seat of his Grassrivers airboat.",
+          "quote": "Stay tuned for Back Country’s roving reporter, swamp meteorologist, and Delta’s not-so-secret lover Mud Dog Mike checking in from the driver’s seat of his Grassrivers airboat."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "We've been learning more about its protagonists, Jason and Lucia, the city of Leonida, and the in-game weather systems and wildlife players can expect to see .",
+          "quote": "We've been learning more about its protagonists, Jason and Lucia, the city of Leonida, and the in-game weather systems and wildlife players can expect to see ."
+        },
+        {
+          "fact": "The Chamber Crushing metal has landed in Leonida.",
+          "quote": "The Chamber Crushing metal has landed in Leonida."
+        },
+        {
+          "fact": "Jump in the pit with DJ Kerry and DJ Tom for classic metal from the ‘80s and beyond as they channel Leonida’s deep metal roots.",
+          "quote": "Jump in the pit with DJ Kerry and DJ Tom for classic metal from the ‘80s and beyond as they channel Leonida’s deep metal roots."
+        },
+        {
+          "fact": "From the beach to the block, nobody reps Leonida and the South like they do.",
+          "quote": "From the beach to the block, nobody reps Leonida and the South like they do."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Port Gellhorn",
+      "altNames": [
+        "Port Gellhorn"
+      ],
+      "slug": "port-gellhorn",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Back Country Radio MW and Delta Dawne blast renegade country music to the Grassrivers, Port Gellhorn, and beyond.",
+          "quote": "Back Country Radio MW and Delta Dawne blast renegade country music to the Grassrivers, Port Gellhorn, and beyond."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Fanboat",
+      "altNames": [
+        "Airboat"
+      ],
+      "slug": "fanboat",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Stay tuned for Back Country’s roving reporter, swamp meteorologist, and Delta’s not-so-secret lover Mud Dog Mike checking in from the driver’s seat of his Grassrivers airboat.",
+          "quote": "Stay tuned for Back Country’s roving reporter, swamp meteorologist, and Delta’s not-so-secret lover Mud Dog Mike checking in from the driver’s seat of his Grassrivers airboat."
+        }
+      ]
+    }
+  ]
+}

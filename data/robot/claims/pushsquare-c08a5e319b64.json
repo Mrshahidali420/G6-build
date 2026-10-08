@@ -1,0 +1,155 @@
+{
+  "rawId": "pushsquare-c08a5e319b64",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/10/gta-6-in-game-radio-stations-announced-and-you-can-preview-them-right-now",
+  "published": "2026-10-08",
+  "ogImage": "https://images.pushsquare.com/29802078d5b4f/1280x720.jpg",
+  "extractedAt": "2026-10-08T21:54:39.838Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "I want to hear more about the Australian American war!!",
+          "quote": "I want to hear more about the Australian American war!!"
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Grassrivers",
+      "altNames": [
+        "Grass Rivers"
+      ],
+      "slug": "grassrivers",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Back Country Radio : MW and Delta Dawne blast renegade country music to the Grassrivers, Port Gellhorn, and beyond.",
+          "quote": "Back Country Radio : MW and Delta Dawne blast renegade country music to the Grassrivers, Port Gellhorn, and beyond."
+        },
+        {
+          "fact": "Stay tuned for Back Country’s roving reporter, swamp meteorologist, and Delta’s not-so-secret lover Mud Dog Mike checking in from the driver’s seat of his Grassrivers airboat.",
+          "quote": "Stay tuned for Back Country’s roving reporter, swamp meteorologist, and Delta’s not-so-secret lover Mud Dog Mike checking in from the driver’s seat of his Grassrivers airboat."
+        },
+        {
+          "fact": "I’m out 1 42 BeyondKnight 2 hours ago I'm all in for Flash FM 0 43 Bunchesopuppies 2 hours ago Gonna have to look for Mud Dog Mike in the grassrivers area on an airboat.",
+          "quote": "I’m out 1 42 BeyondKnight 2 hours ago I'm all in for Flash FM 0 43 Bunchesopuppies 2 hours ago Gonna have to look for Mud Dog Mike in the grassrivers area on an airboat."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "They're as follows: Cocoteo FM : Leonida's home for the best of modern Latin music.",
+          "quote": "They're as follows: Cocoteo FM : Leonida's home for the best of modern Latin music."
+        },
+        {
+          "fact": "The Chamber 106.6: Crushing metal has landed in Leonida.",
+          "quote": "The Chamber 106.6: Crushing metal has landed in Leonida."
+        },
+        {
+          "fact": "Jump in the pit with DJ Kerry and DJ Tom for classic metal from the ‘80s and beyond as they channel Leonida’s deep metal roots.",
+          "quote": "Jump in the pit with DJ Kerry and DJ Tom for classic metal from the ‘80s and beyond as they channel Leonida’s deep metal roots."
+        },
+        {
+          "fact": "From the beach to the block, nobody reps Leonida and the South like they do.",
+          "quote": "From the beach to the block, nobody reps Leonida and the South like they do."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Port Gellhorn",
+      "altNames": [
+        "Port Gellhorn"
+      ],
+      "slug": "port-gellhorn",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Back Country Radio : MW and Delta Dawne blast renegade country music to the Grassrivers, Port Gellhorn, and beyond.",
+          "quote": "Back Country Radio : MW and Delta Dawne blast renegade country music to the Grassrivers, Port Gellhorn, and beyond."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "5 3 themightyant 7 hours ago Hopefully the radio is more akin to Vice City than GTA4 or GTA5, especially the humour and satire.",
+          "quote": "5 3 themightyant 7 hours ago Hopefully the radio is more akin to Vice City than GTA4 or GTA5, especially the humour and satire."
+        },
+        {
+          "fact": "I'll give them a whirl in game, but I loved the hip hop/rock/latin stations in Vice City.",
+          "quote": "I'll give them a whirl in game, but I loved the hip hop/rock/latin stations in Vice City."
+        },
+        {
+          "fact": "Returning to vice city meant they needed slayer.",
+          "quote": "Returning to vice city meant they needed slayer."
+        },
+        {
+          "fact": "If there's ever two songs I associate with vice city it's madhouse and RIB 1 24 WhatTheFrog 5 hours ago They tried to kill the metal… they failed as they were thrown to the ground.",
+          "quote": "If there's ever two songs I associate with vice city it's madhouse and RIB 1 24 WhatTheFrog 5 hours ago They tried to kill the metal… they failed as they were thrown to the ground."
+        },
+        {
+          "fact": "I hope we get another classic from Megadeth back in vice city 0 25 Stevemalkpus 5 hours ago Being able to listen to the radio stations outside of your vehicle with headphones is genius.",
+          "quote": "I hope we get another classic from Megadeth back in vice city 0 25 Stevemalkpus 5 hours ago Being able to listen to the radio stations outside of your vehicle with headphones is genius."
+        },
+        {
+          "fact": "0 31 Spider-Kev 4 hours ago @SuperSilverback Fernando in Vice City was funny.",
+          "quote": "0 31 Spider-Kev 4 hours ago @SuperSilverback Fernando in Vice City was funny."
+        },
+        {
+          "fact": "1 39 Drax007 3 hours ago eh... it seems they'll never outdo Vice City when it comes to music.",
+          "quote": "1 39 Drax007 3 hours ago eh... it seems they'll never outdo Vice City when it comes to music."
+        },
+        {
+          "fact": "Those Vice City and San Andreas stations were actually funny and brilliantly curated period specific selections, Vice City Stories was also excellent.",
+          "quote": "Those Vice City and San Andreas stations were actually funny and brilliantly curated period specific selections, Vice City Stories was also excellent."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Fanboat",
+      "altNames": [
+        "Airboat"
+      ],
+      "slug": "fanboat",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Stay tuned for Back Country’s roving reporter, swamp meteorologist, and Delta’s not-so-secret lover Mud Dog Mike checking in from the driver’s seat of his Grassrivers airboat.",
+          "quote": "Stay tuned for Back Country’s roving reporter, swamp meteorologist, and Delta’s not-so-secret lover Mud Dog Mike checking in from the driver’s seat of his Grassrivers airboat."
+        },
+        {
+          "fact": "I’m out 1 42 BeyondKnight 2 hours ago I'm all in for Flash FM 0 43 Bunchesopuppies 2 hours ago Gonna have to look for Mud Dog Mike in the grassrivers area on an airboat.",
+          "quote": "I’m out 1 42 BeyondKnight 2 hours ago I'm all in for Flash FM 0 43 Bunchesopuppies 2 hours ago Gonna have to look for Mud Dog Mike in the grassrivers area on an airboat."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "rawId": "vgc-237fae820404",
+  "outlet": "VGC",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.videogameschronicle.com/news/as-rockstar-continues-to-hunt-for-the-gta-6-leaker-theyve-returned-with-25-minutes-of-nudity-heavy-gameplay/",
+  "published": "2026-10-08",
+  "ogImage": "https://www.videogameschronicle.com/files/2026/09/gta6.jpg",
+  "extractedAt": "2026-10-08T11:53:57.167Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "It shows protagonists Jason and Lucia buying new clothes for the event, before speaking to some dirt racing competitors.",
+          "quote": "It shows protagonists Jason and Lucia buying new clothes for the event, before speaking to some dirt racing competitors."
+        },
+        {
+          "fact": "It then shows Jason taking part in one of these dirt races, against a variety of bikes and cars.",
+          "quote": "It then shows Jason taking part in one of these dirt races, against a variety of bikes and cars."
+        },
+        {
+          "fact": "After this, the footage turns notably X-rated, with Jason being fully nude for around 14 minutes of footage, with realistic ‘dangling’ physics on display.",
+          "quote": "After this, the footage turns notably X-rated, with Jason being fully nude for around 14 minutes of footage, with realistic ‘dangling’ physics on display."
+        },
+        {
+          "fact": "This includes a sequence in which Jason gets a car, takes it to a custom garage to get it upgraded and get new decals for it, then takes it on a street race.",
+          "quote": "This includes a sequence in which Jason gets a car, takes it to a custom garage to get it upgraded and get new decals for it, then takes it on a street race."
+        },
+        {
+          "fact": "If it’s the latter, the fact that Jason appears fully nude may also have been manipulated by the leaker, and may not be in the full game.",
+          "quote": "If it’s the latter, the fact that Jason appears fully nude may also have been manipulated by the leaker, and may not be in the full game."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "It shows protagonists Jason and Lucia buying new clothes for the event, before speaking to some dirt racing competitors.",
+          "quote": "It shows protagonists Jason and Lucia buying new clothes for the event, before speaking to some dirt racing competitors."
+        },
+        {
+          "fact": "The footage ends with a tease of Lucia – wearing a small thong and topless – running up to the top of a tower and preparing to jump off it.",
+          "quote": "The footage ends with a tease of Lucia – wearing a small thong and topless – running up to the top of a tower and preparing to jump off it."
+        }
+      ]
+    }
+  ]
+}

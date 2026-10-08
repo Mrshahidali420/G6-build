@@ -1,0 +1,47 @@
+{
+  "rawId": "ign-b951171d0b0e",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/australian-government-time-off-gta-6",
+  "published": "2026-10-08",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/08/06/gtaonothumb-1786018055324.png?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-08T11:53:44.158Z",
+  "entities": [
+    {
+      "entityType": "landmark",
+      "name": "South Beach",
+      "altNames": [
+        "Vice Beach"
+      ],
+      "slug": "south-beach",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The video looked at major locations and brought on experts to talk about Rockstar’s open world, from PortMiami to South Beach, from Wynwood to the Everglades.",
+          "quote": "The video looked at major locations and brought on experts to talk about Rockstar’s open world, from PortMiami to South Beach, from Wynwood to the Everglades."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "If that wasn’t enough, NBA team the Miami Heat will rock Vice City-themed jerseys as part of the same GTA 6 marketing deal .",
+          "quote": "If that wasn’t enough, NBA team the Miami Heat will rock Vice City-themed jerseys as part of the same GTA 6 marketing deal ."
+        },
+        {
+          "fact": "CBS put out a new video showing off the accuracy of GTA 6’s Vice City .",
+          "quote": "CBS put out a new video showing off the accuracy of GTA 6’s Vice City ."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "rawId": "gamesradar-89aa721123a7",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/with-gta-6-missions-rockstar-has-made-a-very-conscious-effort-to-open-things-up/",
+  "published": "2026-10-08",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/DJ5yrctKvkVPiUUuSo36xg-1920-80.jpg",
+  "extractedAt": "2026-10-08T11:53:31.265Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        },
+        {
+          "fact": "Nelson explains that Rockstar ultimately didn't want any mission that uses the game's systems, like the wanted system, to feel at odds with how those mechanics work when you're simply exploring Leonida.",
+          "quote": "Nelson explains that Rockstar ultimately didn't want any mission that uses the game's systems, like the wanted system, to feel at odds with how those mechanics work when you're simply exploring Leonida."
+        }
+      ]
+    },
+    {
+      "entityType": "gameplay_feature",
+      "name": "Six-Star Wanted System",
+      "altNames": [
+        "wanted level",
+        "six stars",
+        "police wanted system"
+      ],
+      "slug": "six-star-wanted-system",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "\"Anything where a mission can become systemic and it's a wanted level or robbery system - we try to make it so that it doesn't feel inconsistent with how the game works in the open world,\" he says.",
+          "quote": "\"Anything where a mission can become systemic and it's a wanted level or robbery system - we try to make it so that it doesn't feel inconsistent with how the game works in the open world,\" he says."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Nelson explains that Rockstar ultimately didn't want any mission that uses the game's systems, like the wanted system, to feel at odds with how those mechanics work when you're simply exploring Leonida.",
+          "quote": "Nelson explains that Rockstar ultimately didn't want any mission that uses the game's systems, like the wanted system, to feel at odds with how those mechanics work when you're simply exploring Leonida."
+        }
+      ]
+    }
+  ]
+}

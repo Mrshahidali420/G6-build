@@ -1,0 +1,176 @@
+{
+  "rawId": "ign-15b18f6c94ed",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/cbs-news-amazed-accuracy-gta-6",
+  "published": "2026-10-08",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/08/27/mega-1-1787855222702.jpeg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-08T11:53:37.644Z",
+  "entities": [
+    {
+      "entityType": "landmark",
+      "name": "Hotel Dixon",
+      "altNames": [],
+      "slug": "hotel-dixon",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The real life Breakwater Hotel appears in GTA 6 as Hotel Boardwalk, while a hotel in the background of the scene is called Hotel Dixon.",
+          "quote": "The real life Breakwater Hotel appears in GTA 6 as Hotel Boardwalk, while a hotel in the background of the scene is called Hotel Dixon."
+        }
+      ]
+    },
+    {
+      "entityType": "landmark",
+      "name": "South Beach",
+      "altNames": [
+        "Vice Beach"
+      ],
+      "slug": "south-beach",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "The Miami office of CBS News looked at major locations and brings on experts to talk about how accurate Rockstar’s open world is, from PortMiami to South Beach, Wynwood to the Everglades.",
+          "quote": "The Miami office of CBS News looked at major locations and brings on experts to talk about how accurate Rockstar’s open world is, from PortMiami to South Beach, Wynwood to the Everglades."
+        },
+        {
+          "fact": "From South Beach and PortMiami to Wynwood and the Everglades, Rockstar has recreated huge parts of Miami with an insane level of detail.",
+          "quote": "From South Beach and PortMiami to Wynwood and the Everglades, Rockstar has recreated huge parts of Miami with an insane level of detail."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Ambrosia",
+      "altNames": [
+        "Ambrosia"
+      ],
+      "slug": "ambrosia",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The GTA 6 map has six different regions: Vice City, of course; Leonida Keys; Grassrivers; Port Gellhorn; Ambrosia; and Mount Kalaga National Park.",
+          "quote": "The GTA 6 map has six different regions: Vice City, of course; Leonida Keys; Grassrivers; Port Gellhorn; Ambrosia; and Mount Kalaga National Park."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Grassrivers",
+      "altNames": [
+        "Grass Rivers"
+      ],
+      "slug": "grassrivers",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The GTA 6 map has six different regions: Vice City, of course; Leonida Keys; Grassrivers; Port Gellhorn; Ambrosia; and Mount Kalaga National Park.",
+          "quote": "The GTA 6 map has six different regions: Vice City, of course; Leonida Keys; Grassrivers; Port Gellhorn; Ambrosia; and Mount Kalaga National Park."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "GTA 6 Vice City Screenshots View 9 Images GTA 6 gameplay and screenshots have already teased how the game will adapt Florida, known as Leonida in-game.",
+          "quote": "GTA 6 Vice City Screenshots View 9 Images GTA 6 gameplay and screenshots have already teased how the game will adapt Florida, known as Leonida in-game."
+        },
+        {
+          "fact": "The GTA 6 map has six different regions: Vice City, of course; Leonida Keys; Grassrivers; Port Gellhorn; Ambrosia; and Mount Kalaga National Park.",
+          "quote": "The GTA 6 map has six different regions: Vice City, of course; Leonida Keys; Grassrivers; Port Gellhorn; Ambrosia; and Mount Kalaga National Park."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida Keys",
+      "altNames": [
+        "Keys"
+      ],
+      "slug": "leonida-keys",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The GTA 6 map has six different regions: Vice City, of course; Leonida Keys; Grassrivers; Port Gellhorn; Ambrosia; and Mount Kalaga National Park.",
+          "quote": "The GTA 6 map has six different regions: Vice City, of course; Leonida Keys; Grassrivers; Port Gellhorn; Ambrosia; and Mount Kalaga National Park."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Mount Kalaga National Park",
+      "altNames": [
+        "Mount Kalaga",
+        "Mount Kalaga Park"
+      ],
+      "slug": "mount-kalaga-national-park",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The GTA 6 map has six different regions: Vice City, of course; Leonida Keys; Grassrivers; Port Gellhorn; Ambrosia; and Mount Kalaga National Park.",
+          "quote": "The GTA 6 map has six different regions: Vice City, of course; Leonida Keys; Grassrivers; Port Gellhorn; Ambrosia; and Mount Kalaga National Park."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Port Gellhorn",
+      "altNames": [
+        "Port Gellhorn"
+      ],
+      "slug": "port-gellhorn",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The GTA 6 map has six different regions: Vice City, of course; Leonida Keys; Grassrivers; Port Gellhorn; Ambrosia; and Mount Kalaga National Park.",
+          "quote": "The GTA 6 map has six different regions: Vice City, of course; Leonida Keys; Grassrivers; Port Gellhorn; Ambrosia; and Mount Kalaga National Park."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "By Kirk McKeand Updated : Oct 8, 2026 11:00am UTC 5 comments Add IGN on Google CBS News has reported on the accuracy of GTA 6’s Vice City, a fictionalized recreation of The Magic City.",
+          "quote": "By Kirk McKeand Updated : Oct 8, 2026 11:00am UTC 5 comments Add IGN on Google CBS News has reported on the accuracy of GTA 6’s Vice City, a fictionalized recreation of The Magic City."
+        },
+        {
+          "fact": "According to the report, fans have noticed over 100 locations in Vice City that mirror real areas in Miami, such as the Kaseya Center , home of NBA team the Miami Heat.",
+          "quote": "According to the report, fans have noticed over 100 locations in Vice City that mirror real areas in Miami, such as the Kaseya Center , home of NBA team the Miami Heat."
+        },
+        {
+          "fact": "The report praises Rockstar’s attention to detail throughout, and how GTA 6 blends the iconic art deco architecture of Old Miami with the more modern buildings that dominate the city’s skyline. “But the game’s South Florida feel is deeper than just some buildings and streets,” the reporter says. “It’s what Vice City represents: character, culture, adventure.",
+          "quote": "The report praises Rockstar’s attention to detail throughout, and how GTA 6 blends the iconic art deco architecture of Old Miami with the more modern buildings that dominate the city’s skyline. “But the game’s South Florida feel is deeper than just some buildings and streets,” the reporter says. “It’s what Vice City represents: character, culture, adventure."
+        },
+        {
+          "fact": "GTA 6 Vice City Screenshots View 9 Images GTA 6 gameplay and screenshots have already teased how the game will adapt Florida, known as Leonida in-game.",
+          "quote": "GTA 6 Vice City Screenshots View 9 Images GTA 6 gameplay and screenshots have already teased how the game will adapt Florida, known as Leonida in-game."
+        },
+        {
+          "fact": "The GTA 6 map has six different regions: Vice City, of course; Leonida Keys; Grassrivers; Port Gellhorn; Ambrosia; and Mount Kalaga National Park.",
+          "quote": "The GTA 6 map has six different regions: Vice City, of course; Leonida Keys; Grassrivers; Port Gellhorn; Ambrosia; and Mount Kalaga National Park."
+        }
+      ]
+    }
+  ]
+}

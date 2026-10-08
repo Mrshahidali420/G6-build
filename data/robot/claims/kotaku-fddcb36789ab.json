@@ -1,0 +1,91 @@
+{
+  "rawId": "kotaku-fddcb36789ab",
+  "outlet": "Kotaku",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://kotaku.com/gta-6-grand-theft-auto-vi-leak-cyberleek-nudity-jason-footage-2000742598",
+  "published": "2026-10-08",
+  "ogImage": "https://kotaku.com/app/uploads/2026/10/jason1-1200x675.jpg",
+  "extractedAt": "2026-10-08T11:53:50.656Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "If you don’t want to know anything that happens, maybe switch off your internet today.",
+          "quote": "If you don’t want to know anything that happens, maybe switch off your internet today."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Jason fully clothed. © Rockstar It seemed inevitable that attention-seeking, crypto-shilling leaker Cyberleek wouldn’t be able to stay out of the limelight for long, after absconding with a sizeable chunk of change .",
+          "quote": "Jason fully clothed. © Rockstar It seemed inevitable that attention-seeking, crypto-shilling leaker Cyberleek wouldn’t be able to stay out of the limelight for long, after absconding with a sizeable chunk of change ."
+        },
+        {
+          "fact": "But his return is entirely unlike previous minute-long clips; this is a 25-minute video of the game, packed with story spoilers and and Jason in the buff.",
+          "quote": "But his return is entirely unlike previous minute-long clips; this is a 25-minute video of the game, packed with story spoilers and and Jason in the buff."
+        },
+        {
+          "fact": "Penis The video begins with a cutscene featuring both Jason and Lucia visiting a trailer-based store, changing clothes, and then taking part in a dirt bike race as part of a scripted mission.",
+          "quote": "Penis The video begins with a cutscene featuring both Jason and Lucia visiting a trailer-based store, changing clothes, and then taking part in a dirt bike race as part of a scripted mission."
+        },
+        {
+          "fact": "It then awkwardly cuts to show Cyberleek’s tedious attempt to shill his crypto coin once more, before cutting to a naked Jason sat on his motorbike.",
+          "quote": "It then awkwardly cuts to show Cyberleek’s tedious attempt to shill his crypto coin once more, before cutting to a naked Jason sat on his motorbike."
+        },
+        {
+          "fact": "Another crummy edit takes us to a spoof ad for a care, and then another to a red-haired Jason, still in the nude, chatting with a guy at a beach-side coffee store.",
+          "quote": "Another crummy edit takes us to a spoof ad for a care, and then another to a red-haired Jason, still in the nude, chatting with a guy at a beach-side coffee store."
+        },
+        {
+          "fact": "The cutscene plays out with a tattooed Jason, completely naked, talking to another character about car racing.",
+          "quote": "The cutscene plays out with a tattooed Jason, completely naked, talking to another character about car racing."
+        },
+        {
+          "fact": "It’s all very incongruous and mildly amusing, and I’m pleased to report Jason has nothing to be ashamed of.",
+          "quote": "It’s all very incongruous and mildly amusing, and I’m pleased to report Jason has nothing to be ashamed of."
+        },
+        {
+          "fact": "We then see footage of Jason tuning a car engine in what looks like quite a complicated setup, before a first-person driving view as Jason learns to drive with nitrous, and then a big street race.",
+          "quote": "We then see footage of Jason tuning a car engine in what looks like quite a complicated setup, before a first-person driving view as Jason learns to drive with nitrous, and then a big street race."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Penis The video begins with a cutscene featuring both Jason and Lucia visiting a trailer-based store, changing clothes, and then taking part in a dirt bike race as part of a scripted mission.",
+          "quote": "Penis The video begins with a cutscene featuring both Jason and Lucia visiting a trailer-based store, changing clothes, and then taking part in a dirt bike race as part of a scripted mission."
+        },
+        {
+          "fact": "The very last moment shows Cyberleek playing as Lucia for the first time ever, wearing nothing but a thong, but only seen from behind, as she climbs up some sort of structure.",
+          "quote": "The very last moment shows Cyberleek playing as Lucia for the first time ever, wearing nothing but a thong, but only seen from behind, as she climbs up some sort of structure."
+        }
+      ]
+    }
+  ]
+}

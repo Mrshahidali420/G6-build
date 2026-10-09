@@ -1,0 +1,29 @@
+{
+  "rawId": "gameinformer-04230ea6e791",
+  "outlet": "Game Informer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://gameinformer.com/opinion/2026/10/09/the-video-games-and-more-you-should-play-this-weekend-october-9-2026",
+  "published": "2026-10-09",
+  "ogImage": "https://gameinformer.com/sites/default/files/styles/og_image/public/2026/10/09/8ecae74b/weekendgaming_hero.jpg.webp",
+  "extractedAt": "2026-10-09T21:31:01.854Z",
+  "entities": [
+    {
+      "entityType": "gameplay_feature",
+      "name": "Scuba Diving and Underwater Exploration",
+      "altNames": [
+        "swimming",
+        "diving",
+        "underwater gameplay"
+      ],
+      "slug": "scuba-diving-underwater-exploration",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Deadlock remains the most impressive game not officially released, and if you can get an invite, it's worth diving in this weekend to see what the team has been cooking up.",
+          "quote": "Deadlock remains the most impressive game not officially released, and if you can get an invite, it's worth diving in this weekend to see what the team has been cooking up."
+        }
+      ]
+    }
+  ]
+}

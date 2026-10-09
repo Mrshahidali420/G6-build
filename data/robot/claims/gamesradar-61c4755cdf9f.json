@@ -1,0 +1,77 @@
+{
+  "rawId": "gamesradar-61c4755cdf9f",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-wanted-levels-heat/",
+  "published": "2026-10-09",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/7GMWduYvHNCyQpEDcNjMch-1920-80.jpg",
+  "extractedAt": "2026-10-09T21:31:14.831Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Once they're there, actions such as hiding weapons or changing clothes will lose that Heat, and the effect appears to be instant - after the car chase escape in the Extended Look, the red Vehicle Heat icon disappears the moment Lucia steps out of Raul's car.",
+          "quote": "Once they're there, actions such as hiding weapons or changing clothes will lose that Heat, and the effect appears to be instant - after the car chase escape in the Extended Look, the red Vehicle Heat icon disappears the moment Lucia steps out of Raul's car."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Raul Bautista",
+      "altNames": [
+        "Raul",
+        "Bautista"
+      ],
+      "slug": "raul-bautista",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Once they're there, actions such as hiding weapons or changing clothes will lose that Heat, and the effect appears to be instant - after the car chase escape in the Extended Look, the red Vehicle Heat icon disappears the moment Lucia steps out of Raul's car.",
+          "quote": "Once they're there, actions such as hiding weapons or changing clothes will lose that Heat, and the effect appears to be instant - after the car chase escape in the Extended Look, the red Vehicle Heat icon disappears the moment Lucia steps out of Raul's car."
+        }
+      ]
+    },
+    {
+      "entityType": "gameplay_feature",
+      "name": "Six-Star Wanted System",
+      "altNames": [
+        "wanted level",
+        "six stars",
+        "police wanted system"
+      ],
+      "slug": "six-star-wanted-system",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "GTA 6 Wanted Level explained (Image credit: Rockstar Games) The GTA 6 Wanted Level meter has been increased to six stars, allowing for great nuances between the different measures of threat from the cops, so don't expect them to come after you guns blazing as soon as you get your initial star.",
+          "quote": "GTA 6 Wanted Level explained (Image credit: Rockstar Games) The GTA 6 Wanted Level meter has been increased to six stars, allowing for great nuances between the different measures of threat from the cops, so don't expect them to come after you guns blazing as soon as you get your initial star."
+        }
+      ]
+    }
+  ]
+}

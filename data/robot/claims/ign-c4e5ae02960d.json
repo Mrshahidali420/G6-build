@@ -1,0 +1,45 @@
+{
+  "rawId": "ign-c4e5ae02960d",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/the-san-andreas-mission-you-need-to-play-before-gta-6",
+  "published": "2026-10-09",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/10/08/sa-aotl-blog-1791457650959.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-09T21:31:34.330Z",
+  "entities": [
+    {
+      "entityType": "brand",
+      "name": "Sprunk",
+      "altNames": [],
+      "slug": "sprunk",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The helicopter falls to earth, the boys in green bail out, and their getaway vehicle crashes through a nearby Sprunk billboard, dropping down onto the freeway where it smashes into a fuel truck.",
+          "quote": "The helicopter falls to earth, the boys in green bail out, and their getaway vehicle crashes through a nearby Sprunk billboard, dropping down onto the freeway where it smashes into a fuel truck."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Its predecessors, GTA 3 and Vice City, had been packed with references to classic crime cinema and voiced by genuine Hollywood talent.",
+          "quote": "Its predecessors, GTA 3 and Vice City, had been packed with references to classic crime cinema and voiced by genuine Hollywood talent."
+        },
+        {
+          "fact": "Grand Theft Auto 3 Grand Theft Auto: Vice City Grand Theft Auto: San Andreas Grand Theft Auto 4 Grand Theft Auto 5 Other (let us know in the comments) Answer See Results That’s not to say one side of Rockstar’s formula is better than the other.",
+          "quote": "Grand Theft Auto 3 Grand Theft Auto: Vice City Grand Theft Auto: San Andreas Grand Theft Auto 4 Grand Theft Auto 5 Other (let us know in the comments) Answer See Results That’s not to say one side of Rockstar’s formula is better than the other."
+        }
+      ]
+    }
+  ]
+}

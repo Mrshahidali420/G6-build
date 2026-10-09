@@ -1,0 +1,27 @@
+{
+  "rawId": "gamesindustry-b01be662e847",
+  "outlet": "GamesIndustry.biz",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesindustry.biz/this-should-be-game-streamings-moment-its-not-opinion",
+  "published": "2026-10-09",
+  "ogImage": "https://assetsio.gnwcdn.com/Jason_Duval_02_YqCdnKx.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-10-09T21:31:08.324Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "24/7",
+      "altNames": [
+        "Twenty Four Seven"
+      ],
+      "slug": "24-7",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Like many business propositions that are aimed at growth rather than sustainability, game streaming services tended to make profit projections that conveniently ignored long-term costs - like how rapidly hardware being used for gaming 24/7 would fail and need replacing, or how quickly it could become obsolete.",
+          "quote": "Like many business propositions that are aimed at growth rather than sustainability, game streaming services tended to make profit projections that conveniently ignored long-term costs - like how rapidly hardware being used for gaming 24/7 would fail and need replacing, or how quickly it could become obsolete."
+        }
+      ]
+    }
+  ]
+}

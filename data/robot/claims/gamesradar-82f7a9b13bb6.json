@@ -1,0 +1,83 @@
+{
+  "rawId": "gamesradar-82f7a9b13bb6",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-shows-jason-nude-and-fans-are-wondering-if-rockstar-will-go-full-red-dead-redemption-2-those-horse-balls-physics-gotta-go-somewhere/",
+  "published": "2026-10-09",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/7GMWduYvHNCyQpEDcNjMch-1920-80.jpg",
+  "extractedAt": "2026-10-09T21:31:21.338Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Games Action Games Grand Theft Auto GTA 6 GTA 6 shows Jason nude, and fans are wondering if Rockstar will go full Red Dead Redemption 2: \"Those horse balls physics gotta go somewhere\" News By Anthony McGlynn Published 9 October 2026 All things are possible When you purchase through links on our site, we may earn an affiliate commission.",
+          "quote": "Games Action Games Grand Theft Auto GTA 6 GTA 6 shows Jason nude, and fans are wondering if Rockstar will go full Red Dead Redemption 2: \"Those horse balls physics gotta go somewhere\" News By Anthony McGlynn Published 9 October 2026 All things are possible When you purchase through links on our site, we may earn an affiliate commission."
+        },
+        {
+          "fact": "It all stems from a preview by IGN that notes they got to see Jason fully unclothed for a shower scene.",
+          "quote": "It all stems from a preview by IGN that notes they got to see Jason fully unclothed for a shower scene."
+        },
+        {
+          "fact": "The moment was used to demonstrate how you can flip perspectives between Jason and Lucia at will for differing points of view of the same scenes.",
+          "quote": "The moment was used to demonstrate how you can flip perspectives between Jason and Lucia at will for differing points of view of the same scenes."
+        },
+        {
+          "fact": "People gravitated toward this, prompting the outlet to run another piece mentioning that no, they hadn't seen anything more risqu&eacute; than Jason's torso.",
+          "quote": "People gravitated toward this, prompting the outlet to run another piece mentioning that no, they hadn't seen anything more risqu&eacute; than Jason's torso."
+        },
+        {
+          "fact": "\"I wonder if Jason's balls shrink when the water is cold like the RDR2 horse balls,\" asks GTA GFX on Twitter .",
+          "quote": "\"I wonder if Jason's balls shrink when the water is cold like the RDR2 horse balls,\" asks GTA GFX on Twitter ."
+        },
+        {
+          "fact": "Another leak does contain a significant amount of fully nude Jason , in all his glory.",
+          "quote": "Another leak does contain a significant amount of fully nude Jason , in all his glory."
+        },
+        {
+          "fact": "There are a lot of jokes about what we'll see below Jason's waistline, but I'd have to concur with some others - full-frontal is probably unlikely for either hero.",
+          "quote": "There are a lot of jokes about what we'll see below Jason's waistline, but I'd have to concur with some others - full-frontal is probably unlikely for either hero."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The moment was used to demonstrate how you can flip perspectives between Jason and Lucia at will for differing points of view of the same scenes.",
+          "quote": "The moment was used to demonstrate how you can flip perspectives between Jason and Lucia at will for differing points of view of the same scenes."
+        }
+      ]
+    }
+  ]
+}

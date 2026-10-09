@@ -1,0 +1,27 @@
+{
+  "rawId": "kotaku-58f49443c013",
+  "outlet": "Kotaku",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://kotaku.com/will-gta-6-ever-come-to-switch-2-nintendo-of-america-president-says-go-ask-rockstar-2000743283",
+  "published": "2026-10-09",
+  "ogImage": "https://kotaku.com/app/uploads/2026/01/gta-6-1200x675.jpg",
+  "extractedAt": "2026-10-09T21:31:53.852Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "For Switch 2 fans who are pining for some some Vice City madness this November, well, there’s always G rand Theft Auto: The Trilogy – The Definitive Edition .",
+          "quote": "For Switch 2 fans who are pining for some some Vice City madness this November, well, there’s always G rand Theft Auto: The Trilogy – The Definitive Edition ."
+        }
+      ]
+    }
+  ]
+}

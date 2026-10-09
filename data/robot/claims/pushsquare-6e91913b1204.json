@@ -1,0 +1,97 @@
+{
+  "rawId": "pushsquare-6e91913b1204",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/previews/phantom-blade-zero-is-the-next-truly-essential-ps5-game",
+  "published": "2026-10-09",
+  "ogImage": "https://images.pushsquare.com/4414d643c46ca/1280x720.jpg",
+  "extractedAt": "2026-10-09T11:43:28.101Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Despite that, the initial plot setup proved intriguing enough for me to want to stick with it come the full game.",
+          "quote": "Despite that, the initial plot setup proved intriguing enough for me to want to stick with it come the full game."
+        },
+        {
+          "fact": "It’s got all the intensity and creativity of a hardcore action title you’d want in 2026.",
+          "quote": "It’s got all the intensity and creativity of a hardcore action title you’d want in 2026."
+        },
+        {
+          "fact": "I’m all for physical releases, but it is not a factor if a game is great and want to show my support to the devs.",
+          "quote": "I’m all for physical releases, but it is not a factor if a game is great and want to show my support to the devs."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Phantom",
+      "altNames": [],
+      "slug": "phantom",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "So, this extended session allowed me the chance to master Phantom Blade Zero’s opening map and learn what makes it tick.",
+          "quote": "So, this extended session allowed me the chance to master Phantom Blade Zero’s opening map and learn what makes it tick."
+        },
+        {
+          "fact": "Basic attacks in Phantom Blade Zero don’t consume stamina.",
+          "quote": "Basic attacks in Phantom Blade Zero don’t consume stamina."
+        },
+        {
+          "fact": "More elements were introduced as I progressed through the region, like Phantom Edges providing another attack type and both character and weapon upgrades to improve your build.",
+          "quote": "More elements were introduced as I progressed through the region, like Phantom Edges providing another attack type and both character and weapon upgrades to improve your build."
+        },
+        {
+          "fact": "He was the opener of the second region in the game, so having cracked the first one, I had my head wrapped around the structure of Phantom Blade Zero.",
+          "quote": "He was the opener of the second region in the game, so having cracked the first one, I had my head wrapped around the structure of Phantom Blade Zero."
+        },
+        {
+          "fact": "You can open up more of the map by sourcing keys, and those Phantom Edges I mentioned earlier also help you unlock more of the environment.",
+          "quote": "You can open up more of the map by sourcing keys, and those Phantom Edges I mentioned earlier also help you unlock more of the environment."
+        },
+        {
+          "fact": "Phantom Blade Zero’s story should too, and it actually has a strong hook right out the gate.",
+          "quote": "Phantom Blade Zero’s story should too, and it actually has a strong hook right out the gate."
+        },
+        {
+          "fact": "Watch on YouTube Even if the narrative were to fall by the wayside, the action of Phantom Blade Zero is destined to make the S-Game endeavour a swordfighting highlight.",
+          "quote": "Watch on YouTube Even if the narrative were to fall by the wayside, the action of Phantom Blade Zero is destined to make the S-Game endeavour a swordfighting highlight."
+        },
+        {
+          "fact": "For now, Phantom Blade Zero has all the makings of something special.",
+          "quote": "For now, Phantom Blade Zero has all the makings of something special."
+        },
+        {
+          "fact": "Related Games Phantom Blade Zero (PS5) Share: 8 71 About Liam Croft Liam grew up with a PlayStation controller in his hands and a love for Metal Gear Solid.",
+          "quote": "Related Games Phantom Blade Zero (PS5) Share: 8 71 About Liam Croft Liam grew up with a PlayStation controller in his hands and a love for Metal Gear Solid."
+        },
+        {
+          "fact": "2 57 ear__wig 1 hour ago Sounds fantastic, but there’s exactly phantom blade ZERO chance that I pay full price for a digital copy of this game.",
+          "quote": "2 57 ear__wig 1 hour ago Sounds fantastic, but there’s exactly phantom blade ZERO chance that I pay full price for a digital copy of this game."
+        }
+      ]
+    },
+    {
+      "entityType": "wildlife",
+      "name": "Snakes",
+      "altNames": [],
+      "slug": "snakes",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Under the cover of night, a woman becomes your adversary, but she can also summon snakes from the ground.",
+          "quote": "Under the cover of night, a woman becomes your adversary, but she can also summon snakes from the ground."
+        }
+      ]
+    }
+  ]
+}

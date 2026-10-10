@@ -1,0 +1,25 @@
+{
+  "rawId": "purexbox-3c2034ca00c0",
+  "outlet": "Pure Xbox",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.purexbox.com/features/talking-point-as-things-stand-whats-your-game-of-the-year-for-2026",
+  "published": "2026-10-10",
+  "ogImage": "https://images.purexbox.com/5f89e9f6b0cb0/1280x720.jpg",
+  "extractedAt": "2026-10-10T20:32:19.510Z",
+  "entities": [
+    {
+      "entityType": "vehicle",
+      "name": "Phantom",
+      "altNames": [],
+      "slug": "phantom",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "I can’t see it happening but i wouldn’t be overly surprised to see Phantom Blade take the crown.",
+          "quote": "I can’t see it happening but i wouldn’t be overly surprised to see Phantom Blade take the crown."
+        }
+      ]
+    }
+  ]
+}

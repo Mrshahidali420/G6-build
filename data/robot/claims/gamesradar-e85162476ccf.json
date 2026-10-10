@@ -1,0 +1,46 @@
+{
+  "rawId": "gamesradar-e85162476ccf",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/former-last-of-us-and-uncharted-4-dev-says-the-idea-of-a-monolithic-gta-6-or-elder-scrolls-6-is-intimidating-wants-more-short-games-instead/",
+  "published": "2026-10-10",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/y5ptEuDQcPNJEokrGwvScg-1920-80.jpg",
+  "extractedAt": "2026-10-10T20:31:59.994Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        },
+        {
+          "fact": "\"And I think collectively as an industry we want it to succeed.",
+          "quote": "\"And I think collectively as an industry we want it to succeed."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "GTA 6 shows Jason nude, and fans are wondering if Rockstar will go full Red Dead Redemption 2: \"Those horse balls physics gotta go somewhere\" CATEGORIES PC Gaming Xbox Series X PS5 Platforms Xbox PlayStation Kaan Serin Social Links Navigation Freelance contributor Kaan freelances for various websites including Rock Paper Shotgun, Eurogamer, and this one, Gamesradar.",
+          "quote": "GTA 6 shows Jason nude, and fans are wondering if Rockstar will go full Red Dead Redemption 2: \"Those horse balls physics gotta go somewhere\" CATEGORIES PC Gaming Xbox Series X PS5 Platforms Xbox PlayStation Kaan Serin Social Links Navigation Freelance contributor Kaan freelances for various websites including Rock Paper Shotgun, Eurogamer, and this one, Gamesradar."
+        }
+      ]
+    }
+  ]
+}

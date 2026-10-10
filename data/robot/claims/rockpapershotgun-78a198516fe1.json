@@ -1,0 +1,42 @@
+{
+  "rawId": "rockpapershotgun-78a198516fe1",
+  "outlet": "Rock Paper Shotgun",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.rockpapershotgun.com/oh-lord-now-those-gta-6-leakers-are-saying-if-enough-of-you-give-them-money-theyll-leak-a-playable-build-of-the-game",
+  "published": "2026-10-10",
+  "ogImage": "https://assetsio.gnwcdn.com/gta-6-grand-theft-auto-6-main-characters-hot-2.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-10-10T20:32:25.978Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Ask for what you want to see, and it gets provided.",
+          "quote": "Ask for what you want to see, and it gets provided."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Earlier this week, Cyberleek seemingly leaked a good 25 minutes of footage that included a slightly scandalous look at co-protag Jason .",
+          "quote": "Earlier this week, Cyberleek seemingly leaked a good 25 minutes of footage that included a slightly scandalous look at co-protag Jason ."
+        }
+      ]
+    }
+  ]
+}

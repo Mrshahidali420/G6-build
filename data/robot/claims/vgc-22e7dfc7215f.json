@@ -1,0 +1,27 @@
+{
+  "rawId": "vgc-22e7dfc7215f",
+  "outlet": "VGC",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.videogameschronicle.com/news/will-gta-6-make-its-way-to-switch-2-nintendo-isnt-saying/",
+  "published": "2026-10-10",
+  "ogImage": "https://www.videogameschronicle.com/files/2026/10/gta6switch2.jpg",
+  "extractedAt": "2026-10-10T20:32:32.483Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "A more amazing think would be using the world to adapt it’s own smaller scope game in the same map, Liberty / Vice City Stories style.",
+          "quote": "A more amazing think would be using the world to adapt it’s own smaller scope game in the same map, Liberty / Vice City Stories style."
+        }
+      ]
+    }
+  ]
+}

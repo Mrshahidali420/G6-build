@@ -1,0 +1,83 @@
+{
+  "rawId": "ign-b3413cb00c56",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/gta-6-leaker-threatens-to-release-build-with-full-story-mode-played-to-the-end-ties-lucias-clothing-to-crypto-scheme",
+  "published": "2026-10-10",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/08/27/mega-9-1787855280117.jpeg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-10T20:32:06.456Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Ask for what you want to see, and it gets provided.",
+          "quote": "Ask for what you want to see, and it gets provided."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images Here’s Cyberleek’s statement in full: The Offer Here's the deal, nice and clean.",
+          "quote": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images Here’s Cyberleek’s statement in full: The Offer Here's the deal, nice and clean."
+        },
+        {
+          "fact": "But Cyberleek reemerged this week with the release of a 24-minute GTA 6 gameplay video that showed cutscenes, story beats, playable characters Jason and Lucia naked (in the case of Jason, full-frontal nudity), and a first-person camera.",
+          "quote": "But Cyberleek reemerged this week with the release of a 24-minute GTA 6 gameplay video that showed cutscenes, story beats, playable characters Jason and Lucia naked (in the case of Jason, full-frontal nudity), and a first-person camera."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Back To Top Home › News › GTA 6 GTA 6 Leaker Threatens to Release Build With Full Story Mode Played to the End, Ties Lucia's Clothing to Crypto Scheme Fans brace themselves for spoilers.",
+          "quote": "Back To Top Home › News › GTA 6 GTA 6 Leaker Threatens to Release Build With Full Story Mode Played to the End, Ties Lucia's Clothing to Crypto Scheme Fans brace themselves for spoilers."
+        },
+        {
+          "fact": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images Here’s Cyberleek’s statement in full: The Offer Here's the deal, nice and clean.",
+          "quote": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images Here’s Cyberleek’s statement in full: The Offer Here's the deal, nice and clean."
+        },
+        {
+          "fact": "Cyberleek also issued market cap goals tied to the clothing Lucia would wear in subsequent leaked gameplay.",
+          "quote": "Cyberleek also issued market cap goals tied to the clothing Lucia would wear in subsequent leaked gameplay."
+        },
+        {
+          "fact": "For example, at $2 million, Cyberleek threatened to release gameplay showing Lucia wearing a bikini.",
+          "quote": "For example, at $2 million, Cyberleek threatened to release gameplay showing Lucia wearing a bikini."
+        },
+        {
+          "fact": "According to Cyberleek, a $4 million market cap would mean releasing gameplay with Lucia “fully naked.” However, there is significant skepticism about Cyberleek’s support of physical media, with many accusing the leaker of running a cryptocurrency scam.",
+          "quote": "According to Cyberleek, a $4 million market cap would mean releasing gameplay with Lucia “fully naked.” However, there is significant skepticism about Cyberleek’s support of physical media, with many accusing the leaker of running a cryptocurrency scam."
+        },
+        {
+          "fact": "But Cyberleek reemerged this week with the release of a 24-minute GTA 6 gameplay video that showed cutscenes, story beats, playable characters Jason and Lucia naked (in the case of Jason, full-frontal nudity), and a first-person camera.",
+          "quote": "But Cyberleek reemerged this week with the release of a 24-minute GTA 6 gameplay video that showed cutscenes, story beats, playable characters Jason and Lucia naked (in the case of Jason, full-frontal nudity), and a first-person camera."
+        }
+      ]
+    }
+  ]
+}

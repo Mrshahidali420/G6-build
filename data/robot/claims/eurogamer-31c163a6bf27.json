@@ -1,0 +1,59 @@
+{
+  "rawId": "eurogamer-31c163a6bf27",
+  "outlet": "Eurogamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.eurogamer.net/gta-6-leaker-cyberleek-threatens-playable-build-leak",
+  "published": "2026-10-10",
+  "ogImage": "https://assetsio.gnwcdn.com/gta-6_XFAse3R.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-10-10T20:31:57.346Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Ask for what you want to see, and it gets provided.",
+          "quote": "Ask for what you want to see, and it gets provided."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "After going quiet for a bit, CyberLeek came back with a bang this week, posting new footage from Rockstar's upcoming game that even features nude scenes, including a fully naked Jason, and a topless Lucia.",
+          "quote": "After going quiet for a bit, CyberLeek came back with a bang this week, posting new footage from Rockstar's upcoming game that even features nude scenes, including a fully naked Jason, and a topless Lucia."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "After going quiet for a bit, CyberLeek came back with a bang this week, posting new footage from Rockstar's upcoming game that even features nude scenes, including a fully naked Jason, and a topless Lucia.",
+          "quote": "After going quiet for a bit, CyberLeek came back with a bang this week, posting new footage from Rockstar's upcoming game that even features nude scenes, including a fully naked Jason, and a topless Lucia."
+        }
+      ]
+    }
+  ]
+}

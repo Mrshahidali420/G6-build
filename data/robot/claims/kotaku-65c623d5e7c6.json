@@ -1,0 +1,46 @@
+{
+  "rawId": "kotaku-65c623d5e7c6",
+  "outlet": "Kotaku",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://kotaku.com/gta-6-leaker-threatens-rockstar-with-doomsday-scenario-if-meme-coin-hits-30-million-2000743779",
+  "published": "2026-10-10",
+  "ogImage": "https://kotaku.com/app/uploads/2026/10/gta-6-lucia-and-jason-1200x675.jpg",
+  "extractedAt": "2026-10-10T20:32:12.965Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Ask for what you want to see, and it gets provided.",
+          "quote": "Ask for what you want to see, and it gets provided."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Rockstar Games After going quite for more than a month after Grand Theft Auto 6 ‘s extended gameplay reveal on Netflix, Cyberleek resurfaced earlier this week with a fresh dump of new footage, including a look at Jason without any clothes on .",
+          "quote": "Rockstar Games After going quite for more than a month after Grand Theft Auto 6 ‘s extended gameplay reveal on Netflix, Cyberleek resurfaced earlier this week with a fresh dump of new footage, including a look at Jason without any clothes on ."
+        },
+        {
+          "fact": "In addition to seemingly using a debug mode to show Jason naked following a day of debate about whether the character would show dong in the upcoming open-world game, Cyberleek also appeared to recreate various snippets of gameplay that mirrored what was shown in the Netflix reveal back in August.",
+          "quote": "In addition to seemingly using a debug mode to show Jason naked following a day of debate about whether the character would show dong in the upcoming open-world game, Cyberleek also appeared to recreate various snippets of gameplay that mirrored what was shown in the Netflix reveal back in August."
+        }
+      ]
+    }
+  ]
+}

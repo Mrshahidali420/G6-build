@@ -1,0 +1,95 @@
+{
+  "rawId": "eurogamer-d0afa6a0199e",
+  "outlet": "Eurogamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.eurogamer.net/gta-6-leaker-cyberleek-naked-lucia-parachute-video",
+  "published": "2026-10-11",
+  "ogImage": "https://assetsio.gnwcdn.com/lucia-gta-6-car.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-10-11T20:51:06.574Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Limit",
+      "altNames": [],
+      "slug": "limit",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The machine shows a $15,000 limit and a Buckme logo (thanks, TheGamer ).",
+          "quote": "The machine shows a $15,000 limit and a Buckme logo (thanks, TheGamer )."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The five-minute clip was posted on ResetEra a few days after CyberLeek's 25-minute video of Jason , and a day after the leaker threatened to release a full playable build .",
+          "quote": "The five-minute clip was posted on ResetEra a few days after CyberLeek's 25-minute video of Jason , and a day after the leaker threatened to release a full playable build ."
+        },
+        {
+          "fact": "As with Jason, nobody reacts to her, and as we noted last time, whoever is playing seems to have access to a dev menu, which means a naked Lucia could be a debug feature rather than something you'll be able to do in the open world.",
+          "quote": "As with Jason, nobody reacts to her, and as we noted last time, whoever is playing seems to have access to a dev menu, which means a naked Lucia could be a debug feature rather than something you'll be able to do in the open world."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "GTA 6 leaker CyberLeek is back with another video and this time, Lucia's naked Bare with us.",
+          "quote": "GTA 6 leaker CyberLeek is back with another video and this time, Lucia's naked Bare with us."
+        },
+        {
+          "fact": "7 comments Follow Grand Theft Auto VI Prioritise us on Google GTA 6 leaker CyberLeek is back with another video, this time with a naked Lucia taking a parachute jump off a rooftop.",
+          "quote": "7 comments Follow Grand Theft Auto VI Prioritise us on Google GTA 6 leaker CyberLeek is back with another video, this time with a naked Lucia taking a parachute jump off a rooftop."
+        },
+        {
+          "fact": "Watch on YouTube The video - which I'm afraid I'm not going to post here - reportedly opens with CyberLeek driving through Vice City in a black-and-white car, before Lucia gets out in nowt but her birthday suit.",
+          "quote": "Watch on YouTube The video - which I'm afraid I'm not going to post here - reportedly opens with CyberLeek driving through Vice City in a black-and-white car, before Lucia gets out in nowt but her birthday suit."
+        },
+        {
+          "fact": "As with Jason, nobody reacts to her, and as we noted last time, whoever is playing seems to have access to a dev menu, which means a naked Lucia could be a debug feature rather than something you'll be able to do in the open world.",
+          "quote": "As with Jason, nobody reacts to her, and as we noted last time, whoever is playing seems to have access to a dev menu, which means a naked Lucia could be a debug feature rather than something you'll be able to do in the open world."
+        },
+        {
+          "fact": "Lucia then heads up some stairs to an ATM, where she beats up a passer-by and takes their money.",
+          "quote": "Lucia then heads up some stairs to an ATM, where she beats up a passer-by and takes their money."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Watch on YouTube The video - which I'm afraid I'm not going to post here - reportedly opens with CyberLeek driving through Vice City in a black-and-white car, before Lucia gets out in nowt but her birthday suit.",
+          "quote": "Watch on YouTube The video - which I'm afraid I'm not going to post here - reportedly opens with CyberLeek driving through Vice City in a black-and-white car, before Lucia gets out in nowt but her birthday suit."
+        }
+      ]
+    }
+  ]
+}

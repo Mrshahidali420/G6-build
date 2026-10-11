@@ -1,0 +1,57 @@
+{
+  "rawId": "ign-2ff91a7d9156",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/im-shocked-that-people-are-still-playing-how-gta-5-took-over-the-world",
+  "published": "2026-10-11",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/10/07/gta-world-blog-1791369194587.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-11T20:51:26.032Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "There they become whoever they want to be: stunt specialist, bank robber, nightclub kid, hitchhiker or filmmaker.",
+          "quote": "There they become whoever they want to be: stunt specialist, bank robber, nightclub kid, hitchhiker or filmmaker."
+        }
+      ]
+    },
+    {
+      "entityType": "gameplay_feature",
+      "name": "Six-Star Wanted System",
+      "altNames": [
+        "wanted level",
+        "six stars",
+        "police wanted system"
+      ],
+      "slug": "six-star-wanted-system",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Yet GTA 5 also told the ambitious tale of three controllable protagonists at totally different points in their lives – Franklin, the young and hungry Scarface-in-waiting; Michael, the washed-up cuckold; and Trevor, the psychopathic embodiment of the five-star Wanted level.",
+          "quote": "Yet GTA 5 also told the ambitious tale of three controllable protagonists at totally different points in their lives – Franklin, the young and hungry Scarface-in-waiting; Michael, the washed-up cuckold; and Trevor, the psychopathic embodiment of the five-star Wanted level."
+        }
+      ]
+    },
+    {
+      "entityType": "landmark",
+      "name": "Shopping mall",
+      "altNames": [],
+      "slug": "unnamed-shopping-mall",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "So even though they live in the UK, they have a good pulse on everything that’s going around here.” When the midnight launch came, Ash Skyqueen and her sister stood in line at the Metrocentre shopping mall in the north-east of England.",
+          "quote": "So even though they live in the UK, they have a good pulse on everything that’s going around here.” When the midnight launch came, Ash Skyqueen and her sister stood in line at the Metrocentre shopping mall in the north-east of England."
+        }
+      ]
+    }
+  ]
+}

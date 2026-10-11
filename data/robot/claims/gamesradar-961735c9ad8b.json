@@ -1,0 +1,63 @@
+{
+  "rawId": "gamesradar-961735c9ad8b",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-leaker-threatens-to-release-a-build-of-the-entire-game-start-to-finish-but-gives-take-two-a-way-out-physical-disks-and-a-public-apology/",
+  "published": "2026-10-11",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/Zb3Q2uW5q96AnLSCtr2AVA-1920-80.jpg",
+  "extractedAt": "2026-10-11T20:51:13.026Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        },
+        {
+          "fact": "Ask for what you want to see, and it gets provided.",
+          "quote": "Ask for what you want to see, and it gets provided."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "GTA 6 shows Jason nude, and fans are wondering if Rockstar will go full Red Dead Redemption 2: \"Those horse balls physics gotta go somewhere\" CATEGORIES Xbox Series X PS5 Platforms Xbox PlayStation Kaan Serin Social Links Navigation Freelance contributor Kaan freelances for various websites including Rock Paper Shotgun, Eurogamer, and this one, Gamesradar.",
+          "quote": "GTA 6 shows Jason nude, and fans are wondering if Rockstar will go full Red Dead Redemption 2: \"Those horse balls physics gotta go somewhere\" CATEGORIES Xbox Series X PS5 Platforms Xbox PlayStation Kaan Serin Social Links Navigation Freelance contributor Kaan freelances for various websites including Rock Paper Shotgun, Eurogamer, and this one, Gamesradar."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "An even more recent leak supposedly features gameplay from a topless Lucia's perspective.",
+          "quote": "An even more recent leak supposedly features gameplay from a topless Lucia's perspective."
+        }
+      ]
+    }
+  ]
+}

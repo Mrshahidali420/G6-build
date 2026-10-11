@@ -28,7 +28,8 @@
     "2026-10-07",
     "2026-10-08",
     "2026-10-09",
-    "2026-10-10"
+    "2026-10-10",
+    "2026-10-11"
   ],
   "items": [
     "eurogamer-15163e4ab69f",
@@ -39,6 +40,7 @@
     "eurogamer-44e3a4d09700",
     "eurogamer-51c9351a4873",
     "eurogamer-b2087d3c90b8",
+    "eurogamer-d0afa6a0199e",
     "eurogamer-d0dc72f2438a",
     "eurogamer-d6659aa1c7bf",
     "eurogamer-fbd5e61cae19",
@@ -87,6 +89,7 @@
     "gamesradar-82f7a9b13bb6",
     "gamesradar-89aa721123a7",
     "gamesradar-90a8c6185270",
+    "gamesradar-961735c9ad8b",
     "gamesradar-972e0001ff42",
     "gamesradar-98bc2d20608f",
     "gamesradar-a170fdfc0224",
@@ -95,12 +98,14 @@
     "gamesradar-dcb11e5c6601",
     "gamesradar-df43a4ce3217",
     "gamesradar-e85162476ccf",
+    "gamesradar-e86b78647e9b",
     "gamesradar-ef563a49ee5b",
     "gamesradar-fb928f7707fb",
     "gamesradar-fb94a030c556",
     "ign-0f9763b82d05",
     "ign-1e5ce66b59a5",
     "ign-2f4707fa21c2",
+    "ign-2ff91a7d9156",
     "ign-3a420f3a13ce",
     "ign-4ce4c9b1deeb",
     "ign-54d778ccd4df",
@@ -139,6 +144,7 @@
     "polygon-3bf373d86abb",
     "polygon-42de4ca96f91",
     "polygon-538e65cb4794",
+    "polygon-53bc64ba505b",
     "polygon-70044294cbeb",
     "polygon-a327e462eaee",
     "polygon-d59bedf0f07a",
@@ -172,6 +178,7 @@
     "vgc-5dcddd20c7eb",
     "vgc-66768bd0abf0",
     "vgc-a4d4ce78ec37",
+    "vgc-f23459bc11ba",
     "vgc-f8027aef7e4a"
   ]
 }

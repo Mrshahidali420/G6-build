@@ -1,0 +1,28 @@
+{
+  "rawId": "kotaku-b3358446ea28",
+  "outlet": "Kotaku",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://kotaku.com/gta-6-leaker-promises-escalating-mayhem-as-meme-coin-crashes-2000744617",
+  "published": "2026-10-12",
+  "ogImage": "https://kotaku.com/app/uploads/2026/10/gta-burning-1200x675.jpg",
+  "extractedAt": "2026-10-12T23:33:12.803Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "And it seemed like there was a real shot of that happening, at least for a little while. $Cyberleek hit over $4.75 million over the weekend as the account effectively ransomed off Lucia nudes .",
+          "quote": "And it seemed like there was a real shot of that happening, at least for a little while. $Cyberleek hit over $4.75 million over the weekend as the account effectively ransomed off Lucia nudes ."
+        }
+      ]
+    }
+  ]
+}

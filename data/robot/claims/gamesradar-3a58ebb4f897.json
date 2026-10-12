@@ -1,0 +1,25 @@
+{
+  "rawId": "gamesradar-3a58ebb4f897",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/despite-new-gta-6-leaks-cyberleeks-cryptocurrency-remains-over-usd20-million-short-of-its-goal-amid-threats-to-release-rockstars-next-game-early/",
+  "published": "2026-10-12",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/38dFMrtxrziEumiDGTPJ97-1920-80.png",
+  "extractedAt": "2026-10-12T12:53:19.914Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    }
+  ]
+}

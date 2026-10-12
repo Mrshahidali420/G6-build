@@ -1,0 +1,44 @@
+{
+  "rawId": "kotaku-b0de085651b7",
+  "outlet": "Kotaku",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://kotaku.com/gta-6-leaker-posts-lucia-skydiving-naked-to-sell-crypto-2000744175",
+  "published": "2026-10-11",
+  "ogImage": "https://kotaku.com/app/uploads/2026/10/Lucia--1200x675.jpg",
+  "extractedAt": "2026-10-12T12:53:39.369Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "The unknown user claimed they would release a playable build of the game if their crypto meme coin hit a $30 million market cap, and they’re now posting footage of Lucia naked to try to drive up the price.",
+          "quote": "The unknown user claimed they would release a playable build of the game if their crypto meme coin hit a $30 million market cap, and they’re now posting footage of Lucia naked to try to drive up the price."
+        },
+        {
+          "fact": "The footage also looks janky in parts, leaving viewers to wonder just how old the build it’s from is.market cap The latest Lucia footage comes as the leaker polls people online for what should be released next.",
+          "quote": "The footage also looks janky in parts, leaving viewers to wonder just how old the build it’s from is.market cap The latest Lucia footage comes as the leaker polls people online for what should be released next."
+        },
+        {
+          "fact": "They’re promising to release longer and more detailed versions of “ naked Lucia ” the more people buy into their crypto scheme.",
+          "quote": "They’re promising to release longer and more detailed versions of “ naked Lucia ” the more people buy into their crypto scheme."
+        },
+        {
+          "fact": "Cyberleek reveals that he has access to Lucia fully naked in GTA 6, and will publish the footage depending on his token’s marketcap.",
+          "quote": "Cyberleek reveals that he has access to Lucia fully naked in GTA 6, and will publish the footage depending on his token’s marketcap."
+        },
+        {
+          "fact": "Bystanders in the world don’t react to Lucia being naked in the latest leak, suggesting something else is indeed going on .",
+          "quote": "Bystanders in the world don’t react to Lucia being naked in the latest leak, suggesting something else is indeed going on ."
+        }
+      ]
+    }
+  ]
+}

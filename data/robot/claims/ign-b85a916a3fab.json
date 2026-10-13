@@ -1,0 +1,95 @@
+{
+  "rawId": "ign-b85a916a3fab",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/gta-6-fans-celebrate-as-cyberleek-cryptocurrency-crashes-hard",
+  "published": "2026-10-13",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/10/13/ultimate-edition-vice-city-style-05-1791885281233.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-13T12:31:50.404Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Ask for what you want to see, and it gets provided.",
+          "quote": "Ask for what you want to see, and it gets provided."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images Cyberleek has threatened to release a new unauthorized GTA 6 gameplay video every day, assuming the memecoin market cap targets were met, and launched yet another gameplay poll designed to encourage spending on the memecoin.",
+          "quote": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images Cyberleek has threatened to release a new unauthorized GTA 6 gameplay video every day, assuming the memecoin market cap targets were met, and launched yet another gameplay poll designed to encourage spending on the memecoin."
+        },
+        {
+          "fact": "Yesterday, IGN reported on fan skepticism around the alleged leaked gameplay that reportedly showed both Jason and Lucia fully naked .",
+          "quote": "Yesterday, IGN reported on fan skepticism around the alleged leaked gameplay that reportedly showed both Jason and Lucia fully naked ."
+        },
+        {
+          "fact": "The leaked videos allegedly showing both Jason and Lucia fully naked also show NPCs failing to react to that in any way, which suggests this effect was achieved with either a dev menu or cheats and won’t be possible in the official release.",
+          "quote": "The leaked videos allegedly showing both Jason and Lucia fully naked also show NPCs failing to react to that in any way, which suggests this effect was achieved with either a dev menu or cheats and won’t be possible in the official release."
+        },
+        {
+          "fact": "One theory is that Cyberleak was able to access this state for both Lucia and Jason because in at least one mission players will see both characters naked, perhaps in a nudist resort.",
+          "quote": "One theory is that Cyberleak was able to access this state for both Lucia and Jason because in at least one mission players will see both characters naked, perhaps in a nudist resort."
+        },
+        {
+          "fact": "But Cyberleek reemerged last week with the release of a 24-minute GTA 6 gameplay video that reportedly showed cutscenes, story beats, playable characters Jason and Lucia naked (in the case of Jason, full-frontal nudity), and a first-person camera.",
+          "quote": "But Cyberleek reemerged last week with the release of a 24-minute GTA 6 gameplay video that reportedly showed cutscenes, story beats, playable characters Jason and Lucia naked (in the case of Jason, full-frontal nudity), and a first-person camera."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Already this week a number of gameplay clips were reportedly leaked after market cap goals were hit, including gameplay that allegedly shows Lucia fully naked, and, more recently, the alleged leak of a “Lucia closeup 4k” video.",
+          "quote": "Already this week a number of gameplay clips were reportedly leaked after market cap goals were hit, including gameplay that allegedly shows Lucia fully naked, and, more recently, the alleged leak of a “Lucia closeup 4k” video."
+        },
+        {
+          "fact": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images Cyberleek has threatened to release a new unauthorized GTA 6 gameplay video every day, assuming the memecoin market cap targets were met, and launched yet another gameplay poll designed to encourage spending on the memecoin.",
+          "quote": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images Cyberleek has threatened to release a new unauthorized GTA 6 gameplay video every day, assuming the memecoin market cap targets were met, and launched yet another gameplay poll designed to encourage spending on the memecoin."
+        },
+        {
+          "fact": "Yesterday, IGN reported on fan skepticism around the alleged leaked gameplay that reportedly showed both Jason and Lucia fully naked .",
+          "quote": "Yesterday, IGN reported on fan skepticism around the alleged leaked gameplay that reportedly showed both Jason and Lucia fully naked ."
+        },
+        {
+          "fact": "The leaked videos allegedly showing both Jason and Lucia fully naked also show NPCs failing to react to that in any way, which suggests this effect was achieved with either a dev menu or cheats and won’t be possible in the official release.",
+          "quote": "The leaked videos allegedly showing both Jason and Lucia fully naked also show NPCs failing to react to that in any way, which suggests this effect was achieved with either a dev menu or cheats and won’t be possible in the official release."
+        },
+        {
+          "fact": "One theory is that Cyberleak was able to access this state for both Lucia and Jason because in at least one mission players will see both characters naked, perhaps in a nudist resort.",
+          "quote": "One theory is that Cyberleak was able to access this state for both Lucia and Jason because in at least one mission players will see both characters naked, perhaps in a nudist resort."
+        },
+        {
+          "fact": "But Cyberleek reemerged last week with the release of a 24-minute GTA 6 gameplay video that reportedly showed cutscenes, story beats, playable characters Jason and Lucia naked (in the case of Jason, full-frontal nudity), and a first-person camera.",
+          "quote": "But Cyberleek reemerged last week with the release of a 24-minute GTA 6 gameplay video that reportedly showed cutscenes, story beats, playable characters Jason and Lucia naked (in the case of Jason, full-frontal nudity), and a first-person camera."
+        }
+      ]
+    }
+  ]
+}

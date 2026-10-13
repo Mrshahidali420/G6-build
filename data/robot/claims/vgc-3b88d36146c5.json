@@ -1,0 +1,51 @@
+{
+  "rawId": "vgc-3b88d36146c5",
+  "outlet": "VGC",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.videogameschronicle.com/news/10-games-you-need-to-play-before-gta-6-takes-over-the-world/",
+  "published": "2026-10-13",
+  "ogImage": "https://www.videogameschronicle.com/files/2026/06/gta6box.jpg",
+  "extractedAt": "2026-10-13T12:31:56.967Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Dragon’s Dogma 2: Dark Arisen If you want a game to sap 100 hours of your time after you’re done with GTA 6, Dragon’s Dogma 2 : Dark Arisen is perfect.",
+          "quote": "Dragon’s Dogma 2: Dark Arisen If you want a game to sap 100 hours of your time after you’re done with GTA 6, Dragon’s Dogma 2 : Dark Arisen is perfect."
+        },
+        {
+          "fact": "The Blood of Dawnwalker If you’re a fan of The Witcher 3: Wild Hunt but don’t want to play the game again, then The Blood of Dawnwalker is for you.",
+          "quote": "The Blood of Dawnwalker If you’re a fan of The Witcher 3: Wild Hunt but don’t want to play the game again, then The Blood of Dawnwalker is for you."
+        },
+        {
+          "fact": "This is a relatively short RPG that manages to pack in all of the big moments you want to see from an expansive open-world RPG.",
+          "quote": "This is a relatively short RPG that manages to pack in all of the big moments you want to see from an expansive open-world RPG."
+        },
+        {
+          "fact": "If you want a historical fantasy setting instead of GTA 6’s modern day, The Blood of Dawnwalker is for you.",
+          "quote": "If you want a historical fantasy setting instead of GTA 6’s modern day, The Blood of Dawnwalker is for you."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "This is a very different experience to GTA 6, and it’ll feel refreshing before visiting Leonida.",
+          "quote": "This is a very different experience to GTA 6, and it’ll feel refreshing before visiting Leonida."
+        }
+      ]
+    }
+  ]
+}

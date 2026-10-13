@@ -1,0 +1,59 @@
+{
+  "rawId": "ign-1b4c5308b3fa",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/will-you-be-taking-time-off-work-or-school-for-gta-6s-release-next-month",
+  "published": "2026-10-13",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/09/29/9245b6dd45a143b26a7877ec5a29bb5c3fc00eda-1790721291674.webp?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-13T21:47:23.178Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images The 13-year wait for a new GTA game is nearly over as GTA 6 will release on November 19 for Xbox Series X|S and PS5.",
+          "quote": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images The 13-year wait for a new GTA game is nearly over as GTA 6 will release on November 19 for Xbox Series X|S and PS5."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images The 13-year wait for a new GTA game is nearly over as GTA 6 will release on November 19 for Xbox Series X|S and PS5.",
+          "quote": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images The 13-year wait for a new GTA game is nearly over as GTA 6 will release on November 19 for Xbox Series X|S and PS5."
+        }
+      ]
+    },
+    {
+      "entityType": "wildlife",
+      "name": "Dolphins",
+      "altNames": [],
+      "slug": "dolphins",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Of course, Rockstar is ensuring that, regardless of performance, sports fans are hyper-aware of its upcoming game thanks to an unprecdented GTA 6-themed NBA regular season game in Miami and a blitz of advertising at the Hard Rock Stadium where the Miami Dolphins play .",
+          "quote": "Of course, Rockstar is ensuring that, regardless of performance, sports fans are hyper-aware of its upcoming game thanks to an unprecdented GTA 6-themed NBA regular season game in Miami and a blitz of advertising at the Hard Rock Stadium where the Miami Dolphins play ."
+        }
+      ]
+    }
+  ]
+}

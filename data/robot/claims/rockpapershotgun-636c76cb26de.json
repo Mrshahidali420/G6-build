@@ -1,0 +1,44 @@
+{
+  "rawId": "rockpapershotgun-636c76cb26de",
+  "outlet": "Rock Paper Shotgun",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.rockpapershotgun.com/gta-6-pc-release-planned-for-early-2027-report-claims-which-could-mean-were-playing-in-time-for-gta-online-2-vice-city-4-u-or-whatever-they-call-it",
+  "published": "2026-10-13",
+  "ogImage": "https://assetsio.gnwcdn.com/Jason_and_Lucia_04.0m7i~huzhskdw.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-10-13T21:47:49.199Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "On the other hand, you've got sceptics like RPS boss Jules, who saw this report and was firm in his stance that he won't believe GTA 6 is turning up on his machine in such short order until protagonist Jason's naked body is right there on his monitor, rendered in all of the glory only a PC could manage.",
+          "quote": "On the other hand, you've got sceptics like RPS boss Jules, who saw this report and was firm in his stance that he won't believe GTA 6 is turning up on his machine in such short order until protagonist Jason's naked body is right there on his monitor, rendered in all of the glory only a PC could manage."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "GTA 6 PC release planned for early 2027, report claims, which could mean we're playing in time for GTA Online 2: Vice City 4 U or whatever they call it Luci-ya sooner than expected Image credit: Rockstar Games News by Mark Warren Senior Staff Writer Published on Oct.",
+          "quote": "GTA 6 PC release planned for early 2027, report claims, which could mean we're playing in time for GTA Online 2: Vice City 4 U or whatever they call it Luci-ya sooner than expected Image credit: Rockstar Games News by Mark Warren Senior Staff Writer Published on Oct."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "rawId": "ign-a572af21de73",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/gta-6-reportedly-set-for-pc-q1-2027",
+  "published": "2026-10-13",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/08/27/gta-6-gameplay-blog-1787861652027.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-13T21:47:29.679Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images The PC launch may tie into the release of GTA 6's multiplayer mode, which fans are calling GTA Online 2 while they wait for official word from Rockstar.",
+          "quote": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images The PC launch may tie into the release of GTA 6's multiplayer mode, which fans are calling GTA Online 2 while they wait for official word from Rockstar."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images The PC launch may tie into the release of GTA 6's multiplayer mode, which fans are calling GTA Online 2 while they wait for official word from Rockstar.",
+          "quote": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images The PC launch may tie into the release of GTA 6's multiplayer mode, which fans are calling GTA Online 2 while they wait for official word from Rockstar."
+        }
+      ]
+    }
+  ]
+}

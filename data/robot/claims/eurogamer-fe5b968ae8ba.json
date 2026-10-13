@@ -1,0 +1,32 @@
+{
+  "rawId": "eurogamer-fe5b968ae8ba",
+  "outlet": "Eurogamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.eurogamer.net/snl-elon-musk-wario-skit-zelda-gta-6",
+  "published": "2026-10-13",
+  "ogImage": "https://assetsio.gnwcdn.com/musk-wario.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-10-13T21:47:10.161Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Weekend Update: Legend of Zelda's Link and Grand Theft Auto's Jason on Their Competing Video Games SNL's latest Nintendo-related sketch.",
+          "quote": "Weekend Update: Legend of Zelda's Link and Grand Theft Auto's Jason on Their Competing Video Games SNL's latest Nintendo-related sketch."
+        },
+        {
+          "fact": "GTA 6 sketch, Link and Jason - main characters in their respective games - argue about whose game is best.",
+          "quote": "GTA 6 sketch, Link and Jason - main characters in their respective games - argue about whose game is best."
+        }
+      ]
+    }
+  ]
+}

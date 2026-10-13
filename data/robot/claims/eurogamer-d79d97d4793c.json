@@ -1,0 +1,25 @@
+{
+  "rawId": "eurogamer-d79d97d4793c",
+  "outlet": "Eurogamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.eurogamer.net/dan-houser-gta-3-boxart-9-11",
+  "published": "2026-10-13",
+  "ogImage": "https://assetsio.gnwcdn.com/gta-3-boxart-houser.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-10-13T21:47:03.662Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "\"I don't know that I care,\" he responded when asked about the fact that Sony plans to scrap physical discs from January 20-28 onwards, \"but if people want that, companies should provide it.",
+          "quote": "\"I don't know that I care,\" he responded when asked about the fact that Sony plans to scrap physical discs from January 20-28 onwards, \"but if people want that, companies should provide it."
+        }
+      ]
+    }
+  ]
+}

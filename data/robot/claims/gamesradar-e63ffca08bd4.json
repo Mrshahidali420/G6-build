@@ -1,0 +1,29 @@
+{
+  "rawId": "gamesradar-e63ffca08bd4",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-is-coming-to-pc-in-just-a-few-months-according-to-new-report-with-rockstar-moving-much-faster-than-it-did-with-gta-5-and-red-dead-redemption-2/",
+  "published": "2026-10-13",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/rkoPCUnriArWrQrGgmnV4n-1920-80.jpg",
+  "extractedAt": "2026-10-13T21:47:16.669Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        },
+        {
+          "fact": "Everyone is expecting GTA 6 to be the biggest launch of all time, and I'd wager Rockstar doesn't want to lose out on any potential buyers who are happy to wait an extra four months.",
+          "quote": "Everyone is expecting GTA 6 to be the biggest launch of all time, and I'd wager Rockstar doesn't want to lose out on any potential buyers who are happy to wait an extra four months."
+        }
+      ]
+    }
+  ]
+}

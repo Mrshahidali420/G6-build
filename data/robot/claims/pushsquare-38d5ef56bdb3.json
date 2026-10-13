@@ -1,0 +1,51 @@
+{
+  "rawId": "pushsquare-38d5ef56bdb3",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/10/rumour-gta-6-will-be-ported-to-pc-in-record-time-following-its-debut-on-ps5",
+  "published": "2026-10-13",
+  "ogImage": "https://images.pushsquare.com/718062c24916f/1280x720.jpg",
+  "extractedAt": "2026-10-13T21:47:42.689Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "It's like saying \"uh oh, it's slightly raining and I don't want to get wet.",
+          "quote": "It's like saying \"uh oh, it's slightly raining and I don't want to get wet."
+        },
+        {
+          "fact": "It's not the kind of game that needs Mods, I'd rather honor the developer's original vision but when it comes to performance I do want to try with a higher frame-rate, either way I can see a PC release leading to the most pirated game in history.",
+          "quote": "It's not the kind of game that needs Mods, I'd rather honor the developer's original vision but when it comes to performance I do want to try with a higher frame-rate, either way I can see a PC release leading to the most pirated game in history."
+        },
+        {
+          "fact": "Obviously not everyone on PC steals games, that's an unfair portrayal, I still want to see the numbers.",
+          "quote": "Obviously not everyone on PC steals games, that's an unfair portrayal, I still want to see the numbers."
+        }
+      ]
+    },
+    {
+      "entityType": "gameplay_feature",
+      "name": "Scuba Diving and Underwater Exploration",
+      "altNames": [
+        "swimming",
+        "diving",
+        "underwater gameplay"
+      ],
+      "slug": "scuba-diving-underwater-exploration",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Better hide from the rain by diving into this lake\".",
+          "quote": "Better hide from the rain by diving into this lake\"."
+        }
+      ]
+    }
+  ]
+}

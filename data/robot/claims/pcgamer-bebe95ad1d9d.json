@@ -1,0 +1,43 @@
+{
+  "rawId": "pcgamer-bebe95ad1d9d",
+  "outlet": "PC Gamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-leaker-threatens-take-two-with-a-dead-mans-switch/",
+  "published": "2026-10-14",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/tyqmjkGus5BdAHKYoPzkw8-2560-80.jpg",
+  "extractedAt": "2026-10-14T20:33:10.884Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "weapon",
+      "name": "Grenade",
+      "altNames": [],
+      "slug": "grenade",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "But just as the good guys (or bad guys) are about to pounce, he holds up the pin he's pulled from the grenade under his coat, forcing everyone to back off!",
+          "quote": "But just as the good guys (or bad guys) are about to pounce, he holds up the pin he's pulled from the grenade under his coat, forcing everyone to back off!"
+        },
+        {
+          "fact": "Miles Dyson, for instance, blew up Cyberdyne Systems with an improvised dead man's switch in Terminator 2 (not that it did much good) and Roger Murtaugh did the literal grenade-pin thing in Lethal Weapon while trying to save his daughter from Shadow Company goons.",
+          "quote": "Miles Dyson, for instance, blew up Cyberdyne Systems with an improvised dead man's switch in Terminator 2 (not that it did much good) and Roger Murtaugh did the literal grenade-pin thing in Lethal Weapon while trying to save his daughter from Shadow Company goons."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "rawId": "pushsquare-eaba90b04c25",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/10/gta-6-tech-will-help-create-the-next-rockstar-game-wont-be-another-8-year-wait",
+  "published": "2026-10-14",
+  "ogImage": "https://images.pushsquare.com/80146bddf7814/1280x720.jpg",
+  "extractedAt": "2026-10-14T20:33:23.829Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "0 17 Americansamurai1 6 hours ago I just want a bully 2, but won't happen lol 0 18 ChikaBambus 5 hours ago Rumours have it that they're going back to L.A Noire next, which I hope is true, as the game is fantastic and I can't imagine how good a sequel would be with their latest tech.",
+          "quote": "0 17 Americansamurai1 6 hours ago I just want a bully 2, but won't happen lol 0 18 ChikaBambus 5 hours ago Rumours have it that they're going back to L.A Noire next, which I hope is true, as the game is fantastic and I can't imagine how good a sequel would be with their latest tech."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Phil",
+      "altNames": [],
+      "slug": "phil",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Speaking to Bloomberg , development heads Phil Hooker and Aaron Garburt \"vow\" the next Rockstar game will not take another eight years to make, as has been the gap between Red Dead Redemption 2 and GTA 6.",
+          "quote": "Speaking to Bloomberg , development heads Phil Hooker and Aaron Garburt \"vow\" the next Rockstar game will not take another eight years to make, as has been the gap between Red Dead Redemption 2 and GTA 6."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In the PS2 heyday, it had a new game every year, with Manhunt , Bully , and Midnight Club breaking up the GTA entries of III , Vice City , and San Andreas .",
+          "quote": "In the PS2 heyday, it had a new game every year, with Manhunt , Bully , and Midnight Club breaking up the GTA entries of III , Vice City , and San Andreas ."
+        }
+      ]
+    }
+  ]
+}

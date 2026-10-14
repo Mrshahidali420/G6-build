@@ -1,0 +1,63 @@
+{
+  "rawId": "gamesradar-b241cf884cfc",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/as-if-you-needed-another-reminder-of-why-gta-6-took-so-long-it-has-a-realistic-sweat-system-that-makes-jason-and-lucia-perspire-based-on-how-hard-they-dance/",
+  "published": "2026-10-14",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/zUQBmENHDXBKMyzonNoPrm-1920-80.jpg",
+  "extractedAt": "2026-10-14T20:32:12.340Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Earlier today, Bloomberg's Jason Schreier published an extended report on GTA 6's development, confirming that it was once meant to feature a more extensive open world spread across North and South America .",
+          "quote": "Earlier today, Bloomberg's Jason Schreier published an extended report on GTA 6's development, confirming that it was once meant to feature a more extensive open world spread across North and South America ."
+        },
+        {
+          "fact": "\"They told me that they have a specific system in the game that will make it so Lucia, Jason, or whoever will exert different amounts of sweat depending on how much effort they're putting in,\" Schreier says in a YouTube video published alongside the report.",
+          "quote": "\"They told me that they have a specific system in the game that will make it so Lucia, Jason, or whoever will exert different amounts of sweat depending on how much effort they're putting in,\" Schreier says in a YouTube video published alongside the report."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "\"They told me that they have a specific system in the game that will make it so Lucia, Jason, or whoever will exert different amounts of sweat depending on how much effort they're putting in,\" Schreier says in a YouTube video published alongside the report.",
+          "quote": "\"They told me that they have a specific system in the game that will make it so Lucia, Jason, or whoever will exert different amounts of sweat depending on how much effort they're putting in,\" Schreier says in a YouTube video published alongside the report."
+        }
+      ]
+    }
+  ]
+}

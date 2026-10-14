@@ -1,0 +1,81 @@
+{
+  "rawId": "ign-491f2b1e8a82",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/gta-6-leaker-releases-new-gameplay-video-showing-snippets-of-the-final-missions-declares-the-end-of-the-road-after-crypto-scheme-collapses",
+  "published": "2026-10-14",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/10/14/ultimate-edition-01-1791982031487.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-14T20:32:18.777Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images Yesterday, we reported on how GTA 6 fans were celebrating the crash of the Cyberleek memecoin after the leaker had tied various types of gameplay leaks to its market cap, ranging from $5 million to $25 million.",
+          "quote": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images Yesterday, we reported on how GTA 6 fans were celebrating the crash of the Cyberleek memecoin after the leaker had tied various types of gameplay leaks to its market cap, ranging from $5 million to $25 million."
+        },
+        {
+          "fact": "Earlier this week, IGN reported on fan skepticism around the alleged leaked gameplay that reportedly showed both Jason and Lucia fully naked .",
+          "quote": "Earlier this week, IGN reported on fan skepticism around the alleged leaked gameplay that reportedly showed both Jason and Lucia fully naked ."
+        },
+        {
+          "fact": "The leaked videos allegedly showing both Jason and Lucia fully naked also show NPCs failing to react to nudity in any way, which suggests this effect was achieved with either a dev menu or cheats and won’t be possible in the official release.",
+          "quote": "The leaked videos allegedly showing both Jason and Lucia fully naked also show NPCs failing to react to nudity in any way, which suggests this effect was achieved with either a dev menu or cheats and won’t be possible in the official release."
+        },
+        {
+          "fact": "One theory is that Cyberleak was able to access this state for both Lucia and Jason because in at least one mission players will see both characters naked, perhaps in a nudist resort.",
+          "quote": "One theory is that Cyberleak was able to access this state for both Lucia and Jason because in at least one mission players will see both characters naked, perhaps in a nudist resort."
+        },
+        {
+          "fact": "But Cyberleek reemerged last week with the release of a 24-minute GTA 6 gameplay video that reportedly showed cutscenes, story beats, playable characters Jason and Lucia naked (in the case of Jason, full-frontal nudity), and a first-person camera.",
+          "quote": "But Cyberleek reemerged last week with the release of a 24-minute GTA 6 gameplay video that reportedly showed cutscenes, story beats, playable characters Jason and Lucia naked (in the case of Jason, full-frontal nudity), and a first-person camera."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images Yesterday, we reported on how GTA 6 fans were celebrating the crash of the Cyberleek memecoin after the leaker had tied various types of gameplay leaks to its market cap, ranging from $5 million to $25 million.",
+          "quote": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images Yesterday, we reported on how GTA 6 fans were celebrating the crash of the Cyberleek memecoin after the leaker had tied various types of gameplay leaks to its market cap, ranging from $5 million to $25 million."
+        },
+        {
+          "fact": "Earlier this week, a number of gameplay clips were reportedly leaked after market cap goals were hit, including gameplay that allegedly shows Lucia fully naked, and, more recently, the alleged leak of a “Lucia closeup 4k” video.",
+          "quote": "Earlier this week, a number of gameplay clips were reportedly leaked after market cap goals were hit, including gameplay that allegedly shows Lucia fully naked, and, more recently, the alleged leak of a “Lucia closeup 4k” video."
+        },
+        {
+          "fact": "Earlier this week, IGN reported on fan skepticism around the alleged leaked gameplay that reportedly showed both Jason and Lucia fully naked .",
+          "quote": "Earlier this week, IGN reported on fan skepticism around the alleged leaked gameplay that reportedly showed both Jason and Lucia fully naked ."
+        },
+        {
+          "fact": "The leaked videos allegedly showing both Jason and Lucia fully naked also show NPCs failing to react to nudity in any way, which suggests this effect was achieved with either a dev menu or cheats and won’t be possible in the official release.",
+          "quote": "The leaked videos allegedly showing both Jason and Lucia fully naked also show NPCs failing to react to nudity in any way, which suggests this effect was achieved with either a dev menu or cheats and won’t be possible in the official release."
+        },
+        {
+          "fact": "One theory is that Cyberleak was able to access this state for both Lucia and Jason because in at least one mission players will see both characters naked, perhaps in a nudist resort.",
+          "quote": "One theory is that Cyberleak was able to access this state for both Lucia and Jason because in at least one mission players will see both characters naked, perhaps in a nudist resort."
+        },
+        {
+          "fact": "But Cyberleek reemerged last week with the release of a 24-minute GTA 6 gameplay video that reportedly showed cutscenes, story beats, playable characters Jason and Lucia naked (in the case of Jason, full-frontal nudity), and a first-person camera.",
+          "quote": "But Cyberleek reemerged last week with the release of a 24-minute GTA 6 gameplay video that reportedly showed cutscenes, story beats, playable characters Jason and Lucia naked (in the case of Jason, full-frontal nudity), and a first-person camera."
+        }
+      ]
+    }
+  ]
+}

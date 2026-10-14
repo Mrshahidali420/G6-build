@@ -1,0 +1,41 @@
+{
+  "rawId": "vgc-e0c8b2c8ba85",
+  "outlet": "VGC",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.videogameschronicle.com/news/rockstar-says-its-next-game-after-grand-theft-auto-6-wont-take-another-eight-years-to-make/",
+  "published": "2026-10-14",
+  "ogImage": "https://www.videogameschronicle.com/files/2026/09/gta-6-pic1.jpg",
+  "extractedAt": "2026-10-14T20:33:43.344Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Phil",
+      "altNames": [],
+      "slug": "phil",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In a new interview with Bloomberg , however, studio heads Phil Hooker and Aaron Garbut say the wait for Rockstar’s next game won’t be as long as the wait for GTA 6.",
+          "quote": "In a new interview with Bloomberg , however, studio heads Phil Hooker and Aaron Garbut say the wait for Rockstar’s next game won’t be as long as the wait for GTA 6."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "But now it’s done, and we’re not going to rip it apart.” The publication likens this to the release of Grand Theft Auto Vice City, which was released just one year after Grand Theft Auto 3 because all the groundwork had been laid while developing that game.",
+          "quote": "But now it’s done, and we’re not going to rip it apart.” The publication likens this to the release of Grand Theft Auto Vice City, which was released just one year after Grand Theft Auto 3 because all the groundwork had been laid while developing that game."
+        }
+      ]
+    }
+  ]
+}

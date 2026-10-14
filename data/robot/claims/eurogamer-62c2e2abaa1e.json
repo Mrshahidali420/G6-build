@@ -1,0 +1,63 @@
+{
+  "rawId": "eurogamer-62c2e2abaa1e",
+  "outlet": "Eurogamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.eurogamer.net/gta-6-cyberleek-ending-crypto-coin-crash",
+  "published": "2026-10-14",
+  "ogImage": "https://assetsio.gnwcdn.com/gta-6-jason_9MumaLo.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-10-14T20:31:00.760Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Still, the footage is best avoided if you want to jump into the game fresh.",
+          "quote": "Still, the footage is best avoided if you want to jump into the game fresh."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The coin has crashed in recent weeks after a major bump that coincided with the release of leaked footage showing co-protagonist Lucia fully naked , shortly after they released footage of co-protagonist Jason also nude .",
+          "quote": "The coin has crashed in recent weeks after a major bump that coincided with the release of leaked footage showing co-protagonist Lucia fully naked , shortly after they released footage of co-protagonist Jason also nude ."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "GTA 6 leaker's latest video allegedly shows scenes from the final mission, as they indicate the leaks may have come to an end At a Lucia end.",
+          "quote": "GTA 6 leaker's latest video allegedly shows scenes from the final mission, as they indicate the leaks may have come to an end At a Lucia end."
+        },
+        {
+          "fact": "The coin has crashed in recent weeks after a major bump that coincided with the release of leaked footage showing co-protagonist Lucia fully naked , shortly after they released footage of co-protagonist Jason also nude .",
+          "quote": "The coin has crashed in recent weeks after a major bump that coincided with the release of leaked footage showing co-protagonist Lucia fully naked , shortly after they released footage of co-protagonist Jason also nude ."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "rawId": "gamesradar-9155b8fa1c0c",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-took-13-years-but-gta-7-wont-rockstar-says-the-tools-and-the-team-weve-built-during-this-project-will-allow-us-to-do-things-more-quickly-in-the-future/",
+  "published": "2026-10-14",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/cHsymK6EjRzsMKSCatzjiA-2000-80.jpg",
+  "extractedAt": "2026-10-14T20:32:05.828Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Phil",
+      "altNames": [],
+      "slug": "phil",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Phil Hooker, technical director at Rockstar, tells Bloomberg as much during a new interview, explaining that the foundation developers have built while creating GTA 6 - an entry that's arriving over a decade after predecessor GTA 5 launched back in 2013 - will help them work more efficiently on any future projects, like Grand Theft Auto 7.",
+          "quote": "Phil Hooker, technical director at Rockstar, tells Bloomberg as much during a new interview, explaining that the foundation developers have built while creating GTA 6 - an entry that's arriving over a decade after predecessor GTA 5 launched back in 2013 - will help them work more efficiently on any future projects, like Grand Theft Auto 7."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Latest Videos From GamesRadar+ Watch full video here: There's no telling what \"things\" Rockstar will do \"more quickly,\" whether that's GTA 7 or a smaller spin-off like Vice City, which was created in under a year after GTA 3 itself, but it's good news regardless.",
+          "quote": "Latest Videos From GamesRadar+ Watch full video here: There's no telling what \"things\" Rockstar will do \"more quickly,\" whether that's GTA 7 or a smaller spin-off like Vice City, which was created in under a year after GTA 3 itself, but it's good news regardless."
+        }
+      ]
+    }
+  ]
+}

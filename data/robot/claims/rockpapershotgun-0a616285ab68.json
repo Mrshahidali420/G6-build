@@ -1,0 +1,25 @@
+{
+  "rawId": "rockpapershotgun-0a616285ab68",
+  "outlet": "Rock Paper Shotgun",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.rockpapershotgun.com/rockstar-union-busting-tribunal-extended-to-november-18th-meaning-it-will-close-just-days-before-gta-6s-release-date",
+  "published": "2026-10-14",
+  "ogImage": "https://assetsio.gnwcdn.com/gta-6-jason-lucia-relationship.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-10-14T20:33:30.338Z",
+  "entities": [
+    {
+      "entityType": "vehicle",
+      "name": "Benson",
+      "altNames": [],
+      "slug": "benson",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Rockstar 'union busting' tribunal extended to November 18th, days before GTA 6's release date More time for questioning Image credit: Rockstar News by Julian Benson Editorial Director Published on Oct.",
+          "quote": "Rockstar 'union busting' tribunal extended to November 18th, days before GTA 6's release date More time for questioning Image credit: Rockstar News by Julian Benson Editorial Director Published on Oct."
+        }
+      ]
+    }
+  ]
+}

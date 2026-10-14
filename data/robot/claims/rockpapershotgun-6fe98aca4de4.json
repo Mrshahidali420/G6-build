@@ -1,0 +1,25 @@
+{
+  "rawId": "rockpapershotgun-6fe98aca4de4",
+  "outlet": "Rock Paper Shotgun",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.rockpapershotgun.com/rockstar-are-confident-that-gta-7-wont-take-another-eight-years-despite-similar-promises-of-greater-efficiency-seemingly-having-come-with-red-dead-redemption-2",
+  "published": "2026-10-14",
+  "ogImage": "https://assetsio.gnwcdn.com/Jason_and_Lucia_11.13lmeyci.i-yw.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-10-14T20:33:36.852Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Phil",
+      "altNames": [],
+      "slug": "phil",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Phil Hooker, one of three veteran Rockstar developers who've served as heads of development on the new Impressive Nicking Vehicles, has asserted as much to Bloomberg as part of a lengthy article on the making of the game.",
+          "quote": "Phil Hooker, one of three veteran Rockstar developers who've served as heads of development on the new Impressive Nicking Vehicles, has asserted as much to Bloomberg as part of a lengthy article on the making of the game."
+        }
+      ]
+    }
+  ]
+}

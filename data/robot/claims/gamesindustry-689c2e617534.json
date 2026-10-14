@@ -1,0 +1,25 @@
+{
+  "rawId": "gamesindustry-689c2e617534",
+  "outlet": "GamesIndustry.biz",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesindustry.biz/rockstars-next-game-wont-take-eight-years-to-make-the-engine-the-tools-and-the-team-weve-built-during-gta-6-will-allow-us-to-do-things-more-quickly",
+  "published": "2026-10-14",
+  "ogImage": "https://assetsio.gnwcdn.com/gta-lucia-jason-(1).webp?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-10-14T20:31:20.253Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Phil",
+      "altNames": [],
+      "slug": "phil",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Rockstar's leadership stated that future games will be developed more quickly, as GTA 6 \"is a foundation upon which they can build new content at a faster pace.\" \"The engine, the tools and the team we've built during this project will allow us to do things more quickly,\" said co-head of development Phil Hooker.",
+          "quote": "Rockstar's leadership stated that future games will be developed more quickly, as GTA 6 \"is a foundation upon which they can build new content at a faster pace.\" \"The engine, the tools and the team we've built during this project will allow us to do things more quickly,\" said co-head of development Phil Hooker."
+        }
+      ]
+    }
+  ]
+}

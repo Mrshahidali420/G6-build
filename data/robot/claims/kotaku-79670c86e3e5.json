@@ -1,0 +1,45 @@
+{
+  "rawId": "kotaku-79670c86e3e5",
+  "outlet": "Kotaku",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://kotaku.com/gta-6-leaker-announces-they-wont-leak-the-full-game-the-leeks-stop-for-now-2000745917",
+  "published": "2026-10-14",
+  "ogImage": "https://kotaku.com/app/uploads/2026/08/gta-6-top-art-1200x675.jpg",
+  "extractedAt": "2026-10-14T20:32:44.807Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "However, earlier this month, Cyberleek returned with new leaked gameplay featuring both Jason and Lucia naked.",
+          "quote": "However, earlier this month, Cyberleek returned with new leaked gameplay featuring both Jason and Lucia naked."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "However, earlier this month, Cyberleek returned with new leaked gameplay featuring both Jason and Lucia naked.",
+          "quote": "However, earlier this month, Cyberleek returned with new leaked gameplay featuring both Jason and Lucia naked."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "rawId": "eurogamer-c98cdc696d68",
+  "outlet": "Eurogamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.eurogamer.net/gta-6-project-americas-rockstar-crunch-delays-leaks",
+  "published": "2026-10-14",
+  "ogImage": "https://assetsio.gnwcdn.com/Jason_and_Lucia_11.13lmeyci.i-yw.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-10-14T20:31:07.216Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Anytime I say we haven't crunched, someone is going to say, 'I did.' And I don't want to get into arguments with individual teams or individual people.",
+          "quote": "Anytime I say we haven't crunched, someone is going to say, 'I did.' And I don't want to get into arguments with individual teams or individual people."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "By 2019, Rockstar had the skeleton of GTA 6 and the dual-protagonist hook of Jason and Lucia living their crime fantasy together, but the more granular details and mechanical intricacies of the game took longer, especially when the Covid-19 pandemic hit, forcing people to work from home.",
+          "quote": "By 2019, Rockstar had the skeleton of GTA 6 and the dual-protagonist hook of Jason and Lucia living their crime fantasy together, but the more granular details and mechanical intricacies of the game took longer, especially when the Covid-19 pandemic hit, forcing people to work from home."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "By 2019, Rockstar had the skeleton of GTA 6 and the dual-protagonist hook of Jason and Lucia living their crime fantasy together, but the more granular details and mechanical intricacies of the game took longer, especially when the Covid-19 pandemic hit, forcing people to work from home.",
+          "quote": "By 2019, Rockstar had the skeleton of GTA 6 and the dual-protagonist hook of Jason and Lucia living their crime fantasy together, but the more granular details and mechanical intricacies of the game took longer, especially when the Covid-19 pandemic hit, forcing people to work from home."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Phil",
+      "altNames": [],
+      "slug": "phil",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Rockstar co-founder Dan Houser, who'd written many of the previous GTA games, also left the company, prompting promotions for Nelson, Aaron Garbut, and Phil Hooker, who stepped into head of development roles.",
+          "quote": "Rockstar co-founder Dan Houser, who'd written many of the previous GTA games, also left the company, prompting promotions for Nelson, Aaron Garbut, and Phil Hooker, who stepped into head of development roles."
+        },
+        {
+          "fact": "The article closed with Rockstar vowing its next release wouldn't take another eight years because \"the engine, the tools and the team we've built during this project will allow us to do things more quickly\", Phil Hooker said.",
+          "quote": "The article closed with Rockstar vowing its next release wouldn't take another eight years because \"the engine, the tools and the team we've built during this project will allow us to do things more quickly\", Phil Hooker said."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "rawId": "gamesradar-2a08b906546a",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/please-tell-me-youre-kidding-gta-6s-two-delays-flabbergasted-take-two-ceo-strauss-zelnick-but-he-was-reasonable-with-rockstar/",
+  "published": "2026-10-14",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/bLtUs6LgTf9GGRQjo5u4qU-1920-80.jpg",
+  "extractedAt": "2026-10-14T20:31:33.314Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    }
+  ]
+}

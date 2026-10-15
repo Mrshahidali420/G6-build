@@ -1,0 +1,87 @@
+{
+  "rawId": "pushsquare-8625c477e09b",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/10/gta-6-launch-trailer-available-to-watch-right-now-captured-on-ps5",
+  "published": "2026-10-15",
+  "ogImage": "https://images.pushsquare.com/a75418d98eccc/1280x720.jpg",
+  "extractedAt": "2026-10-15T20:29:59.074Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "2 3 scottdevine48 7 hours ago I still want the disc version.",
+          "quote": "2 3 scottdevine48 7 hours ago I still want the disc version."
+        },
+        {
+          "fact": "It's a video game, so it can be anything they want it to be.",
+          "quote": "It's a video game, so it can be anything they want it to be."
+        },
+        {
+          "fact": "I genuinely want the game to be good, and I will play it if it is, but wanting a game to be good, and it being good are not necessarily the same thing.",
+          "quote": "I genuinely want the game to be good, and I will play it if it is, but wanting a game to be good, and it being good are not necessarily the same thing."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "GTA 6 just continues to look fantastic, with cinematic shots, mad action set-pieces, and the relationship between Jason and Lucia being the core focus.",
+          "quote": "GTA 6 just continues to look fantastic, with cinematic shots, mad action set-pieces, and the relationship between Jason and Lucia being the core focus."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "GTA 6 just continues to look fantastic, with cinematic shots, mad action set-pieces, and the relationship between Jason and Lucia being the core focus.",
+          "quote": "GTA 6 just continues to look fantastic, with cinematic shots, mad action set-pieces, and the relationship between Jason and Lucia being the core focus."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Can't wait to jump into vice city and loose the rest of november to it.",
+          "quote": "Can't wait to jump into vice city and loose the rest of november to it."
+        },
+        {
+          "fact": "Perfectly captures the Vice City aesthetic 1 15 playstation1995 6 hours ago I just watch that trailer bon my 4k. tv 📺 and wow it looks excellent.",
+          "quote": "Perfectly captures the Vice City aesthetic 1 15 playstation1995 6 hours ago I just watch that trailer bon my 4k. tv 📺 and wow it looks excellent."
+        }
+      ]
+    }
+  ]
+}

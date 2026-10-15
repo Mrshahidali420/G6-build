@@ -1,0 +1,158 @@
+{
+  "rawId": "ign-20534deb2308",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/gta-6-launch-trailer-teases-jasons-troubled-past-a-steamy-shower-scene-with-lucia-and-much-more",
+  "published": "2026-10-15",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/10/15/gta-1792069832506.png?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-15T20:28:34.512Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Brian Heder",
+      "altNames": [
+        "Brian",
+        "Heder"
+      ],
+      "slug": "brian-heder",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "They don't give loans or anything to people like me.\" We see a bearded Jason working at Brian's Marina, buffing a boat before he receives a call from Lucia Caminos.",
+          "quote": "They don't give loans or anything to people like me.\" We see a bearded Jason working at Brian's Marina, buffing a boat before he receives a call from Lucia Caminos."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Back To Top Home › News › GTA 6 GTA 6 Launch Trailer Teases Jason's Troubled Past, a Steamy Shower Scene With Lucia, and Much More Tag, you're it.",
+          "quote": "Back To Top Home › News › GTA 6 GTA 6 Launch Trailer Teases Jason's Troubled Past, a Steamy Shower Scene With Lucia, and Much More Tag, you're it."
+        },
+        {
+          "fact": "By Wesley Yin-Poole Updated : Oct 15, 2026 2:00pm UTC 95 comments Add IGN on Google Rockstar has released the launch trailer for GTA 6 , which shows us brand new footage of Jason and Lucia as well as the open world.",
+          "quote": "By Wesley Yin-Poole Updated : Oct 15, 2026 2:00pm UTC 95 comments Add IGN on Google Rockstar has released the launch trailer for GTA 6 , which shows us brand new footage of Jason and Lucia as well as the open world."
+        },
+        {
+          "fact": "The trailer, which weighs in at 1:30, touches on Jason's troubled past, which involved leaving the army not on the best of terms.",
+          "quote": "The trailer, which weighs in at 1:30, touches on Jason's troubled past, which involved leaving the army not on the best of terms."
+        },
+        {
+          "fact": "The trailer confirms the footage was \"captured on PS5.\" The trailer begins with some narration from Jason.",
+          "quote": "The trailer confirms the footage was \"captured on PS5.\" The trailer begins with some narration from Jason."
+        },
+        {
+          "fact": "They don't give loans or anything to people like me.\" We see a bearded Jason working at Brian's Marina, buffing a boat before he receives a call from Lucia Caminos.",
+          "quote": "They don't give loans or anything to people like me.\" We see a bearded Jason working at Brian's Marina, buffing a boat before he receives a call from Lucia Caminos."
+        },
+        {
+          "fact": "Presumably this is the call Jason gets to pick up Lucia from prison.",
+          "quote": "Presumably this is the call Jason gets to pick up Lucia from prison."
+        },
+        {
+          "fact": "We're shown what look like flashbacks to Jason's time in the army, where he appears to have been in the special forces.",
+          "quote": "We're shown what look like flashbacks to Jason's time in the army, where he appears to have been in the special forces."
+        },
+        {
+          "fact": "But these scenes could easily be set in the \"present,\" rather than the past, with Jason gearing up for, perhaps, a police operation.",
+          "quote": "But these scenes could easily be set in the \"present,\" rather than the past, with Jason gearing up for, perhaps, a police operation."
+        },
+        {
+          "fact": "Either way, it explains why Jason is so handy with a gun.",
+          "quote": "Either way, it explains why Jason is so handy with a gun."
+        },
+        {
+          "fact": "We're then treated to various shots showing Jason and Lucia getting up to no good across Vice City, with glimpses of that steamy shower scene.",
+          "quote": "We're then treated to various shots showing Jason and Lucia getting up to no good across Vice City, with glimpses of that steamy shower scene."
+        },
+        {
+          "fact": "\"Are we gonna be okay?\" Lucia asks Jason after yet more explosive shots.",
+          "quote": "\"Are we gonna be okay?\" Lucia asks Jason after yet more explosive shots."
+        },
+        {
+          "fact": "Jason and Lucia have always known the deck is stacked against them.",
+          "quote": "Jason and Lucia have always known the deck is stacked against them."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Back To Top Home › News › GTA 6 GTA 6 Launch Trailer Teases Jason's Troubled Past, a Steamy Shower Scene With Lucia, and Much More Tag, you're it.",
+          "quote": "Back To Top Home › News › GTA 6 GTA 6 Launch Trailer Teases Jason's Troubled Past, a Steamy Shower Scene With Lucia, and Much More Tag, you're it."
+        },
+        {
+          "fact": "By Wesley Yin-Poole Updated : Oct 15, 2026 2:00pm UTC 95 comments Add IGN on Google Rockstar has released the launch trailer for GTA 6 , which shows us brand new footage of Jason and Lucia as well as the open world.",
+          "quote": "By Wesley Yin-Poole Updated : Oct 15, 2026 2:00pm UTC 95 comments Add IGN on Google Rockstar has released the launch trailer for GTA 6 , which shows us brand new footage of Jason and Lucia as well as the open world."
+        },
+        {
+          "fact": "We see snippets of a steamy shower scene with Lucia, who is wearing an ankle tag, and plenty of explosive open-world action.",
+          "quote": "We see snippets of a steamy shower scene with Lucia, who is wearing an ankle tag, and plenty of explosive open-world action."
+        },
+        {
+          "fact": "They don't give loans or anything to people like me.\" We see a bearded Jason working at Brian's Marina, buffing a boat before he receives a call from Lucia Caminos.",
+          "quote": "They don't give loans or anything to people like me.\" We see a bearded Jason working at Brian's Marina, buffing a boat before he receives a call from Lucia Caminos."
+        },
+        {
+          "fact": "Presumably this is the call Jason gets to pick up Lucia from prison.",
+          "quote": "Presumably this is the call Jason gets to pick up Lucia from prison."
+        },
+        {
+          "fact": "We're then treated to various shots showing Jason and Lucia getting up to no good across Vice City, with glimpses of that steamy shower scene.",
+          "quote": "We're then treated to various shots showing Jason and Lucia getting up to no good across Vice City, with glimpses of that steamy shower scene."
+        },
+        {
+          "fact": "The shot of Lucia wearing an ankle tag could hint at initial restrictions to exploration, as more of the world is opened up during progression through the story, but that's speculation.",
+          "quote": "The shot of Lucia wearing an ankle tag could hint at initial restrictions to exploration, as more of the world is opened up during progression through the story, but that's speculation."
+        },
+        {
+          "fact": "\"Are we gonna be okay?\" Lucia asks Jason after yet more explosive shots.",
+          "quote": "\"Are we gonna be okay?\" Lucia asks Jason after yet more explosive shots."
+        },
+        {
+          "fact": "Jason and Lucia have always known the deck is stacked against them.",
+          "quote": "Jason and Lucia have always known the deck is stacked against them."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "We're then treated to various shots showing Jason and Lucia getting up to no good across Vice City, with glimpses of that steamy shower scene.",
+          "quote": "We're then treated to various shots showing Jason and Lucia getting up to no good across Vice City, with glimpses of that steamy shower scene."
+        },
+        {
+          "fact": "Here's the official blurb from Rockstar on the GTA 6 launch trailer: Vice City, USA.",
+          "quote": "Here's the official blurb from Rockstar on the GTA 6 launch trailer: Vice City, USA."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "rawId": "gameinformer-edae3cf25598",
+  "outlet": "Game Informer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://gameinformer.com/2026/10/15/grand-theft-auto-vi-gets-a-final-salacious-trailer",
+  "published": "2026-10-15",
+  "ogImage": "https://gameinformer.com/sites/default/files/styles/og_image/public/2026/10/15/93318832/gtaviheaderlaunchtrialer.jpg.webp",
+  "extractedAt": "2026-10-15T20:28:08.482Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The trailer offers a little background on Jason, some insight into his and Lucia's relationship, lots of explosions, a man eating fried chicken in a very intimidating way, and hints at the physical and emotional strife the protagonist duo will be experiencing in the game.",
+          "quote": "The trailer offers a little background on Jason, some insight into his and Lucia's relationship, lots of explosions, a man eating fried chicken in a very intimidating way, and hints at the physical and emotional strife the protagonist duo will be experiencing in the game."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The trailer offers a little background on Jason, some insight into his and Lucia's relationship, lots of explosions, a man eating fried chicken in a very intimidating way, and hints at the physical and emotional strife the protagonist duo will be experiencing in the game.",
+          "quote": "The trailer offers a little background on Jason, some insight into his and Lucia's relationship, lots of explosions, a man eating fried chicken in a very intimidating way, and hints at the physical and emotional strife the protagonist duo will be experiencing in the game."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In our cover story we talked to members of Rockstar about creating the game, focusing specifically on the featured state of Leonida and its various cities, like Vice City.",
+          "quote": "In our cover story we talked to members of Rockstar about creating the game, focusing specifically on the featured state of Leonida and its various cities, like Vice City."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "State of Leonida",
+      "altNames": [],
+      "slug": "state-of-leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In our cover story we talked to members of Rockstar about creating the game, focusing specifically on the featured state of Leonida and its various cities, like Vice City.",
+          "quote": "In our cover story we talked to members of Rockstar about creating the game, focusing specifically on the featured state of Leonida and its various cities, like Vice City."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In our cover story we talked to members of Rockstar about creating the game, focusing specifically on the featured state of Leonida and its various cities, like Vice City.",
+          "quote": "In our cover story we talked to members of Rockstar about creating the game, focusing specifically on the featured state of Leonida and its various cities, like Vice City."
+        }
+      ]
+    },
+    {
+      "entityType": "song",
+      "name": "Love Is a Long Road",
+      "altNames": [],
+      "slug": "love-is-a-long-road",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Look out out for that song to break streaming records soon just as Tom Petty's \"Love Is a Long Road\" did recently after appearing in a GTAVI trailer.",
+          "quote": "Look out out for that song to break streaming records soon just as Tom Petty's \"Love Is a Long Road\" did recently after appearing in a GTAVI trailer."
+        }
+      ]
+    }
+  ]
+}

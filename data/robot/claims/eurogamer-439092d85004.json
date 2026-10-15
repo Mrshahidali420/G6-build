@@ -1,0 +1,45 @@
+{
+  "rawId": "eurogamer-439092d85004",
+  "outlet": "Eurogamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.eurogamer.net/gta-6-the-game-awards-eligibility-geoff-keighley",
+  "published": "2026-10-15",
+  "ogImage": "https://assetsio.gnwcdn.com/VINTAGE_VICE_CITY_PACK_EXCLUSIVE_LOOKS_04.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-10-15T20:28:02.034Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Meanwhile, Rockstar released a new launch trailer for GTA 6 this afternoon, highlighting Jason and Lucia's steamy relationship - literally, as they frolic in the shower - and the strain of being in a high-stakes crime environment such as theirs.",
+          "quote": "Meanwhile, Rockstar released a new launch trailer for GTA 6 this afternoon, highlighting Jason and Lucia's steamy relationship - literally, as they frolic in the shower - and the strain of being in a high-stakes crime environment such as theirs."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Meanwhile, Rockstar released a new launch trailer for GTA 6 this afternoon, highlighting Jason and Lucia's steamy relationship - literally, as they frolic in the shower - and the strain of being in a high-stakes crime environment such as theirs.",
+          "quote": "Meanwhile, Rockstar released a new launch trailer for GTA 6 this afternoon, highlighting Jason and Lucia's steamy relationship - literally, as they frolic in the shower - and the strain of being in a high-stakes crime environment such as theirs."
+        }
+      ]
+    }
+  ]
+}

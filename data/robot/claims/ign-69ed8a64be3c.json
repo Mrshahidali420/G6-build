@@ -1,0 +1,29 @@
+{
+  "rawId": "ign-69ed8a64be3c",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/activision-thinks-gta-6-will-actually-help-modern-warfare-4-no-offense-to-zelda-but-gta-and-cod-are-the-2-biggest-games-of-the-year",
+  "published": "2026-10-15",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/10/15/cod-main-1792075154642.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-15T20:28:54.015Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "2027, then, looks set for a brand new Call of Duty sub-brand. “Where we go with future games, we have to innovate,” Bahl said. “What we heard from the audience is they want new or better or different.",
+          "quote": "2027, then, looks set for a brand new Call of Duty sub-brand. “Where we go with future games, we have to innovate,” Bahl said. “What we heard from the audience is they want new or better or different."
+        },
+        {
+          "fact": "You’re seeing new games being built overnight, and you’re seeing tastes change and how people want to play.” Modern Warfare 4 kicks off tomorrow with the launch of campaign early access (check out the Call of Duty: Modern Warfare 4 global release times here ).",
+          "quote": "You’re seeing new games being built overnight, and you’re seeing tastes change and how people want to play.” Modern Warfare 4 kicks off tomorrow with the launch of campaign early access (check out the Call of Duty: Modern Warfare 4 global release times here )."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "rawId": "kotaku-0e5a431e2add",
+  "outlet": "Kotaku",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://kotaku.com/grand-theft-auto-6-new-trailer-sex-scene-jason-lucia-2000746333",
+  "published": "2026-10-15",
+  "ogImage": "https://kotaku.com/app/uploads/2026/10/gtaluciajason-1200x675.jpg",
+  "extractedAt": "2026-10-15T20:29:20.033Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Much of the new footage shows co-leads Jason and Lucia doing crimes in Vice City, but in between all the violence and debauchery, we got our first glimpse of an actual sex scene between the couple, and what we saw looks actually like a lovely, tender moment between the two in a shower.",
+          "quote": "Much of the new footage shows co-leads Jason and Lucia doing crimes in Vice City, but in between all the violence and debauchery, we got our first glimpse of an actual sex scene between the couple, and what we saw looks actually like a lovely, tender moment between the two in a shower."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Much of the new footage shows co-leads Jason and Lucia doing crimes in Vice City, but in between all the violence and debauchery, we got our first glimpse of an actual sex scene between the couple, and what we saw looks actually like a lovely, tender moment between the two in a shower.",
+          "quote": "Much of the new footage shows co-leads Jason and Lucia doing crimes in Vice City, but in between all the violence and debauchery, we got our first glimpse of an actual sex scene between the couple, and what we saw looks actually like a lovely, tender moment between the two in a shower."
+        },
+        {
+          "fact": "Then the third shot does get a little bit cheekier, as it shows Lucia’s house arrest ankle monitor, though even that can be a bit somber in the right context.",
+          "quote": "Then the third shot does get a little bit cheekier, as it shows Lucia’s house arrest ankle monitor, though even that can be a bit somber in the right context."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Much of the new footage shows co-leads Jason and Lucia doing crimes in Vice City, but in between all the violence and debauchery, we got our first glimpse of an actual sex scene between the couple, and what we saw looks actually like a lovely, tender moment between the two in a shower.",
+          "quote": "Much of the new footage shows co-leads Jason and Lucia doing crimes in Vice City, but in between all the violence and debauchery, we got our first glimpse of an actual sex scene between the couple, and what we saw looks actually like a lovely, tender moment between the two in a shower."
+        }
+      ]
+    }
+  ]
+}

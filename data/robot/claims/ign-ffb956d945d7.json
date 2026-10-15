@@ -1,0 +1,81 @@
+{
+  "rawId": "ign-ffb956d945d7",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/over-30-new-gta-6-screenshots-from-the-launch-trailer",
+  "published": "2026-10-15",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/10/15/jason-and-lucia-driving-1792074147987.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-15T20:29:13.526Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The new trailer highlights some of the more romantic and steamy moments between Jason and Lucia alongside major action setpieces, including one where someone dangles off a payload that is being flown across Vice City.",
+          "quote": "The new trailer highlights some of the more romantic and steamy moments between Jason and Lucia alongside major action setpieces, including one where someone dangles off a payload that is being flown across Vice City."
+        },
+        {
+          "fact": "We've put together a slideshow of some of the key images from the trailer, allowing you to take in some details you may have missed, such as the fact that Jason has a dog with him during one of his helicopter rides.",
+          "quote": "We've put together a slideshow of some of the key images from the trailer, allowing you to take in some details you may have missed, such as the fact that Jason has a dog with him during one of his helicopter rides."
+        },
+        {
+          "fact": "Jason and Lucia have always known the deck is stacked against them.",
+          "quote": "Jason and Lucia have always known the deck is stacked against them."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The new trailer highlights some of the more romantic and steamy moments between Jason and Lucia alongside major action setpieces, including one where someone dangles off a payload that is being flown across Vice City.",
+          "quote": "The new trailer highlights some of the more romantic and steamy moments between Jason and Lucia alongside major action setpieces, including one where someone dangles off a payload that is being flown across Vice City."
+        },
+        {
+          "fact": "Jason and Lucia have always known the deck is stacked against them.",
+          "quote": "Jason and Lucia have always known the deck is stacked against them."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The new trailer highlights some of the more romantic and steamy moments between Jason and Lucia alongside major action setpieces, including one where someone dangles off a payload that is being flown across Vice City.",
+          "quote": "The new trailer highlights some of the more romantic and steamy moments between Jason and Lucia alongside major action setpieces, including one where someone dangles off a payload that is being flown across Vice City."
+        },
+        {
+          "fact": "GTA 6 Launch Trailer Screenshots View 34 Images Here's the official blurb from Rockstar on the GTA 6 launch trailer: Vice City, USA.",
+          "quote": "GTA 6 Launch Trailer Screenshots View 34 Images Here's the official blurb from Rockstar on the GTA 6 launch trailer: Vice City, USA."
+        },
+        {
+          "fact": "On November 18, the NBA will host a GTA 6-themed regular season game in Miami with a Vice City themed court, jerseys, and in-person activations .",
+          "quote": "On November 18, the NBA will host a GTA 6-themed regular season game in Miami with a Vice City themed court, jerseys, and in-person activations ."
+        }
+      ]
+    }
+  ]
+}

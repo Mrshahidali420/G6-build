@@ -1,0 +1,49 @@
+{
+  "rawId": "ign-5f6b15565bc9",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/gta-6s-level-of-detail-is-so-extreme-rockstar-built-an-entire-scripted-system-just-for-sweat",
+  "published": "2026-10-15",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/10/15/vintage-vice-city-pack-exclusive-looks-01-1792063918538.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-15T20:28:47.506Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Similarly, the harder Jason works out, the more he’ll sweat.",
+          "quote": "Similarly, the harder Jason works out, the more he’ll sweat."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "So, in a nightclub, for example, Lucia will sweat more if she’s putting a lot of effort into dancing.",
+          "quote": "So, in a nightclub, for example, Lucia will sweat more if she’s putting a lot of effort into dancing."
+        },
+        {
+          "fact": "In the Grand Theft Auto VI: An Extended Look video released in August, we briefly see Lucia dancing in a nightclub, and there's a distinct glisten to her skin that suggests she's sweating.",
+          "quote": "In the Grand Theft Auto VI: An Extended Look video released in August, we briefly see Lucia dancing in a nightclub, and there's a distinct glisten to her skin that suggests she's sweating."
+        }
+      ]
+    }
+  ]
+}

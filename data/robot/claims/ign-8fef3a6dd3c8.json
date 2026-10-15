@@ -1,0 +1,45 @@
+{
+  "rawId": "ign-8fef3a6dd3c8",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/gta-6-will-make-the-game-awards-cutoff-date-for-eligibility-by-the-skin-of-its-teeth-confirming-it-has-a-chance-at-2026-game-of-the-year",
+  "published": "2026-10-15",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/10/15/vintage-vice-city-pack-exclusive-looks-02-1792065796840.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-15T20:29:00.515Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images Nominations for this year’s awards haven’t been announced yet, of course, but it’s hard to imagine a situation where GTA 6 doesn’t show up for most, if not all, the categories it’s eligible for.",
+          "quote": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images Nominations for this year’s awards haven’t been announced yet, of course, but it’s hard to imagine a situation where GTA 6 doesn’t show up for most, if not all, the categories it’s eligible for."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images Nominations for this year’s awards haven’t been announced yet, of course, but it’s hard to imagine a situation where GTA 6 doesn’t show up for most, if not all, the categories it’s eligible for.",
+          "quote": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images Nominations for this year’s awards haven’t been announced yet, of course, but it’s hard to imagine a situation where GTA 6 doesn’t show up for most, if not all, the categories it’s eligible for."
+        }
+      ]
+    }
+  ]
+}

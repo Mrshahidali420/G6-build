@@ -1,0 +1,45 @@
+{
+  "rawId": "rockstar-fe2ac219a413",
+  "outlet": "Rockstar Newswire",
+  "tier": "TIER_1_OFFICIAL",
+  "url": "https://www.rockstargames.com/newswire/article/517572321a549a/watch-the-grand-theft-auto-vi-launch-trailer",
+  "published": "2026-10-15",
+  "ogImage": "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/517572321a549a/0637b4bb19438399bc5b3e7bbdfe6936f79cdbf3.jpg",
+  "extractedAt": "2026-10-15T20:30:12.087Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Jason and Lucia have always known the deck is stacked against them.",
+          "quote": "Jason and Lucia have always known the deck is stacked against them."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Jason and Lucia have always known the deck is stacked against them.",
+          "quote": "Jason and Lucia have always known the deck is stacked against them."
+        }
+      ]
+    }
+  ]
+}

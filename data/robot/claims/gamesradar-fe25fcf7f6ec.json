@@ -1,0 +1,127 @@
+{
+  "rawId": "gamesradar-fe25fcf7f6ec",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-launch-trailer/",
+  "published": "2026-10-15",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/Ndx9Po2DyeMQk2zv6KgM6B-1920-80.jpg",
+  "extractedAt": "2026-10-15T20:28:27.997Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "The short trailer sees the dual protagonists, Jason and Lucia, open up about their struggles.",
+          "quote": "The short trailer sees the dual protagonists, Jason and Lucia, open up about their struggles."
+        },
+        {
+          "fact": "Jason notably sports long hair for much of the trailer; in the opening seconds, he discusses the obstacles he's faced after a less-than-glamorous military departure.",
+          "quote": "Jason notably sports long hair for much of the trailer; in the opening seconds, he discusses the obstacles he's faced after a less-than-glamorous military departure."
+        },
+        {
+          "fact": "One helicopter crashes behind an assault rifle-toting Jason, Lucia rides another through the streets with a grenade launcher in hand, and in a third sequence a chopper is shown carrying a chained load of (presumably stolen) cargo through the city like a wrecking ball, shattering a row of windows on another building.",
+          "quote": "One helicopter crashes behind an assault rifle-toting Jason, Lucia rides another through the streets with a grenade launcher in hand, and in a third sequence a chopper is shown carrying a chained load of (presumably stolen) cargo through the city like a wrecking ball, shattering a row of windows on another building."
+        },
+        {
+          "fact": "A once-again short-haired Jason emerges from a helicopter in the next shot, only to cut to him and Lucia jumping off a roof into some sort of hotel pool.",
+          "quote": "A once-again short-haired Jason emerges from a helicopter in the next shot, only to cut to him and Lucia jumping off a roof into some sort of hotel pool."
+        },
+        {
+          "fact": "\"Jason and Lucia have always known the deck is stacked against them,\" reads the video description.",
+          "quote": "\"Jason and Lucia have always known the deck is stacked against them,\" reads the video description."
+        },
+        {
+          "fact": "As if you needed another reminder of why GTA 6 took so long, it has a realistic sweat system that makes Jason and Lucia perspire based on how hard they dance .",
+          "quote": "As if you needed another reminder of why GTA 6 took so long, it has a realistic sweat system that makes Jason and Lucia perspire based on how hard they dance ."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "The short trailer sees the dual protagonists, Jason and Lucia, open up about their struggles.",
+          "quote": "The short trailer sees the dual protagonists, Jason and Lucia, open up about their struggles."
+        },
+        {
+          "fact": "Lucia is seen sporting a monitoring anklet during an intimate shower scene, and at one point wonders, \"Are we gonna be OK\" amid a storm of crime.",
+          "quote": "Lucia is seen sporting a monitoring anklet during an intimate shower scene, and at one point wonders, \"Are we gonna be OK\" amid a storm of crime."
+        },
+        {
+          "fact": "One helicopter crashes behind an assault rifle-toting Jason, Lucia rides another through the streets with a grenade launcher in hand, and in a third sequence a chopper is shown carrying a chained load of (presumably stolen) cargo through the city like a wrecking ball, shattering a row of windows on another building.",
+          "quote": "One helicopter crashes behind an assault rifle-toting Jason, Lucia rides another through the streets with a grenade launcher in hand, and in a third sequence a chopper is shown carrying a chained load of (presumably stolen) cargo through the city like a wrecking ball, shattering a row of windows on another building."
+        },
+        {
+          "fact": "A once-again short-haired Jason emerges from a helicopter in the next shot, only to cut to him and Lucia jumping off a roof into some sort of hotel pool.",
+          "quote": "A once-again short-haired Jason emerges from a helicopter in the next shot, only to cut to him and Lucia jumping off a roof into some sort of hotel pool."
+        },
+        {
+          "fact": "\"Jason and Lucia have always known the deck is stacked against them,\" reads the video description.",
+          "quote": "\"Jason and Lucia have always known the deck is stacked against them,\" reads the video description."
+        },
+        {
+          "fact": "As if you needed another reminder of why GTA 6 took so long, it has a realistic sweat system that makes Jason and Lucia perspire based on how hard they dance .",
+          "quote": "As if you needed another reminder of why GTA 6 took so long, it has a realistic sweat system that makes Jason and Lucia perspire based on how hard they dance ."
+        }
+      ]
+    },
+    {
+      "entityType": "weapon",
+      "name": "Grenade",
+      "altNames": [],
+      "slug": "grenade",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "One helicopter crashes behind an assault rifle-toting Jason, Lucia rides another through the streets with a grenade launcher in hand, and in a third sequence a chopper is shown carrying a chained load of (presumably stolen) cargo through the city like a wrecking ball, shattering a row of windows on another building.",
+          "quote": "One helicopter crashes behind an assault rifle-toting Jason, Lucia rides another through the streets with a grenade launcher in hand, and in a third sequence a chopper is shown carrying a chained load of (presumably stolen) cargo through the city like a wrecking ball, shattering a row of windows on another building."
+        }
+      ]
+    },
+    {
+      "entityType": "weapon",
+      "name": "Grenade Launcher",
+      "altNames": [],
+      "slug": "grenade-launcher",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "One helicopter crashes behind an assault rifle-toting Jason, Lucia rides another through the streets with a grenade launcher in hand, and in a third sequence a chopper is shown carrying a chained load of (presumably stolen) cargo through the city like a wrecking ball, shattering a row of windows on another building.",
+          "quote": "One helicopter crashes behind an assault rifle-toting Jason, Lucia rides another through the streets with a grenade launcher in hand, and in a third sequence a chopper is shown carrying a chained load of (presumably stolen) cargo through the city like a wrecking ball, shattering a row of windows on another building."
+        }
+      ]
+    }
+  ]
+}

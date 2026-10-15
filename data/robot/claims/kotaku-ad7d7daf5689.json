@@ -1,0 +1,65 @@
+{
+  "rawId": "kotaku-ad7d7daf5689",
+  "outlet": "Kotaku",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://kotaku.com/hearing-that-dude-say-grand-theft-auto-at-the-end-of-the-latest-gta-6-trailer-made-me-feel-like-this-2000746376",
+  "published": "2026-10-15",
+  "ogImage": "https://kotaku.com/app/uploads/2026/10/anton-gta.jpg",
+  "extractedAt": "2026-10-15T20:29:26.537Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "It’s a good trailer that includes some steamy moments between Jason and Lucia .",
+          "quote": "It’s a good trailer that includes some steamy moments between Jason and Lucia ."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "It’s a good trailer that includes some steamy moments between Jason and Lucia .",
+          "quote": "It’s a good trailer that includes some steamy moments between Jason and Lucia ."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In GTA 3 and Vice City’s trailers, Rockstar hadn’t quite nailed the formula yet.",
+          "quote": "In GTA 3 and Vice City’s trailers, Rockstar hadn’t quite nailed the formula yet."
+        },
+        {
+          "fact": "Since then, that dude and his voice have appeared in the launch trailers for Liberty City Stories, Vice City Stories, GTA IV, and GTA V .",
+          "quote": "Since then, that dude and his voice have appeared in the launch trailers for Liberty City Stories, Vice City Stories, GTA IV, and GTA V ."
+        }
+      ]
+    }
+  ]
+}

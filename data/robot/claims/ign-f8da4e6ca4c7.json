@@ -1,0 +1,538 @@
+{
+  "rawId": "ign-f8da4e6ca4c7",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/33-new-details-from-the-gta-6-launch-trailer",
+  "published": "2026-10-15",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/10/15/gta-launch-details-blog-1792081847737.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-15T20:29:07.026Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Globe Oil",
+      "altNames": [],
+      "slug": "globe-oil",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In the background of an early shot we can see a Globe Oil truck.",
+          "quote": "In the background of an early shot we can see a Globe Oil truck."
+        },
+        {
+          "fact": "We’ve seen Globe Oil in a couple of other games – you may recognise them from GTA 4, or even Chinatown Wars, in which we used the company’s oil to make fiery molotov cocktails.",
+          "quote": "We’ve seen Globe Oil in a couple of other games – you may recognise them from GTA 4, or even Chinatown Wars, in which we used the company’s oil to make fiery molotov cocktails."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "Invetero",
+      "altNames": [],
+      "slug": "invetero",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "It seems like every new trailer shows off new cars, and we get a very quick peek at the new Invetero Coquette, which can be glimpsed for a split second – look out for its turquoise-and-pink synthwave paint job.",
+          "quote": "It seems like every new trailer shows off new cars, and we get a very quick peek at the new Invetero Coquette, which can be glimpsed for a split second – look out for its turquoise-and-pink synthwave paint job."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "Only Raw Records",
+      "altNames": [],
+      "slug": "only-raw-records",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "We know they are signed to Only Raw Records, club mogul Boobie Ike’s company, but he remains much of a mystery to us, too.",
+          "quote": "We know they are signed to Only Raw Records, club mogul Boobie Ike’s company, but he remains much of a mystery to us, too."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "Schlott Construction",
+      "altNames": [],
+      "slug": "schlott-construction",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "This area looks like it belongs to Schlott Construction, if this sign in the background is anything to go by.",
+          "quote": "This area looks like it belongs to Schlott Construction, if this sign in the background is anything to go by."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "Vice City Police Department",
+      "altNames": [
+        "VCPD, Vice City Police"
+      ],
+      "slug": "vice-city-police-department",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Someone we know we won’t want to get on the wrong side of is Mendez, a Vice City Police Department officer, who can be briefly glimpsed in a single shot.",
+          "quote": "Someone we know we won’t want to get on the wrong side of is Mendez, a Vice City Police Department officer, who can be briefly glimpsed in a single shot."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Someone we know we won’t want to get on the wrong side of is Mendez, a Vice City Police Department officer, who can be briefly glimpsed in a single shot.",
+          "quote": "Someone we know we won’t want to get on the wrong side of is Mendez, a Vice City Police Department officer, who can be briefly glimpsed in a single shot."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Bae-Luxe",
+      "altNames": [
+        "Bae Luxe",
+        "Real Dimez"
+      ],
+      "slug": "bae-luxe",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "We get another quick look at the rap duo, Real Dimez, made up of Roxy and Bae-Luxe.",
+          "quote": "We get another quick look at the rap duo, Real Dimez, made up of Roxy and Bae-Luxe."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Boobie Ike",
+      "altNames": [
+        "Boobie",
+        "Ike"
+      ],
+      "slug": "boobie-ike",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "We know they are signed to Only Raw Records, club mogul Boobie Ike’s company, but he remains much of a mystery to us, too.",
+          "quote": "We know they are signed to Only Raw Records, club mogul Boobie Ike’s company, but he remains much of a mystery to us, too."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Brian Heder",
+      "altNames": [
+        "Brian",
+        "Heder"
+      ],
+      "slug": "brian-heder",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "This seems to be Jason’s reality at the start of the story – with his army days behind him, he’s working as a laborer at Brian’s Marina.",
+          "quote": "This seems to be Jason’s reality at the start of the story – with his army days behind him, he’s working as a laborer at Brian’s Marina."
+        },
+        {
+          "fact": "Brian’s business looks pretty busy – the rental racks are full of boats and jet skis – but the state of Leonida is home to much bigger companies than local traders.",
+          "quote": "Brian’s business looks pretty busy – the rental racks are full of boats and jet skis – but the state of Leonida is home to much bigger companies than local traders."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "From peeks at what’s in store for some of its most explosive missions, further insights into Jason’s military past, and more than one visit to a steamy shower, there’s plenty of new things to take a look at.",
+          "quote": "From peeks at what’s in store for some of its most explosive missions, further insights into Jason’s military past, and more than one visit to a steamy shower, there’s plenty of new things to take a look at."
+        },
+        {
+          "fact": "Multiple shots offer a closer look at Jason and paint a pretty clear picture of the kind of man we’ll be taking control of.",
+          "quote": "Multiple shots offer a closer look at Jason and paint a pretty clear picture of the kind of man we’ll be taking control of."
+        },
+        {
+          "fact": "Firstly, the combat training school Jason seemingly trained at is located in North Fort Law.",
+          "quote": "Firstly, the combat training school Jason seemingly trained at is located in North Fort Law."
+        },
+        {
+          "fact": "In that original game, it was located in the state of New Guernsey, but it’s more likely that the one Jason attended is in the State of Alderney, the HD universe’s take on New Jersey.",
+          "quote": "In that original game, it was located in the state of New Guernsey, but it’s more likely that the one Jason attended is in the State of Alderney, the HD universe’s take on New Jersey."
+        },
+        {
+          "fact": "More prominent than that small print is the word “Marauder,” which matches the skull-and-parachute tattoo on Jason’s arm that we’ve seen in previous videos.",
+          "quote": "More prominent than that small print is the word “Marauder,” which matches the skull-and-parachute tattoo on Jason’s arm that we’ve seen in previous videos."
+        },
+        {
+          "fact": "Its modern-day equivalent is the 75th Ranger Regiment, and so it’s likely that Jason was a ranger.",
+          "quote": "Its modern-day equivalent is the 75th Ranger Regiment, and so it’s likely that Jason was a ranger."
+        },
+        {
+          "fact": "It seems like Jason has fallen on tough times since he left the forces. “I got in some trouble in the army, didn’t leave on the best of terms,” he says in the trailer’s opening. “They don’t give loans, anything, to people like me.” With a situation like that, it’s no wonder Jason has resorted to crime.",
+          "quote": "It seems like Jason has fallen on tough times since he left the forces. “I got in some trouble in the army, didn’t leave on the best of terms,” he says in the trailer’s opening. “They don’t give loans, anything, to people like me.” With a situation like that, it’s no wonder Jason has resorted to crime."
+        },
+        {
+          "fact": "Thankfully, it seems like Jason’s experience in the Marauders has equipped him with all the tools for a very fruitful life of crime.",
+          "quote": "Thankfully, it seems like Jason’s experience in the Marauders has equipped him with all the tools for a very fruitful life of crime."
+        },
+        {
+          "fact": "We later see Jason on a helicopter, dressed in a bulletproof vest and demonstrating a very professional demeanor.",
+          "quote": "We later see Jason on a helicopter, dressed in a bulletproof vest and demonstrating a very professional demeanor."
+        },
+        {
+          "fact": "He’s joined by a dog, potentially pointing to not just Jason having a pet, but also being able to use them as some kind of working dog.",
+          "quote": "He’s joined by a dog, potentially pointing to not just Jason having a pet, but also being able to use them as some kind of working dog."
+        },
+        {
+          "fact": "Later shots also show Jason confidently disembarking a chopper and checking the chambered round in his rifle – all small details, but ones that help paint the picture of a deeply competent professional.",
+          "quote": "Later shots also show Jason confidently disembarking a chopper and checking the chambered round in his rifle – all small details, but ones that help paint the picture of a deeply competent professional."
+        },
+        {
+          "fact": "Lucia may not have Jason’s highly trained background, but it looks like she’ll eventually adopt at least some of his tactics.",
+          "quote": "Lucia may not have Jason’s highly trained background, but it looks like she’ll eventually adopt at least some of his tactics."
+        },
+        {
+          "fact": "For that shot, Lucia is joined not by Jason but by another anonymous character.",
+          "quote": "For that shot, Lucia is joined not by Jason but by another anonymous character."
+        },
+        {
+          "fact": "Our theory is that Jason and Lucia will take part in some kind of scam, and this is a stunt to advertise a bogus cryptocurrency.",
+          "quote": "Our theory is that Jason and Lucia will take part in some kind of scam, and this is a stunt to advertise a bogus cryptocurrency."
+        },
+        {
+          "fact": "We can see Jason and his buddy Cal working on one, buffing out the paintwork.",
+          "quote": "We can see Jason and his buddy Cal working on one, buffing out the paintwork."
+        },
+        {
+          "fact": "This seems to be Jason’s reality at the start of the story – with his army days behind him, he’s working as a laborer at Brian’s Marina.",
+          "quote": "This seems to be Jason’s reality at the start of the story – with his army days behind him, he’s working as a laborer at Brian’s Marina."
+        },
+        {
+          "fact": "Talking of fiery, there’s definitely a flame burning between Lucia and Jason, who can be seen on an apartment balcony with a beach view.",
+          "quote": "Talking of fiery, there’s definitely a flame burning between Lucia and Jason, who can be seen on an apartment balcony with a beach view."
+        },
+        {
+          "fact": "We just gotta get through it,” Jason replies, emphasising the on-the-run nature of the couple’s story.",
+          "quote": "We just gotta get through it,” Jason replies, emphasising the on-the-run nature of the couple’s story."
+        },
+        {
+          "fact": "When not hunting Jason and Lucia, it looks like the police still have plenty on their hands across the state.",
+          "quote": "When not hunting Jason and Lucia, it looks like the police still have plenty on their hands across the state."
+        },
+        {
+          "fact": "Back on the protagonist’s side, we get to see expert bank robber and a seeming accomplice of Jason and Lucia, Raul Bautista, threatening a man at a construction site.",
+          "quote": "Back on the protagonist’s side, we get to see expert bank robber and a seeming accomplice of Jason and Lucia, Raul Bautista, threatening a man at a construction site."
+        },
+        {
+          "fact": "Jason is clearly more of a thigh man.",
+          "quote": "Jason is clearly more of a thigh man."
+        },
+        {
+          "fact": "Lucia is on her tiptoes, presumably so she can reach high enough to wash Jason’s hair for him.",
+          "quote": "Lucia is on her tiptoes, presumably so she can reach high enough to wash Jason’s hair for him."
+        },
+        {
+          "fact": "To take down enemies more than a few feet away, Jason will need different weaponry.",
+          "quote": "To take down enemies more than a few feet away, Jason will need different weaponry."
+        },
+        {
+          "fact": "In an earlier shot in the trailer, we could be witnessing the aftermath of Jason pulling the trigger, as he walks away with a helicopter crashing into a ball of flames behind him.",
+          "quote": "In an earlier shot in the trailer, we could be witnessing the aftermath of Jason pulling the trigger, as he walks away with a helicopter crashing into a ball of flames behind him."
+        },
+        {
+          "fact": "It looks like this could all be part of one big mission that starts on a yacht, heads to the Nine1Nine club, where at some point Jason and Lucia have to jump from the roof into its pool.",
+          "quote": "It looks like this could all be part of one big mission that starts on a yacht, heads to the Nine1Nine club, where at some point Jason and Lucia have to jump from the roof into its pool."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Lucia may not have Jason’s highly trained background, but it looks like she’ll eventually adopt at least some of his tactics.",
+          "quote": "Lucia may not have Jason’s highly trained background, but it looks like she’ll eventually adopt at least some of his tactics."
+        },
+        {
+          "fact": "A few seconds later, we see a helicopter carrying a giant load in a very similar cargo net – it seems likely that these shots are taken from the same mission, and that Lucia will hang from the net before or after it’s been dragged through the side of a skyscraper.",
+          "quote": "A few seconds later, we see a helicopter carrying a giant load in a very similar cargo net – it seems likely that these shots are taken from the same mission, and that Lucia will hang from the net before or after it’s been dragged through the side of a skyscraper."
+        },
+        {
+          "fact": "We can see Lucia leaping off a car onto a commercial liner, suggesting something on the same scale as some of Trevor’s airborne antics.",
+          "quote": "We can see Lucia leaping off a car onto a commercial liner, suggesting something on the same scale as some of Trevor’s airborne antics."
+        },
+        {
+          "fact": "This shot is likely the precursor to the scene in the second trailer that shows Lucia fighting in a plane’s hold as its landing gear deploys.",
+          "quote": "This shot is likely the precursor to the scene in the second trailer that shows Lucia fighting in a plane’s hold as its landing gear deploys."
+        },
+        {
+          "fact": "This is actually the vault we previously saw in a screenshot we exclusively debuted back in August , complete with the burning bank notes and Lucia with her hair in a ponytail.",
+          "quote": "This is actually the vault we previously saw in a screenshot we exclusively debuted back in August , complete with the burning bank notes and Lucia with her hair in a ponytail."
+        },
+        {
+          "fact": "For that shot, Lucia is joined not by Jason but by another anonymous character.",
+          "quote": "For that shot, Lucia is joined not by Jason but by another anonymous character."
+        },
+        {
+          "fact": "In a later shot we see Lucia accompanied by gunmen disguised as construction workers, suggesting we’ll often be joined by crews of criminals.",
+          "quote": "In a later shot we see Lucia accompanied by gunmen disguised as construction workers, suggesting we’ll often be joined by crews of criminals."
+        },
+        {
+          "fact": "Our theory is that Jason and Lucia will take part in some kind of scam, and this is a stunt to advertise a bogus cryptocurrency.",
+          "quote": "Our theory is that Jason and Lucia will take part in some kind of scam, and this is a stunt to advertise a bogus cryptocurrency."
+        },
+        {
+          "fact": "Talking of fiery, there’s definitely a flame burning between Lucia and Jason, who can be seen on an apartment balcony with a beach view.",
+          "quote": "Talking of fiery, there’s definitely a flame burning between Lucia and Jason, who can be seen on an apartment balcony with a beach view."
+        },
+        {
+          "fact": "18. “Are we gonna be okay?” asks Lucia. “We stuck together through everything.",
+          "quote": "18. “Are we gonna be okay?” asks Lucia. “We stuck together through everything."
+        },
+        {
+          "fact": "When not hunting Jason and Lucia, it looks like the police still have plenty on their hands across the state.",
+          "quote": "When not hunting Jason and Lucia, it looks like the police still have plenty on their hands across the state."
+        },
+        {
+          "fact": "Back on the protagonist’s side, we get to see expert bank robber and a seeming accomplice of Jason and Lucia, Raul Bautista, threatening a man at a construction site.",
+          "quote": "Back on the protagonist’s side, we get to see expert bank robber and a seeming accomplice of Jason and Lucia, Raul Bautista, threatening a man at a construction site."
+        },
+        {
+          "fact": "He can be seen with his love, Lucia, as they help each other get clean in the shower.",
+          "quote": "He can be seen with his love, Lucia, as they help each other get clean in the shower."
+        },
+        {
+          "fact": "Such is his commitment to cleanliness that he even wipes the shower down with his hand as Lucia gives him a thank you kiss for helping out.",
+          "quote": "Such is his commitment to cleanliness that he even wipes the shower down with his hand as Lucia gives him a thank you kiss for helping out."
+        },
+        {
+          "fact": "Lucia is on her tiptoes, presumably so she can reach high enough to wash Jason’s hair for him.",
+          "quote": "Lucia is on her tiptoes, presumably so she can reach high enough to wash Jason’s hair for him."
+        },
+        {
+          "fact": "While we’re trying to piece bits of story together, the gold dress that Lucia is wearing at the end of this trailer is the same one prominently shown in Trailer 2.",
+          "quote": "While we’re trying to piece bits of story together, the gold dress that Lucia is wearing at the end of this trailer is the same one prominently shown in Trailer 2."
+        },
+        {
+          "fact": "It looks like this could all be part of one big mission that starts on a yacht, heads to the Nine1Nine club, where at some point Jason and Lucia have to jump from the roof into its pool.",
+          "quote": "It looks like this could all be part of one big mission that starts on a yacht, heads to the Nine1Nine club, where at some point Jason and Lucia have to jump from the roof into its pool."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Raul Bautista",
+      "altNames": [
+        "Raul",
+        "Bautista"
+      ],
+      "slug": "raul-bautista",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Back on the protagonist’s side, we get to see expert bank robber and a seeming accomplice of Jason and Lucia, Raul Bautista, threatening a man at a construction site.",
+          "quote": "Back on the protagonist’s side, we get to see expert bank robber and a seeming accomplice of Jason and Lucia, Raul Bautista, threatening a man at a construction site."
+        },
+        {
+          "fact": "Raul appears to be enjoying his bullying, chomping on some chicken as he stomps on a man.",
+          "quote": "Raul appears to be enjoying his bullying, chomping on some chicken as he stomps on a man."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Roxy",
+      "altNames": [
+        "Roxy",
+        "Real Dimez"
+      ],
+      "slug": "roxy",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "We get another quick look at the rap duo, Real Dimez, made up of Roxy and Bae-Luxe.",
+          "quote": "We get another quick look at the rap duo, Real Dimez, made up of Roxy and Bae-Luxe."
+        }
+      ]
+    },
+    {
+      "entityType": "landmark",
+      "name": "NINE1NINE",
+      "altNames": [],
+      "slug": "nine1nine",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "It looks like this could all be part of one big mission that starts on a yacht, heads to the Nine1Nine club, where at some point Jason and Lucia have to jump from the roof into its pool.",
+          "quote": "It looks like this could all be part of one big mission that starts on a yacht, heads to the Nine1Nine club, where at some point Jason and Lucia have to jump from the roof into its pool."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Brian’s business looks pretty busy – the rental racks are full of boats and jet skis – but the state of Leonida is home to much bigger companies than local traders.",
+          "quote": "Brian’s business looks pretty busy – the rental racks are full of boats and jet skis – but the state of Leonida is home to much bigger companies than local traders."
+        },
+        {
+          "fact": "Speaking of reptiles, an iguana can be spotted crossing the road, further reinforcing the variety in wildlife across the state of Leonida.",
+          "quote": "Speaking of reptiles, an iguana can be spotted crossing the road, further reinforcing the variety in wildlife across the state of Leonida."
+        },
+        {
+          "fact": "These belong to Mariana County, a part of the map where the Leonida Keys are found.",
+          "quote": "These belong to Mariana County, a part of the map where the Leonida Keys are found."
+        },
+        {
+          "fact": "That company has appeared on vehicle liveries in GTA Online as part of the Import/Export update, but it looks like it will have more of a physical presence in the world of Leonida.",
+          "quote": "That company has appeared on vehicle liveries in GTA Online as part of the Import/Export update, but it looks like it will have more of a physical presence in the world of Leonida."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida Keys",
+      "altNames": [
+        "Keys"
+      ],
+      "slug": "leonida-keys",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "These belong to Mariana County, a part of the map where the Leonida Keys are found.",
+          "quote": "These belong to Mariana County, a part of the map where the Leonida Keys are found."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Mariana County",
+      "altNames": [],
+      "slug": "mariana-county",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "These belong to Mariana County, a part of the map where the Leonida Keys are found.",
+          "quote": "These belong to Mariana County, a part of the map where the Leonida Keys are found."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "State of Leonida",
+      "altNames": [],
+      "slug": "state-of-leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Brian’s business looks pretty busy – the rental racks are full of boats and jet skis – but the state of Leonida is home to much bigger companies than local traders.",
+          "quote": "Brian’s business looks pretty busy – the rental racks are full of boats and jet skis – but the state of Leonida is home to much bigger companies than local traders."
+        },
+        {
+          "fact": "Speaking of reptiles, an iguana can be spotted crossing the road, further reinforcing the variety in wildlife across the state of Leonida.",
+          "quote": "Speaking of reptiles, an iguana can be spotted crossing the road, further reinforcing the variety in wildlife across the state of Leonida."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Someone we know we won’t want to get on the wrong side of is Mendez, a Vice City Police Department officer, who can be briefly glimpsed in a single shot.",
+          "quote": "Someone we know we won’t want to get on the wrong side of is Mendez, a Vice City Police Department officer, who can be briefly glimpsed in a single shot."
+        },
+        {
+          "fact": "This melee weapon has appeared in numerous GTAs, but was known as Brass Knuckles back in Vice City when we visited in the 1980s.",
+          "quote": "This melee weapon has appeared in numerous GTAs, but was known as Brass Knuckles back in Vice City when we visited in the 1980s."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Coquette",
+      "altNames": [],
+      "slug": "coquette",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "It seems like every new trailer shows off new cars, and we get a very quick peek at the new Invetero Coquette, which can be glimpsed for a split second – look out for its turquoise-and-pink synthwave paint job.",
+          "quote": "It seems like every new trailer shows off new cars, and we get a very quick peek at the new Invetero Coquette, which can be glimpsed for a split second – look out for its turquoise-and-pink synthwave paint job."
+        }
+      ]
+    },
+    {
+      "entityType": "weapon",
+      "name": "Grenade",
+      "altNames": [],
+      "slug": "grenade",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "A minute into the trailer, we can see her dressed in special forced black and equipped with a Shrewsbury rotary grenade launcher, popping explosives into pursuing police vehicles.",
+          "quote": "A minute into the trailer, we can see her dressed in special forced black and equipped with a Shrewsbury rotary grenade launcher, popping explosives into pursuing police vehicles."
+        }
+      ]
+    },
+    {
+      "entityType": "weapon",
+      "name": "Grenade Launcher",
+      "altNames": [],
+      "slug": "grenade-launcher",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "A minute into the trailer, we can see her dressed in special forced black and equipped with a Shrewsbury rotary grenade launcher, popping explosives into pursuing police vehicles.",
+          "quote": "A minute into the trailer, we can see her dressed in special forced black and equipped with a Shrewsbury rotary grenade launcher, popping explosives into pursuing police vehicles."
+        }
+      ]
+    }
+  ]
+}

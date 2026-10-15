@@ -1,0 +1,59 @@
+{
+  "rawId": "pushsquare-f52480b2d287",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/10/gta-6-barely-makes-the-cut-for-the-game-awards-game-of-the-year-vote",
+  "published": "2026-10-15",
+  "ogImage": "https://images.pushsquare.com/d379b301164c3/1280x720.jpg",
+  "extractedAt": "2026-10-15T20:30:05.582Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "I'm not interested in GTA 6, but I see the hype, and I hope for everyone that does play the game that they get the game they want, and that it really is as good as everyone expects...",
+          "quote": "I'm not interested in GTA 6, but I see the hype, and I hope for everyone that does play the game that they get the game they want, and that it really is as good as everyone expects..."
+        },
+        {
+          "fact": "8 8 Fiendish-Beaver 7 hours ago I think gamers and reviewers will afford the game rave reviews, whether or not the game truly deserves it, because they won't want to admit that they have fallen for the hype.",
+          "quote": "8 8 Fiendish-Beaver 7 hours ago I think gamers and reviewers will afford the game rave reviews, whether or not the game truly deserves it, because they won't want to admit that they have fallen for the hype."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "4 17 psmr 6 hours ago @JPEGMakima while this one obviously hasn’t released yet, I think people forget how good GTA III , Vice City , San Andreas , IV and V actually were.",
+          "quote": "4 17 psmr 6 hours ago @JPEGMakima while this one obviously hasn’t released yet, I think people forget how good GTA III , Vice City , San Andreas , IV and V actually were."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Contender",
+      "altNames": [],
+      "slug": "contender",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Naturally, this allows GTA 6 to be a contender, as Rockstar's ridiculously hyped open worlder releases just a day before the cutoff point, on the 19th November.",
+          "quote": "Naturally, this allows GTA 6 to be a contender, as Rockstar's ridiculously hyped open worlder releases just a day before the cutoff point, on the 19th November."
+        }
+      ]
+    }
+  ]
+}

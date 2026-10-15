@@ -1,0 +1,62 @@
+{
+  "rawId": "purexbox-2509ff286b23",
+  "outlet": "Pure Xbox",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.purexbox.com/news/2026/10/gta-6-looks-great-in-official-rockstar-launch-trailer-but-xbox-is-nowhere-to-be-seen",
+  "published": "2026-10-15",
+  "ogImage": "https://images.purexbox.com/3dedc1d3e910f/1280x720.jpg",
+  "extractedAt": "2026-10-15T20:29:39.549Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Didn't all promo work for Cyberpunk come from top range PC's which made everyone suspicious, so kudos to Rockstar for catering to what we want to see.",
+          "quote": "Didn't all promo work for Cyberpunk come from top range PC's which made everyone suspicious, so kudos to Rockstar for catering to what we want to see."
+        },
+        {
+          "fact": "Sony would want preferential treatment, pushing as many people to their platform as possible.",
+          "quote": "Sony would want preferential treatment, pushing as many people to their platform as possible."
+        },
+        {
+          "fact": "Surely we are past the times when you can walk in and buy it but people who want it will find one.",
+          "quote": "Surely we are past the times when you can walk in and buy it but people who want it will find one."
+        },
+        {
+          "fact": "WHo could not buy ps3, got an xbox and vice versa - these people are not into console wars, they dont do rsearch about features, etc - they just want to play hype game on a pltform they are able to snatch.",
+          "quote": "WHo could not buy ps3, got an xbox and vice versa - these people are not into console wars, they dont do rsearch about features, etc - they just want to play hype game on a pltform they are able to snatch."
+        },
+        {
+          "fact": "I will just get a game where it either plays best or on the box its available on, if its something i want to play.",
+          "quote": "I will just get a game where it either plays best or on the box its available on, if its something i want to play."
+        },
+        {
+          "fact": "I just want to play games I enjoy, wherever they are, at the best they can be played.",
+          "quote": "I just want to play games I enjoy, wherever they are, at the best they can be played."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "1 12 TuscanUK 5 hours ago Jason looks like he has a personality vacuum, and the shower scene is CRINGE.",
+          "quote": "1 12 TuscanUK 5 hours ago Jason looks like he has a personality vacuum, and the shower scene is CRINGE."
+        }
+      ]
+    }
+  ]
+}

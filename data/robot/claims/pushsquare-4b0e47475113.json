@@ -1,0 +1,47 @@
+{
+  "rawId": "pushsquare-4b0e47475113",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/10/first-final-fantasy-resonance-ps5-review-released-rough-campaign-length-revealed",
+  "published": "2026-10-14",
+  "ogImage": "https://images.pushsquare.com/cc34fe5509487/1280x720.jpg",
+  "extractedAt": "2026-10-15T09:41:29.032Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "However, if you want to achieve 100% completion, you’re looking at around 70 hours.",
+          "quote": "However, if you want to achieve 100% completion, you’re looking at around 70 hours."
+        },
+        {
+          "fact": "So it seems like the story will be quite breezy, but there’ll be plenty to dig your teeth into after if you want to see everything the game has to offer.",
+          "quote": "So it seems like the story will be quite breezy, but there’ll be plenty to dig your teeth into after if you want to see everything the game has to offer."
+        }
+      ]
+    },
+    {
+      "entityType": "gameplay_feature",
+      "name": "Scuba Diving and Underwater Exploration",
+      "altNames": [
+        "swimming",
+        "diving",
+        "underwater gameplay"
+      ],
+      "slug": "scuba-diving-underwater-exploration",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Might be worth updating and mentioning it in the article? https://x.com/finalfantasy/status/2110430783521566795 0 11 SBBuds 5 hours ago 20 or 30 hours will be fine as long as the price matches the length. £40 will do it for me but I won't be diving in at launch anyway, to much to play.",
+          "quote": "Might be worth updating and mentioning it in the article? https://x.com/finalfantasy/status/2110430783521566795 0 11 SBBuds 5 hours ago 20 or 30 hours will be fine as long as the price matches the length. £40 will do it for me but I won't be diving in at launch anyway, to much to play."
+        }
+      ]
+    }
+  ]
+}

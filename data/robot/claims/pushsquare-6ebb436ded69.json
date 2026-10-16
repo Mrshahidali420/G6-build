@@ -1,0 +1,83 @@
+{
+  "rawId": "pushsquare-6ebb436ded69",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/10/sonys-multi-million-dollar-gta-6-ps5-marketing-strategy-is-already-working",
+  "published": "2026-10-16",
+  "ogImage": "https://images.pushsquare.com/1d0c2bdb607be/1280x720.jpg",
+  "extractedAt": "2026-10-16T19:51:14.991Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "0 18 naruball 5 hours ago Every time I read things like this \"A short reaction video published by juggernaut streamer IShowSpeed\", the meme \"I don't want to live on this planet anymore\" feels all the more personal.",
+          "quote": "0 18 naruball 5 hours ago Every time I read things like this \"A short reaction video published by juggernaut streamer IShowSpeed\", the meme \"I don't want to live on this planet anymore\" feels all the more personal."
+        },
+        {
+          "fact": "But I don't think streamers are swaying millions of people like some want to believe.",
+          "quote": "But I don't think streamers are swaying millions of people like some want to believe."
+        },
+        {
+          "fact": "They want casual gamers or those who just want a console to play GTA to think it's an exclusive or that the console of choice for the game is PS5.",
+          "quote": "They want casual gamers or those who just want a console to play GTA to think it's an exclusive or that the console of choice for the game is PS5."
+        },
+        {
+          "fact": "0 36 GirlVersusGame 4 hours ago @DETfaninATL True but I don't want to put people down either, someone here told me weeks ago that they talk to A.I. for company.",
+          "quote": "0 36 GirlVersusGame 4 hours ago @DETfaninATL True but I don't want to put people down either, someone here told me weeks ago that they talk to A.I. for company."
+        },
+        {
+          "fact": "I adore gaming it can be very freeing, para-social interactions are extremely unhealthy and I want to see humans thrive not just survive.",
+          "quote": "I adore gaming it can be very freeing, para-social interactions are extremely unhealthy and I want to see humans thrive not just survive."
+        },
+        {
+          "fact": "Wouldn't want to misplace it somewhere else that it might actually be of use.",
+          "quote": "Wouldn't want to misplace it somewhere else that it might actually be of use."
+        },
+        {
+          "fact": "I can understand why you as an individual might want to watch another person playing a game (after you explain it from your point of view) but I try not to assume and do ask those hard awkward questions, if I don't I'll be forever assuming.",
+          "quote": "I can understand why you as an individual might want to watch another person playing a game (after you explain it from your point of view) but I try not to assume and do ask those hard awkward questions, if I don't I'll be forever assuming."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In terms of differentiating features, Sony has confirmed that GTA 6 will take full advantage of the DualSense’s unique attributes , like haptic feedback and its resistant triggers. “[The DualSense will bring] the sights, sounds, and sensations of Jason and Lucia’s story to life in your hands,” a PS Blog post noted earlier in the year.",
+          "quote": "In terms of differentiating features, Sony has confirmed that GTA 6 will take full advantage of the DualSense’s unique attributes , like haptic feedback and its resistant triggers. “[The DualSense will bring] the sights, sounds, and sensations of Jason and Lucia’s story to life in your hands,” a PS Blog post noted earlier in the year."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In terms of differentiating features, Sony has confirmed that GTA 6 will take full advantage of the DualSense’s unique attributes , like haptic feedback and its resistant triggers. “[The DualSense will bring] the sights, sounds, and sensations of Jason and Lucia’s story to life in your hands,” a PS Blog post noted earlier in the year.",
+          "quote": "In terms of differentiating features, Sony has confirmed that GTA 6 will take full advantage of the DualSense’s unique attributes , like haptic feedback and its resistant triggers. “[The DualSense will bring] the sights, sounds, and sensations of Jason and Lucia’s story to life in your hands,” a PS Blog post noted earlier in the year."
+        }
+      ]
+    }
+  ]
+}

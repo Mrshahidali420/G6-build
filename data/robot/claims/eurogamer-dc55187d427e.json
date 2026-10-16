@@ -1,0 +1,57 @@
+{
+  "rawId": "eurogamer-dc55187d427e",
+  "outlet": "Eurogamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.eurogamer.net/galaxies-showcase-2026-games-roundup",
+  "published": "2026-10-16",
+  "ogImage": "https://assetsio.gnwcdn.com/deperson-header-2.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-10-16T19:50:42.655Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Beast",
+      "altNames": [],
+      "slug": "beast",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "It's the work of 3DClouds, the studio mostly known for Formula Legends, but The Last Drive is an altogether different beast.",
+          "quote": "It's the work of 3DClouds, the studio mostly known for Formula Legends, but The Last Drive is an altogether different beast."
+        }
+      ]
+    },
+    {
+      "entityType": "gameplay_feature",
+      "name": "Scuba Diving and Underwater Exploration",
+      "altNames": [
+        "swimming",
+        "diving",
+        "underwater gameplay"
+      ],
+      "slug": "scuba-diving-underwater-exploration",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "A penguin on a skateboard, pushing around a beachball, and swimming through storms and shipwrecks.",
+          "quote": "A penguin on a skateboard, pushing around a beachball, and swimming through storms and shipwrecks."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Alpha",
+      "altNames": [],
+      "slug": "alpha",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "They're so confident, in fact, there's an PS5 Alpha Preview available now until 25th October that anyone can play . - Sherif My Penguin Friend steals hearts, minds, and arguably the show My Penguin Friend - Official Reveal Trailer | Galaxies Autumn 2026 Showcase PENGUINS!",
+          "quote": "They're so confident, in fact, there's an PS5 Alpha Preview available now until 25th October that anyone can play . - Sherif My Penguin Friend steals hearts, minds, and arguably the show My Penguin Friend - Official Reveal Trailer | Galaxies Autumn 2026 Showcase PENGUINS!"
+        }
+      ]
+    }
+  ]
+}

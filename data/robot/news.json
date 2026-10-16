@@ -312,5 +312,43 @@
   "pushsquare-f52480b2d287": {
     "slug": "gta-6-barely-makes-the-cut-for-the-game-awards-game-of-the-year-vote",
     "written": "2026-10-15"
+  },
+  "gamesradar-e3eb1494dc50": {
+    "slug": "gta-6-is-finally-releasing-next-month-are-you-taking-off-work-or-school",
+    "written": "2026-10-16"
+  },
+  "ign-1b4c5308b3fa": {
+    "slug": "gta-6-is-finally-releasing-next-month-are-you-taking-off-work-or-school",
+    "written": "2026-10-16"
+  },
+  "gamesradar-f8b96449469b": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-16",
+    "reason": "an em dash appears in the written text"
+  },
+  "ign-5322d877bc5b": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-16",
+    "reason": "an em dash appears in the written text"
+  },
+  "ign-a6fcd338f3f2": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-16",
+    "reason": "an em dash appears in the written text"
+  },
+  "pushsquare-b277cabcb36b": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-16",
+    "reason": "an em dash appears in the written text"
+  },
+  "rockpapershotgun-636c76cb26de": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-16",
+    "reason": "an em dash appears in the written text"
   }
 }

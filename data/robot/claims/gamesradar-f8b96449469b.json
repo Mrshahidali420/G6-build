@@ -1,0 +1,139 @@
+{
+  "rawId": "gamesradar-f8b96449469b",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/rockstars-figured-out-the-perfect-gta-6-advertisement-a-bunch-of-supercars-from-vice-city-speeding-along-the-streets-of-miami/",
+  "published": "2026-10-16",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/UF7JPwRPb3B7ME29wLGCp5-1920-80.jpg",
+  "extractedAt": "2026-10-16T19:51:01.964Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Vice City Police Department",
+      "altNames": [
+        "VCPD, Vice City Police"
+      ],
+      "slug": "vice-city-police-department",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "A separate thread confirms as much, with the cars seen driving around Florida, led by a Vice City Police Department car.",
+          "quote": "A separate thread confirms as much, with the cars seen driving around Florida, led by a Vice City Police Department car."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Games Action Games Grand Theft Auto GTA 6 Rockstar's figured out the perfect GTA 6 advertisement - a bunch of supercars from Vice City speeding along the streets of Miami News By Anna Koselke Published 16 October 2026 Because why not When you purchase through links on our site, we may earn an affiliate commission.",
+          "quote": "Games Action Games Grand Theft Auto GTA 6 Rockstar's figured out the perfect GTA 6 advertisement - a bunch of supercars from Vice City speeding along the streets of Miami News By Anna Koselke Published 16 October 2026 Because why not When you purchase through links on our site, we may earn an affiliate commission."
+        },
+        {
+          "fact": "A separate thread confirms as much, with the cars seen driving around Florida, led by a Vice City Police Department car.",
+          "quote": "A separate thread confirms as much, with the cars seen driving around Florida, led by a Vice City Police Department car."
+        },
+        {
+          "fact": "There's just something about seeing all the fleshed out, patterned GTA 6 cars cruisin' around real-life Vice City that you can't beat, I suppose, and I'm clearly not alone in thinking so.",
+          "quote": "There's just something about seeing all the fleshed out, patterned GTA 6 cars cruisin' around real-life Vice City that you can't beat, I suppose, and I'm clearly not alone in thinking so."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "'95 Grotti Cheetah",
+      "altNames": [
+        "95 Grotti Cheetah",
+        "Grotti Cheetah",
+        "Cheetah"
+      ],
+      "slug": "95-grotti-cheetah",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "There's a Manana, Buccaneer, Tempesta, Cheetah, Coquette D10, and Emerus, as the fan behind the video posts.",
+          "quote": "There's a Manana, Buccaneer, Tempesta, Cheetah, Coquette D10, and Emerus, as the fan behind the video posts."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Buccaneer",
+      "altNames": [],
+      "slug": "buccaneer",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "There's a Manana, Buccaneer, Tempesta, Cheetah, Coquette D10, and Emerus, as the fan behind the video posts.",
+          "quote": "There's a Manana, Buccaneer, Tempesta, Cheetah, Coquette D10, and Emerus, as the fan behind the video posts."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Coquette",
+      "altNames": [],
+      "slug": "coquette",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "There's a Manana, Buccaneer, Tempesta, Cheetah, Coquette D10, and Emerus, as the fan behind the video posts.",
+          "quote": "There's a Manana, Buccaneer, Tempesta, Cheetah, Coquette D10, and Emerus, as the fan behind the video posts."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Coquette D10",
+      "altNames": [],
+      "slug": "coquette-d10",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "There's a Manana, Buccaneer, Tempesta, Cheetah, Coquette D10, and Emerus, as the fan behind the video posts.",
+          "quote": "There's a Manana, Buccaneer, Tempesta, Cheetah, Coquette D10, and Emerus, as the fan behind the video posts."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Tempesta",
+      "altNames": [],
+      "slug": "tempesta",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "There's a Manana, Buccaneer, Tempesta, Cheetah, Coquette D10, and Emerus, as the fan behind the video posts.",
+          "quote": "There's a Manana, Buccaneer, Tempesta, Cheetah, Coquette D10, and Emerus, as the fan behind the video posts."
+        }
+      ]
+    }
+  ]
+}

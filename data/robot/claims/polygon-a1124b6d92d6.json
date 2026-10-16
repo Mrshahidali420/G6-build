@@ -1,0 +1,188 @@
+{
+  "rawId": "polygon-a1124b6d92d6",
+  "outlet": "Polygon",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.polygon.com/gta-6-ballad-of-gay-tony/",
+  "published": "2026-10-16",
+  "ogImage": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/lucia_caminos_10.jpg?w=1600&h=900&fit=crop",
+  "extractedAt": "2026-10-16T19:51:08.457Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Bae-Luxe",
+      "altNames": [
+        "Bae Luxe",
+        "Real Dimez"
+      ],
+      "slug": "bae-luxe",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "GTA 6 already appears to be building an entire open world around that same collision of glamour and grime, from its neon-soaked clubs and beachside revelry to its wealthy social climbers, like nightclub owner Boobie Ike, and up-and-coming influencers, like the rap duo Real Dimez.",
+          "quote": "GTA 6 already appears to be building an entire open world around that same collision of glamour and grime, from its neon-soaked clubs and beachside revelry to its wealthy social climbers, like nightclub owner Boobie Ike, and up-and-coming influencers, like the rap duo Real Dimez."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Boobie Ike",
+      "altNames": [
+        "Boobie",
+        "Ike"
+      ],
+      "slug": "boobie-ike",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "GTA 6 already appears to be building an entire open world around that same collision of glamour and grime, from its neon-soaked clubs and beachside revelry to its wealthy social climbers, like nightclub owner Boobie Ike, and up-and-coming influencers, like the rap duo Real Dimez.",
+          "quote": "GTA 6 already appears to be building an entire open world around that same collision of glamour and grime, from its neon-soaked clubs and beachside revelry to its wealthy social climbers, like nightclub owner Boobie Ike, and up-and-coming influencers, like the rap duo Real Dimez."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "It’s a predicament that feels strikingly similar to that of Jason and Lucia, whose criminal ambitions threaten to pull them into a vortex beyond their control.",
+          "quote": "It’s a predicament that feels strikingly similar to that of Jason and Lucia, whose criminal ambitions threaten to pull them into a vortex beyond their control."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "It’s a predicament that feels strikingly similar to that of Jason and Lucia, whose criminal ambitions threaten to pull them into a vortex beyond their control.",
+          "quote": "It’s a predicament that feels strikingly similar to that of Jason and Lucia, whose criminal ambitions threaten to pull them into a vortex beyond their control."
+        },
+        {
+          "fact": "From a modified pickup tearing up Vice City asphalt while dragging a bank safe in pure Fast Five fashion, to chaotic cruiser pursuits with Lucia hanging out of a getaway vehicle dumping shells from a rotary grenade launcher, the game looks every bit as explosive as its 2009 counterpart.",
+          "quote": "From a modified pickup tearing up Vice City asphalt while dragging a bank safe in pure Fast Five fashion, to chaotic cruiser pursuits with Lucia hanging out of a getaway vehicle dumping shells from a rotary grenade launcher, the game looks every bit as explosive as its 2009 counterpart."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Roxy",
+      "altNames": [
+        "Roxy",
+        "Real Dimez"
+      ],
+      "slug": "roxy",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "GTA 6 already appears to be building an entire open world around that same collision of glamour and grime, from its neon-soaked clubs and beachside revelry to its wealthy social climbers, like nightclub owner Boobie Ike, and up-and-coming influencers, like the rap duo Real Dimez.",
+          "quote": "GTA 6 already appears to be building an entire open world around that same collision of glamour and grime, from its neon-soaked clubs and beachside revelry to its wealthy social climbers, like nightclub owner Boobie Ike, and up-and-coming influencers, like the rap duo Real Dimez."
+        }
+      ]
+    },
+    {
+      "entityType": "landmark",
+      "name": "Malibu Club",
+      "altNames": [],
+      "slug": "malibu-club",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "(I, for one, can’t wait to catch the bus at the new-and-improved Malibu Club).",
+          "quote": "(I, for one, can’t wait to catch the bus at the new-and-improved Malibu Club)."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Even the hot-pink mission markers spotted in gameplay footage feel like a direct inheritance from Gay Tony ’s visual DNA, a loud aesthetic anchor that ties right into the neon nightclubs, sun-scorched pastels, and unbridled excess defining Leonida.",
+          "quote": "Even the hot-pink mission markers spotted in gameplay footage feel like a direct inheritance from Gay Tony ’s visual DNA, a loud aesthetic anchor that ties right into the neon nightclubs, sun-scorched pastels, and unbridled excess defining Leonida."
+        },
+        {
+          "fact": "Its larger-than-life characters seamlessly fit the debauchery of Leonida, making the return of Luis, Tony, or fan favorites like the gold-obsessed Yusuf Amir an enticing prospect for GTA 6 .",
+          "quote": "Its larger-than-life characters seamlessly fit the debauchery of Leonida, making the return of Luis, Tony, or fan favorites like the gold-obsessed Yusuf Amir an enticing prospect for GTA 6 ."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Since its debut trailer, the new open-world game appears to be a drastic detour from Rockstar’s previous entries, in its enhanced version of Vice City, and in the dynamic between its dual protagonists and how their steamy relationship informs the narrative.",
+          "quote": "Since its debut trailer, the new open-world game appears to be a drastic detour from Rockstar’s previous entries, in its enhanced version of Vice City, and in the dynamic between its dual protagonists and how their steamy relationship informs the narrative."
+        },
+        {
+          "fact": "The luxury sedans and high-end sports cars that populate Vice City feel ripped right out of Tony's world, and the Schafter (Mercedes-Benz look-alike) featured in GTA 6 's extended Netflix trailer is a particularly striking reminder of the vehicle associated with the nightclub mogul himself.",
+          "quote": "The luxury sedans and high-end sports cars that populate Vice City feel ripped right out of Tony's world, and the Schafter (Mercedes-Benz look-alike) featured in GTA 6 's extended Netflix trailer is a particularly striking reminder of the vehicle associated with the nightclub mogul himself."
+        },
+        {
+          "fact": "From a modified pickup tearing up Vice City asphalt while dragging a bank safe in pure Fast Five fashion, to chaotic cruiser pursuits with Lucia hanging out of a getaway vehicle dumping shells from a rotary grenade launcher, the game looks every bit as explosive as its 2009 counterpart.",
+          "quote": "From a modified pickup tearing up Vice City asphalt while dragging a bank safe in pure Fast Five fashion, to chaotic cruiser pursuits with Lucia hanging out of a getaway vehicle dumping shells from a rotary grenade launcher, the game looks every bit as explosive as its 2009 counterpart."
+        },
+        {
+          "fact": "If GTA 6 is determined to bring that unapologetically sexy edge back to the series as its trailers seem to suggest, there’s no better stage for it to thrive than Vice City.",
+          "quote": "If GTA 6 is determined to bring that unapologetically sexy edge back to the series as its trailers seem to suggest, there’s no better stage for it to thrive than Vice City."
+        }
+      ]
+    },
+    {
+      "entityType": "weapon",
+      "name": "Grenade",
+      "altNames": [],
+      "slug": "grenade",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "From a modified pickup tearing up Vice City asphalt while dragging a bank safe in pure Fast Five fashion, to chaotic cruiser pursuits with Lucia hanging out of a getaway vehicle dumping shells from a rotary grenade launcher, the game looks every bit as explosive as its 2009 counterpart.",
+          "quote": "From a modified pickup tearing up Vice City asphalt while dragging a bank safe in pure Fast Five fashion, to chaotic cruiser pursuits with Lucia hanging out of a getaway vehicle dumping shells from a rotary grenade launcher, the game looks every bit as explosive as its 2009 counterpart."
+        }
+      ]
+    },
+    {
+      "entityType": "weapon",
+      "name": "Grenade Launcher",
+      "altNames": [],
+      "slug": "grenade-launcher",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "From a modified pickup tearing up Vice City asphalt while dragging a bank safe in pure Fast Five fashion, to chaotic cruiser pursuits with Lucia hanging out of a getaway vehicle dumping shells from a rotary grenade launcher, the game looks every bit as explosive as its 2009 counterpart.",
+          "quote": "From a modified pickup tearing up Vice City asphalt while dragging a bank safe in pure Fast Five fashion, to chaotic cruiser pursuits with Lucia hanging out of a getaway vehicle dumping shells from a rotary grenade launcher, the game looks every bit as explosive as its 2009 counterpart."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "rawId": "ign-5322d877bc5b",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/rockstar-mods-real-life-vehicles-gta-6-cars-miami",
+  "published": "2026-10-16",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/10/16/vintage-vice-city-pack-vapid-stanier-02-1792141997261.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-16T09:34:41.905Z",
+  "entities": [
+    {
+      "entityType": "vehicle",
+      "name": "'95 Grotti Cheetah",
+      "altNames": [
+        "95 Grotti Cheetah",
+        "Grotti Cheetah",
+        "Cheetah"
+      ],
+      "slug": "95-grotti-cheetah",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Other looks included real-life takes on the Cheetah, the Coquette D10, the Tempesta, and the Manana.",
+          "quote": "Other looks included real-life takes on the Cheetah, the Coquette D10, the Tempesta, and the Manana."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Coquette",
+      "altNames": [],
+      "slug": "coquette",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Other looks included real-life takes on the Cheetah, the Coquette D10, the Tempesta, and the Manana.",
+          "quote": "Other looks included real-life takes on the Cheetah, the Coquette D10, the Tempesta, and the Manana."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Coquette D10",
+      "altNames": [],
+      "slug": "coquette-d10",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Other looks included real-life takes on the Cheetah, the Coquette D10, the Tempesta, and the Manana.",
+          "quote": "Other looks included real-life takes on the Cheetah, the Coquette D10, the Tempesta, and the Manana."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Tempesta",
+      "altNames": [],
+      "slug": "tempesta",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Other looks included real-life takes on the Cheetah, the Coquette D10, the Tempesta, and the Manana.",
+          "quote": "Other looks included real-life takes on the Cheetah, the Coquette D10, the Tempesta, and the Manana."
+        }
+      ]
+    }
+  ]
+}

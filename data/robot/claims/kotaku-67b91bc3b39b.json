@@ -1,0 +1,49 @@
+{
+  "rawId": "kotaku-67b91bc3b39b",
+  "outlet": "Kotaku",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://kotaku.com/massive-gta-6-banner-in-paris-features-some-silly-censorship-2000746458",
+  "published": "2026-10-15",
+  "ogImage": "https://kotaku.com/app/uploads/2026/10/censortower.jpg",
+  "extractedAt": "2026-10-16T09:34:48.352Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "However, as pointed out by some fans, this artwork has been tweaked slightly to remove two different guns . © Rockstar Games / Reddit / Kotaku As you can see in the comparison above, Lucia’s gun has been removed from the top middle image of her and Jason.",
+          "quote": "However, as pointed out by some fans, this artwork has been tweaked slightly to remove two different guns . © Rockstar Games / Reddit / Kotaku As you can see in the comparison above, Lucia’s gun has been removed from the top middle image of her and Jason."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "However, as pointed out by some fans, this artwork has been tweaked slightly to remove two different guns . © Rockstar Games / Reddit / Kotaku As you can see in the comparison above, Lucia’s gun has been removed from the top middle image of her and Jason.",
+          "quote": "However, as pointed out by some fans, this artwork has been tweaked slightly to remove two different guns . © Rockstar Games / Reddit / Kotaku As you can see in the comparison above, Lucia’s gun has been removed from the top middle image of her and Jason."
+        },
+        {
+          "fact": "In Lucia’s case, her hand and the gun were removed.",
+          "quote": "In Lucia’s case, her hand and the gun were removed."
+        }
+      ]
+    }
+  ]
+}

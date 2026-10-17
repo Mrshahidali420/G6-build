@@ -1,0 +1,25 @@
+{
+  "rawId": "purexbox-2fc6afd47edf",
+  "outlet": "Pure Xbox",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.purexbox.com/features/these-20plus-games-are-coming-to-xbox-next-week-october-19-23",
+  "published": "2026-10-17",
+  "ogImage": "https://images.purexbox.com/6cfd6f70ca793/1280x720.jpg",
+  "extractedAt": "2026-10-17T19:06:08.335Z",
+  "entities": [
+    {
+      "entityType": "vehicle",
+      "name": "Zombie",
+      "altNames": [],
+      "slug": "zombie",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Help Mat, an adorable train-driving cat, build the tracks needed to guide his train to the final destination.\" Seahorse Soap Patrol (October 23): \"When polluting sea creatures fill the ocean with trash, it’s up to the Seahorse Soap Patrol to clean things up!\" The Walking Trade (October 23): \"Run a shop in the zombie apocalypse!",
+          "quote": "Help Mat, an adorable train-driving cat, build the tracks needed to guide his train to the final destination.\" Seahorse Soap Patrol (October 23): \"When polluting sea creatures fill the ocean with trash, it’s up to the Seahorse Soap Patrol to clean things up!\" The Walking Trade (October 23): \"Run a shop in the zombie apocalypse!"
+        }
+      ]
+    }
+  ]
+}

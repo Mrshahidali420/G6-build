@@ -1,0 +1,28 @@
+{
+  "rawId": "gameinformer-39f61459be87",
+  "outlet": "Game Informer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://gameinformer.com/opinion/2026/10/16/the-video-games-and-more-you-should-play-this-weekend-october-16-2026",
+  "published": "2026-10-16",
+  "ogImage": "https://gameinformer.com/sites/default/files/styles/og_image/public/2026/10/16/0ff83c7e/castlevaniabc.jpg.webp",
+  "extractedAt": "2026-10-17T09:05:10.980Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Brian Heder",
+      "altNames": [
+        "Brian",
+        "Heder"
+      ],
+      "slug": "brian-heder",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Toy Story: Retro Roundup / Toy Story 3 Complete Edition Brian Shea If you spent hours playing the early Toy Story games, then the retro compilation masters at Digital Eclipse have something for you in the form of Toy Story: Retro Roundup.",
+          "quote": "Toy Story: Retro Roundup / Toy Story 3 Complete Edition Brian Shea If you spent hours playing the early Toy Story games, then the retro compilation masters at Digital Eclipse have something for you in the form of Toy Story: Retro Roundup."
+        }
+      ]
+    }
+  ]
+}

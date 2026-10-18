@@ -1,0 +1,42 @@
+{
+  "rawId": "pushsquare-ce9def770bab",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/10/i-dont-think-were-seeing-it-here-gta-6-launch-trailer-not-using-ps5s-new-qssr-upscaler",
+  "published": "2026-10-18",
+  "ogImage": "https://images.pushsquare.com/37a7a18543bcf/1280x720.jpg",
+  "extractedAt": "2026-10-18T09:23:41.026Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "I want to get the homie to be bigger than a mountain of fluff 0 3 AI-Generation 3 hours ago Let’s also see as the game is only 30fps with PS5 VRR only going as low as 48fps.",
+          "quote": "I want to get the homie to be bigger than a mountain of fluff 0 3 AI-Generation 3 hours ago Let’s also see as the game is only 30fps with PS5 VRR only going as low as 48fps."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "0 2 CWill97 7 hours ago The only spec I care about is Jason’s weight.",
+          "quote": "0 2 CWill97 7 hours ago The only spec I care about is Jason’s weight."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "rawId": "polygon-25c103cfe1ad",
+  "outlet": "Polygon",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.polygon.com/november-2026-game-releases/",
+  "published": "2026-10-18",
+  "ogImage": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/ns2_thelegendofzeldaocarinaoftime_scrn_15.png?w=1600&h=900&fit=crop",
+  "extractedAt": "2026-10-18T09:23:34.607Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "It even features local split screen, making it a perfect couples game for Jason and Lucia.",
+          "quote": "It even features local split screen, making it a perfect couples game for Jason and Lucia."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "It even features local split screen, making it a perfect couples game for Jason and Lucia.",
+          "quote": "It even features local split screen, making it a perfect couples game for Jason and Lucia."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Here’s a look at some of the highlights you can expect to play if you’re avoiding the streets of Vice City.",
+          "quote": "Here’s a look at some of the highlights you can expect to play if you’re avoiding the streets of Vice City."
+        }
+      ]
+    },
+    {
+      "entityType": "wildlife",
+      "name": "Dogs",
+      "altNames": [],
+      "slug": "dogs",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The upcoming co-op shooter puts you and your friends in control of gun-toting dogs forced to shoot their way through an alien planet.",
+          "quote": "The upcoming co-op shooter puts you and your friends in control of gun-toting dogs forced to shoot their way through an alien planet."
+        }
+      ]
+    }
+  ]
+}

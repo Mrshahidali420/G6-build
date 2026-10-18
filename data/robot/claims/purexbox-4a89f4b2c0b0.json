@@ -1,0 +1,25 @@
+{
+  "rawId": "purexbox-4a89f4b2c0b0",
+  "outlet": "Pure Xbox",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.purexbox.com/features/im-playing-samson-on-xbox-series-x-and-heres-what-i-think-so-far",
+  "published": "2026-10-18",
+  "ogImage": "https://images.purexbox.com/eb569e43b76a2/1280x720.jpg",
+  "extractedAt": "2026-10-18T19:18:38.440Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The big question is whether Samson is worth buying, and while I don't want to give you a definitive answer based on just a couple of hours, there are a few extra things that I think are worth taking into consideration.",
+          "quote": "The big question is whether Samson is worth buying, and while I don't want to give you a definitive answer based on just a couple of hours, there are a few extra things that I think are worth taking into consideration."
+        }
+      ]
+    }
+  ]
+}

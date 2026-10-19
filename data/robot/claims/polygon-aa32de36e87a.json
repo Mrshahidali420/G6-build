@@ -1,0 +1,49 @@
+{
+  "rawId": "polygon-aa32de36e87a",
+  "outlet": "Polygon",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.polygon.com/gta-6-rdr2-horse-balls-confirmed-rockstar/",
+  "published": "2026-10-19",
+  "ogImage": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/vintage_vice_city_pack_exclusive_looks_01-1.jpg?w=1600&h=900&fit=crop",
+  "extractedAt": "2026-10-19T21:23:45.442Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The news comes via a YouTube video from Bloomberg reporter Jason Schreier, who recently reported a major GTA 6 cover story for the outlet.",
+          "quote": "The news comes via a YouTube video from Bloomberg reporter Jason Schreier, who recently reported a major GTA 6 cover story for the outlet."
+        },
+        {
+          "fact": "Recent leaked footage showing co-protagonist Jason Duvall in the nude had viewers pointing out that the character's genitals had their own physics.",
+          "quote": "Recent leaked footage showing co-protagonist Jason Duvall in the nude had viewers pointing out that the character's genitals had their own physics."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Related GTA 6 leaker's naked Lucia gamble just backfired massively 'Cyberleek' made a huge tactical error in sharing GTA 6 gameplay of Lucia Caminos nude Posts 4 Google is changing how it surfaces content.",
+          "quote": "Related GTA 6 leaker's naked Lucia gamble just backfired massively 'Cyberleek' made a huge tactical error in sharing GTA 6 gameplay of Lucia Caminos nude Posts 4 Google is changing how it surfaces content."
+        }
+      ]
+    }
+  ]
+}

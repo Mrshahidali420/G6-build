@@ -1,0 +1,42 @@
+{
+  "rawId": "gamesradar-d9eec4a0c214",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/not-even-rockstar-heads-know-everything-thats-in-gta-6-because-devs-will-just-add-stuff-which-is-also-how-red-dead-redemption-2-got-its-absurd-horse-testicle-physics/",
+  "published": "2026-10-19",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/BMicjTXUijfTskiiVc8iLW-1920-80.jpg",
+  "extractedAt": "2026-10-19T21:23:32.495Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The buried details of GTA 6's mammoth production line are examined in a new video from Bloomberg reporter Jason Schreier, who paused to share some information from a recent Rockstar visit that couldn't fit into a prior written report.",
+          "quote": "The buried details of GTA 6's mammoth production line are examined in a new video from Bloomberg reporter Jason Schreier, who paused to share some information from a recent Rockstar visit that couldn't fit into a prior written report."
+        }
+      ]
+    }
+  ]
+}

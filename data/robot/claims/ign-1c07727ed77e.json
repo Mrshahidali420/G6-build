@@ -1,0 +1,87 @@
+{
+  "rawId": "ign-1c07727ed77e",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/gta-6-dating-system-cheating",
+  "published": "2026-10-19",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/10/19/vintage-vice-city-pack-exclusive-looks-01-1792422938955.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-19T21:23:38.942Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "That Bonnie and Clyde-style relationship is at the center of Rockstar’s upcoming game, and you’ll be able to engage with it as much or as little as you want.",
+          "quote": "That Bonnie and Clyde-style relationship is at the center of Rockstar’s upcoming game, and you’ll be able to engage with it as much or as little as you want."
+        },
+        {
+          "fact": "But you might want to speak to your romantic partner in real life first.",
+          "quote": "But you might want to speak to your romantic partner in real life first."
+        },
+        {
+          "fact": "Rockstar has also been very clear that you don't actually have to engage with this part of GTA 6 if you don't want to.",
+          "quote": "Rockstar has also been very clear that you don't actually have to engage with this part of GTA 6 if you don't want to."
+        },
+        {
+          "fact": "Jason and Lucia want a relationship at the start of the game, but it's up to the player to actively pursue that.",
+          "quote": "Jason and Lucia want a relationship at the start of the game, but it's up to the player to actively pursue that."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The recent GTA 6 launch trailer featured three steamy intimate scenes in the shower, and, according to GTA 6 previews , Jason and Lucia can kiss at the touch of a button and are able to walk around holding hands.",
+          "quote": "The recent GTA 6 launch trailer featured three steamy intimate scenes in the shower, and, according to GTA 6 previews , Jason and Lucia can kiss at the touch of a button and are able to walk around holding hands."
+        },
+        {
+          "fact": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images In September, British polling company YouGov asked 4,000 British adults whether they’d consider dating in a video game as cheating or not.",
+          "quote": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images In September, British polling company YouGov asked 4,000 British adults whether they’d consider dating in a video game as cheating or not."
+        },
+        {
+          "fact": "Jason and Lucia want a relationship at the start of the game, but it's up to the player to actively pursue that.",
+          "quote": "Jason and Lucia want a relationship at the start of the game, but it's up to the player to actively pursue that."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The recent GTA 6 launch trailer featured three steamy intimate scenes in the shower, and, according to GTA 6 previews , Jason and Lucia can kiss at the touch of a button and are able to walk around holding hands.",
+          "quote": "The recent GTA 6 launch trailer featured three steamy intimate scenes in the shower, and, according to GTA 6 previews , Jason and Lucia can kiss at the touch of a button and are able to walk around holding hands."
+        },
+        {
+          "fact": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images In September, British polling company YouGov asked 4,000 British adults whether they’d consider dating in a video game as cheating or not.",
+          "quote": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images In September, British polling company YouGov asked 4,000 British adults whether they’d consider dating in a video game as cheating or not."
+        },
+        {
+          "fact": "Jason and Lucia want a relationship at the start of the game, but it's up to the player to actively pursue that.",
+          "quote": "Jason and Lucia want a relationship at the start of the game, but it's up to the player to actively pursue that."
+        }
+      ]
+    }
+  ]
+}

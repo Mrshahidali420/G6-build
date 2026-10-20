@@ -1,0 +1,69 @@
+{
+  "rawId": "ign-d09f185ded61",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/theres-no-one-person-that-has-this-whole-thing-in-their-head-gta-6-devs-had-freedom-to-add-cool-features-just-like-rdr2s-horse-balls",
+  "published": "2026-10-19",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/09/17/gta-6-soundtrack-1789662158949.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-20T09:52:52.347Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The latest behind-the-scenes information on GTA 6 comes from Bloomberg reporter Jason Schreier, who expanded upon his trip to the Rockstar North offices in Edinburgh, Scotland, after previously sharing other highlights last week .",
+          "quote": "The latest behind-the-scenes information on GTA 6 comes from Bloomberg reporter Jason Schreier, who expanded upon his trip to the Rockstar North offices in Edinburgh, Scotland, after previously sharing other highlights last week ."
+        },
+        {
+          "fact": "Worried that slapping a game-y wheel on Jason and Lucia would remind players of what they can't carry on their person, they attempted to create a new system to replace it.",
+          "quote": "Worried that slapping a game-y wheel on Jason and Lucia would remind players of what they can't carry on their person, they attempted to create a new system to replace it."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Worried that slapping a game-y wheel on Jason and Lucia would remind players of what they can't carry on their person, they attempted to create a new system to replace it.",
+          "quote": "Worried that slapping a game-y wheel on Jason and Lucia would remind players of what they can't carry on their person, they attempted to create a new system to replace it."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Schreier said he'd guess that \"not even top developers\" at Rockstar know every tiny detail added to Vice City and its wealth of NPCs.",
+          "quote": "Schreier said he'd guess that \"not even top developers\" at Rockstar know every tiny detail added to Vice City and its wealth of NPCs."
+        },
+        {
+          "fact": "It was this same year the team started taking trips to Miami to plot out their reimagined Vice City.",
+          "quote": "It was this same year the team started taking trips to Miami to plot out their reimagined Vice City."
+        }
+      ]
+    }
+  ]
+}

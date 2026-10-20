@@ -1,0 +1,28 @@
+{
+  "rawId": "gamesindustry-465c12b1bc14",
+  "outlet": "GamesIndustry.biz",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesindustry.biz/sensor-tower-data-shows-the-yawning-gap-between-gta-6-and-everything-else",
+  "published": "2026-10-20",
+  "ogImage": "https://assetsio.gnwcdn.com/Jason_and_Lucia_09.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-10-20T20:20:28.051Z",
+  "entities": [
+    {
+      "entityType": "edition",
+      "name": "Ultimate Edition",
+      "altNames": [
+        "GTA 6 Ultimate Edition",
+        "GTA VI Ultimate Edition"
+      ],
+      "slug": "gta-6-ultimate-edition",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Sensor Tower says 74% of preorders have been on PlayStation and 26% on Xbox, and the vast majority of preorders have been for the $100 ultimate edition of GTA 6.",
+          "quote": "Sensor Tower says 74% of preorders have been on PlayStation and 26% on Xbox, and the vast majority of preorders have been for the $100 ultimate edition of GTA 6."
+        }
+      ]
+    }
+  ]
+}

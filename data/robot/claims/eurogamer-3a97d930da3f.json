@@ -1,0 +1,42 @@
+{
+  "rawId": "eurogamer-3a97d930da3f",
+  "outlet": "Eurogamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.eurogamer.net/red-dead-redemption-2-horse-testicles-staff-autonomy-gta-6",
+  "published": "2026-10-20",
+  "ogImage": "https://assetsio.gnwcdn.com/red-dead-redemption-2-horse_oWpviPa.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-10-20T20:20:21.811Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Journalist Jason Schreier heard this anecdote from Rockstar head of development Aaron Garbut while visiting Rockstar North to write an expansive report for Bloomberg about the making of GTA 6 .",
+          "quote": "Journalist Jason Schreier heard this anecdote from Rockstar head of development Aaron Garbut while visiting Rockstar North to write an expansive report for Bloomberg about the making of GTA 6 ."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Phil",
+      "altNames": [],
+      "slug": "phil",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "There's also some information about the origins of the contextual 'hold left trigger' interaction system introduced in Red Dead Redemption 2, which again, apparently came from someone autonomously working on the game - Phil Hooker (now director of technology) - rather than from one of the game's creative leads.",
+          "quote": "There's also some information about the origins of the contextual 'hold left trigger' interaction system introduced in Red Dead Redemption 2, which again, apparently came from someone autonomously working on the game - Phil Hooker (now director of technology) - rather than from one of the game's creative leads."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "rawId": "ign-7fc8883e8a9a",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/shrek-2-remastered-reveal-trailer-parodies-gta-6-sets-november-release-date",
+  "published": "2026-10-20",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/10/19/shrek-2-remastered-1792451754506.png?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-20T20:20:54.055Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The trailer takes a tongue-in-cheek jab at Rockstar's latest, going as far as to not only recreate its Vice City vibe but even come up with its own version of that iconic Grand Theft Auto box art, too.",
+          "quote": "The trailer takes a tongue-in-cheek jab at Rockstar's latest, going as far as to not only recreate its Vice City vibe but even come up with its own version of that iconic Grand Theft Auto box art, too."
+        }
+      ]
+    }
+  ]
+}

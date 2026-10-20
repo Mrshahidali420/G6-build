@@ -1,0 +1,60 @@
+{
+  "rawId": "gamesradar-13e818664f38",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/a-fundamental-red-dead-redemption-2-system-provided-the-basis-for-how-gta-6s-npcs-work-but-it-was-nearly-cut-because-of-an-ambitious-rockstar-studio-head/",
+  "published": "2026-10-20",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/7GMWduYvHNCyQpEDcNjMch-1920-80.jpg",
+  "extractedAt": "2026-10-20T20:20:34.621Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        },
+        {
+          "fact": "As such, when Tennant showed the prototype to another technical lead at Rockstar, Phil Hooker, he didn't want the system shown to Nelson initially.",
+          "quote": "As such, when Tennant showed the prototype to another technical lead at Rockstar, Phil Hooker, he didn't want the system shown to Nelson initially."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "That comes from Bloomberg reporter Jason Schreier, who has posted a YouTube video after visiting Rockstar to see GTA 6.",
+          "quote": "That comes from Bloomberg reporter Jason Schreier, who has posted a YouTube video after visiting Rockstar to see GTA 6."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Phil",
+      "altNames": [],
+      "slug": "phil",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "As such, when Tennant showed the prototype to another technical lead at Rockstar, Phil Hooker, he didn't want the system shown to Nelson initially.",
+          "quote": "As such, when Tennant showed the prototype to another technical lead at Rockstar, Phil Hooker, he didn't want the system shown to Nelson initially."
+        }
+      ]
+    }
+  ]
+}

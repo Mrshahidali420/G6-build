@@ -1,0 +1,25 @@
+{
+  "rawId": "polygon-d70ff3d3122e",
+  "outlet": "Polygon",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.polygon.com/shrek-2-remastered-release-date-trailer-online-co-op/",
+  "published": "2026-10-20",
+  "ogImage": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/shrek-2-remastered-key.jpg?w=1600&h=900&fit=crop",
+  "extractedAt": "2026-10-21T09:55:01.374Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Thread 2 Sign in to your Polygon.com account We want to hear from you.",
+          "quote": "Thread 2 Sign in to your Polygon.com account We want to hear from you."
+        }
+      ]
+    }
+  ]
+}

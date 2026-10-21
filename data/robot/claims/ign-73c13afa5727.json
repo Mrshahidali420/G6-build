@@ -1,0 +1,53 @@
+{
+  "rawId": "ign-73c13afa5727",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/gta-6-fans-think-rockstar-games-is-shooting-an-elaborate-and-expensive-live-action-trailer-in-miami",
+  "published": "2026-10-20",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/08/06/gtaonothumb-1786018055324.png?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-21T09:54:54.863Z",
+  "entities": [
+    {
+      "entityType": "brand",
+      "name": "Grotti",
+      "altNames": [],
+      "slug": "grotti",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In some videos and photos posted by fans, you can see in-universe car brands such as Grotti (a parody of Ferrari) and Emerus (a parody of McLaren) on some of the vehicles that are zooming around.",
+          "quote": "In some videos and photos posted by fans, you can see in-universe car brands such as Grotti (a parody of Ferrari) and Emerus (a parody of McLaren) on some of the vehicles that are zooming around."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Rockstar Games has been conquering the city of Miami over the last few weeks as it ramps up to the release of GTA 6, which is set in a fictional version of Miami called Vice City.",
+          "quote": "Rockstar Games has been conquering the city of Miami over the last few weeks as it ramps up to the release of GTA 6, which is set in a fictional version of Miami called Vice City."
+        },
+        {
+          "fact": "As a result, Rockstar has plastered all kinds of ads around the area, sent in a Vice City blimp to fly over Florida, and announced unique celebrations like a Vice City-themed NBA game with the Miami Heat in November.",
+          "quote": "As a result, Rockstar has plastered all kinds of ads around the area, sent in a Vice City blimp to fly over Florida, and announced unique celebrations like a Vice City-themed NBA game with the Miami Heat in November."
+        },
+        {
+          "fact": "For example, there are graffiti pieces that do not mention GTA 6 but simply read \"Vice City.\" The same inscription, \"Welcome to Vice City,\" is also present on the stadium.",
+          "quote": "For example, there are graffiti pieces that do not mention GTA 6 but simply read \"Vice City.\" The same inscription, \"Welcome to Vice City,\" is also present on the stadium."
+        },
+        {
+          "fact": "Rockstar has already announced that its Miami Heat sponsored game will be called \"A Night in Vice City,\" so maybe there are plans for more activities around the entire city beyond the actual basketball game.",
+          "quote": "Rockstar has already announced that its Miami Heat sponsored game will be called \"A Night in Vice City,\" so maybe there are plans for more activities around the entire city beyond the actual basketball game."
+        }
+      ]
+    }
+  ]
+}

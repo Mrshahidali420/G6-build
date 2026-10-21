@@ -1,0 +1,55 @@
+{
+  "rawId": "ign-149978410295",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/it-looks-like-gta-6s-beer-brands-are-about-to-become-real",
+  "published": "2026-10-20",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/10/07/gta-6-1791374410439.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-21T09:54:41.853Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Patriot Beer",
+      "altNames": [
+        "Patriot"
+      ],
+      "slug": "patriot-beer",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The labels include brands that have been featured in previous GTA titles, such as Patriot Beer and Pißwasser (commonly known as Pisswasser).",
+          "quote": "The labels include brands that have been featured in previous GTA titles, such as Patriot Beer and Pißwasser (commonly known as Pisswasser)."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "There's also a new brand known as No Mames Vice City, which features a little dog wearing sunglasses and a Vice City chain on the label.",
+          "quote": "There's also a new brand known as No Mames Vice City, which features a little dog wearing sunglasses and a Vice City chain on the label."
+        },
+        {
+          "fact": "For alcohol afficianados, No Mames Vice City lager will have a 6% ABV, while the other two will be 4.2% ABV, which is identical to Bud Light's ABV.",
+          "quote": "For alcohol afficianados, No Mames Vice City lager will have a 6% ABV, while the other two will be 4.2% ABV, which is identical to Bud Light's ABV."
+        },
+        {
+          "fact": "Citizens have spotted various in-universe ads for various GTA brands around the area, and there's also a giant Vice City blimp flying over Florida.",
+          "quote": "Citizens have spotted various in-universe ads for various GTA brands around the area, and there's also a giant Vice City blimp flying over Florida."
+        },
+        {
+          "fact": "The Miami Heat's arena has also been transformed ahead of an unprecedented Vice City-themed NBA game in November .",
+          "quote": "The Miami Heat's arena has also been transformed ahead of an unprecedented Vice City-themed NBA game in November ."
+        }
+      ]
+    }
+  ]
+}

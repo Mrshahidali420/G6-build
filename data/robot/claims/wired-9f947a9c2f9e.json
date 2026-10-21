@@ -1,0 +1,104 @@
+{
+  "rawId": "wired-9f947a9c2f9e",
+  "outlet": "WIRED",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.wired.com/story/make-big-games-smaller/",
+  "published": "2026-10-21",
+  "ogImage": "https://media.wired.com/photos/6ad7a0764809649ec79b3fcd/191:100/w_1280,c_limit/Jason_and_Lucia_02.jpg",
+  "extractedAt": "2026-10-21T20:29:38.374Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "It’s almost understandable from a financial perspective: If you’ve invested millions of dollars, you want the end product to appeal to the largest possible consumer base to maximize your returns.",
+          "quote": "It’s almost understandable from a financial perspective: If you’ve invested millions of dollars, you want the end product to appeal to the largest possible consumer base to maximize your returns."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The latest criminal opus lets players control Jason and Lucia, a modern-day Bonnie and Clyde, and bears all the hallmarks of Rockstar's incredible attention to detail.",
+          "quote": "The latest criminal opus lets players control Jason and Lucia, a modern-day Bonnie and Clyde, and bears all the hallmarks of Rockstar's incredible attention to detail."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The latest criminal opus lets players control Jason and Lucia, a modern-day Bonnie and Clyde, and bears all the hallmarks of Rockstar's incredible attention to detail.",
+          "quote": "The latest criminal opus lets players control Jason and Lucia, a modern-day Bonnie and Clyde, and bears all the hallmarks of Rockstar's incredible attention to detail."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Phil",
+      "altNames": [],
+      "slug": "phil",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Even Rockstar appears to realize the current approach is unsustainable, with studio veteran Phil Hooker telling Bloomberg that “the engine, the tools, and the team we've built during the [ GTA VI ] project will allow us to do things more quickly” in the future.",
+          "quote": "Even Rockstar appears to realize the current approach is unsustainable, with studio veteran Phil Hooker telling Bloomberg that “the engine, the tools, and the team we've built during the [ GTA VI ] project will allow us to do things more quickly” in the future."
+        }
+      ]
+    },
+    {
+      "entityType": "edition",
+      "name": "Ultimate Edition",
+      "altNames": [
+        "GTA 6 Ultimate Edition",
+        "GTA VI Ultimate Edition"
+      ],
+      "slug": "gta-6-ultimate-edition",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Some estimates already put revenue between $1 billion and $4 billion on preorders alone, with eager players clearly not put off by its $80 price (or $100 for the Ultimate Edition).",
+          "quote": "Some estimates already put revenue between $1 billion and $4 billion on preorders alone, with eager players clearly not put off by its $80 price (or $100 for the Ultimate Edition)."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Leonida, the open-world setting based on Florida, looks almost impossibly vast yet meticulously detailed, with its own weather systems and hundreds of animal species roaming around.",
+          "quote": "Leonida, the open-world setting based on Florida, looks almost impossibly vast yet meticulously detailed, with its own weather systems and hundreds of animal species roaming around."
+        }
+      ]
+    }
+  ]
+}

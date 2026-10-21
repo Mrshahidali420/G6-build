@@ -1,0 +1,65 @@
+{
+  "rawId": "pcgamer-2ffcfd04f278",
+  "outlet": "PC Gamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pcgamer.com/games/grand-theft-auto/us-government-leaks-the-best-gta-6-promo-yet-pisswasser-is-real/",
+  "published": "2026-10-21",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/oz85eeLcE2EoKHoTkF7c5a-1920-80.jpg",
+  "extractedAt": "2026-10-21T20:29:25.360Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Patriot Beer",
+      "altNames": [
+        "Patriot"
+      ],
+      "slug": "patriot-beer",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The discovery was made by Grand Theft Auto site GTAVice.net , which found labels for Pi&szlig;wasser, Patriot, and No Mames Vice City-a re-branding of Tripping Animals' No Mames Lager-in the US Alcohol and Tobacco Tax and Trade Bureau database .",
+          "quote": "The discovery was made by Grand Theft Auto site GTAVice.net , which found labels for Pi&szlig;wasser, Patriot, and No Mames Vice City-a re-branding of Tripping Animals' No Mames Lager-in the US Alcohol and Tobacco Tax and Trade Bureau database ."
+        },
+        {
+          "fact": "Sure enough, they're in there, although I had to use Hopgrail to dig up the labels: The No Mames Vice City label was approved on October 9, while the Pi&szlig;wasser and Patriot labels followed on October 15.",
+          "quote": "Sure enough, they're in there, although I had to use Hopgrail to dig up the labels: The No Mames Vice City label was approved on October 9, while the Pi&szlig;wasser and Patriot labels followed on October 15."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The discovery was made by Grand Theft Auto site GTAVice.net , which found labels for Pi&szlig;wasser, Patriot, and No Mames Vice City-a re-branding of Tripping Animals' No Mames Lager-in the US Alcohol and Tobacco Tax and Trade Bureau database .",
+          "quote": "The discovery was made by Grand Theft Auto site GTAVice.net , which found labels for Pi&szlig;wasser, Patriot, and No Mames Vice City-a re-branding of Tripping Animals' No Mames Lager-in the US Alcohol and Tobacco Tax and Trade Bureau database ."
+        },
+        {
+          "fact": "Sure enough, they're in there, although I had to use Hopgrail to dig up the labels: The No Mames Vice City label was approved on October 9, while the Pi&szlig;wasser and Patriot labels followed on October 15.",
+          "quote": "Sure enough, they're in there, although I had to use Hopgrail to dig up the labels: The No Mames Vice City label was approved on October 9, while the Pi&szlig;wasser and Patriot labels followed on October 15."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "rawId": "ign-e1149153ade1",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/you-can-save-11-off-gta-6-preorders-today-only",
+  "published": "2026-10-21",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/09/17/gta-6-soundtrack-1789662158949.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-22T09:54:37.302Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The Ultimate edition includes everything that comes in the standard edition, plus “an exclusive collection of premium vehicles, weapons, apparel, and action threaded across all aspects of Jason and Lucia’s story.” When preorders first went live, we saw reports that way more people were buying the ultimate edition than the standard edition.",
+          "quote": "The Ultimate edition includes everything that comes in the standard edition, plus “an exclusive collection of premium vehicles, weapons, apparel, and action threaded across all aspects of Jason and Lucia’s story.” When preorders first went live, we saw reports that way more people were buying the ultimate edition than the standard edition."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The Ultimate edition includes everything that comes in the standard edition, plus “an exclusive collection of premium vehicles, weapons, apparel, and action threaded across all aspects of Jason and Lucia’s story.” When preorders first went live, we saw reports that way more people were buying the ultimate edition than the standard edition.",
+          "quote": "The Ultimate edition includes everything that comes in the standard edition, plus “an exclusive collection of premium vehicles, weapons, apparel, and action threaded across all aspects of Jason and Lucia’s story.” When preorders first went live, we saw reports that way more people were buying the ultimate edition than the standard edition."
+        }
+      ]
+    },
+    {
+      "entityType": "edition",
+      "name": "Standard Edition",
+      "altNames": [
+        "GTA 6 Standard Edition",
+        "GTA VI Standard Edition"
+      ],
+      "slug": "gta-6-standard-edition",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The Ultimate edition includes everything that comes in the standard edition, plus “an exclusive collection of premium vehicles, weapons, apparel, and action threaded across all aspects of Jason and Lucia’s story.” When preorders first went live, we saw reports that way more people were buying the ultimate edition than the standard edition.",
+          "quote": "The Ultimate edition includes everything that comes in the standard edition, plus “an exclusive collection of premium vehicles, weapons, apparel, and action threaded across all aspects of Jason and Lucia’s story.” When preorders first went live, we saw reports that way more people were buying the ultimate edition than the standard edition."
+        }
+      ]
+    },
+    {
+      "entityType": "edition",
+      "name": "Ultimate Edition",
+      "altNames": [
+        "GTA 6 Ultimate Edition",
+        "GTA VI Ultimate Edition"
+      ],
+      "slug": "gta-6-ultimate-edition",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "As luck would have it, $100 is how much the ultimate edition of Grand Theft Auto VI costs.",
+          "quote": "As luck would have it, $100 is how much the ultimate edition of Grand Theft Auto VI costs."
+        },
+        {
+          "fact": "The Ultimate edition includes everything that comes in the standard edition, plus “an exclusive collection of premium vehicles, weapons, apparel, and action threaded across all aspects of Jason and Lucia’s story.” When preorders first went live, we saw reports that way more people were buying the ultimate edition than the standard edition.",
+          "quote": "The Ultimate edition includes everything that comes in the standard edition, plus “an exclusive collection of premium vehicles, weapons, apparel, and action threaded across all aspects of Jason and Lucia’s story.” When preorders first went live, we saw reports that way more people were buying the ultimate edition than the standard edition."
+        },
+        {
+          "fact": "That makes sense, as early preorders would mostly be made by the biggest fans, who would be the most likely to splurge on the ultimate edition.",
+          "quote": "That makes sense, as early preorders would mostly be made by the biggest fans, who would be the most likely to splurge on the ultimate edition."
+        }
+      ]
+    },
+    {
+      "entityType": "release_fact",
+      "name": "GTA 6 release date",
+      "altNames": [
+        "GTA VI release date",
+        "Grand Theft Auto 6 release date"
+      ],
+      "slug": "gta-6-release-date",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "So if you miss out this time, you’ll probably have another shot or two before the official GTA 6 release date.",
+          "quote": "So if you miss out this time, you’ll probably have another shot or two before the official GTA 6 release date."
+        }
+      ]
+    }
+  ]
+}

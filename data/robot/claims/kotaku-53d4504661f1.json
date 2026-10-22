@@ -1,0 +1,28 @@
+{
+  "rawId": "kotaku-53d4504661f1",
+  "outlet": "Kotaku",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://kotaku.com/gta-6s-first-tv-ad-cuts-the-spicy-shower-scenes-2000748474",
+  "published": "2026-10-21",
+  "ogImage": "https://kotaku.com/app/uploads/2026/10/GTA-launch-trailer_0007_Brightness_Contrast-7.jpg",
+  "extractedAt": "2026-10-22T09:54:43.801Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "And a few more frames were included in the bit where Lucia jumps off a truck and onto a plane’s landing gear.",
+          "quote": "And a few more frames were included in the bit where Lucia jumps off a truck and onto a plane’s landing gear."
+        }
+      ]
+    }
+  ]
+}

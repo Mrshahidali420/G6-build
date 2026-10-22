@@ -1,0 +1,65 @@
+{
+  "rawId": "ign-9f7fa86489ab",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/gta-6s-fast-food-restaurant-burger-shot-is-coming-to-real-life-in-the-miami-heats-arena",
+  "published": "2026-10-21",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/10/21/burger-shot-1792623074820.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-22T09:54:30.997Z",
+  "entities": [
+    {
+      "entityType": "brand",
+      "name": "Burger Shot",
+      "altNames": [],
+      "slug": "burger-shot",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Back To Top Home › News › GTA 6 GTA 6's Fast Food Restaurant, Burger Shot, Is Coming to Real Life in the Miami Heat's Arena Eat your heart out.",
+          "quote": "Back To Top Home › News › GTA 6 GTA 6's Fast Food Restaurant, Burger Shot, Is Coming to Real Life in the Miami Heat's Arena Eat your heart out."
+        },
+        {
+          "fact": "Rockstar Games' takeover of Miami is continuing to expand with a real-life version of Burger Shot, a famous fast-food restaurant in the GTA franchise.",
+          "quote": "Rockstar Games' takeover of Miami is continuing to expand with a real-life version of Burger Shot, a famous fast-food restaurant in the GTA franchise."
+        },
+        {
+          "fact": "In GTA, Burger Shot pokes fun at fast food joints like McDonald's and Burger King for their extremely unhealthy meals.",
+          "quote": "In GTA, Burger Shot pokes fun at fast food joints like McDonald's and Burger King for their extremely unhealthy meals."
+        },
+        {
+          "fact": "In the game, Burger Shot has menu items like \"The Heartstopper,\" which features seven patties stacked high between a variety of toppings.",
+          "quote": "In the game, Burger Shot has menu items like \"The Heartstopper,\" which features seven patties stacked high between a variety of toppings."
+        },
+        {
+          "fact": "Miami's Kaseya Center has rebranded its burger restaurant as Burger Shot with Macca &amp; Friends and Vice City posters also appearing inside the venue as part of #GTAVI's marketing campaign.",
+          "quote": "Miami's Kaseya Center has rebranded its burger restaurant as Burger Shot with Macca &amp; Friends and Vice City posters also appearing inside the venue as part of #GTAVI's marketing campaign."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Miami's Kaseya Center has rebranded its burger restaurant as Burger Shot with Macca &amp; Friends and Vice City posters also appearing inside the venue as part of #GTAVI's marketing campaign.",
+          "quote": "Miami's Kaseya Center has rebranded its burger restaurant as Burger Shot with Macca &amp; Friends and Vice City posters also appearing inside the venue as part of #GTAVI's marketing campaign."
+        },
+        {
+          "fact": "Rockstar Games has other ambitious plans for the Kaseya Center, including an unprecdented regular season game where the Miami Heat will turn into the Vice City heat for one night on November 18.",
+          "quote": "Rockstar Games has other ambitious plans for the Kaseya Center, including an unprecdented regular season game where the Miami Heat will turn into the Vice City heat for one night on November 18."
+        },
+        {
+          "fact": "Rockstar has spent the last few weeks preparing for launch in Miami with extravagant marketing, which includes a $975,000 neon sign on top of the Kaseya Center that reads \"Welcome to Vice City.\" Fans also recently spotted flashy GTA-branded sports cars driving around Miami .",
+          "quote": "Rockstar has spent the last few weeks preparing for launch in Miami with extravagant marketing, which includes a $975,000 neon sign on top of the Kaseya Center that reads \"Welcome to Vice City.\" Fans also recently spotted flashy GTA-branded sports cars driving around Miami ."
+        }
+      ]
+    }
+  ]
+}

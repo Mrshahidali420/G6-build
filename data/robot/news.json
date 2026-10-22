@@ -358,5 +358,29 @@
   "polygon-aa32de36e87a": {
     "slug": "gta-6-sounds-like-gta-6-will-be-full-of-details-like-red-deads-infamous-horse-balls",
     "written": "2026-10-19"
+  },
+  "gamesradar-4999610d768e": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-22",
+    "reason": "an emoji appears in the written text"
+  },
+  "ign-9f7fa86489ab": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-22",
+    "reason": "an emoji appears in the written text"
+  },
+  "kotaku-c5836ae074dc": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-22",
+    "reason": "an emoji appears in the written text"
+  },
+  "vgc-a79b079ed656": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-22",
+    "reason": "an emoji appears in the written text"
   }
 }

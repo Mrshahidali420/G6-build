@@ -1,0 +1,270 @@
+{
+  "rawId": "vgc-a79b079ed656",
+  "outlet": "VGC",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.videogameschronicle.com/news/rockstar-is-quietly-transforming-the-real-miami-into-gta-6s-vice-city/",
+  "published": "2026-10-22",
+  "ogImage": "https://www.videogameschronicle.com/files/2026/10/social-basic.jpg.jpg",
+  "extractedAt": "2026-10-22T20:27:35.686Z",
+  "entities": [
+    {
+      "entityType": "brand",
+      "name": "Burger Shot",
+      "altNames": [],
+      "slug": "burger-shot",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Inside the Kaseya Center, which is the arena where the Miami Heat play, visitors have spotted GTA’s in-universe fast food restaurants, Burger Shot and Cluckin’ Bell, having quietly opened inside.",
+          "quote": "Inside the Kaseya Center, which is the arena where the Miami Heat play, visitors have spotted GTA’s in-universe fast food restaurants, Burger Shot and Cluckin’ Bell, having quietly opened inside."
+        },
+        {
+          "fact": "(via @luciacaminoss ) https://t.co/UhlpHkhUjl pic.twitter.com/zAJuZL4gkY - GTA 6 Countdown ⏳ (@GTAVI_Countdown) October 22, 2026 It’s beautiful 🤩 pic.twitter.com/dXJ6XiMHJQ - Joel Franco (@OfficialJoelF) October 18, 2026 The Burger Shot restaurant is reportedly a rebranded branch of burger chain Skinny Louie’s, with staff wearing new GTA 6-branded uniforms.",
+          "quote": "(via @luciacaminoss ) https://t.co/UhlpHkhUjl pic.twitter.com/zAJuZL4gkY - GTA 6 Countdown ⏳ (@GTAVI_Countdown) October 22, 2026 It’s beautiful 🤩 pic.twitter.com/dXJ6XiMHJQ - Joel Franco (@OfficialJoelF) October 18, 2026 The Burger Shot restaurant is reportedly a rebranded branch of burger chain Skinny Louie’s, with staff wearing new GTA 6-branded uniforms."
+        }
+      ]
+    },
+    {
+      "entityType": "brand",
+      "name": "eCola",
+      "altNames": [],
+      "slug": "ecola",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The advertisements seen so far include spots for fictional TV station Weazel News, radio station Chamber 106.6, tech company Fruit, car company Coil, eCola, Y Hotel, Vault Nightclub, Big Chug, and more.",
+          "quote": "The advertisements seen so far include spots for fictional TV station Weazel News, radio station Chamber 106.6, tech company Fruit, car company Coil, eCola, Y Hotel, Vault Nightclub, Big Chug, and more."
+        }
+      ]
+    },
+    {
+      "entityType": "brand",
+      "name": "Weazel News",
+      "altNames": [],
+      "slug": "weazel-news",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The advertisements seen so far include spots for fictional TV station Weazel News, radio station Chamber 106.6, tech company Fruit, car company Coil, eCola, Y Hotel, Vault Nightclub, Big Chug, and more.",
+          "quote": "The advertisements seen so far include spots for fictional TV station Weazel News, radio station Chamber 106.6, tech company Fruit, car company Coil, eCola, Y Hotel, Vault Nightclub, Big Chug, and more."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "Fruit",
+      "altNames": [
+        "Fruit Computers"
+      ],
+      "slug": "fruit",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The advertisements seen so far include spots for fictional TV station Weazel News, radio station Chamber 106.6, tech company Fruit, car company Coil, eCola, Y Hotel, Vault Nightclub, Big Chug, and more.",
+          "quote": "The advertisements seen so far include spots for fictional TV station Weazel News, radio station Chamber 106.6, tech company Fruit, car company Coil, eCola, Y Hotel, Vault Nightclub, Big Chug, and more."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "Patriot Beer",
+      "altNames": [
+        "Patriot"
+      ],
+      "slug": "patriot-beer",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Advertisements for Pißwasser and Patriot have been spotted outside bars in Miami, and a filing suggests they’ll soon sell the fictional beers.",
+          "quote": "Advertisements for Pißwasser and Patriot have been spotted outside bars in Miami, and a filing suggests they’ll soon sell the fictional beers."
+        }
+      ]
+    },
+    {
+      "entityType": "landmark",
+      "name": "South Beach",
+      "altNames": [
+        "Vice Beach"
+      ],
+      "slug": "south-beach",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "A real-life ‘Coquette’ (based on Chevrolet Corvette) has been seen driving with a Vice City wrap, alongside a Lamborghini wrapped in Vice Beach Police livery.",
+          "quote": "A real-life ‘Coquette’ (based on Chevrolet Corvette) has been seen driving with a Vice City wrap, alongside a Lamborghini wrapped in Vice Beach Police livery."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Ambrosia",
+      "altNames": [
+        "Ambrosia"
+      ],
+      "slug": "ambrosia",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Leonida will be divided into six main regions: Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, and Mount Kalaga National Park, each offering a distinct setting inspired by different parts of Florida.",
+          "quote": "Leonida will be divided into six main regions: Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, and Mount Kalaga National Park, each offering a distinct setting inspired by different parts of Florida."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Grassrivers",
+      "altNames": [
+        "Grass Rivers"
+      ],
+      "slug": "grassrivers",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Leonida will be divided into six main regions: Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, and Mount Kalaga National Park, each offering a distinct setting inspired by different parts of Florida.",
+          "quote": "Leonida will be divided into six main regions: Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, and Mount Kalaga National Park, each offering a distinct setting inspired by different parts of Florida."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Rockstar’s next open-world crime game is set across an entire fictionalized version of Florida, called Leonida, where the series is returning for the first time since 2006’s Grand Theft Auto: Vice City Stories.",
+          "quote": "Rockstar’s next open-world crime game is set across an entire fictionalized version of Florida, called Leonida, where the series is returning for the first time since 2006’s Grand Theft Auto: Vice City Stories."
+        },
+        {
+          "fact": "According to Rockstar, Grand Theft Auto VI will feature a more dynamic and localized weather system in Leonida, allowing different areas of the map to experience dramatically different conditions at the same time.",
+          "quote": "According to Rockstar, Grand Theft Auto VI will feature a more dynamic and localized weather system in Leonida, allowing different areas of the map to experience dramatically different conditions at the same time."
+        },
+        {
+          "fact": "Leonida will be divided into six main regions: Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, and Mount Kalaga National Park, each offering a distinct setting inspired by different parts of Florida.",
+          "quote": "Leonida will be divided into six main regions: Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, and Mount Kalaga National Park, each offering a distinct setting inspired by different parts of Florida."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida Keys",
+      "altNames": [
+        "Keys"
+      ],
+      "slug": "leonida-keys",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Leonida will be divided into six main regions: Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, and Mount Kalaga National Park, each offering a distinct setting inspired by different parts of Florida.",
+          "quote": "Leonida will be divided into six main regions: Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, and Mount Kalaga National Park, each offering a distinct setting inspired by different parts of Florida."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Mount Kalaga National Park",
+      "altNames": [
+        "Mount Kalaga",
+        "Mount Kalaga Park"
+      ],
+      "slug": "mount-kalaga-national-park",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Leonida will be divided into six main regions: Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, and Mount Kalaga National Park, each offering a distinct setting inspired by different parts of Florida.",
+          "quote": "Leonida will be divided into six main regions: Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, and Mount Kalaga National Park, each offering a distinct setting inspired by different parts of Florida."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Port Gellhorn",
+      "altNames": [
+        "Port Gellhorn"
+      ],
+      "slug": "port-gellhorn",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Leonida will be divided into six main regions: Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, and Mount Kalaga National Park, each offering a distinct setting inspired by different parts of Florida.",
+          "quote": "Leonida will be divided into six main regions: Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, and Mount Kalaga National Park, each offering a distinct setting inspired by different parts of Florida."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "The GTA 6 developer first signaled its intent to collaborate with the city of Miami – which the game’s fictional Vice City is based on – earlier this month.",
+          "quote": "The GTA 6 developer first signaled its intent to collaborate with the city of Miami – which the game’s fictional Vice City is based on – earlier this month."
+        },
+        {
+          "fact": "As part of Rockstar ’s announced promotion, NBA team Miami Heat is set to rebrand as ‘Vice City’ as part of an event dubbed “A Night In Vice City,” which will take place on the eve of GTA 6’s launch on November 18, when the Heat will take the court as “Vice City”.",
+          "quote": "As part of Rockstar ’s announced promotion, NBA team Miami Heat is set to rebrand as ‘Vice City’ as part of an event dubbed “A Night In Vice City,” which will take place on the eve of GTA 6’s launch on November 18, when the Heat will take the court as “Vice City”."
+        },
+        {
+          "fact": "As part of the Miami Heat event, the team will play on a specially constructed “Vice City Court” and appear in a reimagined uniform.",
+          "quote": "As part of the Miami Heat event, the team will play on a specially constructed “Vice City Court” and appear in a reimagined uniform."
+        },
+        {
+          "fact": "Special Vice City merchandise is also being sold at the Kaseya Center.",
+          "quote": "Special Vice City merchandise is also being sold at the Kaseya Center."
+        },
+        {
+          "fact": "Beyond Miami Heat, dozens of GTA 6 marketing promotions have been spotted around Miami so far, including a blimp, murals, Vice City branding on buses and taxis, and even in-universe marketing running on digital displays around the city.",
+          "quote": "Beyond Miami Heat, dozens of GTA 6 marketing promotions have been spotted around Miami so far, including a blimp, murals, Vice City branding on buses and taxis, and even in-universe marketing running on digital displays around the city."
+        },
+        {
+          "fact": "Notably, custom sports cars with Vice City number plates have been spotted driving around the city.",
+          "quote": "Notably, custom sports cars with Vice City number plates have been spotted driving around the city."
+        },
+        {
+          "fact": "A real-life ‘Coquette’ (based on Chevrolet Corvette) has been seen driving with a Vice City wrap, alongside a Lamborghini wrapped in Vice Beach Police livery.",
+          "quote": "A real-life ‘Coquette’ (based on Chevrolet Corvette) has been seen driving with a Vice City wrap, alongside a Lamborghini wrapped in Vice Beach Police livery."
+        },
+        {
+          "fact": "Rockstar’s next open-world crime game is set across an entire fictionalized version of Florida, called Leonida, where the series is returning for the first time since 2006’s Grand Theft Auto: Vice City Stories.",
+          "quote": "Rockstar’s next open-world crime game is set across an entire fictionalized version of Florida, called Leonida, where the series is returning for the first time since 2006’s Grand Theft Auto: Vice City Stories."
+        },
+        {
+          "fact": "Leonida will be divided into six main regions: Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, and Mount Kalaga National Park, each offering a distinct setting inspired by different parts of Florida.",
+          "quote": "Leonida will be divided into six main regions: Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, and Mount Kalaga National Park, each offering a distinct setting inspired by different parts of Florida."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Coquette",
+      "altNames": [],
+      "slug": "coquette",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "A real-life ‘Coquette’ (based on Chevrolet Corvette) has been seen driving with a Vice City wrap, alongside a Lamborghini wrapped in Vice Beach Police livery.",
+          "quote": "A real-life ‘Coquette’ (based on Chevrolet Corvette) has been seen driving with a Vice City wrap, alongside a Lamborghini wrapped in Vice Beach Police livery."
+        }
+      ]
+    }
+  ]
+}

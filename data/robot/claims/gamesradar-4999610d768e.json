@@ -1,0 +1,117 @@
+{
+  "rawId": "gamesradar-4999610d768e",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/cyberpunk/cyberpunk-2077s-new-update-just-made-it-the-anti-gta-6/",
+  "published": "2026-10-22",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/zwhkzwzoMS2PevJavfm67e-2560-80.jpg",
+  "extractedAt": "2026-10-22T20:27:09.660Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Even with its sprawling open world and all the painstaking technical details that have gone into protagonists Lucia and Jason's story, GTA 6 will never be among those we call the best RPGs .",
+          "quote": "Even with its sprawling open world and all the painstaking technical details that have gone into protagonists Lucia and Jason's story, GTA 6 will never be among those we call the best RPGs ."
+        },
+        {
+          "fact": "Some systems in the latest entry might hew close, but the way Jason and Lucia evolve are closer to being a sim than an RPG proper.",
+          "quote": "Some systems in the latest entry might hew close, but the way Jason and Lucia evolve are closer to being a sim than an RPG proper."
+        },
+        {
+          "fact": "Call me when Jason gets a gorilla arms mod (and don't tell Mommy on me).",
+          "quote": "Call me when Jason gets a gorilla arms mod (and don't tell Mommy on me)."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Even with its sprawling open world and all the painstaking technical details that have gone into protagonists Lucia and Jason's story, GTA 6 will never be among those we call the best RPGs .",
+          "quote": "Even with its sprawling open world and all the painstaking technical details that have gone into protagonists Lucia and Jason's story, GTA 6 will never be among those we call the best RPGs ."
+        },
+        {
+          "fact": "Some systems in the latest entry might hew close, but the way Jason and Lucia evolve are closer to being a sim than an RPG proper.",
+          "quote": "Some systems in the latest entry might hew close, but the way Jason and Lucia evolve are closer to being a sim than an RPG proper."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Games RPGs Cyberpunk Cyberpunk 2077's new update just made it the anti-GTA 6 Features By Jasmine Gould-Wilson Published 22 October 2026 4 min read Night City over Vice City any day When you purchase through links on our site, we may earn an affiliate commission.",
+          "quote": "Games RPGs Cyberpunk Cyberpunk 2077's new update just made it the anti-GTA 6 Features By Jasmine Gould-Wilson Published 22 October 2026 4 min read Night City over Vice City any day When you purchase through links on our site, we may earn an affiliate commission."
+        }
+      ]
+    },
+    {
+      "entityType": "weapon",
+      "name": "Pistol",
+      "altNames": [
+        "Handgun, 9mm"
+      ],
+      "slug": "pistol",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Delivered in co-development with Virtuos Studios, the update brings new clothing items as well as long-awaited cyberware customization (courtesy of new NPC vendors called Glamdocs), and the opportunity to finally dual-wield any pistol or revolver combination.",
+          "quote": "Delivered in co-development with Virtuos Studios, the update brings new clothing items as well as long-awaited cyberware customization (courtesy of new NPC vendors called Glamdocs), and the opportunity to finally dual-wield any pistol or revolver combination."
+        }
+      ]
+    },
+    {
+      "entityType": "wildlife",
+      "name": "Cats",
+      "altNames": [],
+      "slug": "cats",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In the meantime, I'll take hot pink mantis blades, dual-wielding Jackie's golden pistols, and having cats in all of V's Night City apartments before Rockstar's precious new baby.",
+          "quote": "In the meantime, I'll take hot pink mantis blades, dual-wielding Jackie's golden pistols, and having cats in all of V's Night City apartments before Rockstar's precious new baby."
+        }
+      ]
+    }
+  ]
+}

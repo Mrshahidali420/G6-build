@@ -1,0 +1,29 @@
+{
+  "rawId": "ign-68c60edb83b1",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/ps5-console-bundle-deal-ahead-of-gta-6-and-black-friday",
+  "published": "2026-10-23",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/10/23/ps5-deal-refurb-ps-direct-ign-black-friday-2026-1792759045013.png?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-23T20:15:46.514Z",
+  "entities": [
+    {
+      "entityType": "gameplay_feature",
+      "name": "Scuba Diving and Underwater Exploration",
+      "altNames": [
+        "swimming",
+        "diving",
+        "underwater gameplay"
+      ],
+      "slug": "scuba-diving-underwater-exploration",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "His primary coverage focuses on tracking down the best gaming deals and diving into the fast-paced world of Trading Card Games (TCGs).",
+          "quote": "His primary coverage focuses on tracking down the best gaming deals and diving into the fast-paced world of Trading Card Games (TCGs)."
+        }
+      ]
+    }
+  ]
+}

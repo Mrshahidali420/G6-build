@@ -1,0 +1,91 @@
+{
+  "rawId": "pushsquare-dc71c7761039",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/features/poll-are-you-taking-time-off-for-gta-6",
+  "published": "2026-10-23",
+  "ogImage": "https://images.pushsquare.com/7c5a6fd3be635/1280x720.jpg",
+  "extractedAt": "2026-10-23T20:15:59.523Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "People are free to take whatever days off they want.",
+          "quote": "People are free to take whatever days off they want."
+        },
+        {
+          "fact": "Set it somewhere and some when that doesn't make me want to chase a bottle of aspirin with a bottle of Jack.",
+          "quote": "Set it somewhere and some when that doesn't make me want to chase a bottle of aspirin with a bottle of Jack."
+        },
+        {
+          "fact": "1 46 GirlVersusGame 3 hours ago @DennisReynolds I was going to say we should switch places, you play the game and I tend to the animals but it sounds like you want to be there, I would too.",
+          "quote": "1 46 GirlVersusGame 3 hours ago @DennisReynolds I was going to say we should switch places, you play the game and I tend to the animals but it sounds like you want to be there, I would too."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "That's because an estimated 1.5 million workers are planning to take 19th November 2026 as a day off, allowing them to fully immerse themselves in Jason and Lucia's adventure throughout the day.",
+          "quote": "That's because an estimated 1.5 million workers are planning to take 19th November 2026 as a day off, allowing them to fully immerse themselves in Jason and Lucia's adventure throughout the day."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "That's because an estimated 1.5 million workers are planning to take 19th November 2026 as a day off, allowing them to fully immerse themselves in Jason and Lucia's adventure throughout the day.",
+          "quote": "That's because an estimated 1.5 million workers are planning to take 19th November 2026 as a day off, allowing them to fully immerse themselves in Jason and Lucia's adventure throughout the day."
+        },
+        {
+          "fact": "0 83 arsmolinarc 33 mins ago In this economy Lucia can wait until after I'm off work XD 0 84 A-steak-with-ketchup 14 mins ago No way.",
+          "quote": "0 83 arsmolinarc 33 mins ago In this economy Lucia can wait until after I'm off work XD 0 84 A-steak-with-ketchup 14 mins ago No way."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "I did really like Vice City and San Andreas at the time, but not these new ones.",
+          "quote": "I did really like Vice City and San Andreas at the time, but not these new ones."
+        },
+        {
+          "fact": "0 64 8th_Observer 1 hour ago I still have to beat GTA 1, 2, 3, Vice City, IV, Vice City Stories, Liberty City Stories, and V first.",
+          "quote": "0 64 8th_Observer 1 hour ago I still have to beat GTA 1, 2, 3, Vice City, IV, Vice City Stories, Liberty City Stories, and V first."
+        }
+      ]
+    }
+  ]
+}

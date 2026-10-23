@@ -1,0 +1,25 @@
+{
+  "rawId": "ign-7d9d200a8cde",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/ign-is-partnering-with-best-buy-for-3-weeks-of-giveaways-leading-up-to-gta-vis-release",
+  "published": "2026-10-23",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/10/19/best-buy-grand-prize-1-1920x1080-1792444009488.png?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-23T20:15:53.019Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Limit",
+      "altNames": [],
+      "slug": "limit",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Don’t miss out! *All giveaways are open to U.S. residents aged 18+ (excluding HI, AK, FL and NY); Limit one (1) win per person across the three-week giveaway window.",
+          "quote": "Don’t miss out! *All giveaways are open to U.S. residents aged 18+ (excluding HI, AK, FL and NY); Limit one (1) win per person across the three-week giveaway window."
+        }
+      ]
+    }
+  ]
+}

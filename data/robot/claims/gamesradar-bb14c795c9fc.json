@@ -1,0 +1,25 @@
+{
+  "rawId": "gamesradar-bb14c795c9fc",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/mass-effect/mass-effect-5-lead-says-outpouring-of-support-following-bioware-closure-means-so-much-to-us-but-is-looking-on-the-bright-side-at-least-i-dont-have-to-call-in-sick-when-gta-6-comes-out/",
+  "published": "2026-10-23",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/r4EjMCMPisT2LQBVByX4p-1920-80.jpg",
+  "extractedAt": "2026-10-23T20:15:33.506Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    }
+  ]
+}

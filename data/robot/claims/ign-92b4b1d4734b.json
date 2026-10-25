@@ -1,0 +1,78 @@
+{
+  "rawId": "ign-92b4b1d4734b",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/rumored-lucia-actress-goes-viral-after-dodging-swarm-of-gta-6-comments-during-livestream",
+  "published": "2026-10-25",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/08/24/lucia-hi-res-headshot-artwork-1787583598249.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-25T19:28:53.001Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Brian Heder",
+      "altNames": [
+        "Brian",
+        "Heder"
+      ],
+      "slug": "brian-heder",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Who has been confirmed, whether Rockstar and any likely NDAs like it or not, is Stephen Root, who said he will be seen playing drug trafficker Brian Heder .",
+          "quote": "Who has been confirmed, whether Rockstar and any likely NDAs like it or not, is Stephen Root, who said he will be seen playing drug trafficker Brian Heder ."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "If you're wondering who might be playing Lucia's partner in crime, Jason, fans have long speculated that Modern Family and Grey's Anatomy actor Dylan Rourke filled the role, but he, too, has yet to be confirmed.",
+          "quote": "If you're wondering who might be playing Lucia's partner in crime, Jason, fans have long speculated that Modern Family and Grey's Anatomy actor Dylan Rourke filled the role, but he, too, has yet to be confirmed."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Back To Top Home › News › GTA 6 Rumored Lucia Actress Goes Viral After Dodging Swarm of GTA 6 Comments During Livestream Law & order.",
+          "quote": "Back To Top Home › News › GTA 6 Rumored Lucia Actress Goes Viral After Dodging Swarm of GTA 6 Comments During Livestream Law & order."
+        },
+        {
+          "fact": "Perez, the actress long rumored to be playing Lucia in GTA 6 , has gone viral after dodging a swarm of comments from Grand Theft Auto fans during a recent livestream.",
+          "quote": "Perez, the actress long rumored to be playing Lucia in GTA 6 , has gone viral after dodging a swarm of comments from Grand Theft Auto fans during a recent livestream."
+        },
+        {
+          "fact": "Lucia aka Manni Perez went live on Instagram by u/DMONEYDelano in GTA6unmoderated \"But yeah, no, I'm not rich.",
+          "quote": "Lucia aka Manni Perez went live on Instagram by u/DMONEYDelano in GTA6unmoderated \"But yeah, no, I'm not rich."
+        },
+        {
+          "fact": "Keep in mind that this all comes from years of clues gathered by fans, but Rockstar's lack of confirmation doesn't mean there's nothing to suggest Perez is playing Lucia in GTA 6.",
+          "quote": "Keep in mind that this all comes from years of clues gathered by fans, but Rockstar's lack of confirmation doesn't mean there's nothing to suggest Perez is playing Lucia in GTA 6."
+        },
+        {
+          "fact": "If you're wondering who might be playing Lucia's partner in crime, Jason, fans have long speculated that Modern Family and Grey's Anatomy actor Dylan Rourke filled the role, but he, too, has yet to be confirmed.",
+          "quote": "If you're wondering who might be playing Lucia's partner in crime, Jason, fans have long speculated that Modern Family and Grey's Anatomy actor Dylan Rourke filled the role, but he, too, has yet to be confirmed."
+        }
+      ]
+    }
+  ]
+}

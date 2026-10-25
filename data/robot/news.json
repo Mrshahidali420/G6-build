@@ -382,5 +382,23 @@
     "written": null,
     "refused": "2026-10-22",
     "reason": "an emoji appears in the written text"
+  },
+  "ign-0f6998d8581d": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-25",
+    "reason": "an em dash appears in the written text"
+  },
+  "ign-92b4b1d4734b": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-25",
+    "reason": "an em dash appears in the written text"
+  },
+  "kotaku-53d4504661f1": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-25",
+    "reason": "an em dash appears in the written text"
   }
 }

@@ -1,0 +1,33 @@
+{
+  "rawId": "purexbox-b80bb706446b",
+  "outlet": "Pure Xbox",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.purexbox.com/features/dont-sleep-on-end-of-abyss-youll-regret-it",
+  "published": "2026-10-25",
+  "ogImage": "https://images.purexbox.com/7cddb6fa731ef/1280x720.jpg",
+  "extractedAt": "2026-10-25T19:28:59.471Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "With so many big releases fighting for our attention, I want to spotlight an early October release that I think may have fallen under your radar.",
+          "quote": "With so many big releases fighting for our attention, I want to spotlight an early October release that I think may have fallen under your radar."
+        },
+        {
+          "fact": "So, I want to share what I love about it and, hopefully, get more of you to give it a go.",
+          "quote": "So, I want to share what I love about it and, hopefully, get more of you to give it a go."
+        },
+        {
+          "fact": "It's An Absolute Blast For all its oppressive and horrid monsters, End of Abyss doesn’t want you to cower in a corner.",
+          "quote": "It's An Absolute Blast For all its oppressive and horrid monsters, End of Abyss doesn’t want you to cower in a corner."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "rawId": "polygon-d64f8181ce7c",
+  "outlet": "Polygon",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.polygon.com/gta-6-manni-perez-lucia-caminos-actor-who-is-instagram-live-money/",
+  "published": "2026-10-26",
+  "ogImage": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/jason_and_lucia_10-0cauoz34524.jpg?w=1600&h=900&fit=crop",
+  "extractedAt": "2026-10-26T21:38:28.728Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "For years now, the GTA 6 community has been convinced that actor and weightlifter Manni Perez is the model behind the game's co-protagonist Lucia Caminos.",
+          "quote": "For years now, the GTA 6 community has been convinced that actor and weightlifter Manni Perez is the model behind the game's co-protagonist Lucia Caminos."
+        },
+        {
+          "fact": "Manni Perez describes life before GTA 6 Despite getting thousands of comments screaming about Lucia and GTA 6 , Perez managed the Herculean task of never once uttering a word about those subjects.",
+          "quote": "Manni Perez describes life before GTA 6 Despite getting thousands of comments screaming about Lucia and GTA 6 , Perez managed the Herculean task of never once uttering a word about those subjects."
+        }
+      ]
+    }
+  ]
+}

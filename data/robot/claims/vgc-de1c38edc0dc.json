@@ -1,0 +1,54 @@
+{
+  "rawId": "vgc-de1c38edc0dc",
+  "outlet": "VGC",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.videogameschronicle.com/news/the-actor-rumoured-to-be-playing-lucia-in-gta-6-actively-ignored-questions-about-it-during-an-introductory-livestream/",
+  "published": "2026-10-26",
+  "ogImage": "https://www.videogameschronicle.com/files/2025/05/Lucia_Caminos_06.jpg",
+  "extractedAt": "2026-10-26T21:38:35.203Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Perez hosted a livestream on her Instagram account over the weekend, introducing herself to followers and saying “I figured I might get on here because a lot of people are asking questions, a lot of people want to get to know me”.",
+          "quote": "Perez hosted a livestream on her Instagram account over the weekend, introducing herself to followers and saying “I figured I might get on here because a lot of people are asking questions, a lot of people want to get to know me”."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Perez smiled and didn’t read out comments about Rockstar’s game Video Game News 26th Oct 2026 / 11:29 am Posted by Chris Scullion The actor believed most likely to be Lucia in Grand Theft Auto 6 deliberately ignored questions and comments about the game during a recent livestream.",
+          "quote": "Perez smiled and didn’t read out comments about Rockstar’s game Video Game News 26th Oct 2026 / 11:29 am Posted by Chris Scullion The actor believed most likely to be Lucia in Grand Theft Auto 6 deliberately ignored questions and comments about the game during a recent livestream."
+        },
+        {
+          "fact": "Now fans believe she’s the likely actor behind Lucia Caminos, one of two protagonists in next month’s Grand Theft Auto 6 .",
+          "quote": "Now fans believe she’s the likely actor behind Lucia Caminos, one of two protagonists in next month’s Grand Theft Auto 6 ."
+        },
+        {
+          "fact": "As GTA fans became aware of Perez’s stream, the chat filled with comments about Lucia and the game, and while Perez responded to other unrelated comments and questions, she didn’t acknowledge anything related to Grand Theft Auto.",
+          "quote": "As GTA fans became aware of Perez’s stream, the chat filled with comments about Lucia and the game, and while Perez responded to other unrelated comments and questions, she didn’t acknowledge anything related to Grand Theft Auto."
+        },
+        {
+          "fact": "Others, however, have suggested that Perez may not actually be involved in the game at all, and is making the most of the newfound attention by not explicitly denying any suggestions that she’s Lucia.",
+          "quote": "Others, however, have suggested that Perez may not actually be involved in the game at all, and is making the most of the newfound attention by not explicitly denying any suggestions that she’s Lucia."
+        }
+      ]
+    }
+  ]
+}

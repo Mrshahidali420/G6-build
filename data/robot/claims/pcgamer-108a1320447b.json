@@ -1,0 +1,59 @@
+{
+  "rawId": "pcgamer-108a1320447b",
+  "outlet": "PC Gamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pcgamer.com/games/grand-theft-auto/edge-magazine-went-to-rockstar-to-see-gta-6-and-will-tell-you-all-about-in-lavish-detail-this-thursday-october-29/",
+  "published": "2026-10-27",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/5d8sAc26TSKWqxLRCibcD4-1417-80.png",
+  "extractedAt": "2026-10-27T21:10:19.539Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "They've really been cooking over there, bringing us a bunch of exclusive new imagery, interviews with Rockstar head honchos, and a special gatefold cover with artwork of Jason and Lucia, about whom I already have very strong feelings.",
+          "quote": "They've really been cooking over there, bringing us a bunch of exclusive new imagery, interviews with Rockstar head honchos, and a special gatefold cover with artwork of Jason and Lucia, about whom I already have very strong feelings."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "They've really been cooking over there, bringing us a bunch of exclusive new imagery, interviews with Rockstar head honchos, and a special gatefold cover with artwork of Jason and Lucia, about whom I already have very strong feelings.",
+          "quote": "They've really been cooking over there, bringing us a bunch of exclusive new imagery, interviews with Rockstar head honchos, and a special gatefold cover with artwork of Jason and Lucia, about whom I already have very strong feelings."
+        }
+      ]
+    }
+  ]
+}

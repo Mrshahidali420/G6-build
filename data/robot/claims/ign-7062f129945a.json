@@ -1,0 +1,29 @@
+{
+  "rawId": "ign-7062f129945a",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/devil-woman-singer-cliff-richard-didnt-know-gta-6",
+  "published": "2026-10-27",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/10/27/gettyimages-2285327041-1793120285351.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-27T21:10:06.548Z",
+  "entities": [
+    {
+      "entityType": "song",
+      "name": "Devil Woman",
+      "altNames": [],
+      "slug": "devil-woman",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "\"Devil Woman\" is a 1976 single from his album I'm Nearly Famous, and it previously got a bump in popularity after featuring on 2017 movie I, Tonya.",
+          "quote": "\"Devil Woman\" is a 1976 single from his album I'm Nearly Famous, and it previously got a bump in popularity after featuring on 2017 movie I, Tonya."
+        },
+        {
+          "fact": "Since the Extended Look, Devil Woman has seen a 325% increase in daily streams.",
+          "quote": "Since the Extended Look, Devil Woman has seen a 325% increase in daily streams."
+        }
+      ]
+    }
+  ]
+}

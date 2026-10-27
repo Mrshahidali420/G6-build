@@ -1,0 +1,29 @@
+{
+  "rawId": "gamesradar-f6d2ee8ab75a",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/the-day-gta-6-pre-loading-starts-unionizing-rockstar-developers-will-vote-on-the-future-of-the-legendary-studio-this-is-our-moment/",
+  "published": "2026-10-27",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/DJ5yrctKvkVPiUUuSo36xg-1920-80.jpg",
+  "extractedAt": "2026-10-27T21:09:53.492Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        },
+        {
+          "fact": "I'm immensely proud of the games Rockstar gives its fans - I want to be equally proud of the voice Rockstar gives its staff,\" Easton-Steel adds.",
+          "quote": "I'm immensely proud of the games Rockstar gives its fans - I want to be equally proud of the voice Rockstar gives its staff,\" Easton-Steel adds."
+        }
+      ]
+    }
+  ]
+}

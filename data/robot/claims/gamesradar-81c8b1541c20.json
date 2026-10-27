@@ -1,0 +1,29 @@
+{
+  "rawId": "gamesradar-81c8b1541c20",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/devs-fear-launching-near-gta-6-but-one-analyst-says-they-shouldnt-a-lot-of-people-are-going-to-want-to-play-other-things/",
+  "published": "2026-10-27",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/TEreSmLV52RRZgMHB9ktZX-1920-80.jpg",
+  "extractedAt": "2026-10-27T21:09:40.483Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        },
+        {
+          "fact": "\"There are a whole bunch of people who are going to want to play other things.\" For example, \"There's a whole Switch market that's going to want to play other things because they won't be able to play Grand Theft Auto.\" And, you know, PC.",
+          "quote": "\"There are a whole bunch of people who are going to want to play other things.\" For example, \"There's a whole Switch market that's going to want to play other things because they won't be able to play Grand Theft Auto.\" And, you know, PC."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "rawId": "pushsquare-eba1469cdd62",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/10/gta-6-ps5-file-size-has-been-reported-and-its-an-absolute-monster",
+  "published": "2026-10-27",
+  "ogImage": "https://images.pushsquare.com/efc10a10f718f/1280x720.jpg",
+  "extractedAt": "2026-10-27T21:10:39.040Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "If you want to play it, make room.",
+          "quote": "If you want to play it, make room."
+        },
+        {
+          "fact": "It's perfectly possible, it's just as you said, they don't want to lose the money they did on GTAV to the secondhand market.",
+          "quote": "It's perfectly possible, it's just as you said, they don't want to lose the money they did on GTAV to the secondhand market."
+        }
+      ]
+    },
+    {
+      "entityType": "landmark",
+      "name": "The Fence",
+      "altNames": [],
+      "slug": "the-fence",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "8 5 ButteredCrumpet 3 hours ago I’m still on the fence as to when I’ll get around to giving it a whirl, but when I do, I’m sure I’ll be able to find space.",
+          "quote": "8 5 ButteredCrumpet 3 hours ago I’m still on the fence as to when I’ll get around to giving it a whirl, but when I do, I’m sure I’ll be able to find space."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Phantom",
+      "altNames": [],
+      "slug": "phantom",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Will probably get Phantom Blade 2 8 freddquadros 2 hours ago I am already taking care of this.",
+          "quote": "Will probably get Phantom Blade 2 8 freddquadros 2 hours ago I am already taking care of this."
+        },
+        {
+          "fact": "9 Review Phantom Blade Zero (PS5) - One of the Generation's Greatest Action Exper...",
+          "quote": "9 Review Phantom Blade Zero (PS5) - One of the Generation's Greatest Action Exper..."
+        }
+      ]
+    }
+  ]
+}

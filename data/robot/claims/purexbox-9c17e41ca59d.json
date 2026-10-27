@@ -1,0 +1,74 @@
+{
+  "rawId": "purexbox-9c17e41ca59d",
+  "outlet": "Pure Xbox",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.purexbox.com/news/2026/10/xbox-racks-up-millions-of-views-teasing-gta-6-on-xbox-series-x",
+  "published": "2026-10-27",
+  "ogImage": "https://images.purexbox.com/06eaa8bbe4544/1280x720.jpg",
+  "extractedAt": "2026-10-27T21:10:32.563Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "2 3 BDK71 7 hours ago Not to mention, some people just want GTA Online.",
+          "quote": "2 3 BDK71 7 hours ago Not to mention, some people just want GTA Online."
+        },
+        {
+          "fact": "I assume they won't want to sunset the old GTA Online considering it still makes so much money for them.",
+          "quote": "I assume they won't want to sunset the old GTA Online considering it still makes so much money for them."
+        },
+        {
+          "fact": "There is a video explaining what FSR 4.1 on Xbox really means. https://youtu.be/nNSRhoMeOqQ 0 16 Coletrain 6 hours ago I'm buying day 1, but I'm just finishing off Rebirth right now, then I want to do a quick 100% play through of Vice City to get the full feels before GTA VI.",
+          "quote": "There is a video explaining what FSR 4.1 on Xbox really means. https://youtu.be/nNSRhoMeOqQ 0 16 Coletrain 6 hours ago I'm buying day 1, but I'm just finishing off Rebirth right now, then I want to do a quick 100% play through of Vice City to get the full feels before GTA VI."
+        },
+        {
+          "fact": "I believe there’s actually a lot of people out there that will just be waiting for the online to release before buying the game, to me that is wild as I’m playing GTA 6 for the story and to explore the world at my pace before I even want to play the online side of the game.",
+          "quote": "I believe there’s actually a lot of people out there that will just be waiting for the online to release before buying the game, to me that is wild as I’m playing GTA 6 for the story and to explore the world at my pace before I even want to play the online side of the game."
+        }
+      ]
+    },
+    {
+      "entityType": "edition",
+      "name": "Ultimate Edition",
+      "altNames": [
+        "GTA 6 Ultimate Edition",
+        "GTA VI Ultimate Edition"
+      ],
+      "slug": "gta-6-ultimate-edition",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "1 8 oopsiezz 7 hours ago I have the ultimate edition on pre order.",
+          "quote": "1 8 oopsiezz 7 hours ago I have the ultimate edition on pre order."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "I'm not a big fan of the modern GTA games (I loved GTA 2 and Vice City), and I don't think current gen consoles will be a good place to play GTA VI, at 30 fps, it certainly doesn't look promising.",
+          "quote": "I'm not a big fan of the modern GTA games (I loved GTA 2 and Vice City), and I don't think current gen consoles will be a good place to play GTA VI, at 30 fps, it certainly doesn't look promising."
+        },
+        {
+          "fact": "There is a video explaining what FSR 4.1 on Xbox really means. https://youtu.be/nNSRhoMeOqQ 0 16 Coletrain 6 hours ago I'm buying day 1, but I'm just finishing off Rebirth right now, then I want to do a quick 100% play through of Vice City to get the full feels before GTA VI.",
+          "quote": "There is a video explaining what FSR 4.1 on Xbox really means. https://youtu.be/nNSRhoMeOqQ 0 16 Coletrain 6 hours ago I'm buying day 1, but I'm just finishing off Rebirth right now, then I want to do a quick 100% play through of Vice City to get the full feels before GTA VI."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "rawId": "polygon-cd5c745e8212",
+  "outlet": "Polygon",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.polygon.com/gta-6-storage-size-install-ps5-xbox-series-x/",
+  "published": "2026-10-27",
+  "ogImage": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/img_1128.webp?w=1600&h=900&fit=crop",
+  "extractedAt": "2026-10-27T21:10:26.014Z",
+  "entities": [
+    {
+      "entityType": "edition",
+      "name": "Ultimate Edition",
+      "altNames": [
+        "GTA 6 Ultimate Edition",
+        "GTA VI Ultimate Edition"
+      ],
+      "slug": "gta-6-ultimate-edition",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "It's unclear if the pricier Ultimate Edition will eat up more storage space.",
+          "quote": "It's unclear if the pricier Ultimate Edition will eat up more storage space."
+        },
+        {
+          "fact": "That being said I can't imagine the Ultimate edition being larger by any meaningful amount.",
+          "quote": "That being said I can't imagine the Ultimate edition being larger by any meaningful amount."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Grand Theft Auto 6 Vintage Vice City pre-order bonuses Image: Rockstar Games Install sizes are always in flux as game patches and content updates roll out, but we have one direct comparison, also from PlayStation Game Size.",
+          "quote": "Grand Theft Auto 6 Vintage Vice City pre-order bonuses Image: Rockstar Games Install sizes are always in flux as game patches and content updates roll out, but we have one direct comparison, also from PlayStation Game Size."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "rawId": "pcgamer-bfd95ee9834b",
+  "outlet": "PC Gamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pcgamer.com/games/rpg/one-day-before-launch-arpg-emberville-gets-delayed-until-2027/",
+  "published": "2026-10-26",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/pTzbm5TpEs7f42EdUJydh8-1200-80.webp",
+  "extractedAt": "2026-10-27T10:17:11.530Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        },
+        {
+          "fact": "\"However, some of the improvements we want to make are systems changes that can't be done quickly.",
+          "quote": "\"However, some of the improvements we want to make are systems changes that can't be done quickly."
+        }
+      ]
+    }
+  ]
+}

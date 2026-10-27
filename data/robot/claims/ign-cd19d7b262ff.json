@@ -1,0 +1,79 @@
+{
+  "rawId": "ign-cd19d7b262ff",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/gta-6-causes-17-spike-in-time-off-requests-on-games-release-date",
+  "published": "2026-10-26",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/09/17/gta-6-soundtrack-1789662158949.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-27T10:17:05.017Z",
+  "entities": [
+    {
+      "entityType": "brand",
+      "name": "Burger Shot",
+      "altNames": [],
+      "slug": "burger-shot",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Fans can even eat at a real life version of Burger Shot , a fast food chain in the GTA universe, if they live in Miami.",
+          "quote": "Fans can even eat at a real life version of Burger Shot , a fast food chain in the GTA universe, if they live in Miami."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images Rockstar has also been spending a ton of money to get the word out with extravagant marketing; it spent $975,000 to install a massive neon pink sign on top of the Miami Heat's arena, after all.",
+          "quote": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images Rockstar has also been spending a ton of money to get the word out with extravagant marketing; it spent $975,000 to install a massive neon pink sign on top of the Miami Heat's arena, after all."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images Rockstar has also been spending a ton of money to get the word out with extravagant marketing; it spent $975,000 to install a massive neon pink sign on top of the Miami Heat's arena, after all.",
+          "quote": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images Rockstar has also been spending a ton of money to get the word out with extravagant marketing; it spent $975,000 to install a massive neon pink sign on top of the Miami Heat's arena, after all."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "There will also be an unprecedented NBA game between the Miami Heat and the Milwaukee Bucks on November 18, which will turn the Heat into the Vice City Heat .",
+          "quote": "There will also be an unprecedented NBA game between the Miami Heat and the Milwaukee Bucks on November 18, which will turn the Heat into the Vice City Heat ."
+        },
+        {
+          "fact": "They will play with GTA 6-themed jerseys on a never-before-seen Vice City court.",
+          "quote": "They will play with GTA 6-themed jerseys on a never-before-seen Vice City court."
+        }
+      ]
+    }
+  ]
+}

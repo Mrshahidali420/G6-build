@@ -1,0 +1,25 @@
+{
+  "rawId": "ign-f32d9205f50c",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/rockstar-games-staff-set-for-historic-union-vote-at-the-same-time-gta-6-comes-out",
+  "published": "2026-10-28",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/10/28/gettyimages-2293947704-1793179766454.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-28T11:07:00.598Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "So if they want a union, they will have a union.” Rockstar North production co-ordinator and Rockstar Game Workers Union Committee Member Shanti Easton-Steel commented: “This November, we have the chance to make gaming history not once but twice.",
+          "quote": "So if they want a union, they will have a union.” Rockstar North production co-ordinator and Rockstar Game Workers Union Committee Member Shanti Easton-Steel commented: “This November, we have the chance to make gaming history not once but twice."
+        }
+      ]
+    }
+  ]
+}

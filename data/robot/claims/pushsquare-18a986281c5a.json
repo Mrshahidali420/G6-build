@@ -1,0 +1,93 @@
+{
+  "rawId": "pushsquare-18a986281c5a",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/guides/gta-6-release-times-and-preload-when-can-you-start-playing",
+  "published": "2026-10-28",
+  "ogImage": "https://images.pushsquare.com/43e69a3687e26/1280x720.jpg",
+  "extractedAt": "2026-10-28T11:07:13.696Z",
+  "entities": [
+    {
+      "entityType": "edition",
+      "name": "Standard Edition",
+      "altNames": [
+        "GTA 6 Standard Edition",
+        "GTA VI Standard Edition"
+      ],
+      "slug": "gta-6-standard-edition",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The two PS5 digital versions on offer: Standard Edition and Ultimate Edition .",
+          "quote": "The two PS5 digital versions on offer: Standard Edition and Ultimate Edition ."
+        }
+      ]
+    },
+    {
+      "entityType": "edition",
+      "name": "Ultimate Edition",
+      "altNames": [
+        "GTA 6 Ultimate Edition",
+        "GTA VI Ultimate Edition"
+      ],
+      "slug": "gta-6-ultimate-edition",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The two PS5 digital versions on offer: Standard Edition and Ultimate Edition .",
+          "quote": "The two PS5 digital versions on offer: Standard Edition and Ultimate Edition ."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "None are perfect to me but they all have their charms 1 5 WorldsAway 9 hours ago Finishing up my return to Vice City on the PS2 emulated PS4 port (never playing definitive editions) tonight after I finish that old BBC film The War Game.",
+          "quote": "None are perfect to me but they all have their charms 1 5 WorldsAway 9 hours ago Finishing up my return to Vice City on the PS2 emulated PS4 port (never playing definitive editions) tonight after I finish that old BBC film The War Game."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Watson Bay",
+      "altNames": [],
+      "slug": "watson-bay",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Conveniently store it at the Paradise Garage in Watson Bay, which features a weapon locker plus a secure place to deposit stolen goods to be fenced.",
+          "quote": "Conveniently store it at the Paradise Garage in Watson Bay, which features a weapon locker plus a secure place to deposit stolen goods to be fenced."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Phantom",
+      "altNames": [],
+      "slug": "phantom",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The huge Edgerunners 2 update These 46+ PS5 and PS Plus Games Are Coming Out This Week (26th-1st November) Phantom Blade Zero!",
+          "quote": "The huge Edgerunners 2 update These 46+ PS5 and PS Plus Games Are Coming Out This Week (26th-1st November) Phantom Blade Zero!"
+        },
+        {
+          "fact": "7 Review Phantom Blade Zero (PS5) - One of the Generation's Greatest Action Exper...",
+          "quote": "7 Review Phantom Blade Zero (PS5) - One of the Generation's Greatest Action Exper..."
+        }
+      ]
+    }
+  ]
+}

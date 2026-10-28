@@ -1,0 +1,41 @@
+{
+  "rawId": "gamesradar-6d86c40a773e",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/hardware/gaming-controllers/dont-tell-rockstar-but-gamesir-is-launching-two-new-gta-6-inspired-colorways-of-its-g7-pro-controller/",
+  "published": "2026-10-28",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/oRiWu6YVoJUjFN9d9GFCm7-2560-80.jpg",
+  "extractedAt": "2026-10-28T21:33:32.229Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Thankfully, it's easy to make something look Vice City-inspired without actually approaching the GTA studio for a partnership - a purple sunset and palm trees are in the public domain.",
+          "quote": "Thankfully, it's easy to make something look Vice City-inspired without actually approaching the GTA studio for a partnership - a purple sunset and palm trees are in the public domain."
+        }
+      ]
+    }
+  ]
+}

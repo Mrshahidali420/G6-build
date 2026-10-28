@@ -1,0 +1,59 @@
+{
+  "rawId": "pushsquare-4727dd995c85",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/10/gta-6s-original-soundtrack-is-going-to-be-incredible-if-this-leaked-song-is-anything-to-go-by",
+  "published": "2026-10-28",
+  "ogImage": "https://images.pushsquare.com/69e2796dbe76c/1280x720.jpg",
+  "extractedAt": "2026-10-28T21:33:51.712Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Phil",
+      "altNames": [],
+      "slug": "phil",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The pointer sisters.phil collins.bobby brown.whitney houston.old school rap.wu tang clan.kool g rap.nas the goat 🐐 👑 or more the station is always good.word up son 2 3 J-Dubs 3 hours ago Hotline Miami is a good comparison.",
+          "quote": "The pointer sisters.phil collins.bobby brown.whitney houston.old school rap.wu tang clan.kool g rap.nas the goat 🐐 👑 or more the station is always good.word up son 2 3 J-Dubs 3 hours ago Hotline Miami is a good comparison."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Author Profile Bluesky Reply Comments 8 1 Oram77 3 hours ago I've listened to all the released songs on Spotify (a lot of times) and it's safe to say they are all bangers, this may even give Vice City a run for it's money!",
+          "quote": "Author Profile Bluesky Reply Comments 8 1 Oram77 3 hours ago I've listened to all the released songs on Spotify (a lot of times) and it's safe to say they are all bangers, this may even give Vice City a run for it's money!"
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Phantom",
+      "altNames": [],
+      "slug": "phantom",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The huge Edgerunners 2 update These 46+ PS5 and PS Plus Games Are Coming Out This Week (26th-1st November) Phantom Blade Zero!",
+          "quote": "The huge Edgerunners 2 update These 46+ PS5 and PS Plus Games Are Coming Out This Week (26th-1st November) Phantom Blade Zero!"
+        },
+        {
+          "fact": "7 Review Phantom Blade Zero (PS5) - One of the Generation's Greatest Action Exper...",
+          "quote": "7 Review Phantom Blade Zero (PS5) - One of the Generation's Greatest Action Exper..."
+        }
+      ]
+    }
+  ]
+}

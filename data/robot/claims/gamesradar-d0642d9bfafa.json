@@ -1,0 +1,29 @@
+{
+  "rawId": "gamesradar-d0642d9bfafa",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/hardware/ssd-hard-drives/gta-6-file-size-revealed-at-210gb-but-ssd-upgrades-arent-the-answer-if-youre-already-running-out-of-space/",
+  "published": "2026-10-28",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/X5hQfY2bUbdQWBXhwhELFa-2560-80.jpg",
+  "extractedAt": "2026-10-28T21:33:38.737Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        },
+        {
+          "fact": "Seagate's external hard drive will run you a little over $100 and allow you to store and play older PS4 releases or act as a backup folder for PS5 games you want to keep within arm's reach but not play on your main system right now.",
+          "quote": "Seagate's external hard drive will run you a little over $100 and allow you to store and play older PS4 releases or act as a backup folder for PS5 games you want to keep within arm's reach but not play on your main system right now."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "rawId": "gamesradar-0be717bc6c60",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/nearly-1-in-3-gamers-plan-to-buy-gta-6-in-the-us-analyst-confirms-a-rare-cultural-and-commercial-moment/",
+  "published": "2026-10-28",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/BaZVBJYGymFMbx4HnaNUZh-1920-80.jpg",
+  "extractedAt": "2026-10-28T21:33:19.295Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        },
+        {
+          "fact": "Interestingly, as huge and influential as GTA 6 evidently is, Piscatella recently said that devs shouldn't \"fear\" launching around Rockstar's behemoth , since many people \"are going to want to play other things,\" too.",
+          "quote": "Interestingly, as huge and influential as GTA 6 evidently is, Piscatella recently said that devs shouldn't \"fear\" launching around Rockstar's behemoth , since many people \"are going to want to play other things,\" too."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "rawId": "gamesradar-d93972637cc9",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-felt-too-fast-when-rockstar-made-it-run-like-grand-theft-auto-5-due-to-the-leap-in-visual-performance-over-the-past-13-years/",
+  "published": "2026-10-29",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/UmgAwgeWLp9kYNRiFdvdM7-1920-80.jpg",
+  "extractedAt": "2026-10-29T11:22:43.268Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        },
+        {
+          "fact": "\"If you want a pedestrian population to behave believably, and you can stand in front of them and produce an automatic shotgun out of nowhere and they don't react, then that doesn't work.",
+          "quote": "\"If you want a pedestrian population to behave believably, and you can stand in front of them and produce an automatic shotgun out of nowhere and they don't react, then that doesn't work."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "With most of Rockstar still working on Red Dead Redemption 2 , the initial work on the project involved a small group traveling to Miami to get a better feel of what a return to Vice City would entail.",
+          "quote": "With most of Rockstar still working on Red Dead Redemption 2 , the initial work on the project involved a small group traveling to Miami to get a better feel of what a return to Vice City would entail."
+        },
+        {
+          "fact": "While the roads of Los Santos are intentionally wider to make driving and turning easier, the roads of Vice City are narrower, as Rockstar North boss Rob Nelson wanted \"a more believable size.\" The duration of day and night is also longer, giving you a greater window to get up to mischief under cover of night, if you so please.",
+          "quote": "While the roads of Los Santos are intentionally wider to make driving and turning easier, the roads of Vice City are narrower, as Rockstar North boss Rob Nelson wanted \"a more believable size.\" The duration of day and night is also longer, giving you a greater window to get up to mischief under cover of night, if you so please."
+        },
+        {
+          "fact": "For example, Rockstar tested GTA 6 using GTA 5's timings and found that \"everything felt too fast\" for a world that boasts the level of fidelity that Vice City can reach.",
+          "quote": "For example, Rockstar tested GTA 6 using GTA 5's timings and found that \"everything felt too fast\" for a world that boasts the level of fidelity that Vice City can reach."
+        },
+        {
+          "fact": "The citizens who call Vice City home were equally problematic.",
+          "quote": "The citizens who call Vice City home were equally problematic."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Phantom",
+      "altNames": [],
+      "slug": "phantom",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "\"As long as Valve is independent,\" analyst says it looks impossible Action RPGs Phantom Blade Zero is the 20-year culmination of a $7 indie RPG Crime Shows Michael C.",
+          "quote": "\"As long as Valve is independent,\" analyst says it looks impossible Action RPGs Phantom Blade Zero is the 20-year culmination of a $7 indie RPG Crime Shows Michael C."
+        }
+      ]
+    }
+  ]
+}

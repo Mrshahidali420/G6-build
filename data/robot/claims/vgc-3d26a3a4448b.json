@@ -1,0 +1,32 @@
+{
+  "rawId": "vgc-3d26a3a4448b",
+  "outlet": "VGC",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.videogameschronicle.com/news/the-latest-episode-of-south-park-features-exclusive-gta-6-footage-where-a-man-is-hit-in-the-head-with-dog-poo/",
+  "published": "2026-10-29",
+  "ogImage": "https://www.videogameschronicle.com/files/2026/10/south-park-gta-1.jpg",
+  "extractedAt": "2026-10-29T11:23:54.805Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The TV shows footage of Grand Theft Auto 6 – presumably provided to South Park’s creators by Rockstar – and features a gameplay sequence where protagonist Jason is on the beach , and sees a dog owner letting their dog poo on the sand, before picking it up with a bag.",
+          "quote": "The TV shows footage of Grand Theft Auto 6 – presumably provided to South Park’s creators by Rockstar – and features a gameplay sequence where protagonist Jason is on the beach , and sees a dog owner letting their dog poo on the sand, before picking it up with a bag."
+        },
+        {
+          "fact": "Jason throws an object at the dog owner, starting a fight, during which Jason picks up the bag of dog poo and slaps it across the man’s head.",
+          "quote": "Jason throws an object at the dog owner, starting a fight, during which Jason picks up the bag of dog poo and slaps it across the man’s head."
+        }
+      ]
+    }
+  ]
+}

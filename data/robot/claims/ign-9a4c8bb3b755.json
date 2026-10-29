@@ -1,0 +1,77 @@
+{
+  "rawId": "ign-9a4c8bb3b755",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/gta-6s-map-will-open-up-relatively-early-and-let-you-explore-freely-developers-are-still-discovering-new-parts-of-the-world",
+  "published": "2026-10-29",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/10/29/gta-6-jason-and-lucia-drive-by-1793234705694.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-29T11:23:02.780Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Of course, there will likely be some initial story bits to introduce the characters and mechanics before you can go wherever you want.",
+          "quote": "Of course, there will likely be some initial story bits to introduce the characters and mechanics before you can go wherever you want."
+        },
+        {
+          "fact": "Of course, the story itself will take you to a lot of places around the map as you experience it, but you won't be chained to Vice City for the first 10 hours if you don't want to be.",
+          "quote": "Of course, the story itself will take you to a lot of places around the map as you experience it, but you won't be chained to Vice City for the first 10 hours if you don't want to be."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "It seems like GTA 6 will be similar, as Edge's story confirms that the state of Leonida will open up relatively early on.",
+          "quote": "It seems like GTA 6 will be similar, as Edge's story confirms that the state of Leonida will open up relatively early on."
+        },
+        {
+          "fact": "Rockstar North co-studio head Aaron Garbut also confirmed that he's still discovering new locations in Leonida.",
+          "quote": "Rockstar North co-studio head Aaron Garbut also confirmed that he's still discovering new locations in Leonida."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "State of Leonida",
+      "altNames": [],
+      "slug": "state-of-leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "It seems like GTA 6 will be similar, as Edge's story confirms that the state of Leonida will open up relatively early on.",
+          "quote": "It seems like GTA 6 will be similar, as Edge's story confirms that the state of Leonida will open up relatively early on."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Of course, the story itself will take you to a lot of places around the map as you experience it, but you won't be chained to Vice City for the first 10 hours if you don't want to be.",
+          "quote": "Of course, the story itself will take you to a lot of places around the map as you experience it, but you won't be chained to Vice City for the first 10 hours if you don't want to be."
+        }
+      ]
+    }
+  ]
+}

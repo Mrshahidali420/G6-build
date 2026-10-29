@@ -1,0 +1,57 @@
+{
+  "rawId": "polygon-c43169d41b5f",
+  "outlet": "Polygon",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.polygon.com/gta-6-dog-poop-gameplay-south-park/",
+  "published": "2026-10-29",
+  "ogImage": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/gta6-3.jpg?w=1600&h=900&fit=crop",
+  "extractedAt": "2026-10-29T11:23:35.298Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Co-protagonists Lucia Caminos and Jason Duval walk behind the dog and its owner. “You can throw things at the person with dog poop,” the woman explains, as the clip shows Jason doing just that.",
+          "quote": "Co-protagonists Lucia Caminos and Jason Duval walk behind the dog and its owner. “You can throw things at the person with dog poop,” the woman explains, as the clip shows Jason doing just that."
+        },
+        {
+          "fact": "The owner drops the dog feces he’s carrying, allowing Jason to pick up the mess and then attack the owner with it.",
+          "quote": "The owner drops the dog feces he’s carrying, allowing Jason to pick up the mess and then attack the owner with it."
+        },
+        {
+          "fact": "GTA 6 characters Lucia Caminos and Jason Duval Rockstar Games We doubt picking up poop will be the only silly detail GTA 6 has.",
+          "quote": "GTA 6 characters Lucia Caminos and Jason Duval Rockstar Games We doubt picking up poop will be the only silly detail GTA 6 has."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Co-protagonists Lucia Caminos and Jason Duval walk behind the dog and its owner. “You can throw things at the person with dog poop,” the woman explains, as the clip shows Jason doing just that.",
+          "quote": "Co-protagonists Lucia Caminos and Jason Duval walk behind the dog and its owner. “You can throw things at the person with dog poop,” the woman explains, as the clip shows Jason doing just that."
+        },
+        {
+          "fact": "GTA 6 characters Lucia Caminos and Jason Duval Rockstar Games We doubt picking up poop will be the only silly detail GTA 6 has.",
+          "quote": "GTA 6 characters Lucia Caminos and Jason Duval Rockstar Games We doubt picking up poop will be the only silly detail GTA 6 has."
+        }
+      ]
+    }
+  ]
+}

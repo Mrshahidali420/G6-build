@@ -1,0 +1,39 @@
+{
+  "rawId": "pcgamer-8bbbb124bf47",
+  "outlet": "PC Gamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pcgamer.com/games/grand-theft-auto/i-feel-like-weve-built-a-pyramid-on-everest-says-rockstar-of-gta-6-meeting-impossible-expectations/",
+  "published": "2026-10-29",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/mRhauLDDkxHxghWg6ZZms-2560-80.jpg",
+  "extractedAt": "2026-10-29T11:23:22.290Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "OK, I'm finally on board GTA 6 leaks show a game that looks like more GTA, but not a revolution While my mind instantly goes to an eventual GTA 6 mod that'll let me ride a giant pyramid down the biggest mountain in Leonida (will fake Florida have mountains?), I have little reason to doubt Garbut's claims here.",
+          "quote": "OK, I'm finally on board GTA 6 leaks show a game that looks like more GTA, but not a revolution While my mind instantly goes to an eventual GTA 6 mod that'll let me ride a giant pyramid down the biggest mountain in Leonida (will fake Florida have mountains?), I have little reason to doubt Garbut's claims here."
+        }
+      ]
+    }
+  ]
+}

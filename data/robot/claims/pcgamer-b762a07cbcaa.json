@@ -1,0 +1,46 @@
+{
+  "rawId": "pcgamer-b762a07cbcaa",
+  "outlet": "PC Gamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6s-npcs-have-about-600-000-animations-as-well-as-personality-traits-that-take-demographic-and-professional-variables-into-account/",
+  "published": "2026-10-29",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/mGAbwHEYqU99h2xFrdszPL-2560-80.jpg",
+  "extractedAt": "2026-10-29T11:23:28.798Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The man with the dog has decided that Jason's stare constitutes a test.",
+          "quote": "The man with the dog has decided that Jason's stare constitutes a test."
+        },
+        {
+          "fact": "Jason slows to a walk, selects a pack of cigarettes from his inventory, lights one, takes a drag, and continues down the street.\" The biggest gaming news, reviews and hardware deals Keep up to date with the most important stories and the best deals, as picked by the PC Gamer team.",
+          "quote": "Jason slows to a walk, selects a pack of cigarettes from his inventory, lights one, takes a drag, and continues down the street.\" The biggest gaming news, reviews and hardware deals Keep up to date with the most important stories and the best deals, as picked by the PC Gamer team."
+        }
+      ]
+    }
+  ]
+}

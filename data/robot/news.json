@@ -420,5 +420,35 @@
   "pushsquare-eba1469cdd62": {
     "slug": "gta-6-download-install-size-revealed-on-ps5",
     "written": "2026-10-28"
+  },
+  "eurogamer-7088251ef81a": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-29",
+    "reason": "an em dash appears in the written text"
+  },
+  "ign-601fa9e66eee": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-29",
+    "reason": "an em dash appears in the written text"
+  },
+  "ign-ab8067527f9d": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-29",
+    "reason": "an em dash appears in the written text"
+  },
+  "polygon-c43169d41b5f": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-29",
+    "reason": "an em dash appears in the written text"
+  },
+  "vgc-3d26a3a4448b": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-29",
+    "reason": "an em dash appears in the written text"
   }
 }

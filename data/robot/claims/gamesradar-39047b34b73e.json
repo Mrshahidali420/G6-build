@@ -1,0 +1,57 @@
+{
+  "rawId": "gamesradar-39047b34b73e",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/600-000-animations-are-the-appetizer-rockstar-gave-gta-6-npcs-meticulous-personality-traits-to-control-how-they-react-to-you-and-now-i-get-why-weve-been-waiting-13-years/",
+  "published": "2026-10-29",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/fgu3QD5R6x77js8EEjFZY7-1920-80.jpg",
+  "extractedAt": "2026-10-29T11:22:23.747Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        },
+        {
+          "fact": "You might want to start clearing some space now before we get to launch day.",
+          "quote": "You might want to start clearing some space now before we get to launch day."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Leonida's pedestrians all have personality traits, too, with factors such as their temperament, the player's behavior towards them, and their own levels of aggression influencing how they respond to different situations.",
+          "quote": "Leonida's pedestrians all have personality traits, too, with factors such as their temperament, the player's behavior towards them, and their own levels of aggression influencing how they respond to different situations."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Phantom",
+      "altNames": [],
+      "slug": "phantom",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "\"As long as Valve is independent,\" analyst says it looks impossible Action RPGs Phantom Blade Zero is the 20-year culmination of a $7 indie RPG Crime Shows Michael C.",
+          "quote": "\"As long as Valve is independent,\" analyst says it looks impossible Action RPGs Phantom Blade Zero is the 20-year culmination of a $7 indie RPG Crime Shows Michael C."
+        }
+      ]
+    }
+  ]
+}

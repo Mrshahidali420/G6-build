@@ -1,0 +1,83 @@
+{
+  "rawId": "ign-ab8067527f9d",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/appreciate-the-fans-gta-5-cast-tell-jason-and-lucias-actors-the-most-important-things-they-should-know-before-gta-6-launches-them-to-fame",
+  "published": "2026-10-28",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/10/28/jason-and-lucia-01-1793212840753.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-29T11:23:09.298Z",
+  "entities": [
+    {
+      "entityType": "brand",
+      "name": "Burger Shot",
+      "altNames": [],
+      "slug": "burger-shot",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Players will even get a chance to eat at one of the game’s fast food joints , Burger Shot, at the Kaseya Center while they watch the two teams face off on the court.",
+          "quote": "Players will even get a chance to eat at one of the game’s fast food joints , Burger Shot, at the Kaseya Center while they watch the two teams face off on the court."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Knowing just how passionate Rockstar’s fanbase can be, actors who starred in previous games in the franchise shared their words of wisdom with the as-yet unannounced actors who are playing Jason and Lucia, the dual protagonists of GTA 6, in an interview with All Out Gaming at MCM Comic Con.",
+          "quote": "Knowing just how passionate Rockstar’s fanbase can be, actors who starred in previous games in the franchise shared their words of wisdom with the as-yet unannounced actors who are playing Jason and Lucia, the dual protagonists of GTA 6, in an interview with All Out Gaming at MCM Comic Con."
+        },
+        {
+          "fact": "Thus far, the actors who play Jason and Lucia have not been officially announced, though fans are extremely convinced that they’ve discovered the gal who lent her facial features to Jason’s partner in crime.",
+          "quote": "Thus far, the actors who play Jason and Lucia have not been officially announced, though fans are extremely convinced that they’ve discovered the gal who lent her facial features to Jason’s partner in crime."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Knowing just how passionate Rockstar’s fanbase can be, actors who starred in previous games in the franchise shared their words of wisdom with the as-yet unannounced actors who are playing Jason and Lucia, the dual protagonists of GTA 6, in an interview with All Out Gaming at MCM Comic Con.",
+          "quote": "Knowing just how passionate Rockstar’s fanbase can be, actors who starred in previous games in the franchise shared their words of wisdom with the as-yet unannounced actors who are playing Jason and Lucia, the dual protagonists of GTA 6, in an interview with All Out Gaming at MCM Comic Con."
+        },
+        {
+          "fact": "Thus far, the actors who play Jason and Lucia have not been officially announced, though fans are extremely convinced that they’ve discovered the gal who lent her facial features to Jason’s partner in crime.",
+          "quote": "Thus far, the actors who play Jason and Lucia have not been officially announced, though fans are extremely convinced that they’ve discovered the gal who lent her facial features to Jason’s partner in crime."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Rockstar is ramping up marketing for the title in a major way with a Vice City-themed takeover of Miami that includes massive signs advertising the fictional city, even partnering with the Miami Heat to give the team some Vice City uniforms for their November 18 game against the Milwaukee Bucks.",
+          "quote": "Rockstar is ramping up marketing for the title in a major way with a Vice City-themed takeover of Miami that includes massive signs advertising the fictional city, even partnering with the Miami Heat to give the team some Vice City uniforms for their November 18 game against the Milwaukee Bucks."
+        }
+      ]
+    }
+  ]
+}

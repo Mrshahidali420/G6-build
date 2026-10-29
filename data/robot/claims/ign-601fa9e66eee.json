@@ -1,0 +1,49 @@
+{
+  "rawId": "ign-601fa9e66eee",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/gta-6-dog-poop-gameplay-premieres-in-the-latest-episode-of-south-park",
+  "published": "2026-10-29",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/10/29/gta-6-1793266830270.png?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-29T11:22:56.290Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "We see Jason attack the NPC with the dog poo, which explodes in their face.",
+          "quote": "We see Jason attack the NPC with the dog poo, which explodes in their face."
+        },
+        {
+          "fact": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images With GTA 6’s November 19 release date just weeks away, Rockstar’s marketing has ramped up considerably.",
+          "quote": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images With GTA 6’s November 19 release date just weeks away, Rockstar’s marketing has ramped up considerably."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images With GTA 6’s November 19 release date just weeks away, Rockstar’s marketing has ramped up considerably.",
+          "quote": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images With GTA 6’s November 19 release date just weeks away, Rockstar’s marketing has ramped up considerably."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "rawId": "pushsquare-6b156ce25a1b",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/10/new-gta-6-gameplay-screenshots-details-revealed-as-ps5-launch-nears",
+  "published": "2026-10-29",
+  "ogImage": "https://images.pushsquare.com/98426c4608c94/1280x720.jpg",
+  "extractedAt": "2026-10-29T11:23:41.802Z",
+  "entities": [
+    {
+      "entityType": "landmark",
+      "name": "The Fence",
+      "altNames": [],
+      "slug": "the-fence",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "You have probably already seen enough to know whether you are playing it or not (and we have got details on the GTA 6 release times and preload date ), but for anyone still on the fence, Rockstar has even more gameplay, screenshots, and gameplay details to entice.",
+          "quote": "You have probably already seen enough to know whether you are playing it or not (and we have got details on the GTA 6 release times and preload date ), but for anyone still on the fence, Rockstar has even more gameplay, screenshots, and gameplay details to entice."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Phantom",
+      "altNames": [],
+      "slug": "phantom",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "6 4 ShadowRJ 1 hour ago With Phantom Blade Zero out today, we are now firmly in GTA month.",
+          "quote": "6 4 ShadowRJ 1 hour ago With Phantom Blade Zero out today, we are now firmly in GTA month."
+        },
+        {
+          "fact": "8 Review Phantom Blade Zero (PS5) - One of the Generation's Greatest Action Exper...",
+          "quote": "8 Review Phantom Blade Zero (PS5) - One of the Generation's Greatest Action Exper..."
+        }
+      ]
+    }
+  ]
+}

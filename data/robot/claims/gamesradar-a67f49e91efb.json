@@ -1,0 +1,73 @@
+{
+  "rawId": "gamesradar-a67f49e91efb",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/86-year-old-singer-in-gta-6-has-no-idea-what-grand-theft-auto-is-the-show-is-a-game-show-isnt-it-really-one-of-the-biggest-on-tv/",
+  "published": "2026-10-28",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/3389mzUBT3d6BLYsdfWpWh-1920-80.jpg",
+  "extractedAt": "2026-10-29T11:22:36.765Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        },
+        {
+          "fact": "Hall says Dexter is \"vulnerable\" to Uma Thurman's hitwoman in Resurrection season 2 5 Blizzard wants you to play Wow Forever \"wherever you want, and at some point on whatever you want\" GamesRadar+ is part of Future US Inc, an international media group and leading digital publisher.",
+          "quote": "Hall says Dexter is \"vulnerable\" to Uma Thurman's hitwoman in Resurrection season 2 5 Blizzard wants you to play Wow Forever \"wherever you want, and at some point on whatever you want\" GamesRadar+ is part of Future US Inc, an international media group and leading digital publisher."
+        }
+      ]
+    },
+    {
+      "entityType": "song",
+      "name": "Devil Woman",
+      "altNames": [],
+      "slug": "devil-woman",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "One of the biggest on TV?\" News By Dustin Bailey Published 28 October 2026 Cliff Richard's Devil Woman has made a mark on GTA fans When you purchase through links on our site, we may earn an affiliate commission.",
+          "quote": "One of the biggest on TV?\" News By Dustin Bailey Published 28 October 2026 Cliff Richard's Devil Woman has made a mark on GTA fans When you purchase through links on our site, we may earn an affiliate commission."
+        },
+        {
+          "fact": "I'm a classic rock guy, and ever since the extended look dropped I've had Cliff Richard's Devil Woman playing on repeat.",
+          "quote": "I'm a classic rock guy, and ever since the extended look dropped I've had Cliff Richard's Devil Woman playing on repeat."
+        },
+        {
+          "fact": "One of the biggest on TV?\" Cliff Richard - Devil Woman (Official Video) - YouTube Watch On Richard was an influential figure in the early days of British rock and roll, and he's remained an active artist well into the '20s, though his popularity never reached the same global heights that it did in the UK.",
+          "quote": "One of the biggest on TV?\" Cliff Richard - Devil Woman (Official Video) - YouTube Watch On Richard was an influential figure in the early days of British rock and roll, and he's remained an active artist well into the '20s, though his popularity never reached the same global heights that it did in the UK."
+        },
+        {
+          "fact": "\"Because I am, but that past is what makes everything what it is today.\" Past or present, Devil Woman remains an absolute banger.",
+          "quote": "\"Because I am, but that past is what makes everything what it is today.\" Past or present, Devil Woman remains an absolute banger."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Phantom",
+      "altNames": [],
+      "slug": "phantom",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "\"As long as Valve is independent,\" analyst says it looks impossible Action RPGs Phantom Blade Zero is the 20-year culmination of a $7 indie RPG Crime Shows Michael C.",
+          "quote": "\"As long as Valve is independent,\" analyst says it looks impossible Action RPGs Phantom Blade Zero is the 20-year culmination of a $7 indie RPG Crime Shows Michael C."
+        },
+        {
+          "fact": "\"As long as Valve is independent,\" analyst says it looks impossible 3 Phantom Blade Zero is the 20-year culmination of a $7 indie RPG 4 Michael C.",
+          "quote": "\"As long as Valve is independent,\" analyst says it looks impossible 3 Phantom Blade Zero is the 20-year culmination of a $7 indie RPG 4 Michael C."
+        }
+      ]
+    }
+  ]
+}

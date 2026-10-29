@@ -1,0 +1,49 @@
+{
+  "rawId": "rockpapershotgun-a6bcd8f61978",
+  "outlet": "Rock Paper Shotgun",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.rockpapershotgun.com/gta-6-has-a-smell-reaction-system-which-immediately-joins-red-dead-redemption-2s-dynamically-shrinking-horse-balls-on-rockstars-list-of-immersive-symbols-of-excess",
+  "published": "2026-10-29",
+  "ogImage": "https://assetsio.gnwcdn.com/gta-6-smell-reaction-system-01.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-10-29T11:23:48.310Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "They reportedly did not leave it at that, later going back to flesh out this one smell reaction into a broader system which other locations to inspire various degrees of face-scrunching by protagonists Lucia and Jason.",
+          "quote": "They reportedly did not leave it at that, later going back to flesh out this one smell reaction into a broader system which other locations to inspire various degrees of face-scrunching by protagonists Lucia and Jason."
+        },
+        {
+          "fact": "Cue, in the demo of the game in action which Rockstar gave Edge, Jason walking into a house and starting to act like someone who's just walked into a shower-averse teenager's bedroom during a heatwave despite that not having been set up as part of a deliberately crafted encounter.",
+          "quote": "Cue, in the demo of the game in action which Rockstar gave Edge, Jason walking into a house and starting to act like someone who's just walked into a shower-averse teenager's bedroom during a heatwave despite that not having been set up as part of a deliberately crafted encounter."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "They reportedly did not leave it at that, later going back to flesh out this one smell reaction into a broader system which other locations to inspire various degrees of face-scrunching by protagonists Lucia and Jason.",
+          "quote": "They reportedly did not leave it at that, later going back to flesh out this one smell reaction into a broader system which other locations to inspire various degrees of face-scrunching by protagonists Lucia and Jason."
+        }
+      ]
+    }
+  ]
+}

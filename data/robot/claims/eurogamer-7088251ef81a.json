@@ -1,0 +1,42 @@
+{
+  "rawId": "eurogamer-7088251ef81a",
+  "outlet": "Eurogamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.eurogamer.net/dog-poo-anti-social-behaviour-and-jason-our-latest-look-at-gta-6-gameplay-comes-from-the-latest-episode-of-south-park",
+  "published": "2026-10-29",
+  "ogImage": "https://assetsio.gnwcdn.com/new-GTA-footage.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-10-29T11:22:17.297Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Limit",
+      "altNames": [],
+      "slug": "limit",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "But it seems the reach of Rockstar's marketing arm has no limit, as brand new gameplay footage cropped up in a quite unexpected place last night: the latest episode of South Park.",
+          "quote": "But it seems the reach of Rockstar's marketing arm has no limit, as brand new gameplay footage cropped up in a quite unexpected place last night: the latest episode of South Park."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Dog poo, anti-social behaviour, and Jason: Our latest look at GTA 6 gameplay comes from an episode of South Park Life's a beach.",
+          "quote": "Dog poo, anti-social behaviour, and Jason: Our latest look at GTA 6 gameplay comes from an episode of South Park Life's a beach."
+        }
+      ]
+    }
+  ]
+}

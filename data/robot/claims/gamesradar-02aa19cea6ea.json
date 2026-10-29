@@ -1,0 +1,203 @@
+{
+  "rawId": "gamesradar-02aa19cea6ea",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/over-20-years-later-gta-vice-city-is-still-a-role-model-for-the-open-world-genre/",
+  "published": "2026-10-29",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/S57rq2BfcZ5C5YvbvW5iEg-1920-80.jpg",
+  "extractedAt": "2026-10-29T21:39:29.102Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Limit",
+      "altNames": [],
+      "slug": "limit",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Similarly, the Dodo can soar dozens of feet off the ground, but it quickly and inevitably reaches the limit of its engine power and slumps back down to earth.",
+          "quote": "Similarly, the Dodo can soar dozens of feet off the ground, but it quickly and inevitably reaches the limit of its engine power and slumps back down to earth."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        },
+        {
+          "fact": "It's up to you which businesses you want to buy and which of their accompanying mission chains you want to follow, but all of them are ultimately connected to Tommy Vercetti's core goal of constructing his criminal empire.",
+          "quote": "It's up to you which businesses you want to buy and which of their accompanying mission chains you want to follow, but all of them are ultimately connected to Tommy Vercetti's core goal of constructing his criminal empire."
+        }
+      ]
+    },
+    {
+      "entityType": "gameplay_feature",
+      "name": "Scuba Diving and Underwater Exploration",
+      "altNames": [
+        "swimming",
+        "diving",
+        "underwater gameplay"
+      ],
+      "slug": "scuba-diving-underwater-exploration",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "There's no swimming, climbing walls or moving while crouching in Vice City, but there are celebrity voiceovers, a fully licensed soundtrack, and a recognisable representation of the mansion (and climactic shootout) from Scarface.",
+          "quote": "There's no swimming, climbing walls or moving while crouching in Vice City, but there are celebrity voiceovers, a fully licensed soundtrack, and a recognisable representation of the mansion (and climactic shootout) from Scarface."
+        }
+      ]
+    },
+    {
+      "entityType": "landmark",
+      "name": "Malibu Club",
+      "altNames": [],
+      "slug": "malibu-club",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Between the Malibu Club, the Pole Position, the shopping malls and the Pizza Stack restaurants - not to mention the various hotels, apartments and places of business that you acquire as you progress through the main story - this aptly named metropolis of iniquity is packed with places to go, NPCs to meet, and small but immersion-enhancing interactions.",
+          "quote": "Between the Malibu Club, the Pole Position, the shopping malls and the Pizza Stack restaurants - not to mention the various hotels, apartments and places of business that you acquire as you progress through the main story - this aptly named metropolis of iniquity is packed with places to go, NPCs to meet, and small but immersion-enhancing interactions."
+        },
+        {
+          "fact": "When you reminisce about Vice City today, alongside all the ultraviolence and automotive pyrotechnics, you're also likely to fondly recall the first time you went inside the Malibu Club, or the party mission aboard Colonel Cortez's yacht, or cruising down Ocean Beach in a convertible Stinger while listening to Broken Wings.",
+          "quote": "When you reminisce about Vice City today, alongside all the ultraviolence and automotive pyrotechnics, you're also likely to fondly recall the first time you went inside the Malibu Club, or the party mission aboard Colonel Cortez's yacht, or cruising down Ocean Beach in a convertible Stinger while listening to Broken Wings."
+        }
+      ]
+    },
+    {
+      "entityType": "landmark",
+      "name": "Ocean Beach",
+      "altNames": [
+        "Ocean Drive"
+      ],
+      "slug": "ocean-beach",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "When you reminisce about Vice City today, alongside all the ultraviolence and automotive pyrotechnics, you're also likely to fondly recall the first time you went inside the Malibu Club, or the party mission aboard Colonel Cortez's yacht, or cruising down Ocean Beach in a convertible Stinger while listening to Broken Wings.",
+          "quote": "When you reminisce about Vice City today, alongside all the ultraviolence and automotive pyrotechnics, you're also likely to fondly recall the first time you went inside the Malibu Club, or the party mission aboard Colonel Cortez's yacht, or cruising down Ocean Beach in a convertible Stinger while listening to Broken Wings."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "In GTA: Vice City , released a mere 13 months after GTA 3, you are not constrained to the Dodo.",
+          "quote": "In GTA: Vice City , released a mere 13 months after GTA 3, you are not constrained to the Dodo."
+        },
+        {
+          "fact": "Expanding on the comparatively austere GTA 3, in Vice City you can ride motorbikes, buy property, change your clothes, and discover unmarked ambient side missions such as robbing a pharmacy or beating up gang members to earn the 'good citizen' cash bonus.",
+          "quote": "Expanding on the comparatively austere GTA 3, in Vice City you can ride motorbikes, buy property, change your clothes, and discover unmarked ambient side missions such as robbing a pharmacy or beating up gang members to earn the 'good citizen' cash bonus."
+        },
+        {
+          "fact": "Nevertheless, two and a half decades on, some of the changes and enhancements made between GTA 3 and Vice City might sound superficial, or even faintly ridiculous.",
+          "quote": "Nevertheless, two and a half decades on, some of the changes and enhancements made between GTA 3 and Vice City might sound superficial, or even faintly ridiculous."
+        },
+        {
+          "fact": "Vice City emerged in an era when the conventions of the 3D open-world game - especially the 3D open-world crime game - were still far from codified, when the mechanical language of the subgenre was unfinished.",
+          "quote": "Vice City emerged in an era when the conventions of the 3D open-world game - especially the 3D open-world crime game - were still far from codified, when the mechanical language of the subgenre was unfinished."
+        },
+        {
+          "fact": "There's no swimming, climbing walls or moving while crouching in Vice City, but there are celebrity voiceovers, a fully licensed soundtrack, and a recognisable representation of the mansion (and climactic shootout) from Scarface.",
+          "quote": "There's no swimming, climbing walls or moving while crouching in Vice City, but there are celebrity voiceovers, a fully licensed soundtrack, and a recognisable representation of the mansion (and climactic shootout) from Scarface."
+        },
+        {
+          "fact": "Or you could even go back to Grand Theft Auto, from 1997; the tasks that you receive in the top-down original version of Liberty City almost always involve driving somewhere, killing a bunch of people, picking something up and driving back, and that's also what you do for most of your time in Vice City.",
+          "quote": "Or you could even go back to Grand Theft Auto, from 1997; the tasks that you receive in the top-down original version of Liberty City almost always involve driving somewhere, killing a bunch of people, picking something up and driving back, and that's also what you do for most of your time in Vice City."
+        },
+        {
+          "fact": "However, the magic of Vice City - and of videogames in general - lies in more than mechanics, mission design or any other tangibles of the form.",
+          "quote": "However, the magic of Vice City - and of videogames in general - lies in more than mechanics, mission design or any other tangibles of the form."
+        },
+        {
+          "fact": "Even though Vice City may have fundamentally the same structure and systems as GTA 3, True Crime, Mafia and many comparable crime capers that emerged during the '00s, it nevertheless feels like the standout because of its aesthetic approach.",
+          "quote": "Even though Vice City may have fundamentally the same structure and systems as GTA 3, True Crime, Mafia and many comparable crime capers that emerged during the '00s, it nevertheless feels like the standout because of its aesthetic approach."
+        },
+        {
+          "fact": "Prior to Vice City, the sensory thrills of GTA had been rooted largely in depravity, the transgressive excitement that comes from simulating actions and behaviours that are too dark, immoral and illegal for you ever to consider in reality.",
+          "quote": "Prior to Vice City, the sensory thrills of GTA had been rooted largely in depravity, the transgressive excitement that comes from simulating actions and behaviours that are too dark, immoral and illegal for you ever to consider in reality."
+        },
+        {
+          "fact": "They're by no means fully grown up, but in Vice City, Rockstar's virtual fantasies appear more mature.",
+          "quote": "They're by no means fully grown up, but in Vice City, Rockstar's virtual fantasies appear more mature."
+        },
+        {
+          "fact": "When you reminisce about Vice City today, alongside all the ultraviolence and automotive pyrotechnics, you're also likely to fondly recall the first time you went inside the Malibu Club, or the party mission aboard Colonel Cortez's yacht, or cruising down Ocean Beach in a convertible Stinger while listening to Broken Wings.",
+          "quote": "When you reminisce about Vice City today, alongside all the ultraviolence and automotive pyrotechnics, you're also likely to fondly recall the first time you went inside the Malibu Club, or the party mission aboard Colonel Cortez's yacht, or cruising down Ocean Beach in a convertible Stinger while listening to Broken Wings."
+        },
+        {
+          "fact": "With GTA 3, Rockstar succeeded in creating a 3D open playground; with Vice City, it started to develop and more finely shape what would eventually become its trademark - a rounded, reactive, and much more enveloping open world.",
+          "quote": "With GTA 3, Rockstar succeeded in creating a 3D open playground; with Vice City, it started to develop and more finely shape what would eventually become its trademark - a rounded, reactive, and much more enveloping open world."
+        },
+        {
+          "fact": "Vice City's landscape is more than a racing track, and you're invited to regard its citizenry as more than digital toys for you to smash up in variously creative ways.",
+          "quote": "Vice City's landscape is more than a racing track, and you're invited to regard its citizenry as more than digital toys for you to smash up in variously creative ways."
+        },
+        {
+          "fact": "But in Vice City - for the most part, at least - you have a reasonable understanding of why your character is doing the things he's doing.",
+          "quote": "But in Vice City - for the most part, at least - you have a reasonable understanding of why your character is doing the things he's doing."
+        },
+        {
+          "fact": "The effect is incomplete, and naturally primitive compared to much later games such as Cyberpunk 2077 , but in Vice City you can see that Rockstar is trying to unify the free-flowing, player-driven open world with cogent, coherent storytelling.",
+          "quote": "The effect is incomplete, and naturally primitive compared to much later games such as Cyberpunk 2077 , but in Vice City you can see that Rockstar is trying to unify the free-flowing, player-driven open world with cogent, coherent storytelling."
+        },
+        {
+          "fact": "Twenty-four years ago, Vice City's appeal might have laid in its new vehicles, its encompassing '80s soundtrack and its enormous cast of celebrity voices.",
+          "quote": "Twenty-four years ago, Vice City's appeal might have laid in its new vehicles, its encompassing '80s soundtrack and its enormous cast of celebrity voices."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Convertible",
+      "altNames": [],
+      "slug": "unnamed-convertible",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "When you reminisce about Vice City today, alongside all the ultraviolence and automotive pyrotechnics, you're also likely to fondly recall the first time you went inside the Malibu Club, or the party mission aboard Colonel Cortez's yacht, or cruising down Ocean Beach in a convertible Stinger while listening to Broken Wings.",
+          "quote": "When you reminisce about Vice City today, alongside all the ultraviolence and automotive pyrotechnics, you're also likely to fondly recall the first time you went inside the Malibu Club, or the party mission aboard Colonel Cortez's yacht, or cruising down Ocean Beach in a convertible Stinger while listening to Broken Wings."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Dodo",
+      "altNames": [],
+      "slug": "dodo",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Similarly, the Dodo can soar dozens of feet off the ground, but it quickly and inevitably reaches the limit of its engine power and slumps back down to earth.",
+          "quote": "Similarly, the Dodo can soar dozens of feet off the ground, but it quickly and inevitably reaches the limit of its engine power and slumps back down to earth."
+        },
+        {
+          "fact": "In GTA: Vice City , released a mere 13 months after GTA 3, you are not constrained to the Dodo.",
+          "quote": "In GTA: Vice City , released a mere 13 months after GTA 3, you are not constrained to the Dodo."
+        }
+      ]
+    }
+  ]
+}

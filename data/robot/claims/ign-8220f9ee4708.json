@@ -1,0 +1,59 @@
+{
+  "rawId": "ign-8220f9ee4708",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/the-gta-6-original-score-has-a-release-date-and-a-brand-new-track-you-can-listen-to-right-now",
+  "published": "2026-10-29",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/10/29/unnamed-7-1793280697268.png?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-29T21:39:55.106Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Hand-selected for the assignment, Justice (Gaspard Augé and Xavier de Rosnay) worked in close collaboration with the team at Rockstar Games to match the thematic beats of the gameplay experience, fine tuning their signature sound to align with the immersive world of Grand Theft Auto VI and the story of Jason and Lucia.",
+          "quote": "Hand-selected for the assignment, Justice (Gaspard Augé and Xavier de Rosnay) worked in close collaboration with the team at Rockstar Games to match the thematic beats of the gameplay experience, fine tuning their signature sound to align with the immersive world of Grand Theft Auto VI and the story of Jason and Lucia."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Hand-selected for the assignment, Justice (Gaspard Augé and Xavier de Rosnay) worked in close collaboration with the team at Rockstar Games to match the thematic beats of the gameplay experience, fine tuning their signature sound to align with the immersive world of Grand Theft Auto VI and the story of Jason and Lucia.",
+          "quote": "Hand-selected for the assignment, Justice (Gaspard Augé and Xavier de Rosnay) worked in close collaboration with the team at Rockstar Games to match the thematic beats of the gameplay experience, fine tuning their signature sound to align with the immersive world of Grand Theft Auto VI and the story of Jason and Lucia."
+        }
+      ]
+    },
+    {
+      "entityType": "song",
+      "name": "Devil Woman",
+      "altNames": [],
+      "slug": "devil-woman",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Devil Woman, a 1976 single from his album I'm Nearly Famous, saw a bump in popularity after featuring on 2017 movie I, Tonya, but it exploded after appearing in the GTA 6 gameplay, with a 325% increase in daily streams.",
+          "quote": "Devil Woman, a 1976 single from his album I'm Nearly Famous, saw a bump in popularity after featuring on 2017 movie I, Tonya, but it exploded after appearing in the GTA 6 gameplay, with a 325% increase in daily streams."
+        }
+      ]
+    }
+  ]
+}

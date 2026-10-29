@@ -1,0 +1,75 @@
+{
+  "rawId": "rockstar-a1d100570786",
+  "outlet": "Rockstar Newswire",
+  "tier": "TIER_1_OFFICIAL",
+  "url": "https://www.rockstargames.com/newswire/article/39ak8a12395591/grand-theft-auto-vi-original-score-by-justice",
+  "published": "2026-10-29",
+  "ogImage": "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/39ak8a12395591/cfc61a2d2e7b8c700e46582dc865e180b6c431d9.jpg",
+  "extractedAt": "2026-10-29T21:40:40.643Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Justice bring their signature sound to this adaptive score, featuring expansive compositions all dynamically tuned to the different ways players engage with the world of Vice City and Leonida throughout Jason and Lucia’s story.",
+          "quote": "Justice bring their signature sound to this adaptive score, featuring expansive compositions all dynamically tuned to the different ways players engage with the world of Vice City and Leonida throughout Jason and Lucia’s story."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Justice bring their signature sound to this adaptive score, featuring expansive compositions all dynamically tuned to the different ways players engage with the world of Vice City and Leonida throughout Jason and Lucia’s story.",
+          "quote": "Justice bring their signature sound to this adaptive score, featuring expansive compositions all dynamically tuned to the different ways players engage with the world of Vice City and Leonida throughout Jason and Lucia’s story."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Justice bring their signature sound to this adaptive score, featuring expansive compositions all dynamically tuned to the different ways players engage with the world of Vice City and Leonida throughout Jason and Lucia’s story.",
+          "quote": "Justice bring their signature sound to this adaptive score, featuring expansive compositions all dynamically tuned to the different ways players engage with the world of Vice City and Leonida throughout Jason and Lucia’s story."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Justice bring their signature sound to this adaptive score, featuring expansive compositions all dynamically tuned to the different ways players engage with the world of Vice City and Leonida throughout Jason and Lucia’s story.",
+          "quote": "Justice bring their signature sound to this adaptive score, featuring expansive compositions all dynamically tuned to the different ways players engage with the world of Vice City and Leonida throughout Jason and Lucia’s story."
+        }
+      ]
+    }
+  ]
+}

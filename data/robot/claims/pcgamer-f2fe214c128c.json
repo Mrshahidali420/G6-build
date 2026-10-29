@@ -1,0 +1,39 @@
+{
+  "rawId": "pcgamer-f2fe214c128c",
+  "outlet": "PC Gamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pcgamer.com/games/grand-theft-auto/im-calling-it-gta-6-is-officially-an-immersive-sim-based-on-what-you-can-do-with-npcs/",
+  "published": "2026-10-29",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/BMnB7YBg5GGG7phGyXkC5a-2560-80.jpg",
+  "extractedAt": "2026-10-29T21:40:14.654Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Phil",
+      "altNames": [],
+      "slug": "phil",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Chatting about his experience actually playing the game, Rockstar head of development Phil Hooker told a story about the time he deployed a bit of unorthodox crowd control to prepare a store for a heist.",
+          "quote": "Chatting about his experience actually playing the game, Rockstar head of development Phil Hooker told a story about the time he deployed a bit of unorthodox crowd control to prepare a store for a heist."
+        }
+      ]
+    }
+  ]
+}

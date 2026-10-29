@@ -1,0 +1,27 @@
+{
+  "rawId": "ign-0df040173623",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/original-gta-artist-says-hes-flattered-to-see-his-influence-continue-in-gta-6-cover-art",
+  "published": "2026-10-29",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/10/13/gta-3-cover-blog-1791888082659.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-10-29T21:39:48.593Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The full interview with Bliss also explores how the September 11 attacks influenced the GTA 3 cover art, and the creative challenges behind the distinctive visual styles of Vice City and San Andreas.",
+          "quote": "The full interview with Bliss also explores how the September 11 attacks influenced the GTA 3 cover art, and the creative challenges behind the distinctive visual styles of Vice City and San Andreas."
+        }
+      ]
+    }
+  ]
+}

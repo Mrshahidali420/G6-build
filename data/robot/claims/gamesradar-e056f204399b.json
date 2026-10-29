@@ -1,0 +1,42 @@
+{
+  "rawId": "gamesradar-e056f204399b",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/south-park-breaks-the-news-that-gta-6-lets-you-throw-dog-poop-even-gets-a-grand-theft-auto-icon-to-announce-it/",
+  "published": "2026-10-29",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/XCqyFu8hGEF9PDJcuQqRPX-2560-80.jpg",
+  "extractedAt": "2026-10-29T21:39:35.626Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Enter protagonist Jason, who then throws something at the pedestrian, picks up the dog poop himself, and hits them around the face with it as they react in horror.",
+          "quote": "Enter protagonist Jason, who then throws something at the pedestrian, picks up the dog poop himself, and hits them around the face with it as they react in horror."
+        }
+      ]
+    }
+  ]
+}

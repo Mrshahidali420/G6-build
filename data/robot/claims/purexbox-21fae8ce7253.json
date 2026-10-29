@@ -1,0 +1,25 @@
+{
+  "rawId": "purexbox-21fae8ce7253",
+  "outlet": "Pure Xbox",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.purexbox.com/news/2026/10/new-gta-6-dog-poop-gameplay-images-and-extra-info-to-hype-you-up",
+  "published": "2026-10-29",
+  "ogImage": "https://images.purexbox.com/83d9f4ba2649b/1280x720.jpg",
+  "extractedAt": "2026-10-29T21:40:21.143Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "1 11 dskatter 1 hour ago @cronogold Yeah, I have zero interest in playing the game myself, but I really want concrete evidence that it “runs best” on PS5.",
+          "quote": "1 11 dskatter 1 hour ago @cronogold Yeah, I have zero interest in playing the game myself, but I really want concrete evidence that it “runs best” on PS5."
+        }
+      ]
+    }
+  ]
+}

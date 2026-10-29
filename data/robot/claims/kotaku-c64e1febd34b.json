@@ -1,0 +1,49 @@
+{
+  "rawId": "kotaku-c64e1febd34b",
+  "outlet": "Kotaku",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://kotaku.com/gta6-is-so-detailed-rockstar-had-to-make-its-world-slower-than-gta5-to-accommodate-it-2000750634",
+  "published": "2026-10-29",
+  "ogImage": "https://kotaku.com/app/uploads/2026/10/gta-6-spy.jpg",
+  "extractedAt": "2026-10-29T21:40:08.633Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "If you want a pedestrian population to behave believably, and you can stand in front of them and produce an automatic shotgun out of nowhere and they don’t react, then that doesn’t work.",
+          "quote": "If you want a pedestrian population to behave believably, and you can stand in front of them and produce an automatic shotgun out of nowhere and they don’t react, then that doesn’t work."
+        },
+        {
+          "fact": "If you want to summon a car in GTA 6 , you can pay a modest fee to use the Scooter Bros app.",
+          "quote": "If you want to summon a car in GTA 6 , you can pay a modest fee to use the Scooter Bros app."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "With the game’s visuals now more true-to-life, the company says it felt compelled to slow things down in order to maintain the immersion of Vice City.",
+          "quote": "With the game’s visuals now more true-to-life, the company says it felt compelled to slow things down in order to maintain the immersion of Vice City."
+        },
+        {
+          "fact": "After rebuilding Vice City based on these excursions and the subsequent research, the company tested the world with the same time-and-day systems and gameplay speed as GTA5 , but something felt off. “Everything felt too fast,” Nelson explained. “As the resolution of the worlds goes up, I think there are things you can’t get away with in the same way.",
+          "quote": "After rebuilding Vice City based on these excursions and the subsequent research, the company tested the world with the same time-and-day systems and gameplay speed as GTA5 , but something felt off. “Everything felt too fast,” Nelson explained. “As the resolution of the worlds goes up, I think there are things you can’t get away with in the same way."
+        }
+      ]
+    }
+  ]
+}

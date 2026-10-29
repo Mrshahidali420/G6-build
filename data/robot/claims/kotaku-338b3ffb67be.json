@@ -1,0 +1,41 @@
+{
+  "rawId": "kotaku-338b3ffb67be",
+  "outlet": "Kotaku",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://kotaku.com/grand-theft-auto-6-south-park-america-dog-poop-video-2000750987",
+  "published": "2026-10-29",
+  "ogImage": "https://kotaku.com/app/uploads/2026/10/jason-2.jpg",
+  "extractedAt": "2026-10-29T21:40:01.605Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Your horses could poop in Red Dead Redemption 2 , so it’s not too surprising that dogs in Vice City might also have to relieve themselves.",
+          "quote": "Your horses could poop in Red Dead Redemption 2 , so it’s not too surprising that dogs in Vice City might also have to relieve themselves."
+        }
+      ]
+    },
+    {
+      "entityType": "wildlife",
+      "name": "Dogs",
+      "altNames": [],
+      "slug": "dogs",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Your horses could poop in Red Dead Redemption 2 , so it’s not too surprising that dogs in Vice City might also have to relieve themselves.",
+          "quote": "Your horses could poop in Red Dead Redemption 2 , so it’s not too surprising that dogs in Vice City might also have to relieve themselves."
+        }
+      ]
+    }
+  ]
+}

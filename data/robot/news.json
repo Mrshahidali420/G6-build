@@ -450,5 +450,53 @@
     "written": null,
     "refused": "2026-10-29",
     "reason": "an em dash appears in the written text"
+  },
+  "gamesradar-02aa19cea6ea": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-29",
+    "reason": "the number(s) 2000750634 appear in the writing but in no quote"
+  },
+  "gamesradar-d93972637cc9": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-29",
+    "reason": "the number(s) 2000750634 appear in the writing but in no quote"
+  },
+  "kotaku-c64e1febd34b": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-29",
+    "reason": "the number(s) 2000750634 appear in the writing but in no quote"
+  },
+  "pushsquare-c74ebd832ae1": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-29",
+    "reason": "the number(s) 2000750634 appear in the writing but in no quote"
+  },
+  "gamesradar-e056f204399b": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-29",
+    "reason": "the number(s) 2000750987 appear in the writing but in no quote"
+  },
+  "kotaku-338b3ffb67be": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-29",
+    "reason": "the number(s) 2000750987 appear in the writing but in no quote"
+  },
+  "purexbox-21fae8ce7253": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-29",
+    "reason": "the number(s) 2000750987 appear in the writing but in no quote"
+  },
+  "pushsquare-6b156ce25a1b": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-10-29",
+    "reason": "the number(s) 2000750987 appear in the writing but in no quote"
   }
 }

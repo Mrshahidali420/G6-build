@@ -1,0 +1,25 @@
+{
+  "rawId": "pushsquare-c74ebd832ae1",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/10/gta-inspired-ps5-open-world-goes-full-tycoon-in-upcoming-update",
+  "published": "2026-10-29",
+  "ogImage": "https://images.pushsquare.com/baa33550fa446/1280x720.jpg",
+  "extractedAt": "2026-10-29T21:40:27.622Z",
+  "entities": [
+    {
+      "entityType": "vehicle",
+      "name": "Phantom",
+      "altNames": [],
+      "slug": "phantom",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "8 Review Phantom Blade Zero (PS5) - One of the Generation's Greatest Action Exper...",
+          "quote": "8 Review Phantom Blade Zero (PS5) - One of the Generation's Greatest Action Exper..."
+        }
+      ]
+    }
+  ]
+}

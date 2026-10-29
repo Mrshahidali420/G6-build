@@ -1,0 +1,53 @@
+{
+  "rawId": "rockpapershotgun-3f4f65f1f3a9",
+  "outlet": "Rock Paper Shotgun",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.rockpapershotgun.com/dont-worry-gta-6s-cars-can-drive-for-ages-before-their-fuel-tanks-need-refilling-leaving-me-wondering-why-this-motor-managements-been-added-at-all",
+  "published": "2026-10-29",
+  "ogImage": "https://assetsio.gnwcdn.com/gta-6-cars-fuel-management-01.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-10-29T21:40:34.129Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Halt",
+      "altNames": [],
+      "slug": "halt",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "On one hand, having cars that can barely drive three streets without sputtering to a halt and making the gas station experience a clunky chore that takes ages clearly would've both been terrible moves.",
+          "quote": "On one hand, having cars that can barely drive three streets without sputtering to a halt and making the gas station experience a clunky chore that takes ages clearly would've both been terrible moves."
+        }
+      ]
+    },
+    {
+      "entityType": "landmark",
+      "name": "The Fence",
+      "altNames": [],
+      "slug": "the-fence",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Up until now, GTA's always fallen on the latter side of the fence and honestly seemed at home there.",
+          "quote": "Up until now, GTA's always fallen on the latter side of the fence and honestly seemed at home there."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Rebel",
+      "altNames": [],
+      "slug": "rebel",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "If you've not played Dawnwalker - you should, here's my review - its devs Rebel Wolves based their story around giving the player 30 days and nights in which to find a way to save their family, lest mysterious consequences occur.",
+          "quote": "If you've not played Dawnwalker - you should, here's my review - its devs Rebel Wolves based their story around giving the player 30 days and nights in which to find a way to save their family, lest mysterious consequences occur."
+        }
+      ]
+    }
+  ]
+}

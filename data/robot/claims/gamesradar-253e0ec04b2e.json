@@ -1,0 +1,41 @@
+{
+  "rawId": "gamesradar-253e0ec04b2e",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-map-size-is-so-big-it-rivals-gta-4-gta-5-and-red-dead-redemption-2s-combined-and-rockstar-devs-are-still-discovering-places-theyve-never-seen/",
+  "published": "2026-10-30",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/wkAXyJBN52JNJAhikTDNRE-2560-80.jpg",
+  "extractedAt": "2026-10-30T21:24:33.632Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Rockstar tells Edge as much as part of its exclusive cover story , revealing that the total land mass - including both Vice City and its surrounding areas - is almost as big as the playable maps that GTA 4, 5, and Red Dead Redemption 2 boast... combined.",
+          "quote": "Rockstar tells Edge as much as part of its exclusive cover story , revealing that the total land mass - including both Vice City and its surrounding areas - is almost as big as the playable maps that GTA 4, 5, and Red Dead Redemption 2 boast... combined."
+        }
+      ]
+    }
+  ]
+}

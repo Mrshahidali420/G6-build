@@ -1,0 +1,100 @@
+{
+  "rawId": "gamesradar-2785bcb9d420",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-animals/",
+  "published": "2026-10-30",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/keKFQB4tN5VgTtyQPbozfh-1920-80.jpg",
+  "extractedAt": "2026-10-30T21:24:40.087Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        },
+        {
+          "fact": "Visiting the zoo is one of many GTA 6 side activities available, but if you want a quiet trip then you'll need to lose your GTA 6 Wanted Level first.",
+          "quote": "Visiting the zoo is one of many GTA 6 side activities available, but if you want a quiet trip then you'll need to lose your GTA 6 Wanted Level first."
+        },
+        {
+          "fact": "These will be divided into Rare , Discoverable , and Legendary categories, but beyond that they are staying tight-lipped on details for now as they want players to make surprising discoveries for themselves while they explore.",
+          "quote": "These will be divided into Rare , Discoverable , and Legendary categories, but beyond that they are staying tight-lipped on details for now as they want players to make surprising discoveries for themselves while they explore."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "When Jason encounters a dog in the apartment complex, he has the option to Praise it from a distance then either Scold or Pet the dog when up close.",
+          "quote": "When Jason encounters a dog in the apartment complex, he has the option to Praise it from a distance then either Scold or Pet the dog when up close."
+        }
+      ]
+    },
+    {
+      "entityType": "gameplay_feature",
+      "name": "Six-Star Wanted System",
+      "altNames": [
+        "wanted level",
+        "six stars",
+        "police wanted system"
+      ],
+      "slug": "six-star-wanted-system",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Visiting the zoo is one of many GTA 6 side activities available, but if you want a quiet trip then you'll need to lose your GTA 6 Wanted Level first.",
+          "quote": "Visiting the zoo is one of many GTA 6 side activities available, but if you want a quiet trip then you'll need to lose your GTA 6 Wanted Level first."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Whether you find them in the wildernesses of GTA 6 or an enclosure in Leonida's own zoo there will be plenty to discover, so here's what we know so far about the animals in GTA 6.",
+          "quote": "Whether you find them in the wildernesses of GTA 6 or an enclosure in Leonida's own zoo there will be plenty to discover, so here's what we know so far about the animals in GTA 6."
+        },
+        {
+          "fact": "Rare, Discoverable, and Legendary animals (Image credit: Rockstar Games) In addition to the general GTA 6 animal species that you'll encounter around Leonida, Rockstar have confirmed that there will also be plenty of unusual creatures that you can track, in a similar way to the Red Dead Redemption series.",
+          "quote": "Rare, Discoverable, and Legendary animals (Image credit: Rockstar Games) In addition to the general GTA 6 animal species that you'll encounter around Leonida, Rockstar have confirmed that there will also be plenty of unusual creatures that you can track, in a similar way to the Red Dead Redemption series."
+        }
+      ]
+    },
+    {
+      "entityType": "wildlife",
+      "name": "Fish",
+      "altNames": [],
+      "slug": "fish",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "This includes more than 60 types of bird, over 30 land mammals, plus a variety of reptiles, fish, and much more.",
+          "quote": "This includes more than 60 types of bird, over 30 land mammals, plus a variety of reptiles, fish, and much more."
+        }
+      ]
+    }
+  ]
+}

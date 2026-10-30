@@ -1,0 +1,67 @@
+{
+  "rawId": "pcgamer-175ec8e15243",
+  "outlet": "PC Gamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6s-souped-up-red-dead-redemption-2-style-morality-system-will-scale-from-professional-to-irredeemable-so-players-can-decide-what-kind-of-criminal-they-want-to-be/",
+  "published": "2026-10-30",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/SQbhirAcauNXRR8uDfFa2k-2560-80.jpg",
+  "extractedAt": "2026-10-30T21:24:59.608Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        },
+        {
+          "fact": "Latest Videos From PC Gamer Watch full video here: Fights don't need to always end in death, a professional criminal may incapacitate their opponent instead of putting a bullet between their eyes or perhaps try to get information or whatever they want from them via less violent means, at least at first.",
+          "quote": "Latest Videos From PC Gamer Watch full video here: Fights don't need to always end in death, a professional criminal may incapacitate their opponent instead of putting a bullet between their eyes or perhaps try to get information or whatever they want from them via less violent means, at least at first."
+        },
+        {
+          "fact": "We've already learned a bit about the Criminal Profile before thanks to an IGN preview in which Nelson also explained how the decision to include such a responsive system stemmed from the fact that the devs didn't want player characters to become too powerful.",
+          "quote": "We've already learned a bit about the Criminal Profile before thanks to an IGN preview in which Nelson also explained how the decision to include such a responsive system stemmed from the fact that the devs didn't want player characters to become too powerful."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "(Image credit: Rockstar Games) The Criminal Profile will track your actions as Lucia and Jason on a scale from \"Professional\" to \"Irredeemable\", represented by angel and devil icons.",
+          "quote": "(Image credit: Rockstar Games) The Criminal Profile will track your actions as Lucia and Jason on a scale from \"Professional\" to \"Irredeemable\", represented by angel and devil icons."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "(Image credit: Rockstar Games) The Criminal Profile will track your actions as Lucia and Jason on a scale from \"Professional\" to \"Irredeemable\", represented by angel and devil icons.",
+          "quote": "(Image credit: Rockstar Games) The Criminal Profile will track your actions as Lucia and Jason on a scale from \"Professional\" to \"Irredeemable\", represented by angel and devil icons."
+        }
+      ]
+    }
+  ]
+}

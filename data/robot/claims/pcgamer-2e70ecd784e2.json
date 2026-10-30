@@ -1,0 +1,81 @@
+{
+  "rawId": "pcgamer-2e70ecd784e2",
+  "outlet": "PC Gamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pcgamer.com/games/grand-theft-auto/you-can-relationship-max-in-gta-6-as-walking-along-the-beach-or-working-out-at-the-gym-together-increases-your-couple-rating-on-a-four-point-scale/",
+  "published": "2026-10-30",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/mRhauLDDkxHxghWg6ZZms-2560-80.jpg",
+  "extractedAt": "2026-10-30T11:14:30.103Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The recent mega piece by Edge has revealed that GTA 6 players will be able to measure Jason and Lucia's closeness in a four-point scale which we're coining as the boyfriend-o-meter.",
+          "quote": "The recent mega piece by Edge has revealed that GTA 6 players will be able to measure Jason and Lucia's closeness in a four-point scale which we're coining as the boyfriend-o-meter."
+        },
+        {
+          "fact": "Latest Videos From PC Gamer Watch full video here: The relationship between Lucia and Jason certainly seems to be more involved than we first thought, but that's not to say it will take centre stage or be overly important.",
+          "quote": "Latest Videos From PC Gamer Watch full video here: The relationship between Lucia and Jason certainly seems to be more involved than we first thought, but that's not to say it will take centre stage or be overly important."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The recent mega piece by Edge has revealed that GTA 6 players will be able to measure Jason and Lucia's closeness in a four-point scale which we're coining as the boyfriend-o-meter.",
+          "quote": "The recent mega piece by Edge has revealed that GTA 6 players will be able to measure Jason and Lucia's closeness in a four-point scale which we're coining as the boyfriend-o-meter."
+        },
+        {
+          "fact": "Latest Videos From PC Gamer Watch full video here: The relationship between Lucia and Jason certainly seems to be more involved than we first thought, but that's not to say it will take centre stage or be overly important.",
+          "quote": "Latest Videos From PC Gamer Watch full video here: The relationship between Lucia and Jason certainly seems to be more involved than we first thought, but that's not to say it will take centre stage or be overly important."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "This is a competition which I plan to win and in the process of doing so show all of Leonida just how capable and fearsome my skills are at cultivating a healthy and strong relationship.",
+          "quote": "This is a competition which I plan to win and in the process of doing so show all of Leonida just how capable and fearsome my skills are at cultivating a healthy and strong relationship."
+        }
+      ]
+    }
+  ]
+}

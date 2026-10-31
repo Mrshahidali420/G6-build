@@ -1,0 +1,76 @@
+{
+  "rawId": "polygon-4ac3e3c5a820",
+  "outlet": "Polygon",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.polygon.com/new-xbox-games-november-2026/",
+  "published": "2026-10-31",
+  "ogImage": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/grassrivers_06.jpg?w=1600&h=900&fit=crop",
+  "extractedAt": "2026-10-31T10:47:08.468Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "If your answer to either of those questions is yes, you’ll want to check out Warhammer Survivors .",
+          "quote": "If your answer to either of those questions is yes, you’ll want to check out Warhammer Survivors ."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "A stack of indie hidden gems and nostalgic remasters are here to make sure you have something to play while you wait for your return to Vice City.",
+          "quote": "A stack of indie hidden gems and nostalgic remasters are here to make sure you have something to play while you wait for your return to Vice City."
+        },
+        {
+          "fact": "We’ll find out together when the gates to Vice City finally open on Nov.",
+          "quote": "We’ll find out together when the gates to Vice City finally open on Nov."
+        }
+      ]
+    },
+    {
+      "entityType": "release_fact",
+      "name": "GTA 6 release date",
+      "altNames": [
+        "GTA VI release date",
+        "Grand Theft Auto 6 release date"
+      ],
+      "slug": "gta-6-release-date",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "1 Grand Theft Auto 6 Release date: Nov.",
+          "quote": "1 Grand Theft Auto 6 Release date: Nov."
+        }
+      ]
+    },
+    {
+      "entityType": "wildlife",
+      "name": "Dogs",
+      "altNames": [],
+      "slug": "dogs",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Sounds simple enough, but there’s one eye-catching twist: You play as a pack of humanoid dogs.",
+          "quote": "Sounds simple enough, but there’s one eye-catching twist: You play as a pack of humanoid dogs."
+        }
+      ]
+    }
+  ]
+}

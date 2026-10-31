@@ -1,0 +1,107 @@
+{
+  "rawId": "polygon-b9785b2f02e1",
+  "outlet": "Polygon",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.polygon.com/gta-6-side-activities/",
+  "published": "2026-10-31",
+  "ogImage": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/img_1128.webp?w=1600&h=900&fit=crop",
+  "extractedAt": "2026-10-31T20:25:50.186Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Add Polygon.com on Google Add as Preferred Source Follow on Google Discover 1 Learn Spanish If GTA 6 lets Jason and Lucia become a serious item, then it needs to let me, as Jason, learn Spanish.",
+          "quote": "Add Polygon.com on Google Add as Preferred Source Follow on Google Discover 1 Learn Spanish If GTA 6 lets Jason and Lucia become a serious item, then it needs to let me, as Jason, learn Spanish."
+        },
+        {
+          "fact": "Barring that, I'd settle for listening to the game's radio stations on Jason's or Lucia's phone.",
+          "quote": "Barring that, I'd settle for listening to the game's radio stations on Jason's or Lucia's phone."
+        },
+        {
+          "fact": "Turning Jason and Lucia's biggest moments into capital-C Content might not be the smartest idea if you're trying to avoid the law.",
+          "quote": "Turning Jason and Lucia's biggest moments into capital-C Content might not be the smartest idea if you're trying to avoid the law."
+        },
+        {
+          "fact": "Maybe it's just as simple as specializing in one kind of combat over another, but if I'm spending as much time with Jason and Lucia as Rockstar clearly wants me to, there should be something that lets my actions shape that journey in a way different from everybody else.",
+          "quote": "Maybe it's just as simple as specializing in one kind of combat over another, but if I'm spending as much time with Jason and Lucia as Rockstar clearly wants me to, there should be something that lets my actions shape that journey in a way different from everybody else."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Add Polygon.com on Google Add as Preferred Source Follow on Google Discover 1 Learn Spanish If GTA 6 lets Jason and Lucia become a serious item, then it needs to let me, as Jason, learn Spanish.",
+          "quote": "Add Polygon.com on Google Add as Preferred Source Follow on Google Discover 1 Learn Spanish If GTA 6 lets Jason and Lucia become a serious item, then it needs to let me, as Jason, learn Spanish."
+        },
+        {
+          "fact": "(That’s assuming that Lucia speaks it, at least a little.) It'd be extremely cute, plus it's kind of mandatory if they're going to share their lives, especially in a place based on Miami, where tons of people speak Spanish.",
+          "quote": "(That’s assuming that Lucia speaks it, at least a little.) It'd be extremely cute, plus it's kind of mandatory if they're going to share their lives, especially in a place based on Miami, where tons of people speak Spanish."
+        },
+        {
+          "fact": "Barring that, I'd settle for listening to the game's radio stations on Jason's or Lucia's phone.",
+          "quote": "Barring that, I'd settle for listening to the game's radio stations on Jason's or Lucia's phone."
+        },
+        {
+          "fact": "Turning Jason and Lucia's biggest moments into capital-C Content might not be the smartest idea if you're trying to avoid the law.",
+          "quote": "Turning Jason and Lucia's biggest moments into capital-C Content might not be the smartest idea if you're trying to avoid the law."
+        },
+        {
+          "fact": "Maybe it's just as simple as specializing in one kind of combat over another, but if I'm spending as much time with Jason and Lucia as Rockstar clearly wants me to, there should be something that lets my actions shape that journey in a way different from everybody else.",
+          "quote": "Maybe it's just as simple as specializing in one kind of combat over another, but if I'm spending as much time with Jason and Lucia as Rockstar clearly wants me to, there should be something that lets my actions shape that journey in a way different from everybody else."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Surely Vice City's culture extends beyond strip clubs and drug dens.",
+          "quote": "Surely Vice City's culture extends beyond strip clubs and drug dens."
+        },
+        {
+          "fact": "5 Take a tour You can explore the swamps and dive off skyscrapers, sure, but I'd really like a guided tour of Vice City.",
+          "quote": "5 Take a tour You can explore the swamps and dive off skyscrapers, sure, but I'd really like a guided tour of Vice City."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Convertible",
+      "altNames": [],
+      "slug": "unnamed-convertible",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Man and woman driving in a convertible car in Grand Theft Auto 6.",
+          "quote": "Man and woman driving in a convertible car in Grand Theft Auto 6."
+        }
+      ]
+    }
+  ]
+}

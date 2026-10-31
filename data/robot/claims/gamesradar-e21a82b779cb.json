@@ -1,0 +1,59 @@
+{
+  "rawId": "gamesradar-e21a82b779cb",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/with-gta-6-rockstar-couldnt-just-trot-out-something-fans-would-already-expect-weve-built-a-pyramid-on-everest/",
+  "published": "2026-10-31",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/QLpazr6y5eHDC7b3SDFkkh-1920-80.jpg",
+  "extractedAt": "2026-10-31T20:25:37.229Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Case in point: GTA 6 has a full on sweat system that makes Jason and Lucia perspire based on how hard they dance, there's about 600,000 unique animations , and Rockstar built an entire writing team dedicated solely to background NPCs .",
+          "quote": "Case in point: GTA 6 has a full on sweat system that makes Jason and Lucia perspire based on how hard they dance, there's about 600,000 unique animations , and Rockstar built an entire writing team dedicated solely to background NPCs ."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Case in point: GTA 6 has a full on sweat system that makes Jason and Lucia perspire based on how hard they dance, there's about 600,000 unique animations , and Rockstar built an entire writing team dedicated solely to background NPCs .",
+          "quote": "Case in point: GTA 6 has a full on sweat system that makes Jason and Lucia perspire based on how hard they dance, there's about 600,000 unique animations , and Rockstar built an entire writing team dedicated solely to background NPCs ."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "rawId": "gamesradar-5722a536561e",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/rockstar-had-to-up-its-game-for-gta-6-because-gta-5s-realism-was-already-showing-its-age-when-it-launched-13-years-ago/",
+  "published": "2026-10-31",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/UqBPGhNWViTTPAY8b43YFY-2560-80.jpg",
+  "extractedAt": "2026-10-31T20:25:30.782Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        },
+        {
+          "fact": "\"If you want a pedestrian population to behave believably, and you can stand in front of them and produce an automatic shotgun out of nowhere and they don't react, then that doesn't work.",
+          "quote": "\"If you want a pedestrian population to behave believably, and you can stand in front of them and produce an automatic shotgun out of nowhere and they don't react, then that doesn't work."
+        }
+      ]
+    }
+  ]
+}

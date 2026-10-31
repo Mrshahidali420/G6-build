@@ -1,0 +1,85 @@
+{
+  "rawId": "pcgamer-d41e1aa1b6ec",
+  "outlet": "PC Gamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pcgamer.com/games/grand-theft-auto/im-100-percent-here-for-a-more-grounded-realistic-gta-6-one-i-believe-wont-come-at-the-expense-of-its-usual-haphazard-chaos/",
+  "published": "2026-10-31",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/MdBiu7GSCh7a39PrLtpQBL-2560-80.jpg",
+  "extractedAt": "2026-10-31T20:25:43.733Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Phil",
+      "altNames": [],
+      "slug": "phil",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "But co-head Phil Hooker also describes things like jumping on a bus out of sight of any CCTV or witnesses-if police didn't see you get on the bus, there's no way of figuring out where you ended up once you're safely distanced from the scene (or scenes) of the crime.",
+          "quote": "But co-head Phil Hooker also describes things like jumping on a bus out of sight of any CCTV or witnesses-if police didn't see you get on the bus, there's no way of figuring out where you ended up once you're safely distanced from the scene (or scenes) of the crime."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Grand Theft Auto Screw Grand Theft Auto 6's supercars, I'm here for Leonida's robust public transportation system Horror In 2023, an anonymous modder released one of the best horror games of the decade, and they still haven't broken character Horror It's Amnesia vs Amnesia in the 'scariest game' semifinals-vote now!",
+          "quote": "Grand Theft Auto Screw Grand Theft Auto 6's supercars, I'm here for Leonida's robust public transportation system Horror In 2023, an anonymous modder released one of the best horror games of the decade, and they still haven't broken character Horror It's Amnesia vs Amnesia in the 'scariest game' semifinals-vote now!"
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "OK, I'm finally on board I'm calling it: GTA 6 is officially an immersive sim, based on what you can do with NPCs The GTA 6 reveal has me wowed by Vice City and underwhelmed by Rockstar's same old missions And ultimately, I don't feel like a more detailed, realistic reaction to my crime sprees dulls their buzz.",
+          "quote": "OK, I'm finally on board I'm calling it: GTA 6 is officially an immersive sim, based on what you can do with NPCs The GTA 6 reveal has me wowed by Vice City and underwhelmed by Rockstar's same old missions And ultimately, I don't feel like a more detailed, realistic reaction to my crime sprees dulls their buzz."
+        }
+      ]
+    },
+    {
+      "entityType": "weapon",
+      "name": "Rocket Launcher",
+      "altNames": [
+        "RPG"
+      ],
+      "slug": "rocket-launcher",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "I'm probably not going to be able to pull a rocket launcher out of my invisible butt arsenal anymore-Edge notes that larger weaponry instead gets stored inside your car-and I wonder if the world is going to let me lob a hundred sticky bombs at a plane without consequence anymore.",
+          "quote": "I'm probably not going to be able to pull a rocket launcher out of my invisible butt arsenal anymore-Edge notes that larger weaponry instead gets stored inside your car-and I wonder if the world is going to let me lob a hundred sticky bombs at a plane without consequence anymore."
+        }
+      ]
+    }
+  ]
+}

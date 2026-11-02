@@ -1,0 +1,39 @@
+{
+  "rawId": "pushsquare-c9c8a0583b8a",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/guides/these-28plus-ps5-and-ps-plus-games-are-coming-out-this-week-2nd-8th-november",
+  "published": "2026-10-31",
+  "ogImage": "https://images.pushsquare.com/79d1f80a87960/1280x720.jpg",
+  "extractedAt": "2026-11-02T13:15:11.090Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "0 12 Blacknun 5 hours ago Godzilla probably the one I really want to try 0 Show Comments Leave A Comment Hold on there, you need to login to post a comment...",
+          "quote": "0 12 Blacknun 5 hours ago Godzilla probably the one I really want to try 0 Show Comments Leave A Comment Hold on there, you need to login to post a comment..."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Phantom",
+      "altNames": [],
+      "slug": "phantom",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "5 Guide Phantom Blade Zero: Best Weapons and Where to Find Them 6 Feature Last Chance to Buy These 50+ PS5, PS4 Games in PS Store's Planet of the ...",
+          "quote": "5 Guide Phantom Blade Zero: Best Weapons and Where to Find Them 6 Feature Last Chance to Buy These 50+ PS5, PS4 Games in PS Store's Planet of the ..."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "rawId": "kotaku-9e169b89f1ef",
+  "outlet": "Kotaku",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://kotaku.com/grand-theft-auto-6-pre-order-walmart-surprise-release-date-2000752341",
+  "published": "2026-11-02",
+  "ogImage": "https://kotaku.com/app/uploads/2026/10/GTA-launch-trailer_0002_Hue_Saturation-1-1200x675.jpg",
+  "extractedAt": "2026-11-02T23:49:52.844Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "For that much money, I’d better be getting a high-quality, sculpted statue of Jason and Lucia .",
+          "quote": "For that much money, I’d better be getting a high-quality, sculpted statue of Jason and Lucia ."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "For that much money, I’d better be getting a high-quality, sculpted statue of Jason and Lucia .",
+          "quote": "For that much money, I’d better be getting a high-quality, sculpted statue of Jason and Lucia ."
+        }
+      ]
+    }
+  ]
+}

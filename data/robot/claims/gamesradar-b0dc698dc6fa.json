@@ -1,0 +1,99 @@
+{
+  "rawId": "gamesradar-b0dc698dc6fa",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-sounds-like-an-rpg-so-why-deny-it/",
+  "published": "2026-11-02",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/Jphdtoi6xtqCca8opYAhkB-1920-80.jpg",
+  "extractedAt": "2026-11-02T23:49:39.836Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Jason and Lucia's player-defined relationship is the most earth-shattering revelation of all to me, and it's making me look at GTA 6 a whole other way.",
+          "quote": "Jason and Lucia's player-defined relationship is the most earth-shattering revelation of all to me, and it's making me look at GTA 6 a whole other way."
+        },
+        {
+          "fact": "GTA 6's Jason and Lucia can be allies instead of lovers, and players can break them up if desired.",
+          "quote": "GTA 6's Jason and Lucia can be allies instead of lovers, and players can break them up if desired."
+        },
+        {
+          "fact": "Grand Theft Auto VI exclusive GTA 6 lead channels the spirit of Skyrim GTA 6 lets you break up Jason and Lucia Meta Shift Jason and Lucia's relationship is the biggest clue as to how RPG-like GTA 6 will be.",
+          "quote": "Grand Theft Auto VI exclusive GTA 6 lead channels the spirit of Skyrim GTA 6 lets you break up Jason and Lucia Meta Shift Jason and Lucia's relationship is the biggest clue as to how RPG-like GTA 6 will be."
+        },
+        {
+          "fact": "The biggest thing I learned from Edge's GTA 6 special is that Jason and Lucia don't need to be a couple.",
+          "quote": "The biggest thing I learned from Edge's GTA 6 special is that Jason and Lucia don't need to be a couple."
+        },
+        {
+          "fact": "Giving players so much control over Jason and Lucia's relationship feels like it has the power to change the foundational context of the game.",
+          "quote": "Giving players so much control over Jason and Lucia's relationship feels like it has the power to change the foundational context of the game."
+        },
+        {
+          "fact": "Jason and Lucia's relationship will be player-determined, making their dynamic just as much yours to establish as the open world will be yours to explore.",
+          "quote": "Jason and Lucia's relationship will be player-determined, making their dynamic just as much yours to establish as the open world will be yours to explore."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Jason and Lucia's player-defined relationship is the most earth-shattering revelation of all to me, and it's making me look at GTA 6 a whole other way.",
+          "quote": "Jason and Lucia's player-defined relationship is the most earth-shattering revelation of all to me, and it's making me look at GTA 6 a whole other way."
+        },
+        {
+          "fact": "GTA 6's Jason and Lucia can be allies instead of lovers, and players can break them up if desired.",
+          "quote": "GTA 6's Jason and Lucia can be allies instead of lovers, and players can break them up if desired."
+        },
+        {
+          "fact": "Grand Theft Auto VI exclusive GTA 6 lead channels the spirit of Skyrim GTA 6 lets you break up Jason and Lucia Meta Shift Jason and Lucia's relationship is the biggest clue as to how RPG-like GTA 6 will be.",
+          "quote": "Grand Theft Auto VI exclusive GTA 6 lead channels the spirit of Skyrim GTA 6 lets you break up Jason and Lucia Meta Shift Jason and Lucia's relationship is the biggest clue as to how RPG-like GTA 6 will be."
+        },
+        {
+          "fact": "The biggest thing I learned from Edge's GTA 6 special is that Jason and Lucia don't need to be a couple.",
+          "quote": "The biggest thing I learned from Edge's GTA 6 special is that Jason and Lucia don't need to be a couple."
+        },
+        {
+          "fact": "Giving players so much control over Jason and Lucia's relationship feels like it has the power to change the foundational context of the game.",
+          "quote": "Giving players so much control over Jason and Lucia's relationship feels like it has the power to change the foundational context of the game."
+        },
+        {
+          "fact": "Jason and Lucia's relationship will be player-determined, making their dynamic just as much yours to establish as the open world will be yours to explore.",
+          "quote": "Jason and Lucia's relationship will be player-determined, making their dynamic just as much yours to establish as the open world will be yours to explore."
+        }
+      ]
+    }
+  ]
+}

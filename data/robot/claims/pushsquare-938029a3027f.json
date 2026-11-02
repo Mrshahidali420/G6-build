@@ -1,0 +1,91 @@
+{
+  "rawId": "pushsquare-938029a3027f",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/features/poll-which-ps5-games-did-you-buy-during-the-insane-pre-gta-6-rush",
+  "published": "2026-11-02",
+  "ogImage": "https://images.pushsquare.com/30ee70e328aa2/1280x720.jpg",
+  "extractedAt": "2026-11-02T23:49:59.374Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Basically, I want to know which games you actually managed to sit down and enjoy during the pre-GTA 6 rush.",
+          "quote": "Basically, I want to know which games you actually managed to sit down and enjoy during the pre-GTA 6 rush."
+        },
+        {
+          "fact": "0 40 fleenerstrunk 4 hours ago I didn't buy any of these games even though I want a lot of them, because if you wait at least 6 months you always get a better patched version.",
+          "quote": "0 40 fleenerstrunk 4 hours ago I didn't buy any of these games even though I want a lot of them, because if you wait at least 6 months you always get a better patched version."
+        },
+        {
+          "fact": "I do want Phantom Blade but my plan is to buy some more games on BF 0 49 RoomWithaMoose 4 hours ago @LogicStrikesAgain It does look like I was wrong to doubt PB0.",
+          "quote": "I do want Phantom Blade but my plan is to buy some more games on BF 0 49 RoomWithaMoose 4 hours ago @LogicStrikesAgain It does look like I was wrong to doubt PB0."
+        },
+        {
+          "fact": "0 54 Judal27 3 hours ago Only got MW4 and the DD2 dlc so far, even though I really want many of these games eventually for sure.",
+          "quote": "0 54 Judal27 3 hours ago Only got MW4 and the DD2 dlc so far, even though I really want many of these games eventually for sure."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Phantom",
+      "altNames": [],
+      "slug": "phantom",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Onimusha: Way of the Sword , Trails in the Sky 2nd Chapter , Control Resonant , Ace Combat 8: Wings of Theve , Star Wars: Galactic Racer , Final Fantasy Resonance , Phantom Blade Zero ...",
+          "quote": "Onimusha: Way of the Sword , Trails in the Sky 2nd Chapter , Control Resonant , Ace Combat 8: Wings of Theve , Star Wars: Galactic Racer , Final Fantasy Resonance , Phantom Blade Zero ..."
+        },
+        {
+          "fact": "I will eventually get to Control Resonant, Onimusha, Galactic Racer, MW4, and Phantom Blade Zero, but clearing out my backlog has been taking my time.",
+          "quote": "I will eventually get to Control Resonant, Onimusha, Galactic Racer, MW4, and Phantom Blade Zero, but clearing out my backlog has been taking my time."
+        },
+        {
+          "fact": "1 14 Metonymy 5 hours ago Settled on Silent Hill: Townfall, Marvel’s Wolverine, Control Resonant and Phantom Blade Zero for big releases, the latter of which I’ll just be starting.",
+          "quote": "1 14 Metonymy 5 hours ago Settled on Silent Hill: Townfall, Marvel’s Wolverine, Control Resonant and Phantom Blade Zero for big releases, the latter of which I’ll just be starting."
+        },
+        {
+          "fact": "Onimusha as soon as possible, Phantom Blade Zero the moment it gets its physical release, Ace Combat 8 will be my first in the series... and like eight more games.",
+          "quote": "Onimusha as soon as possible, Phantom Blade Zero the moment it gets its physical release, Ace Combat 8 will be my first in the series... and like eight more games."
+        },
+        {
+          "fact": "I would have included Phantom Blade 0 as I fully intend to buy it, but I’m waiting for an ownable copy next year rather than leasing a transitory license now.",
+          "quote": "I would have included Phantom Blade 0 as I fully intend to buy it, but I’m waiting for an ownable copy next year rather than leasing a transitory license now."
+        },
+        {
+          "fact": "Enjoy your new rental 👍 2 43 Northern_munkey 4 hours ago Galactic racer,phantom blade zero and castlevania belmonts curse..",
+          "quote": "Enjoy your new rental 👍 2 43 Northern_munkey 4 hours ago Galactic racer,phantom blade zero and castlevania belmonts curse.."
+        },
+        {
+          "fact": "1 45 LogicStrikesAgain 4 hours ago Phantom Blade 0.",
+          "quote": "1 45 LogicStrikesAgain 4 hours ago Phantom Blade 0."
+        },
+        {
+          "fact": "I do want Phantom Blade but my plan is to buy some more games on BF 0 49 RoomWithaMoose 4 hours ago @LogicStrikesAgain It does look like I was wrong to doubt PB0.",
+          "quote": "I do want Phantom Blade but my plan is to buy some more games on BF 0 49 RoomWithaMoose 4 hours ago @LogicStrikesAgain It does look like I was wrong to doubt PB0."
+        },
+        {
+          "fact": "1 52 Nepp67 3 hours ago Onimusha, Phantom Blade 0, Silent Hill Townfall, and MW4.",
+          "quote": "1 52 Nepp67 3 hours ago Onimusha, Phantom Blade 0, Silent Hill Townfall, and MW4."
+        },
+        {
+          "fact": "Hell I still need to get many games from early in the year like pragmata lol 0 55 Fluberuper 3 hours ago Silent Hill, Blood of Dawnwalker, Phantom Blade, Castlevania, Valor Mortis, Kernel Hearts, and Final Fantasy Resonance.",
+          "quote": "Hell I still need to get many games from early in the year like pragmata lol 0 55 Fluberuper 3 hours ago Silent Hill, Blood of Dawnwalker, Phantom Blade, Castlevania, Valor Mortis, Kernel Hearts, and Final Fantasy Resonance."
+        },
+        {
+          "fact": "I made the choice of FF Resonance over Phantom Blade Zero, and I really don’t know if I made the right choice there either.",
+          "quote": "I made the choice of FF Resonance over Phantom Blade Zero, and I really don’t know if I made the right choice there either."
+        }
+      ]
+    }
+  ]
+}

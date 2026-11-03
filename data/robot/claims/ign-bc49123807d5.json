@@ -1,0 +1,44 @@
+{
+  "rawId": "ign-bc49123807d5",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/a-concerning-amount-of-gta-fans-would-give-up-their-pets-to-play-gta-6-early",
+  "published": "2026-11-03",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/11/03/gta-6-fan-survey-shows-players-would-give-up-pets-1793666495225.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-11-03T12:41:09.292Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Back To Top Home › News › GTA 6 A Concerning Amount of GTA Fans Would Give Up Their Pets to Play GTA 6 Early Jason would judge you for this.",
+          "quote": "Back To Top Home › News › GTA 6 A Concerning Amount of GTA Fans Would Give Up Their Pets to Play GTA 6 Early Jason would judge you for this."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "It’s certainly one of the most expensive video games ever made with a marketing budget to match, considering that Rockstar has literally taken over Miami with oodles of Vice City branding, alongside a collaboration with the Miami Heat .",
+          "quote": "It’s certainly one of the most expensive video games ever made with a marketing budget to match, considering that Rockstar has literally taken over Miami with oodles of Vice City branding, alongside a collaboration with the Miami Heat ."
+        }
+      ]
+    }
+  ]
+}

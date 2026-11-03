@@ -1,0 +1,39 @@
+{
+  "rawId": "gamesradar-e2a88fce1adf",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/fps/go-play-gta-6-we-need-to-detox-wardogs-studio-bulkhead-is-taking-a-month-long-break-and-it-wants-to-make-sure-players-know-they-can-f-off/",
+  "published": "2026-11-03",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/chGKjGhGFws2hxHNBXt6CW-2560-80.jpg",
+  "extractedAt": "2026-11-03T12:41:02.894Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "With most games wondering how they'll hope to hold onto their audiences once Rockstar drops its nuke - and Fortnite offering near-unlimited freebies to certain lucky players - it's almost refreshing to see a team unapologetically accepting that its fans will have something else on their minds, and hoping that they'll come back once they're finished with Leonida.",
+          "quote": "With most games wondering how they'll hope to hold onto their audiences once Rockstar drops its nuke - and Fortnite offering near-unlimited freebies to certain lucky players - it's almost refreshing to see a team unapologetically accepting that its fans will have something else on their minds, and hoping that they'll come back once they're finished with Leonida."
+        }
+      ]
+    }
+  ]
+}

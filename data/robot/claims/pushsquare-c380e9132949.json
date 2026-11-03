@@ -1,0 +1,51 @@
+{
+  "rawId": "pushsquare-c380e9132949",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/11/gta-6-ps5-file-size-confirmed-to-be-212gb-physical-map-available-but-not-in-boxed-copies",
+  "published": "2026-11-03",
+  "ogImage": "https://images.pushsquare.com/a971f917e63c0/1280x720.jpg",
+  "extractedAt": "2026-11-03T22:16:54.592Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "We will see 1 12 McBurn 6 hours ago No matter what they do, people will complain anyway so why put more effort into it xD 2 13 GirlVersusGame 6 hours ago That's if you want a real physical version of it.",
+          "quote": "We will see 1 12 McBurn 6 hours ago No matter what they do, people will complain anyway so why put more effort into it xD 2 13 GirlVersusGame 6 hours ago That's if you want a real physical version of it."
+        },
+        {
+          "fact": "10 News Final Fantasy Resonance Producer Had to Fight Square Enix Execs Who Want...",
+          "quote": "10 News Final Fantasy Resonance Producer Had to Fight Square Enix Execs Who Want..."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Alternatively, there'll be a digital download of the GTA 6 boxart and the Leonida map, which I suppose you could just print out yourself.",
+          "quote": "Alternatively, there'll be a digital download of the GTA 6 boxart and the Leonida map, which I suppose you could just print out yourself."
+        },
+        {
+          "fact": "All the GTA 6 release info you need \"On November 19 we will be adding an official printable Grand Theft Auto VI cover art poster and map of Leonida as a free digital download to the official site,\" Rockstar revealed.",
+          "quote": "All the GTA 6 release info you need \"On November 19 we will be adding an official printable Grand Theft Auto VI cover art poster and map of Leonida as a free digital download to the official site,\" Rockstar revealed."
+        },
+        {
+          "fact": "Author Profile Reply Comments 46 1 Can-You-Believe-Sith 6 hours ago \"On November 19 we will be adding an official printable Grand Theft Auto VI cover art poster and map of Leonida as a free digital download to the official site,\" Rockstar revealed.",
+          "quote": "Author Profile Reply Comments 46 1 Can-You-Believe-Sith 6 hours ago \"On November 19 we will be adding an official printable Grand Theft Auto VI cover art poster and map of Leonida as a free digital download to the official site,\" Rockstar revealed."
+        }
+      ]
+    }
+  ]
+}

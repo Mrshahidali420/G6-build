@@ -1,0 +1,29 @@
+{
+  "rawId": "ign-18a996da686a",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/gta-6-preload-times-and-install-size-confirmed-rockstar-announces-physical-cover-art-poster-and-map-of-leonida",
+  "published": "2026-11-03",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/11/03/image001-1-1793719333110.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-11-03T22:15:29.967Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Back To Top Home › News › GTA 6 GTA 6 Preload, Global Release Times and Install Size Confirmed, Rockstar Announces Physical Cover Art Poster and Map of Leonida Midnight club.",
+          "quote": "Back To Top Home › News › GTA 6 GTA 6 Preload, Global Release Times and Install Size Confirmed, Rockstar Announces Physical Cover Art Poster and Map of Leonida Midnight club."
+        },
+        {
+          "fact": "Elsewhere, Rockstar said that on November 19, the day GTA 6 comes out, it will add an official printable GTA 6 cover art poster and map of Leonida as a free digital download to the official site.",
+          "quote": "Elsewhere, Rockstar said that on November 19, the day GTA 6 comes out, it will add an official printable GTA 6 cover art poster and map of Leonida as a free digital download to the official site."
+        }
+      ]
+    }
+  ]
+}

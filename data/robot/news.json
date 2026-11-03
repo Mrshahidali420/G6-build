@@ -544,5 +544,77 @@
     "written": null,
     "refused": "2026-11-02",
     "reason": "the number(s) 2000752341 appear in the writing but in no quote"
+  },
+  "gameinformer-20f3947ef47a": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-11-03",
+    "reason": "the number(s) 2000752787 appear in the writing but in no quote"
+  },
+  "gamesradar-22e10fc18cd8": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-11-03",
+    "reason": "the number(s) 2000752787 appear in the writing but in no quote"
+  },
+  "gamesradar-2df1f6b96727": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-11-03",
+    "reason": "the number(s) 2000752787 appear in the writing but in no quote"
+  },
+  "ign-18a996da686a": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-11-03",
+    "reason": "the number(s) 2000752787 appear in the writing but in no quote"
+  },
+  "ign-ce8a1a8e238a": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-11-03",
+    "reason": "the number(s) 2000752787 appear in the writing but in no quote"
+  },
+  "kotaku-d91ac415fda4": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-11-03",
+    "reason": "the number(s) 2000752787 appear in the writing but in no quote"
+  },
+  "polygon-1e56fdda32fb": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-11-03",
+    "reason": "the number(s) 2000752787 appear in the writing but in no quote"
+  },
+  "purexbox-51d6e0b4a113": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-11-03",
+    "reason": "the number(s) 2000752787 appear in the writing but in no quote"
+  },
+  "pushsquare-c380e9132949": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-11-03",
+    "reason": "the number(s) 2000752787 appear in the writing but in no quote"
+  },
+  "gamesradar-e2a88fce1adf": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-11-03",
+    "reason": "an emoji appears in the written text"
+  },
+  "kotaku-2328c9be4ee2": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-11-03",
+    "reason": "an emoji appears in the written text"
+  },
+  "kotaku-70dc2d12c0a7": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-11-03",
+    "reason": "an emoji appears in the written text"
   }
 }

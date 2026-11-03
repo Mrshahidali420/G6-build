@@ -1,0 +1,25 @@
+{
+  "rawId": "gameinformer-20f3947ef47a",
+  "outlet": "Game Informer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://gameinformer.com/2026/11/03/you-can-preload-grand-theft-auto-vi-on-ps5-and-xbox-next-week-and-youll-want-to-because",
+  "published": "2026-11-03",
+  "ogImage": "https://static.gameinformer.com/sites/default/files/styles/og_image/public/2026/09/24/3804c0a5/382_gtavi_gall20.jpg.webp",
+  "extractedAt": "2026-11-03T22:14:57.667Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Elsewhere in today's GTA VI news, Rockstar has revealed that on November 19, it will add an official printable GTA VI cover art poster and a map of Leonida as a free digital download to the game's official site.",
+          "quote": "Elsewhere in today's GTA VI news, Rockstar has revealed that on November 19, it will add an official printable GTA VI cover art poster and a map of Leonida as a free digital download to the game's official site."
+        }
+      ]
+    }
+  ]
+}

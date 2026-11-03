@@ -1,0 +1,62 @@
+{
+  "rawId": "playstation-blog-8e338d18cdb7",
+  "outlet": "PlayStation Blog",
+  "tier": "TIER_1_OFFICIAL",
+  "url": "https://blog.playstation.com/2026/11/03/grand-theft-auto-vi-pre-download-begins-november-10/",
+  "published": "2026-11-03",
+  "ogImage": "https://blog.playstation.com/tachyon/2026/11/4933057538b60628e4c543923b03620ff4bbc25a.jpg",
+  "extractedAt": "2026-11-03T22:16:28.523Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Pre-order the Grand Theft Auto VI: Ultimate Edition to receive an exclusive collection of premium vehicles, weapons, apparel, and action threaded across all aspects of Jason and Lucia’s story.",
+          "quote": "Pre-order the Grand Theft Auto VI: Ultimate Edition to receive an exclusive collection of premium vehicles, weapons, apparel, and action threaded across all aspects of Jason and Lucia’s story."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Pre-order the Grand Theft Auto VI: Ultimate Edition to receive an exclusive collection of premium vehicles, weapons, apparel, and action threaded across all aspects of Jason and Lucia’s story.",
+          "quote": "Pre-order the Grand Theft Auto VI: Ultimate Edition to receive an exclusive collection of premium vehicles, weapons, apparel, and action threaded across all aspects of Jason and Lucia’s story."
+        }
+      ]
+    },
+    {
+      "entityType": "edition",
+      "name": "Ultimate Edition",
+      "altNames": [
+        "GTA 6 Ultimate Edition",
+        "GTA VI Ultimate Edition"
+      ],
+      "slug": "gta-6-ultimate-edition",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Pre-order the Grand Theft Auto VI: Ultimate Edition to receive an exclusive collection of premium vehicles, weapons, apparel, and action threaded across all aspects of Jason and Lucia’s story.",
+          "quote": "Pre-order the Grand Theft Auto VI: Ultimate Edition to receive an exclusive collection of premium vehicles, weapons, apparel, and action threaded across all aspects of Jason and Lucia’s story."
+        }
+      ]
+    }
+  ]
+}

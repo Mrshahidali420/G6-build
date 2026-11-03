@@ -1,0 +1,39 @@
+{
+  "rawId": "polygon-1e56fdda32fb",
+  "outlet": "Polygon",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.polygon.com/xbox-alligator-console-giveaway-november-2026/",
+  "published": "2026-11-03",
+  "ogImage": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/xbox_series_details_eye-ad394b64c37d3a09ed93.jpg?w=1600&h=900&fit=crop",
+  "extractedAt": "2026-11-03T22:16:35.029Z",
+  "entities": [
+    {
+      "entityType": "brand",
+      "name": "Sentinel",
+      "altNames": [],
+      "slug": "sentinel",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Related The Elder Scroll 6: Sentinel's name quietly teases a juicy Skyrim sequel A closer look at how TES6 might connect to Skyrim and The Elder Scrolls Online Posts 2 Google is changing how it surfaces content.",
+          "quote": "Related The Elder Scroll 6: Sentinel's name quietly teases a juicy Skyrim sequel A closer look at how TES6 might connect to Skyrim and The Elder Scrolls Online Posts 2 Google is changing how it surfaces content."
+        }
+      ]
+    },
+    {
+      "entityType": "wildlife",
+      "name": "Alligators",
+      "altNames": [],
+      "slug": "alligators",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "No actual alligators were used or harmed in its creation.",
+          "quote": "No actual alligators were used or harmed in its creation."
+        }
+      ]
+    }
+  ]
+}

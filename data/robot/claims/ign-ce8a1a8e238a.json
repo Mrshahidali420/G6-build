@@ -1,0 +1,43 @@
+{
+  "rawId": "ign-ce8a1a8e238a",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/xbox-made-an-alligator-shaped-series-x-and-you-can-win-it-before-gta-6-launches",
+  "published": "2026-11-03",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/11/03/xbox-series-x-bite-alligator-console-sweepstakes-1793733499952.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-11-03T22:15:49.484Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Back To Top Home › News › GTA 6 Xbox Made an Alligator-Shaped Series X, and You Can Win It Before GTA 6 Launches In true Leonida fashion.",
+          "quote": "Back To Top Home › News › GTA 6 Xbox Made an Alligator-Shaped Series X, and You Can Win It Before GTA 6 Launches In true Leonida fashion."
+        },
+        {
+          "fact": "By Virginia Glaze Updated : Nov 3, 2026 7:20pm UTC Add IGN on Google 1 16 GTA 6 is mere weeks away from launch, and to celebrate, Xbox is bringing the wildlife of Leonida to players’ living rooms with a one-of-a-kind console.",
+          "quote": "By Virginia Glaze Updated : Nov 3, 2026 7:20pm UTC Add IGN on Google 1 16 GTA 6 is mere weeks away from launch, and to celebrate, Xbox is bringing the wildlife of Leonida to players’ living rooms with a one-of-a-kind console."
+        }
+      ]
+    },
+    {
+      "entityType": "wildlife",
+      "name": "Alligators",
+      "altNames": [],
+      "slug": "alligators",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "GTA 6 Launch Trailer Screenshots View 34 Images While Xbox didn’t directly mention GTA 6 in its posts about this unique contest, it’s hard not to see why it was made; the game takes place in a fictional version of Florida, which, as most folks will know, is home to all sorts of critters, including alligators.",
+          "quote": "GTA 6 Launch Trailer Screenshots View 34 Images While Xbox didn’t directly mention GTA 6 in its posts about this unique contest, it’s hard not to see why it was made; the game takes place in a fictional version of Florida, which, as most folks will know, is home to all sorts of critters, including alligators."
+        }
+      ]
+    }
+  ]
+}

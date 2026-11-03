@@ -1,0 +1,27 @@
+{
+  "rawId": "kotaku-70dc2d12c0a7",
+  "outlet": "Kotaku",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://kotaku.com/wardogs-bulkhead-december-gta-6-joe-brammer-steam-pc-multiplayer-2000752730",
+  "published": "2026-11-03",
+  "ogImage": "https://kotaku.com/app/uploads/2026/11/wardogs2-1200x675.jpg",
+  "extractedAt": "2026-11-03T22:16:15.504Z",
+  "entities": [
+    {
+      "entityType": "weapon",
+      "name": "Rocket Launcher",
+      "altNames": [
+        "RPG"
+      ],
+      "slug": "rocket-launcher",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "A Wardogs soldier points a rocket launcher right at you. © Bulkhead The boss of Wardogs developer Bulkhead has told Edge magazine of his intentions to give the entire studio the whole month of December off from work, following the successful early-access launch of the tactical FPS.",
+          "quote": "A Wardogs soldier points a rocket launcher right at you. © Bulkhead The boss of Wardogs developer Bulkhead has told Edge magazine of his intentions to give the entire studio the whole month of December off from work, following the successful early-access launch of the tactical FPS."
+        }
+      ]
+    }
+  ]
+}

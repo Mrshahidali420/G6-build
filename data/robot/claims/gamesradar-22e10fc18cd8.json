@@ -1,0 +1,45 @@
+{
+  "rawId": "gamesradar-22e10fc18cd8",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-preload-date-times/",
+  "published": "2026-11-03",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/q9VEvTmjqXdkuDN5ZDPPxh-1920-80.jpg",
+  "extractedAt": "2026-11-03T22:15:10.513Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        },
+        {
+          "fact": "If you want to get yourself prepared for launch day, then these are the preload times for GTA 6.",
+          "quote": "If you want to get yourself prepared for launch day, then these are the preload times for GTA 6."
+        }
+      ]
+    },
+    {
+      "entityType": "release_fact",
+      "name": "GTA 6 preload date",
+      "altNames": [
+        "GTA VI preload date"
+      ],
+      "slug": "gta-6-preload-date",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Games Action Games Grand Theft Auto GTA 6 GTA 6 preload date and times confirmed Guides By Iain Wilson Published 3 November 2026 You can start preloading GTA 6 from November 10, and these are the details you need to know When you purchase through links on our site, we may earn an affiliate commission.",
+          "quote": "Games Action Games Grand Theft Auto GTA 6 GTA 6 preload date and times confirmed Guides By Iain Wilson Published 3 November 2026 You can start preloading GTA 6 from November 10, and these are the details you need to know When you purchase through links on our site, we may earn an affiliate commission."
+        }
+      ]
+    }
+  ]
+}

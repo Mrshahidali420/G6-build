@@ -1,0 +1,29 @@
+{
+  "rawId": "ign-99252846ba45",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/what-ps5-and-xbox-consoles-are-in-stock-ahead-of-gta-6-and-black-friday",
+  "published": "2026-11-03",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/11/03/untitled-design-1793738170553.png?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-11-03T22:15:36.468Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "But at least at this pre-Black Friday, pre-GTA 6 moment in time, it’s not hard to find a new game console at retail price – unless you want a PS5 Pro.",
+          "quote": "But at least at this pre-Black Friday, pre-GTA 6 moment in time, it’s not hard to find a new game console at retail price – unless you want a PS5 Pro."
+        },
+        {
+          "fact": "With all that said, if you’re considering picking a new game console this holiday season, you may want to do it sooner rather than later.",
+          "quote": "With all that said, if you’re considering picking a new game console this holiday season, you may want to do it sooner rather than later."
+        }
+      ]
+    }
+  ]
+}

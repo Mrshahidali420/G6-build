@@ -1,0 +1,61 @@
+{
+  "rawId": "ign-fc9c5f83a1dc",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/police-mock-car-chase-criminal-for-being-arrested-during-gta-6-release",
+  "published": "2026-11-03",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/08/27/exclusivelookbr-gtfm-1787873244868.png?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-11-03T22:15:55.986Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images According to the post’s caption, the incident took place in the town of Ripley.",
+          "quote": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images According to the post’s caption, the incident took place in the town of Ripley."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images According to the post’s caption, the incident took place in the town of Ripley.",
+          "quote": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images According to the post’s caption, the incident took place in the town of Ripley."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "It’s shaping up to be one of the biggest pop culture events in history, with Rockstar going all-out on marketing; they partnered with Miami, Florida for a Vice City-themed takeover and collaborated with the Miami Heat to give them special, GTA 6-themed jerseys .",
+          "quote": "It’s shaping up to be one of the biggest pop culture events in history, with Rockstar going all-out on marketing; they partnered with Miami, Florida for a Vice City-themed takeover and collaborated with the Miami Heat to give them special, GTA 6-themed jerseys ."
+        }
+      ]
+    }
+  ]
+}

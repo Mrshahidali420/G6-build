@@ -1,0 +1,25 @@
+{
+  "rawId": "kotaku-d91ac415fda4",
+  "outlet": "Kotaku",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://kotaku.com/gta-6-pre-load-times-install-size-and-global-release-times-confirmed-2000752787",
+  "published": "2026-11-03",
+  "ogImage": "https://kotaku.com/app/uploads/2026/11/gta-6-preloads.jpg",
+  "extractedAt": "2026-11-03T22:16:22.010Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In addition to taking some time depending on the speed of your internet, you’ll want to make sure you have your library cleared of any non-essential games.",
+          "quote": "In addition to taking some time depending on the speed of your internet, you’ll want to make sure you have your library cleared of any non-essential games."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "rawId": "purexbox-51d6e0b4a113",
+  "outlet": "Pure Xbox",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.purexbox.com/news/2026/11/gta-6-download-size-and-preload-times-officially-revealed-for-xbox-series-xs",
+  "published": "2026-11-03",
+  "ogImage": "https://images.purexbox.com/fd897e22e6ed3/1280x720.jpg",
+  "extractedAt": "2026-11-03T22:16:41.523Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Rockstar says that this may change \"depending on your device\", but you'll want to make sure you have at least 212GB of spare storage just in case.",
+          "quote": "Rockstar says that this may change \"depending on your device\", but you'll want to make sure you have at least 212GB of spare storage just in case."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "6 News Xbox Exec Issues Statement In Response To Review Controversy 7 News Xbox Suddenly Has Two Vice City Games Releasing In Mid-November 8 News 'We Did This To Support The BDS Boycott' - Two Xbox Games Delisted As Ce...",
+          "quote": "6 News Xbox Exec Issues Statement In Response To Review Controversy 7 News Xbox Suddenly Has Two Vice City Games Releasing In Mid-November 8 News 'We Did This To Support The BDS Boycott' - Two Xbox Games Delisted As Ce..."
+        }
+      ]
+    }
+  ]
+}

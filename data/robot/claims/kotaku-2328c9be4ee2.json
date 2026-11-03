@@ -1,0 +1,25 @@
+{
+  "rawId": "kotaku-2328c9be4ee2",
+  "outlet": "Kotaku",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://kotaku.com/fan-who-went-viral-wishing-to-stay-alive-long-enough-to-play-gta-6-has-passed-away-2000752775",
+  "published": "2026-11-03",
+  "ogImage": "https://kotaku.com/app/uploads/2026/10/GTA-launch-trailer_0001_Brightness_Contrast-2.jpg",
+  "extractedAt": "2026-11-03T22:16:08.999Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Earlier this year, Fort posted a video from his hospital bed titled “I just want to play GTA VI ” in which he detailed his situation and prognosis.",
+          "quote": "Earlier this year, Fort posted a video from his hospital bed titled “I just want to play GTA VI ” in which he detailed his situation and prognosis."
+        }
+      ]
+    }
+  ]
+}

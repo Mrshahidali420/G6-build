@@ -1,0 +1,27 @@
+{
+  "rawId": "polygon-5169d5863bc3",
+  "outlet": "Polygon",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.polygon.com/gta-6-preorders-sales-8-million-copies-before-release-date/",
+  "published": "2026-11-04",
+  "ogImage": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/gta6-3.jpg?w=1600&h=900&fit=crop",
+  "extractedAt": "2026-11-04T22:29:51.109Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Related 6 essential activities GTA needs to let players experience in Vice City Like reading on public transport and going to the cinema Posts 1 Google is changing how it surfaces content.",
+          "quote": "Related 6 essential activities GTA needs to let players experience in Vice City Like reading on public transport and going to the cinema Posts 1 Google is changing how it surfaces content."
+        }
+      ]
+    }
+  ]
+}

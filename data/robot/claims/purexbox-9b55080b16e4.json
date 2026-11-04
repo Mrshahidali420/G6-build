@@ -1,0 +1,25 @@
+{
+  "rawId": "purexbox-9b55080b16e4",
+  "outlet": "Pure Xbox",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.purexbox.com/news/2026/11/the-best-rated-game-of-2026-has-just-changed-but-xbox-still-has-two-titles-in-the-top-10",
+  "published": "2026-11-04",
+  "ogImage": "https://images.purexbox.com/cb9e3a0db5cf9/1280x720.jpg",
+  "extractedAt": "2026-11-04T22:29:57.593Z",
+  "entities": [
+    {
+      "entityType": "wildlife",
+      "name": "Dogs",
+      "altNames": [],
+      "slug": "dogs",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "2 2 AI-Generation 4 hours ago After all these years Nintendo still top dogs.",
+          "quote": "2 2 AI-Generation 4 hours ago After all these years Nintendo still top dogs."
+        }
+      ]
+    }
+  ]
+}

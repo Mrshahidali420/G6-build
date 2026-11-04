@@ -1,0 +1,55 @@
+{
+  "rawId": "gamesradar-b1735d8b6124",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6s-weather-will-rock-your-boat-damage-your-plane-and-send-vice-city-denizens-seeking-shelter/",
+  "published": "2026-11-04",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/9mZ3fStR4S8qipnfgGXCoA-2000-80.jpg",
+  "extractedAt": "2026-11-04T12:51:00.246Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Citizens of Leonida will also seek shelter when severe weather passes through, which definitely feels distinctly Florida.",
+          "quote": "Citizens of Leonida will also seek shelter when severe weather passes through, which definitely feels distinctly Florida."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Games Action Games Grand Theft Auto GTA 6 GTA 6's weather will rock your boat, damage your plane, and send Vice City denizens seeking shelter News By Jordan Gerblick Published 4 November 2026 \"This game is much more granular\" When you purchase through links on our site, we may earn an affiliate commission.",
+          "quote": "Games Action Games Grand Theft Auto GTA 6 GTA 6's weather will rock your boat, damage your plane, and send Vice City denizens seeking shelter News By Jordan Gerblick Published 4 November 2026 \"This game is much more granular\" When you purchase through links on our site, we may earn an affiliate commission."
+        }
+      ]
+    }
+  ]
+}

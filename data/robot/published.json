@@ -50,7 +50,8 @@
     "2026-10-31",
     "2026-11-01",
     "2026-11-02",
-    "2026-11-03"
+    "2026-11-03",
+    "2026-11-04"
   ],
   "items": [
     "eurogamer-15163e4ab69f",
@@ -149,7 +150,9 @@
     "gamesradar-a170fdfc0224",
     "gamesradar-a6fbcd45c5ab",
     "gamesradar-a78133c92b2d",
+    "gamesradar-a9a953c6f910",
     "gamesradar-b164ec9884cd",
+    "gamesradar-b1735d8b6124",
     "gamesradar-b1edad067513",
     "gamesradar-bb14c795c9fc",
     "gamesradar-c92206321353",
@@ -254,6 +257,7 @@
     "pcgamer-ef2d0e1c1666",
     "pcgamer-f91620b8542e",
     "playstation-blog-8e338d18cdb7",
+    "polygon-0b2b08b8e8f7",
     "polygon-166b19e41af1",
     "polygon-1e56fdda32fb",
     "polygon-25c103cfe1ad",
@@ -322,6 +326,7 @@
     "rockpapershotgun-f86452faae2b",
     "rockstar-161606cb33a2",
     "rockstar-fe2ac219a413",
+    "theverge-46d2f9239253",
     "theverge-b8fdd6b46b04",
     "vgc-044c5d1bb668",
     "vgc-22e7dfc7215f",

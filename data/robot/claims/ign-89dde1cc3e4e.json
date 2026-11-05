@@ -1,0 +1,93 @@
+{
+  "rawId": "ign-89dde1cc3e4e",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/gta-6-rakes-in-over-750-million-in-pre-orders-two-weeks-ahead-of-release-date",
+  "published": "2026-11-04",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/08/27/gta6-romance-feature-blog-1787862386845.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-11-05T12:59:06.495Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "And then of course we have a premium opportunity for people who want to avail themselves of that.",
+          "quote": "And then of course we have a premium opportunity for people who want to avail themselves of that."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images As of November 3, an estimated 7.71 million units have been sold, translating to a whopping $751 million in profits.",
+          "quote": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images As of November 3, an estimated 7.71 million units have been sold, translating to a whopping $751 million in profits."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images As of November 3, an estimated 7.71 million units have been sold, translating to a whopping $751 million in profits.",
+          "quote": "In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images As of November 3, an estimated 7.71 million units have been sold, translating to a whopping $751 million in profits."
+        }
+      ]
+    },
+    {
+      "entityType": "edition",
+      "name": "Standard Edition",
+      "altNames": [
+        "GTA 6 Standard Edition",
+        "GTA VI Standard Edition"
+      ],
+      "slug": "gta-6-standard-edition",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Strauss Zelnick, the CEO of Rockstar's parent company Take-Two Interactive, said as much in an August interview with CNBC , where he theorized this trend was “a reflection of the fact that the most avid consumers are the ones who are preordering now.\" The Standard Edition of GTA 6 isn’t a whole lot cheaper.",
+          "quote": "Strauss Zelnick, the CEO of Rockstar's parent company Take-Two Interactive, said as much in an August interview with CNBC , where he theorized this trend was “a reflection of the fact that the most avid consumers are the ones who are preordering now.\" The Standard Edition of GTA 6 isn’t a whole lot cheaper."
+        }
+      ]
+    },
+    {
+      "entityType": "edition",
+      "name": "Ultimate Edition",
+      "altNames": [
+        "GTA 6 Ultimate Edition",
+        "GTA VI Ultimate Edition"
+      ],
+      "slug": "gta-6-ultimate-edition",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "These numbers are huge, and it’s likely due to fans purchasing the $100 Ultimate Edition of the game rather than its standard version.",
+          "quote": "These numbers are huge, and it’s likely due to fans purchasing the $100 Ultimate Edition of the game rather than its standard version."
+        }
+      ]
+    }
+  ]
+}

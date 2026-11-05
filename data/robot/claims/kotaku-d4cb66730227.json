@@ -1,0 +1,45 @@
+{
+  "rawId": "kotaku-d4cb66730227",
+  "outlet": "Kotaku",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://kotaku.com/massive-gta-6-mural-tagged-by-graffiti-artist-overnight-and-people-arent-happy-as-a-graffiti-artist-myself-i-honestly-think-this-is-pretty-disrespectful-2000754181",
+  "published": "2026-11-05",
+  "ogImage": "https://kotaku.com/app/uploads/2026/11/GTa-6-mural-1200x675.jpg",
+  "extractedAt": "2026-11-05T22:37:43.311Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The artwork is massive and features both Jason and Lucia.",
+          "quote": "The artwork is massive and features both Jason and Lucia."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The artwork is massive and features both Jason and Lucia.",
+          "quote": "The artwork is massive and features both Jason and Lucia."
+        }
+      ]
+    }
+  ]
+}

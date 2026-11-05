@@ -1,0 +1,81 @@
+{
+  "rawId": "ign-08602a57fc3a",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/rockstar-games-releases-39-new-gta-6-screenshots-to-celebrate-two-weeks-from-launch",
+  "published": "2026-11-05",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/11/05/jason-and-lucia-14-1793891731334.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-11-05T22:37:23.769Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "To help make the wait a bit more bearable, Rockstar has dropped 39 new screenshots from the game, which give us new looks at Vice City, the people within it, strip clubs, and some of the rip-roaring crimes that Jason and Lucia will take part in.",
+          "quote": "To help make the wait a bit more bearable, Rockstar has dropped 39 new screenshots from the game, which give us new looks at Vice City, the people within it, strip clubs, and some of the rip-roaring crimes that Jason and Lucia will take part in."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "To help make the wait a bit more bearable, Rockstar has dropped 39 new screenshots from the game, which give us new looks at Vice City, the people within it, strip clubs, and some of the rip-roaring crimes that Jason and Lucia will take part in.",
+          "quote": "To help make the wait a bit more bearable, Rockstar has dropped 39 new screenshots from the game, which give us new looks at Vice City, the people within it, strip clubs, and some of the rip-roaring crimes that Jason and Lucia will take part in."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The game is exactly 14 days away from release in the United States, and fans are eager to be able to visit Vice City once again.",
+          "quote": "The game is exactly 14 days away from release in the United States, and fans are eager to be able to visit Vice City once again."
+        },
+        {
+          "fact": "To help make the wait a bit more bearable, Rockstar has dropped 39 new screenshots from the game, which give us new looks at Vice City, the people within it, strip clubs, and some of the rip-roaring crimes that Jason and Lucia will take part in.",
+          "quote": "To help make the wait a bit more bearable, Rockstar has dropped 39 new screenshots from the game, which give us new looks at Vice City, the people within it, strip clubs, and some of the rip-roaring crimes that Jason and Lucia will take part in."
+        },
+        {
+          "fact": "Rockstar has gone all-out in the city of Miami by taking over the Miami Heat arena with GTA branding , selling in-universe beers from the games at bars, and flying a Vice City blimp around the city.",
+          "quote": "Rockstar has gone all-out in the city of Miami by taking over the Miami Heat arena with GTA branding , selling in-universe beers from the games at bars, and flying a Vice City blimp around the city."
+        },
+        {
+          "fact": "Rockstar has essentially turned Miami into Vice City in real life , flexing the game's cultural power.",
+          "quote": "Rockstar has essentially turned Miami into Vice City in real life , flexing the game's cultural power."
+        },
+        {
+          "fact": "On November 18, Rockstar will also host a special event it calls \"A Night in Vice City,\" which will feature a special NBA game between the Miami Heat and the Milwaukee Bucks.",
+          "quote": "On November 18, Rockstar will also host a special event it calls \"A Night in Vice City,\" which will feature a special NBA game between the Miami Heat and the Milwaukee Bucks."
+        },
+        {
+          "fact": "The Heat will be turned into the Vice City Heat and sport GTA-themed jerseys, while also playing on a new court.",
+          "quote": "The Heat will be turned into the Vice City Heat and sport GTA-themed jerseys, while also playing on a new court."
+        }
+      ]
+    }
+  ]
+}

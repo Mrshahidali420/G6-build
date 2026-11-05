@@ -1,0 +1,29 @@
+{
+  "rawId": "pushsquare-b0c70c4f9d58",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/features/opinion-hey-that-hellraiser-revival-game-is-pretty-good",
+  "published": "2026-11-05",
+  "ogImage": "https://images.pushsquare.com/5d26e6003d31d/1280x720.jpg",
+  "extractedAt": "2026-11-05T22:38:22.373Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "If you're reading, publisher Saber Interactive, that's what I want.",
+          "quote": "If you're reading, publisher Saber Interactive, that's what I want."
+        },
+        {
+          "fact": "9 News Final Fantasy Resonance Producer Had to Fight Square Enix Execs Who Want...",
+          "quote": "9 News Final Fantasy Resonance Producer Had to Fight Square Enix Execs Who Want..."
+        }
+      ]
+    }
+  ]
+}

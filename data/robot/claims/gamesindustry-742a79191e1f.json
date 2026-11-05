@@ -1,0 +1,45 @@
+{
+  "rawId": "gamesindustry-742a79191e1f",
+  "outlet": "GamesIndustry.biz",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesindustry.biz/sensor-tower-gta-6-pre-orders-almost-reach-8m-74-bought-on-playstation-5",
+  "published": "2026-11-05",
+  "ogImage": "https://assetsio.gnwcdn.com/gta-6-lucia-jason_Eos2shf.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-11-05T22:36:57.835Z",
+  "entities": [
+    {
+      "entityType": "edition",
+      "name": "Standard Edition",
+      "altNames": [
+        "GTA 6 Standard Edition",
+        "GTA VI Standard Edition"
+      ],
+      "slug": "gta-6-standard-edition",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Sensor Tower reported in August that 89% of GTA 6 pre-orders are for the $100 Ultimate Edition, compared to 11% for the $80 Standard Edition.",
+          "quote": "Sensor Tower reported in August that 89% of GTA 6 pre-orders are for the $100 Ultimate Edition, compared to 11% for the $80 Standard Edition."
+        }
+      ]
+    },
+    {
+      "entityType": "edition",
+      "name": "Ultimate Edition",
+      "altNames": [
+        "GTA 6 Ultimate Edition",
+        "GTA VI Ultimate Edition"
+      ],
+      "slug": "gta-6-ultimate-edition",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Sensor Tower reported in August that 89% of GTA 6 pre-orders are for the $100 Ultimate Edition, compared to 11% for the $80 Standard Edition.",
+          "quote": "Sensor Tower reported in August that 89% of GTA 6 pre-orders are for the $100 Ultimate Edition, compared to 11% for the $80 Standard Edition."
+        }
+      ]
+    }
+  ]
+}

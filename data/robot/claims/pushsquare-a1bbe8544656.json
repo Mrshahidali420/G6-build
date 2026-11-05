@@ -1,0 +1,109 @@
+{
+  "rawId": "pushsquare-a1bbe8544656",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/11/rockstar-reveals-even-more-gta-6-screenshots-as-ps5-release-draws-closer",
+  "published": "2026-11-05",
+  "ogImage": "https://images.pushsquare.com/8e828f035bda4/1280x720.jpg",
+  "extractedAt": "2026-11-05T22:38:15.874Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "I just want a return of San Andreas territory system really.",
+          "quote": "I just want a return of San Andreas territory system really."
+        },
+        {
+          "fact": "Music is a big part of why I want to experience Six.",
+          "quote": "Music is a big part of why I want to experience Six."
+        },
+        {
+          "fact": "0 36 MrPeanutbutterz 4 hours ago @GirlVersusGame So far the only thing making me want to buy this game.",
+          "quote": "0 36 MrPeanutbutterz 4 hours ago @GirlVersusGame So far the only thing making me want to buy this game."
+        },
+        {
+          "fact": "9 News Final Fantasy Resonance Producer Had to Fight Square Enix Execs Who Want...",
+          "quote": "9 News Final Fantasy Resonance Producer Had to Fight Square Enix Execs Who Want..."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "A lot of the images focus on protagonists Jason and Lucia, but we do catch glimpses of other characters, the nightlife, and more that'll be part of Leonida.",
+          "quote": "A lot of the images focus on protagonists Jason and Lucia, but we do catch glimpses of other characters, the nightlife, and more that'll be part of Leonida."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "A lot of the images focus on protagonists Jason and Lucia, but we do catch glimpses of other characters, the nightlife, and more that'll be part of Leonida.",
+          "quote": "A lot of the images focus on protagonists Jason and Lucia, but we do catch glimpses of other characters, the nightlife, and more that'll be part of Leonida."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "A lot of the images focus on protagonists Jason and Lucia, but we do catch glimpses of other characters, the nightlife, and more that'll be part of Leonida.",
+          "quote": "A lot of the images focus on protagonists Jason and Lucia, but we do catch glimpses of other characters, the nightlife, and more that'll be part of Leonida."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "To celebrate the fact, developer Rockstar has shared another batch of screenshots that are designed to showcase Vice City at its best, and the world beyond.",
+          "quote": "To celebrate the fact, developer Rockstar has shared another batch of screenshots that are designed to showcase Vice City at its best, and the world beyond."
+        },
+        {
+          "fact": "Laura Branigan said it best in Vice City, you take my self-control.",
+          "quote": "Laura Branigan said it best in Vice City, you take my self-control."
+        },
+        {
+          "fact": "2 26 GirlVersusGame 5 hours ago @Fiendish-Beaver Music is a kind of obsession and Vice City, along with many other games in the series helped to introduce me to so many good bands and musicians.",
+          "quote": "2 26 GirlVersusGame 5 hours ago @Fiendish-Beaver Music is a kind of obsession and Vice City, along with many other games in the series helped to introduce me to so many good bands and musicians."
+        }
+      ]
+    }
+  ]
+}

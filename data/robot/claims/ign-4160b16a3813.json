@@ -1,0 +1,73 @@
+{
+  "rawId": "ign-4160b16a3813",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/rapper-kodak-black-will-be-in-npc-in-gta-6-creating-speculation-over-other-artists-appearing-in-game",
+  "published": "2026-11-05",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/11/05/gta-6-kodak-black-1793895386725.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-11-05T22:37:30.289Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Jack of Hearts",
+      "altNames": [],
+      "slug": "jack-of-hearts",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Upon closer examination, we can see him holding a cup with the Jack of Hearts logo, which is a club in GTA 6.",
+          "quote": "Upon closer examination, we can see him holding a cup with the Jack of Hearts logo, which is a club in GTA 6."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The game will take up around 212 GBs of space on your storage device, so you may want to go clear some space for this behemoth so you have all the time needed to prepare for launch.",
+          "quote": "The game will take up around 212 GBs of space on your storage device, so you may want to go clear some space for this behemoth so you have all the time needed to prepare for launch."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Brian Heder",
+      "altNames": [
+        "Brian",
+        "Heder"
+      ],
+      "slug": "brian-heder",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "While there will be some fresh faces in the cast, actor Stephen Root confirmed earlier this year that he will play Brian Heder in GTA 6.",
+          "quote": "While there will be some fresh faces in the cast, actor Stephen Root confirmed earlier this year that he will play Brian Heder in GTA 6."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The character is expected to be Jason's boss and a drug runner.",
+          "quote": "The character is expected to be Jason's boss and a drug runner."
+        }
+      ]
+    }
+  ]
+}

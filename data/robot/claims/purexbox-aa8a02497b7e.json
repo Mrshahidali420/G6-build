@@ -1,0 +1,27 @@
+{
+  "rawId": "purexbox-aa8a02497b7e",
+  "outlet": "Pure Xbox",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.purexbox.com/news/2026/11/heres-another-30plus-new-gta-6-screenshots-to-drool-over",
+  "published": "2026-11-05",
+  "ogImage": "https://images.purexbox.com/57a7e8882146d/1280x720.jpg",
+  "extractedAt": "2026-11-05T22:38:09.306Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "8 News Two Big Remasters Are Now Lined Up For Xbox On December 3rd 9 News Xbox Suddenly Has Two Vice City Games Releasing In Mid-November 10 News Nine Xbox Games Are Releasing Today, Including A New Roguelite FPS On Xb...",
+          "quote": "8 News Two Big Remasters Are Now Lined Up For Xbox On December 3rd 9 News Xbox Suddenly Has Two Vice City Games Releasing In Mid-November 10 News Nine Xbox Games Are Releasing Today, Including A New Roguelite FPS On Xb..."
+        }
+      ]
+    }
+  ]
+}

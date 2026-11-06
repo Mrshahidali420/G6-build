@@ -1,0 +1,41 @@
+{
+  "rawId": "rockstar-718d14c90cfa",
+  "outlet": "Rockstar Newswire",
+  "tier": "TIER_1_OFFICIAL",
+  "url": "https://www.rockstargames.com/newswire/article/39ak81277255o9/explore-the-grand-theft-auto-vi-launch-gallery",
+  "published": "2026-11-05",
+  "ogImage": "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/39ak81277255o9/72074994d6364ad0de8872aa971fc47653f644ab.jpg",
+  "extractedAt": "2026-11-06T12:47:00.183Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Limit",
+      "altNames": [],
+      "slug": "limit",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Please note that if you turn off some types of Cookies, it may limit your experience on the Site and the services we are able to offer.",
+          "quote": "Please note that if you turn off some types of Cookies, it may limit your experience on the Site and the services we are able to offer."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Today, enjoy a stunning look at Vice City and beyond with a collection of new screenshots on the official site.",
+          "quote": "Today, enjoy a stunning look at Vice City and beyond with a collection of new screenshots on the official site."
+        }
+      ]
+    }
+  ]
+}

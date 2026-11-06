@@ -616,5 +616,23 @@
     "written": null,
     "refused": "2026-11-03",
     "reason": "an emoji appears in the written text"
+  },
+  "gamesradar-b1735d8b6124": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-11-06",
+    "reason": "an em dash appears in the written text"
+  },
+  "ign-fc9c5f83a1dc": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-11-06",
+    "reason": "an em dash appears in the written text"
+  },
+  "rockstar-718d14c90cfa": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-11-06",
+    "reason": "an em dash appears in the written text"
   }
 }

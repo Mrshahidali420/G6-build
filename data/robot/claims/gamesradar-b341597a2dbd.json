@@ -1,0 +1,33 @@
+{
+  "rawId": "gamesradar-b341597a2dbd",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/rockstar-could-release-gta-6-on-pc-sooner-to-head-off-ai-ports-former-grand-theft-auto-lead-suggests-i-think-i-would-be-concerned/",
+  "published": "2026-11-06",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/BgXa4HNPsmD2f4Ld99fpLh-1920-80.jpg",
+  "extractedAt": "2026-11-06T21:58:58.904Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        },
+        {
+          "fact": "Regardless, don't expect any news on a PC version before the console releases drop, as Take-Two likely wouldn't want to stop potential double dip sales.",
+          "quote": "Regardless, don't expect any news on a PC version before the console releases drop, as Take-Two likely wouldn't want to stop potential double dip sales."
+        },
+        {
+          "fact": "4 Full Goron City walkthrough for Zelda Ocarina of Time Remake 5 Sony adds new PlayStation Plus \"perks\" like free trials for YouTube Premium and a sleep app, players respond \"the only perk I want is discs\" GamesRadar+ is part of Future US Inc, an international media group and leading digital publisher.",
+          "quote": "4 Full Goron City walkthrough for Zelda Ocarina of Time Remake 5 Sony adds new PlayStation Plus \"perks\" like free trials for YouTube Premium and a sleep app, players respond \"the only perk I want is discs\" GamesRadar+ is part of Future US Inc, an international media group and leading digital publisher."
+        }
+      ]
+    }
+  ]
+}

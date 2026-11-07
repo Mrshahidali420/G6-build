@@ -1,0 +1,45 @@
+{
+  "rawId": "pushsquare-2269279838d0",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/11/gta-6s-ps5-physical-edition-revealed-in-first-photo",
+  "published": "2026-11-07",
+  "ogImage": "https://images.pushsquare.com/22fef94b93cd7/1280x720.jpg",
+  "extractedAt": "2026-11-07T20:44:14.550Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "I understand some people may still want a case to display with their other games, but if we’re getting rid of discs, I’d like Sony to implement some sort of recyclable format moving forward.",
+          "quote": "I understand some people may still want a case to display with their other games, but if we’re getting rid of discs, I’d like Sony to implement some sort of recyclable format moving forward."
+        },
+        {
+          "fact": "Remember, if you want a map of Leonidas to go with your physical copy of GTA 6, you’ll need to purchase that separately for $0.99 from the Rockstar Store.",
+          "quote": "Remember, if you want a map of Leonidas to go with your physical copy of GTA 6, you’ll need to purchase that separately for $0.99 from the Rockstar Store."
+        },
+        {
+          "fact": "Author Profile Bluesky Reply Comments 53 1 Fishmasterflex96 5 hours ago Absolutely Disgusting 8 2 Monstermash40 5 hours ago I just want an actual map.",
+          "quote": "Author Profile Bluesky Reply Comments 53 1 Fishmasterflex96 5 hours ago Absolutely Disgusting 8 2 Monstermash40 5 hours ago I just want an actual map."
+        },
+        {
+          "fact": "But no more than selling the tat collectibles they also want to sell you with every major release.",
+          "quote": "But no more than selling the tat collectibles they also want to sell you with every major release."
+        },
+        {
+          "fact": "They could of easily charged more for the game and sell just as many, I'm surprised they only want £70.",
+          "quote": "They could of easily charged more for the game and sell just as many, I'm surprised they only want £70."
+        },
+        {
+          "fact": "8 News Final Fantasy Resonance Producer Had to Fight Square Enix Execs Who Want...",
+          "quote": "8 News Final Fantasy Resonance Producer Had to Fight Square Enix Execs Who Want..."
+        }
+      ]
+    }
+  ]
+}

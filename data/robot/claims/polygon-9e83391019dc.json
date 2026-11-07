@@ -1,0 +1,83 @@
+{
+  "rawId": "polygon-9e83391019dc",
+  "outlet": "Polygon",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.polygon.com/gta-6-grand-theft-auto-physical-copies-retail/",
+  "published": "2026-11-07",
+  "ogImage": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/ultimate_edition_electric_fang_02.jpg?w=1600&h=900&fit=crop",
+  "extractedAt": "2026-11-07T20:44:01.473Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "An employee also shared a close-up of the exterior of the box, revealing the official game description, screenshots of Jason, Lucia, and Leonida, and labels such as online support and in-game purchases.",
+          "quote": "An employee also shared a close-up of the exterior of the box, revealing the official game description, screenshots of Jason, Lucia, and Leonida, and labels such as online support and in-game purchases."
+        },
+        {
+          "fact": "Related GTA 6's third and final trailer before release is finally here Trailer 3 gives us a brand-new look at Jason and Lucia living in Vice City Posts Google is changing how it surfaces content.",
+          "quote": "Related GTA 6's third and final trailer before release is finally here Trailer 3 gives us a brand-new look at Jason and Lucia living in Vice City Posts Google is changing how it surfaces content."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "An employee also shared a close-up of the exterior of the box, revealing the official game description, screenshots of Jason, Lucia, and Leonida, and labels such as online support and in-game purchases.",
+          "quote": "An employee also shared a close-up of the exterior of the box, revealing the official game description, screenshots of Jason, Lucia, and Leonida, and labels such as online support and in-game purchases."
+        },
+        {
+          "fact": "Related GTA 6's third and final trailer before release is finally here Trailer 3 gives us a brand-new look at Jason and Lucia living in Vice City Posts Google is changing how it surfaces content.",
+          "quote": "Related GTA 6's third and final trailer before release is finally here Trailer 3 gives us a brand-new look at Jason and Lucia living in Vice City Posts Google is changing how it surfaces content."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "An employee also shared a close-up of the exterior of the box, revealing the official game description, screenshots of Jason, Lucia, and Leonida, and labels such as online support and in-game purchases.",
+          "quote": "An employee also shared a close-up of the exterior of the box, revealing the official game description, screenshots of Jason, Lucia, and Leonida, and labels such as online support and in-game purchases."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Related GTA 6's third and final trailer before release is finally here Trailer 3 gives us a brand-new look at Jason and Lucia living in Vice City Posts Google is changing how it surfaces content.",
+          "quote": "Related GTA 6's third and final trailer before release is finally here Trailer 3 gives us a brand-new look at Jason and Lucia living in Vice City Posts Google is changing how it surfaces content."
+        }
+      ]
+    }
+  ]
+}

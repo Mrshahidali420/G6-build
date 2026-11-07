@@ -1,0 +1,29 @@
+{
+  "rawId": "purexbox-bf2f53255852",
+  "outlet": "Pure Xbox",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.purexbox.com/news/2026/11/these-30plus-games-are-coming-to-xbox-next-week-november-9-13",
+  "published": "2026-11-07",
+  "ogImage": "https://images.purexbox.com/07531f5886ce0/1280x720.jpg",
+  "extractedAt": "2026-11-07T20:44:08.044Z",
+  "entities": [
+    {
+      "entityType": "wildlife",
+      "name": "Squirrels",
+      "altNames": [],
+      "slug": "squirrels",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Just make it back before last orders.\" Hidden Squirrels (November 12): \"Get ready for a charming hidden-object adventure in Hidden Squirrels!",
+          "quote": "Just make it back before last orders.\" Hidden Squirrels (November 12): \"Get ready for a charming hidden-object adventure in Hidden Squirrels!"
+        },
+        {
+          "fact": "Explore beautifully detailed black-and-white scenes and search for adorable squirrels hiding in every corner.\" Hoop Shoot (November 12): \"Take aim and land the perfect shot!",
+          "quote": "Explore beautifully detailed black-and-white scenes and search for adorable squirrels hiding in every corner.\" Hoop Shoot (November 12): \"Take aim and land the perfect shot!"
+        }
+      ]
+    }
+  ]
+}

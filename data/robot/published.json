@@ -53,7 +53,8 @@
     "2026-11-03",
     "2026-11-04",
     "2026-11-05",
-    "2026-11-06"
+    "2026-11-06",
+    "2026-11-07"
   ],
   "items": [
     "eurogamer-15163e4ab69f",
@@ -275,12 +276,14 @@
     "polygon-538e65cb4794",
     "polygon-53bc64ba505b",
     "polygon-70044294cbeb",
+    "polygon-90c61afaf744",
     "polygon-a1124b6d92d6",
     "polygon-a327e462eaee",
     "polygon-aa32de36e87a",
     "polygon-b9785b2f02e1",
     "polygon-c43169d41b5f",
     "polygon-cd5c745e8212",
+    "polygon-d41420acb932",
     "polygon-d59bedf0f07a",
     "polygon-d64f8181ce7c",
     "polygon-faafdbf66b80",
@@ -313,6 +316,7 @@
     "pushsquare-b277cabcb36b",
     "pushsquare-c380e9132949",
     "pushsquare-c6c455408aa4",
+    "pushsquare-ca5d6db55e00",
     "pushsquare-ce9def770bab",
     "pushsquare-dc71c7761039",
     "pushsquare-eb66f515ba46",

@@ -1,0 +1,35 @@
+{
+  "rawId": "polygon-d41420acb932",
+  "outlet": "Polygon",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.polygon.com/gta-games-ranked-metacritic-scores/",
+  "published": "2026-11-07",
+  "ogImage": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/grand-theft-auto-5-gta-key-art.jpg?w=1600&h=900&fit=crop",
+  "extractedAt": "2026-11-07T11:35:18.956Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "8 Grand Theft Auto: Vice City Stories (2006) Image: Rockstar Games Metacritic score: 86 Platform: PSP Welcome to Miami!",
+          "quote": "8 Grand Theft Auto: Vice City Stories (2006) Image: Rockstar Games Metacritic score: 86 Platform: PSP Welcome to Miami!"
+        },
+        {
+          "fact": "This prequel to 2002's Grand Theft Auto: Vice City centers around the former soldier Vic Vance and his attempts to build up a criminal empire with his brother Lance in early ‘80s Vice City.",
+          "quote": "This prequel to 2002's Grand Theft Auto: Vice City centers around the former soldier Vic Vance and his attempts to build up a criminal empire with his brother Lance in early ‘80s Vice City."
+        },
+        {
+          "fact": "The Official US PlayStation Magazine deemed Vice City “the PS2's defining title,” while a reviewer for Maxim magazine (holy 2002!) said, “You’ll be sold the second you get into a gang bang with the song “Beat It” playing in the background.",
+          "quote": "The Official US PlayStation Magazine deemed Vice City “the PS2's defining title,” while a reviewer for Maxim magazine (holy 2002!) said, “You’ll be sold the second you get into a gang bang with the song “Beat It” playing in the background."
+        }
+      ]
+    }
+  ]
+}

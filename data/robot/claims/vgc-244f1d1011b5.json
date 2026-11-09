@@ -1,0 +1,59 @@
+{
+  "rawId": "vgc-244f1d1011b5",
+  "outlet": "VGC",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.videogameschronicle.com/news/selfridges-london-gta6/",
+  "published": "2026-11-09",
+  "ogImage": "https://www.videogameschronicle.com/files/2026/11/social-basic.jpg",
+  "extractedAt": "2026-11-09T13:42:21.328Z",
+  "entities": [
+    {
+      "entityType": "brand",
+      "name": "Weazel News",
+      "altNames": [],
+      "slug": "weazel-news",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Over the past month, Rockstar has been quietly transforming the real-life city of Miami into GTA 6’s Vice City to promote the game, with the opening of in-game restaurant chains, advertisements for Weazel News, sports cars, and more.",
+          "quote": "Over the past month, Rockstar has been quietly transforming the real-life city of Miami into GTA 6’s Vice City to promote the game, with the opening of in-game restaurant chains, advertisements for Weazel News, sports cars, and more."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Over the past month, Rockstar has been quietly transforming the real-life city of Miami into GTA 6’s Vice City to promote the game, with the opening of in-game restaurant chains, advertisements for Weazel News, sports cars, and more.",
+          "quote": "Over the past month, Rockstar has been quietly transforming the real-life city of Miami into GTA 6’s Vice City to promote the game, with the opening of in-game restaurant chains, advertisements for Weazel News, sports cars, and more."
+        },
+        {
+          "fact": "As part of Rockstar’s announced promotion, NBA team Miami Heat is set to rebrand as ‘Vice City’ as part of an event dubbed “A Night In Vice City,” which will take place on the eve of GTA 6’s launch on November 18, when the Heat will take the court as “Vice City”.",
+          "quote": "As part of Rockstar’s announced promotion, NBA team Miami Heat is set to rebrand as ‘Vice City’ as part of an event dubbed “A Night In Vice City,” which will take place on the eve of GTA 6’s launch on November 18, when the Heat will take the court as “Vice City”."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Sports car",
+      "altNames": [],
+      "slug": "unnamed-sports-car",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The outside of the London store has been lit in GTA 6 colors, and shop displays themed around the game, including a fictional sports car in one of its window displays.",
+          "quote": "The outside of the London store has been lit in GTA 6 colors, and shop displays themed around the game, including a fictional sports car in one of its window displays."
+        }
+      ]
+    }
+  ]
+}

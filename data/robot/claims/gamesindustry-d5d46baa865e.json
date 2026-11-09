@@ -1,0 +1,39 @@
+{
+  "rawId": "gamesindustry-d5d46baa865e",
+  "outlet": "GamesIndustry.biz",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesindustry.biz/thanks-to-gta-6-millions-of-people-are-about-to-discover-what-a-manatee-is-opinion",
+  "published": "2026-11-09",
+  "ogImage": "https://assetsio.gnwcdn.com/Leonida_Keys_01_BVuI7qn.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-11-09T13:41:42.329Z",
+  "entities": [
+    {
+      "entityType": "wildlife",
+      "name": "Alligators",
+      "altNames": [],
+      "slug": "alligators",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "GTA 6 will feature a detailed recreation of Florida's wildlife, including alligators | Image credit: Rockstar Games Unfortunately, these kinds of positive feedback loops in the global relationship between humans and nature are increasingly rare.",
+          "quote": "GTA 6 will feature a detailed recreation of Florida's wildlife, including alligators | Image credit: Rockstar Games Unfortunately, these kinds of positive feedback loops in the global relationship between humans and nature are increasingly rare."
+        }
+      ]
+    },
+    {
+      "entityType": "wildlife",
+      "name": "Dolphins",
+      "altNames": [],
+      "slug": "dolphins",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Dolphins in Grand Theft Auto 6 | Image credit: Rockstar Games This, in a strange sort of way, brings us to Grand Theft Auto 6, which might just be about to play a small part in helping to restore that severed connection.",
+          "quote": "Dolphins in Grand Theft Auto 6 | Image credit: Rockstar Games This, in a strange sort of way, brings us to Grand Theft Auto 6, which might just be about to play a small part in helping to restore that severed connection."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "rawId": "eurogamer-7637c80aefa3",
+  "outlet": "Eurogamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.eurogamer.net/selfridges-gta-6-collab-takeover",
+  "published": "2026-11-09",
+  "ogImage": "https://assetsio.gnwcdn.com/shop-image.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-11-09T13:41:29.434Z",
+  "entities": [
+    {
+      "entityType": "brand",
+      "name": "Burger Shot",
+      "altNames": [],
+      "slug": "burger-shot",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "1 of 5 Caption Attribution There's a range based on the spoof fast-food chain Burger Shot, which includes a visor, work uniform, and apron, amusingly.",
+          "quote": "1 of 5 Caption Attribution There's a range based on the spoof fast-food chain Burger Shot, which includes a visor, work uniform, and apron, amusingly."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "Vice City Manatees",
+      "altNames": [],
+      "slug": "vice-city-manatees",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "There's a nice bright teal and pink-coloured range based around the spoof NFL team the Vice City Manatees, which includes a manatee plushie, an American football, a jacket, and other bits and bobs.",
+          "quote": "There's a nice bright teal and pink-coloured range based around the spoof NFL team the Vice City Manatees, which includes a manatee plushie, an American football, a jacket, and other bits and bobs."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "Vice City Narcos",
+      "altNames": [],
+      "slug": "vice-city-narcos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "There's also a range based around the spoof NBA team, the Vice City Narcos, that includes a basketball (there's a standard GTA 6-branded basketball too).",
+          "quote": "There's also a range based around the spoof NBA team, the Vice City Narcos, that includes a basketball (there's a standard GTA 6-branded basketball too)."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "There's a nice bright teal and pink-coloured range based around the spoof NFL team the Vice City Manatees, which includes a manatee plushie, an American football, a jacket, and other bits and bobs.",
+          "quote": "There's a nice bright teal and pink-coloured range based around the spoof NFL team the Vice City Manatees, which includes a manatee plushie, an American football, a jacket, and other bits and bobs."
+        },
+        {
+          "fact": "There's also a range based around the spoof NBA team, the Vice City Narcos, that includes a basketball (there's a standard GTA 6-branded basketball too).",
+          "quote": "There's also a range based around the spoof NBA team, the Vice City Narcos, that includes a basketball (there's a standard GTA 6-branded basketball too)."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "rawId": "ign-8f839e693d71",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/selfridges-gta-6-takeover-varsity-jacket",
+  "published": "2026-11-09",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/11/09/gta-main-1794223738435.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-11-09T13:41:55.299Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "There’s VI signage and Vice City iconography all over the store.",
+          "quote": "There’s VI signage and Vice City iconography all over the store."
+        },
+        {
+          "fact": "Previously, Rockstar focused most of its efforts on Miami, the metropolis GTA 6’s Vice City is based on.",
+          "quote": "Previously, Rockstar focused most of its efforts on Miami, the metropolis GTA 6’s Vice City is based on."
+        },
+        {
+          "fact": "In September, Rockstar paid just shy of $1 million to install a massive, glowing \"Welcome to Vice City\" sign on top of the Miami Heat's arena, the Kaseya Center .",
+          "quote": "In September, Rockstar paid just shy of $1 million to install a massive, glowing \"Welcome to Vice City\" sign on top of the Miami Heat's arena, the Kaseya Center ."
+        },
+        {
+          "fact": "On November 18, the Miami Heat will play a regular season game against the Milwaukee Bucks on a Vice City-themed court with never-before-seen jerseys inspired by GTA 6 .",
+          "quote": "On November 18, the Miami Heat will play a regular season game against the Milwaukee Bucks on a Vice City-themed court with never-before-seen jerseys inspired by GTA 6 ."
+        }
+      ]
+    }
+  ]
+}

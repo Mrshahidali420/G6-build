@@ -2,12 +2,26 @@
   "source": "Rockstar Games Newswire, tag \"Grand Theft Auto VI\"",
   "sourceUrl": "https://www.rockstargames.com/newswire/tags/666",
   "method": "Read from the GraphQL endpoint that rockstargames.com uses for its own Newswire list. Titles, subtitles, dates and links only. No article text is copied.",
-  "checked": "2026-11-09",
+  "checked": "2026-11-10",
   "counts": {
-    "total": 17,
+    "total": 18,
     "missingFromFeed": 0
   },
   "posts": [
+    {
+      "id": "17937445568859",
+      "title": "Pre-Load Grand Theft Auto VI Now",
+      "subtitle": null,
+      "slug": "pre-load-grand-theft-auto-vi-now",
+      "url": "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now",
+      "date": "2026-11-10",
+      "displayDate": "11/10/26, 3:00 PM",
+      "tags": [
+        "Grand Theft Auto VI"
+      ],
+      "firstSeen": "2026-11-10",
+      "lastSeen": "2026-11-10"
+    },
     {
       "id": "17942308758530",
       "title": "Grand Theft Auto VI: The Festival",
@@ -20,7 +34,7 @@
         "Grand Theft Auto VI"
       ],
       "firstSeen": "2026-11-09",
-      "lastSeen": "2026-11-09"
+      "lastSeen": "2026-11-10"
     },
     {
       "id": "17926956041307",
@@ -34,7 +48,7 @@
         "Grand Theft Auto VI"
       ],
       "firstSeen": "2026-11-05",
-      "lastSeen": "2026-11-09"
+      "lastSeen": "2026-11-10"
     },
     {
       "id": "17926168063576",
@@ -48,7 +62,7 @@
         "Grand Theft Auto VI"
       ],
       "firstSeen": "2026-11-04",
-      "lastSeen": "2026-11-09"
+      "lastSeen": "2026-11-10"
     },
     {
       "id": "17926785795773",
@@ -62,7 +76,7 @@
         "Grand Theft Auto VI"
       ],
       "firstSeen": "2026-10-29",
-      "lastSeen": "2026-11-09"
+      "lastSeen": "2026-11-10"
     },
     {
       "id": "17914094885213",
@@ -76,7 +90,7 @@
         "Grand Theft Auto VI"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-11-09"
+      "lastSeen": "2026-11-10"
     },
     {
       "id": "17912952109163",
@@ -90,7 +104,7 @@
         "Grand Theft Auto VI"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-09"
+      "lastSeen": "2026-11-10"
     },
     {
       "id": "17902740976456",
@@ -104,7 +118,7 @@
         "Grand Theft Auto VI"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-09"
+      "lastSeen": "2026-11-10"
     },
     {
       "id": "17897443983158",
@@ -118,7 +132,7 @@
         "Grand Theft Auto VI"
       ],
       "firstSeen": "2026-09-25",
-      "lastSeen": "2026-11-09"
+      "lastSeen": "2026-11-10"
     },
     {
       "id": "17893996695289",
@@ -132,7 +146,7 @@
         "Grand Theft Auto VI"
       ],
       "firstSeen": "2026-09-21",
-      "lastSeen": "2026-11-09"
+      "lastSeen": "2026-11-10"
     },
     {
       "id": "17869802240109",
@@ -146,7 +160,7 @@
         "Grand Theft Auto VI"
       ],
       "firstSeen": "2026-09-21",
-      "lastSeen": "2026-11-09"
+      "lastSeen": "2026-11-10"
     },
     {
       "id": "17839625656558",
@@ -160,7 +174,7 @@
         "Grand Theft Auto VI"
       ],
       "firstSeen": "2026-09-21",
-      "lastSeen": "2026-11-09"
+      "lastSeen": "2026-11-10"
     },
     {
       "id": "17822935824902",
@@ -174,7 +188,7 @@
         "Grand Theft Auto VI"
       ],
       "firstSeen": "2026-09-21",
-      "lastSeen": "2026-11-09"
+      "lastSeen": "2026-11-10"
     },
     {
       "id": "17817856666024",
@@ -188,7 +202,7 @@
         "Grand Theft Auto VI"
       ],
       "firstSeen": "2026-09-21",
-      "lastSeen": "2026-11-09"
+      "lastSeen": "2026-11-10"
     },
     {
       "id": "17624622125650",
@@ -202,7 +216,7 @@
         "Grand Theft Auto VI"
       ],
       "firstSeen": "2026-09-21",
-      "lastSeen": "2026-11-09"
+      "lastSeen": "2026-11-10"
     },
     {
       "id": "17448100800962",
@@ -216,7 +230,7 @@
         "Grand Theft Auto VI"
       ],
       "firstSeen": "2026-09-21",
-      "lastSeen": "2026-11-09"
+      "lastSeen": "2026-11-10"
     },
     {
       "id": "17461841148216",
@@ -230,7 +244,7 @@
         "Grand Theft Auto VI"
       ],
       "firstSeen": "2026-09-21",
-      "lastSeen": "2026-11-09"
+      "lastSeen": "2026-11-10"
     },
     {
       "id": "17017767114026",
@@ -244,7 +258,7 @@
         "Grand Theft Auto VI"
       ],
       "firstSeen": "2026-09-21",
-      "lastSeen": "2026-11-09"
+      "lastSeen": "2026-11-10"
     }
   ]
 }

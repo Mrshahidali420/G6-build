@@ -1,0 +1,131 @@
+{
+  "rawId": "pushsquare-d549a17bfb71",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/11/gta-6s-exclusive-selfridges-merch-is-daylight-robbery",
+  "published": "2026-11-09",
+  "ogImage": "https://images.pushsquare.com/9c0b7007dd148/1280x720.jpg",
+  "extractedAt": "2026-11-10T00:37:58.994Z",
+  "entities": [
+    {
+      "entityType": "brand",
+      "name": "Burger Shot",
+      "altNames": [],
+      "slug": "burger-shot",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "You can also get a leather Burger Shot takeaway bag for £125 (~$167).",
+          "quote": "You can also get a leather Burger Shot takeaway bag for £125 (~$167)."
+        },
+        {
+          "fact": "A burger shot takeaway bag' XD 5 4 themightyant 10 hours ago The £2,500 jacket is there for shock value and to promote articles like this - you fell for it - meanwhile many items are reasonably priced like the £25 baseball caps.",
+          "quote": "A burger shot takeaway bag' XD 5 4 themightyant 10 hours ago The £2,500 jacket is there for shock value and to promote articles like this - you fell for it - meanwhile many items are reasonably priced like the £25 baseball caps."
+        },
+        {
+          "fact": "2 7 Supern0va 9 hours ago I can buy the burger shot uniform trousers, shirt and apron for £420.",
+          "quote": "2 7 Supern0va 9 hours ago I can buy the burger shot uniform trousers, shirt and apron for £420."
+        }
+      ]
+    },
+    {
+      "entityType": "brand",
+      "name": "Grotti",
+      "altNames": [],
+      "slug": "grotti",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "I like the Miami Dolphins have been rebranded the Vice City Manatees with similar aqua colour and that the basketball team seems to be called the Vice City Narcos . lol 5 5 species 10 hours ago Theres some cool stuff (the grotti keychain), not something id chose to spend money on, but it will definetly all sell out.",
+          "quote": "I like the Miami Dolphins have been rebranded the Vice City Manatees with similar aqua colour and that the basketball team seems to be called the Vice City Narcos . lol 5 5 species 10 hours ago Theres some cool stuff (the grotti keychain), not something id chose to spend money on, but it will definetly all sell out."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "Vice City Manatees",
+      "altNames": [],
+      "slug": "vice-city-manatees",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The variety of items is admittedly eclectic: there’s a Vice City Manatees American football for £80 (~$107), a ton of different t-shirts, and even a bunch of baseball caps.",
+          "quote": "The variety of items is admittedly eclectic: there’s a Vice City Manatees American football for £80 (~$107), a ton of different t-shirts, and even a bunch of baseball caps."
+        },
+        {
+          "fact": "I like the Miami Dolphins have been rebranded the Vice City Manatees with similar aqua colour and that the basketball team seems to be called the Vice City Narcos . lol 5 5 species 10 hours ago Theres some cool stuff (the grotti keychain), not something id chose to spend money on, but it will definetly all sell out.",
+          "quote": "I like the Miami Dolphins have been rebranded the Vice City Manatees with similar aqua colour and that the basketball team seems to be called the Vice City Narcos . lol 5 5 species 10 hours ago Theres some cool stuff (the grotti keychain), not something id chose to spend money on, but it will definetly all sell out."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "Vice City Narcos",
+      "altNames": [],
+      "slug": "vice-city-narcos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "I like the Miami Dolphins have been rebranded the Vice City Manatees with similar aqua colour and that the basketball team seems to be called the Vice City Narcos . lol 5 5 species 10 hours ago Theres some cool stuff (the grotti keychain), not something id chose to spend money on, but it will definetly all sell out.",
+          "quote": "I like the Miami Dolphins have been rebranded the Vice City Manatees with similar aqua colour and that the basketball team seems to be called the Vice City Narcos . lol 5 5 species 10 hours ago Theres some cool stuff (the grotti keychain), not something id chose to spend money on, but it will definetly all sell out."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "I think every streamer looking to stream GTA VI are going to want something stupidly expensive like this to wear.",
+          "quote": "I think every streamer looking to stream GTA VI are going to want something stupidly expensive like this to wear."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The variety of items is admittedly eclectic: there’s a Vice City Manatees American football for £80 (~$107), a ton of different t-shirts, and even a bunch of baseball caps.",
+          "quote": "The variety of items is admittedly eclectic: there’s a Vice City Manatees American football for £80 (~$107), a ton of different t-shirts, and even a bunch of baseball caps."
+        },
+        {
+          "fact": "I like the Miami Dolphins have been rebranded the Vice City Manatees with similar aqua colour and that the basketball team seems to be called the Vice City Narcos . lol 5 5 species 10 hours ago Theres some cool stuff (the grotti keychain), not something id chose to spend money on, but it will definetly all sell out.",
+          "quote": "I like the Miami Dolphins have been rebranded the Vice City Manatees with similar aqua colour and that the basketball team seems to be called the Vice City Narcos . lol 5 5 species 10 hours ago Theres some cool stuff (the grotti keychain), not something id chose to spend money on, but it will definetly all sell out."
+        },
+        {
+          "fact": "I love gta played everyone of them multiple times, my top 3 in no order as you could make a case for all 3 are vice city, san andreas and 5.",
+          "quote": "I love gta played everyone of them multiple times, my top 3 in no order as you could make a case for all 3 are vice city, san andreas and 5."
+        }
+      ]
+    },
+    {
+      "entityType": "wildlife",
+      "name": "Dolphins",
+      "altNames": [],
+      "slug": "dolphins",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "I like the Miami Dolphins have been rebranded the Vice City Manatees with similar aqua colour and that the basketball team seems to be called the Vice City Narcos . lol 5 5 species 10 hours ago Theres some cool stuff (the grotti keychain), not something id chose to spend money on, but it will definetly all sell out.",
+          "quote": "I like the Miami Dolphins have been rebranded the Vice City Manatees with similar aqua colour and that the basketball team seems to be called the Vice City Narcos . lol 5 5 species 10 hours ago Theres some cool stuff (the grotti keychain), not something id chose to spend money on, but it will definetly all sell out."
+        }
+      ]
+    }
+  ]
+}

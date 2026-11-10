@@ -1,0 +1,41 @@
+{
+  "rawId": "pushsquare-abcdc7b6f736",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/11/gta-6-the-festival-is-a-one-off-live-music-event-partly-presented-by-playstation",
+  "published": "2026-11-09",
+  "ogImage": "https://images.pushsquare.com/2d8093bf45076/1280x720.jpg",
+  "extractedAt": "2026-11-10T00:37:52.438Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Most of the bigger events are happening within Miami and Florida, which is of course the real life inspiration for Vice City and Leonida, where the game takes place.",
+          "quote": "Most of the bigger events are happening within Miami and Florida, which is of course the real life inspiration for Vice City and Leonida, where the game takes place."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Most of the bigger events are happening within Miami and Florida, which is of course the real life inspiration for Vice City and Leonida, where the game takes place.",
+          "quote": "Most of the bigger events are happening within Miami and Florida, which is of course the real life inspiration for Vice City and Leonida, where the game takes place."
+        }
+      ]
+    }
+  ]
+}

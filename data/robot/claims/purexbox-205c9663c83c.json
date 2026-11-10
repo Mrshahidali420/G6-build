@@ -1,0 +1,25 @@
+{
+  "rawId": "purexbox-205c9663c83c",
+  "outlet": "Pure Xbox",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.purexbox.com/news/2026/11/new-details-revealed-about-the-physical-edition-of-gta-6-for-xbox-series-xs",
+  "published": "2026-11-09",
+  "ogImage": "https://images.purexbox.com/4b2e6d4dc0a2e/1280x720.jpg",
+  "extractedAt": "2026-11-10T00:37:45.933Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Zelda proved that people still want physical media.",
+          "quote": "Zelda proved that people still want physical media."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "rawId": "ign-a4be07a0d71a",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/here-are-some-movies-to-watch-before-gta-6-including-some-you-can-watch-in-theaters",
+  "published": "2026-11-09",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/08/27/exclusivelookbr-gtfm-1787873244868.png?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-11-10T00:37:00.395Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "2 Fast 2 Furious might not be the most critically acclaimed film, but it is set in Miami, and Paul Walker and Eva Mendes make for a pretty good stand-in for Jason and Lucia.",
+          "quote": "2 Fast 2 Furious might not be the most critically acclaimed film, but it is set in Miami, and Paul Walker and Eva Mendes make for a pretty good stand-in for Jason and Lucia."
+        },
+        {
+          "fact": "Whether Jason and Lucia's story will have the same catastrophic ending as Bonnie and Clyde's remains to be seen, but it feels like required viewing before GTA 6.",
+          "quote": "Whether Jason and Lucia's story will have the same catastrophic ending as Bonnie and Clyde's remains to be seen, but it feels like required viewing before GTA 6."
+        },
+        {
+          "fact": "It certainly seems like GTA 6 will at least partially revolve around Jason and Lucia trying to create a better life for themselves, and Baby Driver is anchored in that idea.",
+          "quote": "It certainly seems like GTA 6 will at least partially revolve around Jason and Lucia trying to create a better life for themselves, and Baby Driver is anchored in that idea."
+        },
+        {
+          "fact": "Once again, Badlands utilizes the themes that are central to GTA 6 with its lovers on the run storyline, though its characters seem to have less remorse than Jason and Lucia.",
+          "quote": "Once again, Badlands utilizes the themes that are central to GTA 6 with its lovers on the run storyline, though its characters seem to have less remorse than Jason and Lucia."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "2 Fast 2 Furious might not be the most critically acclaimed film, but it is set in Miami, and Paul Walker and Eva Mendes make for a pretty good stand-in for Jason and Lucia.",
+          "quote": "2 Fast 2 Furious might not be the most critically acclaimed film, but it is set in Miami, and Paul Walker and Eva Mendes make for a pretty good stand-in for Jason and Lucia."
+        },
+        {
+          "fact": "Whether Jason and Lucia's story will have the same catastrophic ending as Bonnie and Clyde's remains to be seen, but it feels like required viewing before GTA 6.",
+          "quote": "Whether Jason and Lucia's story will have the same catastrophic ending as Bonnie and Clyde's remains to be seen, but it feels like required viewing before GTA 6."
+        },
+        {
+          "fact": "It certainly seems like GTA 6 will at least partially revolve around Jason and Lucia trying to create a better life for themselves, and Baby Driver is anchored in that idea.",
+          "quote": "It certainly seems like GTA 6 will at least partially revolve around Jason and Lucia trying to create a better life for themselves, and Baby Driver is anchored in that idea."
+        },
+        {
+          "fact": "Once again, Badlands utilizes the themes that are central to GTA 6 with its lovers on the run storyline, though its characters seem to have less remorse than Jason and Lucia.",
+          "quote": "Once again, Badlands utilizes the themes that are central to GTA 6 with its lovers on the run storyline, though its characters seem to have less remorse than Jason and Lucia."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "As a result, it may not hurt to familiarize yourself with at least the first season to have an idea of why there might be some pretty specific references hidden around Leonida.",
+          "quote": "As a result, it may not hurt to familiarize yourself with at least the first season to have an idea of why there might be some pretty specific references hidden around Leonida."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Spring Breakers definitely features the kind of Floridian debauchery you'd expect in a Grand Theft Auto game, while Scarface and Miami Vice are, of course, the bedrock of the original Grand Theft Auto: Vice City game.",
+          "quote": "Spring Breakers definitely features the kind of Floridian debauchery you'd expect in a Grand Theft Auto game, while Scarface and Miami Vice are, of course, the bedrock of the original Grand Theft Auto: Vice City game."
+        }
+      ]
+    }
+  ]
+}

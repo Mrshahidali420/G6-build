@@ -1,0 +1,43 @@
+{
+  "rawId": "pushsquare-f2019b5d9516",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/11/gta-6-pre-orders-outperform-even-take-twos-expectations-gta-5-just-keeps-on-selling",
+  "published": "2026-11-09",
+  "ogImage": "https://images.pushsquare.com/f84d473088486/1280x720.jpg",
+  "extractedAt": "2026-11-10T00:38:05.443Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Astro Bot was amazing but it couldn’t fully overcome the disconnect between what people claim they want and what they actually buy.",
+          "quote": "Astro Bot was amazing but it couldn’t fully overcome the disconnect between what people claim they want and what they actually buy."
+        },
+        {
+          "fact": "7 News No Disc, No Buy and PS5 Blackout Protests Fail to Impact PlayStation 8 Guide Phantom Blade Zero: Best Weapons and Where to Find Them 9 News Final Fantasy Resonance Producer Had to Fight Square Enix Execs Who Want...",
+          "quote": "7 News No Disc, No Buy and PS5 Blackout Protests Fail to Impact PlayStation 8 Guide Phantom Blade Zero: Best Weapons and Where to Find Them 9 News Final Fantasy Resonance Producer Had to Fight Square Enix Execs Who Want..."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Phantom",
+      "altNames": [],
+      "slug": "phantom",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "7 News No Disc, No Buy and PS5 Blackout Protests Fail to Impact PlayStation 8 Guide Phantom Blade Zero: Best Weapons and Where to Find Them 9 News Final Fantasy Resonance Producer Had to Fight Square Enix Execs Who Want...",
+          "quote": "7 News No Disc, No Buy and PS5 Blackout Protests Fail to Impact PlayStation 8 Guide Phantom Blade Zero: Best Weapons and Where to Find Them 9 News Final Fantasy Resonance Producer Had to Fight Square Enix Execs Who Want..."
+        }
+      ]
+    }
+  ]
+}

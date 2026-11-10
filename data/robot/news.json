@@ -634,5 +634,47 @@
     "written": null,
     "refused": "2026-11-06",
     "reason": "an em dash appears in the written text"
+  },
+  "eurogamer-fcc533697fed": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-11-10",
+    "reason": "an em dash appears in the written text"
+  },
+  "ign-4469fac659dc": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-11-10",
+    "reason": "an em dash appears in the written text"
+  },
+  "ign-8c806369fda0": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-11-10",
+    "reason": "an em dash appears in the written text"
+  },
+  "pcgamer-93d1d42d9140": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-11-10",
+    "reason": "an em dash appears in the written text"
+  },
+  "pushsquare-f2019b5d9516": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-11-10",
+    "reason": "an em dash appears in the written text"
+  },
+  "purexbox-205c9663c83c": {
+    "slug": "gta-6-ps5-physical-edition-revealed-in-first-photo",
+    "written": "2026-11-10"
+  },
+  "pushsquare-2269279838d0": {
+    "slug": "gta-6-ps5-physical-edition-revealed-in-first-photo",
+    "written": "2026-11-10"
+  },
+  "pushsquare-4a50bbad64cd": {
+    "slug": "gta-6-ps5-physical-edition-revealed-in-first-photo",
+    "written": "2026-11-10"
   }
 }

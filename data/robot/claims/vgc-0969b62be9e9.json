@@ -1,0 +1,27 @@
+{
+  "rawId": "vgc-0969b62be9e9",
+  "outlet": "VGC",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.videogameschronicle.com/news/gta-6-may-be-censored-in-australia-and-other-regions-dataminer-suggests/",
+  "published": "2026-11-09",
+  "ogImage": "https://www.videogameschronicle.com/files/2026/11/gta-grand-theft-auto-6-pic07.jpg",
+  "extractedAt": "2026-11-10T00:38:11.956Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "A number of games have been released as modified versions in Australia in the past, including Grand Theft Auto 3 and Grand Theft Auto: Vice City, which had content relating to prostitutes removed.",
+          "quote": "A number of games have been released as modified versions in Australia in the past, including Grand Theft Auto 3 and Grand Theft Auto: Vice City, which had content relating to prostitutes removed."
+        }
+      ]
+    }
+  ]
+}

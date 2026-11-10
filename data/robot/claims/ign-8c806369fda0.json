@@ -1,0 +1,25 @@
+{
+  "rawId": "ign-8c806369fda0",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/gta-6-caused-some-gamers-to-hold-off-on-buying-new-games-including-take-twos-own-nba-2k27-strauss-zelnick-says",
+  "published": "2026-11-09",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/11/09/ultimate-edition-electric-fang-03-1794260488819.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-11-10T00:36:53.890Z",
+  "entities": [
+    {
+      "entityType": "vehicle",
+      "name": "Phantom",
+      "altNames": [],
+      "slug": "phantom",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Zelda: Ocarina of Time Remake Gears of War: E-Day Phantom Blade Zero None -- wake me when it’s November 19th!",
+          "quote": "Zelda: Ocarina of Time Remake Gears of War: E-Day Phantom Blade Zero None -- wake me when it’s November 19th!"
+        }
+      ]
+    }
+  ]
+}

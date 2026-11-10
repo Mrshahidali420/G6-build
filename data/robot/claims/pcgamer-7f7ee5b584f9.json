@@ -1,0 +1,43 @@
+{
+  "rawId": "pcgamer-7f7ee5b584f9",
+  "outlet": "PC Gamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pcgamer.com/games/grand-theft-auto/take-two-expects-to-make-as-much-as-usd3-5-billion-during-the-gta-6-launch-period/",
+  "published": "2026-11-09",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/9SieU3JpSSPX34eMduXqsW-2560-80.jpg",
+  "extractedAt": "2026-11-10T00:37:39.482Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        },
+        {
+          "fact": "The publisher has previously said that it doesn't want to reveal the total number of GTA 6 preorders because \"the raw numbers could potentially be misleading,\" given that it's never seen numbers like these before.",
+          "quote": "The publisher has previously said that it doesn't want to reveal the total number of GTA 6 preorders because \"the raw numbers could potentially be misleading,\" given that it's never seen numbers like these before."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Phantom",
+      "altNames": [],
+      "slug": "phantom",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "1 MSI Maestro 900R review 2 Epomaker HE75 V2 TMR review 3 Phantom Blade Zero review 4 Formula V Line Air Power G10 review 5 Enshrouded 1.0 review PC Gamer is part of Future US Inc, an international media group and leading digital publisher.",
+          "quote": "1 MSI Maestro 900R review 2 Epomaker HE75 V2 TMR review 3 Phantom Blade Zero review 4 Formula V Line Air Power G10 review 5 Enshrouded 1.0 review PC Gamer is part of Future US Inc, an international media group and leading digital publisher."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "slug": "news-gta-6-pre-orders-outperform-even-take-twos-expectations-gta-5-just-keeps-on-selling",
+  "reason": "an em dash appears in the written text",
+  "refusedAt": "2026-11-10",
+  "written": {
+    "title": "GTA 6 Pre-Orders Outperform Even Take-Two's Expectations, GTA 5 Just Keeps on Selling",
+    "description": "What PC Gamer, Eurogamer, IGN and Push Square reported: \"GTA 6 Pre-Orders Outperform Even Take-Two's Expectations, GTA 5 Just Keeps on Selling\".",
+    "body": "This page collects what named outlets published about Grand Theft Auto VI, in their own words. This site wrote none of the sentences in quotation marks below. Each one links to the report it was taken from.\n\n## PC Gamer, 6 November 2026\n\n[Zelnick doesn't regret GTA 6's delay because shipping an unfinished game rarely ends well: 'There was a very high profile release that fell into this category'](https://www.pcgamer.com/games/grand-theft-auto/zelnick-doesnt-regret-gta-6s-delay-because-shipping-an-unfinished-game-rarely-ends-well-there-was-a-very-high-profile-release-that-fell-into-this-category/)\n\nThe outlet's own summary:\n\n> Oh boy, I wonder who that could be.\n\n> Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.\n\n## Eurogamer, 9 November 2026\n\n[GTA 6 pre-orders are tracking \"well above expectations\", says Take-Two's Strauss Zelnick in latest earnings call as he anticipates the game \"setting a new baseline\" for the company](https://www.eurogamer.net/gta-6-preorders-tracking-take-two-earnings-call)\n\nThe outlet's own summary:\n\n> It seems Take-Two is buoyed by the success of GTA 6 so far, and the game still isn't out for another 10 days.\n\n> That bonus $20 between the $80 base edition and the Ultimate Edition is counted as \"recurrent consumer spending\", as is part of that massive bump the company has seen.\n\n## IGN, 9 November 2026\n\n['We Are Focused on It' — Take-Two 'Enhancing' Technical Defenses and Legal Activities in the Face of GTA 6 AI Reverse Engineering Threat, Strauss Zelnick Says](https://www.ign.com/articles/take-two-enhancing-technical-defenses-and-legal-activities-to-combat-gta-6-ai-reverse-engineering-threat)\n\nThe outlet's own summary:\n\n> The boss of Rockstar parent company Take-Two has responded to the threat of AI-assisted reverse-engineering and decompilation of games ahead of the crucial launch of GTA 6.\n\n> How can we integrate this into our own business model right now?\" In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images The PlayStation homebrew scene has made headlines in the last month for releasing PS5 jailbreaks for prior firmwares.\n\n## IGN, 9 November 2026\n\n[GTA 6 Caused Gamers to Hold Off on Buying New Games — Including Take-Two's Own NBA 2K27, Strauss Zelnick Says](https://www.ign.com/articles/gta-6-caused-some-gamers-to-hold-off-on-buying-new-games-including-take-twos-own-nba-2k27-strauss-zelnick-says)\n\nThe outlet's own summary:\n\n> The behemoth that is GTA 6 looms large over the video game industry, and it’s so big that it not only caused the September crush of releases, but caused some gamers to hold off on buying new games entirely.\n\n> Zelda: Ocarina of Time Remake Gears of War: E-Day Phantom Blade Zero None -- wake me when it’s November 19th!\n\n## Push Square, 9 November 2026\n\n[GTA 6 Pre-Orders Outperform Even Take-Two's Expectations, GTA 5 Just Keeps on Selling](https://www.pushsquare.com/news/2026/11/gta-6-pre-orders-outperform-even-take-twos-expectations-gta-5-just-keeps-on-selling)\n\nThe outlet's own summary:\n\n> GTA 5 now at 235 million sales\n\n> Astro Bot was amazing but it couldn’t fully overcome the disconnect between what people claim they want and what they actually buy.\n\n> 7 News No Disc, No Buy and PS5 Blackout Protests Fail to Impact PlayStation 8 Guide Phantom Blade Zero: Best Weapons and Where to Find Them 9 News Final Fantasy Resonance Producer Had to Fight Square Enix Execs Who Want...\n\nEvery report above is on the site's fixed source list. A report is not a confirmation: the mark on each linked entry says who said it.",
+    "related": [
+      "gta-6-ultimate-edition",
+      "jason-duval",
+      "lucia-caminos",
+      "phantom",
+      "want"
+    ],
+    "relatedNames": [
+      "want",
+      "ultimate edition",
+      "gta 6 ultimate edition",
+      "gta vi ultimate edition",
+      "jason duval",
+      "jason",
+      "duval",
+      "lucia caminos",
+      "lucia",
+      "caminos",
+      "phantom"
+    ],
+    "held": null
+  },
+  "claims": [
+    {
+      "fact": "That bonus $20 between the $80 base edition and the Ultimate Edition is counted as \"recurrent consumer spending\", as is part of that massive bump the company has seen.",
+      "quote": "That bonus $20 between the $80 base edition and the Ultimate Edition is counted as \"recurrent consumer spending\", as is part of that massive bump the company has seen.",
+      "outlet": "Eurogamer",
+      "url": "https://www.eurogamer.net/gta-6-preorders-tracking-take-two-earnings-call",
+      "published": "2026-11-09"
+    },
+    {
+      "fact": "How can we integrate this into our own business model right now?\" In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images The PlayStation homebrew scene has made headlines in the last month for releasing PS5 jailbreaks for prior firmwares.",
+      "quote": "How can we integrate this into our own business model right now?\" In Pictures: How GTA 6's Jason and Lucia Have Evolved Since 2023 View 13 Images The PlayStation homebrew scene has made headlines in the last month for releasing PS5 jailbreaks for prior firmwares.",
+      "outlet": "IGN",
+      "url": "https://www.ign.com/articles/take-two-enhancing-technical-defenses-and-legal-activities-to-combat-gta-6-ai-reverse-engineering-threat",
+      "published": "2026-11-09"
+    },
+    {
+      "fact": "Zelda: Ocarina of Time Remake Gears of War: E-Day Phantom Blade Zero None -- wake me when it’s November 19th!",
+      "quote": "Zelda: Ocarina of Time Remake Gears of War: E-Day Phantom Blade Zero None -- wake me when it’s November 19th!",
+      "outlet": "IGN",
+      "url": "https://www.ign.com/articles/gta-6-caused-some-gamers-to-hold-off-on-buying-new-games-including-take-twos-own-nba-2k27-strauss-zelnick-says",
+      "published": "2026-11-09"
+    },
+    {
+      "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+      "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+      "outlet": "PC Gamer",
+      "url": "https://www.pcgamer.com/games/grand-theft-auto/zelnick-doesnt-regret-gta-6s-delay-because-shipping-an-unfinished-game-rarely-ends-well-there-was-a-very-high-profile-release-that-fell-into-this-category/",
+      "published": "2026-11-06"
+    },
+    {
+      "fact": "Astro Bot was amazing but it couldn’t fully overcome the disconnect between what people claim they want and what they actually buy.",
+      "quote": "Astro Bot was amazing but it couldn’t fully overcome the disconnect between what people claim they want and what they actually buy.",
+      "outlet": "Push Square",
+      "url": "https://www.pushsquare.com/news/2026/11/gta-6-pre-orders-outperform-even-take-twos-expectations-gta-5-just-keeps-on-selling",
+      "published": "2026-11-09"
+    },
+    {
+      "fact": "7 News No Disc, No Buy and PS5 Blackout Protests Fail to Impact PlayStation 8 Guide Phantom Blade Zero: Best Weapons and Where to Find Them 9 News Final Fantasy Resonance Producer Had to Fight Square Enix Execs Who Want...",
+      "quote": "7 News No Disc, No Buy and PS5 Blackout Protests Fail to Impact PlayStation 8 Guide Phantom Blade Zero: Best Weapons and Where to Find Them 9 News Final Fantasy Resonance Producer Had to Fight Square Enix Execs Who Want...",
+      "outlet": "Push Square",
+      "url": "https://www.pushsquare.com/news/2026/11/gta-6-pre-orders-outperform-even-take-twos-expectations-gta-5-just-keeps-on-selling",
+      "published": "2026-11-09"
+    }
+  ]
+}

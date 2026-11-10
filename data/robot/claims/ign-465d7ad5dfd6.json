@@ -1,0 +1,33 @@
+{
+  "rawId": "ign-465d7ad5dfd6",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/even-if-someone-does-get-it-running-on-pc-thats-not-going-to-be-a-good-experience-why-ai-cloning-wont-sink-gta-6s-launch-but-could-reshape-game-development",
+  "published": "2026-11-09",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/11/09/gta6-launch-ai-blogroll-1794222934628.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-11-10T00:36:47.431Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "\"Developers are arguing about whether we can still do the thing that players want us to do, which is to post about our games early,\" Ismail tells me.",
+          "quote": "\"Developers are arguing about whether we can still do the thing that players want us to do, which is to post about our games early,\" Ismail tells me."
+        },
+        {
+          "fact": "\"Do you want to sell your codebase?\" As for what comes next, there's uncertainty and disagreement here, too.",
+          "quote": "\"Do you want to sell your codebase?\" As for what comes next, there's uncertainty and disagreement here, too."
+        },
+        {
+          "fact": "There's a massive wave of emails that we're all getting that say, 'hey, do you want to sell your codebase?'\" So, if there's one thing we can say with certainty about the intersection of AI and gaming, it's that the future is probably going to be messy and weird.",
+          "quote": "There's a massive wave of emails that we're all getting that say, 'hey, do you want to sell your codebase?'\" So, if there's one thing we can say with certainty about the intersection of AI and gaming, it's that the future is probably going to be messy and weird."
+        }
+      ]
+    }
+  ]
+}

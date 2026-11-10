@@ -1,0 +1,65 @@
+{
+  "rawId": "ign-be551da69427",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/a-real-life-gta-6-car-is-being-sold-for-13-million",
+  "published": "2026-11-09",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/11/09/gta-6-car-1794258868198.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-11-10T00:37:06.896Z",
+  "entities": [
+    {
+      "entityType": "brand",
+      "name": "Grotti",
+      "altNames": [],
+      "slug": "grotti",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "However, the big-ticket item has managed to fly under the radar: one lucky fan has the opportunity to purchase a custom Grotti Cheetah, one of the cars from the GTA series.",
+          "quote": "However, the big-ticket item has managed to fly under the radar: one lucky fan has the opportunity to purchase a custom Grotti Cheetah, one of the cars from the GTA series."
+        },
+        {
+          "fact": "We’re incredibly proud to have partnered with Rockstar Games® to bring the custom in-game Grotti Cheetah from ‘Grand Theft Auto VI’ to life.",
+          "quote": "We’re incredibly proud to have partnered with Rockstar Games® to bring the custom in-game Grotti Cheetah from ‘Grand Theft Auto VI’ to life."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "If you want it and have £1 million, you can reach out to Selfridges via their personal shopping page.",
+          "quote": "If you want it and have £1 million, you can reach out to Selfridges via their personal shopping page."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "'95 Grotti Cheetah",
+      "altNames": [
+        "95 Grotti Cheetah",
+        "Grotti Cheetah",
+        "Cheetah"
+      ],
+      "slug": "95-grotti-cheetah",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "However, the big-ticket item has managed to fly under the radar: one lucky fan has the opportunity to purchase a custom Grotti Cheetah, one of the cars from the GTA series.",
+          "quote": "However, the big-ticket item has managed to fly under the radar: one lucky fan has the opportunity to purchase a custom Grotti Cheetah, one of the cars from the GTA series."
+        },
+        {
+          "fact": "We’re incredibly proud to have partnered with Rockstar Games® to bring the custom in-game Grotti Cheetah from ‘Grand Theft Auto VI’ to life.",
+          "quote": "We’re incredibly proud to have partnered with Rockstar Games® to bring the custom in-game Grotti Cheetah from ‘Grand Theft Auto VI’ to life."
+        }
+      ]
+    }
+  ]
+}

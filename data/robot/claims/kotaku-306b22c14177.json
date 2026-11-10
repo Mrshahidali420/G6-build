@@ -1,0 +1,31 @@
+{
+  "rawId": "kotaku-306b22c14177",
+  "outlet": "Kotaku",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://kotaku.com/you-can-play-gta-6-on-a-13-year-old-xbox-and-itll-run-at-the-same-framerate-as-ps5-pro-2000755587",
+  "published": "2026-11-10",
+  "ogImage": "https://kotaku.com/app/uploads/2026/11/xboxone.jpg",
+  "extractedAt": "2026-11-10T22:15:22.217Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Technically, fans who are still on Xbox One, which came out back in 2013, will also have a shot at exploring Rockstar Games’ latest version of Vice City thanks to Xbox Cloud Gaming .",
+          "quote": "Technically, fans who are still on Xbox One, which came out back in 2013, will also have a shot at exploring Rockstar Games’ latest version of Vice City thanks to Xbox Cloud Gaming ."
+        },
+        {
+          "fact": "Ten hours of cloud gaming time in Vice City will cost Xbox owners $4.",
+          "quote": "Ten hours of cloud gaming time in Vice City will cost Xbox owners $4."
+        }
+      ]
+    }
+  ]
+}

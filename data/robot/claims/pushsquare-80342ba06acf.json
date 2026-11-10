@@ -1,0 +1,56 @@
+{
+  "rawId": "pushsquare-80342ba06acf",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/11/gta-6-ps5-pro-features-revealed-30fps-target-on-both-consoles",
+  "published": "2026-11-10",
+  "ogImage": "https://images.pushsquare.com/30e94f06a6b3c/1280x720.jpg",
+  "extractedAt": "2026-11-10T22:16:27.310Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "They have also removed PSVR2 according to this site and they abandon pc speakers and whatnot, blaming \"faults\" on them but it seem they just want to save up for their PS6 production and put all their money on that for the moment.",
+          "quote": "They have also removed PSVR2 according to this site and they abandon pc speakers and whatnot, blaming \"faults\" on them but it seem they just want to save up for their PS6 production and put all their money on that for the moment."
+        }
+      ]
+    },
+    {
+      "entityType": "gameplay_feature",
+      "name": "Console Performance Target",
+      "altNames": [
+        "30fps mode",
+        "performance mode status"
+      ],
+      "slug": "console-performance-target",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "I'd better get some 30fps mode GTA V in before next week.",
+          "quote": "I'd better get some 30fps mode GTA V in before next week."
+        }
+      ]
+    },
+    {
+      "entityType": "wildlife",
+      "name": "Fish",
+      "altNames": [],
+      "slug": "fish",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "3d games that you have full control of, and that have a 360° rotating camera, are a whole different kettle of fish.",
+          "quote": "3d games that you have full control of, and that have a 360° rotating camera, are a whole different kettle of fish."
+        }
+      ]
+    }
+  ]
+}

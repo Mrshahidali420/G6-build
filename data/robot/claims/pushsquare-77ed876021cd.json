@@ -1,0 +1,63 @@
+{
+  "rawId": "pushsquare-77ed876021cd",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/features/poll-is-gta-6-being-stuck-at-30fps-on-ps5-a-dealbreaker",
+  "published": "2026-11-10",
+  "ogImage": "https://images.pushsquare.com/7503b796c69e2/1280x720.jpg",
+  "extractedAt": "2026-11-10T22:16:20.834Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "2 49 darylb24 50 mins ago I only want 30fps, I won't have it any other way.",
+          "quote": "2 49 darylb24 50 mins ago I only want 30fps, I won't have it any other way."
+        },
+        {
+          "fact": "I CAN wait but I can't decide I WILL haha 0 51 DigiB79 40 mins ago People can talk themselves into whatever they want to.",
+          "quote": "I CAN wait but I can't decide I WILL haha 0 51 DigiB79 40 mins ago People can talk themselves into whatever they want to."
+        },
+        {
+          "fact": "0 54 kuu_nousee 27 mins ago 40fps is what I'd want, but since I'm getting it for $64 I cannot complain too much.",
+          "quote": "0 54 kuu_nousee 27 mins ago 40fps is what I'd want, but since I'm getting it for $64 I cannot complain too much."
+        }
+      ]
+    },
+    {
+      "entityType": "landmark",
+      "name": "The Fence",
+      "altNames": [],
+      "slug": "the-fence",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "But for the supposed “Biggest Release ever” and “The game that is going to define this generation”, 30 FPS is a joke😂 1 52 HairyBizRat 36 mins ago On the fence as anyone with an OLED will tell you that 30fps looks worse on OLeD than any other tv due to its instant pixel response.",
+          "quote": "But for the supposed “Biggest Release ever” and “The game that is going to define this generation”, 30 FPS is a joke😂 1 52 HairyBizRat 36 mins ago On the fence as anyone with an OLED will tell you that 30fps looks worse on OLeD than any other tv due to its instant pixel response."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "If it had to keep the frame rate capped at 30 to deliver on its vision of a modern Vice City, then that's the long and short of it.",
+          "quote": "If it had to keep the frame rate capped at 30 to deliver on its vision of a modern Vice City, then that's the long and short of it."
+        }
+      ]
+    }
+  ]
+}

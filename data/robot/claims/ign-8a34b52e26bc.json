@@ -1,0 +1,687 @@
+{
+  "rawId": "ign-8a34b52e26bc",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/gta-6-preloads-are-now-available-ps5-xbox",
+  "published": "2026-11-10",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/11/10/gta-6-preload-1794322351146.jpeg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-11-10T22:15:02.709Z",
+  "entities": [
+    {
+      "entityType": "brand",
+      "name": "Crest",
+      "altNames": [
+        "Crest Kayaks"
+      ],
+      "slug": "crest",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Dinka Enduro motorcycle, Crest Kayak, and exclusive Vapid Ganado pickup truck upgrades at Jason's Safehouse.",
+          "quote": "Dinka Enduro motorcycle, Crest Kayak, and exclusive Vapid Ganado pickup truck upgrades at Jason's Safehouse."
+        }
+      ]
+    },
+    {
+      "entityType": "brand",
+      "name": "Dinka",
+      "altNames": [],
+      "slug": "dinka",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Dinka Enduro motorcycle, Crest Kayak, and exclusive Vapid Ganado pickup truck upgrades at Jason's Safehouse.",
+          "quote": "Dinka Enduro motorcycle, Crest Kayak, and exclusive Vapid Ganado pickup truck upgrades at Jason's Safehouse."
+        }
+      ]
+    },
+    {
+      "entityType": "brand",
+      "name": "Grotti",
+      "altNames": [],
+      "slug": "grotti",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "'95 Grotti Cheetah sports car with a retro-inspired design.",
+          "quote": "'95 Grotti Cheetah sports car with a retro-inspired design."
+        }
+      ]
+    },
+    {
+      "entityType": "brand",
+      "name": "Shitzu",
+      "altNames": [],
+      "slug": "shitzu",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Shitzu Squalo speedboat equipped with a weapons crate.",
+          "quote": "Shitzu Squalo speedboat equipped with a weapons crate."
+        }
+      ]
+    },
+    {
+      "entityType": "brand",
+      "name": "Vapid",
+      "altNames": [],
+      "slug": "vapid",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "GTA 6 Ultimate Edition Screenshots View 51 Images GTA 6 Ultimate Edition Contents Exclusive Vehicles & Storage Vapid Dominator Buggy with access to the Paradise Garage, including a weapon locker and stash box.",
+          "quote": "GTA 6 Ultimate Edition Screenshots View 51 Images GTA 6 Ultimate Edition Contents Exclusive Vehicles & Storage Vapid Dominator Buggy with access to the Paradise Garage, including a weapon locker and stash box."
+        },
+        {
+          "fact": "Dinka Enduro motorcycle, Crest Kayak, and exclusive Vapid Ganado pickup truck upgrades at Jason's Safehouse.",
+          "quote": "Dinka Enduro motorcycle, Crest Kayak, and exclusive Vapid Ganado pickup truck upgrades at Jason's Safehouse."
+        },
+        {
+          "fact": "The Vintage Vice City Pack includes: ’55 Vapid Stanier and Shore Court Garage: Cruise Shore Drive in the legendary ’55 Vapid Stanier, a Vice City classic meant to be admired, and store it in a new personal garage just a stone’s throw from the glistening sands of Ocean Beach.",
+          "quote": "The Vintage Vice City Pack includes: ’55 Vapid Stanier and Shore Court Garage: Cruise Shore Drive in the legendary ’55 Vapid Stanier, a Vice City classic meant to be admired, and store it in a new personal garage just a stone’s throw from the glistening sands of Ocean Beach."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "Electric Fang Tattoo",
+      "altNames": [
+        "Electric Fang Tattoo Parlor"
+      ],
+      "slug": "electric-fang-tattoo-parlor",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Over 50 exclusive tattoos from Electric Fang Tattoo.",
+          "quote": "Over 50 exclusive tattoos from Electric Fang Tattoo."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "One-Eyed Willie's",
+      "altNames": [
+        "One Eyed Willies",
+        "One-Eyed Willy's"
+      ],
+      "slug": "one-eyed-willies",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Extra Vehicle Content Access to two exclusive vehicle customization shops: Rideout Customs (Vice City) One-Eyed Willie's (Lake Leonida) Classic Car Collection side activity featuring restoration projects, including four Ultimate Edition-exclusive vehicles.",
+          "quote": "Extra Vehicle Content Access to two exclusive vehicle customization shops: Rideout Customs (Vice City) One-Eyed Willie's (Lake Leonida) Classic Car Collection side activity featuring restoration projects, including four Ultimate Edition-exclusive vehicles."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "PTT Youngin$",
+      "altNames": [
+        "PTT Youngin$ Compound",
+        "PTT Youngin$ Illegal Goods Store",
+        "Pit Youngin$ Illegal Goods Store"
+      ],
+      "slug": "ptt-youngins",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Additional Missions & Activities PTT Youngin$ Compound content, including a special robbery opportunity and exclusive contraband rewards.",
+          "quote": "Additional Missions & Activities PTT Youngin$ Compound content, including a special robbery opportunity and exclusive contraband rewards."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "Rideout Customs",
+      "altNames": [
+        "Ride Out Customs"
+      ],
+      "slug": "rideout-customs",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Extra Vehicle Content Access to two exclusive vehicle customization shops: Rideout Customs (Vice City) One-Eyed Willie's (Lake Leonida) Classic Car Collection side activity featuring restoration projects, including four Ultimate Edition-exclusive vehicles.",
+          "quote": "Extra Vehicle Content Access to two exclusive vehicle customization shops: Rideout Customs (Vice City) One-Eyed Willie's (Lake Leonida) Classic Car Collection side activity featuring restoration projects, including four Ultimate Edition-exclusive vehicles."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "Sara's Unisex Salon",
+      "altNames": [
+        "Saras Unisex Salon"
+      ],
+      "slug": "saras-unisex-salon",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Exclusive hairstyles, makeup, nails, and facial hair options from Sara's Unisex Salon.",
+          "quote": "Exclusive hairstyles, makeup, nails, and facial hair options from Sara's Unisex Salon."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "Stock 305",
+      "altNames": [],
+      "slug": "stock-305",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Access to Stock 305, an exclusive streetwear store.",
+          "quote": "Access to Stock 305, an exclusive streetwear store."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "But, if you want a box to put on your shelf and you also want the ultimate edition, you can buy the physical standard edition, and then buy the \"Ultimate Edition Upgrade,\" which basically turns your standard edition into the ultimate edition.",
+          "quote": "But, if you want a box to put on your shelf and you also want the ultimate edition, you can buy the physical standard edition, and then buy the \"Ultimate Edition Upgrade,\" which basically turns your standard edition into the ultimate edition."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Dinka Enduro motorcycle, Crest Kayak, and exclusive Vapid Ganado pickup truck upgrades at Jason's Safehouse.",
+          "quote": "Dinka Enduro motorcycle, Crest Kayak, and exclusive Vapid Ganado pickup truck upgrades at Jason's Safehouse."
+        },
+        {
+          "fact": "Exclusive Weapons Hawk & Little Morgan Revolver with unique Vice City-themed designs for Jason and Lucia.",
+          "quote": "Exclusive Weapons Hawk & Little Morgan Revolver with unique Vice City-themed designs for Jason and Lucia."
+        },
+        {
+          "fact": "Personalized versions of Jason's Girardi ES9 pistol and Lucia's Klose K17 pistol.",
+          "quote": "Personalized versions of Jason's Girardi ES9 pistol and Lucia's Klose K17 pistol."
+        },
+        {
+          "fact": "Cosmetics & Character Customization Exclusive outfits, tattoos, and accessories for Jason and Lucia.",
+          "quote": "Cosmetics & Character Customization Exclusive outfits, tattoos, and accessories for Jason and Lucia."
+        },
+        {
+          "fact": "Outfits and Hairstyles: Dress for excess with two Vice City luxury looks for both Jason and Lucia: Jason: An effortlessly chic linen suit in vintage pastel, complemented by the cut and coif of the decade of decadence.",
+          "quote": "Outfits and Hairstyles: Dress for excess with two Vice City luxury looks for both Jason and Lucia: Jason: An effortlessly chic linen suit in vintage pastel, complemented by the cut and coif of the decade of decadence."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Exclusive Weapons Hawk & Little Morgan Revolver with unique Vice City-themed designs for Jason and Lucia.",
+          "quote": "Exclusive Weapons Hawk & Little Morgan Revolver with unique Vice City-themed designs for Jason and Lucia."
+        },
+        {
+          "fact": "Personalized versions of Jason's Girardi ES9 pistol and Lucia's Klose K17 pistol.",
+          "quote": "Personalized versions of Jason's Girardi ES9 pistol and Lucia's Klose K17 pistol."
+        },
+        {
+          "fact": "Cosmetics & Character Customization Exclusive outfits, tattoos, and accessories for Jason and Lucia.",
+          "quote": "Cosmetics & Character Customization Exclusive outfits, tattoos, and accessories for Jason and Lucia."
+        },
+        {
+          "fact": "Outfits and Hairstyles: Dress for excess with two Vice City luxury looks for both Jason and Lucia: Jason: An effortlessly chic linen suit in vintage pastel, complemented by the cut and coif of the decade of decadence.",
+          "quote": "Outfits and Hairstyles: Dress for excess with two Vice City luxury looks for both Jason and Lucia: Jason: An effortlessly chic linen suit in vintage pastel, complemented by the cut and coif of the decade of decadence."
+        },
+        {
+          "fact": "Lucia: The world is yours in a red sequin mini dress and curls.",
+          "quote": "Lucia: The world is yours in a red sequin mini dress and curls."
+        }
+      ]
+    },
+    {
+      "entityType": "edition",
+      "name": "Standard Edition",
+      "altNames": [
+        "GTA 6 Standard Edition",
+        "GTA VI Standard Edition"
+      ],
+      "slug": "gta-6-standard-edition",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Physical copies of GTA 6 are only available for the standard edition.",
+          "quote": "Physical copies of GTA 6 are only available for the standard edition."
+        },
+        {
+          "fact": "But, if you want a box to put on your shelf and you also want the ultimate edition, you can buy the physical standard edition, and then buy the \"Ultimate Edition Upgrade,\" which basically turns your standard edition into the ultimate edition.",
+          "quote": "But, if you want a box to put on your shelf and you also want the ultimate edition, you can buy the physical standard edition, and then buy the \"Ultimate Edition Upgrade,\" which basically turns your standard edition into the ultimate edition."
+        }
+      ]
+    },
+    {
+      "entityType": "edition",
+      "name": "Ultimate Edition",
+      "altNames": [
+        "GTA 6 Ultimate Edition",
+        "GTA VI Ultimate Edition"
+      ],
+      "slug": "gta-6-ultimate-edition",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The ultimate edition comes with a bunch of extra in-game digital items, detailed below.",
+          "quote": "The ultimate edition comes with a bunch of extra in-game digital items, detailed below."
+        },
+        {
+          "fact": "But, if you want a box to put on your shelf and you also want the ultimate edition, you can buy the physical standard edition, and then buy the \"Ultimate Edition Upgrade,\" which basically turns your standard edition into the ultimate edition.",
+          "quote": "But, if you want a box to put on your shelf and you also want the ultimate edition, you can buy the physical standard edition, and then buy the \"Ultimate Edition Upgrade,\" which basically turns your standard edition into the ultimate edition."
+        },
+        {
+          "fact": "GTA 6 Ultimate Edition Screenshots View 51 Images GTA 6 Ultimate Edition Contents Exclusive Vehicles & Storage Vapid Dominator Buggy with access to the Paradise Garage, including a weapon locker and stash box.",
+          "quote": "GTA 6 Ultimate Edition Screenshots View 51 Images GTA 6 Ultimate Edition Contents Exclusive Vehicles & Storage Vapid Dominator Buggy with access to the Paradise Garage, including a weapon locker and stash box."
+        },
+        {
+          "fact": "Extra Vehicle Content Access to two exclusive vehicle customization shops: Rideout Customs (Vice City) One-Eyed Willie's (Lake Leonida) Classic Car Collection side activity featuring restoration projects, including four Ultimate Edition-exclusive vehicles.",
+          "quote": "Extra Vehicle Content Access to two exclusive vehicle customization shops: Rideout Customs (Vice City) One-Eyed Willie's (Lake Leonida) Classic Car Collection side activity featuring restoration projects, including four Ultimate Edition-exclusive vehicles."
+        }
+      ]
+    },
+    {
+      "entityType": "edition",
+      "name": "Vintage Vice City Pack",
+      "altNames": [
+        "Vintage Vice City pre-order pack",
+        "GTA 6 pre-order bonus"
+      ],
+      "slug": "vintage-vice-city-pack",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "GTA 6 Vintage Vice City Pack Screenshots View 12 Images GTA 6 Preorder Bonus - The Vintage Vice City Pack The Vintage Vice City Pack is included with all digital purchases of GTA 6 made prior to November 20, 2026, and with preorders of the physical version of GTA 6 while supplies last.",
+          "quote": "GTA 6 Vintage Vice City Pack Screenshots View 12 Images GTA 6 Preorder Bonus - The Vintage Vice City Pack The Vintage Vice City Pack is included with all digital purchases of GTA 6 made prior to November 20, 2026, and with preorders of the physical version of GTA 6 while supplies last."
+        },
+        {
+          "fact": "The Vintage Vice City Pack includes: ’55 Vapid Stanier and Shore Court Garage: Cruise Shore Drive in the legendary ’55 Vapid Stanier, a Vice City classic meant to be admired, and store it in a new personal garage just a stone’s throw from the glistening sands of Ocean Beach.",
+          "quote": "The Vintage Vice City Pack includes: ’55 Vapid Stanier and Shore Court Garage: Cruise Shore Drive in the legendary ’55 Vapid Stanier, a Vice City classic meant to be admired, and store it in a new personal garage just a stone’s throw from the glistening sands of Ocean Beach."
+        }
+      ]
+    },
+    {
+      "entityType": "landmark",
+      "name": "Ocean Beach",
+      "altNames": [
+        "Ocean Drive"
+      ],
+      "slug": "ocean-beach",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The Vintage Vice City Pack includes: ’55 Vapid Stanier and Shore Court Garage: Cruise Shore Drive in the legendary ’55 Vapid Stanier, a Vice City classic meant to be admired, and store it in a new personal garage just a stone’s throw from the glistening sands of Ocean Beach.",
+          "quote": "The Vintage Vice City Pack includes: ’55 Vapid Stanier and Shore Court Garage: Cruise Shore Drive in the legendary ’55 Vapid Stanier, a Vice City classic meant to be admired, and store it in a new personal garage just a stone’s throw from the glistening sands of Ocean Beach."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Lake Leonida",
+      "altNames": [],
+      "slug": "lake-leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Extra Vehicle Content Access to two exclusive vehicle customization shops: Rideout Customs (Vice City) One-Eyed Willie's (Lake Leonida) Classic Car Collection side activity featuring restoration projects, including four Ultimate Edition-exclusive vehicles.",
+          "quote": "Extra Vehicle Content Access to two exclusive vehicle customization shops: Rideout Customs (Vice City) One-Eyed Willie's (Lake Leonida) Classic Car Collection side activity featuring restoration projects, including four Ultimate Edition-exclusive vehicles."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Extra Vehicle Content Access to two exclusive vehicle customization shops: Rideout Customs (Vice City) One-Eyed Willie's (Lake Leonida) Classic Car Collection side activity featuring restoration projects, including four Ultimate Edition-exclusive vehicles.",
+          "quote": "Extra Vehicle Content Access to two exclusive vehicle customization shops: Rideout Customs (Vice City) One-Eyed Willie's (Lake Leonida) Classic Car Collection side activity featuring restoration projects, including four Ultimate Edition-exclusive vehicles."
+        },
+        {
+          "fact": "Like all personal garages in Leonida, you’ll have a weapon locker to customize your loadout for any occasion plus a secure place to deposit stolen goods for the local Fence, who will accept most stolen goods at a reasonably discounted rate.",
+          "quote": "Like all personal garages in Leonida, you’ll have a weapon locker to customize your loadout for any occasion plus a secure place to deposit stolen goods for the local Fence, who will accept most stolen goods at a reasonably discounted rate."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Extra Vehicle Content Access to two exclusive vehicle customization shops: Rideout Customs (Vice City) One-Eyed Willie's (Lake Leonida) Classic Car Collection side activity featuring restoration projects, including four Ultimate Edition-exclusive vehicles.",
+          "quote": "Extra Vehicle Content Access to two exclusive vehicle customization shops: Rideout Customs (Vice City) One-Eyed Willie's (Lake Leonida) Classic Car Collection side activity featuring restoration projects, including four Ultimate Edition-exclusive vehicles."
+        },
+        {
+          "fact": "Exclusive Weapons Hawk & Little Morgan Revolver with unique Vice City-themed designs for Jason and Lucia.",
+          "quote": "Exclusive Weapons Hawk & Little Morgan Revolver with unique Vice City-themed designs for Jason and Lucia."
+        },
+        {
+          "fact": "GTA 6 Vintage Vice City Pack Screenshots View 12 Images GTA 6 Preorder Bonus - The Vintage Vice City Pack The Vintage Vice City Pack is included with all digital purchases of GTA 6 made prior to November 20, 2026, and with preorders of the physical version of GTA 6 while supplies last.",
+          "quote": "GTA 6 Vintage Vice City Pack Screenshots View 12 Images GTA 6 Preorder Bonus - The Vintage Vice City Pack The Vintage Vice City Pack is included with all digital purchases of GTA 6 made prior to November 20, 2026, and with preorders of the physical version of GTA 6 while supplies last."
+        },
+        {
+          "fact": "The Vintage Vice City Pack includes: ’55 Vapid Stanier and Shore Court Garage: Cruise Shore Drive in the legendary ’55 Vapid Stanier, a Vice City classic meant to be admired, and store it in a new personal garage just a stone’s throw from the glistening sands of Ocean Beach.",
+          "quote": "The Vintage Vice City Pack includes: ’55 Vapid Stanier and Shore Court Garage: Cruise Shore Drive in the legendary ’55 Vapid Stanier, a Vice City classic meant to be admired, and store it in a new personal garage just a stone’s throw from the glistening sands of Ocean Beach."
+        },
+        {
+          "fact": "Outfits and Hairstyles: Dress for excess with two Vice City luxury looks for both Jason and Lucia: Jason: An effortlessly chic linen suit in vintage pastel, complemented by the cut and coif of the decade of decadence.",
+          "quote": "Outfits and Hairstyles: Dress for excess with two Vice City luxury looks for both Jason and Lucia: Jason: An effortlessly chic linen suit in vintage pastel, complemented by the cut and coif of the decade of decadence."
+        },
+        {
+          "fact": "Exclusive Weapon Pattern: Channel the original Vice City kingpin, Tommy Vercetti, and his iconic palm tree button-up with a tropical pattern available to adorn most guns.",
+          "quote": "Exclusive Weapon Pattern: Channel the original Vice City kingpin, Tommy Vercetti, and his iconic palm tree button-up with a tropical pattern available to adorn most guns."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "'55 Vapid Stanier Sedan",
+      "altNames": [
+        "55 Vapid Stanier",
+        "Vapid Stanier '55",
+        "Vapid Stanier 55",
+        "Stanier '55",
+        "Stanier Sedan"
+      ],
+      "slug": "55-vapid-stanier-sedan",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The Vintage Vice City Pack includes: ’55 Vapid Stanier and Shore Court Garage: Cruise Shore Drive in the legendary ’55 Vapid Stanier, a Vice City classic meant to be admired, and store it in a new personal garage just a stone’s throw from the glistening sands of Ocean Beach.",
+          "quote": "The Vintage Vice City Pack includes: ’55 Vapid Stanier and Shore Court Garage: Cruise Shore Drive in the legendary ’55 Vapid Stanier, a Vice City classic meant to be admired, and store it in a new personal garage just a stone’s throw from the glistening sands of Ocean Beach."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "'67 Vapid Dominator Buggy",
+      "altNames": [
+        "67 Vapid Dominator Buggy",
+        "Vapid Dominator '67 Buggy",
+        "Dominator '67 Buggy",
+        "Dominator Buggy"
+      ],
+      "slug": "67-vapid-dominator-buggy",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "GTA 6 Ultimate Edition Screenshots View 51 Images GTA 6 Ultimate Edition Contents Exclusive Vehicles & Storage Vapid Dominator Buggy with access to the Paradise Garage, including a weapon locker and stash box.",
+          "quote": "GTA 6 Ultimate Edition Screenshots View 51 Images GTA 6 Ultimate Edition Contents Exclusive Vehicles & Storage Vapid Dominator Buggy with access to the Paradise Garage, including a weapon locker and stash box."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "'95 Grotti Cheetah",
+      "altNames": [
+        "95 Grotti Cheetah",
+        "Grotti Cheetah",
+        "Cheetah"
+      ],
+      "slug": "95-grotti-cheetah",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "'95 Grotti Cheetah sports car with a retro-inspired design.",
+          "quote": "'95 Grotti Cheetah sports car with a retro-inspired design."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Crest kayak",
+      "altNames": [],
+      "slug": "unnamed-crest-kayak",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Dinka Enduro motorcycle, Crest Kayak, and exclusive Vapid Ganado pickup truck upgrades at Jason's Safehouse.",
+          "quote": "Dinka Enduro motorcycle, Crest Kayak, and exclusive Vapid Ganado pickup truck upgrades at Jason's Safehouse."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Crest Kayak",
+      "altNames": [
+        "Kayak",
+        "Crest kayak"
+      ],
+      "slug": "crest-kayak",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Dinka Enduro motorcycle, Crest Kayak, and exclusive Vapid Ganado pickup truck upgrades at Jason's Safehouse.",
+          "quote": "Dinka Enduro motorcycle, Crest Kayak, and exclusive Vapid Ganado pickup truck upgrades at Jason's Safehouse."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Dinka Enduro Motorcycle",
+      "altNames": [
+        "Dinka Enduro",
+        "Enduro Motorcycle",
+        "Dinka Enduro"
+      ],
+      "slug": "dinka-enduro-motorcycle",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Dinka Enduro motorcycle, Crest Kayak, and exclusive Vapid Ganado pickup truck upgrades at Jason's Safehouse.",
+          "quote": "Dinka Enduro motorcycle, Crest Kayak, and exclusive Vapid Ganado pickup truck upgrades at Jason's Safehouse."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Dominator",
+      "altNames": [],
+      "slug": "dominator",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "GTA 6 Ultimate Edition Screenshots View 51 Images GTA 6 Ultimate Edition Contents Exclusive Vehicles & Storage Vapid Dominator Buggy with access to the Paradise Garage, including a weapon locker and stash box.",
+          "quote": "GTA 6 Ultimate Edition Screenshots View 51 Images GTA 6 Ultimate Edition Contents Exclusive Vehicles & Storage Vapid Dominator Buggy with access to the Paradise Garage, including a weapon locker and stash box."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Shitzu Squalo",
+      "altNames": [
+        "Squalo",
+        "Shitzu Squalo"
+      ],
+      "slug": "shitzu-squalo",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Shitzu Squalo speedboat equipped with a weapons crate.",
+          "quote": "Shitzu Squalo speedboat equipped with a weapons crate."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Sports car",
+      "altNames": [],
+      "slug": "unnamed-sports-car",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "'95 Grotti Cheetah sports car with a retro-inspired design.",
+          "quote": "'95 Grotti Cheetah sports car with a retro-inspired design."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Squalo",
+      "altNames": [],
+      "slug": "squalo",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Shitzu Squalo speedboat equipped with a weapons crate.",
+          "quote": "Shitzu Squalo speedboat equipped with a weapons crate."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Stanier",
+      "altNames": [],
+      "slug": "stanier",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The Vintage Vice City Pack includes: ’55 Vapid Stanier and Shore Court Garage: Cruise Shore Drive in the legendary ’55 Vapid Stanier, a Vice City classic meant to be admired, and store it in a new personal garage just a stone’s throw from the glistening sands of Ocean Beach.",
+          "quote": "The Vintage Vice City Pack includes: ’55 Vapid Stanier and Shore Court Garage: Cruise Shore Drive in the legendary ’55 Vapid Stanier, a Vice City classic meant to be admired, and store it in a new personal garage just a stone’s throw from the glistening sands of Ocean Beach."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Vapid Ganado",
+      "altNames": [
+        "Ganado",
+        "Vapid Ganado pickup"
+      ],
+      "slug": "vapid-ganado",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Dinka Enduro motorcycle, Crest Kayak, and exclusive Vapid Ganado pickup truck upgrades at Jason's Safehouse.",
+          "quote": "Dinka Enduro motorcycle, Crest Kayak, and exclusive Vapid Ganado pickup truck upgrades at Jason's Safehouse."
+        }
+      ]
+    },
+    {
+      "entityType": "weapon",
+      "name": "Girardi ES9",
+      "altNames": [
+        "Girardi ES9 pistol",
+        "ES9"
+      ],
+      "slug": "girardi-es9",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Personalized versions of Jason's Girardi ES9 pistol and Lucia's Klose K17 pistol.",
+          "quote": "Personalized versions of Jason's Girardi ES9 pistol and Lucia's Klose K17 pistol."
+        }
+      ]
+    },
+    {
+      "entityType": "weapon",
+      "name": "Hawk and Little Morgan Revolver",
+      "altNames": [
+        "Hawk & Little Morgan Revolver",
+        "Morgan Revolver",
+        "Hawk and Little Morgan Revolvers"
+      ],
+      "slug": "hawk-and-little-morgan-revolver",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Exclusive Weapons Hawk & Little Morgan Revolver with unique Vice City-themed designs for Jason and Lucia.",
+          "quote": "Exclusive Weapons Hawk & Little Morgan Revolver with unique Vice City-themed designs for Jason and Lucia."
+        }
+      ]
+    },
+    {
+      "entityType": "weapon",
+      "name": "Klose K17",
+      "altNames": [
+        "Klose K17 pistol",
+        "K17"
+      ],
+      "slug": "klose-k17",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Personalized versions of Jason's Girardi ES9 pistol and Lucia's Klose K17 pistol.",
+          "quote": "Personalized versions of Jason's Girardi ES9 pistol and Lucia's Klose K17 pistol."
+        }
+      ]
+    },
+    {
+      "entityType": "weapon",
+      "name": "Pistol",
+      "altNames": [
+        "Handgun, 9mm"
+      ],
+      "slug": "pistol",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Personalized versions of Jason's Girardi ES9 pistol and Lucia's Klose K17 pistol.",
+          "quote": "Personalized versions of Jason's Girardi ES9 pistol and Lucia's Klose K17 pistol."
+        }
+      ]
+    }
+  ]
+}

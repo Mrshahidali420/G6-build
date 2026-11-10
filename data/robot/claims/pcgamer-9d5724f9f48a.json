@@ -1,0 +1,43 @@
+{
+  "rawId": "pcgamer-9d5724f9f48a",
+  "outlet": "PC Gamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pcgamer.com/games/grand-theft-auto/i-feel-better-than-ever-waiting-for-gta-6-on-pc-now-rockstar-confirms-its-targeting-30-fps-on-playstation-and-xbox/",
+  "published": "2026-11-10",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/yTKHqSdfMgjayUTSfEEiKF-2560-80.jpg",
+  "extractedAt": "2026-11-10T22:15:41.791Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        },
+        {
+          "fact": "When it comes time for me to luxuriate in the lights of Leonida, I want to do it with maximum butteriness , I want all the bells and whistles set to 'on', and I want to do it on a proper gaming platform ( German Linux ).",
+          "quote": "When it comes time for me to luxuriate in the lights of Leonida, I want to do it with maximum butteriness , I want all the bells and whistles set to 'on', and I want to do it on a proper gaming platform ( German Linux )."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "When it comes time for me to luxuriate in the lights of Leonida, I want to do it with maximum butteriness , I want all the bells and whistles set to 'on', and I want to do it on a proper gaming platform ( German Linux ).",
+          "quote": "When it comes time for me to luxuriate in the lights of Leonida, I want to do it with maximum butteriness , I want all the bells and whistles set to 'on', and I want to do it on a proper gaming platform ( German Linux )."
+        }
+      ]
+    }
+  ]
+}

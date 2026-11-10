@@ -1,0 +1,47 @@
+{
+  "rawId": "gamesradar-a40e06c711d7",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-on-xbox-one/",
+  "published": "2026-11-10",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/9GZY2vm8WAgZWF5sXvyjrg-2560-80.jpg",
+  "extractedAt": "2026-11-10T22:14:23.740Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        },
+        {
+          "fact": "Still, this does give players who haven't upgraded their Xboxes an opportunity to experience GTA 6 without having to splash out on expensive new hardware, so if you want to find out more then this is how to use an Xbox One to play GTA 6.",
+          "quote": "Still, this does give players who haven't upgraded their Xboxes an opportunity to experience GTA 6 without having to splash out on expensive new hardware, so if you want to find out more then this is how to use an Xbox One to play GTA 6."
+        },
+        {
+          "fact": "You should also be aware that Xbox has recently introduced monthly limits to Cloud Gaming playtime , ranging from just 5 hours per month on Game Pass Essential to 15 monthly hours on Ultimate, so this may not be a practical solution if you want to play through the entire game this way.",
+          "quote": "You should also be aware that Xbox has recently introduced monthly limits to Cloud Gaming playtime , ranging from just 5 hours per month on Game Pass Essential to 15 monthly hours on Ultimate, so this may not be a practical solution if you want to play through the entire game this way."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Latest Videos From GamesRadar+ Watch full video here: Start your criminal journey by learning how to steal cars in GTA 6 , or take a peaceful approach and find out which GTA 6 animals you'll see in Leonida. © GamesRadar+.",
+          "quote": "Latest Videos From GamesRadar+ Watch full video here: Start your criminal journey by learning how to steal cars in GTA 6 , or take a peaceful approach and find out which GTA 6 animals you'll see in Leonida. © GamesRadar+."
+        }
+      ]
+    }
+  ]
+}

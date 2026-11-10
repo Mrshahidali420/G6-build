@@ -1,0 +1,25 @@
+{
+  "rawId": "playstation-blog-80f3cc3e43d4",
+  "outlet": "PlayStation Blog",
+  "tier": "TIER_1_OFFICIAL",
+  "url": "https://blog.playstation.com/2026/11/10/pre-load-grand-theft-auto-vi-on-ps5-starting-today/",
+  "published": "2026-11-10",
+  "ogImage": "https://blog.playstation.com/tachyon/2048/11/f1fb77ba440f1402ae155dc56989230e7a24c2f8-scaled.jpg",
+  "extractedAt": "2026-11-10T22:15:48.225Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "PS5 and PS5 Pro Features Rockstar Games has developed Grand Theft Auto VI from the ground up to harness the power of the PlayStation 5 to create a stunning experience, with action-packed gameplay that brings the vast and rich world of Leonida to life.",
+          "quote": "PS5 and PS5 Pro Features Rockstar Games has developed Grand Theft Auto VI from the ground up to harness the power of the PlayStation 5 to create a stunning experience, with action-packed gameplay that brings the vast and rich world of Leonida to life."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "rawId": "purexbox-312711e9bb84",
+  "outlet": "Pure Xbox",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.purexbox.com/news/2026/11/gta-6-will-be-playable-on-xbox-one-through-xbox-cloud-gaming",
+  "published": "2026-11-10",
+  "ogImage": "https://images.purexbox.com/1ffbb6554e28b/1280x720.jpg",
+  "extractedAt": "2026-11-10T22:16:01.250Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "You don't want your console overheating just when the game finally comes out!",
+          "quote": "You don't want your console overheating just when the game finally comes out!"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "rawId": "gamesradar-55212254d834",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/i-want-an-uglier-gta-6-that-runs-at-60-fps-30-fps-on-ps5-and-xbox-series-x-is-more-reason-to-wait-for-pc/",
+  "published": "2026-11-10",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/Zb3Q2uW5q96AnLSCtr2AVA-1920-80.jpg",
+  "extractedAt": "2026-11-10T22:14:17.253Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        },
+        {
+          "fact": "Devs should make what they want, as ludicrously complex as they want it to be.",
+          "quote": "Devs should make what they want, as ludicrously complex as they want it to be."
+        },
+        {
+          "fact": "Hell, right now I just want consoles that people can actually afford, and pushing hardware to fruitlessly advance graphics won't get us those.",
+          "quote": "Hell, right now I just want consoles that people can actually afford, and pushing hardware to fruitlessly advance graphics won't get us those."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Phantom",
+      "altNames": [],
+      "slug": "phantom",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "A fast-paced martial arts game like Phantom Blade Zero would be seriously hurt by a low or inconsistent frame rate, for instance.",
+          "quote": "A fast-paced martial arts game like Phantom Blade Zero would be seriously hurt by a low or inconsistent frame rate, for instance."
+        }
+      ]
+    }
+  ]
+}

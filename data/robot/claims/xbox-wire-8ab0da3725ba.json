@@ -1,0 +1,137 @@
+{
+  "rawId": "xbox-wire-8ab0da3725ba",
+  "outlet": "Xbox Wire",
+  "tier": "TIER_1_OFFICIAL",
+  "url": "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
+  "published": "2026-11-10",
+  "ogImage": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/06/GTA-6-Official_Cover_Art_landscape-c3e36df9ed6c80b13d50.jpg",
+  "extractedAt": "2026-11-10T22:17:32.352Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Jason and Lucia have always known the deck is stacked against them.",
+          "quote": "Jason and Lucia have always known the deck is stacked against them."
+        },
+        {
+          "fact": "This purchase includes the Ultimate Edition Upgrade with exclusive in-game bonuses for Grand Theft Auto VI, available to Jason and Lucia across their story, with new items uncovered behind each chapter.",
+          "quote": "This purchase includes the Ultimate Edition Upgrade with exclusive in-game bonuses for Grand Theft Auto VI, available to Jason and Lucia across their story, with new items uncovered behind each chapter."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Jason and Lucia have always known the deck is stacked against them.",
+          "quote": "Jason and Lucia have always known the deck is stacked against them."
+        },
+        {
+          "fact": "This purchase includes the Ultimate Edition Upgrade with exclusive in-game bonuses for Grand Theft Auto VI, available to Jason and Lucia across their story, with new items uncovered behind each chapter.",
+          "quote": "This purchase includes the Ultimate Edition Upgrade with exclusive in-game bonuses for Grand Theft Auto VI, available to Jason and Lucia across their story, with new items uncovered behind each chapter."
+        }
+      ]
+    },
+    {
+      "entityType": "edition",
+      "name": "Ultimate Edition",
+      "altNames": [
+        "GTA 6 Ultimate Edition",
+        "GTA VI Ultimate Edition"
+      ],
+      "slug": "gta-6-ultimate-edition",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Grand Theft Auto VI: Ultimate Edition Rockstar Games ☆ ☆ ☆ ☆ ☆ 10889 ★ ★ ★ ★ ★ $99.99 Pre-order Purchase prior to 19 November 2026 23:59:59 to receive: -The Vintage Vice City Pack -One Month of GTA+ Receive a month of GTA+ with your pre-order; must be redeemed within 180 days after placing your pre-order.",
+          "quote": "Grand Theft Auto VI: Ultimate Edition Rockstar Games ☆ ☆ ☆ ☆ ☆ 10889 ★ ★ ★ ★ ★ $99.99 Pre-order Purchase prior to 19 November 2026 23:59:59 to receive: -The Vintage Vice City Pack -One Month of GTA+ Receive a month of GTA+ with your pre-order; must be redeemed within 180 days after placing your pre-order."
+        },
+        {
+          "fact": "This purchase includes the Ultimate Edition Upgrade with exclusive in-game bonuses for Grand Theft Auto VI, available to Jason and Lucia across their story, with new items uncovered behind each chapter.",
+          "quote": "This purchase includes the Ultimate Edition Upgrade with exclusive in-game bonuses for Grand Theft Auto VI, available to Jason and Lucia across their story, with new items uncovered behind each chapter."
+        },
+        {
+          "fact": "ULTIMATE EDITION UPGRADE Welcome to Leonida, the state where anything goes.",
+          "quote": "ULTIMATE EDITION UPGRADE Welcome to Leonida, the state where anything goes."
+        }
+      ]
+    },
+    {
+      "entityType": "edition",
+      "name": "Vintage Vice City Pack",
+      "altNames": [
+        "Vintage Vice City pre-order pack",
+        "GTA 6 pre-order bonus"
+      ],
+      "slug": "vintage-vice-city-pack",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Grand Theft Auto VI: Ultimate Edition Rockstar Games ☆ ☆ ☆ ☆ ☆ 10889 ★ ★ ★ ★ ★ $99.99 Pre-order Purchase prior to 19 November 2026 23:59:59 to receive: -The Vintage Vice City Pack -One Month of GTA+ Receive a month of GTA+ with your pre-order; must be redeemed within 180 days after placing your pre-order.",
+          "quote": "Grand Theft Auto VI: Ultimate Edition Rockstar Games ☆ ☆ ☆ ☆ ☆ 10889 ★ ★ ★ ★ ★ $99.99 Pre-order Purchase prior to 19 November 2026 23:59:59 to receive: -The Vintage Vice City Pack -One Month of GTA+ Receive a month of GTA+ with your pre-order; must be redeemed within 180 days after placing your pre-order."
+        },
+        {
+          "fact": "Grand Theft Auto VI Rockstar Games ☆ ☆ ☆ ☆ ☆ 10993 ★ ★ ★ ★ ★ $79.99 Pre-order Purchase prior to 19 November 2026 23:59:59 to receive: -The Vintage Vice City Pack -One Month of GTA+ Receive a month of GTA+ with your pre-order; must be redeemed within 180 days after placing your pre-order.",
+          "quote": "Grand Theft Auto VI Rockstar Games ☆ ☆ ☆ ☆ ☆ 10993 ★ ★ ★ ★ ★ $79.99 Pre-order Purchase prior to 19 November 2026 23:59:59 to receive: -The Vintage Vice City Pack -One Month of GTA+ Receive a month of GTA+ with your pre-order; must be redeemed within 180 days after placing your pre-order."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "ULTIMATE EDITION UPGRADE Welcome to Leonida, the state where anything goes.",
+          "quote": "ULTIMATE EDITION UPGRADE Welcome to Leonida, the state where anything goes."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Grand Theft Auto VI: Ultimate Edition Rockstar Games ☆ ☆ ☆ ☆ ☆ 10889 ★ ★ ★ ★ ★ $99.99 Pre-order Purchase prior to 19 November 2026 23:59:59 to receive: -The Vintage Vice City Pack -One Month of GTA+ Receive a month of GTA+ with your pre-order; must be redeemed within 180 days after placing your pre-order.",
+          "quote": "Grand Theft Auto VI: Ultimate Edition Rockstar Games ☆ ☆ ☆ ☆ ☆ 10889 ★ ★ ★ ★ ★ $99.99 Pre-order Purchase prior to 19 November 2026 23:59:59 to receive: -The Vintage Vice City Pack -One Month of GTA+ Receive a month of GTA+ with your pre-order; must be redeemed within 180 days after placing your pre-order."
+        },
+        {
+          "fact": "Rockstar Games, Grand Theft Auto, Grand Theft Auto VI, VI, Vice City, R*, and related logos are trademarks of Take-Two Interactive Software, Inc.",
+          "quote": "Rockstar Games, Grand Theft Auto, Grand Theft Auto VI, VI, Vice City, R*, and related logos are trademarks of Take-Two Interactive Software, Inc."
+        },
+        {
+          "fact": "Grand Theft Auto VI Rockstar Games ☆ ☆ ☆ ☆ ☆ 10993 ★ ★ ★ ★ ★ $79.99 Pre-order Purchase prior to 19 November 2026 23:59:59 to receive: -The Vintage Vice City Pack -One Month of GTA+ Receive a month of GTA+ with your pre-order; must be redeemed within 180 days after placing your pre-order.",
+          "quote": "Grand Theft Auto VI Rockstar Games ☆ ☆ ☆ ☆ ☆ 10993 ★ ★ ★ ★ ★ $79.99 Pre-order Purchase prior to 19 November 2026 23:59:59 to receive: -The Vintage Vice City Pack -One Month of GTA+ Receive a month of GTA+ with your pre-order; must be redeemed within 180 days after placing your pre-order."
+        }
+      ]
+    }
+  ]
+}

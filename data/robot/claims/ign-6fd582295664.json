@@ -1,0 +1,33 @@
+{
+  "rawId": "ign-6fd582295664",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/you-dont-need-a-current-gen-console-if-youre-happy-to-play-gta-6-at-xbox-series-s-settings",
+  "published": "2026-11-10",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/10/29/gta-6-jason-and-lucia-drive-by-1793234705694.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-11-10T22:14:56.191Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "If you do want to play GTA 6 this way, though, keep in mind that Xbox Cloud Gaming comes with its own list of caveats.",
+          "quote": "If you do want to play GTA 6 this way, though, keep in mind that Xbox Cloud Gaming comes with its own list of caveats."
+        },
+        {
+          "fact": "If you are going to play GTA 6 locally on your own console, you might want to save a nice chunk of storage for it, as it's going to take up 212GB of space .",
+          "quote": "If you are going to play GTA 6 locally on your own console, you might want to save a nice chunk of storage for it, as it's going to take up 212GB of space ."
+        },
+        {
+          "fact": "With a game that big, you're going to want to preload it if you want to play right when the game goes live too, and luckily preloads just went live this morning .",
+          "quote": "With a game that big, you're going to want to preload it if you want to play right when the game goes live too, and luckily preloads just went live this morning ."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "rawId": "ign-d8583052e453",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/gta-6-will-run-at-30fps-on-all-consoles-features-ray-tracing-improvements-on-ps5-pro",
+  "published": "2026-11-10",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/11/09/ultimate-edition-hawk-and-little-morgan-revolvers-01-1794266239211.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-11-10T22:15:15.706Z",
+  "entities": [
+    {
+      "entityType": "vehicle",
+      "name": "Phantom",
+      "altNames": [],
+      "slug": "phantom",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Zelda: Ocarina of Time Remake Gears of War: E-Day Phantom Blade Zero None -- wake me when it’s November 19th!",
+          "quote": "Zelda: Ocarina of Time Remake Gears of War: E-Day Phantom Blade Zero None -- wake me when it’s November 19th!"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "rawId": "purexbox-84181263932a",
+  "outlet": "Pure Xbox",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.purexbox.com/news/2026/11/heres-what-xbox-owners-need-to-know-about-moving-to-new-zealand-for-gta-6",
+  "published": "2026-11-10",
+  "ogImage": "https://images.purexbox.com/a1939561ec76f/1280x720.jpg",
+  "extractedAt": "2026-11-10T22:16:14.244Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Therefore, if people want to play the game as early as possible, they'll need to be in New Zealand - and the \"New Zealand Trick\" refers to changing your region in your console's settings, providing slightly early access to GTA 6.",
+          "quote": "Therefore, if people want to play the game as early as possible, they'll need to be in New Zealand - and the \"New Zealand Trick\" refers to changing your region in your console's settings, providing slightly early access to GTA 6."
+        },
+        {
+          "fact": "At that point, we expect all kinds of footage and screenshots to begin flooding social media, so you may want to have a bit of a digital detox until the 19th if you don't want to see anything.",
+          "quote": "At that point, we expect all kinds of footage and screenshots to begin flooding social media, so you may want to have a bit of a digital detox until the 19th if you don't want to see anything."
+        },
+        {
+          "fact": "And when they don’t want people using it, they opt for a simultaneous worldwide release instead of a midnight (0:00) launch in each individual country.",
+          "quote": "And when they don’t want people using it, they opt for a simultaneous worldwide release instead of a midnight (0:00) launch in each individual country."
+        }
+      ]
+    }
+  ]
+}

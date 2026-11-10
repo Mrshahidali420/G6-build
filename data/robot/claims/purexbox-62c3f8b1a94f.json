@@ -1,0 +1,43 @@
+{
+  "rawId": "purexbox-62c3f8b1a94f",
+  "outlet": "Pure Xbox",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.purexbox.com/news/2026/11/xbox-vs-ps5-gta-6-specs-revealed-and-these-are-the-biggest-differences",
+  "published": "2026-11-10",
+  "ogImage": "https://images.purexbox.com/2259805761ccf/1280x720.jpg",
+  "extractedAt": "2026-11-10T22:16:07.803Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Sony want to sell consoles and games for it.",
+          "quote": "Sony want to sell consoles and games for it."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Phil",
+      "altNames": [],
+      "slug": "phil",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "If we can buy the studios that make the most popular games, we can effectively eliminate the competition.\" - Phil Spencer Those emails didn't paint either platform in a particularly flattering light and just because they failed miserably doesn't change the intent.",
+          "quote": "If we can buy the studios that make the most popular games, we can effectively eliminate the competition.\" - Phil Spencer Those emails didn't paint either platform in a particularly flattering light and just because they failed miserably doesn't change the intent."
+        },
+        {
+          "fact": "It worked with Phil for a few years, but still believing every word they say and thinking any of these companies truly prioritizes “gamers” as they claim is truly naive.",
+          "quote": "It worked with Phil for a few years, but still believing every word they say and thinking any of these companies truly prioritizes “gamers” as they claim is truly naive."
+        }
+      ]
+    }
+  ]
+}

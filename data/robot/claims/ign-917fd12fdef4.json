@@ -1,0 +1,57 @@
+{
+  "rawId": "ign-917fd12fdef4",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/gta-6-preload-now-trailer-includes-nearly-30-seconds-of-new-footage-swat-team-nightclub-dancing-and-more",
+  "published": "2026-11-10",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/11/10/gta-1794323594152.png?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-11-10T22:15:09.202Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "We then see Lucia and Jason dancing together in a nightclub, before we switch to a racetrack in the daytime, where Lucia watches an enthusiastic driver do a backflip.",
+          "quote": "We then see Lucia and Jason dancing together in a nightclub, before we switch to a racetrack in the daytime, where Lucia watches an enthusiastic driver do a backflip."
+        },
+        {
+          "fact": "My best guess is these guys are part of the team that assaulted the building Jason and Lucia escape from in the Extended Look.",
+          "quote": "My best guess is these guys are part of the team that assaulted the building Jason and Lucia escape from in the Extended Look."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "We then see Lucia and Jason dancing together in a nightclub, before we switch to a racetrack in the daytime, where Lucia watches an enthusiastic driver do a backflip.",
+          "quote": "We then see Lucia and Jason dancing together in a nightclub, before we switch to a racetrack in the daytime, where Lucia watches an enthusiastic driver do a backflip."
+        },
+        {
+          "fact": "My best guess is these guys are part of the team that assaulted the building Jason and Lucia escape from in the Extended Look.",
+          "quote": "My best guess is these guys are part of the team that assaulted the building Jason and Lucia escape from in the Extended Look."
+        },
+        {
+          "fact": "GTA 6 Launch Screenshots View 39 Images We then see Lucia and a friend getting ready for a night out, before another character makes a dramatic exit, saying, “Oh, it is so on now!” GTA 6 launches on November 19, and we’ve got the global release times so you know when you can start playing .",
+          "quote": "GTA 6 Launch Screenshots View 39 Images We then see Lucia and a friend getting ready for a night out, before another character makes a dramatic exit, saying, “Oh, it is so on now!” GTA 6 launches on November 19, and we’ve got the global release times so you know when you can start playing ."
+        }
+      ]
+    }
+  ]
+}

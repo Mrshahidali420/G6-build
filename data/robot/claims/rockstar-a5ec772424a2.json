@@ -1,0 +1,25 @@
+{
+  "rawId": "rockstar-a5ec772424a2",
+  "outlet": "Rockstar Newswire",
+  "tier": "TIER_1_OFFICIAL",
+  "url": "https://www.rockstargames.com/newswire/article/o39o87a435a25a/grand-theft-auto-vi-the-festival",
+  "published": "2026-11-09",
+  "ogImage": "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/o39o87a435a25a/f14b9244ed05b99e611d0376ad7e0ec3b4f84aab.jpg",
+  "extractedAt": "2026-11-10T22:17:12.778Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Limit",
+      "altNames": [],
+      "slug": "limit",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Please note that if you turn off some types of Cookies, it may limit your experience on the Site and the services we are able to offer.",
+          "quote": "Please note that if you turn off some types of Cookies, it may limit your experience on the Site and the services we are able to offer."
+        }
+      ]
+    }
+  ]
+}

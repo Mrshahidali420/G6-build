@@ -1,0 +1,27 @@
+{
+  "rawId": "pushsquare-ceb7e61ffad1",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/11/gta-6-preload-is-now-available-for-all-digital-pre-orders-download-to-your-ps5-now",
+  "published": "2026-11-10",
+  "ogImage": "https://images.pushsquare.com/883ccbd5733e8/1280x720.jpg",
+  "extractedAt": "2026-11-10T22:16:40.263Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "I'm not ready, but I'm eagerly counting down the days to have my mind obliterated, like GTA V did before it, GTA IV before that, San Andreas, Vice City, III...",
+          "quote": "I'm not ready, but I'm eagerly counting down the days to have my mind obliterated, like GTA V did before it, GTA IV before that, San Andreas, Vice City, III..."
+        }
+      ]
+    }
+  ]
+}

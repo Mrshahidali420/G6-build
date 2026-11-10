@@ -1,0 +1,42 @@
+{
+  "rawId": "ign-026020857fc8",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/gta-6-fans-are-divided-over-confirmation-of-30fps",
+  "published": "2026-11-10",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/11/10/gta-6-pre-load-art-1794330386826.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-11-10T22:14:30.204Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Players can pre-load the game starting today , which they absolutely should if they want to play it as soon as it is available.",
+          "quote": "Players can pre-load the game starting today , which they absolutely should if they want to play it as soon as it is available."
+        }
+      ]
+    },
+    {
+      "entityType": "edition",
+      "name": "Ultimate Edition",
+      "altNames": [
+        "GTA 6 Ultimate Edition",
+        "GTA VI Ultimate Edition"
+      ],
+      "slug": "gta-6-ultimate-edition",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "One fan refunded the Ultimate Edition of GTA 6, noting they'll wait for the inevitable PS6 version that will likely have performance enhancements, possibly including 60fps.",
+          "quote": "One fan refunded the Ultimate Edition of GTA 6, noting they'll wait for the inevitable PS6 version that will likely have performance enhancements, possibly including 60fps."
+        }
+      ]
+    }
+  ]
+}

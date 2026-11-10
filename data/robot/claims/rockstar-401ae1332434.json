@@ -1,0 +1,53 @@
+{
+  "rawId": "rockstar-401ae1332434",
+  "outlet": "Rockstar Newswire",
+  "tier": "TIER_1_OFFICIAL",
+  "url": "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now",
+  "published": "2026-11-10",
+  "ogImage": "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/89834o94713o21/94f09130d07de4a50e3ab971e2b7d8c253b7c706.jpg",
+  "extractedAt": "2026-11-10T22:17:06.267Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Limit",
+      "altNames": [],
+      "slug": "limit",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Please note that if you turn off some types of Cookies, it may limit your experience on the Site and the services we are able to offer.",
+          "quote": "Please note that if you turn off some types of Cookies, it may limit your experience on the Site and the services we are able to offer."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "We want to thank everyone in the community for your incredible support, and we can’t wait to see you all in Leonida on November 19.",
+          "quote": "We want to thank everyone in the community for your incredible support, and we can’t wait to see you all in Leonida on November 19."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "We want to thank everyone in the community for your incredible support, and we can’t wait to see you all in Leonida on November 19.",
+          "quote": "We want to thank everyone in the community for your incredible support, and we can’t wait to see you all in Leonida on November 19."
+        }
+      ]
+    }
+  ]
+}

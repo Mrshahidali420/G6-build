@@ -1,0 +1,25 @@
+{
+  "rawId": "rockpapershotgun-cb5eb06d19a7",
+  "outlet": "Rock Paper Shotgun",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.rockpapershotgun.com/ahead-of-gta-6-and-as-concerns-over-genai-pc-ports-grow-take-twos-ceo-says-theyre-revving-up-their-technical-defences-and-legal-activites-over-piracy",
+  "published": "2026-11-10",
+  "ogImage": "https://assetsio.gnwcdn.com/gta-6-grand-theft-auto-6-main-characters-hot-4.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-11-10T22:16:59.765Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "I think it will be manageable and we are focused on it.\" Essentially: unless you want to face the wrath of the kinds of lawyers multi-billion dollar companies can afford, I wouldn't bother trying to clone GTA 6 with AI!",
+          "quote": "I think it will be manageable and we are focused on it.\" Essentially: unless you want to face the wrath of the kinds of lawyers multi-billion dollar companies can afford, I wouldn't bother trying to clone GTA 6 with AI!"
+        }
+      ]
+    }
+  ]
+}

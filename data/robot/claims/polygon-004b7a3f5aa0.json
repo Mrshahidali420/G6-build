@@ -1,0 +1,25 @@
+{
+  "rawId": "polygon-004b7a3f5aa0",
+  "outlet": "Polygon",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.polygon.com/gta-6-grand-theft-auto-preorders-nba-2k27/",
+  "published": "2026-11-10",
+  "ogImage": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/07/gta-6-setting-vice-city.jpg?w=1600&h=900&fit=crop",
+  "extractedAt": "2026-11-10T13:19:46.309Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "19 as gamers enter Leonida for the first time.",
+          "quote": "19 as gamers enter Leonida for the first time."
+        }
+      ]
+    }
+  ]
+}

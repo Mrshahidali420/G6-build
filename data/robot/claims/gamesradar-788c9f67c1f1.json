@@ -1,0 +1,25 @@
+{
+  "rawId": "gamesradar-788c9f67c1f1",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/take-two-boss-isnt-worried-about-gta-6-players-jailbreaking-ps5-consoles-and-modding-it-because-if-the-game-is-great-then-the-monetization-takes-care-of-itself/",
+  "published": "2026-11-10",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/q9VEvTmjqXdkuDN5ZDPPxh-1920-80.jpg",
+  "extractedAt": "2026-11-10T13:19:20.341Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    }
+  ]
+}

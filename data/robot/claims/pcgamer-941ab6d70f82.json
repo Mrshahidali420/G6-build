@@ -1,0 +1,25 @@
+{
+  "rawId": "pcgamer-941ab6d70f82",
+  "outlet": "PC Gamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pcgamer.com/games/grand-theft-auto/i-have-converted-gta-5-to-its-final-form-a-gta-6-countdown-app/",
+  "published": "2026-11-10",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/Uhxf4WLX2y9A75bEUnq5h7-1920-80.jpg",
+  "extractedAt": "2026-11-10T13:19:33.339Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    }
+  ]
+}

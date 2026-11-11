@@ -1,0 +1,53 @@
+{
+  "rawId": "gamesradar-f67c82f224c3",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/why-wasnt-gta-6-at-the-golden-joystick-awards/",
+  "published": "2026-11-11",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/fauxF3UVUEucerkpFVot2e-1920-80.jpg",
+  "extractedAt": "2026-11-11T23:22:49.921Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Contender",
+      "altNames": [],
+      "slug": "contender",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The rest of the major awards shows - namely the DICE, GDC, and BAFTA ceremonies - take place at the start of 2027, so GTA 6 will likely be a major contender there.",
+          "quote": "The rest of the major awards shows - namely the DICE, GDC, and BAFTA ceremonies - take place at the start of 2027, so GTA 6 will likely be a major contender there."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Phantom",
+      "altNames": [],
+      "slug": "phantom",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "That means that games like Dispatch, which launched late last year, or Phantom Blade Zero, which only just released, were eligible to be included in the 2026 show.",
+          "quote": "That means that games like Dispatch, which launched late last year, or Phantom Blade Zero, which only just released, were eligible to be included in the 2026 show."
+        }
+      ]
+    }
+  ]
+}

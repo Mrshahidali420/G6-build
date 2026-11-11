@@ -1,0 +1,81 @@
+{
+  "rawId": "ign-99d6c94726fc",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/new-gta-6-surprise-gameplay-seemingly-released-in-yet-another-viral-marketing-stunt",
+  "published": "2026-11-11",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/10/29/gta-6-jason-and-lucia-drive-by-1793234705694.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-11-11T23:22:56.364Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Some fans think that the two people recording are Jason and Lucia, respectively, though the footage isn't clear enough to be able to confidently make that determination.",
+          "quote": "Some fans think that the two people recording are Jason and Lucia, respectively, though the footage isn't clear enough to be able to confidently make that determination."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Some fans think that the two people recording are Jason and Lucia, respectively, though the footage isn't clear enough to be able to confidently make that determination.",
+          "quote": "Some fans think that the two people recording are Jason and Lucia, respectively, though the footage isn't clear enough to be able to confidently make that determination."
+        }
+      ]
+    },
+    {
+      "entityType": "landmark",
+      "name": "Ocean Beach",
+      "altNames": [
+        "Ocean Drive"
+      ],
+      "slug": "ocean-beach",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The footage shows someone driving down Ocean Drive, recording a bunch of flashy cars lined up while people wander past.",
+          "quote": "The footage shows someone driving down Ocean Drive, recording a bunch of flashy cars lined up while people wander past."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Back To Top Home › News › GTA 6 New GTA 6 Surprise Gameplay Seemingly Released in Yet Another Viral Marketing Stunt Only in Vice City.",
+          "quote": "Back To Top Home › News › GTA 6 New GTA 6 Surprise Gameplay Seemingly Released in Yet Another Viral Marketing Stunt Only in Vice City."
+        },
+        {
+          "fact": "Pre-loading has officially begun so fans can prepare for their trip to Vice City next week.",
+          "quote": "Pre-loading has officially begun so fans can prepare for their trip to Vice City next week."
+        }
+      ]
+    }
+  ]
+}

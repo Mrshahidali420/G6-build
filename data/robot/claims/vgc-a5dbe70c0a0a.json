@@ -1,0 +1,25 @@
+{
+  "rawId": "vgc-a5dbe70c0a0a",
+  "outlet": "VGC",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.videogameschronicle.com/news/the-games-that-defined-this-generation/",
+  "published": "2026-11-11",
+  "ogImage": "https://www.videogameschronicle.com/files/2023/08/baldurs-gate-3-b.jpg",
+  "extractedAt": "2026-11-11T23:23:54.976Z",
+  "entities": [
+    {
+      "entityType": "vehicle",
+      "name": "Phantom",
+      "altNames": [],
+      "slug": "phantom",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Not only is it still one of the most visually impressive and expansive open-world games, but 2023’s Phantom Liberty expansion solidified its position as one of the best sci-fi RPGs you can play.",
+          "quote": "Not only is it still one of the most visually impressive and expansive open-world games, but 2023’s Phantom Liberty expansion solidified its position as one of the best sci-fi RPGs you can play."
+        }
+      ]
+    }
+  ]
+}

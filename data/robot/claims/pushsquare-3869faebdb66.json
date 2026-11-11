@@ -1,0 +1,25 @@
+{
+  "rawId": "pushsquare-3869faebdb66",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/11/gta-6-preloading-is-causing-major-download-traffic-spikes-in-europe",
+  "published": "2026-11-11",
+  "ogImage": "https://images.pushsquare.com/860514e821a93/1280x720.jpg",
+  "extractedAt": "2026-11-11T23:23:41.959Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "It almost seems like GTA 6 could bring world peace 🙃🙃🙃 2 5 GeeEssEff 6 hours ago I am usually insanely strict with myself about pre ordering games before I see reviews but I didn’t want to get to it the day before release and find the internet has throttled with everyone doing the same thing.",
+          "quote": "It almost seems like GTA 6 could bring world peace 🙃🙃🙃 2 5 GeeEssEff 6 hours ago I am usually insanely strict with myself about pre ordering games before I see reviews but I didn’t want to get to it the day before release and find the internet has throttled with everyone doing the same thing."
+        }
+      ]
+    }
+  ]
+}

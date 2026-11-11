@@ -1,0 +1,25 @@
+{
+  "rawId": "polygon-ff400711794d",
+  "outlet": "Polygon",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.polygon.com/gta-6-new-gameplay-onlyindade-ai-real-fake-rockstar-instagram/",
+  "published": "2026-11-11",
+  "ogImage": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/jason_lucia_rooftop_landscape.jpg?w=1600&h=900&fit=crop",
+  "extractedAt": "2026-11-11T23:23:22.380Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In terms of visuals, the game developer just proved it still has plenty of Leonida to show off.",
+          "quote": "In terms of visuals, the game developer just proved it still has plenty of Leonida to show off."
+        }
+      ]
+    }
+  ]
+}

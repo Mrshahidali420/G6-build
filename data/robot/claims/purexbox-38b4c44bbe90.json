@@ -1,0 +1,87 @@
+{
+  "rawId": "purexbox-38b4c44bbe90",
+  "outlet": "Pure Xbox",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.purexbox.com/news/2026/11/gta-6-gets-its-first-unboxing-video-as-shipping-begins-for-xbox-and-ps5",
+  "published": "2026-11-11",
+  "ogImage": "https://images.purexbox.com/f7c13b44cd992/1280x720.jpg",
+  "extractedAt": "2026-11-11T23:23:35.449Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "It also now affirms that the poster contains the GTA 6 cover art on the front, and a piece of artwork for a female character on the back - not Lucia or Jason, but presumably a character that's heavily involved in the story regardless.",
+          "quote": "It also now affirms that the poster contains the GTA 6 cover art on the front, and a piece of artwork for a female character on the back - not Lucia or Jason, but presumably a character that's heavily involved in the story regardless."
+        },
+        {
+          "fact": "Forget Jason and Lucia, they’re just petty thugs.",
+          "quote": "Forget Jason and Lucia, they’re just petty thugs."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "It also now affirms that the poster contains the GTA 6 cover art on the front, and a piece of artwork for a female character on the back - not Lucia or Jason, but presumably a character that's heavily involved in the story regardless.",
+          "quote": "It also now affirms that the poster contains the GTA 6 cover art on the front, and a piece of artwork for a female character on the back - not Lucia or Jason, but presumably a character that's heavily involved in the story regardless."
+        },
+        {
+          "fact": "Forget Jason and Lucia, they’re just petty thugs.",
+          "quote": "Forget Jason and Lucia, they’re just petty thugs."
+        }
+      ]
+    },
+    {
+      "entityType": "edition",
+      "name": "Standard Edition",
+      "altNames": [
+        "GTA 6 Standard Edition",
+        "GTA VI Standard Edition"
+      ],
+      "slug": "gta-6-standard-edition",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "We're talking about the standard edition of GTA 6, not some small indie game made on a shoestring budget.",
+          "quote": "We're talking about the standard edition of GTA 6, not some small indie game made on a shoestring budget."
+        }
+      ]
+    },
+    {
+      "entityType": "edition",
+      "name": "Ultimate Edition",
+      "altNames": [
+        "GTA 6 Ultimate Edition",
+        "GTA VI Ultimate Edition"
+      ],
+      "slug": "gta-6-ultimate-edition",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "It clearly shows that GTA 6 comes with a download code, a separate code for Ultimate Edition content where applicable, and a double-sided poster as had been confirmed previously.",
+          "quote": "It clearly shows that GTA 6 comes with a download code, a separate code for Ultimate Edition content where applicable, and a double-sided poster as had been confirmed previously."
+        }
+      ]
+    }
+  ]
+}

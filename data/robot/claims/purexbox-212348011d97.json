@@ -1,0 +1,29 @@
+{
+  "rawId": "purexbox-212348011d97",
+  "outlet": "Pure Xbox",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.purexbox.com/news/2026/11/xbox-brings-its-free-tier-of-cloud-gaming-to-loads-more-players-today",
+  "published": "2026-11-11",
+  "ogImage": "https://images.purexbox.com/6003244045ef3/1280x720.jpg",
+  "extractedAt": "2026-11-11T23:23:28.886Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "0 8 Gabrie 9 mins ago @Balaam_ Anyone who doesn't have a console and doesn't want to or can't afford one.",
+          "quote": "0 8 Gabrie 9 mins ago @Balaam_ Anyone who doesn't have a console and doesn't want to or can't afford one."
+        },
+        {
+          "fact": "You buy the game you want to play, and “rent” the computing time needed to complete it on any device.",
+          "quote": "You buy the game you want to play, and “rent” the computing time needed to complete it on any device."
+        }
+      ]
+    }
+  ]
+}

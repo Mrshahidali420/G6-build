@@ -1,0 +1,33 @@
+{
+  "rawId": "gamesradar-8f1ca08f1ada",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/hardware/gaming-controllers/the-best-controllers-for-gta-6-the-gamepads-id-recommend-for-ps5-and-xbox-players-jumping-into-vice-city/",
+  "published": "2026-11-11",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/37hiLFtAfeBnr2PMHMnRKB-1920-80.jpg",
+  "extractedAt": "2026-11-11T23:22:36.919Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        },
+        {
+          "fact": "Whether you need a replacement, a spare, you want to invest in something a bit special to mark the occasion, or you're curious about what's out there, I've pulled together all the best controllers for GTA 6.",
+          "quote": "Whether you need a replacement, a spare, you want to invest in something a bit special to mark the occasion, or you're curious about what's out there, I've pulled together all the best controllers for GTA 6."
+        },
+        {
+          "fact": "Best PS5 pro controller for GTA 6 Sony DualSense Edge The DualSense Edge is the best alternative if you want something with a bit more oomph.",
+          "quote": "Best PS5 pro controller for GTA 6 Sony DualSense Edge The DualSense Edge is the best alternative if you want something with a bit more oomph."
+        }
+      ]
+    }
+  ]
+}

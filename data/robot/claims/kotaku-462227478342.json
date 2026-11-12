@@ -1,0 +1,61 @@
+{
+  "rawId": "kotaku-462227478342",
+  "outlet": "Kotaku",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://kotaku.com/gta-6-south-korea-for-featuring-too-many-out-of-context-penises-rockstar-2000756253",
+  "published": "2026-11-12",
+  "ogImage": "https://kotaku.com/app/uploads/2026/10/GTA-launch-trailer_0008_Hue_Saturation-3-1200x675.jpg",
+  "extractedAt": "2026-11-12T18:33:50.700Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "It appears the previous rulings had been based on leaked footage showing Jason running around in the buff .",
+          "quote": "It appears the previous rulings had been based on leaked footage showing Jason running around in the buff ."
+        },
+        {
+          "fact": "More specifically, Cyberleek shared videos of Jason hanging dong and Lucia skydiving in the nude .",
+          "quote": "More specifically, Cyberleek shared videos of Jason hanging dong and Lucia skydiving in the nude ."
+        },
+        {
+          "fact": "It sounds like the GCRB was concerned that Jason and Lucia could strip down to their birthday suits in normal gameplay, and the committee members only chose to approve the Adults Only rating once they were able to confirm otherwise.",
+          "quote": "It sounds like the GCRB was concerned that Jason and Lucia could strip down to their birthday suits in normal gameplay, and the committee members only chose to approve the Adults Only rating once they were able to confirm otherwise."
+        },
+        {
+          "fact": "This seems to indirectly imply that Jason cannot, in fact, hang dong in GTA 6 .",
+          "quote": "This seems to indirectly imply that Jason cannot, in fact, hang dong in GTA 6 ."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "More specifically, Cyberleek shared videos of Jason hanging dong and Lucia skydiving in the nude .",
+          "quote": "More specifically, Cyberleek shared videos of Jason hanging dong and Lucia skydiving in the nude ."
+        },
+        {
+          "fact": "It sounds like the GCRB was concerned that Jason and Lucia could strip down to their birthday suits in normal gameplay, and the committee members only chose to approve the Adults Only rating once they were able to confirm otherwise.",
+          "quote": "It sounds like the GCRB was concerned that Jason and Lucia could strip down to their birthday suits in normal gameplay, and the committee members only chose to approve the Adults Only rating once they were able to confirm otherwise."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "rawId": "gamesradar-8097618c2b14",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-was-almost-refused-classification-in-south-korea-due-to-the-sheer-amount-of-genitals-shown/",
+  "published": "2026-11-12",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/7GMWduYvHNCyQpEDcNjMch-1920-80.jpg",
+  "extractedAt": "2026-11-12T18:33:18.214Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Latest Videos From GamesRadar+ Watch full video here: Notably, it's mentioned that the leaked footage featuring Jason naked is not included in the final game.",
+          "quote": "Latest Videos From GamesRadar+ Watch full video here: Notably, it's mentioned that the leaked footage featuring Jason naked is not included in the final game."
+        }
+      ]
+    }
+  ]
+}

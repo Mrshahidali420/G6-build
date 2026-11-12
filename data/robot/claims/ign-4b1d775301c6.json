@@ -1,0 +1,41 @@
+{
+  "rawId": "ign-4b1d775301c6",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/new-gta-6-in-game-footage-continues-to-highlight-the-games-unbelievable-graphics",
+  "published": "2026-11-12",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/11/12/ultimate-edition-grotti-cheetah-02-1794504940864.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-11-12T18:33:31.155Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "It's clear that Rockstar traded higher performance in favor of visual fidelity, and while that may not be what some fans want, it is inevitably going to result in one of the most graphically advanced games we have ever seen.",
+          "quote": "It's clear that Rockstar traded higher performance in favor of visual fidelity, and while that may not be what some fans want, it is inevitably going to result in one of the most graphically advanced games we have ever seen."
+        }
+      ]
+    },
+    {
+      "entityType": "landmark",
+      "name": "Ocean Beach",
+      "altNames": [
+        "Ocean Drive"
+      ],
+      "slug": "ocean-beach",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The page posted footage of these cars sitting on GTA 6's version of Ocean Drive yesterday while a group of NPCs observed them.",
+          "quote": "The page posted footage of these cars sitting on GTA 6's version of Ocean Drive yesterday while a group of NPCs observed them."
+        }
+      ]
+    }
+  ]
+}

@@ -748,5 +748,53 @@
     "written": null,
     "refused": "2026-11-10",
     "reason": "an emoji appears in the written text"
+  },
+  "gamesradar-8097618c2b14": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-11-12",
+    "reason": "the number(s) 2000756253 appear in the writing but in no quote"
+  },
+  "kotaku-462227478342": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-11-12",
+    "reason": "the number(s) 2000756253 appear in the writing but in no quote"
+  },
+  "polygon-060ba9c3c584": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-11-12",
+    "reason": "the number(s) 2000756253 appear in the writing but in no quote"
+  },
+  "pushsquare-6e996503d911": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-11-12",
+    "reason": "the number(s) 2000756253 appear in the writing but in no quote"
+  },
+  "ign-4b1d775301c6": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-11-12",
+    "reason": "the number(s) 2000756038 appear in the writing but in no quote"
+  },
+  "kotaku-8997e40c0e01": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-11-12",
+    "reason": "the number(s) 2000756038 appear in the writing but in no quote"
+  },
+  "pushsquare-26825678174a": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-11-12",
+    "reason": "the number(s) 2000756038 appear in the writing but in no quote"
+  },
+  "pushsquare-dc0ecdae02ea": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-11-12",
+    "reason": "the number(s) 2000756038 appear in the writing but in no quote"
   }
 }

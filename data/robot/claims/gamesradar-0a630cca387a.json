@@ -1,0 +1,83 @@
+{
+  "rawId": "gamesradar-0a630cca387a",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/physical-gta-6-map-leaks-and-i-need-to-know-if-its-teasing-another-ufo-easter-egg/",
+  "published": "2026-11-12",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/GrtqtSun9vQVcmcsb63nDh-1920-80.jpg",
+  "extractedAt": "2026-11-12T18:32:58.740Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        },
+        {
+          "fact": "Bits of art suggest the kinds of activities and characters that'll be at each location – personally, I want to know why there's a UFO hovering over Breakwater Quarry.",
+          "quote": "Bits of art suggest the kinds of activities and characters that'll be at each location – personally, I want to know why there's a UFO hovering over Breakwater Quarry."
+        }
+      ]
+    },
+    {
+      "entityType": "landmark",
+      "name": "Little Cuba",
+      "altNames": [
+        "Little Havana"
+      ],
+      "slug": "little-cuba",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Latest Videos From GamesRadar+ Watch full video here: @videotech https://t.co/wWNbRxPVEU November 12, 2026 As for the likely real map, it names GTA 6 locations across Leonida, from Little Cuba on the outskirts of Vice City to Pelican Valley far to the south.",
+          "quote": "Latest Videos From GamesRadar+ Watch full video here: @videotech https://t.co/wWNbRxPVEU November 12, 2026 As for the likely real map, it names GTA 6 locations across Leonida, from Little Cuba on the outskirts of Vice City to Pelican Valley far to the south."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Games Action Games Grand Theft Auto GTA 6 Physical GTA 6 map leaks, and I need to know if it's teasing another UFO Easter egg News By Dustin Bailey Published 12 November 2026 Another map leak is teasing locations across Leonida a]:text-inherit [&>a]:underline\"> When you purchase through links on our site, we may earn an affiliate commission.",
+          "quote": "Games Action Games Grand Theft Auto GTA 6 Physical GTA 6 map leaks, and I need to know if it's teasing another UFO Easter egg News By Dustin Bailey Published 12 November 2026 Another map leak is teasing locations across Leonida a]:text-inherit [&>a]:underline\"> When you purchase through links on our site, we may earn an affiliate commission."
+        },
+        {
+          "fact": "The low-detail map doesn't reveal the full network of roads and areas in the game, but it does give us early confirmation of some in-game locations and a general outline of Leonida's highway system.",
+          "quote": "The low-detail map doesn't reveal the full network of roads and areas in the game, but it does give us early confirmation of some in-game locations and a general outline of Leonida's highway system."
+        },
+        {
+          "fact": "Latest Videos From GamesRadar+ Watch full video here: @videotech https://t.co/wWNbRxPVEU November 12, 2026 As for the likely real map, it names GTA 6 locations across Leonida, from Little Cuba on the outskirts of Vice City to Pelican Valley far to the south.",
+          "quote": "Latest Videos From GamesRadar+ Watch full video here: @videotech https://t.co/wWNbRxPVEU November 12, 2026 As for the likely real map, it names GTA 6 locations across Leonida, from Little Cuba on the outskirts of Vice City to Pelican Valley far to the south."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Latest Videos From GamesRadar+ Watch full video here: @videotech https://t.co/wWNbRxPVEU November 12, 2026 As for the likely real map, it names GTA 6 locations across Leonida, from Little Cuba on the outskirts of Vice City to Pelican Valley far to the south.",
+          "quote": "Latest Videos From GamesRadar+ Watch full video here: @videotech https://t.co/wWNbRxPVEU November 12, 2026 As for the likely real map, it names GTA 6 locations across Leonida, from Little Cuba on the outskirts of Vice City to Pelican Valley far to the south."
+        }
+      ]
+    }
+  ]
+}

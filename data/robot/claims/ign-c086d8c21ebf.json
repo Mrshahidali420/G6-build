@@ -1,0 +1,25 @@
+{
+  "rawId": "ign-c086d8c21ebf",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/popeyes-is-riding-the-gta-6-hype-with-a-new-spice-city-chicken-sandwich",
+  "published": "2026-11-12",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/11/10/popeyes-sandwich-1794351677687.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-11-12T18:33:44.167Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Those who have pre-ordered GTA 6 can pre-load the game now, and they will likely want to because the game is massive.",
+          "quote": "Those who have pre-ordered GTA 6 can pre-load the game now, and they will likely want to because the game is massive."
+        }
+      ]
+    }
+  ]
+}

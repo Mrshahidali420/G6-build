@@ -1,0 +1,56 @@
+{
+  "rawId": "pushsquare-6e996503d911",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/11/genital-exposure-has-never-appeared-this-frequently-gta-6-was-almost-refused-release-in-south-korea",
+  "published": "2026-11-12",
+  "ogImage": "https://images.pushsquare.com/ebb653e2ff4bc/1280x720.jpg",
+  "extractedAt": "2026-11-12T18:34:10.239Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Limit",
+      "altNames": [],
+      "slug": "limit",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Genitals To Avoid 6 19 Balaam_ 2 hours ago I’m of the Seinfeldian mindset. “I have a strict limit on the number of naked men I need to see in one day: zero.” 6 20 GenX79 2 hours ago Cyberpunk was the first game I played that featured similar content.",
+          "quote": "Genitals To Avoid 6 19 Balaam_ 2 hours ago I’m of the Seinfeldian mindset. “I have a strict limit on the number of naked men I need to see in one day: zero.” 6 20 GenX79 2 hours ago Cyberpunk was the first game I played that featured similar content."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "3 17 Brundleflies21 2 hours ago It's good that Rockstar want to show male genitalia..warts and all.",
+          "quote": "3 17 Brundleflies21 2 hours ago It's good that Rockstar want to show male genitalia..warts and all."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Not Jason's member getting me to buy a 900eur console...",
+          "quote": "Not Jason's member getting me to buy a 900eur console..."
+        }
+      ]
+    }
+  ]
+}

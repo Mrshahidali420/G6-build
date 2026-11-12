@@ -1,0 +1,109 @@
+{
+  "rawId": "polygon-7fddc53084f5",
+  "outlet": "Polygon",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.polygon.com/gta-6-map-leonidas-leak-merch-drop/",
+  "published": "2026-11-12",
+  "ogImage": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/gta-6-release-time-header.jpg?w=1600&h=900&fit=crop",
+  "extractedAt": "2026-11-12T18:34:03.700Z",
+  "entities": [
+    {
+      "entityType": "gameplay_feature",
+      "name": "Scuba Diving and Underwater Exploration",
+      "altNames": [
+        "swimming",
+        "diving",
+        "underwater gameplay"
+      ],
+      "slug": "scuba-diving-underwater-exploration",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Rockstar previously revealed that GTA 6 will let players freely explore Leonida beyond Vice City, where players can perform activities like kayaking, mini golf, street racing, jet skiing, parachuting, sunbathing, cave diving, nightclubbing, base-jumping, and more.",
+          "quote": "Rockstar previously revealed that GTA 6 will let players freely explore Leonida beyond Vice City, where players can perform activities like kayaking, mini golf, street racing, jet skiing, parachuting, sunbathing, cave diving, nightclubbing, base-jumping, and more."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonard County",
+      "altNames": [],
+      "slug": "leonard-county",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Leonard County has what appears to be a cowboy with assless chaps playing golf, while Mariana County seems like it will be full of gators and fish.",
+          "quote": "Leonard County has what appears to be a cowboy with assless chaps playing golf, while Mariana County seems like it will be full of gators and fish."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "This refers to Leonida, the game’s fictionalized rendition of Florida.",
+          "quote": "This refers to Leonida, the game’s fictionalized rendition of Florida."
+        },
+        {
+          "fact": "Rockstar previously revealed that GTA 6 will let players freely explore Leonida beyond Vice City, where players can perform activities like kayaking, mini golf, street racing, jet skiing, parachuting, sunbathing, cave diving, nightclubbing, base-jumping, and more.",
+          "quote": "Rockstar previously revealed that GTA 6 will let players freely explore Leonida beyond Vice City, where players can perform activities like kayaking, mini golf, street racing, jet skiing, parachuting, sunbathing, cave diving, nightclubbing, base-jumping, and more."
+        },
+        {
+          "fact": "Related Big GTA 6 map leak looks legit, and may reveal scope of the game Leaked map of Leonida matches recent teases given by GTA Online Posts Google is changing how it surfaces content.",
+          "quote": "Related Big GTA 6 map leak looks legit, and may reveal scope of the game Leaked map of Leonida matches recent teases given by GTA Online Posts Google is changing how it surfaces content."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Mariana County",
+      "altNames": [],
+      "slug": "mariana-county",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Leonard County has what appears to be a cowboy with assless chaps playing golf, while Mariana County seems like it will be full of gators and fish.",
+          "quote": "Leonard County has what appears to be a cowboy with assless chaps playing golf, while Mariana County seems like it will be full of gators and fish."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Rockstar previously revealed that GTA 6 will let players freely explore Leonida beyond Vice City, where players can perform activities like kayaking, mini golf, street racing, jet skiing, parachuting, sunbathing, cave diving, nightclubbing, base-jumping, and more.",
+          "quote": "Rockstar previously revealed that GTA 6 will let players freely explore Leonida beyond Vice City, where players can perform activities like kayaking, mini golf, street racing, jet skiing, parachuting, sunbathing, cave diving, nightclubbing, base-jumping, and more."
+        }
+      ]
+    },
+    {
+      "entityType": "wildlife",
+      "name": "Fish",
+      "altNames": [],
+      "slug": "fish",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Leonard County has what appears to be a cowboy with assless chaps playing golf, while Mariana County seems like it will be full of gators and fish.",
+          "quote": "Leonard County has what appears to be a cowboy with assless chaps playing golf, while Mariana County seems like it will be full of gators and fish."
+        }
+      ]
+    }
+  ]
+}

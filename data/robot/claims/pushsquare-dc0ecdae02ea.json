@@ -1,0 +1,131 @@
+{
+  "rawId": "pushsquare-dc0ecdae02ea",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/11/these-new-gta-6-clips-look-so-real-fans-cant-believe-its-all-in-game-footage",
+  "published": "2026-11-12",
+  "ogImage": "https://images.pushsquare.com/8b3f634e3dcfc/1280x720.jpg",
+  "extractedAt": "2026-11-12T18:34:16.739Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "I want it because I like GTA but Im waiting as I need to see how it runs on base PS5.",
+          "quote": "I want it because I like GTA but Im waiting as I need to see how it runs on base PS5."
+        },
+        {
+          "fact": "0 48 RoomWithaMoose 1 hour ago Listen, I really don't want to get into the Zelda vs.",
+          "quote": "0 48 RoomWithaMoose 1 hour ago Listen, I really don't want to get into the Zelda vs."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "It is stunt, Jason films from car and Lucia does it from street.",
+          "quote": "It is stunt, Jason films from car and Lucia does it from street."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "It is stunt, Jason films from car and Lucia does it from street.",
+          "quote": "It is stunt, Jason films from car and Lucia does it from street."
+        }
+      ]
+    },
+    {
+      "entityType": "landmark",
+      "name": "Cortez Hotel",
+      "altNames": [],
+      "slug": "cortez-hotel",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The clip begins with a view from inside a moving vehicle as it drives past the Cortez Hotel, a Vice City location inspired by the real world Colony Hotel in Miami.",
+          "quote": "The clip begins with a view from inside a moving vehicle as it drives past the Cortez Hotel, a Vice City location inspired by the real world Colony Hotel in Miami."
+        }
+      ]
+    },
+    {
+      "entityType": "landmark",
+      "name": "Ocean Beach",
+      "altNames": [
+        "Ocean Drive"
+      ],
+      "slug": "ocean-beach",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "That short clip absolutely nails the vibe and atmosphere of Ocean Drive, one of Miami Beach’s most iconic streets!",
+          "quote": "That short clip absolutely nails the vibe and atmosphere of Ocean Drive, one of Miami Beach’s most iconic streets!"
+        },
+        {
+          "fact": "Obviously living there is different to visiting, but Ocean Drive felt so magical and I loved driving around the area toward it too.",
+          "quote": "Obviously living there is different to visiting, but Ocean Drive felt so magical and I loved driving around the area toward it too."
+        }
+      ]
+    },
+    {
+      "entityType": "landmark",
+      "name": "The Fence",
+      "altNames": [],
+      "slug": "the-fence",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Same clop runned teitce, you can see both phones in hand to each other 1 15 Kidfunkadelic83 4 hours ago Im on the fence.",
+          "quote": "Same clop runned teitce, you can see both phones in hand to each other 1 15 Kidfunkadelic83 4 hours ago Im on the fence."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Confirmed by Rockstar Games. pic.twitter.com/RsXST3C6t6 - GTA 6 Updates (@gtasix_) November 11, 2026 Originally posted by onlyindade on Instagram , the video has since been shared by the official Rockstar Games account, with many taking that as confirmation it's actually a video of Vice City within GTA 6.",
+          "quote": "Confirmed by Rockstar Games. pic.twitter.com/RsXST3C6t6 - GTA 6 Updates (@gtasix_) November 11, 2026 Originally posted by onlyindade on Instagram , the video has since been shared by the official Rockstar Games account, with many taking that as confirmation it's actually a video of Vice City within GTA 6."
+        },
+        {
+          "fact": "The clip begins with a view from inside a moving vehicle as it drives past the Cortez Hotel, a Vice City location inspired by the real world Colony Hotel in Miami.",
+          "quote": "The clip begins with a view from inside a moving vehicle as it drives past the Cortez Hotel, a Vice City location inspired by the real world Colony Hotel in Miami."
+        }
+      ]
+    }
+  ]
+}

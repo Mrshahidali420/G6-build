@@ -1,0 +1,75 @@
+{
+  "rawId": "ign-0921ac2ebf99",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/gtas-strangest-myths-a-full-history",
+  "published": "2026-11-12",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/11/09/gta-myths-1794236071663.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-11-12T18:33:24.706Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Beast",
+      "altNames": [],
+      "slug": "beast",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The pursuit of Bigfoot in San Andreas by the blossoming online myth-hunting community mirrors much of the real world search for the elusive beast.",
+          "quote": "The pursuit of Bigfoot in San Andreas by the blossoming online myth-hunting community mirrors much of the real world search for the elusive beast."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "Limit",
+      "altNames": [],
+      "slug": "limit",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "GTA: San Andreas pushes the aging game engine to its limit, producing lots of little moments of unreality in a game designed to simulate modern(ish) life.",
+          "quote": "GTA: San Andreas pushes the aging game engine to its limit, producing lots of little moments of unreality in a game designed to simulate modern(ish) life."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "You can fly in by helicopter or drop in from a plane, but if you want a more leisurely ride to the peak and have 10 bucks to spare, a cable car will carry you up in comfort.",
+          "quote": "You can fly in by helicopter or drop in from a plane, but if you want a more leisurely ride to the peak and have 10 bucks to spare, a cable car will carry you up in comfort."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Dodo",
+      "altNames": [],
+      "slug": "dodo",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Consider the Dodo, a Cessna with clipped wings that barely achieves liftoff.",
+          "quote": "Consider the Dodo, a Cessna with clipped wings that barely achieves liftoff."
+        },
+        {
+          "fact": "But the Dodo was never intended to fly.",
+          "quote": "But the Dodo was never intended to fly."
+        },
+        {
+          "fact": "An airworthy Dodo would outrun the game’s ability to load itself.",
+          "quote": "An airworthy Dodo would outrun the game’s ability to load itself."
+        }
+      ]
+    }
+  ]
+}

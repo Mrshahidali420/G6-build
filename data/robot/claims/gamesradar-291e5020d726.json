@@ -1,0 +1,51 @@
+{
+  "rawId": "gamesradar-291e5020d726",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/hardware/peripherals/elgato-corsair-and-twitch-team-up-with-a-bundle-to-help-you-stream-gta-6-console-gameplay-but-the-cheapest-option-costs-almost-as-much-as-a-ps5/",
+  "published": "2026-11-12",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/4GnaUAfUTuf6fDyBYhF97H-1920-80.jpg",
+  "extractedAt": "2026-11-12T18:33:05.195Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Limit",
+      "altNames": [],
+      "slug": "limit",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Case in point, the game will only run at 30fps, regardless of the platform you're playing on, and broadcasting in 4K60 is still the limit for streaming on Twitch and YouTube .",
+          "quote": "Case in point, the game will only run at 30fps, regardless of the platform you're playing on, and broadcasting in 4K60 is still the limit for streaming on Twitch and YouTube ."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        },
+        {
+          "fact": "For many content creators who only play and share gameplay from a PC, that means a heavy adjustment to their setup if they want to create content around Rockstar's heavily anticipated title.",
+          "quote": "For many content creators who only play and share gameplay from a PC, that means a heavy adjustment to their setup if they want to create content around Rockstar's heavily anticipated title."
+        },
+        {
+          "fact": "Elgato Streaming Kit (4k X & MP600 Elite 1TB) Fair enough if you&#39;re a pro level content creator with plenty of money to spend on this sort of thing, and fair enough if you want to spare no expense to get the best spec of capture card available.",
+          "quote": "Elgato Streaming Kit (4k X & MP600 Elite 1TB) Fair enough if you&#39;re a pro level content creator with plenty of money to spend on this sort of thing, and fair enough if you want to spare no expense to get the best spec of capture card available."
+        },
+        {
+          "fact": "If you actually need one of the fastest and best all-round PS5 SSDs, and you want one of the best capture cards that can capture and passthrough 4K 144 frames per second then go for it - but I really don't think that's necessary for anyone just buying this stuff for GTA 6.",
+          "quote": "If you actually need one of the fastest and best all-round PS5 SSDs, and you want one of the best capture cards that can capture and passthrough 4K 144 frames per second then go for it - but I really don't think that's necessary for anyone just buying this stuff for GTA 6."
+        }
+      ]
+    }
+  ]
+}

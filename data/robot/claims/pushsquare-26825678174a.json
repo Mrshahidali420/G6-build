@@ -1,0 +1,45 @@
+{
+  "rawId": "pushsquare-26825678174a",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/11/this-gta-6-clip-looks-so-real-fans-cant-believe-its-in-game-footage",
+  "published": "2026-11-12",
+  "ogImage": "https://images.pushsquare.com/8b3f634e3dcfc/1280x720.jpg",
+  "extractedAt": "2026-11-12T13:37:04.597Z",
+  "entities": [
+    {
+      "entityType": "landmark",
+      "name": "Cortez Hotel",
+      "altNames": [],
+      "slug": "cortez-hotel",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The clip begins with a view from inside a moving vehicle as it drives past the Cortez Hotel, a Vice City location inspired by the real world Colony Hotel in Miami.",
+          "quote": "The clip begins with a view from inside a moving vehicle as it drives past the Cortez Hotel, a Vice City location inspired by the real world Colony Hotel in Miami."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Confirmed by Rockstar Games. pic.twitter.com/RsXST3C6t6 - GTA 6 Updates (@gtasix_) November 11, 2026 Originally posted by onlyindade on Instagram , the video has since been shared by the official Rockstar Games account, with many taking that as confirmation it's actually a video of Vice City within GTA 6.",
+          "quote": "Confirmed by Rockstar Games. pic.twitter.com/RsXST3C6t6 - GTA 6 Updates (@gtasix_) November 11, 2026 Originally posted by onlyindade on Instagram , the video has since been shared by the official Rockstar Games account, with many taking that as confirmation it's actually a video of Vice City within GTA 6."
+        },
+        {
+          "fact": "The clip begins with a view from inside a moving vehicle as it drives past the Cortez Hotel, a Vice City location inspired by the real world Colony Hotel in Miami.",
+          "quote": "The clip begins with a view from inside a moving vehicle as it drives past the Cortez Hotel, a Vice City location inspired by the real world Colony Hotel in Miami."
+        }
+      ]
+    }
+  ]
+}

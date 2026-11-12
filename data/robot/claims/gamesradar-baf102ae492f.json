@@ -1,0 +1,47 @@
+{
+  "rawId": "gamesradar-baf102ae492f",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/hardware/headsets-headphones/the-best-headsets-for-gta-6/",
+  "published": "2026-11-12",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/mf5jUYjNUDaURyPYvejQh-1920-80.jpg",
+  "extractedAt": "2026-11-12T13:36:45.129Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        },
+        {
+          "fact": "Finding the best headset for GTA 6 means working out what you want from your experience, and which audio features the game itself will actually be asking of your tech.",
+          "quote": "Finding the best headset for GTA 6 means working out what you want from your experience, and which audio features the game itself will actually be asking of your tech."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The best gaming headsets will take full advantage of each console's spatial audio capabilities while adding extra features like simultaneous 2.4GHz and Bluetooth (for running your own soundtrack over Leonida), ANC, and fine-tuned EQ settings.",
+          "quote": "The best gaming headsets will take full advantage of each console's spatial audio capabilities while adding extra features like simultaneous 2.4GHz and Bluetooth (for running your own soundtrack over Leonida), ANC, and fine-tuned EQ settings."
+        },
+        {
+          "fact": "ANC keeps the rest of the world firmly away from your Leonida adventures, while hot-swappable batteries mean you'll never need to charge up before jumping into the action.",
+          "quote": "ANC keeps the rest of the world firmly away from your Leonida adventures, while hot-swappable batteries mean you'll never need to charge up before jumping into the action."
+        }
+      ]
+    }
+  ]
+}

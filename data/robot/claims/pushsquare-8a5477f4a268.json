@@ -1,0 +1,79 @@
+{
+  "rawId": "pushsquare-8a5477f4a268",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/guides/gta-6-release-times-when-can-you-start-playing",
+  "published": "2026-10-28",
+  "ogImage": "https://images.pushsquare.com/43e69a3687e26/1280x720.jpg",
+  "extractedAt": "2026-11-12T13:37:11.145Z",
+  "entities": [
+    {
+      "entityType": "edition",
+      "name": "Standard Edition",
+      "altNames": [
+        "GTA 6 Standard Edition",
+        "GTA VI Standard Edition"
+      ],
+      "slug": "gta-6-standard-edition",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The two PS5 digital versions on offer are: Standard Edition and Ultimate Edition .",
+          "quote": "The two PS5 digital versions on offer are: Standard Edition and Ultimate Edition ."
+        }
+      ]
+    },
+    {
+      "entityType": "edition",
+      "name": "Ultimate Edition",
+      "altNames": [
+        "GTA 6 Ultimate Edition",
+        "GTA VI Ultimate Edition"
+      ],
+      "slug": "gta-6-ultimate-edition",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The two PS5 digital versions on offer are: Standard Edition and Ultimate Edition .",
+          "quote": "The two PS5 digital versions on offer are: Standard Edition and Ultimate Edition ."
+        },
+        {
+          "fact": "Either way I'm pre ordering my ultimate edition on Friday and will be there minute one, never mind day one!",
+          "quote": "Either way I'm pre ordering my ultimate edition on Friday and will be there minute one, never mind day one!"
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "None are perfect to me but they all have their charms 1 5 WorldsAway Wed 28th Oct 2026 Finishing up my return to Vice City on the PS2 emulated PS4 port (never playing definitive editions) tonight after I finish that old BBC film The War Game.",
+          "quote": "None are perfect to me but they all have their charms 1 5 WorldsAway Wed 28th Oct 2026 Finishing up my return to Vice City on the PS2 emulated PS4 port (never playing definitive editions) tonight after I finish that old BBC film The War Game."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Watson Bay",
+      "altNames": [],
+      "slug": "watson-bay",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Conveniently store it at the Paradise Garage in Watson Bay, which features a weapon locker plus a secure place to deposit stolen goods to be fenced.",
+          "quote": "Conveniently store it at the Paradise Garage in Watson Bay, which features a weapon locker plus a secure place to deposit stolen goods to be fenced."
+        }
+      ]
+    }
+  ]
+}

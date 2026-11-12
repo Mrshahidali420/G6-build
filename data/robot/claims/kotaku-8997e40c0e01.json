@@ -1,0 +1,61 @@
+{
+  "rawId": "kotaku-8997e40c0e01",
+  "outlet": "Kotaku",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://kotaku.com/this-isnt-a-video-from-miami-its-a-gta-6-gameplay-clip-2000756038",
+  "published": "2026-11-11",
+  "ogImage": "https://kotaku.com/app/uploads/2026/11/GTa-6-reallife-vid-1200x675.jpg",
+  "extractedAt": "2026-11-12T00:57:44.115Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Some believe that if you look closely at the sidewalk, you can spot Jason and Lucia recording the second part of the video.",
+          "quote": "Some believe that if you look closely at the sidewalk, you can spot Jason and Lucia recording the second part of the video."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Some believe that if you look closely at the sidewalk, you can spot Jason and Lucia recording the second part of the video.",
+          "quote": "Some believe that if you look closely at the sidewalk, you can spot Jason and Lucia recording the second part of the video."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Its latest move appears to be a gameplay clip showing off Vice City that tricked some people into thinking it was real footage.",
+          "quote": "Its latest move appears to be a gameplay clip showing off Vice City that tricked some people into thinking it was real footage."
+        }
+      ]
+    }
+  ]
+}

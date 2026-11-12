@@ -1,0 +1,61 @@
+{
+  "rawId": "pushsquare-bd9560a0346c",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/11/gta-6-launch-leads-to-special-holiday-for-all-palworld-dev-employees",
+  "published": "2026-11-12",
+  "ogImage": "https://images.pushsquare.com/6ce053a4adbd2/1280x720.jpg",
+  "extractedAt": "2026-11-12T22:38:58.833Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Manage Topics News Pocketpair Rockstar Games PS5 GTA GTA 6 Launch Leads to Special Holiday for All Palworld Dev Employees Leonida here we come by Stephen Tailby 4 hours ago Share: Image: Push Square GTA 6 launches in one week's time, and the anticipation and excitement for the game is hard to ignore.",
+          "quote": "Manage Topics News Pocketpair Rockstar Games PS5 GTA GTA 6 Launch Leads to Special Holiday for All Palworld Dev Employees Leonida here we come by Stephen Tailby 4 hours ago Share: Image: Push Square GTA 6 launches in one week's time, and the anticipation and excitement for the game is hard to ignore."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "All Pocketpair employees have been granted special leave to attend to an urgent five-day business trip in Vice City when GTA6 launches.",
+          "quote": "All Pocketpair employees have been granted special leave to attend to an urgent five-day business trip in Vice City when GTA6 launches."
+        },
+        {
+          "fact": "Can't wait to lock into vice city, and then use more of my PTO the next week for a Christmas vacay!",
+          "quote": "Can't wait to lock into vice city, and then use more of my PTO the next week for a Christmas vacay!"
+        }
+      ]
+    },
+    {
+      "entityType": "weapon",
+      "name": "Rocket Launcher",
+      "altNames": [
+        "RPG"
+      ],
+      "slug": "rocket-launcher",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Also yes my dinosaur has a rocket launcher.",
+          "quote": "Also yes my dinosaur has a rocket launcher."
+        }
+      ]
+    }
+  ]
+}

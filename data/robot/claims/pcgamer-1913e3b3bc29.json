@@ -1,0 +1,87 @@
+{
+  "rawId": "pcgamer-1913e3b3bc29",
+  "outlet": "PC Gamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pcgamer.com/games/grand-theft-auto/south-korean-game-rating-board-almost-blocked-gta-6s-release-fearing-its-out-of-context-genital-nudity-would-disrupt-social-order/",
+  "published": "2026-11-12",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/BngP9Kz6o4g3nurmmSzKYf-1759-80.jpg",
+  "extractedAt": "2026-11-12T22:38:45.917Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Its researchers concluded that, after playing the game more thoroughly, scenes featuring full-frontal nudity didn't allow for any sexual interaction, and that cutscene sequences where protagonists Jason and Lucia did do sex at each other didn't expose any genitalia.",
+          "quote": "Its researchers concluded that, after playing the game more thoroughly, scenes featuring full-frontal nudity didn't allow for any sexual interaction, and that cutscene sequences where protagonists Jason and Lucia did do sex at each other didn't expose any genitalia."
+        },
+        {
+          "fact": "Interestingly, the GCRB researchers also confirmed that they couldn't replicate the ability to fully strip Jason and Lucia of their clothes that was shown in Cyberleek videos, inadvertently confirming that the GTA 6 build that'll be available to the public won't allow players to roam Vice City in the nude.",
+          "quote": "Interestingly, the GCRB researchers also confirmed that they couldn't replicate the ability to fully strip Jason and Lucia of their clothes that was shown in Cyberleek videos, inadvertently confirming that the GTA 6 build that'll be available to the public won't allow players to roam Vice City in the nude."
+        },
+        {
+          "fact": "Apologies if you were particularly invested in seeing Jason's dong.",
+          "quote": "Apologies if you were particularly invested in seeing Jason's dong."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Its researchers concluded that, after playing the game more thoroughly, scenes featuring full-frontal nudity didn't allow for any sexual interaction, and that cutscene sequences where protagonists Jason and Lucia did do sex at each other didn't expose any genitalia.",
+          "quote": "Its researchers concluded that, after playing the game more thoroughly, scenes featuring full-frontal nudity didn't allow for any sexual interaction, and that cutscene sequences where protagonists Jason and Lucia did do sex at each other didn't expose any genitalia."
+        },
+        {
+          "fact": "Interestingly, the GCRB researchers also confirmed that they couldn't replicate the ability to fully strip Jason and Lucia of their clothes that was shown in Cyberleek videos, inadvertently confirming that the GTA 6 build that'll be available to the public won't allow players to roam Vice City in the nude.",
+          "quote": "Interestingly, the GCRB researchers also confirmed that they couldn't replicate the ability to fully strip Jason and Lucia of their clothes that was shown in Cyberleek videos, inadvertently confirming that the GTA 6 build that'll be available to the public won't allow players to roam Vice City in the nude."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Interestingly, the GCRB researchers also confirmed that they couldn't replicate the ability to fully strip Jason and Lucia of their clothes that was shown in Cyberleek videos, inadvertently confirming that the GTA 6 build that'll be available to the public won't allow players to roam Vice City in the nude.",
+          "quote": "Interestingly, the GCRB researchers also confirmed that they couldn't replicate the ability to fully strip Jason and Lucia of their clothes that was shown in Cyberleek videos, inadvertently confirming that the GTA 6 build that'll be available to the public won't allow players to roam Vice City in the nude."
+        }
+      ]
+    }
+  ]
+}

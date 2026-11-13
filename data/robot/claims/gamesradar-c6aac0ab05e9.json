@@ -1,0 +1,25 @@
+{
+  "rawId": "gamesradar-c6aac0ab05e9",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/ps5-jailbreak-dev-says-just-buy-gta-6-because-things-arent-looking-good-for-a-game-dump-dont-say-i-didnt-warn-you/",
+  "published": "2026-11-13",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/iMZ4fo3KMu7yRL2FouceCg-1920-80.jpg",
+  "extractedAt": "2026-11-13T12:55:04.935Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    }
+  ]
+}

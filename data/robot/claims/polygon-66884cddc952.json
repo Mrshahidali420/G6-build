@@ -1,0 +1,45 @@
+{
+  "rawId": "polygon-66884cddc952",
+  "outlet": "Polygon",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.polygon.com/gta-6-preorders-1-billion-dollars-ps5-xbox-series-x/",
+  "published": "2026-11-13",
+  "ogImage": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/lucia_caminos_10.jpg?w=1600&h=900&fit=crop",
+  "extractedAt": "2026-11-13T18:00:34.979Z",
+  "entities": [
+    {
+      "entityType": "edition",
+      "name": "Standard Edition",
+      "altNames": [
+        "GTA 6 Standard Edition",
+        "GTA VI Standard Edition"
+      ],
+      "slug": "gta-6-standard-edition",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "That makes the average price of each sale about $97, meaning the majority of players are opting for the more expensive Ultimate Edition ($99.99) rather than the standard edition ($79.99).",
+          "quote": "That makes the average price of each sale about $97, meaning the majority of players are opting for the more expensive Ultimate Edition ($99.99) rather than the standard edition ($79.99)."
+        }
+      ]
+    },
+    {
+      "entityType": "edition",
+      "name": "Ultimate Edition",
+      "altNames": [
+        "GTA 6 Ultimate Edition",
+        "GTA VI Ultimate Edition"
+      ],
+      "slug": "gta-6-ultimate-edition",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "That makes the average price of each sale about $97, meaning the majority of players are opting for the more expensive Ultimate Edition ($99.99) rather than the standard edition ($79.99).",
+          "quote": "That makes the average price of each sale about $97, meaning the majority of players are opting for the more expensive Ultimate Edition ($99.99) rather than the standard edition ($79.99)."
+        }
+      ]
+    }
+  ]
+}

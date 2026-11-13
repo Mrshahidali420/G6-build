@@ -1,0 +1,31 @@
+{
+  "rawId": "eurogamer-fd4a54098e8e",
+  "outlet": "Eurogamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.eurogamer.net/grand-theft-auto-gaming-memory-competition-gta-6-win",
+  "published": "2026-11-13",
+  "ogImage": "https://assetsio.gnwcdn.com/lucia-dreams-about-gta-6-(1).jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-11-13T18:00:02.474Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The other distinct GTA memory I have is of playing Vice City and San Andreas one summer after I'd broken my arm and leg.",
+          "quote": "The other distinct GTA memory I have is of playing Vice City and San Andreas one summer after I'd broken my arm and leg."
+        },
+        {
+          "fact": "That's what remembering Vice City and San Andreas conjures for me.",
+          "quote": "That's what remembering Vice City and San Andreas conjures for me."
+        }
+      ]
+    }
+  ]
+}

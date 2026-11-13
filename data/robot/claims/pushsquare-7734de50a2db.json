@@ -1,0 +1,95 @@
+{
+  "rawId": "pushsquare-7734de50a2db",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/11/gta-6s-in-game-animated-tv-series-macca-and-friends-hints-at-the-games-absurd-scope",
+  "published": "2026-11-13",
+  "ogImage": "https://images.pushsquare.com/c932b184eb73d/1280x720.jpg",
+  "extractedAt": "2026-11-13T18:00:47.999Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Pick your activities and do what you want There will be opposite players who will watch every episode of those shows.",
+          "quote": "Pick your activities and do what you want There will be opposite players who will watch every episode of those shows."
+        },
+        {
+          "fact": "And, if I'm immersed, it should basically feel about the same as doing that, which is why they strive to do it - they want people engaged in their game for longer.",
+          "quote": "And, if I'm immersed, it should basically feel about the same as doing that, which is why they strive to do it - they want people engaged in their game for longer."
+        },
+        {
+          "fact": "0 28 danzoEX 41 mins ago I want new Princess Robot Bubblegum episodes 0 29 waynesworld 35 mins ago Rockstar's attention to detail and world building is next level 0 Show Comments Leave A Comment Hold on there, you need to login to post a comment...",
+          "quote": "0 28 danzoEX 41 mins ago I want new Princess Robot Bubblegum episodes 0 29 waynesworld 35 mins ago Rockstar's attention to detail and world building is next level 0 Show Comments Leave A Comment Hold on there, you need to login to post a comment..."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "3 17 Nalim 1 hour ago I hope Jason and Lucia have a console at their home, where we can play GTA, GTA 2 and GTA London 3 18 LogicStrikesAgain 1 hour ago Thats crazy.",
+          "quote": "3 17 Nalim 1 hour ago I hope Jason and Lucia have a console at their home, where we can play GTA, GTA 2 and GTA London 3 18 LogicStrikesAgain 1 hour ago Thats crazy."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "3 17 Nalim 1 hour ago I hope Jason and Lucia have a console at their home, where we can play GTA, GTA 2 and GTA London 3 18 LogicStrikesAgain 1 hour ago Thats crazy.",
+          "quote": "3 17 Nalim 1 hour ago I hope Jason and Lucia have a console at their home, where we can play GTA, GTA 2 and GTA London 3 18 LogicStrikesAgain 1 hour ago Thats crazy."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The show \"follows the adventures of Macca the Gator and his wetland friends across the state of Leonida.\" This won't be the only thing you can tune into, either; according to Kinda Funny , there are multiple shows that have been created, including a \"novela\" and another animated show called The Johnsons .",
+          "quote": "The show \"follows the adventures of Macca the Gator and his wetland friends across the state of Leonida.\" This won't be the only thing you can tune into, either; according to Kinda Funny , there are multiple shows that have been created, including a \"novela\" and another animated show called The Johnsons ."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "State of Leonida",
+      "altNames": [],
+      "slug": "state-of-leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The show \"follows the adventures of Macca the Gator and his wetland friends across the state of Leonida.\" This won't be the only thing you can tune into, either; according to Kinda Funny , there are multiple shows that have been created, including a \"novela\" and another animated show called The Johnsons .",
+          "quote": "The show \"follows the adventures of Macca the Gator and his wetland friends across the state of Leonida.\" This won't be the only thing you can tune into, either; according to Kinda Funny , there are multiple shows that have been created, including a \"novela\" and another animated show called The Johnsons ."
+        }
+      ]
+    }
+  ]
+}

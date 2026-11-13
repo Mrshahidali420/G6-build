@@ -1,0 +1,59 @@
+{
+  "rawId": "polygon-13fa33301f0a",
+  "outlet": "Polygon",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.polygon.com/gta-6-rockstar-macca-and-friends-animated-trailer/",
+  "published": "2026-11-13",
+  "ogImage": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/05/cal_hampton_landscape.jpg?w=1600&h=900&fit=crop",
+  "extractedAt": "2026-11-13T18:00:28.471Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Players will, of course, be able to engage in the main story of Jason and Lucia, but there's going to be endless side activities as well.",
+          "quote": "Players will, of course, be able to engage in the main story of Jason and Lucia, but there's going to be endless side activities as well."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Players will, of course, be able to engage in the main story of Jason and Lucia, but there's going to be endless side activities as well.",
+          "quote": "Players will, of course, be able to engage in the main story of Jason and Lucia, but there's going to be endless side activities as well."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "It follows the titular Macca, an anthropomorphic, sunglasses-wearing, pink alligator living his life in Leonida, Grand Theft Auto's version of Florida.",
+          "quote": "It follows the titular Macca, an anthropomorphic, sunglasses-wearing, pink alligator living his life in Leonida, Grand Theft Auto's version of Florida."
+        }
+      ]
+    }
+  ]
+}

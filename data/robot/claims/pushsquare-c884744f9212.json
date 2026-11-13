@@ -1,0 +1,43 @@
+{
+  "rawId": "pushsquare-c884744f9212",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/11/psa-gta-6-does-not-have-online-multiplayer-at-launch",
+  "published": "2026-11-13",
+  "ogImage": "https://images.pushsquare.com/99c10bed6b2dc/1280x720.jpg",
+  "extractedAt": "2026-11-13T18:01:01.016Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Shark",
+      "altNames": [],
+      "slug": "shark",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "But that’s where they rake in a lot of their billions I guess, from the online chumps that blow thousands on shark cards.",
+          "quote": "But that’s where they rake in a lot of their billions I guess, from the online chumps that blow thousands on shark cards."
+        }
+      ]
+    },
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "30fps no online I can’t wait until the PC version, but due to FOMO i’m getting it on MidStation 5 first whenever online drops. i’m one of the very few that actually doesn’t care about the story and just want to hop straight online.",
+          "quote": "30fps no online I can’t wait until the PC version, but due to FOMO i’m getting it on MidStation 5 first whenever online drops. i’m one of the very few that actually doesn’t care about the story and just want to hop straight online."
+        },
+        {
+          "fact": "1 15 Fishysensei 1 hour ago As long as the game doesn't have achievements/trophies for the multiplayer mode baked into the initial release, they can release any eventual multiplayer mode as DLC(paid or free doesn't matter) whenever they want.",
+          "quote": "1 15 Fishysensei 1 hour ago As long as the game doesn't have achievements/trophies for the multiplayer mode baked into the initial release, they can release any eventual multiplayer mode as DLC(paid or free doesn't matter) whenever they want."
+        }
+      ]
+    }
+  ]
+}

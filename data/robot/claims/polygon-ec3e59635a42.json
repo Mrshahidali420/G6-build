@@ -1,0 +1,29 @@
+{
+  "rawId": "polygon-ec3e59635a42",
+  "outlet": "Polygon",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.polygon.com/gta-6-nov-13-patch-102-what-is-download-size-ps5-xbox/",
+  "published": "2026-11-13",
+  "ogImage": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/vice_city_24-1.jpg?w=1600&h=900&fit=crop",
+  "extractedAt": "2026-11-13T18:00:41.484Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "You've got at least one more thing you need to download if you want to enjoy Rockstar's open-world game the moment it goes live on Nov.",
+          "quote": "You've got at least one more thing you need to download if you want to enjoy Rockstar's open-world game the moment it goes live on Nov."
+        },
+        {
+          "fact": "Pokémon Go raid schedule for November 2026's legendary and Mega Pokémon Thread 1 Sign in to your Polygon.com account We want to hear from you.",
+          "quote": "Pokémon Go raid schedule for November 2026's legendary and Mega Pokémon Thread 1 Sign in to your Polygon.com account We want to hear from you."
+        }
+      ]
+    }
+  ]
+}

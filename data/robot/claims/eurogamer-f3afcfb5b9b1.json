@@ -1,0 +1,98 @@
+{
+  "rawId": "eurogamer-f3afcfb5b9b1",
+  "outlet": "Eurogamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.eurogamer.net/gta-6-map-leak-online-collectors-edition",
+  "published": "2026-11-13",
+  "ogImage": "https://assetsio.gnwcdn.com/GTA-6-Jason-Duval.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-11-13T17:59:55.960Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "I'll spare you the geographic details confirmed on the map in case you want to go in unspoiled.",
+          "quote": "I'll spare you the geographic details confirmed on the map in case you want to go in unspoiled."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "6 comments Follow Grand Theft Auto 6 Prioritise us on Google With less than a week to go before GTA 6's hugely anticipated release , the game's final map - or at least a stylised poster version of it, depicting the state of Leonida's key landmarks - has surfaced online.",
+          "quote": "6 comments Follow Grand Theft Auto 6 Prioritise us on Google With less than a week to go before GTA 6's hugely anticipated release , the game's final map - or at least a stylised poster version of it, depicting the state of Leonida's key landmarks - has surfaced online."
+        },
+        {
+          "fact": "And while the newly leaked map is far from granular, it does at least appear to confirm Leonida's rough layout and the key locations players can visit this time.",
+          "quote": "And while the newly leaked map is far from granular, it does at least appear to confirm Leonida's rough layout and the key locations players can visit this time."
+        },
+        {
+          "fact": "Watch on YouTube Assuming the map's veracity, it's all rendered in an art style somewhere between mid-century tourism poster and Adult Swim, featuring the phrase \"The Goodtime State\" up top - a riff on the actual Florida's nickname, The Sunshine State - while Leonida's most notable points of interest are interspersed with cartoon figures.",
+          "quote": "Watch on YouTube Assuming the map's veracity, it's all rendered in an art style somewhere between mid-century tourism poster and Adult Swim, featuring the phrase \"The Goodtime State\" up top - a riff on the actual Florida's nickname, The Sunshine State - while Leonida's most notable points of interest are interspersed with cartoon figures."
+        },
+        {
+          "fact": "The map itself appears to be the \"double-Sided souvenir poster with map of Leonida\" included in Rockstar's eyewateringly expensive GTA 6 Collector's Edition .",
+          "quote": "The map itself appears to be the \"double-Sided souvenir poster with map of Leonida\" included in Rockstar's eyewateringly expensive GTA 6 Collector's Edition ."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "State of Leonida",
+      "altNames": [],
+      "slug": "state-of-leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "6 comments Follow Grand Theft Auto 6 Prioritise us on Google With less than a week to go before GTA 6's hugely anticipated release , the game's final map - or at least a stylised poster version of it, depicting the state of Leonida's key landmarks - has surfaced online.",
+          "quote": "6 comments Follow Grand Theft Auto 6 Prioritise us on Google With less than a week to go before GTA 6's hugely anticipated release , the game's final map - or at least a stylised poster version of it, depicting the state of Leonida's key landmarks - has surfaced online."
+        }
+      ]
+    },
+    {
+      "entityType": "release_fact",
+      "name": "GTA 6 platforms",
+      "altNames": [
+        "GTA VI platforms"
+      ],
+      "slug": "gta-6-platforms",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Rockstar offers a small glimmer of hope GTA 6 might be censored in Japan, if the game's smaller install size and lack of \"strong sexual content\" warning is anything to go by GTA 6 pre-load date, time and file size GTA 6 Platforms explained GTA 6 Release Date and Time &copy; 2026 Eurogamer.net a brand of IGN Entertainment, Inc.",
+          "quote": "Rockstar offers a small glimmer of hope GTA 6 might be censored in Japan, if the game's smaller install size and lack of \"strong sexual content\" warning is anything to go by GTA 6 pre-load date, time and file size GTA 6 Platforms explained GTA 6 Release Date and Time &copy; 2026 Eurogamer.net a brand of IGN Entertainment, Inc."
+        }
+      ]
+    },
+    {
+      "entityType": "release_fact",
+      "name": "GTA 6 release date",
+      "altNames": [
+        "GTA VI release date",
+        "Grand Theft Auto 6 release date"
+      ],
+      "slug": "gta-6-release-date",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Rockstar offers a small glimmer of hope GTA 6 might be censored in Japan, if the game's smaller install size and lack of \"strong sexual content\" warning is anything to go by GTA 6 pre-load date, time and file size GTA 6 Platforms explained GTA 6 Release Date and Time &copy; 2026 Eurogamer.net a brand of IGN Entertainment, Inc.",
+          "quote": "Rockstar offers a small glimmer of hope GTA 6 might be censored in Japan, if the game's smaller install size and lack of \"strong sexual content\" warning is anything to go by GTA 6 pre-load date, time and file size GTA 6 Platforms explained GTA 6 Release Date and Time &copy; 2026 Eurogamer.net a brand of IGN Entertainment, Inc."
+        }
+      ]
+    }
+  ]
+}

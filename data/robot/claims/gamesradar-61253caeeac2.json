@@ -1,0 +1,41 @@
+{
+  "rawId": "gamesradar-61253caeeac2",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/hardware/gaming-controllers/best-buy-launches-its-black-friday-doorbuster-sale-but-this-is-the-only-deal-wed-recommend-the-weekend-before-gta-6/",
+  "published": "2026-11-13",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/x7umV4MRUHx6U2k35DPUsB-1920-80.jpg",
+  "extractedAt": "2026-11-13T18:00:08.973Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "And its triggers are well-shaped for all the driving you'll do around Vice City.",
+          "quote": "And its triggers are well-shaped for all the driving you'll do around Vice City."
+        }
+      ]
+    }
+  ]
+}

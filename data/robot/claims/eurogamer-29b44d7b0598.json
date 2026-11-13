@@ -1,0 +1,33 @@
+{
+  "rawId": "eurogamer-29b44d7b0598",
+  "outlet": "Eurogamer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.eurogamer.net/introducing-gta-and-not-gta-theme-weeks",
+  "published": "2026-11-13",
+  "ogImage": "https://assetsio.gnwcdn.com/EG26_GtaWeek_HeaderImage_Dev2b.png?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+  "extractedAt": "2026-11-13T17:59:49.501Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "If that - coupled with the inevitable wave of coverage that already comes from an enormous moment in video games like this - sounds like the last thing you want from us, well frankly, we get it.",
+          "quote": "If that - coupled with the inevitable wave of coverage that already comes from an enormous moment in video games like this - sounds like the last thing you want from us, well frankly, we get it."
+        },
+        {
+          "fact": "Matching big games with big coverage is a part of the brief at a site like Eurogamer, but it's also far from the only thing we want to be about.",
+          "quote": "Matching big games with big coverage is a part of the brief at a site like Eurogamer, but it's also far from the only thing we want to be about."
+        },
+        {
+          "fact": "And we know it's far from the only thing you're going to want to read about for the rest of November, either.",
+          "quote": "And we know it's far from the only thing you're going to want to read about for the rest of November, either."
+        }
+      ]
+    }
+  ]
+}

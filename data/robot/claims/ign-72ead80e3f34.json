@@ -1,0 +1,47 @@
+{
+  "rawId": "ign-72ead80e3f34",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/gta-6-has-a-whole-animated-tv-series-you-can-watch-in-game",
+  "published": "2026-11-13",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/11/13/screenshot-2026-11-13-150934-1794582618953.png?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-11-13T18:00:15.470Z",
+  "entities": [
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The series follows the adventures of Macca the Gator and his wetland friends across the state of Leonida.",
+          "quote": "The series follows the adventures of Macca the Gator and his wetland friends across the state of Leonida."
+        },
+        {
+          "fact": "There’s a talking sun, lots of other talking animals, and a police station. “The series follows the adventures of Macca the Gator and his wetland friends across the state of Leonida,” reads the description.",
+          "quote": "There’s a talking sun, lots of other talking animals, and a police station. “The series follows the adventures of Macca the Gator and his wetland friends across the state of Leonida,” reads the description."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "State of Leonida",
+      "altNames": [],
+      "slug": "state-of-leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The series follows the adventures of Macca the Gator and his wetland friends across the state of Leonida.",
+          "quote": "The series follows the adventures of Macca the Gator and his wetland friends across the state of Leonida."
+        },
+        {
+          "fact": "There’s a talking sun, lots of other talking animals, and a police station. “The series follows the adventures of Macca the Gator and his wetland friends across the state of Leonida,” reads the description.",
+          "quote": "There’s a talking sun, lots of other talking animals, and a police station. “The series follows the adventures of Macca the Gator and his wetland friends across the state of Leonida,” reads the description."
+        }
+      ]
+    }
+  ]
+}

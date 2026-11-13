@@ -1,0 +1,53 @@
+{
+  "rawId": "ign-9cbc4dfde5bb",
+  "outlet": "IGN",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.ign.com/articles/gta-6s-burger-shot-restaurant-is-expanding-across-florida-with-real-meals-inspired-by-the-game",
+  "published": "2026-11-13",
+  "ogImage": "https://assets-prd.ignimgs.com/2026/11/12/burger-shot-skinny-louie-1794518104838.jpg?width=1280&format=jpg&auto=webp&quality=80",
+  "extractedAt": "2026-11-13T01:24:30.171Z",
+  "entities": [
+    {
+      "entityType": "brand",
+      "name": "Burger Shot",
+      "altNames": [],
+      "slug": "burger-shot",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Back To Top Home › News › GTA 6 GTA 6's Burger Shot Restaurant Is Expanding Across Florida With Real Meals Inspired by the Game Something for your cholesterol.",
+          "quote": "Back To Top Home › News › GTA 6 GTA 6's Burger Shot Restaurant Is Expanding Across Florida With Real Meals Inspired by the Game Something for your cholesterol."
+        },
+        {
+          "fact": "By Cade Onder Updated : Nov 13, 2026 12:44am UTC Add IGN on Google 0 0 GTA 6's fast-food hamburger chain, Burger Shot, is expanding with new locations across Florida starting this weekend thanks to a collaboration with Skinny Louie.",
+          "quote": "By Cade Onder Updated : Nov 13, 2026 12:44am UTC Add IGN on Google 0 0 GTA 6's fast-food hamburger chain, Burger Shot, is expanding with new locations across Florida starting this weekend thanks to a collaboration with Skinny Louie."
+        },
+        {
+          "fact": "Last month, Burger Shot became available at the Kaseya Center , allowing fans to try the real version of the in-game restaurant during Miami Heat games, courtesy of a partnership with a fast-food joint known as Skinny Louie.",
+          "quote": "Last month, Burger Shot became available at the Kaseya Center , allowing fans to try the real version of the in-game restaurant during Miami Heat games, courtesy of a partnership with a fast-food joint known as Skinny Louie."
+        },
+        {
+          "fact": "From November 13 to December 31, stores will feature Burger Shot signage, uniforms, and, of course, a menu themed after items in the game.",
+          "quote": "From November 13 to December 31, stores will feature Burger Shot signage, uniforms, and, of course, a menu themed after items in the game."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Rockstar has also been trickling out small clips of in-game footage , giving players a taste of what's to come when they load in to Vice City next week.",
+          "quote": "Rockstar has also been trickling out small clips of in-game footage , giving players a taste of what's to come when they load in to Vice City next week."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "rawId": "gameinformer-57e5d4dcd2cb",
+  "outlet": "Game Informer",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://gameinformer.com/opinion/2026/11/13/the-video-games-and-more-you-should-play-this-weekend-november-13-2026",
+  "published": "2026-11-13",
+  "ogImage": "https://static.gameinformer.com/sites/default/files/styles/og_image/public/2026/11/13/ac3d2361/ss_df005e43791b1be1d3949b1e4ef3cafb29b6850a.1920x1080.jpg.webp",
+  "extractedAt": "2026-11-13T23:48:43.286Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "If you want to go even further back, chronologically speaking, Grand Theft Auto: Vice City Stories is a prequel set two years before the events of Vice City.",
+          "quote": "If you want to go even further back, chronologically speaking, Grand Theft Auto: Vice City Stories is a prequel set two years before the events of Vice City."
+        },
+        {
+          "fact": "If you want to wait a little while, the team at Mega Crit will refine these options into a more final form.",
+          "quote": "If you want to wait a little while, the team at Mega Crit will refine these options into a more final form."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "2002’s Grand Theft Auto: Vice City is a certified classic that, if you’ve never played it, offers nice foundational insight into what Vice City was like in the ’80s (spoiler: it was a lot like Scarface and Miami Vice).",
+          "quote": "2002’s Grand Theft Auto: Vice City is a certified classic that, if you’ve never played it, offers nice foundational insight into what Vice City was like in the ’80s (spoiler: it was a lot like Scarface and Miami Vice)."
+        },
+        {
+          "fact": "Best of all, Vice City is easily available on modern platforms and with modernized improvements to boot.",
+          "quote": "Best of all, Vice City is easily available on modern platforms and with modernized improvements to boot."
+        },
+        {
+          "fact": "If you want to go even further back, chronologically speaking, Grand Theft Auto: Vice City Stories is a prequel set two years before the events of Vice City.",
+          "quote": "If you want to go even further back, chronologically speaking, Grand Theft Auto: Vice City Stories is a prequel set two years before the events of Vice City."
+        },
+        {
+          "fact": "Maybe, in some extremely minute way, Vice City Stories lays narrative groundwork for GTA VI.",
+          "quote": "Maybe, in some extremely minute way, Vice City Stories lays narrative groundwork for GTA VI."
+        },
+        {
+          "fact": "Originally released for PSP in 2006, Vice City Stories is trickier to play if you don’t own Sony's retired handheld or a PlayStation 2, which it was ported to in 2007.",
+          "quote": "Originally released for PSP in 2006, Vice City Stories is trickier to play if you don’t own Sony's retired handheld or a PlayStation 2, which it was ported to in 2007."
+        },
+        {
+          "fact": "But if you can find the means, there’s no better time to check out this often overlooked chapter of Vice City’s history.",
+          "quote": "But if you can find the means, there’s no better time to check out this often overlooked chapter of Vice City’s history."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Cypher",
+      "altNames": [],
+      "slug": "cypher",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Cypher’s polished approach to narrative-first and player-focused game sessions is much easier to pick up than many new rules systems, but it has enormous flexibility to deliver smart, creative, and exciting adventures that can help to change things up if your playing group has been in a rut.",
+          "quote": "Cypher’s polished approach to narrative-first and player-focused game sessions is much easier to pick up than many new rules systems, but it has enormous flexibility to deliver smart, creative, and exciting adventures that can help to change things up if your playing group has been in a rut."
+        }
+      ]
+    }
+  ]
+}

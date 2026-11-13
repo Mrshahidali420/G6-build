@@ -1,0 +1,51 @@
+{
+  "rawId": "gamesradar-1d5bc75d4d7d",
+  "outlet": "GamesRadar+",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.gamesradar.com/games/grand-theft-auto/we-tried-stealing-our-own-gta-6-physical-edition-codes-and-you-probably-shouldnt-worry-about-someone-getting-to-yours-first/",
+  "published": "2026-11-13",
+  "ogImage": "https://cdn.mos.cms.futurecdn.net/i4irRDAzNhwzEF9mPq2P4J-1920-80.jpg",
+  "extractedAt": "2026-11-13T23:48:49.689Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them.",
+          "quote": "Every Friday GamesRadar+ Your weekly update on everything you could ever want to know about the games you already love, games we know you're going to love in the near future, and tales from the communities that surround them."
+        }
+      ]
+    },
+    {
+      "entityType": "weapon",
+      "name": "Flashlight",
+      "altNames": [],
+      "slug": "flashlight",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "As players start to worry that their codes may be stolen with a bizarre flashlight trick, we had to see if we could steal our own – and honestly, I wouldn't be too worried about the possibility.",
+          "quote": "As players start to worry that their codes may be stolen with a bizarre flashlight trick, we had to see if we could steal our own – and honestly, I wouldn't be too worried about the possibility."
+        },
+        {
+          "fact": "Social media is starting to be washed over with reports that if you shine a very bright flashlight just right into the edge of a GTA 6 case, you can make out the code without even breaking the seal on the game.",
+          "quote": "Social media is starting to be washed over with reports that if you shine a very bright flashlight just right into the edge of a GTA 6 case, you can make out the code without even breaking the seal on the game."
+        },
+        {
+          "fact": "This, it seems, is the one that could be vulnerable to the apparent flashlight trick.",
+          "quote": "This, it seems, is the one that could be vulnerable to the apparent flashlight trick."
+        },
+        {
+          "fact": "Most retailers keep their games behind locked glass cases, so a prospective code thief would probably have to buy the game, hope that it's a black background version, get an unusually powerful flashlight, shine it in, and then convince the retailer to take the game back for a refund in order for anyone to fall afoul of the potential scam.",
+          "quote": "Most retailers keep their games behind locked glass cases, so a prospective code thief would probably have to buy the game, hope that it's a black background version, get an unusually powerful flashlight, shine it in, and then convince the retailer to take the game back for a refund in order for anyone to fall afoul of the potential scam."
+        }
+      ]
+    }
+  ]
+}

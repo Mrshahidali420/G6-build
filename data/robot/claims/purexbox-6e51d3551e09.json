@@ -1,0 +1,39 @@
+{
+  "rawId": "purexbox-6e51d3551e09",
+  "outlet": "Pure Xbox",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.purexbox.com/news/2026/11/psa-xbox-and-gta-6-have-both-pushed-out-small-new-updates",
+  "published": "2026-11-13",
+  "ogImage": "https://images.purexbox.com/0b04c4b31bb54/1280x720.jpg",
+  "extractedAt": "2026-11-13T22:25:36.478Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "In any case, you'll want to get this queued up as soon as possible (unless you haven't installed the game yet, in which case it'll be included in your initial download).",
+          "quote": "In any case, you'll want to get this queued up as soon as possible (unless you haven't installed the game yet, in which case it'll be included in your initial download)."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Alpha",
+      "altNames": [],
+      "slug": "alpha",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "It’s required to start the game at launch. https://t.co/ejiJl0e3aG - GTA 6 Countdown ⏳ (@GTAVI_Countdown) November 13, 2026 Don't forget that Alpha Skip-Ahead Xbox Insiders have also received a special new update this week that adds three new features for testing purposes, so if you're part of the Insider programme, keep an eye out for that.",
+          "quote": "It’s required to start the game at launch. https://t.co/ejiJl0e3aG - GTA 6 Countdown ⏳ (@GTAVI_Countdown) November 13, 2026 Don't forget that Alpha Skip-Ahead Xbox Insiders have also received a special new update this week that adds three new features for testing purposes, so if you're part of the Insider programme, keep an eye out for that."
+        }
+      ]
+    }
+  ]
+}

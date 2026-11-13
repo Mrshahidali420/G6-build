@@ -1,0 +1,47 @@
+{
+  "rawId": "polygon-7972bfce8163",
+  "outlet": "Polygon",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.polygon.com/free-games-right-now-steam-epic-ps-plus-nov-13-19/",
+  "published": "2026-11-13",
+  "ogImage": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/knightica-steam.jpg?w=1600&h=900&fit=crop",
+  "extractedAt": "2026-11-13T22:25:29.958Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "19 Genre: Roguelike, turn-based How long to beat: N/A Developer: Mad Mango Games Whether you just want to unwind and play a few runs or want a game you can get completely sucked into, Knightica might just be what you're looking for.",
+          "quote": "19 Genre: Roguelike, turn-based How long to beat: N/A Developer: Mad Mango Games Whether you just want to unwind and play a few runs or want a game you can get completely sucked into, Knightica might just be what you're looking for."
+        },
+        {
+          "fact": "Entertainment/Sega If you prefer a more realistic and tactical approach to combat rather than fast-paced chaos, then perhaps you'll want to try Company of Heroes 3 instead.",
+          "quote": "Entertainment/Sega If you prefer a more realistic and tactical approach to combat rather than fast-paced chaos, then perhaps you'll want to try Company of Heroes 3 instead."
+        },
+        {
+          "fact": "There's an array of factions and units to choose from, and it is up to you to decide how you want to approach each battle.",
+          "quote": "There's an array of factions and units to choose from, and it is up to you to decide how you want to approach each battle."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Outlaw",
+      "altNames": [],
+      "slug": "outlaw",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Hypnospace Outlaw Image: No More Robots Hypnospace Outlaw is a 90s internet simulator where you play as a virtual enforcer.",
+          "quote": "Hypnospace Outlaw Image: No More Robots Hypnospace Outlaw is a 90s internet simulator where you play as a virtual enforcer."
+        }
+      ]
+    }
+  ]
+}

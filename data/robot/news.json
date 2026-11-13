@@ -844,5 +844,47 @@
   "pushsquare-7734de50a2db": {
     "slug": "gta-6-has-a-whole-animated-tv-series-you-can-watch-in-game",
     "written": "2026-11-13"
+  },
+  "gamesradar-3889a0ec69f0": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-11-13",
+    "reason": "an emoji appears in the written text"
+  },
+  "gamesradar-641cc71b38b0": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-11-13",
+    "reason": "an emoji appears in the written text"
+  },
+  "gamesradar-7782124dea42": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-11-13",
+    "reason": "an emoji appears in the written text"
+  },
+  "pcgamer-26dbcebbee97": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-11-13",
+    "reason": "an emoji appears in the written text"
+  },
+  "polygon-7972bfce8163": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-11-13",
+    "reason": "an emoji appears in the written text"
+  },
+  "purexbox-212348011d97": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-11-13",
+    "reason": "an emoji appears in the written text"
+  },
+  "purexbox-6e51d3551e09": {
+    "slug": null,
+    "written": null,
+    "refused": "2026-11-13",
+    "reason": "an emoji appears in the written text"
   }
 }

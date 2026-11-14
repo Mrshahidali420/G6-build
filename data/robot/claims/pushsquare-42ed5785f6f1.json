@@ -1,0 +1,92 @@
+{
+  "rawId": "pushsquare-42ed5785f6f1",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/guides/these-13plus-ps5-and-ps-plus-games-are-coming-out-next-week-16th-22nd-november",
+  "published": "2026-11-14",
+  "ogImage": "https://images.pushsquare.com/1621825d220de/1280x720.jpg",
+  "extractedAt": "2026-11-14T15:18:05.449Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Jason and Lucia have always known the deck is stacked against them.",
+          "quote": "Jason and Lucia have always known the deck is stacked against them."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Jason and Lucia have always known the deck is stacked against them.",
+          "quote": "Jason and Lucia have always known the deck is stacked against them."
+        }
+      ]
+    },
+    {
+      "entityType": "edition",
+      "name": "Ultimate Edition",
+      "altNames": [
+        "GTA 6 Ultimate Edition",
+        "GTA VI Ultimate Edition"
+      ],
+      "slug": "gta-6-ultimate-edition",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "I canceled my GTA 6 Ultimate Edition on Xbox and instead bought it from my work with 20% discount and £5 off voucher so ended up only paying £47 for GTA 6 and £8 for Ultimate upgrade after putting reward points towards it, bargain!",
+          "quote": "I canceled my GTA 6 Ultimate Edition on Xbox and instead bought it from my work with 20% discount and £5 off voucher so ended up only paying £47 for GTA 6 and £8 for Ultimate upgrade after putting reward points towards it, bargain!"
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The prisoner shipments must never stop, no matter the cost.\" Grand Theft Auto 6 (19th November - PS5): \"Vice City, USA.",
+          "quote": "The prisoner shipments must never stop, no matter the cost.\" Grand Theft Auto 6 (19th November - PS5): \"Vice City, USA."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Phantom",
+      "altNames": [],
+      "slug": "phantom",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Good news: more time to play Phantom Blade Zero.",
+          "quote": "Good news: more time to play Phantom Blade Zero."
+        }
+      ]
+    }
+  ]
+}

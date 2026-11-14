@@ -1,0 +1,75 @@
+{
+  "rawId": "purexbox-76f322303170",
+  "outlet": "Pure Xbox",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.purexbox.com/news/2026/11/these-10plus-games-are-coming-to-xbox-next-week-november-16-20",
+  "published": "2026-11-14",
+  "ogImage": "https://images.purexbox.com/6b0361c67b717/1280x720.jpg",
+  "extractedAt": "2026-11-14T15:17:58.945Z",
+  "entities": [
+    {
+      "entityType": "character",
+      "name": "Jason Duval",
+      "altNames": [
+        "Jason",
+        "Duval"
+      ],
+      "slug": "jason-duval",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The prisoner shipments must never stop, no matter the cost.\" Vice: Magic City Mayhem (November 18): \"Vice: Magic City Mayhem is a top-down 8-bit retro action/adventure game inspired by Zelda with a Vice City theme.\" GTA 6 (November 19): \"Jason and Lucia have always known the deck is stacked against them.",
+          "quote": "The prisoner shipments must never stop, no matter the cost.\" Vice: Magic City Mayhem (November 18): \"Vice: Magic City Mayhem is a top-down 8-bit retro action/adventure game inspired by Zelda with a Vice City theme.\" GTA 6 (November 19): \"Jason and Lucia have always known the deck is stacked against them."
+        }
+      ]
+    },
+    {
+      "entityType": "character",
+      "name": "Lucia Caminos",
+      "altNames": [
+        "Lucia",
+        "Caminos"
+      ],
+      "slug": "lucia-caminos",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The prisoner shipments must never stop, no matter the cost.\" Vice: Magic City Mayhem (November 18): \"Vice: Magic City Mayhem is a top-down 8-bit retro action/adventure game inspired by Zelda with a Vice City theme.\" GTA 6 (November 19): \"Jason and Lucia have always known the deck is stacked against them.",
+          "quote": "The prisoner shipments must never stop, no matter the cost.\" Vice: Magic City Mayhem (November 18): \"Vice: Magic City Mayhem is a top-down 8-bit retro action/adventure game inspired by Zelda with a Vice City theme.\" GTA 6 (November 19): \"Jason and Lucia have always known the deck is stacked against them."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Vice City",
+      "altNames": [
+        "Vice City, USA"
+      ],
+      "slug": "vice-city",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "The prisoner shipments must never stop, no matter the cost.\" Vice: Magic City Mayhem (November 18): \"Vice: Magic City Mayhem is a top-down 8-bit retro action/adventure game inspired by Zelda with a Vice City theme.\" GTA 6 (November 19): \"Jason and Lucia have always known the deck is stacked against them.",
+          "quote": "The prisoner shipments must never stop, no matter the cost.\" Vice: Magic City Mayhem (November 18): \"Vice: Magic City Mayhem is a top-down 8-bit retro action/adventure game inspired by Zelda with a Vice City theme.\" GTA 6 (November 19): \"Jason and Lucia have always known the deck is stacked against them."
+        }
+      ]
+    },
+    {
+      "entityType": "wildlife",
+      "name": "Cats",
+      "altNames": [],
+      "slug": "cats",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Welcome to a captivating hidden object adventure that takes you on an unforgettable journey through space and time.\" Cats in Wonderland (November 20): \"Cats in Wonderland is a hidden object game where you need to find all the hidden cats in Wonderland.",
+          "quote": "Welcome to a captivating hidden object adventure that takes you on an unforgettable journey through space and time.\" Cats in Wonderland (November 20): \"Cats in Wonderland is a hidden object game where you need to find all the hidden cats in Wonderland."
+        }
+      ]
+    }
+  ]
+}

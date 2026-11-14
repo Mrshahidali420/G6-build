@@ -1,0 +1,95 @@
+{
+  "rawId": "pushsquare-9255dd1dfdf0",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/features/talking-point-what-are-you-playing-this-weekend-issue-658",
+  "published": "2026-11-14",
+  "ogImage": "https://images.pushsquare.com/08e25f2720c06/1280x720.jpg",
+  "extractedAt": "2026-11-14T06:56:04.161Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "I wanted to start Ragnarok but I don't want to rush it and going by what people have said it's not a small game.",
+          "quote": "I wanted to start Ragnarok but I don't want to rush it and going by what people have said it's not a small game."
+        },
+        {
+          "fact": "I don't believe I'll finish it, which was the plan, simply because it's so phenomenal I want to be as completionist as I can on my first playthrough and I'm definitely running out of time for that.",
+          "quote": "I don't believe I'll finish it, which was the plan, simply because it's so phenomenal I want to be as completionist as I can on my first playthrough and I'm definitely running out of time for that."
+        },
+        {
+          "fact": "I do want to try another Crpg though and Divinity Original 2 came highly recommended by a lot a of people.",
+          "quote": "I do want to try another Crpg though and Divinity Original 2 came highly recommended by a lot a of people."
+        }
+      ]
+    },
+    {
+      "entityType": "location",
+      "name": "Leonida",
+      "altNames": [],
+      "slug": "leonida",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Happy gaming weekend Folks 🍵 5 more days to Leonida Edit: Sammy say goodbye to productivity.",
+          "quote": "Happy gaming weekend Folks 🍵 5 more days to Leonida Edit: Sammy say goodbye to productivity."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Emperor",
+      "altNames": [],
+      "slug": "emperor",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "Warhammer Survivors I jumped on the game the second it went live, then after a while (eleven-hours) had to stop so I could give God of War the attention it deserved (and because I was told to go to bed) Now I can once again heed the Emperor's call to purge the Tyranid filth from the universe.",
+          "quote": "Warhammer Survivors I jumped on the game the second it went live, then after a while (eleven-hours) had to stop so I could give God of War the attention it deserved (and because I was told to go to bed) Now I can once again heed the Emperor's call to purge the Tyranid filth from the universe."
+        }
+      ]
+    },
+    {
+      "entityType": "vehicle",
+      "name": "Phantom",
+      "altNames": [],
+      "slug": "phantom",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "8 3 ErrantRob 6 hours ago Continuing to play the GOTY Phantom Blade .",
+          "quote": "8 3 ErrantRob 6 hours ago Continuing to play the GOTY Phantom Blade ."
+        },
+        {
+          "fact": "2 9 DennisReynolds 6 hours ago Phantom Blade and OoT Remake for me.",
+          "quote": "2 9 DennisReynolds 6 hours ago Phantom Blade and OoT Remake for me."
+        },
+        {
+          "fact": "2 16 Metonymy 6 hours ago Playing Phantom Blade Zero before the big one, it’s sooo much fun.",
+          "quote": "2 16 Metonymy 6 hours ago Playing Phantom Blade Zero before the big one, it’s sooo much fun."
+        },
+        {
+          "fact": "1 22 Enuo 6 hours ago I'm still playing Phantom Blade Zero.",
+          "quote": "1 22 Enuo 6 hours ago I'm still playing Phantom Blade Zero."
+        },
+        {
+          "fact": "0 35 Intr1n5ic 3 hours ago I'm trying to wrap up Phantom Blade Zero before GTA, will probably put a few more hours in to Enshrouded as well, both are excellent.",
+          "quote": "0 35 Intr1n5ic 3 hours ago I'm trying to wrap up Phantom Blade Zero before GTA, will probably put a few more hours in to Enshrouded as well, both are excellent."
+        },
+        {
+          "fact": "0 40 Northern_munkey 1 hour ago Phantom blade zero for me and warhammer survivors which is literally the video game version of crack..still getting over my disgusting cold that I had but I'm feeling much more energised.",
+          "quote": "0 40 Northern_munkey 1 hour ago Phantom blade zero for me and warhammer survivors which is literally the video game version of crack..still getting over my disgusting cold that I had but I'm feeling much more energised."
+        }
+      ]
+    }
+  ]
+}

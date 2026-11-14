@@ -1,0 +1,51 @@
+{
+  "rawId": "pushsquare-e1740fe707ba",
+  "outlet": "Push Square",
+  "tier": "TIER_2_MAJOR_PRESS",
+  "url": "https://www.pushsquare.com/news/2026/11/gta-6-ps5-codes-potentially-being-stolen-from-physical-copies-using-flashlight-trick",
+  "published": "2026-11-14",
+  "ogImage": "https://images.pushsquare.com/45a9584da44b2/1280x720.jpg",
+  "extractedAt": "2026-11-14T06:56:10.614Z",
+  "entities": [
+    {
+      "entityType": "business",
+      "name": "Want",
+      "altNames": [],
+      "slug": "want",
+      "viaLogic": true,
+      "salient": false,
+      "claims": [
+        {
+          "fact": "1 10 Lup 4 hours ago @Andy22385 Because that can go to second hand market and Rockstar doesn't want that.",
+          "quote": "1 10 Lup 4 hours ago @Andy22385 Because that can go to second hand market and Rockstar doesn't want that."
+        }
+      ]
+    },
+    {
+      "entityType": "weapon",
+      "name": "Flashlight",
+      "altNames": [],
+      "slug": "flashlight",
+      "viaLogic": true,
+      "salient": true,
+      "claims": [
+        {
+          "fact": "Manage Topics News Rockstar Games PS5 Grand Theft Auto GTA GTA 6 PS5 Codes Potentially Being Stolen from Physical Copies Using Flashlight Trick Making light work of it by Sammy Barker 5 hours ago Share: A potentially problematic manufacturing oversight may be resulting in some GTA 6 codes being stolen from retail PS5 cases.",
+          "quote": "Manage Topics News Rockstar Games PS5 Grand Theft Auto GTA GTA 6 PS5 Codes Potentially Being Stolen from Physical Copies Using Flashlight Trick Making light work of it by Sammy Barker 5 hours ago Share: A potentially problematic manufacturing oversight may be resulting in some GTA 6 codes being stolen from retail PS5 cases."
+        },
+        {
+          "fact": "Some reports claim that by pointing a strong flashlight at the side of the case, it’s possible to shine light into the empty Blu-ray box in such a way that it makes the code printed on the insert visible.",
+          "quote": "Some reports claim that by pointing a strong flashlight at the side of the case, it’s possible to shine light into the empty Blu-ray box in such a way that it makes the code printed on the insert visible."
+        },
+        {
+          "fact": "It’s worth pointing out that codes aren’t activated at the point of purchase like other digital vouchers, so assuming the flashlight method works, it would be perfectly possible to pilfer a working copy of the game.",
+          "quote": "It’s worth pointing out that codes aren’t activated at the point of purchase like other digital vouchers, so assuming the flashlight method works, it would be perfectly possible to pilfer a working copy of the game."
+        },
+        {
+          "fact": "Imagine trying to convince a vendor that someone stole your game with a flashlight.",
+          "quote": "Imagine trying to convince a vendor that someone stole your game with a flashlight."
+        }
+      ]
+    }
+  ]
+}
